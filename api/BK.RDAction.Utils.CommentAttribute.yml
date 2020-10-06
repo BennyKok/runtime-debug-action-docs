@@ -1,0 +1,158 @@
+### YamlMime:ManagedReference
+items:
+- uid: BK.RDAction.Utils.CommentAttribute
+  commentId: T:BK.RDAction.Utils.CommentAttribute
+  id: CommentAttribute
+  parent: BK.RDAction.Utils
+  children:
+  - BK.RDAction.Utils.CommentAttribute.#ctor(System.String)
+  - BK.RDAction.Utils.CommentAttribute.text
+  langs:
+  - csharp
+  - vb
+  name: CommentAttribute
+  nameWithType: CommentAttribute
+  fullName: BK.RDAction.Utils.CommentAttribute
+  type: Class
+  source:
+    remote:
+      path: Runtime/Utils/AttributeUtils.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: CommentAttribute
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Utils/AttributeUtils.cs
+    startLine: 55
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Utils
+  syntax:
+    content: 'public class CommentAttribute : PropertyAttribute, _Attribute'
+    content.vb: >-
+      Public Class CommentAttribute
+          Inherits PropertyAttribute
+          Implements _Attribute
+  inheritance:
+  - System.Object
+  - System.Attribute
+  - UnityEngine.PropertyAttribute
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BK.RDAction.Utils.CommentAttribute.text
+  commentId: F:BK.RDAction.Utils.CommentAttribute.text
+  id: text
+  parent: BK.RDAction.Utils.CommentAttribute
+  langs:
+  - csharp
+  - vb
+  name: text
+  nameWithType: CommentAttribute.text
+  fullName: BK.RDAction.Utils.CommentAttribute.text
+  type: Field
+  source:
+    remote:
+      path: Runtime/Utils/AttributeUtils.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: text
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Utils/AttributeUtils.cs
+    startLine: 57
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Utils
+  syntax:
+    content: public string text
+    return:
+      type: System.String
+    content.vb: Public text As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RDAction.Utils.CommentAttribute.#ctor(System.String)
+  commentId: M:BK.RDAction.Utils.CommentAttribute.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: BK.RDAction.Utils.CommentAttribute
+  langs:
+  - csharp
+  - vb
+  name: CommentAttribute(String)
+  nameWithType: CommentAttribute.CommentAttribute(String)
+  fullName: BK.RDAction.Utils.CommentAttribute.CommentAttribute(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Utils/AttributeUtils.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: .ctor
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Utils/AttributeUtils.cs
+    startLine: 59
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Utils
+  syntax:
+    content: public CommentAttribute(string text)
+    parameters:
+    - id: text
+      type: System.String
+    content.vb: Public Sub New(text As String)
+  overload: BK.RDAction.Utils.CommentAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BK.RDAction.Utils
+  commentId: N:BK.RDAction.Utils
+  name: BK.RDAction.Utils
+  nameWithType: BK.RDAction.Utils
+  fullName: BK.RDAction.Utils
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Attribute
+  commentId: T:System.Attribute
+  parent: System
+  isExternal: true
+  name: Attribute
+  nameWithType: Attribute
+  fullName: System.Attribute
+- uid: UnityEngine.PropertyAttribute
+  commentId: T:UnityEngine.PropertyAttribute
+  parent: UnityEngine
+  isExternal: true
+  name: PropertyAttribute
+  nameWithType: PropertyAttribute
+  fullName: UnityEngine.PropertyAttribute
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BK.RDAction.Utils.CommentAttribute.#ctor*
+  commentId: Overload:BK.RDAction.Utils.CommentAttribute.#ctor
+  name: CommentAttribute
+  nameWithType: CommentAttribute.CommentAttribute
+  fullName: BK.RDAction.Utils.CommentAttribute.CommentAttribute

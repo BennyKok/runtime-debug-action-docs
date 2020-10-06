@@ -1,30 +1,30 @@
 ### YamlMime:ManagedReference
 items:
-- uid: BK.RuntimeDebugAction.RDAction
-  commentId: T:BK.RuntimeDebugAction.RDAction
+- uid: BK.RDAction.Data.RDAction
+  commentId: T:BK.RDAction.Data.RDAction
   id: RDAction
-  parent: BK.RuntimeDebugAction
+  parent: BK.RDAction.Data
   children:
-  - BK.RuntimeDebugAction.RDAction.#ctor
-  - BK.RuntimeDebugAction.RDAction.#ctor(System.String,System.Action)
-  - BK.RuntimeDebugAction.RDAction.#ctor(System.String,System.String,System.Action)
-  - BK.RuntimeDebugAction.RDAction.#ctor(System.String,System.String,System.String,System.Action)
-  - BK.RuntimeDebugAction.RDAction.#ctor(System.String,UnityEngine.Color,System.Action)
-  - BK.RuntimeDebugAction.RDAction.action
-  - BK.RuntimeDebugAction.RDAction.actionColor
-  - BK.RuntimeDebugAction.RDAction.actionStatus
-  - BK.RuntimeDebugAction.RDAction.description
-  - BK.RuntimeDebugAction.RDAction.key
-  - BK.RuntimeDebugAction.RDAction.label
-  - BK.RuntimeDebugAction.RDAction.ResolveAction
-  - BK.RuntimeDebugAction.RDAction.tag
-  - BK.RuntimeDebugAction.RDAction.unityAction
+  - BK.RDAction.Data.RDAction.#ctor
+  - BK.RDAction.Data.RDAction.#ctor(System.String,System.Action)
+  - BK.RDAction.Data.RDAction.#ctor(System.String,System.String,System.Action)
+  - BK.RDAction.Data.RDAction.#ctor(System.String,System.String,System.String,System.Action)
+  - BK.RDAction.Data.RDAction.#ctor(System.String,UnityEngine.Color,System.Action)
+  - BK.RDAction.Data.RDAction.action
+  - BK.RDAction.Data.RDAction.actionColor
+  - BK.RDAction.Data.RDAction.actionStatus
+  - BK.RDAction.Data.RDAction.description
+  - BK.RDAction.Data.RDAction.key
+  - BK.RDAction.Data.RDAction.label
+  - BK.RDAction.Data.RDAction.ResolveAction
+  - BK.RDAction.Data.RDAction.tag
+  - BK.RDAction.Data.RDAction.unityAction
   langs:
   - csharp
   - vb
   name: RDAction
   nameWithType: RDAction
-  fullName: BK.RuntimeDebugAction.RDAction
+  fullName: BK.RDAction.Data.RDAction
   type: Class
   source:
     remote:
@@ -36,7 +36,7 @@ items:
     startLine: 7
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RuntimeDebugAction
+  namespace: BK.RDAction.Data
   syntax:
     content: >-
       [Serializable]
@@ -49,15 +49,7 @@ items:
   inheritance:
   - System.Object
   derivedClasses:
-  - BK.RuntimeDebugAction.RDActionToggle
-  inheritedMembers:
-  - System.Object.Equals(System.Object)
-  - System.Object.Equals(System.Object,System.Object)
-  - System.Object.GetHashCode
-  - System.Object.GetType
-  - System.Object.MemberwiseClone
-  - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.ToString
+  - BK.RDAction.Data.RDActionToggle
   attributes:
   - type: System.SerializableAttribute
     ctor: System.SerializableAttribute.#ctor
@@ -68,16 +60,16 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: BK.RuntimeDebugAction.RDAction.tag
-  commentId: F:BK.RuntimeDebugAction.RDAction.tag
+- uid: BK.RDAction.Data.RDAction.tag
+  commentId: F:BK.RDAction.Data.RDAction.tag
   id: tag
-  parent: BK.RuntimeDebugAction.RDAction
+  parent: BK.RDAction.Data.RDAction
   langs:
   - csharp
   - vb
   name: tag
   nameWithType: RDAction.tag
-  fullName: BK.RuntimeDebugAction.RDAction.tag
+  fullName: BK.RDAction.Data.RDAction.tag
   type: Field
   source:
     remote:
@@ -89,7 +81,7 @@ items:
     startLine: 10
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RuntimeDebugAction
+  namespace: BK.RDAction.Data
   syntax:
     content: public string tag
     return:
@@ -99,16 +91,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BK.RuntimeDebugAction.RDAction.label
-  commentId: F:BK.RuntimeDebugAction.RDAction.label
+- uid: BK.RDAction.Data.RDAction.label
+  commentId: F:BK.RDAction.Data.RDAction.label
   id: label
-  parent: BK.RuntimeDebugAction.RDAction
+  parent: BK.RDAction.Data.RDAction
   langs:
   - csharp
   - vb
   name: label
   nameWithType: RDAction.label
-  fullName: BK.RuntimeDebugAction.RDAction.label
+  fullName: BK.RDAction.Data.RDAction.label
   type: Field
   source:
     remote:
@@ -120,7 +112,7 @@ items:
     startLine: 11
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RuntimeDebugAction
+  namespace: BK.RDAction.Data
   syntax:
     content: public string label
     return:
@@ -130,16 +122,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BK.RuntimeDebugAction.RDAction.description
-  commentId: F:BK.RuntimeDebugAction.RDAction.description
+- uid: BK.RDAction.Data.RDAction.description
+  commentId: F:BK.RDAction.Data.RDAction.description
   id: description
-  parent: BK.RuntimeDebugAction.RDAction
+  parent: BK.RDAction.Data.RDAction
   langs:
   - csharp
   - vb
   name: description
   nameWithType: RDAction.description
-  fullName: BK.RuntimeDebugAction.RDAction.description
+  fullName: BK.RDAction.Data.RDAction.description
   type: Field
   source:
     remote:
@@ -151,7 +143,7 @@ items:
     startLine: 12
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RuntimeDebugAction
+  namespace: BK.RDAction.Data
   syntax:
     content: public string description
     return:
@@ -161,16 +153,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BK.RuntimeDebugAction.RDAction.key
-  commentId: F:BK.RuntimeDebugAction.RDAction.key
+- uid: BK.RDAction.Data.RDAction.key
+  commentId: F:BK.RDAction.Data.RDAction.key
   id: key
-  parent: BK.RuntimeDebugAction.RDAction
+  parent: BK.RDAction.Data.RDAction
   langs:
   - csharp
   - vb
   name: key
   nameWithType: RDAction.key
-  fullName: BK.RuntimeDebugAction.RDAction.key
+  fullName: BK.RDAction.Data.RDAction.key
   type: Field
   source:
     remote:
@@ -182,7 +174,7 @@ items:
     startLine: 13
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RuntimeDebugAction
+  namespace: BK.RDAction.Data
   syntax:
     content: public string key
     return:
@@ -192,16 +184,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BK.RuntimeDebugAction.RDAction.actionColor
-  commentId: F:BK.RuntimeDebugAction.RDAction.actionColor
+- uid: BK.RDAction.Data.RDAction.actionColor
+  commentId: F:BK.RDAction.Data.RDAction.actionColor
   id: actionColor
-  parent: BK.RuntimeDebugAction.RDAction
+  parent: BK.RDAction.Data.RDAction
   langs:
   - csharp
   - vb
   name: actionColor
   nameWithType: RDAction.actionColor
-  fullName: BK.RuntimeDebugAction.RDAction.actionColor
+  fullName: BK.RDAction.Data.RDAction.actionColor
   type: Field
   source:
     remote:
@@ -213,7 +205,7 @@ items:
     startLine: 14
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RuntimeDebugAction
+  namespace: BK.RDAction.Data
   syntax:
     content: public Color actionColor
     return:
@@ -223,16 +215,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BK.RuntimeDebugAction.RDAction.unityAction
-  commentId: F:BK.RuntimeDebugAction.RDAction.unityAction
+- uid: BK.RDAction.Data.RDAction.unityAction
+  commentId: F:BK.RDAction.Data.RDAction.unityAction
   id: unityAction
-  parent: BK.RuntimeDebugAction.RDAction
+  parent: BK.RDAction.Data.RDAction
   langs:
   - csharp
   - vb
   name: unityAction
   nameWithType: RDAction.unityAction
-  fullName: BK.RuntimeDebugAction.RDAction.unityAction
+  fullName: BK.RDAction.Data.RDAction.unityAction
   type: Field
   source:
     remote:
@@ -244,7 +236,7 @@ items:
     startLine: 15
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RuntimeDebugAction
+  namespace: BK.RDAction.Data
   syntax:
     content: public UnityEvent unityAction
     return:
@@ -254,16 +246,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BK.RuntimeDebugAction.RDAction.action
-  commentId: F:BK.RuntimeDebugAction.RDAction.action
+- uid: BK.RDAction.Data.RDAction.action
+  commentId: F:BK.RDAction.Data.RDAction.action
   id: action
-  parent: BK.RuntimeDebugAction.RDAction
+  parent: BK.RDAction.Data.RDAction
   langs:
   - csharp
   - vb
   name: action
   nameWithType: RDAction.action
-  fullName: BK.RuntimeDebugAction.RDAction.action
+  fullName: BK.RDAction.Data.RDAction.action
   type: Field
   source:
     remote:
@@ -275,7 +267,7 @@ items:
     startLine: 16
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RuntimeDebugAction
+  namespace: BK.RDAction.Data
   syntax:
     content: public Action action
     return:
@@ -285,16 +277,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BK.RuntimeDebugAction.RDAction.actionStatus
-  commentId: F:BK.RuntimeDebugAction.RDAction.actionStatus
+- uid: BK.RDAction.Data.RDAction.actionStatus
+  commentId: F:BK.RDAction.Data.RDAction.actionStatus
   id: actionStatus
-  parent: BK.RuntimeDebugAction.RDAction
+  parent: BK.RDAction.Data.RDAction
   langs:
   - csharp
   - vb
   name: actionStatus
   nameWithType: RDAction.actionStatus
-  fullName: BK.RuntimeDebugAction.RDAction.actionStatus
+  fullName: BK.RDAction.Data.RDAction.actionStatus
   type: Field
   source:
     remote:
@@ -306,7 +298,7 @@ items:
     startLine: 17
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RuntimeDebugAction
+  namespace: BK.RDAction.Data
   syntax:
     content: public Func<string> actionStatus
     return:
@@ -316,16 +308,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BK.RuntimeDebugAction.RDAction.ResolveAction
-  commentId: M:BK.RuntimeDebugAction.RDAction.ResolveAction
+- uid: BK.RDAction.Data.RDAction.ResolveAction
+  commentId: M:BK.RDAction.Data.RDAction.ResolveAction
   id: ResolveAction
-  parent: BK.RuntimeDebugAction.RDAction
+  parent: BK.RDAction.Data.RDAction
   langs:
   - csharp
   - vb
   name: ResolveAction()
   nameWithType: RDAction.ResolveAction()
-  fullName: BK.RuntimeDebugAction.RDAction.ResolveAction()
+  fullName: BK.RDAction.Data.RDAction.ResolveAction()
   type: Method
   source:
     remote:
@@ -337,27 +329,27 @@ items:
     startLine: 19
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RuntimeDebugAction
+  namespace: BK.RDAction.Data
   syntax:
     content: public virtual void ResolveAction()
     content.vb: Public Overridable Sub ResolveAction
-  overload: BK.RuntimeDebugAction.RDAction.ResolveAction*
+  overload: BK.RDAction.Data.RDAction.ResolveAction*
   modifiers.csharp:
   - public
   - virtual
   modifiers.vb:
   - Public
   - Overridable
-- uid: BK.RuntimeDebugAction.RDAction.#ctor
-  commentId: M:BK.RuntimeDebugAction.RDAction.#ctor
+- uid: BK.RDAction.Data.RDAction.#ctor
+  commentId: M:BK.RDAction.Data.RDAction.#ctor
   id: '#ctor'
-  parent: BK.RuntimeDebugAction.RDAction
+  parent: BK.RDAction.Data.RDAction
   langs:
   - csharp
   - vb
   name: RDAction()
   nameWithType: RDAction.RDAction()
-  fullName: BK.RuntimeDebugAction.RDAction.RDAction()
+  fullName: BK.RDAction.Data.RDAction.RDAction()
   type: Constructor
   source:
     remote:
@@ -369,25 +361,25 @@ items:
     startLine: 24
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RuntimeDebugAction
+  namespace: BK.RDAction.Data
   syntax:
     content: public RDAction()
     content.vb: Public Sub New
-  overload: BK.RuntimeDebugAction.RDAction.#ctor*
+  overload: BK.RDAction.Data.RDAction.#ctor*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: BK.RuntimeDebugAction.RDAction.#ctor(System.String,System.Action)
-  commentId: M:BK.RuntimeDebugAction.RDAction.#ctor(System.String,System.Action)
+- uid: BK.RDAction.Data.RDAction.#ctor(System.String,System.Action)
+  commentId: M:BK.RDAction.Data.RDAction.#ctor(System.String,System.Action)
   id: '#ctor(System.String,System.Action)'
-  parent: BK.RuntimeDebugAction.RDAction
+  parent: BK.RDAction.Data.RDAction
   langs:
   - csharp
   - vb
   name: RDAction(String, Action)
   nameWithType: RDAction.RDAction(String, Action)
-  fullName: BK.RuntimeDebugAction.RDAction.RDAction(System.String, System.Action)
+  fullName: BK.RDAction.Data.RDAction.RDAction(System.String, System.Action)
   type: Constructor
   source:
     remote:
@@ -399,7 +391,7 @@ items:
     startLine: 29
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RuntimeDebugAction
+  namespace: BK.RDAction.Data
   syntax:
     content: public RDAction(string label, Action action)
     parameters:
@@ -408,21 +400,21 @@ items:
     - id: action
       type: System.Action
     content.vb: Public Sub New(label As String, action As Action)
-  overload: BK.RuntimeDebugAction.RDAction.#ctor*
+  overload: BK.RDAction.Data.RDAction.#ctor*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: BK.RuntimeDebugAction.RDAction.#ctor(System.String,UnityEngine.Color,System.Action)
-  commentId: M:BK.RuntimeDebugAction.RDAction.#ctor(System.String,UnityEngine.Color,System.Action)
+- uid: BK.RDAction.Data.RDAction.#ctor(System.String,UnityEngine.Color,System.Action)
+  commentId: M:BK.RDAction.Data.RDAction.#ctor(System.String,UnityEngine.Color,System.Action)
   id: '#ctor(System.String,UnityEngine.Color,System.Action)'
-  parent: BK.RuntimeDebugAction.RDAction
+  parent: BK.RDAction.Data.RDAction
   langs:
   - csharp
   - vb
   name: RDAction(String, Color, Action)
   nameWithType: RDAction.RDAction(String, Color, Action)
-  fullName: BK.RuntimeDebugAction.RDAction.RDAction(System.String, UnityEngine.Color, System.Action)
+  fullName: BK.RDAction.Data.RDAction.RDAction(System.String, UnityEngine.Color, System.Action)
   type: Constructor
   source:
     remote:
@@ -434,7 +426,7 @@ items:
     startLine: 31
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RuntimeDebugAction
+  namespace: BK.RDAction.Data
   syntax:
     content: public RDAction(string label, Color actionColor, Action action)
     parameters:
@@ -445,21 +437,21 @@ items:
     - id: action
       type: System.Action
     content.vb: Public Sub New(label As String, actionColor As Color, action As Action)
-  overload: BK.RuntimeDebugAction.RDAction.#ctor*
+  overload: BK.RDAction.Data.RDAction.#ctor*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: BK.RuntimeDebugAction.RDAction.#ctor(System.String,System.String,System.Action)
-  commentId: M:BK.RuntimeDebugAction.RDAction.#ctor(System.String,System.String,System.Action)
+- uid: BK.RDAction.Data.RDAction.#ctor(System.String,System.String,System.Action)
+  commentId: M:BK.RDAction.Data.RDAction.#ctor(System.String,System.String,System.Action)
   id: '#ctor(System.String,System.String,System.Action)'
-  parent: BK.RuntimeDebugAction.RDAction
+  parent: BK.RDAction.Data.RDAction
   langs:
   - csharp
   - vb
   name: RDAction(String, String, Action)
   nameWithType: RDAction.RDAction(String, String, Action)
-  fullName: BK.RuntimeDebugAction.RDAction.RDAction(System.String, System.String, System.Action)
+  fullName: BK.RDAction.Data.RDAction.RDAction(System.String, System.String, System.Action)
   type: Constructor
   source:
     remote:
@@ -471,7 +463,7 @@ items:
     startLine: 36
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RuntimeDebugAction
+  namespace: BK.RDAction.Data
   syntax:
     content: public RDAction(string label, string key, Action action)
     parameters:
@@ -482,21 +474,21 @@ items:
     - id: action
       type: System.Action
     content.vb: Public Sub New(label As String, key As String, action As Action)
-  overload: BK.RuntimeDebugAction.RDAction.#ctor*
+  overload: BK.RDAction.Data.RDAction.#ctor*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: BK.RuntimeDebugAction.RDAction.#ctor(System.String,System.String,System.String,System.Action)
-  commentId: M:BK.RuntimeDebugAction.RDAction.#ctor(System.String,System.String,System.String,System.Action)
+- uid: BK.RDAction.Data.RDAction.#ctor(System.String,System.String,System.String,System.Action)
+  commentId: M:BK.RDAction.Data.RDAction.#ctor(System.String,System.String,System.String,System.Action)
   id: '#ctor(System.String,System.String,System.String,System.Action)'
-  parent: BK.RuntimeDebugAction.RDAction
+  parent: BK.RDAction.Data.RDAction
   langs:
   - csharp
   - vb
   name: RDAction(String, String, String, Action)
   nameWithType: RDAction.RDAction(String, String, String, Action)
-  fullName: BK.RuntimeDebugAction.RDAction.RDAction(System.String, System.String, System.String, System.Action)
+  fullName: BK.RDAction.Data.RDAction.RDAction(System.String, System.String, System.String, System.Action)
   type: Constructor
   source:
     remote:
@@ -508,7 +500,7 @@ items:
     startLine: 38
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RuntimeDebugAction
+  namespace: BK.RDAction.Data
   syntax:
     content: public RDAction(string label, string description, string key, Action action)
     parameters:
@@ -521,17 +513,17 @@ items:
     - id: action
       type: System.Action
     content.vb: Public Sub New(label As String, description As String, key As String, action As Action)
-  overload: BK.RuntimeDebugAction.RDAction.#ctor*
+  overload: BK.RDAction.Data.RDAction.#ctor*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
 references:
-- uid: BK.RuntimeDebugAction
-  commentId: N:BK.RuntimeDebugAction
-  name: BK.RuntimeDebugAction
-  nameWithType: BK.RuntimeDebugAction
-  fullName: BK.RuntimeDebugAction
+- uid: BK.RDAction.Data
+  commentId: N:BK.RDAction.Data
+  name: BK.RDAction.Data
+  nameWithType: BK.RDAction.Data
+  fullName: BK.RDAction.Data
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -539,285 +531,6 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
-- uid: System.Object.Equals(System.Object)
-  commentId: M:System.Object.Equals(System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object)
-  nameWithType: Object.Equals(Object)
-  fullName: System.Object.Equals(System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.Equals(System.Object,System.Object)
-  commentId: M:System.Object.Equals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object, Object)
-  nameWithType: Object.Equals(Object, Object)
-  fullName: System.Object.Equals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  name: GetHashCode()
-  nameWithType: Object.GetHashCode()
-  fullName: System.Object.GetHashCode()
-  spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  name: GetType()
-  nameWithType: Object.GetType()
-  fullName: System.Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  name: MemberwiseClone()
-  nameWithType: Object.MemberwiseClone()
-  fullName: System.Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: ReferenceEquals(Object, Object)
-  nameWithType: Object.ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  nameWithType: Object.ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: System
   commentId: N:System
   isExternal: true
@@ -947,13 +660,13 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: BK.RuntimeDebugAction.RDAction.ResolveAction*
-  commentId: Overload:BK.RuntimeDebugAction.RDAction.ResolveAction
+- uid: BK.RDAction.Data.RDAction.ResolveAction*
+  commentId: Overload:BK.RDAction.Data.RDAction.ResolveAction
   name: ResolveAction
   nameWithType: RDAction.ResolveAction
-  fullName: BK.RuntimeDebugAction.RDAction.ResolveAction
-- uid: BK.RuntimeDebugAction.RDAction.#ctor*
-  commentId: Overload:BK.RuntimeDebugAction.RDAction.#ctor
+  fullName: BK.RDAction.Data.RDAction.ResolveAction
+- uid: BK.RDAction.Data.RDAction.#ctor*
+  commentId: Overload:BK.RDAction.Data.RDAction.#ctor
   name: RDAction
   nameWithType: RDAction.RDAction
-  fullName: BK.RuntimeDebugAction.RDAction.RDAction
+  fullName: BK.RDAction.Data.RDAction.RDAction

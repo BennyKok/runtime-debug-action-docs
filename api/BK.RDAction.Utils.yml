@@ -1,0 +1,128 @@
+### YamlMime:ManagedReference
+items:
+- uid: BK.RDAction.Utils
+  commentId: N:BK.RDAction.Utils
+  id: BK.RDAction.Utils
+  children:
+  - BK.RDAction.Utils.CollapsedEventAttribute
+  - BK.RDAction.Utils.CommentAttribute
+  - BK.RDAction.Utils.ReorderableBase
+  - BK.RDAction.Utils.ReorderableDisplayAttribute
+  - BK.RDAction.Utils.ReorderableList`1
+  - BK.RDAction.Utils.Singleton`1
+  - BK.RDAction.Utils.TitleAttribute
+  langs:
+  - csharp
+  - vb
+  name: BK.RDAction.Utils
+  nameWithType: BK.RDAction.Utils
+  fullName: BK.RDAction.Utils
+  type: Namespace
+  assemblies:
+  - com.bennykok.runtime-debug-action
+references:
+- uid: BK.RDAction.Utils.ReorderableList`1
+  commentId: T:BK.RDAction.Utils.ReorderableList`1
+  name: ReorderableList<U>
+  nameWithType: ReorderableList<U>
+  fullName: BK.RDAction.Utils.ReorderableList<U>
+  nameWithType.vb: ReorderableList(Of U)
+  fullName.vb: BK.RDAction.Utils.ReorderableList(Of U)
+  name.vb: ReorderableList(Of U)
+  spec.csharp:
+  - uid: BK.RDAction.Utils.ReorderableList`1
+    name: ReorderableList
+    nameWithType: ReorderableList
+    fullName: BK.RDAction.Utils.ReorderableList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: U
+    nameWithType: U
+    fullName: U
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: BK.RDAction.Utils.ReorderableList`1
+    name: ReorderableList
+    nameWithType: ReorderableList
+    fullName: BK.RDAction.Utils.ReorderableList
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: U
+    nameWithType: U
+    fullName: U
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BK.RDAction.Utils.ReorderableDisplayAttribute
+  commentId: T:BK.RDAction.Utils.ReorderableDisplayAttribute
+  parent: BK.RDAction.Utils
+  name: ReorderableDisplayAttribute
+  nameWithType: ReorderableDisplayAttribute
+  fullName: BK.RDAction.Utils.ReorderableDisplayAttribute
+- uid: BK.RDAction.Utils.ReorderableBase
+  commentId: T:BK.RDAction.Utils.ReorderableBase
+  parent: BK.RDAction.Utils
+  name: ReorderableBase
+  nameWithType: ReorderableBase
+  fullName: BK.RDAction.Utils.ReorderableBase
+- uid: BK.RDAction.Utils.CollapsedEventAttribute
+  commentId: T:BK.RDAction.Utils.CollapsedEventAttribute
+  name: CollapsedEventAttribute
+  nameWithType: CollapsedEventAttribute
+  fullName: BK.RDAction.Utils.CollapsedEventAttribute
+- uid: BK.RDAction.Utils.CommentAttribute
+  commentId: T:BK.RDAction.Utils.CommentAttribute
+  name: CommentAttribute
+  nameWithType: CommentAttribute
+  fullName: BK.RDAction.Utils.CommentAttribute
+- uid: BK.RDAction.Utils.TitleAttribute
+  commentId: T:BK.RDAction.Utils.TitleAttribute
+  parent: BK.RDAction.Utils
+  name: TitleAttribute
+  nameWithType: TitleAttribute
+  fullName: BK.RDAction.Utils.TitleAttribute
+- uid: BK.RDAction.Utils.Singleton`1
+  commentId: T:BK.RDAction.Utils.Singleton`1
+  name: Singleton<T>
+  nameWithType: Singleton<T>
+  fullName: BK.RDAction.Utils.Singleton<T>
+  nameWithType.vb: Singleton(Of T)
+  fullName.vb: BK.RDAction.Utils.Singleton(Of T)
+  name.vb: Singleton(Of T)
+  spec.csharp:
+  - uid: BK.RDAction.Utils.Singleton`1
+    name: Singleton
+    nameWithType: Singleton
+    fullName: BK.RDAction.Utils.Singleton
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: BK.RDAction.Utils.Singleton`1
+    name: Singleton
+    nameWithType: Singleton
+    fullName: BK.RDAction.Utils.Singleton
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BK.RDAction.Utils
+  commentId: N:BK.RDAction.Utils
+  name: BK.RDAction.Utils
+  nameWithType: BK.RDAction.Utils
+  fullName: BK.RDAction.Utils

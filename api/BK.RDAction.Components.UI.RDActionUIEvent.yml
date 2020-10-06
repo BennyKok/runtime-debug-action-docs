@@ -1,0 +1,229 @@
+### YamlMime:ManagedReference
+items:
+- uid: BK.RDAction.Components.UI.RDActionUIEvent
+  commentId: T:BK.RDAction.Components.UI.RDActionUIEvent
+  id: RDActionUIEvent
+  parent: BK.RDAction.Components.UI
+  children:
+  - BK.RDAction.Components.UI.RDActionUIEvent.onHide
+  - BK.RDAction.Components.UI.RDActionUIEvent.onShow
+  - BK.RDAction.Components.UI.RDActionUIEvent.OnToggle(System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: RDActionUIEvent
+  nameWithType: RDActionUIEvent
+  fullName: BK.RDAction.Components.UI.RDActionUIEvent
+  type: Class
+  source:
+    remote:
+      path: Runtime/Components/UI/RDActionUIEvent.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: RDActionUIEvent
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/RDActionUIEvent.cs
+    startLine: 7
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Components.UI
+  syntax:
+    content: >-
+      [AddComponentMenu("Runtime Debug Action/UI/RD Action UI Event")]
+
+      public class RDActionUIEvent : MonoBehaviour
+    content.vb: >-
+      <AddComponentMenu("Runtime Debug Action/UI/RD Action UI Event")>
+
+      Public Class RDActionUIEvent
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  attributes:
+  - type: UnityEngine.AddComponentMenu
+    ctor: UnityEngine.AddComponentMenu.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Runtime Debug Action/UI/RD Action UI Event
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BK.RDAction.Components.UI.RDActionUIEvent.onShow
+  commentId: F:BK.RDAction.Components.UI.RDActionUIEvent.onShow
+  id: onShow
+  parent: BK.RDAction.Components.UI.RDActionUIEvent
+  langs:
+  - csharp
+  - vb
+  name: onShow
+  nameWithType: RDActionUIEvent.onShow
+  fullName: BK.RDAction.Components.UI.RDActionUIEvent.onShow
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/RDActionUIEvent.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: onShow
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/RDActionUIEvent.cs
+    startLine: 10
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Components.UI
+  syntax:
+    content: public UnityEvent onShow
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: Public onShow As UnityEvent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RDAction.Components.UI.RDActionUIEvent.onHide
+  commentId: F:BK.RDAction.Components.UI.RDActionUIEvent.onHide
+  id: onHide
+  parent: BK.RDAction.Components.UI.RDActionUIEvent
+  langs:
+  - csharp
+  - vb
+  name: onHide
+  nameWithType: RDActionUIEvent.onHide
+  fullName: BK.RDAction.Components.UI.RDActionUIEvent.onHide
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/RDActionUIEvent.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: onHide
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/RDActionUIEvent.cs
+    startLine: 10
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Components.UI
+  syntax:
+    content: public UnityEvent onHide
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: Public onHide As UnityEvent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RDAction.Components.UI.RDActionUIEvent.OnToggle(System.Boolean)
+  commentId: M:BK.RDAction.Components.UI.RDActionUIEvent.OnToggle(System.Boolean)
+  id: OnToggle(System.Boolean)
+  parent: BK.RDAction.Components.UI.RDActionUIEvent
+  langs:
+  - csharp
+  - vb
+  name: OnToggle(Boolean)
+  nameWithType: RDActionUIEvent.OnToggle(Boolean)
+  fullName: BK.RDAction.Components.UI.RDActionUIEvent.OnToggle(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/RDActionUIEvent.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: OnToggle
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/RDActionUIEvent.cs
+    startLine: 16
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Components.UI
+  syntax:
+    content: public void OnToggle(bool isVisible)
+    parameters:
+    - id: isVisible
+      type: System.Boolean
+    content.vb: Public Sub OnToggle(isVisible As Boolean)
+  overload: BK.RDAction.Components.UI.RDActionUIEvent.OnToggle*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BK.RDAction.Components.UI
+  commentId: N:BK.RDAction.Components.UI
+  name: BK.RDAction.Components.UI
+  nameWithType: BK.RDAction.Components.UI
+  fullName: BK.RDAction.Components.UI
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Events.UnityEvent
+  commentId: T:UnityEngine.Events.UnityEvent
+  parent: UnityEngine.Events
+  isExternal: true
+  name: UnityEvent
+  nameWithType: UnityEvent
+  fullName: UnityEngine.Events.UnityEvent
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+- uid: BK.RDAction.Components.UI.RDActionUIEvent.OnToggle*
+  commentId: Overload:BK.RDAction.Components.UI.RDActionUIEvent.OnToggle
+  name: OnToggle
+  nameWithType: RDActionUIEvent.OnToggle
+  fullName: BK.RDAction.Components.UI.RDActionUIEvent.OnToggle
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

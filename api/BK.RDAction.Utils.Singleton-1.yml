@@ -1,0 +1,202 @@
+### YamlMime:ManagedReference
+items:
+- uid: BK.RDAction.Utils.Singleton`1
+  commentId: T:BK.RDAction.Utils.Singleton`1
+  id: Singleton`1
+  parent: BK.RDAction.Utils
+  children:
+  - BK.RDAction.Utils.Singleton`1.Awake
+  - BK.RDAction.Utils.Singleton`1.Instance
+  langs:
+  - csharp
+  - vb
+  name: Singleton<T>
+  nameWithType: Singleton<T>
+  fullName: BK.RDAction.Utils.Singleton<T>
+  type: Class
+  source:
+    remote:
+      path: Runtime/Utils/Singleton.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Singleton
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Utils/Singleton.cs
+    startLine: 4
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Utils
+  syntax:
+    content: 'public class Singleton<T> : MonoBehaviour where T : MonoBehaviour'
+    typeParameters:
+    - id: T
+    content.vb: >-
+      Public Class Singleton(Of T As MonoBehaviour)
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  derivedClasses:
+  - BK.RDAction.Managers.RDActionSystem
+  nameWithType.vb: Singleton(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: BK.RDAction.Utils.Singleton(Of T)
+  name.vb: Singleton(Of T)
+- uid: BK.RDAction.Utils.Singleton`1.Instance
+  commentId: P:BK.RDAction.Utils.Singleton`1.Instance
+  id: Instance
+  parent: BK.RDAction.Utils.Singleton`1
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: Singleton<T>.Instance
+  fullName: BK.RDAction.Utils.Singleton<T>.Instance
+  type: Property
+  source:
+    remote:
+      path: Runtime/Utils/Singleton.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Instance
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Utils/Singleton.cs
+    startLine: 8
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Utils
+  syntax:
+    content: public static T Instance { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public Shared ReadOnly Property Instance As T
+  overload: BK.RDAction.Utils.Singleton`1.Instance*
+  nameWithType.vb: Singleton(Of T).Instance
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  fullName.vb: BK.RDAction.Utils.Singleton(Of T).Instance
+- uid: BK.RDAction.Utils.Singleton`1.Awake
+  commentId: M:BK.RDAction.Utils.Singleton`1.Awake
+  id: Awake
+  parent: BK.RDAction.Utils.Singleton`1
+  langs:
+  - csharp
+  - vb
+  name: Awake()
+  nameWithType: Singleton<T>.Awake()
+  fullName: BK.RDAction.Utils.Singleton<T>.Awake()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Utils/Singleton.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Awake
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Utils/Singleton.cs
+    startLine: 16
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Utils
+  syntax:
+    content: protected virtual void Awake()
+    content.vb: Protected Overridable Sub Awake
+  overload: BK.RDAction.Utils.Singleton`1.Awake*
+  nameWithType.vb: Singleton(Of T).Awake()
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: BK.RDAction.Utils.Singleton(Of T).Awake()
+references:
+- uid: BK.RDAction.Utils
+  commentId: N:BK.RDAction.Utils
+  name: BK.RDAction.Utils
+  nameWithType: BK.RDAction.Utils
+  fullName: BK.RDAction.Utils
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BK.RDAction.Utils.Singleton`1.Instance*
+  commentId: Overload:BK.RDAction.Utils.Singleton`1.Instance
+  name: Instance
+  nameWithType: Singleton<T>.Instance
+  fullName: BK.RDAction.Utils.Singleton<T>.Instance
+  nameWithType.vb: Singleton(Of T).Instance
+  fullName.vb: BK.RDAction.Utils.Singleton(Of T).Instance
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  commentId: '!:T'
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: BK.RDAction.Utils.Singleton`1.Awake*
+  commentId: Overload:BK.RDAction.Utils.Singleton`1.Awake
+  name: Awake
+  nameWithType: Singleton<T>.Awake
+  fullName: BK.RDAction.Utils.Singleton<T>.Awake
+  nameWithType.vb: Singleton(Of T).Awake
+  fullName.vb: BK.RDAction.Utils.Singleton(Of T).Awake

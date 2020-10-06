@@ -1,0 +1,843 @@
+### YamlMime:ManagedReference
+items:
+- uid: BK.RDAction.Managers.RDActionSystem
+  commentId: T:BK.RDAction.Managers.RDActionSystem
+  id: RDActionSystem
+  parent: BK.RDAction.Managers
+  children:
+  - BK.RDAction.Managers.RDActionSystem.actions
+  - BK.RDAction.Managers.RDActionSystem.Awake
+  - BK.RDAction.Managers.RDActionSystem.HasFlag(System.String)
+  - BK.RDAction.Managers.RDActionSystem.Init
+  - BK.RDAction.Managers.RDActionSystem.RegisterActions(BK.RDAction.Data.RDAction[])
+  - BK.RDAction.Managers.RDActionSystem.RegisterActions(System.String,BK.RDAction.Data.RDAction[])
+  - BK.RDAction.Managers.RDActionSystem.runtimeDebugUI
+  - BK.RDAction.Managers.RDActionSystem.settings
+  - BK.RDAction.Managers.RDActionSystem.UnregisterActionByTag(System.String)
+  - BK.RDAction.Managers.RDActionSystem.UnregisterActions(BK.RDAction.Data.RDAction[])
+  langs:
+  - csharp
+  - vb
+  name: RDActionSystem
+  nameWithType: RDActionSystem
+  fullName: BK.RDAction.Managers.RDActionSystem
+  type: Class
+  source:
+    remote:
+      path: Runtime/Managers/RDActionSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: RDActionSystem
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Managers/RDActionSystem.cs
+    startLine: 15
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Managers
+  syntax:
+    content: >-
+      [AddComponentMenu("")]
+
+      public class RDActionSystem : Singleton<RDActionSystem>
+    content.vb: >-
+      <AddComponentMenu("")>
+
+      Public Class RDActionSystem
+          Inherits Singleton(Of RDActionSystem)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - BK.RDAction.Utils.Singleton{BK.RDAction.Managers.RDActionSystem}
+  inheritedMembers:
+  - BK.RDAction.Utils.Singleton{BK.RDAction.Managers.RDActionSystem}.Instance
+  attributes:
+  - type: UnityEngine.AddComponentMenu
+    ctor: UnityEngine.AddComponentMenu.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ''
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BK.RDAction.Managers.RDActionSystem.Init
+  commentId: M:BK.RDAction.Managers.RDActionSystem.Init
+  id: Init
+  parent: BK.RDAction.Managers.RDActionSystem
+  langs:
+  - csharp
+  - vb
+  name: Init()
+  nameWithType: RDActionSystem.Init()
+  fullName: BK.RDAction.Managers.RDActionSystem.Init()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Managers/RDActionSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Init
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Managers/RDActionSystem.cs
+    startLine: 21
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Managers
+  summary: "\nAuto inject the RuntimeDebugSystem into your scene as a singleton\n"
+  example: []
+  syntax:
+    content: >-
+      [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+
+      public static void Init()
+    content.vb: >-
+      <RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)>
+
+      Public Shared Sub Init
+  overload: BK.RDAction.Managers.RDActionSystem.Init*
+  attributes:
+  - type: UnityEngine.RuntimeInitializeOnLoadMethodAttribute
+    ctor: UnityEngine.RuntimeInitializeOnLoadMethodAttribute.#ctor(UnityEngine.RuntimeInitializeLoadType)
+    arguments:
+    - type: UnityEngine.RuntimeInitializeLoadType
+      value: 1
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: BK.RDAction.Managers.RDActionSystem.actions
+  commentId: F:BK.RDAction.Managers.RDActionSystem.actions
+  id: actions
+  parent: BK.RDAction.Managers.RDActionSystem
+  langs:
+  - csharp
+  - vb
+  name: actions
+  nameWithType: RDActionSystem.actions
+  fullName: BK.RDAction.Managers.RDActionSystem.actions
+  type: Field
+  source:
+    remote:
+      path: Runtime/Managers/RDActionSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: actions
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Managers/RDActionSystem.cs
+    startLine: 32
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Managers
+  syntax:
+    content: >-
+      [NonSerialized]
+
+      public List<RDAction> actions
+    return:
+      type: System.Collections.Generic.List{BK.RDAction.Data.RDAction}
+    content.vb: >-
+      <NonSerialized>
+
+      Public actions As List(Of RDAction)
+  attributes:
+  - type: System.NonSerializedAttribute
+    ctor: System.NonSerializedAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RDAction.Managers.RDActionSystem.settings
+  commentId: F:BK.RDAction.Managers.RDActionSystem.settings
+  id: settings
+  parent: BK.RDAction.Managers.RDActionSystem
+  langs:
+  - csharp
+  - vb
+  name: settings
+  nameWithType: RDActionSystem.settings
+  fullName: BK.RDAction.Managers.RDActionSystem.settings
+  type: Field
+  source:
+    remote:
+      path: Runtime/Managers/RDActionSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: settings
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Managers/RDActionSystem.cs
+    startLine: 33
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Managers
+  syntax:
+    content: >-
+      [NonSerialized]
+
+      public RDActionSettings settings
+    return:
+      type: BK.RDAction.Data.RDActionSettings
+    content.vb: >-
+      <NonSerialized>
+
+      Public settings As RDActionSettings
+  attributes:
+  - type: System.NonSerializedAttribute
+    ctor: System.NonSerializedAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RDAction.Managers.RDActionSystem.runtimeDebugUI
+  commentId: F:BK.RDAction.Managers.RDActionSystem.runtimeDebugUI
+  id: runtimeDebugUI
+  parent: BK.RDAction.Managers.RDActionSystem
+  langs:
+  - csharp
+  - vb
+  name: runtimeDebugUI
+  nameWithType: RDActionSystem.runtimeDebugUI
+  fullName: BK.RDAction.Managers.RDActionSystem.runtimeDebugUI
+  type: Field
+  source:
+    remote:
+      path: Runtime/Managers/RDActionSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: runtimeDebugUI
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Managers/RDActionSystem.cs
+    startLine: 34
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Managers
+  syntax:
+    content: >-
+      [NonSerialized]
+
+      public RDActionUI runtimeDebugUI
+    return:
+      type: BK.RDAction.Components.UI.RDActionUI
+    content.vb: >-
+      <NonSerialized>
+
+      Public runtimeDebugUI As RDActionUI
+  attributes:
+  - type: System.NonSerializedAttribute
+    ctor: System.NonSerializedAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RDAction.Managers.RDActionSystem.Awake
+  commentId: M:BK.RDAction.Managers.RDActionSystem.Awake
+  id: Awake
+  parent: BK.RDAction.Managers.RDActionSystem
+  langs:
+  - csharp
+  - vb
+  name: Awake()
+  nameWithType: RDActionSystem.Awake()
+  fullName: BK.RDAction.Managers.RDActionSystem.Awake()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Managers/RDActionSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Awake
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Managers/RDActionSystem.cs
+    startLine: 37
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Managers
+  syntax:
+    content: protected override void Awake()
+    content.vb: Protected Overrides Sub Awake
+  overridden: BK.RDAction.Utils.Singleton{BK.RDAction.Managers.RDActionSystem}.Awake
+  overload: BK.RDAction.Managers.RDActionSystem.Awake*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: BK.RDAction.Managers.RDActionSystem.HasFlag(System.String)
+  commentId: M:BK.RDAction.Managers.RDActionSystem.HasFlag(System.String)
+  id: HasFlag(System.String)
+  parent: BK.RDAction.Managers.RDActionSystem
+  langs:
+  - csharp
+  - vb
+  name: HasFlag(String)
+  nameWithType: RDActionSystem.HasFlag(String)
+  fullName: BK.RDAction.Managers.RDActionSystem.HasFlag(System.String)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Managers/RDActionSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: HasFlag
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Managers/RDActionSystem.cs
+    startLine: 199
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Managers
+  syntax:
+    content: public static bool HasFlag(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function HasFlag(name As String) As Boolean
+  overload: BK.RDAction.Managers.RDActionSystem.HasFlag*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: BK.RDAction.Managers.RDActionSystem.RegisterActions(System.String,BK.RDAction.Data.RDAction[])
+  commentId: M:BK.RDAction.Managers.RDActionSystem.RegisterActions(System.String,BK.RDAction.Data.RDAction[])
+  id: RegisterActions(System.String,BK.RDAction.Data.RDAction[])
+  parent: BK.RDAction.Managers.RDActionSystem
+  langs:
+  - csharp
+  - vb
+  name: RegisterActions(String, RDAction[])
+  nameWithType: RDActionSystem.RegisterActions(String, RDAction[])
+  fullName: BK.RDAction.Managers.RDActionSystem.RegisterActions(System.String, BK.RDAction.Data.RDAction[])
+  type: Method
+  source:
+    remote:
+      path: Runtime/Managers/RDActionSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: RegisterActions
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Managers/RDActionSystem.cs
+    startLine: 210
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Managers
+  syntax:
+    content: public static void RegisterActions(string tag, params RDAction[] list)
+    parameters:
+    - id: tag
+      type: System.String
+    - id: list
+      type: BK.RDAction.Data.RDAction[]
+    content.vb: Public Shared Sub RegisterActions(tag As String, ParamArray list As RDAction())
+  overload: BK.RDAction.Managers.RDActionSystem.RegisterActions*
+  nameWithType.vb: RDActionSystem.RegisterActions(String, RDAction())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: BK.RDAction.Managers.RDActionSystem.RegisterActions(System.String, BK.RDAction.Data.RDAction())
+  name.vb: RegisterActions(String, RDAction())
+- uid: BK.RDAction.Managers.RDActionSystem.RegisterActions(BK.RDAction.Data.RDAction[])
+  commentId: M:BK.RDAction.Managers.RDActionSystem.RegisterActions(BK.RDAction.Data.RDAction[])
+  id: RegisterActions(BK.RDAction.Data.RDAction[])
+  parent: BK.RDAction.Managers.RDActionSystem
+  langs:
+  - csharp
+  - vb
+  name: RegisterActions(RDAction[])
+  nameWithType: RDActionSystem.RegisterActions(RDAction[])
+  fullName: BK.RDAction.Managers.RDActionSystem.RegisterActions(BK.RDAction.Data.RDAction[])
+  type: Method
+  source:
+    remote:
+      path: Runtime/Managers/RDActionSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: RegisterActions
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Managers/RDActionSystem.cs
+    startLine: 218
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Managers
+  syntax:
+    content: public static void RegisterActions(params RDAction[] list)
+    parameters:
+    - id: list
+      type: BK.RDAction.Data.RDAction[]
+    content.vb: Public Shared Sub RegisterActions(ParamArray list As RDAction())
+  overload: BK.RDAction.Managers.RDActionSystem.RegisterActions*
+  nameWithType.vb: RDActionSystem.RegisterActions(RDAction())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: BK.RDAction.Managers.RDActionSystem.RegisterActions(BK.RDAction.Data.RDAction())
+  name.vb: RegisterActions(RDAction())
+- uid: BK.RDAction.Managers.RDActionSystem.UnregisterActionByTag(System.String)
+  commentId: M:BK.RDAction.Managers.RDActionSystem.UnregisterActionByTag(System.String)
+  id: UnregisterActionByTag(System.String)
+  parent: BK.RDAction.Managers.RDActionSystem
+  langs:
+  - csharp
+  - vb
+  name: UnregisterActionByTag(String)
+  nameWithType: RDActionSystem.UnregisterActionByTag(String)
+  fullName: BK.RDAction.Managers.RDActionSystem.UnregisterActionByTag(System.String)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Managers/RDActionSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: UnregisterActionByTag
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Managers/RDActionSystem.cs
+    startLine: 227
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Managers
+  syntax:
+    content: public static void UnregisterActionByTag(string tag)
+    parameters:
+    - id: tag
+      type: System.String
+    content.vb: Public Shared Sub UnregisterActionByTag(tag As String)
+  overload: BK.RDAction.Managers.RDActionSystem.UnregisterActionByTag*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: BK.RDAction.Managers.RDActionSystem.UnregisterActions(BK.RDAction.Data.RDAction[])
+  commentId: M:BK.RDAction.Managers.RDActionSystem.UnregisterActions(BK.RDAction.Data.RDAction[])
+  id: UnregisterActions(BK.RDAction.Data.RDAction[])
+  parent: BK.RDAction.Managers.RDActionSystem
+  langs:
+  - csharp
+  - vb
+  name: UnregisterActions(RDAction[])
+  nameWithType: RDActionSystem.UnregisterActions(RDAction[])
+  fullName: BK.RDAction.Managers.RDActionSystem.UnregisterActions(BK.RDAction.Data.RDAction[])
+  type: Method
+  source:
+    remote:
+      path: Runtime/Managers/RDActionSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: UnregisterActions
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Managers/RDActionSystem.cs
+    startLine: 240
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Managers
+  syntax:
+    content: public static void UnregisterActions(params RDAction[] list)
+    parameters:
+    - id: list
+      type: BK.RDAction.Data.RDAction[]
+    content.vb: Public Shared Sub UnregisterActions(ParamArray list As RDAction())
+  overload: BK.RDAction.Managers.RDActionSystem.UnregisterActions*
+  nameWithType.vb: RDActionSystem.UnregisterActions(RDAction())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: BK.RDAction.Managers.RDActionSystem.UnregisterActions(BK.RDAction.Data.RDAction())
+  name.vb: UnregisterActions(RDAction())
+references:
+- uid: BK.RDAction.Managers
+  commentId: N:BK.RDAction.Managers
+  name: BK.RDAction.Managers
+  nameWithType: BK.RDAction.Managers
+  fullName: BK.RDAction.Managers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: BK.RDAction.Utils.Singleton{BK.RDAction.Managers.RDActionSystem}
+  commentId: T:BK.RDAction.Utils.Singleton{BK.RDAction.Managers.RDActionSystem}
+  parent: BK.RDAction.Utils
+  definition: BK.RDAction.Utils.Singleton`1
+  name: Singleton<RDActionSystem>
+  nameWithType: Singleton<RDActionSystem>
+  fullName: BK.RDAction.Utils.Singleton<BK.RDAction.Managers.RDActionSystem>
+  nameWithType.vb: Singleton(Of RDActionSystem)
+  fullName.vb: BK.RDAction.Utils.Singleton(Of BK.RDAction.Managers.RDActionSystem)
+  name.vb: Singleton(Of RDActionSystem)
+  spec.csharp:
+  - uid: BK.RDAction.Utils.Singleton`1
+    name: Singleton
+    nameWithType: Singleton
+    fullName: BK.RDAction.Utils.Singleton
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BK.RDAction.Managers.RDActionSystem
+    name: RDActionSystem
+    nameWithType: RDActionSystem
+    fullName: BK.RDAction.Managers.RDActionSystem
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: BK.RDAction.Utils.Singleton`1
+    name: Singleton
+    nameWithType: Singleton
+    fullName: BK.RDAction.Utils.Singleton
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BK.RDAction.Managers.RDActionSystem
+    name: RDActionSystem
+    nameWithType: RDActionSystem
+    fullName: BK.RDAction.Managers.RDActionSystem
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BK.RDAction.Utils.Singleton{BK.RDAction.Managers.RDActionSystem}.Instance
+  commentId: P:BK.RDAction.Utils.Singleton{BK.RDAction.Managers.RDActionSystem}.Instance
+  parent: BK.RDAction.Utils.Singleton{BK.RDAction.Managers.RDActionSystem}
+  definition: BK.RDAction.Utils.Singleton`1.Instance
+  name: Instance
+  nameWithType: Singleton<RDActionSystem>.Instance
+  fullName: BK.RDAction.Utils.Singleton<BK.RDAction.Managers.RDActionSystem>.Instance
+  nameWithType.vb: Singleton(Of RDActionSystem).Instance
+  fullName.vb: BK.RDAction.Utils.Singleton(Of BK.RDAction.Managers.RDActionSystem).Instance
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BK.RDAction.Utils.Singleton`1
+  commentId: T:BK.RDAction.Utils.Singleton`1
+  name: Singleton<T>
+  nameWithType: Singleton<T>
+  fullName: BK.RDAction.Utils.Singleton<T>
+  nameWithType.vb: Singleton(Of T)
+  fullName.vb: BK.RDAction.Utils.Singleton(Of T)
+  name.vb: Singleton(Of T)
+  spec.csharp:
+  - uid: BK.RDAction.Utils.Singleton`1
+    name: Singleton
+    nameWithType: Singleton
+    fullName: BK.RDAction.Utils.Singleton
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: BK.RDAction.Utils.Singleton`1
+    name: Singleton
+    nameWithType: Singleton
+    fullName: BK.RDAction.Utils.Singleton
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BK.RDAction.Utils
+  commentId: N:BK.RDAction.Utils
+  name: BK.RDAction.Utils
+  nameWithType: BK.RDAction.Utils
+  fullName: BK.RDAction.Utils
+- uid: BK.RDAction.Utils.Singleton`1.Instance
+  commentId: P:BK.RDAction.Utils.Singleton`1.Instance
+  name: Instance
+  nameWithType: Singleton<T>.Instance
+  fullName: BK.RDAction.Utils.Singleton<T>.Instance
+  nameWithType.vb: Singleton(Of T).Instance
+  fullName.vb: BK.RDAction.Utils.Singleton(Of T).Instance
+- uid: BK.RDAction.Managers.RDActionSystem.Init*
+  commentId: Overload:BK.RDAction.Managers.RDActionSystem.Init
+  name: Init
+  nameWithType: RDActionSystem.Init
+  fullName: BK.RDAction.Managers.RDActionSystem.Init
+- uid: System.Collections.Generic.List{BK.RDAction.Data.RDAction}
+  commentId: T:System.Collections.Generic.List{BK.RDAction.Data.RDAction}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<RDAction>
+  nameWithType: List<RDAction>
+  fullName: System.Collections.Generic.List<BK.RDAction.Data.RDAction>
+  nameWithType.vb: List(Of RDAction)
+  fullName.vb: System.Collections.Generic.List(Of BK.RDAction.Data.RDAction)
+  name.vb: List(Of RDAction)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BK.RDAction.Data.RDAction
+    name: RDAction
+    nameWithType: RDAction
+    fullName: BK.RDAction.Data.RDAction
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BK.RDAction.Data.RDAction
+    name: RDAction
+    nameWithType: RDAction
+    fullName: BK.RDAction.Data.RDAction
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: BK.RDAction.Data.RDActionSettings
+  commentId: T:BK.RDAction.Data.RDActionSettings
+  parent: BK.RDAction.Data
+  name: RDActionSettings
+  nameWithType: RDActionSettings
+  fullName: BK.RDAction.Data.RDActionSettings
+- uid: BK.RDAction.Data
+  commentId: N:BK.RDAction.Data
+  name: BK.RDAction.Data
+  nameWithType: BK.RDAction.Data
+  fullName: BK.RDAction.Data
+- uid: BK.RDAction.Components.UI.RDActionUI
+  commentId: T:BK.RDAction.Components.UI.RDActionUI
+  parent: BK.RDAction.Components.UI
+  name: RDActionUI
+  nameWithType: RDActionUI
+  fullName: BK.RDAction.Components.UI.RDActionUI
+- uid: BK.RDAction.Components.UI
+  commentId: N:BK.RDAction.Components.UI
+  name: BK.RDAction.Components.UI
+  nameWithType: BK.RDAction.Components.UI
+  fullName: BK.RDAction.Components.UI
+- uid: BK.RDAction.Utils.Singleton{BK.RDAction.Managers.RDActionSystem}.Awake
+  commentId: M:BK.RDAction.Utils.Singleton{BK.RDAction.Managers.RDActionSystem}.Awake
+  parent: BK.RDAction.Utils.Singleton{BK.RDAction.Managers.RDActionSystem}
+  definition: BK.RDAction.Utils.Singleton`1.Awake
+  name: Awake()
+  nameWithType: Singleton<RDActionSystem>.Awake()
+  fullName: BK.RDAction.Utils.Singleton<BK.RDAction.Managers.RDActionSystem>.Awake()
+  nameWithType.vb: Singleton(Of RDActionSystem).Awake()
+  fullName.vb: BK.RDAction.Utils.Singleton(Of BK.RDAction.Managers.RDActionSystem).Awake()
+  spec.csharp:
+  - uid: BK.RDAction.Utils.Singleton`1.Awake
+    name: Awake
+    nameWithType: Singleton<RDActionSystem>.Awake
+    fullName: BK.RDAction.Utils.Singleton<BK.RDAction.Managers.RDActionSystem>.Awake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BK.RDAction.Utils.Singleton`1.Awake
+    name: Awake
+    nameWithType: Singleton(Of RDActionSystem).Awake
+    fullName: BK.RDAction.Utils.Singleton(Of BK.RDAction.Managers.RDActionSystem).Awake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BK.RDAction.Managers.RDActionSystem.Awake*
+  commentId: Overload:BK.RDAction.Managers.RDActionSystem.Awake
+  name: Awake
+  nameWithType: RDActionSystem.Awake
+  fullName: BK.RDAction.Managers.RDActionSystem.Awake
+- uid: BK.RDAction.Utils.Singleton`1.Awake
+  commentId: M:BK.RDAction.Utils.Singleton`1.Awake
+  name: Awake()
+  nameWithType: Singleton<T>.Awake()
+  fullName: BK.RDAction.Utils.Singleton<T>.Awake()
+  nameWithType.vb: Singleton(Of T).Awake()
+  fullName.vb: BK.RDAction.Utils.Singleton(Of T).Awake()
+  spec.csharp:
+  - uid: BK.RDAction.Utils.Singleton`1.Awake
+    name: Awake
+    nameWithType: Singleton<T>.Awake
+    fullName: BK.RDAction.Utils.Singleton<T>.Awake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BK.RDAction.Utils.Singleton`1.Awake
+    name: Awake
+    nameWithType: Singleton(Of T).Awake
+    fullName: BK.RDAction.Utils.Singleton(Of T).Awake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BK.RDAction.Managers.RDActionSystem.HasFlag*
+  commentId: Overload:BK.RDAction.Managers.RDActionSystem.HasFlag
+  name: HasFlag
+  nameWithType: RDActionSystem.HasFlag
+  fullName: BK.RDAction.Managers.RDActionSystem.HasFlag
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: BK.RDAction.Managers.RDActionSystem.RegisterActions*
+  commentId: Overload:BK.RDAction.Managers.RDActionSystem.RegisterActions
+  name: RegisterActions
+  nameWithType: RDActionSystem.RegisterActions
+  fullName: BK.RDAction.Managers.RDActionSystem.RegisterActions
+- uid: BK.RDAction.Data.RDAction[]
+  isExternal: true
+  name: RDAction[]
+  nameWithType: RDAction[]
+  fullName: BK.RDAction.Data.RDAction[]
+  nameWithType.vb: RDAction()
+  fullName.vb: BK.RDAction.Data.RDAction()
+  name.vb: RDAction()
+  spec.csharp:
+  - uid: BK.RDAction.Data.RDAction
+    name: RDAction
+    nameWithType: RDAction
+    fullName: BK.RDAction.Data.RDAction
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: BK.RDAction.Data.RDAction
+    name: RDAction
+    nameWithType: RDAction
+    fullName: BK.RDAction.Data.RDAction
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: BK.RDAction.Managers.RDActionSystem.UnregisterActionByTag*
+  commentId: Overload:BK.RDAction.Managers.RDActionSystem.UnregisterActionByTag
+  name: UnregisterActionByTag
+  nameWithType: RDActionSystem.UnregisterActionByTag
+  fullName: BK.RDAction.Managers.RDActionSystem.UnregisterActionByTag
+- uid: BK.RDAction.Managers.RDActionSystem.UnregisterActions*
+  commentId: Overload:BK.RDAction.Managers.RDActionSystem.UnregisterActions
+  name: UnregisterActions
+  nameWithType: RDActionSystem.UnregisterActions
+  fullName: BK.RDAction.Managers.RDActionSystem.UnregisterActions

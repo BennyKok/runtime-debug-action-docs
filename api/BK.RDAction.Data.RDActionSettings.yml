@@ -1,0 +1,582 @@
+### YamlMime:ManagedReference
+items:
+- uid: BK.RDAction.Data.RDActionSettings
+  commentId: T:BK.RDAction.Data.RDActionSettings
+  id: RDActionSettings
+  parent: BK.RDAction.Data
+  children:
+  - BK.RDAction.Data.RDActionSettings.addLoadSceneOptions
+  - BK.RDAction.Data.RDActionSettings.addQualityOptions
+  - BK.RDAction.Data.RDActionSettings.enabled
+  - BK.RDAction.Data.RDActionSettings.globalFlags
+  - BK.RDAction.Data.RDActionSettings.hideCursorOnStart
+  - BK.RDAction.Data.RDActionSettings.interfacePrefab
+  - BK.RDAction.Data.RDActionSettings.IsShowTouchToggle
+  - BK.RDAction.Data.RDActionSettings.menuKey
+  - BK.RDAction.Data.RDActionSettings.settingsAssetName
+  - BK.RDAction.Data.RDActionSettings.settingsFolderPath
+  - BK.RDAction.Data.RDActionSettings.settingsPath
+  - BK.RDAction.Data.RDActionSettings.touchToggleMode
+  langs:
+  - csharp
+  - vb
+  name: RDActionSettings
+  nameWithType: RDActionSettings
+  fullName: BK.RDAction.Data.RDActionSettings
+  type: Class
+  source:
+    remote:
+      path: Runtime/Data/RDActionSettings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: RDActionSettings
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDActionSettings.cs
+    startLine: 13
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Data
+  syntax:
+    content: 'public class RDActionSettings : ScriptableObject'
+    content.vb: >-
+      Public Class RDActionSettings
+          Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BK.RDAction.Data.RDActionSettings.settingsAssetName
+  commentId: F:BK.RDAction.Data.RDActionSettings.settingsAssetName
+  id: settingsAssetName
+  parent: BK.RDAction.Data.RDActionSettings
+  langs:
+  - csharp
+  - vb
+  name: settingsAssetName
+  nameWithType: RDActionSettings.settingsAssetName
+  fullName: BK.RDAction.Data.RDActionSettings.settingsAssetName
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/RDActionSettings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: settingsAssetName
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDActionSettings.cs
+    startLine: 16
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Data
+  syntax:
+    content: public const string settingsAssetName = "RDActionSettings"
+    return:
+      type: System.String
+    content.vb: Public Const settingsAssetName As String = "RDActionSettings"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BK.RDAction.Data.RDActionSettings.settingsFolderPath
+  commentId: F:BK.RDAction.Data.RDActionSettings.settingsFolderPath
+  id: settingsFolderPath
+  parent: BK.RDAction.Data.RDActionSettings
+  langs:
+  - csharp
+  - vb
+  name: settingsFolderPath
+  nameWithType: RDActionSettings.settingsFolderPath
+  fullName: BK.RDAction.Data.RDActionSettings.settingsFolderPath
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/RDActionSettings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: settingsFolderPath
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDActionSettings.cs
+    startLine: 18
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Data
+  syntax:
+    content: public const string settingsFolderPath = "Assets/Resources/"
+    return:
+      type: System.String
+    content.vb: Public Const settingsFolderPath As String = "Assets/Resources/"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BK.RDAction.Data.RDActionSettings.settingsPath
+  commentId: F:BK.RDAction.Data.RDActionSettings.settingsPath
+  id: settingsPath
+  parent: BK.RDAction.Data.RDActionSettings
+  langs:
+  - csharp
+  - vb
+  name: settingsPath
+  nameWithType: RDActionSettings.settingsPath
+  fullName: BK.RDAction.Data.RDActionSettings.settingsPath
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/RDActionSettings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: settingsPath
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDActionSettings.cs
+    startLine: 20
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Data
+  syntax:
+    content: public const string settingsPath = "Assets/Resources/RDActionSettings.asset"
+    return:
+      type: System.String
+    content.vb: Public Const settingsPath As String = "Assets/Resources/RDActionSettings.asset"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BK.RDAction.Data.RDActionSettings.enabled
+  commentId: F:BK.RDAction.Data.RDActionSettings.enabled
+  id: enabled
+  parent: BK.RDAction.Data.RDActionSettings
+  langs:
+  - csharp
+  - vb
+  name: enabled
+  nameWithType: RDActionSettings.enabled
+  fullName: BK.RDAction.Data.RDActionSettings.enabled
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/RDActionSettings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: enabled
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDActionSettings.cs
+    startLine: 26
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Data
+  syntax:
+    content: >-
+      [Title("Setup", false, 0)]
+
+      public bool enabled
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Title("Setup", False, 0)>
+
+      Public enabled As Boolean
+  attributes:
+  - type: BK.RDAction.Utils.TitleAttribute
+    ctor: BK.RDAction.Utils.TitleAttribute.#ctor(System.String,System.Boolean,System.Int32)
+    arguments:
+    - type: System.String
+      value: Setup
+    - type: System.Boolean
+      value: false
+    - type: System.Int32
+      value: 0
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RDAction.Data.RDActionSettings.interfacePrefab
+  commentId: F:BK.RDAction.Data.RDActionSettings.interfacePrefab
+  id: interfacePrefab
+  parent: BK.RDAction.Data.RDActionSettings
+  langs:
+  - csharp
+  - vb
+  name: interfacePrefab
+  nameWithType: RDActionSettings.interfacePrefab
+  fullName: BK.RDAction.Data.RDActionSettings.interfacePrefab
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/RDActionSettings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: interfacePrefab
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDActionSettings.cs
+    startLine: 27
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Data
+  syntax:
+    content: public GameObject interfacePrefab
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public interfacePrefab As GameObject
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RDAction.Data.RDActionSettings.menuKey
+  commentId: F:BK.RDAction.Data.RDActionSettings.menuKey
+  id: menuKey
+  parent: BK.RDAction.Data.RDActionSettings
+  langs:
+  - csharp
+  - vb
+  name: menuKey
+  nameWithType: RDActionSettings.menuKey
+  fullName: BK.RDAction.Data.RDActionSettings.menuKey
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/RDActionSettings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: menuKey
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDActionSettings.cs
+    startLine: 31
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Data
+  syntax:
+    content: >-
+      [Title("Interaction", 0)]
+
+      public KeyCode menuKey
+    return:
+      type: UnityEngine.KeyCode
+    content.vb: >-
+      <Title("Interaction", 0)>
+
+      Public menuKey As KeyCode
+  attributes:
+  - type: BK.RDAction.Utils.TitleAttribute
+    ctor: BK.RDAction.Utils.TitleAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: Interaction
+    - type: System.Int32
+      value: 0
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RDAction.Data.RDActionSettings.touchToggleMode
+  commentId: F:BK.RDAction.Data.RDActionSettings.touchToggleMode
+  id: touchToggleMode
+  parent: BK.RDAction.Data.RDActionSettings
+  langs:
+  - csharp
+  - vb
+  name: touchToggleMode
+  nameWithType: RDActionSettings.touchToggleMode
+  fullName: BK.RDAction.Data.RDActionSettings.touchToggleMode
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/RDActionSettings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: touchToggleMode
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDActionSettings.cs
+    startLine: 33
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Data
+  syntax:
+    content: public RDActionSettings.TouchToggleMode touchToggleMode
+    return:
+      type: BK.RDAction.Data.RDActionSettings.TouchToggleMode
+    content.vb: Public touchToggleMode As RDActionSettings.TouchToggleMode
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RDAction.Data.RDActionSettings.hideCursorOnStart
+  commentId: F:BK.RDAction.Data.RDActionSettings.hideCursorOnStart
+  id: hideCursorOnStart
+  parent: BK.RDAction.Data.RDActionSettings
+  langs:
+  - csharp
+  - vb
+  name: hideCursorOnStart
+  nameWithType: RDActionSettings.hideCursorOnStart
+  fullName: BK.RDAction.Data.RDActionSettings.hideCursorOnStart
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/RDActionSettings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: hideCursorOnStart
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDActionSettings.cs
+    startLine: 35
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Data
+  syntax:
+    content: public bool hideCursorOnStart
+    return:
+      type: System.Boolean
+    content.vb: Public hideCursorOnStart As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RDAction.Data.RDActionSettings.addQualityOptions
+  commentId: F:BK.RDAction.Data.RDActionSettings.addQualityOptions
+  id: addQualityOptions
+  parent: BK.RDAction.Data.RDActionSettings
+  langs:
+  - csharp
+  - vb
+  name: addQualityOptions
+  nameWithType: RDActionSettings.addQualityOptions
+  fullName: BK.RDAction.Data.RDActionSettings.addQualityOptions
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/RDActionSettings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: addQualityOptions
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDActionSettings.cs
+    startLine: 39
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Data
+  syntax:
+    content: >-
+      [Title("Default Menu", 0)]
+
+      public bool addQualityOptions
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Title("Default Menu", 0)>
+
+      Public addQualityOptions As Boolean
+  attributes:
+  - type: BK.RDAction.Utils.TitleAttribute
+    ctor: BK.RDAction.Utils.TitleAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: Default Menu
+    - type: System.Int32
+      value: 0
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RDAction.Data.RDActionSettings.addLoadSceneOptions
+  commentId: F:BK.RDAction.Data.RDActionSettings.addLoadSceneOptions
+  id: addLoadSceneOptions
+  parent: BK.RDAction.Data.RDActionSettings
+  langs:
+  - csharp
+  - vb
+  name: addLoadSceneOptions
+  nameWithType: RDActionSettings.addLoadSceneOptions
+  fullName: BK.RDAction.Data.RDActionSettings.addLoadSceneOptions
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/RDActionSettings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: addLoadSceneOptions
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDActionSettings.cs
+    startLine: 40
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Data
+  syntax:
+    content: public bool addLoadSceneOptions
+    return:
+      type: System.Boolean
+    content.vb: Public addLoadSceneOptions As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RDAction.Data.RDActionSettings.globalFlags
+  commentId: F:BK.RDAction.Data.RDActionSettings.globalFlags
+  id: globalFlags
+  parent: BK.RDAction.Data.RDActionSettings
+  langs:
+  - csharp
+  - vb
+  name: globalFlags
+  nameWithType: RDActionSettings.globalFlags
+  fullName: BK.RDAction.Data.RDActionSettings.globalFlags
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/RDActionSettings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: globalFlags
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDActionSettings.cs
+    startLine: 45
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Data
+  syntax:
+    content: >-
+      [Title("Debug Flags", 0)]
+
+      [ReorderableDisplay("Flag")]
+
+      public RDFlagsList globalFlags
+    return:
+      type: BK.RDAction.Data.RDFlagsList
+    content.vb: >-
+      <Title("Debug Flags", 0)>
+
+      <ReorderableDisplay("Flag")>
+
+      Public globalFlags As RDFlagsList
+  attributes:
+  - type: BK.RDAction.Utils.TitleAttribute
+    ctor: BK.RDAction.Utils.TitleAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: Debug Flags
+    - type: System.Int32
+      value: 0
+  - type: BK.RDAction.Utils.ReorderableDisplayAttribute
+    ctor: BK.RDAction.Utils.ReorderableDisplayAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Flag
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RDAction.Data.RDActionSettings.IsShowTouchToggle
+  commentId: M:BK.RDAction.Data.RDActionSettings.IsShowTouchToggle
+  id: IsShowTouchToggle
+  parent: BK.RDAction.Data.RDActionSettings
+  langs:
+  - csharp
+  - vb
+  name: IsShowTouchToggle()
+  nameWithType: RDActionSettings.IsShowTouchToggle()
+  fullName: BK.RDAction.Data.RDActionSettings.IsShowTouchToggle()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Data/RDActionSettings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: IsShowTouchToggle
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDActionSettings.cs
+    startLine: 54
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Data
+  syntax:
+    content: public bool IsShowTouchToggle()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsShowTouchToggle As Boolean
+  overload: BK.RDAction.Data.RDActionSettings.IsShowTouchToggle*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BK.RDAction.Data
+  commentId: N:BK.RDAction.Data
+  name: BK.RDAction.Data
+  nameWithType: BK.RDAction.Data
+  fullName: BK.RDAction.Data
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine.KeyCode
+  commentId: T:UnityEngine.KeyCode
+  parent: UnityEngine
+  isExternal: true
+  name: KeyCode
+  nameWithType: KeyCode
+  fullName: UnityEngine.KeyCode
+- uid: BK.RDAction.Data.RDActionSettings.TouchToggleMode
+  commentId: T:BK.RDAction.Data.RDActionSettings.TouchToggleMode
+  parent: BK.RDAction.Data
+  name: RDActionSettings.TouchToggleMode
+  nameWithType: RDActionSettings.TouchToggleMode
+  fullName: BK.RDAction.Data.RDActionSettings.TouchToggleMode
+- uid: BK.RDAction.Data.RDFlagsList
+  commentId: T:BK.RDAction.Data.RDFlagsList
+  parent: BK.RDAction.Data
+  name: RDFlagsList
+  nameWithType: RDFlagsList
+  fullName: BK.RDAction.Data.RDFlagsList
+- uid: BK.RDAction.Data.RDActionSettings.IsShowTouchToggle*
+  commentId: Overload:BK.RDAction.Data.RDActionSettings.IsShowTouchToggle
+  name: IsShowTouchToggle
+  nameWithType: RDActionSettings.IsShowTouchToggle
+  fullName: BK.RDAction.Data.RDActionSettings.IsShowTouchToggle

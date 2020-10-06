@@ -1,0 +1,41 @@
+### YamlMime:ManagedReference
+items:
+- uid: BK.RDAction.Components.UI
+  commentId: N:BK.RDAction.Components.UI
+  id: BK.RDAction.Components.UI
+  children:
+  - BK.RDAction.Components.UI.RDActionUI
+  - BK.RDAction.Components.UI.RDActionUIEvent
+  - BK.RDAction.Components.UI.RDActionUIView
+  langs:
+  - csharp
+  - vb
+  name: BK.RDAction.Components.UI
+  nameWithType: BK.RDAction.Components.UI
+  fullName: BK.RDAction.Components.UI
+  type: Namespace
+  assemblies:
+  - com.bennykok.runtime-debug-action
+references:
+- uid: BK.RDAction.Components.UI.RDActionUI
+  commentId: T:BK.RDAction.Components.UI.RDActionUI
+  parent: BK.RDAction.Components.UI
+  name: RDActionUI
+  nameWithType: RDActionUI
+  fullName: BK.RDAction.Components.UI.RDActionUI
+- uid: BK.RDAction.Components.UI.RDActionUIEvent
+  commentId: T:BK.RDAction.Components.UI.RDActionUIEvent
+  name: RDActionUIEvent
+  nameWithType: RDActionUIEvent
+  fullName: BK.RDAction.Components.UI.RDActionUIEvent
+- uid: BK.RDAction.Components.UI.RDActionUIView
+  commentId: T:BK.RDAction.Components.UI.RDActionUIView
+  parent: BK.RDAction.Components.UI
+  name: RDActionUIView
+  nameWithType: RDActionUIView
+  fullName: BK.RDAction.Components.UI.RDActionUIView
+- uid: BK.RDAction.Components.UI
+  commentId: N:BK.RDAction.Components.UI
+  name: BK.RDAction.Components.UI
+  nameWithType: BK.RDAction.Components.UI
+  fullName: BK.RDAction.Components.UI

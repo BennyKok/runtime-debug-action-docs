@@ -1,0 +1,428 @@
+### YamlMime:ManagedReference
+items:
+- uid: BK.RDAction.Utils.TitleAttribute
+  commentId: T:BK.RDAction.Utils.TitleAttribute
+  id: TitleAttribute
+  parent: BK.RDAction.Utils
+  children:
+  - BK.RDAction.Utils.TitleAttribute.#ctor(System.String)
+  - BK.RDAction.Utils.TitleAttribute.#ctor(System.String,System.Boolean)
+  - BK.RDAction.Utils.TitleAttribute.#ctor(System.String,System.Boolean,System.Int32)
+  - BK.RDAction.Utils.TitleAttribute.#ctor(System.String,System.Int32)
+  - BK.RDAction.Utils.TitleAttribute.color
+  - BK.RDAction.Utils.TitleAttribute.HtmlToColor(System.String)
+  - BK.RDAction.Utils.TitleAttribute.spacingTop
+  - BK.RDAction.Utils.TitleAttribute.text
+  - BK.RDAction.Utils.TitleAttribute.useColor
+  langs:
+  - csharp
+  - vb
+  name: TitleAttribute
+  nameWithType: TitleAttribute
+  fullName: BK.RDAction.Utils.TitleAttribute
+  type: Class
+  source:
+    remote:
+      path: Runtime/Utils/AttributeUtils.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: TitleAttribute
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Utils/AttributeUtils.cs
+    startLine: 65
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Utils
+  syntax:
+    content: 'public class TitleAttribute : PropertyAttribute, _Attribute'
+    content.vb: >-
+      Public Class TitleAttribute
+          Inherits PropertyAttribute
+          Implements _Attribute
+  inheritance:
+  - System.Object
+  - System.Attribute
+  - UnityEngine.PropertyAttribute
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BK.RDAction.Utils.TitleAttribute.text
+  commentId: F:BK.RDAction.Utils.TitleAttribute.text
+  id: text
+  parent: BK.RDAction.Utils.TitleAttribute
+  langs:
+  - csharp
+  - vb
+  name: text
+  nameWithType: TitleAttribute.text
+  fullName: BK.RDAction.Utils.TitleAttribute.text
+  type: Field
+  source:
+    remote:
+      path: Runtime/Utils/AttributeUtils.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: text
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Utils/AttributeUtils.cs
+    startLine: 67
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Utils
+  syntax:
+    content: public string text
+    return:
+      type: System.String
+    content.vb: Public text As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RDAction.Utils.TitleAttribute.color
+  commentId: F:BK.RDAction.Utils.TitleAttribute.color
+  id: color
+  parent: BK.RDAction.Utils.TitleAttribute
+  langs:
+  - csharp
+  - vb
+  name: color
+  nameWithType: TitleAttribute.color
+  fullName: BK.RDAction.Utils.TitleAttribute.color
+  type: Field
+  source:
+    remote:
+      path: Runtime/Utils/AttributeUtils.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: color
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Utils/AttributeUtils.cs
+    startLine: 68
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Utils
+  syntax:
+    content: public Color color
+    return:
+      type: UnityEngine.Color
+    content.vb: Public color As Color
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RDAction.Utils.TitleAttribute.spacingTop
+  commentId: F:BK.RDAction.Utils.TitleAttribute.spacingTop
+  id: spacingTop
+  parent: BK.RDAction.Utils.TitleAttribute
+  langs:
+  - csharp
+  - vb
+  name: spacingTop
+  nameWithType: TitleAttribute.spacingTop
+  fullName: BK.RDAction.Utils.TitleAttribute.spacingTop
+  type: Field
+  source:
+    remote:
+      path: Runtime/Utils/AttributeUtils.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: spacingTop
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Utils/AttributeUtils.cs
+    startLine: 69
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Utils
+  syntax:
+    content: public bool spacingTop
+    return:
+      type: System.Boolean
+    content.vb: Public spacingTop As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RDAction.Utils.TitleAttribute.useColor
+  commentId: F:BK.RDAction.Utils.TitleAttribute.useColor
+  id: useColor
+  parent: BK.RDAction.Utils.TitleAttribute
+  langs:
+  - csharp
+  - vb
+  name: useColor
+  nameWithType: TitleAttribute.useColor
+  fullName: BK.RDAction.Utils.TitleAttribute.useColor
+  type: Field
+  source:
+    remote:
+      path: Runtime/Utils/AttributeUtils.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: useColor
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Utils/AttributeUtils.cs
+    startLine: 70
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Utils
+  syntax:
+    content: public bool useColor
+    return:
+      type: System.Boolean
+    content.vb: Public useColor As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RDAction.Utils.TitleAttribute.#ctor(System.String)
+  commentId: M:BK.RDAction.Utils.TitleAttribute.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: BK.RDAction.Utils.TitleAttribute
+  langs:
+  - csharp
+  - vb
+  name: TitleAttribute(String)
+  nameWithType: TitleAttribute.TitleAttribute(String)
+  fullName: BK.RDAction.Utils.TitleAttribute.TitleAttribute(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Utils/AttributeUtils.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: .ctor
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Utils/AttributeUtils.cs
+    startLine: 72
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Utils
+  syntax:
+    content: public TitleAttribute(string text)
+    parameters:
+    - id: text
+      type: System.String
+    content.vb: Public Sub New(text As String)
+  overload: BK.RDAction.Utils.TitleAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RDAction.Utils.TitleAttribute.#ctor(System.String,System.Boolean)
+  commentId: M:BK.RDAction.Utils.TitleAttribute.#ctor(System.String,System.Boolean)
+  id: '#ctor(System.String,System.Boolean)'
+  parent: BK.RDAction.Utils.TitleAttribute
+  langs:
+  - csharp
+  - vb
+  name: TitleAttribute(String, Boolean)
+  nameWithType: TitleAttribute.TitleAttribute(String, Boolean)
+  fullName: BK.RDAction.Utils.TitleAttribute.TitleAttribute(System.String, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Utils/AttributeUtils.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: .ctor
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Utils/AttributeUtils.cs
+    startLine: 77
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Utils
+  syntax:
+    content: public TitleAttribute(string text, bool spacingTop)
+    parameters:
+    - id: text
+      type: System.String
+    - id: spacingTop
+      type: System.Boolean
+    content.vb: Public Sub New(text As String, spacingTop As Boolean)
+  overload: BK.RDAction.Utils.TitleAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RDAction.Utils.TitleAttribute.HtmlToColor(System.String)
+  commentId: M:BK.RDAction.Utils.TitleAttribute.HtmlToColor(System.String)
+  id: HtmlToColor(System.String)
+  parent: BK.RDAction.Utils.TitleAttribute
+  langs:
+  - csharp
+  - vb
+  name: HtmlToColor(String)
+  nameWithType: TitleAttribute.HtmlToColor(String)
+  fullName: BK.RDAction.Utils.TitleAttribute.HtmlToColor(System.String)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Utils/AttributeUtils.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: HtmlToColor
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Utils/AttributeUtils.cs
+    startLine: 83
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Utils
+  syntax:
+    content: public static Color HtmlToColor(string colorString)
+    parameters:
+    - id: colorString
+      type: System.String
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Shared Function HtmlToColor(colorString As String) As Color
+  overload: BK.RDAction.Utils.TitleAttribute.HtmlToColor*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: BK.RDAction.Utils.TitleAttribute.#ctor(System.String,System.Boolean,System.Int32)
+  commentId: M:BK.RDAction.Utils.TitleAttribute.#ctor(System.String,System.Boolean,System.Int32)
+  id: '#ctor(System.String,System.Boolean,System.Int32)'
+  parent: BK.RDAction.Utils.TitleAttribute
+  langs:
+  - csharp
+  - vb
+  name: TitleAttribute(String, Boolean, Int32)
+  nameWithType: TitleAttribute.TitleAttribute(String, Boolean, Int32)
+  fullName: BK.RDAction.Utils.TitleAttribute.TitleAttribute(System.String, System.Boolean, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Utils/AttributeUtils.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: .ctor
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Utils/AttributeUtils.cs
+    startLine: 92
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Utils
+  syntax:
+    content: public TitleAttribute(string text, bool spacingTop, int colorIndex)
+    parameters:
+    - id: text
+      type: System.String
+    - id: spacingTop
+      type: System.Boolean
+    - id: colorIndex
+      type: System.Int32
+    content.vb: Public Sub New(text As String, spacingTop As Boolean, colorIndex As Integer)
+  overload: BK.RDAction.Utils.TitleAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RDAction.Utils.TitleAttribute.#ctor(System.String,System.Int32)
+  commentId: M:BK.RDAction.Utils.TitleAttribute.#ctor(System.String,System.Int32)
+  id: '#ctor(System.String,System.Int32)'
+  parent: BK.RDAction.Utils.TitleAttribute
+  langs:
+  - csharp
+  - vb
+  name: TitleAttribute(String, Int32)
+  nameWithType: TitleAttribute.TitleAttribute(String, Int32)
+  fullName: BK.RDAction.Utils.TitleAttribute.TitleAttribute(System.String, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Utils/AttributeUtils.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: .ctor
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Utils/AttributeUtils.cs
+    startLine: 97
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Utils
+  syntax:
+    content: public TitleAttribute(string text, int colorIndex)
+    parameters:
+    - id: text
+      type: System.String
+    - id: colorIndex
+      type: System.Int32
+    content.vb: Public Sub New(text As String, colorIndex As Integer)
+  overload: BK.RDAction.Utils.TitleAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BK.RDAction.Utils
+  commentId: N:BK.RDAction.Utils
+  name: BK.RDAction.Utils
+  nameWithType: BK.RDAction.Utils
+  fullName: BK.RDAction.Utils
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Attribute
+  commentId: T:System.Attribute
+  parent: System
+  isExternal: true
+  name: Attribute
+  nameWithType: Attribute
+  fullName: System.Attribute
+- uid: UnityEngine.PropertyAttribute
+  commentId: T:UnityEngine.PropertyAttribute
+  parent: UnityEngine
+  isExternal: true
+  name: PropertyAttribute
+  nameWithType: PropertyAttribute
+  fullName: UnityEngine.PropertyAttribute
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: BK.RDAction.Utils.TitleAttribute.#ctor*
+  commentId: Overload:BK.RDAction.Utils.TitleAttribute.#ctor
+  name: TitleAttribute
+  nameWithType: TitleAttribute.TitleAttribute
+  fullName: BK.RDAction.Utils.TitleAttribute.TitleAttribute
+- uid: BK.RDAction.Utils.TitleAttribute.HtmlToColor*
+  commentId: Overload:BK.RDAction.Utils.TitleAttribute.HtmlToColor
+  name: HtmlToColor
+  nameWithType: TitleAttribute.HtmlToColor
+  fullName: BK.RDAction.Utils.TitleAttribute.HtmlToColor
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

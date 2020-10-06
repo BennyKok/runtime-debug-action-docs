@@ -1,42 +1,54 @@
 ### YamlMime:TableOfContent
-- uid: BK.RuntimeDebugAction
-  name: BK.RuntimeDebugAction
+- uid: BK.RDAction.Components
+  name: BK.RDAction.Components
   items:
-  - uid: BK.RuntimeDebugAction.CollapsedEventAttribute
-    name: CollapsedEventAttribute
-  - uid: BK.RuntimeDebugAction.CommentAttribute
-    name: CommentAttribute
-  - uid: BK.RuntimeDebugAction.RDAction
-    name: RDAction
-  - uid: BK.RuntimeDebugAction.RDActionHandler
+  - uid: BK.RDAction.Components.RDActionHandler
     name: RDActionHandler
-  - uid: BK.RuntimeDebugAction.RDActionSettings
-    name: RDActionSettings
-  - uid: BK.RuntimeDebugAction.RDActionSettings.TouchToggleMode
-    name: RDActionSettings.TouchToggleMode
-  - uid: BK.RuntimeDebugAction.RDActionSystem
-    name: RDActionSystem
-  - uid: BK.RuntimeDebugAction.RDActionToggle
-    name: RDActionToggle
-  - uid: BK.RuntimeDebugAction.RDActionUI
+- uid: BK.RDAction.Components.UI
+  name: BK.RDAction.Components.UI
+  items:
+  - uid: BK.RDAction.Components.UI.RDActionUI
     name: RDActionUI
-  - uid: BK.RuntimeDebugAction.RDActionUIEvent
+  - uid: BK.RDAction.Components.UI.RDActionUIEvent
     name: RDActionUIEvent
-  - uid: BK.RuntimeDebugAction.RDActionUIView
+  - uid: BK.RDAction.Components.UI.RDActionUIView
     name: RDActionUIView
-  - uid: BK.RuntimeDebugAction.RDFlag
+- uid: BK.RDAction.Data
+  name: BK.RDAction.Data
+  items:
+  - uid: BK.RDAction.Data.RDAction
+    name: RDAction
+  - uid: BK.RDAction.Data.RDActionSettings
+    name: RDActionSettings
+  - uid: BK.RDAction.Data.RDActionSettings.TouchToggleMode
+    name: RDActionSettings.TouchToggleMode
+  - uid: BK.RDAction.Data.RDActionToggle
+    name: RDActionToggle
+  - uid: BK.RDAction.Data.RDFlag
     name: RDFlag
-  - uid: BK.RuntimeDebugAction.RDFlagsList
+  - uid: BK.RDAction.Data.RDFlagsList
     name: RDFlagsList
-  - uid: BK.RuntimeDebugAction.ReorderableBase
+- uid: BK.RDAction.Managers
+  name: BK.RDAction.Managers
+  items:
+  - uid: BK.RDAction.Managers.RDActionSystem
+    name: RDActionSystem
+- uid: BK.RDAction.Utils
+  name: BK.RDAction.Utils
+  items:
+  - uid: BK.RDAction.Utils.CollapsedEventAttribute
+    name: CollapsedEventAttribute
+  - uid: BK.RDAction.Utils.CommentAttribute
+    name: CommentAttribute
+  - uid: BK.RDAction.Utils.ReorderableBase
     name: ReorderableBase
-  - uid: BK.RuntimeDebugAction.ReorderableDisplayAttribute
+  - uid: BK.RDAction.Utils.ReorderableDisplayAttribute
     name: ReorderableDisplayAttribute
-  - uid: BK.RuntimeDebugAction.ReorderableList`1
+  - uid: BK.RDAction.Utils.ReorderableList`1
     name: ReorderableList<U>
     name.vb: ReorderableList(Of U)
-  - uid: BK.RuntimeDebugAction.Singleton`1
+  - uid: BK.RDAction.Utils.Singleton`1
     name: Singleton<T>
     name.vb: Singleton(Of T)
-  - uid: BK.RuntimeDebugAction.TitleAttribute
+  - uid: BK.RDAction.Utils.TitleAttribute
     name: TitleAttribute

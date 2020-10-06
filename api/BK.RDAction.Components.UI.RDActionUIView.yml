@@ -1,0 +1,245 @@
+### YamlMime:ManagedReference
+items:
+- uid: BK.RDAction.Components.UI.RDActionUIView
+  commentId: T:BK.RDAction.Components.UI.RDActionUIView
+  id: RDActionUIView
+  parent: BK.RDAction.Components.UI
+  children:
+  - BK.RDAction.Components.UI.RDActionUIView.indicator
+  - BK.RDAction.Components.UI.RDActionUIView.RefreshStatus
+  - BK.RDAction.Components.UI.RDActionUIView.SetAction(BK.RDAction.Components.UI.RDActionUI,BK.RDAction.Data.RDAction)
+  langs:
+  - csharp
+  - vb
+  name: RDActionUIView
+  nameWithType: RDActionUIView
+  fullName: BK.RDAction.Components.UI.RDActionUIView
+  type: Class
+  source:
+    remote:
+      path: Runtime/Components/UI/RDActionUIView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: RDActionUIView
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/RDActionUIView.cs
+    startLine: 6
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Components.UI
+  syntax:
+    content: >-
+      [AddComponentMenu("Runtime Debug Action/UI/RD Action UI View")]
+
+      public class RDActionUIView : MonoBehaviour
+    content.vb: >-
+      <AddComponentMenu("Runtime Debug Action/UI/RD Action UI View")>
+
+      Public Class RDActionUIView
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  attributes:
+  - type: UnityEngine.AddComponentMenu
+    ctor: UnityEngine.AddComponentMenu.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Runtime Debug Action/UI/RD Action UI View
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BK.RDAction.Components.UI.RDActionUIView.indicator
+  commentId: F:BK.RDAction.Components.UI.RDActionUIView.indicator
+  id: indicator
+  parent: BK.RDAction.Components.UI.RDActionUIView
+  langs:
+  - csharp
+  - vb
+  name: indicator
+  nameWithType: RDActionUIView.indicator
+  fullName: BK.RDAction.Components.UI.RDActionUIView.indicator
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/RDActionUIView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: indicator
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/RDActionUIView.cs
+    startLine: 12
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Components.UI
+  syntax:
+    content: public Image indicator
+    return:
+      type: UnityEngine.UI.Image
+    content.vb: Public indicator As Image
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RDAction.Components.UI.RDActionUIView.RefreshStatus
+  commentId: M:BK.RDAction.Components.UI.RDActionUIView.RefreshStatus
+  id: RefreshStatus
+  parent: BK.RDAction.Components.UI.RDActionUIView
+  langs:
+  - csharp
+  - vb
+  name: RefreshStatus()
+  nameWithType: RDActionUIView.RefreshStatus()
+  fullName: BK.RDAction.Components.UI.RDActionUIView.RefreshStatus()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/RDActionUIView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: RefreshStatus
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/RDActionUIView.cs
+    startLine: 17
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Components.UI
+  syntax:
+    content: public void RefreshStatus()
+    content.vb: Public Sub RefreshStatus
+  overload: BK.RDAction.Components.UI.RDActionUIView.RefreshStatus*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RDAction.Components.UI.RDActionUIView.SetAction(BK.RDAction.Components.UI.RDActionUI,BK.RDAction.Data.RDAction)
+  commentId: M:BK.RDAction.Components.UI.RDActionUIView.SetAction(BK.RDAction.Components.UI.RDActionUI,BK.RDAction.Data.RDAction)
+  id: SetAction(BK.RDAction.Components.UI.RDActionUI,BK.RDAction.Data.RDAction)
+  parent: BK.RDAction.Components.UI.RDActionUIView
+  langs:
+  - csharp
+  - vb
+  name: SetAction(RDActionUI, RDAction)
+  nameWithType: RDActionUIView.SetAction(RDActionUI, RDAction)
+  fullName: BK.RDAction.Components.UI.RDActionUIView.SetAction(BK.RDAction.Components.UI.RDActionUI, BK.RDAction.Data.RDAction)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/RDActionUIView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: SetAction
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/RDActionUIView.cs
+    startLine: 37
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Components.UI
+  syntax:
+    content: public void SetAction(RDActionUI ui, RDAction action)
+    parameters:
+    - id: ui
+      type: BK.RDAction.Components.UI.RDActionUI
+    - id: action
+      type: BK.RDAction.Data.RDAction
+    content.vb: Public Sub SetAction(ui As RDActionUI, action As RDAction)
+  overload: BK.RDAction.Components.UI.RDActionUIView.SetAction*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BK.RDAction.Components.UI
+  commentId: N:BK.RDAction.Components.UI
+  name: BK.RDAction.Components.UI
+  nameWithType: BK.RDAction.Components.UI
+  fullName: BK.RDAction.Components.UI
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.UI.Image
+  commentId: T:UnityEngine.UI.Image
+  parent: UnityEngine.UI
+  isExternal: true
+  name: Image
+  nameWithType: Image
+  fullName: UnityEngine.UI.Image
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  isExternal: true
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+- uid: BK.RDAction.Components.UI.RDActionUIView.RefreshStatus*
+  commentId: Overload:BK.RDAction.Components.UI.RDActionUIView.RefreshStatus
+  name: RefreshStatus
+  nameWithType: RDActionUIView.RefreshStatus
+  fullName: BK.RDAction.Components.UI.RDActionUIView.RefreshStatus
+- uid: BK.RDAction.Components.UI.RDActionUIView.SetAction*
+  commentId: Overload:BK.RDAction.Components.UI.RDActionUIView.SetAction
+  name: SetAction
+  nameWithType: RDActionUIView.SetAction
+  fullName: BK.RDAction.Components.UI.RDActionUIView.SetAction
+- uid: BK.RDAction.Components.UI.RDActionUI
+  commentId: T:BK.RDAction.Components.UI.RDActionUI
+  parent: BK.RDAction.Components.UI
+  name: RDActionUI
+  nameWithType: RDActionUI
+  fullName: BK.RDAction.Components.UI.RDActionUI
+- uid: BK.RDAction.Data.RDAction
+  commentId: T:BK.RDAction.Data.RDAction
+  parent: BK.RDAction.Data
+  name: RDAction
+  nameWithType: RDAction
+  fullName: BK.RDAction.Data.RDAction
+- uid: BK.RDAction.Data
+  commentId: N:BK.RDAction.Data
+  name: BK.RDAction.Data
+  nameWithType: BK.RDAction.Data
+  fullName: BK.RDAction.Data

@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: BK.RDAction.Managers
+  commentId: N:BK.RDAction.Managers
+  id: BK.RDAction.Managers
+  children:
+  - BK.RDAction.Managers.RDActionSystem
+  langs:
+  - csharp
+  - vb
+  name: BK.RDAction.Managers
+  nameWithType: BK.RDAction.Managers
+  fullName: BK.RDAction.Managers
+  type: Namespace
+  assemblies:
+  - com.bennykok.runtime-debug-action
+references:
+- uid: BK.RDAction.Managers.RDActionSystem
+  commentId: T:BK.RDAction.Managers.RDActionSystem
+  parent: BK.RDAction.Managers
+  name: RDActionSystem
+  nameWithType: RDActionSystem
+  fullName: BK.RDAction.Managers.RDActionSystem
+- uid: BK.RDAction.Managers
+  commentId: N:BK.RDAction.Managers
+  name: BK.RDAction.Managers
+  nameWithType: BK.RDAction.Managers
+  fullName: BK.RDAction.Managers

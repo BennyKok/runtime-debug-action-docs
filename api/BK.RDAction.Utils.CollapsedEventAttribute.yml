@@ -1,0 +1,197 @@
+### YamlMime:ManagedReference
+items:
+- uid: BK.RDAction.Utils.CollapsedEventAttribute
+  commentId: T:BK.RDAction.Utils.CollapsedEventAttribute
+  id: CollapsedEventAttribute
+  parent: BK.RDAction.Utils
+  children:
+  - BK.RDAction.Utils.CollapsedEventAttribute.#ctor(System.String)
+  - BK.RDAction.Utils.CollapsedEventAttribute.tooltip
+  - BK.RDAction.Utils.CollapsedEventAttribute.visible
+  langs:
+  - csharp
+  - vb
+  name: CollapsedEventAttribute
+  nameWithType: CollapsedEventAttribute
+  fullName: BK.RDAction.Utils.CollapsedEventAttribute
+  type: Class
+  source:
+    remote:
+      path: Runtime/Utils/AttributeUtils.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: CollapsedEventAttribute
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Utils/AttributeUtils.cs
+    startLine: 44
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Utils
+  syntax:
+    content: 'public class CollapsedEventAttribute : PropertyAttribute, _Attribute'
+    content.vb: >-
+      Public Class CollapsedEventAttribute
+          Inherits PropertyAttribute
+          Implements _Attribute
+  inheritance:
+  - System.Object
+  - System.Attribute
+  - UnityEngine.PropertyAttribute
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BK.RDAction.Utils.CollapsedEventAttribute.visible
+  commentId: F:BK.RDAction.Utils.CollapsedEventAttribute.visible
+  id: visible
+  parent: BK.RDAction.Utils.CollapsedEventAttribute
+  langs:
+  - csharp
+  - vb
+  name: visible
+  nameWithType: CollapsedEventAttribute.visible
+  fullName: BK.RDAction.Utils.CollapsedEventAttribute.visible
+  type: Field
+  source:
+    remote:
+      path: Runtime/Utils/AttributeUtils.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: visible
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Utils/AttributeUtils.cs
+    startLine: 46
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Utils
+  syntax:
+    content: public bool visible
+    return:
+      type: System.Boolean
+    content.vb: Public visible As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RDAction.Utils.CollapsedEventAttribute.tooltip
+  commentId: F:BK.RDAction.Utils.CollapsedEventAttribute.tooltip
+  id: tooltip
+  parent: BK.RDAction.Utils.CollapsedEventAttribute
+  langs:
+  - csharp
+  - vb
+  name: tooltip
+  nameWithType: CollapsedEventAttribute.tooltip
+  fullName: BK.RDAction.Utils.CollapsedEventAttribute.tooltip
+  type: Field
+  source:
+    remote:
+      path: Runtime/Utils/AttributeUtils.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: tooltip
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Utils/AttributeUtils.cs
+    startLine: 47
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Utils
+  syntax:
+    content: public string tooltip
+    return:
+      type: System.String
+    content.vb: Public tooltip As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RDAction.Utils.CollapsedEventAttribute.#ctor(System.String)
+  commentId: M:BK.RDAction.Utils.CollapsedEventAttribute.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: BK.RDAction.Utils.CollapsedEventAttribute
+  langs:
+  - csharp
+  - vb
+  name: CollapsedEventAttribute(String)
+  nameWithType: CollapsedEventAttribute.CollapsedEventAttribute(String)
+  fullName: BK.RDAction.Utils.CollapsedEventAttribute.CollapsedEventAttribute(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Utils/AttributeUtils.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: .ctor
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Utils/AttributeUtils.cs
+    startLine: 49
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RDAction.Utils
+  syntax:
+    content: public CollapsedEventAttribute(string tooltip = null)
+    parameters:
+    - id: tooltip
+      type: System.String
+    content.vb: Public Sub New(tooltip As String = Nothing)
+  overload: BK.RDAction.Utils.CollapsedEventAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BK.RDAction.Utils
+  commentId: N:BK.RDAction.Utils
+  name: BK.RDAction.Utils
+  nameWithType: BK.RDAction.Utils
+  fullName: BK.RDAction.Utils
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Attribute
+  commentId: T:System.Attribute
+  parent: System
+  isExternal: true
+  name: Attribute
+  nameWithType: Attribute
+  fullName: System.Attribute
+- uid: UnityEngine.PropertyAttribute
+  commentId: T:UnityEngine.PropertyAttribute
+  parent: UnityEngine
+  isExternal: true
+  name: PropertyAttribute
+  nameWithType: PropertyAttribute
+  fullName: UnityEngine.PropertyAttribute
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BK.RDAction.Utils.CollapsedEventAttribute.#ctor*
+  commentId: Overload:BK.RDAction.Utils.CollapsedEventAttribute.#ctor
+  name: CollapsedEventAttribute
+  nameWithType: CollapsedEventAttribute.CollapsedEventAttribute
+  fullName: BK.RDAction.Utils.CollapsedEventAttribute.CollapsedEventAttribute
