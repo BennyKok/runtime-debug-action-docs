@@ -48,4 +48,4 @@ jobs:
             git remote set-url origin https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}
             git push origin gh-pages
           }
-		  working-directory: ./docs
+		working-directory: ./docs
