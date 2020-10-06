@@ -35,6 +35,7 @@ jobs:
         working-directory: ./docs
         # update docs
       - name: Commit to gh-pages and push
+        working-directory: ./docs
         run: |
           $ErrorActionPreference = "Continue"
           git add -A
@@ -48,4 +49,3 @@ jobs:
             git remote set-url origin https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}
             git push origin gh-pages
           }
-		working-directory: ./docs
