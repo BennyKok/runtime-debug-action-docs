@@ -1,0 +1,976 @@
+### YamlMime:ManagedReference
+items:
+- uid: BK.RuntimeDebugAction.RDActionToggle
+  commentId: T:BK.RuntimeDebugAction.RDActionToggle
+  id: RDActionToggle
+  parent: BK.RuntimeDebugAction
+  children:
+  - BK.RuntimeDebugAction.RDActionToggle.#ctor
+  - BK.RuntimeDebugAction.RDActionToggle.#ctor(System.String,System.Func{System.Boolean},System.Action{System.Boolean})
+  - BK.RuntimeDebugAction.RDActionToggle.#ctor(System.String,UnityEngine.Color,System.Func{System.Boolean},System.Action{System.Boolean})
+  - BK.RuntimeDebugAction.RDActionToggle.actionGet
+  - BK.RuntimeDebugAction.RDActionToggle.actionSet
+  - BK.RuntimeDebugAction.RDActionToggle.actionSwitch
+  - BK.RuntimeDebugAction.RDActionToggle.isOn
+  - BK.RuntimeDebugAction.RDActionToggle.ResolveAction
+  - BK.RuntimeDebugAction.RDActionToggle.unityActionSwitch
+  langs:
+  - csharp
+  - vb
+  name: RDActionToggle
+  nameWithType: RDActionToggle
+  fullName: BK.RuntimeDebugAction.RDActionToggle
+  type: Class
+  source:
+    remote:
+      path: Runtime/Data/RDActionToggle.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: RDActionToggle
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDActionToggle.cs
+    startLine: 7
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RuntimeDebugAction
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class RDActionToggle : RDAction
+    content.vb: >-
+      <Serializable>
+
+      Public Class RDActionToggle
+          Inherits RDAction
+  inheritance:
+  - System.Object
+  - BK.RuntimeDebugAction.RDAction
+  inheritedMembers:
+  - BK.RuntimeDebugAction.RDAction.tag
+  - BK.RuntimeDebugAction.RDAction.label
+  - BK.RuntimeDebugAction.RDAction.description
+  - BK.RuntimeDebugAction.RDAction.key
+  - BK.RuntimeDebugAction.RDAction.actionColor
+  - BK.RuntimeDebugAction.RDAction.unityAction
+  - BK.RuntimeDebugAction.RDAction.action
+  - BK.RuntimeDebugAction.RDAction.actionStatus
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BK.RuntimeDebugAction.RDActionToggle.isOn
+  commentId: F:BK.RuntimeDebugAction.RDActionToggle.isOn
+  id: isOn
+  parent: BK.RuntimeDebugAction.RDActionToggle
+  langs:
+  - csharp
+  - vb
+  name: isOn
+  nameWithType: RDActionToggle.isOn
+  fullName: BK.RuntimeDebugAction.RDActionToggle.isOn
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/RDActionToggle.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: isOn
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDActionToggle.cs
+    startLine: 10
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RuntimeDebugAction
+  syntax:
+    content: public bool isOn
+    return:
+      type: System.Boolean
+    content.vb: Public isOn As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RuntimeDebugAction.RDActionToggle.actionSwitch
+  commentId: F:BK.RuntimeDebugAction.RDActionToggle.actionSwitch
+  id: actionSwitch
+  parent: BK.RuntimeDebugAction.RDActionToggle
+  langs:
+  - csharp
+  - vb
+  name: actionSwitch
+  nameWithType: RDActionToggle.actionSwitch
+  fullName: BK.RuntimeDebugAction.RDActionToggle.actionSwitch
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/RDActionToggle.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: actionSwitch
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDActionToggle.cs
+    startLine: 12
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RuntimeDebugAction
+  syntax:
+    content: public Action actionSwitch
+    return:
+      type: System.Action
+    content.vb: Public actionSwitch As Action
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RuntimeDebugAction.RDActionToggle.unityActionSwitch
+  commentId: F:BK.RuntimeDebugAction.RDActionToggle.unityActionSwitch
+  id: unityActionSwitch
+  parent: BK.RuntimeDebugAction.RDActionToggle
+  langs:
+  - csharp
+  - vb
+  name: unityActionSwitch
+  nameWithType: RDActionToggle.unityActionSwitch
+  fullName: BK.RuntimeDebugAction.RDActionToggle.unityActionSwitch
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/RDActionToggle.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: unityActionSwitch
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDActionToggle.cs
+    startLine: 13
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RuntimeDebugAction
+  syntax:
+    content: public UnityEvent unityActionSwitch
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: Public unityActionSwitch As UnityEvent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RuntimeDebugAction.RDActionToggle.actionSet
+  commentId: F:BK.RuntimeDebugAction.RDActionToggle.actionSet
+  id: actionSet
+  parent: BK.RuntimeDebugAction.RDActionToggle
+  langs:
+  - csharp
+  - vb
+  name: actionSet
+  nameWithType: RDActionToggle.actionSet
+  fullName: BK.RuntimeDebugAction.RDActionToggle.actionSet
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/RDActionToggle.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: actionSet
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDActionToggle.cs
+    startLine: 15
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RuntimeDebugAction
+  syntax:
+    content: public Action<bool> actionSet
+    return:
+      type: System.Action{System.Boolean}
+    content.vb: Public actionSet As Action(Of Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RuntimeDebugAction.RDActionToggle.actionGet
+  commentId: F:BK.RuntimeDebugAction.RDActionToggle.actionGet
+  id: actionGet
+  parent: BK.RuntimeDebugAction.RDActionToggle
+  langs:
+  - csharp
+  - vb
+  name: actionGet
+  nameWithType: RDActionToggle.actionGet
+  fullName: BK.RuntimeDebugAction.RDActionToggle.actionGet
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/RDActionToggle.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: actionGet
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDActionToggle.cs
+    startLine: 16
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RuntimeDebugAction
+  syntax:
+    content: public Func<bool> actionGet
+    return:
+      type: System.Func{System.Boolean}
+    content.vb: Public actionGet As Func(Of Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RuntimeDebugAction.RDActionToggle.#ctor
+  commentId: M:BK.RuntimeDebugAction.RDActionToggle.#ctor
+  id: '#ctor'
+  parent: BK.RuntimeDebugAction.RDActionToggle
+  langs:
+  - csharp
+  - vb
+  name: RDActionToggle()
+  nameWithType: RDActionToggle.RDActionToggle()
+  fullName: BK.RuntimeDebugAction.RDActionToggle.RDActionToggle()
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Data/RDActionToggle.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: .ctor
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDActionToggle.cs
+    startLine: 20
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RuntimeDebugAction
+  syntax:
+    content: public RDActionToggle()
+    content.vb: Public Sub New
+  overload: BK.RuntimeDebugAction.RDActionToggle.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BK.RuntimeDebugAction.RDActionToggle.#ctor(System.String,UnityEngine.Color,System.Func{System.Boolean},System.Action{System.Boolean})
+  commentId: M:BK.RuntimeDebugAction.RDActionToggle.#ctor(System.String,UnityEngine.Color,System.Func{System.Boolean},System.Action{System.Boolean})
+  id: '#ctor(System.String,UnityEngine.Color,System.Func{System.Boolean},System.Action{System.Boolean})'
+  parent: BK.RuntimeDebugAction.RDActionToggle
+  langs:
+  - csharp
+  - vb
+  name: RDActionToggle(String, Color, Func<Boolean>, Action<Boolean>)
+  nameWithType: RDActionToggle.RDActionToggle(String, Color, Func<Boolean>, Action<Boolean>)
+  fullName: BK.RuntimeDebugAction.RDActionToggle.RDActionToggle(System.String, UnityEngine.Color, System.Func<System.Boolean>, System.Action<System.Boolean>)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Data/RDActionToggle.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: .ctor
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDActionToggle.cs
+    startLine: 35
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RuntimeDebugAction
+  syntax:
+    content: public RDActionToggle(string label, Color color, Func<bool> actionGet, Action<bool> actionSet)
+    parameters:
+    - id: label
+      type: System.String
+    - id: color
+      type: UnityEngine.Color
+    - id: actionGet
+      type: System.Func{System.Boolean}
+    - id: actionSet
+      type: System.Action{System.Boolean}
+    content.vb: Public Sub New(label As String, color As Color, actionGet As Func(Of Boolean), actionSet As Action(Of Boolean))
+  overload: BK.RuntimeDebugAction.RDActionToggle.#ctor*
+  nameWithType.vb: RDActionToggle.RDActionToggle(String, Color, Func(Of Boolean), Action(Of Boolean))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: BK.RuntimeDebugAction.RDActionToggle.RDActionToggle(System.String, UnityEngine.Color, System.Func(Of System.Boolean), System.Action(Of System.Boolean))
+  name.vb: RDActionToggle(String, Color, Func(Of Boolean), Action(Of Boolean))
+- uid: BK.RuntimeDebugAction.RDActionToggle.#ctor(System.String,System.Func{System.Boolean},System.Action{System.Boolean})
+  commentId: M:BK.RuntimeDebugAction.RDActionToggle.#ctor(System.String,System.Func{System.Boolean},System.Action{System.Boolean})
+  id: '#ctor(System.String,System.Func{System.Boolean},System.Action{System.Boolean})'
+  parent: BK.RuntimeDebugAction.RDActionToggle
+  langs:
+  - csharp
+  - vb
+  name: RDActionToggle(String, Func<Boolean>, Action<Boolean>)
+  nameWithType: RDActionToggle.RDActionToggle(String, Func<Boolean>, Action<Boolean>)
+  fullName: BK.RuntimeDebugAction.RDActionToggle.RDActionToggle(System.String, System.Func<System.Boolean>, System.Action<System.Boolean>)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Data/RDActionToggle.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: .ctor
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDActionToggle.cs
+    startLine: 40
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RuntimeDebugAction
+  syntax:
+    content: public RDActionToggle(string label, Func<bool> actionGet, Action<bool> actionSet)
+    parameters:
+    - id: label
+      type: System.String
+    - id: actionGet
+      type: System.Func{System.Boolean}
+    - id: actionSet
+      type: System.Action{System.Boolean}
+    content.vb: Public Sub New(label As String, actionGet As Func(Of Boolean), actionSet As Action(Of Boolean))
+  overload: BK.RuntimeDebugAction.RDActionToggle.#ctor*
+  nameWithType.vb: RDActionToggle.RDActionToggle(String, Func(Of Boolean), Action(Of Boolean))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: BK.RuntimeDebugAction.RDActionToggle.RDActionToggle(System.String, System.Func(Of System.Boolean), System.Action(Of System.Boolean))
+  name.vb: RDActionToggle(String, Func(Of Boolean), Action(Of Boolean))
+- uid: BK.RuntimeDebugAction.RDActionToggle.ResolveAction
+  commentId: M:BK.RuntimeDebugAction.RDActionToggle.ResolveAction
+  id: ResolveAction
+  parent: BK.RuntimeDebugAction.RDActionToggle
+  langs:
+  - csharp
+  - vb
+  name: ResolveAction()
+  nameWithType: RDActionToggle.ResolveAction()
+  fullName: BK.RuntimeDebugAction.RDActionToggle.ResolveAction()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Data/RDActionToggle.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: ResolveAction
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDActionToggle.cs
+    startLine: 48
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BK.RuntimeDebugAction
+  syntax:
+    content: public override void ResolveAction()
+    content.vb: Public Overrides Sub ResolveAction
+  overridden: BK.RuntimeDebugAction.RDAction.ResolveAction
+  overload: BK.RuntimeDebugAction.RDActionToggle.ResolveAction*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: BK.RuntimeDebugAction
+  commentId: N:BK.RuntimeDebugAction
+  name: BK.RuntimeDebugAction
+  nameWithType: BK.RuntimeDebugAction
+  fullName: BK.RuntimeDebugAction
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: BK.RuntimeDebugAction.RDAction
+  commentId: T:BK.RuntimeDebugAction.RDAction
+  parent: BK.RuntimeDebugAction
+  name: RDAction
+  nameWithType: RDAction
+  fullName: BK.RuntimeDebugAction.RDAction
+- uid: BK.RuntimeDebugAction.RDAction.tag
+  commentId: F:BK.RuntimeDebugAction.RDAction.tag
+  parent: BK.RuntimeDebugAction.RDAction
+  name: tag
+  nameWithType: RDAction.tag
+  fullName: BK.RuntimeDebugAction.RDAction.tag
+- uid: BK.RuntimeDebugAction.RDAction.label
+  commentId: F:BK.RuntimeDebugAction.RDAction.label
+  parent: BK.RuntimeDebugAction.RDAction
+  name: label
+  nameWithType: RDAction.label
+  fullName: BK.RuntimeDebugAction.RDAction.label
+- uid: BK.RuntimeDebugAction.RDAction.description
+  commentId: F:BK.RuntimeDebugAction.RDAction.description
+  parent: BK.RuntimeDebugAction.RDAction
+  name: description
+  nameWithType: RDAction.description
+  fullName: BK.RuntimeDebugAction.RDAction.description
+- uid: BK.RuntimeDebugAction.RDAction.key
+  commentId: F:BK.RuntimeDebugAction.RDAction.key
+  parent: BK.RuntimeDebugAction.RDAction
+  name: key
+  nameWithType: RDAction.key
+  fullName: BK.RuntimeDebugAction.RDAction.key
+- uid: BK.RuntimeDebugAction.RDAction.actionColor
+  commentId: F:BK.RuntimeDebugAction.RDAction.actionColor
+  parent: BK.RuntimeDebugAction.RDAction
+  name: actionColor
+  nameWithType: RDAction.actionColor
+  fullName: BK.RuntimeDebugAction.RDAction.actionColor
+- uid: BK.RuntimeDebugAction.RDAction.unityAction
+  commentId: F:BK.RuntimeDebugAction.RDAction.unityAction
+  parent: BK.RuntimeDebugAction.RDAction
+  name: unityAction
+  nameWithType: RDAction.unityAction
+  fullName: BK.RuntimeDebugAction.RDAction.unityAction
+- uid: BK.RuntimeDebugAction.RDAction.action
+  commentId: F:BK.RuntimeDebugAction.RDAction.action
+  parent: BK.RuntimeDebugAction.RDAction
+  name: action
+  nameWithType: RDAction.action
+  fullName: BK.RuntimeDebugAction.RDAction.action
+- uid: BK.RuntimeDebugAction.RDAction.actionStatus
+  commentId: F:BK.RuntimeDebugAction.RDAction.actionStatus
+  parent: BK.RuntimeDebugAction.RDAction
+  name: actionStatus
+  nameWithType: RDAction.actionStatus
+  fullName: BK.RuntimeDebugAction.RDAction.actionStatus
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: UnityEngine.Events.UnityEvent
+  commentId: T:UnityEngine.Events.UnityEvent
+  parent: UnityEngine.Events
+  isExternal: true
+  name: UnityEvent
+  nameWithType: UnityEvent
+  fullName: UnityEngine.Events.UnityEvent
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+- uid: System.Action{System.Boolean}
+  commentId: T:System.Action{System.Boolean}
+  parent: System
+  definition: System.Action`1
+  name: Action<Boolean>
+  nameWithType: Action<Boolean>
+  fullName: System.Action<System.Boolean>
+  nameWithType.vb: Action(Of Boolean)
+  fullName.vb: System.Action(Of System.Boolean)
+  name.vb: Action(Of Boolean)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func{System.Boolean}
+  commentId: T:System.Func{System.Boolean}
+  parent: System
+  definition: System.Func`1
+  name: Func<Boolean>
+  nameWithType: Func<Boolean>
+  fullName: System.Func<System.Boolean>
+  nameWithType.vb: Func(Of Boolean)
+  fullName.vb: System.Func(Of System.Boolean)
+  name.vb: Func(Of Boolean)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BK.RuntimeDebugAction.RDActionToggle.#ctor*
+  commentId: Overload:BK.RuntimeDebugAction.RDActionToggle.#ctor
+  name: RDActionToggle
+  nameWithType: RDActionToggle.RDActionToggle
+  fullName: BK.RuntimeDebugAction.RDActionToggle.RDActionToggle
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BK.RuntimeDebugAction.RDAction.ResolveAction
+  commentId: M:BK.RuntimeDebugAction.RDAction.ResolveAction
+  parent: BK.RuntimeDebugAction.RDAction
+  name: ResolveAction()
+  nameWithType: RDAction.ResolveAction()
+  fullName: BK.RuntimeDebugAction.RDAction.ResolveAction()
+  spec.csharp:
+  - uid: BK.RuntimeDebugAction.RDAction.ResolveAction
+    name: ResolveAction
+    nameWithType: RDAction.ResolveAction
+    fullName: BK.RuntimeDebugAction.RDAction.ResolveAction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BK.RuntimeDebugAction.RDAction.ResolveAction
+    name: ResolveAction
+    nameWithType: RDAction.ResolveAction
+    fullName: BK.RuntimeDebugAction.RDAction.ResolveAction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BK.RuntimeDebugAction.RDActionToggle.ResolveAction*
+  commentId: Overload:BK.RuntimeDebugAction.RDActionToggle.ResolveAction
+  name: ResolveAction
+  nameWithType: RDActionToggle.ResolveAction
+  fullName: BK.RuntimeDebugAction.RDActionToggle.ResolveAction

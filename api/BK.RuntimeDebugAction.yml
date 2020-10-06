@@ -1,0 +1,201 @@
+### YamlMime:ManagedReference
+items:
+- uid: BK.RuntimeDebugAction
+  commentId: N:BK.RuntimeDebugAction
+  id: BK.RuntimeDebugAction
+  children:
+  - BK.RuntimeDebugAction.CollapsedEventAttribute
+  - BK.RuntimeDebugAction.CommentAttribute
+  - BK.RuntimeDebugAction.RDAction
+  - BK.RuntimeDebugAction.RDActionHandler
+  - BK.RuntimeDebugAction.RDActionSettings
+  - BK.RuntimeDebugAction.RDActionSettings.TouchToggleMode
+  - BK.RuntimeDebugAction.RDActionSystem
+  - BK.RuntimeDebugAction.RDActionToggle
+  - BK.RuntimeDebugAction.RDActionUI
+  - BK.RuntimeDebugAction.RDActionUIEvent
+  - BK.RuntimeDebugAction.RDActionUIView
+  - BK.RuntimeDebugAction.RDFlag
+  - BK.RuntimeDebugAction.RDFlagsList
+  - BK.RuntimeDebugAction.ReorderableBase
+  - BK.RuntimeDebugAction.ReorderableDisplayAttribute
+  - BK.RuntimeDebugAction.ReorderableList`1
+  - BK.RuntimeDebugAction.Singleton`1
+  - BK.RuntimeDebugAction.TitleAttribute
+  langs:
+  - csharp
+  - vb
+  name: BK.RuntimeDebugAction
+  nameWithType: BK.RuntimeDebugAction
+  fullName: BK.RuntimeDebugAction
+  type: Namespace
+  assemblies:
+  - com.bennykok.runtime-debug-action
+references:
+- uid: BK.RuntimeDebugAction.RDActionHandler
+  commentId: T:BK.RuntimeDebugAction.RDActionHandler
+  name: RDActionHandler
+  nameWithType: RDActionHandler
+  fullName: BK.RuntimeDebugAction.RDActionHandler
+- uid: BK.RuntimeDebugAction.RDActionUI
+  commentId: T:BK.RuntimeDebugAction.RDActionUI
+  parent: BK.RuntimeDebugAction
+  name: RDActionUI
+  nameWithType: RDActionUI
+  fullName: BK.RuntimeDebugAction.RDActionUI
+- uid: BK.RuntimeDebugAction.RDActionUIEvent
+  commentId: T:BK.RuntimeDebugAction.RDActionUIEvent
+  name: RDActionUIEvent
+  nameWithType: RDActionUIEvent
+  fullName: BK.RuntimeDebugAction.RDActionUIEvent
+- uid: BK.RuntimeDebugAction.RDActionUIView
+  commentId: T:BK.RuntimeDebugAction.RDActionUIView
+  parent: BK.RuntimeDebugAction
+  name: RDActionUIView
+  nameWithType: RDActionUIView
+  fullName: BK.RuntimeDebugAction.RDActionUIView
+- uid: BK.RuntimeDebugAction.RDAction
+  commentId: T:BK.RuntimeDebugAction.RDAction
+  parent: BK.RuntimeDebugAction
+  name: RDAction
+  nameWithType: RDAction
+  fullName: BK.RuntimeDebugAction.RDAction
+- uid: BK.RuntimeDebugAction.RDActionSettings
+  commentId: T:BK.RuntimeDebugAction.RDActionSettings
+  parent: BK.RuntimeDebugAction
+  name: RDActionSettings
+  nameWithType: RDActionSettings
+  fullName: BK.RuntimeDebugAction.RDActionSettings
+- uid: BK.RuntimeDebugAction.RDActionSettings.TouchToggleMode
+  commentId: T:BK.RuntimeDebugAction.RDActionSettings.TouchToggleMode
+  parent: BK.RuntimeDebugAction
+  name: RDActionSettings.TouchToggleMode
+  nameWithType: RDActionSettings.TouchToggleMode
+  fullName: BK.RuntimeDebugAction.RDActionSettings.TouchToggleMode
+- uid: BK.RuntimeDebugAction.RDActionToggle
+  commentId: T:BK.RuntimeDebugAction.RDActionToggle
+  name: RDActionToggle
+  nameWithType: RDActionToggle
+  fullName: BK.RuntimeDebugAction.RDActionToggle
+- uid: BK.RuntimeDebugAction.RDFlagsList
+  commentId: T:BK.RuntimeDebugAction.RDFlagsList
+  parent: BK.RuntimeDebugAction
+  name: RDFlagsList
+  nameWithType: RDFlagsList
+  fullName: BK.RuntimeDebugAction.RDFlagsList
+- uid: BK.RuntimeDebugAction.RDFlag
+  commentId: T:BK.RuntimeDebugAction.RDFlag
+  name: RDFlag
+  nameWithType: RDFlag
+  fullName: BK.RuntimeDebugAction.RDFlag
+- uid: BK.RuntimeDebugAction.RDActionSystem
+  commentId: T:BK.RuntimeDebugAction.RDActionSystem
+  parent: BK.RuntimeDebugAction
+  name: RDActionSystem
+  nameWithType: RDActionSystem
+  fullName: BK.RuntimeDebugAction.RDActionSystem
+- uid: BK.RuntimeDebugAction.ReorderableList`1
+  commentId: T:BK.RuntimeDebugAction.ReorderableList`1
+  name: ReorderableList<U>
+  nameWithType: ReorderableList<U>
+  fullName: BK.RuntimeDebugAction.ReorderableList<U>
+  nameWithType.vb: ReorderableList(Of U)
+  fullName.vb: BK.RuntimeDebugAction.ReorderableList(Of U)
+  name.vb: ReorderableList(Of U)
+  spec.csharp:
+  - uid: BK.RuntimeDebugAction.ReorderableList`1
+    name: ReorderableList
+    nameWithType: ReorderableList
+    fullName: BK.RuntimeDebugAction.ReorderableList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: U
+    nameWithType: U
+    fullName: U
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: BK.RuntimeDebugAction.ReorderableList`1
+    name: ReorderableList
+    nameWithType: ReorderableList
+    fullName: BK.RuntimeDebugAction.ReorderableList
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: U
+    nameWithType: U
+    fullName: U
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BK.RuntimeDebugAction.ReorderableDisplayAttribute
+  commentId: T:BK.RuntimeDebugAction.ReorderableDisplayAttribute
+  parent: BK.RuntimeDebugAction
+  name: ReorderableDisplayAttribute
+  nameWithType: ReorderableDisplayAttribute
+  fullName: BK.RuntimeDebugAction.ReorderableDisplayAttribute
+- uid: BK.RuntimeDebugAction.ReorderableBase
+  commentId: T:BK.RuntimeDebugAction.ReorderableBase
+  parent: BK.RuntimeDebugAction
+  name: ReorderableBase
+  nameWithType: ReorderableBase
+  fullName: BK.RuntimeDebugAction.ReorderableBase
+- uid: BK.RuntimeDebugAction.CollapsedEventAttribute
+  commentId: T:BK.RuntimeDebugAction.CollapsedEventAttribute
+  name: CollapsedEventAttribute
+  nameWithType: CollapsedEventAttribute
+  fullName: BK.RuntimeDebugAction.CollapsedEventAttribute
+- uid: BK.RuntimeDebugAction.CommentAttribute
+  commentId: T:BK.RuntimeDebugAction.CommentAttribute
+  name: CommentAttribute
+  nameWithType: CommentAttribute
+  fullName: BK.RuntimeDebugAction.CommentAttribute
+- uid: BK.RuntimeDebugAction.TitleAttribute
+  commentId: T:BK.RuntimeDebugAction.TitleAttribute
+  parent: BK.RuntimeDebugAction
+  name: TitleAttribute
+  nameWithType: TitleAttribute
+  fullName: BK.RuntimeDebugAction.TitleAttribute
+- uid: BK.RuntimeDebugAction.Singleton`1
+  commentId: T:BK.RuntimeDebugAction.Singleton`1
+  name: Singleton<T>
+  nameWithType: Singleton<T>
+  fullName: BK.RuntimeDebugAction.Singleton<T>
+  nameWithType.vb: Singleton(Of T)
+  fullName.vb: BK.RuntimeDebugAction.Singleton(Of T)
+  name.vb: Singleton(Of T)
+  spec.csharp:
+  - uid: BK.RuntimeDebugAction.Singleton`1
+    name: Singleton
+    nameWithType: Singleton
+    fullName: BK.RuntimeDebugAction.Singleton
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: BK.RuntimeDebugAction.Singleton`1
+    name: Singleton
+    nameWithType: Singleton
+    fullName: BK.RuntimeDebugAction.Singleton
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BK.RuntimeDebugAction
+  commentId: N:BK.RuntimeDebugAction
+  name: BK.RuntimeDebugAction
+  nameWithType: BK.RuntimeDebugAction
+  fullName: BK.RuntimeDebugAction
