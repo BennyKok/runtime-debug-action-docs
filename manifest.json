@@ -5,11 +5,11 @@
   "files": [
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BK.RuntimeDebugAction.CollapsedEventAttribute.yml",
+      "source_relative_path": "api/BK.RDAction.Components.RDActionHandler.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BK.RuntimeDebugAction.CollapsedEventAttribute.html",
-          "hash": "/8tMLo4ahAEAd0XDc7WheA=="
+          "relative_path": "api/BK.RDAction.Components.RDActionHandler.html",
+          "hash": "M1/Ct8w1o9JhwXY4ONCFLg=="
         }
       },
       "is_incremental": false,
@@ -17,11 +17,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BK.RuntimeDebugAction.CommentAttribute.yml",
+      "source_relative_path": "api/BK.RDAction.Components.UI.RDActionUI.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BK.RuntimeDebugAction.CommentAttribute.html",
-          "hash": "ofHs+9Rk8xrpU02ZuB+IOw=="
+          "relative_path": "api/BK.RDAction.Components.UI.RDActionUI.html",
+          "hash": "4RuMOqnZ5sdA6qGrtxjZIQ=="
         }
       },
       "is_incremental": false,
@@ -29,11 +29,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BK.RuntimeDebugAction.RDAction.yml",
+      "source_relative_path": "api/BK.RDAction.Components.UI.RDActionUIEvent.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BK.RuntimeDebugAction.RDAction.html",
-          "hash": "9A07W5a5EYqXMjztCiTYFQ=="
+          "relative_path": "api/BK.RDAction.Components.UI.RDActionUIEvent.html",
+          "hash": "4sTLDAfjy2kcv2ab6PGVXw=="
         }
       },
       "is_incremental": false,
@@ -41,11 +41,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BK.RuntimeDebugAction.RDActionHandler.yml",
+      "source_relative_path": "api/BK.RDAction.Components.UI.RDActionUIView.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BK.RuntimeDebugAction.RDActionHandler.html",
-          "hash": "gLo/F+RJpyevGYjSctZLaA=="
+          "relative_path": "api/BK.RDAction.Components.UI.RDActionUIView.html",
+          "hash": "v4AP4PAPiAXhjYp7PiWdNA=="
         }
       },
       "is_incremental": false,
@@ -53,11 +53,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BK.RuntimeDebugAction.RDActionSettings.TouchToggleMode.yml",
+      "source_relative_path": "api/BK.RDAction.Components.UI.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BK.RuntimeDebugAction.RDActionSettings.TouchToggleMode.html",
-          "hash": "rkavUFJqev6ioIhUerNSzg=="
+          "relative_path": "api/BK.RDAction.Components.UI.html",
+          "hash": "WYiHf2LE7SYWVq7O5+LvxQ=="
         }
       },
       "is_incremental": false,
@@ -65,11 +65,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BK.RuntimeDebugAction.RDActionSettings.yml",
+      "source_relative_path": "api/BK.RDAction.Components.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BK.RuntimeDebugAction.RDActionSettings.html",
-          "hash": "la4HUNdgHfN1R1S8yE+3jA=="
+          "relative_path": "api/BK.RDAction.Components.html",
+          "hash": "0hXxFpqpgERP4XaNbXik4A=="
         }
       },
       "is_incremental": false,
@@ -77,11 +77,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BK.RuntimeDebugAction.RDActionSystem.yml",
+      "source_relative_path": "api/BK.RDAction.Data.RDAction.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BK.RuntimeDebugAction.RDActionSystem.html",
-          "hash": "iGHAfRcXKdoWoAvhhDvlQQ=="
+          "relative_path": "api/BK.RDAction.Data.RDAction.html",
+          "hash": "6b5PvWbjBLkXXuIjiziIFA=="
         }
       },
       "is_incremental": false,
@@ -89,11 +89,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BK.RuntimeDebugAction.RDActionToggle.yml",
+      "source_relative_path": "api/BK.RDAction.Data.RDActionSettings.TouchToggleMode.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BK.RuntimeDebugAction.RDActionToggle.html",
-          "hash": "QiB5dqBQISV4ksYaR/6qYA=="
+          "relative_path": "api/BK.RDAction.Data.RDActionSettings.TouchToggleMode.html",
+          "hash": "xAMjkMW487uZ/1lwC89ZPg=="
         }
       },
       "is_incremental": false,
@@ -101,11 +101,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BK.RuntimeDebugAction.RDActionUI.yml",
+      "source_relative_path": "api/BK.RDAction.Data.RDActionSettings.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BK.RuntimeDebugAction.RDActionUI.html",
-          "hash": "FndDaLN1rzAiKsOzfFaT5A=="
+          "relative_path": "api/BK.RDAction.Data.RDActionSettings.html",
+          "hash": "aGuXVxhDRf7RxZIg08OjEw=="
         }
       },
       "is_incremental": false,
@@ -113,11 +113,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BK.RuntimeDebugAction.RDActionUIEvent.yml",
+      "source_relative_path": "api/BK.RDAction.Data.RDActionToggle.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BK.RuntimeDebugAction.RDActionUIEvent.html",
-          "hash": "wWrD/v6jx2FBtJVQ2hJjaA=="
+          "relative_path": "api/BK.RDAction.Data.RDActionToggle.html",
+          "hash": "I7asuRn5mpOSfqODDoN03A=="
         }
       },
       "is_incremental": false,
@@ -125,11 +125,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BK.RuntimeDebugAction.RDActionUIView.yml",
+      "source_relative_path": "api/BK.RDAction.Data.RDFlag.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BK.RuntimeDebugAction.RDActionUIView.html",
-          "hash": "QW0Zx+FANnV5zyD6XI/BqQ=="
+          "relative_path": "api/BK.RDAction.Data.RDFlag.html",
+          "hash": "+oIxPExlbpamkeM4TkEfDA=="
         }
       },
       "is_incremental": false,
@@ -137,11 +137,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BK.RuntimeDebugAction.RDFlag.yml",
+      "source_relative_path": "api/BK.RDAction.Data.RDFlagsList.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BK.RuntimeDebugAction.RDFlag.html",
-          "hash": "c5F38swmLkatD6bnYYOlOw=="
+          "relative_path": "api/BK.RDAction.Data.RDFlagsList.html",
+          "hash": "L1UjSUcaXN1r4mYMFarTtQ=="
         }
       },
       "is_incremental": false,
@@ -149,11 +149,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BK.RuntimeDebugAction.RDFlagsList.yml",
+      "source_relative_path": "api/BK.RDAction.Data.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BK.RuntimeDebugAction.RDFlagsList.html",
-          "hash": "8zKZQBYRlauswCMdMpVLHg=="
+          "relative_path": "api/BK.RDAction.Data.html",
+          "hash": "xxGlNUJrc17pib1ldTPl3A=="
         }
       },
       "is_incremental": false,
@@ -161,11 +161,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BK.RuntimeDebugAction.ReorderableBase.yml",
+      "source_relative_path": "api/BK.RDAction.Managers.RDActionSystem.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BK.RuntimeDebugAction.ReorderableBase.html",
-          "hash": "xJGwf9lRxvIuIS+J3wWNaw=="
+          "relative_path": "api/BK.RDAction.Managers.RDActionSystem.html",
+          "hash": "NPC+Ww47zznLtA3v/9rmfA=="
         }
       },
       "is_incremental": false,
@@ -173,11 +173,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BK.RuntimeDebugAction.ReorderableDisplayAttribute.yml",
+      "source_relative_path": "api/BK.RDAction.Managers.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BK.RuntimeDebugAction.ReorderableDisplayAttribute.html",
-          "hash": "FRSN+OPmuIpYBj+csyy3uw=="
+          "relative_path": "api/BK.RDAction.Managers.html",
+          "hash": "uljS4LTPcIGAtzfMkbObBQ=="
         }
       },
       "is_incremental": false,
@@ -185,11 +185,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BK.RuntimeDebugAction.ReorderableList-1.yml",
+      "source_relative_path": "api/BK.RDAction.Utils.CollapsedEventAttribute.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BK.RuntimeDebugAction.ReorderableList-1.html",
-          "hash": "lQzL8LuYlFOPYp0ARb6Mfw=="
+          "relative_path": "api/BK.RDAction.Utils.CollapsedEventAttribute.html",
+          "hash": "u2YUbGuwMGxyrjj8fYIVOw=="
         }
       },
       "is_incremental": false,
@@ -197,11 +197,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BK.RuntimeDebugAction.Singleton-1.yml",
+      "source_relative_path": "api/BK.RDAction.Utils.CommentAttribute.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BK.RuntimeDebugAction.Singleton-1.html",
-          "hash": "NiXIRGTQRqKYRASlL8Le4Q=="
+          "relative_path": "api/BK.RDAction.Utils.CommentAttribute.html",
+          "hash": "tGnFBhO1Qp5ECrUj4UNk0A=="
         }
       },
       "is_incremental": false,
@@ -209,11 +209,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BK.RuntimeDebugAction.TitleAttribute.yml",
+      "source_relative_path": "api/BK.RDAction.Utils.ReorderableBase.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BK.RuntimeDebugAction.TitleAttribute.html",
-          "hash": "AcmsMZ5Ye6f3Tj1T2T/WXg=="
+          "relative_path": "api/BK.RDAction.Utils.ReorderableBase.html",
+          "hash": "4LfuUDavV31xoz6yBoaziA=="
         }
       },
       "is_incremental": false,
@@ -221,11 +221,59 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BK.RuntimeDebugAction.yml",
+      "source_relative_path": "api/BK.RDAction.Utils.ReorderableDisplayAttribute.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BK.RuntimeDebugAction.html",
-          "hash": "j74XPMZtZ7WZdp7HThKO4A=="
+          "relative_path": "api/BK.RDAction.Utils.ReorderableDisplayAttribute.html",
+          "hash": "mhanFfN68SSH3BIj1abtPQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BK.RDAction.Utils.ReorderableList-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BK.RDAction.Utils.ReorderableList-1.html",
+          "hash": "SbJTKdfTFTu4afoJzqaNwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BK.RDAction.Utils.Singleton-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BK.RDAction.Utils.Singleton-1.html",
+          "hash": "fPfXMFZoJK1L6ptiktlM8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BK.RDAction.Utils.TitleAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BK.RDAction.Utils.TitleAttribute.html",
+          "hash": "flqcBYuH4nGX+XrYFO0X8Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BK.RDAction.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BK.RDAction.Utils.html",
+          "hash": "4MZ9R7kOmQjtaKGNopaFmw=="
         }
       },
       "is_incremental": false,
@@ -249,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "M7KpCfueJsq91eU2fF0gDA=="
+          "hash": "NCM/slTscoKVEUxZ9FGaEA=="
         }
       },
       "is_incremental": false,
@@ -324,7 +372,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 19,
+          "total_file_count": 23,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
