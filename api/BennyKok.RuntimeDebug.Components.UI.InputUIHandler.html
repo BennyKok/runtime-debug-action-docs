@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ReorderableBase
+    <title>Class InputUIHandler
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ReorderableBase
+    <meta name="title" content="Class InputUIHandler
    ">
     <meta name="generator" content="docfx 2.56.2.0">
     
@@ -68,25 +68,78 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="BK.RDAction.Utils.ReorderableBase">
+            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.Components.UI.InputUIHandler">
   
   
-  <h1 id="BK_RDAction_Utils_ReorderableBase" data-uid="BK.RDAction.Utils.ReorderableBase" class="text-break">Class ReorderableBase
+  <h1 id="BennyKok_RuntimeDebug_Components_UI_InputUIHandler" data-uid="BennyKok.RuntimeDebug.Components.UI.InputUIHandler" class="text-break">Class InputUIHandler
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">ReorderableBase</span></div>
-      <div class="level2"><a class="xref" href="BK.RDAction.Utils.ReorderableList-1.html">ReorderableList&lt;U&gt;</a></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">InputUIHandler</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="BK.RDAction.Utils.html">BK.RDAction.Utils</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Components.UI.html">BennyKok.RuntimeDebug.Components.UI</a></h6>
   <h6><strong>Assembly</strong>: com.bennykok.runtime-debug-action.dll</h6>
-  <h5 id="BK_RDAction_Utils_ReorderableBase_syntax">Syntax</h5>
+  <h5 id="BennyKok_RuntimeDebug_Components_UI_InputUIHandler_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Serializable]
-public class ReorderableBase</code></pre>
+    <pre><code class="lang-csharp hljs">[RequireComponent(typeof(TMP_InputField))]
+public class InputUIHandler : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_InputUIHandler_AskForInput_" data-uid="BennyKok.RuntimeDebug.Components.UI.InputUIHandler.AskForInput*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_InputUIHandler_AskForInput_BennyKok_RuntimeDebug_DebugInput_InputQuery_System_Action_System_String__System_Action_" data-uid="BennyKok.RuntimeDebug.Components.UI.InputUIHandler.AskForInput(BennyKok.RuntimeDebug.DebugInput.InputQuery,System.Action{System.String},System.Action)">AskForInput(InputQuery, Action&lt;String&gt;, Action)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AskForInput(InputQuery query, Action&lt;string&gt; resultCallback, Action cancelCallback = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.DebugInput.InputQuery.html">InputQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">resultCallback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">cancelCallback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_InputUIHandler_DimissInput_" data-uid="BennyKok.RuntimeDebug.Components.UI.InputUIHandler.DimissInput*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_InputUIHandler_DimissInput" data-uid="BennyKok.RuntimeDebug.Components.UI.InputUIHandler.DimissInput">DimissInput()</h4>
+  <div class="markdown level1 summary"><p>Dismiss the input, which will deactivate the gameobject and replease the input block of the <a class="xref" href="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html">RuntimeDebugSystem</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DimissInput()</code></pre>
   </div>
 </article>
           </div>

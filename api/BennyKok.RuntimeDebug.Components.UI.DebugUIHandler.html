@@ -1,0 +1,772 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DebugUIHandler
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DebugUIHandler
+   ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler">
+  
+  
+  <h1 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler" class="text-break">Class DebugUIHandler
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">DebugUIHandler</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Components.UI.html">BennyKok.RuntimeDebug.Components.UI</a></h6>
+  <h6><strong>Assembly</strong>: com.bennykok.runtime-debug-action.dll</h6>
+  <h5 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;Runtime Debug Action/UI/Debug UI Handler&quot;)]
+public class DebugUIHandler : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_actionDisplayPrefab" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.actionDisplayPrefab">actionDisplayPrefab</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Title(&quot;Prefabs&quot;, 1)]
+public ListItemView actionDisplayPrefab</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Components.UI.ListItemView.html">ListItemView</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_actionListLayer" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.actionListLayer">actionListLayer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject actionListLayer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_backButton" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.backButton">backButton</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Button backButton</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.UI.Button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_customFont" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.customFont">customFont</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Title(&quot;Styles&quot;, 1)]
+public TMP_FontAsset customFont</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TMPro.TMP_FontAsset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_dimLayer" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.dimLayer">dimLayer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject dimLayer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_inputHandler" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.inputHandler">inputHandler</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputUIHandler inputHandler</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Components.UI.InputUIHandler.html">InputUIHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_navigationHeader" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.navigationHeader">navigationHeader</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextMeshProUGUI navigationHeader</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TMPro.TextMeshProUGUI</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_rootList" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.rootList">rootList</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListView rootList</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Components.UI.ListView.html">ListView</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_searchField" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.searchField">searchField</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Title(&quot;References&quot;, false, 1)]
+public TMP_InputField searchField</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TMPro.TMP_InputField</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_showCursorAfterClose" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.showCursorAfterClose">showCursorAfterClose</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public bool showCursorAfterClose</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_system" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.system">system</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public RuntimeDebugSystem system</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html">RuntimeDebugSystem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_touchToggle" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.touchToggle">touchToggle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Button touchToggle</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.UI.Button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_BackNavigationVisible_" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.BackNavigationVisible*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_BackNavigationVisible" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.BackNavigationVisible">BackNavigationVisible</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BackNavigationVisible { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_IsSearching_" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.IsSearching*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_IsSearching" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.IsSearching">IsSearching</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSearching { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_IsVisible_" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.IsVisible*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_IsVisible" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.IsVisible">IsVisible</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVisible { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_AttachSystem_" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.AttachSystem*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_AttachSystem_BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.AttachSystem(BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem)">AttachSystem(RuntimeDebugSystem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AttachSystem(RuntimeDebugSystem system)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html">RuntimeDebugSystem</a></td>
+        <td><span class="parametername">system</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_HideBackNavigation_" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.HideBackNavigation*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_HideBackNavigation" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.HideBackNavigation">HideBackNavigation()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HideBackNavigation()</code></pre>
+  </div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_HideCursor_" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.HideCursor*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_HideCursor" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.HideCursor">HideCursor()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HideCursor()</code></pre>
+  </div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_HideSearchField_" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.HideSearchField*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_HideSearchField" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.HideSearchField">HideSearchField()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HideSearchField()</code></pre>
+  </div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_OnAddAction_" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnAddAction*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_OnAddAction_BennyKok_RuntimeDebug_Actions_BaseAction_" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnAddAction(BennyKok.RuntimeDebug.Actions.BaseAction)">OnAddAction(BaseAction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnAddAction(BaseAction action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseAction.html">BaseAction</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_OnBackNavigation_" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnBackNavigation*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_OnBackNavigation" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnBackNavigation">OnBackNavigation()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnBackNavigation()</code></pre>
+  </div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_OnDisplayAction_" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnDisplayAction*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_OnDisplayAction_BennyKok_RuntimeDebug_Actions_BaseAction_UnityEngine_RectTransform_" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnDisplayAction(BennyKok.RuntimeDebug.Actions.BaseAction,UnityEngine.RectTransform)">OnDisplayAction(BaseAction, RectTransform)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnDisplayAction(BaseAction trigger, RectTransform from = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseAction.html">BaseAction</a></td>
+        <td><span class="parametername">trigger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.RectTransform</span></td>
+        <td><span class="parametername">from</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_OnRemoveAction_" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnRemoveAction*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_OnRemoveAction_BennyKok_RuntimeDebug_Actions_BaseAction_" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnRemoveAction(BennyKok.RuntimeDebug.Actions.BaseAction)">OnRemoveAction(BaseAction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnRemoveAction(BaseAction action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseAction.html">BaseAction</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_OnSearch_" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnSearch*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_OnSearch_System_String_" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnSearch(System.String)">OnSearch(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnSearch(string query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_SetNavigationHeader_" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.SetNavigationHeader*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_SetNavigationHeader_System_String_" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.SetNavigationHeader(System.String)">SetNavigationHeader(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNavigationHeader(string header)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">header</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_ShowBackNavigation_" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.ShowBackNavigation*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_ShowBackNavigation" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.ShowBackNavigation">ShowBackNavigation()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowBackNavigation()</code></pre>
+  </div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_ShowCursor_" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.ShowCursor*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_ShowCursor" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.ShowCursor">ShowCursor()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowCursor()</code></pre>
+  </div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_ShowSearchField_" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.ShowSearchField*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_ShowSearchField" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.ShowSearchField">ShowSearchField()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowSearchField()</code></pre>
+  </div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_TogglePanel_" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.TogglePanel*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_TogglePanel_System_Boolean_System_Boolean_" data-uid="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.TogglePanel(System.Boolean,System.Boolean)">TogglePanel(Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TogglePanel(bool force = false, bool open = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">force</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">open</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

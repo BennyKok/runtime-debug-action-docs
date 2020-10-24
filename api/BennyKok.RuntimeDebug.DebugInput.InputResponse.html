@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class RDActionSystem
+    <title>Struct InputResponse
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class RDActionSystem
+    <meta name="title" content="Struct InputResponse
    ">
     <meta name="generator" content="docfx 2.56.2.0">
     
@@ -68,47 +68,58 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="BK.RDAction.Managers.RDActionSystem">
+            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.DebugInput.InputResponse">
   
   
-  <h1 id="BK_RDAction_Managers_RDActionSystem" data-uid="BK.RDAction.Managers.RDActionSystem" class="text-break">Class RDActionSystem
+  <h1 id="BennyKok_RuntimeDebug_DebugInput_InputResponse" data-uid="BennyKok.RuntimeDebug.DebugInput.InputResponse" class="text-break">Struct InputResponse
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
-    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
-    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
-    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
-    <div class="level5"><a class="xref" href="BK.RDAction.Utils.Singleton-1.html">Singleton</a>&lt;<a class="xref" href="BK.RDAction.Managers.RDActionSystem.html">RDActionSystem</a>&gt;</div>
-    <div class="level6"><span class="xref">RDActionSystem</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="BK.RDAction.Utils.Singleton-1.html#BK_RDAction_Utils_Singleton_1_Instance">Singleton&lt;RDActionSystem&gt;.Instance</a>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="BK.RDAction.Managers.html">BK.RDAction.Managers</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.DebugInput.html">BennyKok.RuntimeDebug.DebugInput</a></h6>
   <h6><strong>Assembly</strong>: com.bennykok.runtime-debug-action.dll</h6>
-  <h5 id="BK_RDAction_Managers_RDActionSystem_syntax">Syntax</h5>
+  <h5 id="BennyKok_RuntimeDebug_DebugInput_InputResponse_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;&quot;)]
-public class RDActionSystem : Singleton&lt;RDActionSystem&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public struct InputResponse</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="BennyKok_RuntimeDebug_DebugInput_InputResponse__ctor_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputResponse.#ctor*"></a>
+  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputResponse__ctor_System_Collections_Generic_Dictionary_BennyKok_RuntimeDebug_DebugInput_Param_System_String__" data-uid="BennyKok.RuntimeDebug.DebugInput.InputResponse.#ctor(System.Collections.Generic.Dictionary{BennyKok.RuntimeDebug.DebugInput.Param,System.String})">InputResponse(Dictionary&lt;Param, String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputResponse(Dictionary&lt;Param, string&gt; responses)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="BennyKok.RuntimeDebug.DebugInput.Param.html">Param</a>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">responses</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="fields">Fields
   </h3>
   
   
-  <h4 id="BK_RDAction_Managers_RDActionSystem_actions" data-uid="BK.RDAction.Managers.RDActionSystem.actions">actions</h4>
+  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputResponse_responses" data-uid="BennyKok.RuntimeDebug.DebugInput.InputResponse.responses">responses</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NonSerialized]
-public List&lt;RDAction&gt; actions</code></pre>
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;Param, string&gt; responses</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -120,57 +131,7 @@ public List&lt;RDAction&gt; actions</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BK.RDAction.Data.RDAction.html">RDAction</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BK_RDAction_Managers_RDActionSystem_runtimeDebugUI" data-uid="BK.RDAction.Managers.RDActionSystem.runtimeDebugUI">runtimeDebugUI</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NonSerialized]
-public RDActionUI runtimeDebugUI</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="BK.RDAction.Components.UI.RDActionUI.html">RDActionUI</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BK_RDAction_Managers_RDActionSystem_settings" data-uid="BK.RDAction.Managers.RDActionSystem.settings">settings</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NonSerialized]
-public RDActionSettings settings</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="BK.RDAction.Data.RDActionSettings.html">RDActionSettings</a></td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="BennyKok.RuntimeDebug.DebugInput.Param.html">Param</a>, <span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -179,25 +140,13 @@ public RDActionSettings settings</code></pre>
   </h3>
   
   
-  <a id="BK_RDAction_Managers_RDActionSystem_Awake_" data-uid="BK.RDAction.Managers.RDActionSystem.Awake*"></a>
-  <h4 id="BK_RDAction_Managers_RDActionSystem_Awake" data-uid="BK.RDAction.Managers.RDActionSystem.Awake">Awake()</h4>
+  <a id="BennyKok_RuntimeDebug_DebugInput_InputResponse_GetParam_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParam*"></a>
+  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputResponse_GetParam_System_String_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParam(System.String)">GetParam(String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void Awake()</code></pre>
-  </div>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">BK.RDAction.Utils.Singleton&lt;BK.RDAction.Managers.RDActionSystem&gt;.Awake()</span></div>
-  
-  
-  <a id="BK_RDAction_Managers_RDActionSystem_HasFlag_" data-uid="BK.RDAction.Managers.RDActionSystem.HasFlag*"></a>
-  <h4 id="BK_RDAction_Managers_RDActionSystem_HasFlag_System_String_" data-uid="BK.RDAction.Managers.RDActionSystem.HasFlag(System.String)">HasFlag(String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool HasFlag(string name)</code></pre>
+    <pre><code class="lang-csharp hljs">public KeyValuePair&lt;Param, string&gt; GetParam(string paramName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -211,7 +160,49 @@ public RDActionSettings settings</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
+        <td><span class="parametername">paramName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.KeyValuePair</span>&lt;<a class="xref" href="BennyKok.RuntimeDebug.DebugInput.Param.html">Param</a>, <span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_DebugInput_InputResponse_GetParamBool_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamBool*"></a>
+  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputResponse_GetParamBool_System_String_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamBool(System.String)">GetParamBool(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetParamBool(string paramName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">paramName</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -233,52 +224,13 @@ public RDActionSettings settings</code></pre>
   </table>
   
   
-  <a id="BK_RDAction_Managers_RDActionSystem_Init_" data-uid="BK.RDAction.Managers.RDActionSystem.Init*"></a>
-  <h4 id="BK_RDAction_Managers_RDActionSystem_Init" data-uid="BK.RDAction.Managers.RDActionSystem.Init">Init()</h4>
-  <div class="markdown level1 summary"><p>Auto inject the RuntimeDebugSystem into your scene as a singleton</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
-public static void Init()</code></pre>
-  </div>
-  
-  
-  <a id="BK_RDAction_Managers_RDActionSystem_RegisterActions_" data-uid="BK.RDAction.Managers.RDActionSystem.RegisterActions*"></a>
-  <h4 id="BK_RDAction_Managers_RDActionSystem_RegisterActions_BK_RDAction_Data_RDAction___" data-uid="BK.RDAction.Managers.RDActionSystem.RegisterActions(BK.RDAction.Data.RDAction[])">RegisterActions(RDAction[])</h4>
+  <a id="BennyKok_RuntimeDebug_DebugInput_InputResponse_GetParamFloat_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamFloat*"></a>
+  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputResponse_GetParamFloat_System_String_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamFloat(System.String)">GetParamFloat(String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void RegisterActions(params RDAction[] list)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="BK.RDAction.Data.RDAction.html">RDAction</a>[]</td>
-        <td><span class="parametername">list</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="BK_RDAction_Managers_RDActionSystem_RegisterActions_" data-uid="BK.RDAction.Managers.RDActionSystem.RegisterActions*"></a>
-  <h4 id="BK_RDAction_Managers_RDActionSystem_RegisterActions_System_String_BK_RDAction_Data_RDAction___" data-uid="BK.RDAction.Managers.RDActionSystem.RegisterActions(System.String,BK.RDAction.Data.RDAction[])">RegisterActions(String, RDAction[])</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void RegisterActions(string tag, params RDAction[] list)</code></pre>
+    <pre><code class="lang-csharp hljs">public float GetParamFloat(string paramName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -292,25 +244,35 @@ public static void Init()</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">tag</span></td>
+        <td><span class="parametername">paramName</span></td>
         <td></td>
       </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
       <tr>
-        <td><a class="xref" href="BK.RDAction.Data.RDAction.html">RDAction</a>[]</td>
-        <td><span class="parametername">list</span></td>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="BK_RDAction_Managers_RDActionSystem_UnregisterActionByTag_" data-uid="BK.RDAction.Managers.RDActionSystem.UnregisterActionByTag*"></a>
-  <h4 id="BK_RDAction_Managers_RDActionSystem_UnregisterActionByTag_System_String_" data-uid="BK.RDAction.Managers.RDActionSystem.UnregisterActionByTag(System.String)">UnregisterActionByTag(String)</h4>
+  <a id="BennyKok_RuntimeDebug_DebugInput_InputResponse_GetParamString_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamString*"></a>
+  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputResponse_GetParamString_System_String_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamString(System.String)">GetParamString(String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void UnregisterActionByTag(string tag)</code></pre>
+    <pre><code class="lang-csharp hljs">public string GetParamString(string paramName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -324,34 +286,22 @@ public static void Init()</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">tag</span></td>
+        <td><span class="parametername">paramName</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="BK_RDAction_Managers_RDActionSystem_UnregisterActions_" data-uid="BK.RDAction.Managers.RDActionSystem.UnregisterActions*"></a>
-  <h4 id="BK_RDAction_Managers_RDActionSystem_UnregisterActions_BK_RDAction_Data_RDAction___" data-uid="BK.RDAction.Managers.RDActionSystem.UnregisterActions(BK.RDAction.Data.RDAction[])">UnregisterActions(RDAction[])</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void UnregisterActions(params RDAction[] list)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BK.RDAction.Data.RDAction.html">RDAction</a>[]</td>
-        <td><span class="parametername">list</span></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>

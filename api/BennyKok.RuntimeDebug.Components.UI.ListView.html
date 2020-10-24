@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class RDActionSettings
+    <title>Class ListView
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class RDActionSettings
+    <meta name="title" content="Class ListView
    ">
     <meta name="generator" content="docfx 2.56.2.0">
     
@@ -68,10 +68,10 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="BK.RDAction.Data.RDActionSettings">
+            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView">
   
   
-  <h1 id="BK_RDAction_Data_RDActionSettings" data-uid="BK.RDAction.Data.RDActionSettings" class="text-break">Class RDActionSettings
+  <h1 id="BennyKok_RuntimeDebug_Components_UI_ListView" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView" class="text-break">Class ListView
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
@@ -79,25 +79,28 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">UnityEngine.Object</span></div>
-    <div class="level2"><span class="xref">UnityEngine.ScriptableObject</span></div>
-    <div class="level3"><span class="xref">RDActionSettings</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">ListView</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="BK.RDAction.Data.html">BK.RDAction.Data</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Components.UI.html">BennyKok.RuntimeDebug.Components.UI</a></h6>
   <h6><strong>Assembly</strong>: com.bennykok.runtime-debug-action.dll</h6>
-  <h5 id="BK_RDAction_Data_RDActionSettings_syntax">Syntax</h5>
+  <h5 id="BennyKok_RuntimeDebug_Components_UI_ListView_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class RDActionSettings : ScriptableObject</code></pre>
+    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;Runtime Debug Action/UI/List View&quot;)]
+public class ListView : MonoBehaviour</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
   
   
-  <h4 id="BK_RDAction_Data_RDActionSettings_addLoadSceneOptions" data-uid="BK.RDAction.Data.RDActionSettings.addLoadSceneOptions">addLoadSceneOptions</h4>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListView_indicator" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.indicator">indicator</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool addLoadSceneOptions</code></pre>
+    <pre><code class="lang-csharp hljs">public RectTransform indicator</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -109,119 +112,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">UnityEngine.RectTransform</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BK_RDAction_Data_RDActionSettings_addQualityOptions" data-uid="BK.RDAction.Data.RDActionSettings.addQualityOptions">addQualityOptions</h4>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListView_itemPrefab" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.itemPrefab">itemPrefab</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Title(&quot;Default Menu&quot;, 0)]
-public bool addQualityOptions</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BK_RDAction_Data_RDActionSettings_enabled" data-uid="BK.RDAction.Data.RDActionSettings.enabled">enabled</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Title(&quot;Setup&quot;, false, 0)]
-public bool enabled</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BK_RDAction_Data_RDActionSettings_globalFlags" data-uid="BK.RDAction.Data.RDActionSettings.globalFlags">globalFlags</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Title(&quot;Debug Flags&quot;, 0)]
-[ReorderableDisplay(&quot;Flag&quot;)]
-public RDFlagsList globalFlags</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="BK.RDAction.Data.RDFlagsList.html">RDFlagsList</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BK_RDAction_Data_RDActionSettings_hideCursorOnStart" data-uid="BK.RDAction.Data.RDActionSettings.hideCursorOnStart">hideCursorOnStart</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool hideCursorOnStart</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BK_RDAction_Data_RDActionSettings_interfacePrefab" data-uid="BK.RDAction.Data.RDActionSettings.interfacePrefab">interfacePrefab</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GameObject interfacePrefab</code></pre>
+    <pre><code class="lang-csharp hljs">[Title(&quot;Prefabs&quot;, 1)]
+public GameObject itemPrefab</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -240,13 +144,13 @@ public RDFlagsList globalFlags</code></pre>
   </table>
   
   
-  <h4 id="BK_RDAction_Data_RDActionSettings_menuKey" data-uid="BK.RDAction.Data.RDActionSettings.menuKey">menuKey</h4>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListView_listParent" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.listParent">listParent</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Title(&quot;Interaction&quot;, 0)]
-public KeyCode menuKey</code></pre>
+    <pre><code class="lang-csharp hljs">[Title(&quot;References&quot;, false, 1)]
+public RectTransform listParent</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -258,120 +162,21 @@ public KeyCode menuKey</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UnityEngine.KeyCode</span></td>
+        <td><span class="xref">UnityEngine.RectTransform</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BK_RDAction_Data_RDActionSettings_settingsAssetName" data-uid="BK.RDAction.Data.RDActionSettings.settingsAssetName">settingsAssetName</h4>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListView_reverseOrder" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.reverseOrder">reverseOrder</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string settingsAssetName = &quot;RDActionSettings&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public bool reverseOrder</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BK_RDAction_Data_RDActionSettings_settingsFolderPath" data-uid="BK.RDAction.Data.RDActionSettings.settingsFolderPath">settingsFolderPath</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string settingsFolderPath = &quot;Assets/Resources/&quot;</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BK_RDAction_Data_RDActionSettings_settingsPath" data-uid="BK.RDAction.Data.RDActionSettings.settingsPath">settingsPath</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string settingsPath = &quot;Assets/Resources/RDActionSettings.asset&quot;</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BK_RDAction_Data_RDActionSettings_touchToggleMode" data-uid="BK.RDAction.Data.RDActionSettings.touchToggleMode">touchToggleMode</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RDActionSettings.TouchToggleMode touchToggleMode</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="BK.RDAction.Data.RDActionSettings.TouchToggleMode.html">RDActionSettings.TouchToggleMode</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  
-  
-  <a id="BK_RDAction_Data_RDActionSettings_IsShowTouchToggle_" data-uid="BK.RDAction.Data.RDActionSettings.IsShowTouchToggle*"></a>
-  <h4 id="BK_RDAction_Data_RDActionSettings_IsShowTouchToggle" data-uid="BK.RDAction.Data.RDActionSettings.IsShowTouchToggle">IsShowTouchToggle()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsShowTouchToggle()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -382,6 +187,216 @@ public KeyCode menuKey</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListView_subActionList" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.subActionList">subActionList</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Title(&quot;Options&quot;, 1)]
+public ListView subActionList</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Components.UI.ListView.html">ListView</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListView_uiParent" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.uiParent">uiParent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public DebugUIHandler uiParent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.html">DebugUIHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_ListView_AddItem_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.AddItem*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListView_AddItem_BennyKok_RuntimeDebug_Data_ListItem_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.AddItem(BennyKok.RuntimeDebug.Data.ListItem)">AddItem(ListItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddItem(ListItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Data.ListItem.html">ListItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_ListView_AttachUI_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.AttachUI*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListView_AttachUI_BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.AttachUI(BennyKok.RuntimeDebug.Components.UI.DebugUIHandler)">AttachUI(DebugUIHandler)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AttachUI(DebugUIHandler ui)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.html">DebugUIHandler</a></td>
+        <td><span class="parametername">ui</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_ListView_Clear_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.Clear*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListView_Clear" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.Clear">Clear()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_ListView_OnBackNavigation_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.OnBackNavigation*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListView_OnBackNavigation" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.OnBackNavigation">OnBackNavigation()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnBackNavigation()</code></pre>
+  </div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_ListView_OnResume_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.OnResume*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListView_OnResume" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.OnResume">OnResume()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnResume()</code></pre>
+  </div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_ListView_OnStop_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.OnStop*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListView_OnStop" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.OnStop">OnStop()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnStop()</code></pre>
+  </div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_ListView_RefreshStatus_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.RefreshStatus*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListView_RefreshStatus" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.RefreshStatus">RefreshStatus()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RefreshStatus()</code></pre>
+  </div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_ListView_SetItem_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.SetItem*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListView_SetItem_BennyKok_RuntimeDebug_Data_ListItem_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.SetItem(BennyKok.RuntimeDebug.Data.ListItem)">SetItem(ListItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetItem(ListItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Data.ListItem.html">ListItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_ListView_SetNavigationBackTarget_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.SetNavigationBackTarget*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListView_SetNavigationBackTarget_BennyKok_RuntimeDebug_Components_UI_ListView_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.SetNavigationBackTarget(BennyKok.RuntimeDebug.Components.UI.ListView)">SetNavigationBackTarget(ListView)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNavigationBackTarget(ListView list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Components.UI.ListView.html">ListView</a></td>
+        <td><span class="parametername">list</span></td>
         <td></td>
       </tr>
     </tbody>

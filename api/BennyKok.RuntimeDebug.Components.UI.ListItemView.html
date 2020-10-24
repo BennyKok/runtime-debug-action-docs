@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class RDAction
+    <title>Class ListItemView
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class RDAction
+    <meta name="title" content="Class ListItemView
    ">
     <meta name="generator" content="docfx 2.56.2.0">
     
@@ -68,196 +68,39 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="BK.RDAction.Data.RDAction">
+            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView">
   
   
-  <h1 id="BK_RDAction_Data_RDAction" data-uid="BK.RDAction.Data.RDAction" class="text-break">Class RDAction
+  <h1 id="BennyKok_RuntimeDebug_Components_UI_ListItemView" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView" class="text-break">Class ListItemView
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">RDAction</span></div>
-      <div class="level2"><a class="xref" href="BK.RDAction.Data.RDActionToggle.html">RDActionToggle</a></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">ListItemView</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="BK.RDAction.Data.html">BK.RDAction.Data</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Components.UI.html">BennyKok.RuntimeDebug.Components.UI</a></h6>
   <h6><strong>Assembly</strong>: com.bennykok.runtime-debug-action.dll</h6>
-  <h5 id="BK_RDAction_Data_RDAction_syntax">Syntax</h5>
+  <h5 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Serializable]
-public class RDAction</code></pre>
+    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;Runtime Debug Action/UI/List Item View&quot;)]
+public class ListItemView : MonoBehaviour</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  
-  
-  <a id="BK_RDAction_Data_RDAction__ctor_" data-uid="BK.RDAction.Data.RDAction.#ctor*"></a>
-  <h4 id="BK_RDAction_Data_RDAction__ctor" data-uid="BK.RDAction.Data.RDAction.#ctor">RDAction()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RDAction()</code></pre>
-  </div>
-  
-  
-  <a id="BK_RDAction_Data_RDAction__ctor_" data-uid="BK.RDAction.Data.RDAction.#ctor*"></a>
-  <h4 id="BK_RDAction_Data_RDAction__ctor_System_String_System_Action_" data-uid="BK.RDAction.Data.RDAction.#ctor(System.String,System.Action)">RDAction(String, Action)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RDAction(string label, Action action)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">label</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Action</span></td>
-        <td><span class="parametername">action</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="BK_RDAction_Data_RDAction__ctor_" data-uid="BK.RDAction.Data.RDAction.#ctor*"></a>
-  <h4 id="BK_RDAction_Data_RDAction__ctor_System_String_System_String_System_Action_" data-uid="BK.RDAction.Data.RDAction.#ctor(System.String,System.String,System.Action)">RDAction(String, String, Action)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RDAction(string label, string key, Action action)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">label</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">key</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Action</span></td>
-        <td><span class="parametername">action</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="BK_RDAction_Data_RDAction__ctor_" data-uid="BK.RDAction.Data.RDAction.#ctor*"></a>
-  <h4 id="BK_RDAction_Data_RDAction__ctor_System_String_System_String_System_String_System_Action_" data-uid="BK.RDAction.Data.RDAction.#ctor(System.String,System.String,System.String,System.Action)">RDAction(String, String, String, Action)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RDAction(string label, string description, string key, Action action)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">label</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">description</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">key</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Action</span></td>
-        <td><span class="parametername">action</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="BK_RDAction_Data_RDAction__ctor_" data-uid="BK.RDAction.Data.RDAction.#ctor*"></a>
-  <h4 id="BK_RDAction_Data_RDAction__ctor_System_String_UnityEngine_Color_System_Action_" data-uid="BK.RDAction.Data.RDAction.#ctor(System.String,UnityEngine.Color,System.Action)">RDAction(String, Color, Action)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RDAction(string label, Color actionColor, Action action)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">label</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">UnityEngine.Color</span></td>
-        <td><span class="parametername">actionColor</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Action</span></td>
-        <td><span class="parametername">action</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="fields">Fields
   </h3>
   
   
-  <h4 id="BK_RDAction_Data_RDAction_action" data-uid="BK.RDAction.Data.RDAction.action">action</h4>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_actionColor" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.actionColor">actionColor</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Action action</code></pre>
+    <pre><code class="lang-csharp hljs">public Image actionColor</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -269,19 +112,19 @@ public class RDAction</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Action</span></td>
+        <td><span class="xref">UnityEngine.UI.Image</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BK_RDAction_Data_RDAction_actionColor" data-uid="BK.RDAction.Data.RDAction.actionColor">actionColor</h4>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_button" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.button">button</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Color actionColor</code></pre>
+    <pre><code class="lang-csharp hljs">public Button button</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -293,19 +136,20 @@ public class RDAction</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UnityEngine.Color</span></td>
+        <td><span class="xref">UnityEngine.UI.Button</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BK_RDAction_Data_RDAction_actionStatus" data-uid="BK.RDAction.Data.RDAction.actionStatus">actionStatus</h4>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_folderIcon" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.folderIcon">folderIcon</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Func&lt;string&gt; actionStatus</code></pre>
+    <pre><code class="lang-csharp hljs">[Title(&quot;Options&quot;, 2)]
+public Sprite folderIcon</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -317,19 +161,19 @@ public class RDAction</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">UnityEngine.Sprite</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BK_RDAction_Data_RDAction_description" data-uid="BK.RDAction.Data.RDAction.description">description</h4>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_icon" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.icon">icon</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string description</code></pre>
+    <pre><code class="lang-csharp hljs">public Image icon</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -341,19 +185,20 @@ public class RDAction</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">UnityEngine.UI.Image</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BK_RDAction_Data_RDAction_key" data-uid="BK.RDAction.Data.RDAction.key">key</h4>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_isFocused" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.isFocused">isFocused</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string key</code></pre>
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public bool isFocused</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -365,19 +210,21 @@ public class RDAction</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BK_RDAction_Data_RDAction_label" data-uid="BK.RDAction.Data.RDAction.label">label</h4>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_label" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.label">label</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string label</code></pre>
+    <pre><code class="lang-csharp hljs">[Comment(&quot;Handling the data binding of the action trigger.&quot;, order = 0)]
+[Title(&quot;Reference&quot;, false, 2, order = 1)]
+public TextMeshProUGUI label</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -389,19 +236,20 @@ public class RDAction</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">TMPro.TextMeshProUGUI</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BK_RDAction_Data_RDAction_tag" data-uid="BK.RDAction.Data.RDAction.tag">tag</h4>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_rectTransform" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.rectTransform">rectTransform</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string tag</code></pre>
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public RectTransform rectTransform</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -413,19 +261,19 @@ public class RDAction</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">UnityEngine.RectTransform</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BK_RDAction_Data_RDAction_unityAction" data-uid="BK.RDAction.Data.RDAction.unityAction">unityAction</h4>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_showActionColor" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.showActionColor">showActionColor</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UnityEvent unityAction</code></pre>
+    <pre><code class="lang-csharp hljs">public bool showActionColor</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -437,7 +285,106 @@ public class RDAction</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UnityEngine.Events.UnityEvent</span></td>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_showIcon" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.showIcon">showIcon</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool showIcon</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_showTag" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.showTag">showTag</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool showTag</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_tagLabel" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.tagLabel">tagLabel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextMeshProUGUI tagLabel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TMPro.TextMeshProUGUI</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_ListItemView_IsGroup_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.IsGroup*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_IsGroup" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.IsGroup">IsGroup</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGroup { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -446,14 +393,68 @@ public class RDAction</code></pre>
   </h3>
   
   
-  <a id="BK_RDAction_Data_RDAction_ResolveAction_" data-uid="BK.RDAction.Data.RDAction.ResolveAction*"></a>
-  <h4 id="BK_RDAction_Data_RDAction_ResolveAction" data-uid="BK.RDAction.Data.RDAction.ResolveAction">ResolveAction()</h4>
+  <a id="BennyKok_RuntimeDebug_Components_UI_ListItemView_RefreshStatus_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.RefreshStatus*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_RefreshStatus_BennyKok_RuntimeDebug_Actions_BaseAction_BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.RefreshStatus(BennyKok.RuntimeDebug.Actions.BaseAction,BennyKok.RuntimeDebug.Components.UI.DebugUIHandler)">RefreshStatus(BaseAction, DebugUIHandler)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void ResolveAction()</code></pre>
+    <pre><code class="lang-csharp hljs">public void RefreshStatus(BaseAction action = null, DebugUIHandler uiHandler = null)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseAction.html">BaseAction</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.html">DebugUIHandler</a></td>
+        <td><span class="parametername">uiHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_ListItemView_SetItem_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.SetItem*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_SetItem_BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_BennyKok_RuntimeDebug_Data_ListItem_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.SetItem(BennyKok.RuntimeDebug.Components.UI.DebugUIHandler,BennyKok.RuntimeDebug.Data.ListItem)">SetItem(DebugUIHandler, ListItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetItem(DebugUIHandler ui, ListItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.html">DebugUIHandler</a></td>
+        <td><span class="parametername">ui</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Data.ListItem.html">ListItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
