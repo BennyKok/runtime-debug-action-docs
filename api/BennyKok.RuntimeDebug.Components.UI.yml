@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.Components.UI
+  commentId: N:BennyKok.RuntimeDebug.Components.UI
+  id: BennyKok.RuntimeDebug.Components.UI
+  children:
+  - BennyKok.RuntimeDebug.Components.UI.DebugSystemEventHandler
+  - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
+  - BennyKok.RuntimeDebug.Components.UI.FontSetter
+  - BennyKok.RuntimeDebug.Components.UI.InputUIHandler
+  - BennyKok.RuntimeDebug.Components.UI.ListItemView
+  - BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: BennyKok.RuntimeDebug.Components.UI
+  nameWithType: BennyKok.RuntimeDebug.Components.UI
+  fullName: BennyKok.RuntimeDebug.Components.UI
+  type: Namespace
+  assemblies:
+  - com.bennykok.runtime-debug-action
+references:
+- uid: BennyKok.RuntimeDebug.Components.UI.DebugSystemEventHandler
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.DebugSystemEventHandler
+  name: DebugSystemEventHandler
+  nameWithType: DebugSystemEventHandler
+  fullName: BennyKok.RuntimeDebug.Components.UI.DebugSystemEventHandler
+- uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
+  parent: BennyKok.RuntimeDebug.Components.UI
+  name: DebugUIHandler
+  nameWithType: DebugUIHandler
+  fullName: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
+- uid: BennyKok.RuntimeDebug.Components.UI.FontSetter
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.FontSetter
+  name: FontSetter
+  nameWithType: FontSetter
+  fullName: BennyKok.RuntimeDebug.Components.UI.FontSetter
+- uid: BennyKok.RuntimeDebug.Components.UI.InputUIHandler
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.InputUIHandler
+  parent: BennyKok.RuntimeDebug.Components.UI
+  name: InputUIHandler
+  nameWithType: InputUIHandler
+  fullName: BennyKok.RuntimeDebug.Components.UI.InputUIHandler
+- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.ListItemView
+  parent: BennyKok.RuntimeDebug.Components.UI
+  name: ListItemView
+  nameWithType: ListItemView
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.ListView
+  parent: BennyKok.RuntimeDebug.Components.UI
+  name: ListView
+  nameWithType: ListView
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView
+- uid: BennyKok.RuntimeDebug.Components.UI
+  commentId: N:BennyKok.RuntimeDebug.Components.UI
+  name: BennyKok.RuntimeDebug.Components.UI
+  nameWithType: BennyKok.RuntimeDebug.Components.UI
+  fullName: BennyKok.RuntimeDebug.Components.UI

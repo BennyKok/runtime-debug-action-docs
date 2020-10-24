@@ -1,0 +1,906 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionButton
+  commentId: T:BennyKok.RuntimeDebug.Actions.DebugActionButton
+  id: DebugActionButton
+  parent: BennyKok.RuntimeDebug.Actions
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: DebugActionButton
+  nameWithType: DebugActionButton
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionButton
+  type: Class
+  source:
+    remote:
+      path: Runtime/Actions/DebugActionButton.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: DebugActionButton
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/DebugActionButton.cs
+    startLine: 6
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Actions
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class DebugActionButton : FluentAction<DebugActionButton>
+    content.vb: >-
+      <Serializable>
+
+      Public Class DebugActionButton
+          Inherits FluentAction(Of DebugActionButton)
+  inheritance:
+  - System.Object
+  - BennyKok.RuntimeDebug.Actions.BaseAction
+  - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}
+  inheritedMembers:
+  - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}.WithId(System.String)
+  - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}.WithAction(System.Action)
+  - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}.WithLabel(System.String)
+  - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}.WithDescription(System.String)
+  - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}.WithPath(System.String)
+  - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}.WithShortcutKey(System.String)
+  - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}.WithActionColor(UnityEngine.Color)
+  - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}.WithClosePanelAfterTrigger(System.Boolean)
+  - BennyKok.RuntimeDebug.Actions.BaseAction.path
+  - BennyKok.RuntimeDebug.Actions.BaseAction.label
+  - BennyKok.RuntimeDebug.Actions.BaseAction.id
+  - BennyKok.RuntimeDebug.Actions.BaseAction.description
+  - BennyKok.RuntimeDebug.Actions.BaseAction.key
+  - BennyKok.RuntimeDebug.Actions.BaseAction.closePanelAfterTrigger
+  - BennyKok.RuntimeDebug.Actions.BaseAction.actionColor
+  - BennyKok.RuntimeDebug.Actions.BaseAction.unityAction
+  - BennyKok.RuntimeDebug.Actions.BaseAction.action
+  - BennyKok.RuntimeDebug.Actions.BaseAction.actionStatus
+  - BennyKok.RuntimeDebug.Actions.BaseAction.ResolveAction
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: BennyKok.RuntimeDebug.Actions
+  commentId: N:BennyKok.RuntimeDebug.Actions
+  name: BennyKok.RuntimeDebug.Actions
+  nameWithType: BennyKok.RuntimeDebug.Actions
+  fullName: BennyKok.RuntimeDebug.Actions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: BennyKok.RuntimeDebug.Actions.BaseAction
+  commentId: T:BennyKok.RuntimeDebug.Actions.BaseAction
+  parent: BennyKok.RuntimeDebug.Actions
+  name: BaseAction
+  nameWithType: BaseAction
+  fullName: BennyKok.RuntimeDebug.Actions.BaseAction
+- uid: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}
+  commentId: T:BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}
+  parent: BennyKok.RuntimeDebug.Actions
+  definition: BennyKok.RuntimeDebug.Actions.FluentAction`1
+  name: FluentAction<DebugActionButton>
+  nameWithType: FluentAction<DebugActionButton>
+  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionButton>
+  nameWithType.vb: FluentAction(Of DebugActionButton)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionButton)
+  name.vb: FluentAction(Of DebugActionButton)
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1
+    name: FluentAction
+    nameWithType: FluentAction
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BennyKok.RuntimeDebug.Actions.DebugActionButton
+    name: DebugActionButton
+    nameWithType: DebugActionButton
+    fullName: BennyKok.RuntimeDebug.Actions.DebugActionButton
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1
+    name: FluentAction
+    nameWithType: FluentAction
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BennyKok.RuntimeDebug.Actions.DebugActionButton
+    name: DebugActionButton
+    nameWithType: DebugActionButton
+    fullName: BennyKok.RuntimeDebug.Actions.DebugActionButton
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}.WithId(System.String)
+  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}.WithId(System.String)
+  parent: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}
+  definition: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithId(System.String)
+  name: WithId(String)
+  nameWithType: FluentAction<DebugActionButton>.WithId(String)
+  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionButton>.WithId(System.String)
+  nameWithType.vb: FluentAction(Of DebugActionButton).WithId(String)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionButton).WithId(System.String)
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithId(System.String)
+    name: WithId
+    nameWithType: FluentAction<DebugActionButton>.WithId
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionButton>.WithId
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithId(System.String)
+    name: WithId
+    nameWithType: FluentAction(Of DebugActionButton).WithId
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionButton).WithId
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}.WithAction(System.Action)
+  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}.WithAction(System.Action)
+  parent: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}
+  definition: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithAction(System.Action)
+  name: WithAction(Action)
+  nameWithType: FluentAction<DebugActionButton>.WithAction(Action)
+  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionButton>.WithAction(System.Action)
+  nameWithType.vb: FluentAction(Of DebugActionButton).WithAction(Action)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionButton).WithAction(System.Action)
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithAction(System.Action)
+    name: WithAction
+    nameWithType: FluentAction<DebugActionButton>.WithAction
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionButton>.WithAction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithAction(System.Action)
+    name: WithAction
+    nameWithType: FluentAction(Of DebugActionButton).WithAction
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionButton).WithAction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}.WithLabel(System.String)
+  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}.WithLabel(System.String)
+  parent: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}
+  definition: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel(System.String)
+  name: WithLabel(String)
+  nameWithType: FluentAction<DebugActionButton>.WithLabel(String)
+  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionButton>.WithLabel(System.String)
+  nameWithType.vb: FluentAction(Of DebugActionButton).WithLabel(String)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionButton).WithLabel(System.String)
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel(System.String)
+    name: WithLabel
+    nameWithType: FluentAction<DebugActionButton>.WithLabel
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionButton>.WithLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel(System.String)
+    name: WithLabel
+    nameWithType: FluentAction(Of DebugActionButton).WithLabel
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionButton).WithLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}.WithDescription(System.String)
+  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}.WithDescription(System.String)
+  parent: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}
+  definition: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithDescription(System.String)
+  name: WithDescription(String)
+  nameWithType: FluentAction<DebugActionButton>.WithDescription(String)
+  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionButton>.WithDescription(System.String)
+  nameWithType.vb: FluentAction(Of DebugActionButton).WithDescription(String)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionButton).WithDescription(System.String)
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithDescription(System.String)
+    name: WithDescription
+    nameWithType: FluentAction<DebugActionButton>.WithDescription
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionButton>.WithDescription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithDescription(System.String)
+    name: WithDescription
+    nameWithType: FluentAction(Of DebugActionButton).WithDescription
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionButton).WithDescription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}.WithPath(System.String)
+  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}.WithPath(System.String)
+  parent: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}
+  definition: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithPath(System.String)
+  name: WithPath(String)
+  nameWithType: FluentAction<DebugActionButton>.WithPath(String)
+  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionButton>.WithPath(System.String)
+  nameWithType.vb: FluentAction(Of DebugActionButton).WithPath(String)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionButton).WithPath(System.String)
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithPath(System.String)
+    name: WithPath
+    nameWithType: FluentAction<DebugActionButton>.WithPath
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionButton>.WithPath
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithPath(System.String)
+    name: WithPath
+    nameWithType: FluentAction(Of DebugActionButton).WithPath
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionButton).WithPath
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}.WithShortcutKey(System.String)
+  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}.WithShortcutKey(System.String)
+  parent: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}
+  definition: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithShortcutKey(System.String)
+  name: WithShortcutKey(String)
+  nameWithType: FluentAction<DebugActionButton>.WithShortcutKey(String)
+  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionButton>.WithShortcutKey(System.String)
+  nameWithType.vb: FluentAction(Of DebugActionButton).WithShortcutKey(String)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionButton).WithShortcutKey(System.String)
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithShortcutKey(System.String)
+    name: WithShortcutKey
+    nameWithType: FluentAction<DebugActionButton>.WithShortcutKey
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionButton>.WithShortcutKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithShortcutKey(System.String)
+    name: WithShortcutKey
+    nameWithType: FluentAction(Of DebugActionButton).WithShortcutKey
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionButton).WithShortcutKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}.WithActionColor(UnityEngine.Color)
+  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}.WithActionColor(UnityEngine.Color)
+  parent: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}
+  definition: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithActionColor(UnityEngine.Color)
+  name: WithActionColor(Color)
+  nameWithType: FluentAction<DebugActionButton>.WithActionColor(Color)
+  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionButton>.WithActionColor(UnityEngine.Color)
+  nameWithType.vb: FluentAction(Of DebugActionButton).WithActionColor(Color)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionButton).WithActionColor(UnityEngine.Color)
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithActionColor(UnityEngine.Color)
+    name: WithActionColor
+    nameWithType: FluentAction<DebugActionButton>.WithActionColor
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionButton>.WithActionColor
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Color
+    name: Color
+    nameWithType: Color
+    fullName: UnityEngine.Color
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithActionColor(UnityEngine.Color)
+    name: WithActionColor
+    nameWithType: FluentAction(Of DebugActionButton).WithActionColor
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionButton).WithActionColor
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Color
+    name: Color
+    nameWithType: Color
+    fullName: UnityEngine.Color
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}.WithClosePanelAfterTrigger(System.Boolean)
+  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}.WithClosePanelAfterTrigger(System.Boolean)
+  parent: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionButton}
+  definition: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithClosePanelAfterTrigger(System.Boolean)
+  name: WithClosePanelAfterTrigger(Boolean)
+  nameWithType: FluentAction<DebugActionButton>.WithClosePanelAfterTrigger(Boolean)
+  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionButton>.WithClosePanelAfterTrigger(System.Boolean)
+  nameWithType.vb: FluentAction(Of DebugActionButton).WithClosePanelAfterTrigger(Boolean)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionButton).WithClosePanelAfterTrigger(System.Boolean)
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithClosePanelAfterTrigger(System.Boolean)
+    name: WithClosePanelAfterTrigger
+    nameWithType: FluentAction<DebugActionButton>.WithClosePanelAfterTrigger
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionButton>.WithClosePanelAfterTrigger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithClosePanelAfterTrigger(System.Boolean)
+    name: WithClosePanelAfterTrigger
+    nameWithType: FluentAction(Of DebugActionButton).WithClosePanelAfterTrigger
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionButton).WithClosePanelAfterTrigger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Actions.BaseAction.path
+  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.path
+  parent: BennyKok.RuntimeDebug.Actions.BaseAction
+  name: path
+  nameWithType: BaseAction.path
+  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.path
+- uid: BennyKok.RuntimeDebug.Actions.BaseAction.label
+  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.label
+  parent: BennyKok.RuntimeDebug.Actions.BaseAction
+  name: label
+  nameWithType: BaseAction.label
+  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.label
+- uid: BennyKok.RuntimeDebug.Actions.BaseAction.id
+  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.id
+  parent: BennyKok.RuntimeDebug.Actions.BaseAction
+  name: id
+  nameWithType: BaseAction.id
+  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.id
+- uid: BennyKok.RuntimeDebug.Actions.BaseAction.description
+  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.description
+  parent: BennyKok.RuntimeDebug.Actions.BaseAction
+  name: description
+  nameWithType: BaseAction.description
+  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.description
+- uid: BennyKok.RuntimeDebug.Actions.BaseAction.key
+  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.key
+  parent: BennyKok.RuntimeDebug.Actions.BaseAction
+  name: key
+  nameWithType: BaseAction.key
+  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.key
+- uid: BennyKok.RuntimeDebug.Actions.BaseAction.closePanelAfterTrigger
+  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.closePanelAfterTrigger
+  parent: BennyKok.RuntimeDebug.Actions.BaseAction
+  name: closePanelAfterTrigger
+  nameWithType: BaseAction.closePanelAfterTrigger
+  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.closePanelAfterTrigger
+- uid: BennyKok.RuntimeDebug.Actions.BaseAction.actionColor
+  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.actionColor
+  parent: BennyKok.RuntimeDebug.Actions.BaseAction
+  name: actionColor
+  nameWithType: BaseAction.actionColor
+  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.actionColor
+- uid: BennyKok.RuntimeDebug.Actions.BaseAction.unityAction
+  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.unityAction
+  parent: BennyKok.RuntimeDebug.Actions.BaseAction
+  name: unityAction
+  nameWithType: BaseAction.unityAction
+  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.unityAction
+- uid: BennyKok.RuntimeDebug.Actions.BaseAction.action
+  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.action
+  parent: BennyKok.RuntimeDebug.Actions.BaseAction
+  name: action
+  nameWithType: BaseAction.action
+  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.action
+- uid: BennyKok.RuntimeDebug.Actions.BaseAction.actionStatus
+  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.actionStatus
+  parent: BennyKok.RuntimeDebug.Actions.BaseAction
+  name: actionStatus
+  nameWithType: BaseAction.actionStatus
+  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.actionStatus
+- uid: BennyKok.RuntimeDebug.Actions.BaseAction.ResolveAction
+  commentId: M:BennyKok.RuntimeDebug.Actions.BaseAction.ResolveAction
+  parent: BennyKok.RuntimeDebug.Actions.BaseAction
+  name: ResolveAction()
+  nameWithType: BaseAction.ResolveAction()
+  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.ResolveAction()
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Actions.BaseAction.ResolveAction
+    name: ResolveAction
+    nameWithType: BaseAction.ResolveAction
+    fullName: BennyKok.RuntimeDebug.Actions.BaseAction.ResolveAction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Actions.BaseAction.ResolveAction
+    name: ResolveAction
+    nameWithType: BaseAction.ResolveAction
+    fullName: BennyKok.RuntimeDebug.Actions.BaseAction.ResolveAction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BennyKok.RuntimeDebug.Actions.FluentAction`1
+  commentId: T:BennyKok.RuntimeDebug.Actions.FluentAction`1
+  name: FluentAction<T>
+  nameWithType: FluentAction<T>
+  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>
+  nameWithType.vb: FluentAction(Of T)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of T)
+  name.vb: FluentAction(Of T)
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1
+    name: FluentAction
+    nameWithType: FluentAction
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1
+    name: FluentAction
+    nameWithType: FluentAction
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithId(System.String)
+  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction`1.WithId(System.String)
+  isExternal: true
+  name: WithId(String)
+  nameWithType: FluentAction<T>.WithId(String)
+  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithId(System.String)
+  nameWithType.vb: FluentAction(Of T).WithId(String)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithId(System.String)
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithId(System.String)
+    name: WithId
+    nameWithType: FluentAction<T>.WithId
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithId
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithId(System.String)
+    name: WithId
+    nameWithType: FluentAction(Of T).WithId
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithId
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithAction(System.Action)
+  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction`1.WithAction(System.Action)
+  isExternal: true
+  name: WithAction(Action)
+  nameWithType: FluentAction<T>.WithAction(Action)
+  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithAction(System.Action)
+  nameWithType.vb: FluentAction(Of T).WithAction(Action)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithAction(System.Action)
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithAction(System.Action)
+    name: WithAction
+    nameWithType: FluentAction<T>.WithAction
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithAction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithAction(System.Action)
+    name: WithAction
+    nameWithType: FluentAction(Of T).WithAction
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithAction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel(System.String)
+  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel(System.String)
+  isExternal: true
+  name: WithLabel(String)
+  nameWithType: FluentAction<T>.WithLabel(String)
+  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithLabel(System.String)
+  nameWithType.vb: FluentAction(Of T).WithLabel(String)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithLabel(System.String)
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel(System.String)
+    name: WithLabel
+    nameWithType: FluentAction<T>.WithLabel
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel(System.String)
+    name: WithLabel
+    nameWithType: FluentAction(Of T).WithLabel
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithLabel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithDescription(System.String)
+  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction`1.WithDescription(System.String)
+  isExternal: true
+  name: WithDescription(String)
+  nameWithType: FluentAction<T>.WithDescription(String)
+  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithDescription(System.String)
+  nameWithType.vb: FluentAction(Of T).WithDescription(String)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithDescription(System.String)
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithDescription(System.String)
+    name: WithDescription
+    nameWithType: FluentAction<T>.WithDescription
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithDescription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithDescription(System.String)
+    name: WithDescription
+    nameWithType: FluentAction(Of T).WithDescription
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithDescription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithPath(System.String)
+  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction`1.WithPath(System.String)
+  isExternal: true
+  name: WithPath(String)
+  nameWithType: FluentAction<T>.WithPath(String)
+  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithPath(System.String)
+  nameWithType.vb: FluentAction(Of T).WithPath(String)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithPath(System.String)
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithPath(System.String)
+    name: WithPath
+    nameWithType: FluentAction<T>.WithPath
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithPath
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithPath(System.String)
+    name: WithPath
+    nameWithType: FluentAction(Of T).WithPath
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithPath
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithShortcutKey(System.String)
+  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction`1.WithShortcutKey(System.String)
+  isExternal: true
+  name: WithShortcutKey(String)
+  nameWithType: FluentAction<T>.WithShortcutKey(String)
+  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithShortcutKey(System.String)
+  nameWithType.vb: FluentAction(Of T).WithShortcutKey(String)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithShortcutKey(System.String)
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithShortcutKey(System.String)
+    name: WithShortcutKey
+    nameWithType: FluentAction<T>.WithShortcutKey
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithShortcutKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithShortcutKey(System.String)
+    name: WithShortcutKey
+    nameWithType: FluentAction(Of T).WithShortcutKey
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithShortcutKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithActionColor(UnityEngine.Color)
+  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction`1.WithActionColor(UnityEngine.Color)
+  isExternal: true
+  name: WithActionColor(Color)
+  nameWithType: FluentAction<T>.WithActionColor(Color)
+  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithActionColor(UnityEngine.Color)
+  nameWithType.vb: FluentAction(Of T).WithActionColor(Color)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithActionColor(UnityEngine.Color)
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithActionColor(UnityEngine.Color)
+    name: WithActionColor
+    nameWithType: FluentAction<T>.WithActionColor
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithActionColor
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Color
+    name: Color
+    nameWithType: Color
+    fullName: UnityEngine.Color
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithActionColor(UnityEngine.Color)
+    name: WithActionColor
+    nameWithType: FluentAction(Of T).WithActionColor
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithActionColor
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Color
+    name: Color
+    nameWithType: Color
+    fullName: UnityEngine.Color
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithClosePanelAfterTrigger(System.Boolean)
+  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction`1.WithClosePanelAfterTrigger(System.Boolean)
+  isExternal: true
+  name: WithClosePanelAfterTrigger(Boolean)
+  nameWithType: FluentAction<T>.WithClosePanelAfterTrigger(Boolean)
+  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithClosePanelAfterTrigger(System.Boolean)
+  nameWithType.vb: FluentAction(Of T).WithClosePanelAfterTrigger(Boolean)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithClosePanelAfterTrigger(System.Boolean)
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithClosePanelAfterTrigger(System.Boolean)
+    name: WithClosePanelAfterTrigger
+    nameWithType: FluentAction<T>.WithClosePanelAfterTrigger
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithClosePanelAfterTrigger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithClosePanelAfterTrigger(System.Boolean)
+    name: WithClosePanelAfterTrigger
+    nameWithType: FluentAction(Of T).WithClosePanelAfterTrigger
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithClosePanelAfterTrigger
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

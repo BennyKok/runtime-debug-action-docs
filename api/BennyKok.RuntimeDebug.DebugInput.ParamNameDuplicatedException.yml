@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.DebugInput.ParamNameDuplicatedException
+  commentId: T:BennyKok.RuntimeDebug.DebugInput.ParamNameDuplicatedException
+  id: ParamNameDuplicatedException
+  parent: BennyKok.RuntimeDebug.DebugInput
+  children:
+  - BennyKok.RuntimeDebug.DebugInput.ParamNameDuplicatedException.#ctor(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ParamNameDuplicatedException
+  nameWithType: ParamNameDuplicatedException
+  fullName: BennyKok.RuntimeDebug.DebugInput.ParamNameDuplicatedException
+  type: Class
+  source:
+    remote:
+      path: Runtime/Input/InputQuery.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: ParamNameDuplicatedException
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/InputQuery.cs
+    startLine: 42
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: 'public class ParamNameDuplicatedException : Exception, _Exception, ISerializable'
+    content.vb: >-
+      Public Class ParamNameDuplicatedException
+          Inherits Exception
+          Implements _Exception, ISerializable
+  inheritance:
+  - System.Object
+  - System.Exception
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BennyKok.RuntimeDebug.DebugInput.ParamNameDuplicatedException.#ctor(System.String)
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.ParamNameDuplicatedException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: BennyKok.RuntimeDebug.DebugInput.ParamNameDuplicatedException
+  langs:
+  - csharp
+  - vb
+  name: ParamNameDuplicatedException(String)
+  nameWithType: ParamNameDuplicatedException.ParamNameDuplicatedException(String)
+  fullName: BennyKok.RuntimeDebug.DebugInput.ParamNameDuplicatedException.ParamNameDuplicatedException(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Input/InputQuery.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: .ctor
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/InputQuery.cs
+    startLine: 44
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: public ParamNameDuplicatedException(string name)
+    parameters:
+    - id: name
+      type: System.String
+    content.vb: Public Sub New(name As String)
+  overload: BennyKok.RuntimeDebug.DebugInput.ParamNameDuplicatedException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BennyKok.RuntimeDebug.DebugInput
+  commentId: N:BennyKok.RuntimeDebug.DebugInput
+  name: BennyKok.RuntimeDebug.DebugInput
+  nameWithType: BennyKok.RuntimeDebug.DebugInput
+  fullName: BennyKok.RuntimeDebug.DebugInput
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BennyKok.RuntimeDebug.DebugInput.ParamNameDuplicatedException.#ctor*
+  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.ParamNameDuplicatedException.#ctor
+  name: ParamNameDuplicatedException
+  nameWithType: ParamNameDuplicatedException.ParamNameDuplicatedException
+  fullName: BennyKok.RuntimeDebug.DebugInput.ParamNameDuplicatedException.ParamNameDuplicatedException
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

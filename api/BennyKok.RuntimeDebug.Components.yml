@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.Components
+  commentId: N:BennyKok.RuntimeDebug.Components
+  id: BennyKok.RuntimeDebug.Components
+  children:
+  - BennyKok.RuntimeDebug.Components.DebugActionHandler
+  langs:
+  - csharp
+  - vb
+  name: BennyKok.RuntimeDebug.Components
+  nameWithType: BennyKok.RuntimeDebug.Components
+  fullName: BennyKok.RuntimeDebug.Components
+  type: Namespace
+  assemblies:
+  - com.bennykok.runtime-debug-action
+references:
+- uid: BennyKok.RuntimeDebug.Components.DebugActionHandler
+  commentId: T:BennyKok.RuntimeDebug.Components.DebugActionHandler
+  name: DebugActionHandler
+  nameWithType: DebugActionHandler
+  fullName: BennyKok.RuntimeDebug.Components.DebugActionHandler

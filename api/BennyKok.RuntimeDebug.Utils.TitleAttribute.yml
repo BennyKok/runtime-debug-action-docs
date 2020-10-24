@@ -1,25 +1,25 @@
 ### YamlMime:ManagedReference
 items:
-- uid: BK.RDAction.Utils.TitleAttribute
-  commentId: T:BK.RDAction.Utils.TitleAttribute
+- uid: BennyKok.RuntimeDebug.Utils.TitleAttribute
+  commentId: T:BennyKok.RuntimeDebug.Utils.TitleAttribute
   id: TitleAttribute
-  parent: BK.RDAction.Utils
+  parent: BennyKok.RuntimeDebug.Utils
   children:
-  - BK.RDAction.Utils.TitleAttribute.#ctor(System.String)
-  - BK.RDAction.Utils.TitleAttribute.#ctor(System.String,System.Boolean)
-  - BK.RDAction.Utils.TitleAttribute.#ctor(System.String,System.Boolean,System.Int32)
-  - BK.RDAction.Utils.TitleAttribute.#ctor(System.String,System.Int32)
-  - BK.RDAction.Utils.TitleAttribute.color
-  - BK.RDAction.Utils.TitleAttribute.HtmlToColor(System.String)
-  - BK.RDAction.Utils.TitleAttribute.spacingTop
-  - BK.RDAction.Utils.TitleAttribute.text
-  - BK.RDAction.Utils.TitleAttribute.useColor
+  - BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String)
+  - BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Boolean)
+  - BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Boolean,System.Int32)
+  - BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Int32)
+  - BennyKok.RuntimeDebug.Utils.TitleAttribute.color
+  - BennyKok.RuntimeDebug.Utils.TitleAttribute.HtmlToColor(System.String)
+  - BennyKok.RuntimeDebug.Utils.TitleAttribute.spacingTop
+  - BennyKok.RuntimeDebug.Utils.TitleAttribute.text
+  - BennyKok.RuntimeDebug.Utils.TitleAttribute.useColor
   langs:
   - csharp
   - vb
   name: TitleAttribute
   nameWithType: TitleAttribute
-  fullName: BK.RDAction.Utils.TitleAttribute
+  fullName: BennyKok.RuntimeDebug.Utils.TitleAttribute
   type: Class
   source:
     remote:
@@ -31,7 +31,7 @@ items:
     startLine: 65
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Utils
+  namespace: BennyKok.RuntimeDebug.Utils
   syntax:
     content: 'public class TitleAttribute : PropertyAttribute, _Attribute'
     content.vb: >-
@@ -48,16 +48,16 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: BK.RDAction.Utils.TitleAttribute.text
-  commentId: F:BK.RDAction.Utils.TitleAttribute.text
+- uid: BennyKok.RuntimeDebug.Utils.TitleAttribute.text
+  commentId: F:BennyKok.RuntimeDebug.Utils.TitleAttribute.text
   id: text
-  parent: BK.RDAction.Utils.TitleAttribute
+  parent: BennyKok.RuntimeDebug.Utils.TitleAttribute
   langs:
   - csharp
   - vb
   name: text
   nameWithType: TitleAttribute.text
-  fullName: BK.RDAction.Utils.TitleAttribute.text
+  fullName: BennyKok.RuntimeDebug.Utils.TitleAttribute.text
   type: Field
   source:
     remote:
@@ -69,7 +69,7 @@ items:
     startLine: 67
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Utils
+  namespace: BennyKok.RuntimeDebug.Utils
   syntax:
     content: public string text
     return:
@@ -79,16 +79,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BK.RDAction.Utils.TitleAttribute.color
-  commentId: F:BK.RDAction.Utils.TitleAttribute.color
+- uid: BennyKok.RuntimeDebug.Utils.TitleAttribute.color
+  commentId: F:BennyKok.RuntimeDebug.Utils.TitleAttribute.color
   id: color
-  parent: BK.RDAction.Utils.TitleAttribute
+  parent: BennyKok.RuntimeDebug.Utils.TitleAttribute
   langs:
   - csharp
   - vb
   name: color
   nameWithType: TitleAttribute.color
-  fullName: BK.RDAction.Utils.TitleAttribute.color
+  fullName: BennyKok.RuntimeDebug.Utils.TitleAttribute.color
   type: Field
   source:
     remote:
@@ -100,7 +100,7 @@ items:
     startLine: 68
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Utils
+  namespace: BennyKok.RuntimeDebug.Utils
   syntax:
     content: public Color color
     return:
@@ -110,16 +110,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BK.RDAction.Utils.TitleAttribute.spacingTop
-  commentId: F:BK.RDAction.Utils.TitleAttribute.spacingTop
+- uid: BennyKok.RuntimeDebug.Utils.TitleAttribute.spacingTop
+  commentId: F:BennyKok.RuntimeDebug.Utils.TitleAttribute.spacingTop
   id: spacingTop
-  parent: BK.RDAction.Utils.TitleAttribute
+  parent: BennyKok.RuntimeDebug.Utils.TitleAttribute
   langs:
   - csharp
   - vb
   name: spacingTop
   nameWithType: TitleAttribute.spacingTop
-  fullName: BK.RDAction.Utils.TitleAttribute.spacingTop
+  fullName: BennyKok.RuntimeDebug.Utils.TitleAttribute.spacingTop
   type: Field
   source:
     remote:
@@ -131,7 +131,7 @@ items:
     startLine: 69
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Utils
+  namespace: BennyKok.RuntimeDebug.Utils
   syntax:
     content: public bool spacingTop
     return:
@@ -141,16 +141,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BK.RDAction.Utils.TitleAttribute.useColor
-  commentId: F:BK.RDAction.Utils.TitleAttribute.useColor
+- uid: BennyKok.RuntimeDebug.Utils.TitleAttribute.useColor
+  commentId: F:BennyKok.RuntimeDebug.Utils.TitleAttribute.useColor
   id: useColor
-  parent: BK.RDAction.Utils.TitleAttribute
+  parent: BennyKok.RuntimeDebug.Utils.TitleAttribute
   langs:
   - csharp
   - vb
   name: useColor
   nameWithType: TitleAttribute.useColor
-  fullName: BK.RDAction.Utils.TitleAttribute.useColor
+  fullName: BennyKok.RuntimeDebug.Utils.TitleAttribute.useColor
   type: Field
   source:
     remote:
@@ -162,7 +162,7 @@ items:
     startLine: 70
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Utils
+  namespace: BennyKok.RuntimeDebug.Utils
   syntax:
     content: public bool useColor
     return:
@@ -172,16 +172,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BK.RDAction.Utils.TitleAttribute.#ctor(System.String)
-  commentId: M:BK.RDAction.Utils.TitleAttribute.#ctor(System.String)
+- uid: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String)
+  commentId: M:BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String)
   id: '#ctor(System.String)'
-  parent: BK.RDAction.Utils.TitleAttribute
+  parent: BennyKok.RuntimeDebug.Utils.TitleAttribute
   langs:
   - csharp
   - vb
   name: TitleAttribute(String)
   nameWithType: TitleAttribute.TitleAttribute(String)
-  fullName: BK.RDAction.Utils.TitleAttribute.TitleAttribute(System.String)
+  fullName: BennyKok.RuntimeDebug.Utils.TitleAttribute.TitleAttribute(System.String)
   type: Constructor
   source:
     remote:
@@ -193,28 +193,28 @@ items:
     startLine: 72
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Utils
+  namespace: BennyKok.RuntimeDebug.Utils
   syntax:
     content: public TitleAttribute(string text)
     parameters:
     - id: text
       type: System.String
     content.vb: Public Sub New(text As String)
-  overload: BK.RDAction.Utils.TitleAttribute.#ctor*
+  overload: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: BK.RDAction.Utils.TitleAttribute.#ctor(System.String,System.Boolean)
-  commentId: M:BK.RDAction.Utils.TitleAttribute.#ctor(System.String,System.Boolean)
+- uid: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Boolean)
+  commentId: M:BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Boolean)
   id: '#ctor(System.String,System.Boolean)'
-  parent: BK.RDAction.Utils.TitleAttribute
+  parent: BennyKok.RuntimeDebug.Utils.TitleAttribute
   langs:
   - csharp
   - vb
   name: TitleAttribute(String, Boolean)
   nameWithType: TitleAttribute.TitleAttribute(String, Boolean)
-  fullName: BK.RDAction.Utils.TitleAttribute.TitleAttribute(System.String, System.Boolean)
+  fullName: BennyKok.RuntimeDebug.Utils.TitleAttribute.TitleAttribute(System.String, System.Boolean)
   type: Constructor
   source:
     remote:
@@ -226,7 +226,7 @@ items:
     startLine: 77
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Utils
+  namespace: BennyKok.RuntimeDebug.Utils
   syntax:
     content: public TitleAttribute(string text, bool spacingTop)
     parameters:
@@ -235,21 +235,21 @@ items:
     - id: spacingTop
       type: System.Boolean
     content.vb: Public Sub New(text As String, spacingTop As Boolean)
-  overload: BK.RDAction.Utils.TitleAttribute.#ctor*
+  overload: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: BK.RDAction.Utils.TitleAttribute.HtmlToColor(System.String)
-  commentId: M:BK.RDAction.Utils.TitleAttribute.HtmlToColor(System.String)
+- uid: BennyKok.RuntimeDebug.Utils.TitleAttribute.HtmlToColor(System.String)
+  commentId: M:BennyKok.RuntimeDebug.Utils.TitleAttribute.HtmlToColor(System.String)
   id: HtmlToColor(System.String)
-  parent: BK.RDAction.Utils.TitleAttribute
+  parent: BennyKok.RuntimeDebug.Utils.TitleAttribute
   langs:
   - csharp
   - vb
   name: HtmlToColor(String)
   nameWithType: TitleAttribute.HtmlToColor(String)
-  fullName: BK.RDAction.Utils.TitleAttribute.HtmlToColor(System.String)
+  fullName: BennyKok.RuntimeDebug.Utils.TitleAttribute.HtmlToColor(System.String)
   type: Method
   source:
     remote:
@@ -261,7 +261,7 @@ items:
     startLine: 83
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Utils
+  namespace: BennyKok.RuntimeDebug.Utils
   syntax:
     content: public static Color HtmlToColor(string colorString)
     parameters:
@@ -270,23 +270,23 @@ items:
     return:
       type: UnityEngine.Color
     content.vb: Public Shared Function HtmlToColor(colorString As String) As Color
-  overload: BK.RDAction.Utils.TitleAttribute.HtmlToColor*
+  overload: BennyKok.RuntimeDebug.Utils.TitleAttribute.HtmlToColor*
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-- uid: BK.RDAction.Utils.TitleAttribute.#ctor(System.String,System.Boolean,System.Int32)
-  commentId: M:BK.RDAction.Utils.TitleAttribute.#ctor(System.String,System.Boolean,System.Int32)
+- uid: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Boolean,System.Int32)
+  commentId: M:BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Boolean,System.Int32)
   id: '#ctor(System.String,System.Boolean,System.Int32)'
-  parent: BK.RDAction.Utils.TitleAttribute
+  parent: BennyKok.RuntimeDebug.Utils.TitleAttribute
   langs:
   - csharp
   - vb
   name: TitleAttribute(String, Boolean, Int32)
   nameWithType: TitleAttribute.TitleAttribute(String, Boolean, Int32)
-  fullName: BK.RDAction.Utils.TitleAttribute.TitleAttribute(System.String, System.Boolean, System.Int32)
+  fullName: BennyKok.RuntimeDebug.Utils.TitleAttribute.TitleAttribute(System.String, System.Boolean, System.Int32)
   type: Constructor
   source:
     remote:
@@ -298,7 +298,7 @@ items:
     startLine: 92
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Utils
+  namespace: BennyKok.RuntimeDebug.Utils
   syntax:
     content: public TitleAttribute(string text, bool spacingTop, int colorIndex)
     parameters:
@@ -309,21 +309,21 @@ items:
     - id: colorIndex
       type: System.Int32
     content.vb: Public Sub New(text As String, spacingTop As Boolean, colorIndex As Integer)
-  overload: BK.RDAction.Utils.TitleAttribute.#ctor*
+  overload: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: BK.RDAction.Utils.TitleAttribute.#ctor(System.String,System.Int32)
-  commentId: M:BK.RDAction.Utils.TitleAttribute.#ctor(System.String,System.Int32)
+- uid: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Int32)
+  commentId: M:BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Int32)
   id: '#ctor(System.String,System.Int32)'
-  parent: BK.RDAction.Utils.TitleAttribute
+  parent: BennyKok.RuntimeDebug.Utils.TitleAttribute
   langs:
   - csharp
   - vb
   name: TitleAttribute(String, Int32)
   nameWithType: TitleAttribute.TitleAttribute(String, Int32)
-  fullName: BK.RDAction.Utils.TitleAttribute.TitleAttribute(System.String, System.Int32)
+  fullName: BennyKok.RuntimeDebug.Utils.TitleAttribute.TitleAttribute(System.String, System.Int32)
   type: Constructor
   source:
     remote:
@@ -335,7 +335,7 @@ items:
     startLine: 97
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Utils
+  namespace: BennyKok.RuntimeDebug.Utils
   syntax:
     content: public TitleAttribute(string text, int colorIndex)
     parameters:
@@ -344,17 +344,17 @@ items:
     - id: colorIndex
       type: System.Int32
     content.vb: Public Sub New(text As String, colorIndex As Integer)
-  overload: BK.RDAction.Utils.TitleAttribute.#ctor*
+  overload: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
 references:
-- uid: BK.RDAction.Utils
-  commentId: N:BK.RDAction.Utils
-  name: BK.RDAction.Utils
-  nameWithType: BK.RDAction.Utils
-  fullName: BK.RDAction.Utils
+- uid: BennyKok.RuntimeDebug.Utils
+  commentId: N:BennyKok.RuntimeDebug.Utils
+  name: BennyKok.RuntimeDebug.Utils
+  nameWithType: BennyKok.RuntimeDebug.Utils
+  fullName: BennyKok.RuntimeDebug.Utils
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -409,16 +409,16 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
-- uid: BK.RDAction.Utils.TitleAttribute.#ctor*
-  commentId: Overload:BK.RDAction.Utils.TitleAttribute.#ctor
+- uid: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor*
+  commentId: Overload:BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor
   name: TitleAttribute
   nameWithType: TitleAttribute.TitleAttribute
-  fullName: BK.RDAction.Utils.TitleAttribute.TitleAttribute
-- uid: BK.RDAction.Utils.TitleAttribute.HtmlToColor*
-  commentId: Overload:BK.RDAction.Utils.TitleAttribute.HtmlToColor
+  fullName: BennyKok.RuntimeDebug.Utils.TitleAttribute.TitleAttribute
+- uid: BennyKok.RuntimeDebug.Utils.TitleAttribute.HtmlToColor*
+  commentId: Overload:BennyKok.RuntimeDebug.Utils.TitleAttribute.HtmlToColor
   name: HtmlToColor
   nameWithType: TitleAttribute.HtmlToColor
-  fullName: BK.RDAction.Utils.TitleAttribute.HtmlToColor
+  fullName: BennyKok.RuntimeDebug.Utils.TitleAttribute.HtmlToColor
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System

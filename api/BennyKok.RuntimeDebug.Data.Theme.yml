@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.Data.Theme
+  commentId: T:BennyKok.RuntimeDebug.Data.Theme
+  id: Theme
+  parent: BennyKok.RuntimeDebug.Data
+  children:
+  - BennyKok.RuntimeDebug.Data.Theme.prefab
+  - BennyKok.RuntimeDebug.Data.Theme.themeName
+  langs:
+  - csharp
+  - vb
+  name: Theme
+  nameWithType: Theme
+  fullName: BennyKok.RuntimeDebug.Data.Theme
+  type: Class
+  source:
+    remote:
+      path: Runtime/Data/Theme.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Theme
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/Theme.cs
+    startLine: 6
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class Theme
+    content.vb: >-
+      <Serializable>
+
+      Public Class Theme
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BennyKok.RuntimeDebug.Data.Theme.themeName
+  commentId: F:BennyKok.RuntimeDebug.Data.Theme.themeName
+  id: themeName
+  parent: BennyKok.RuntimeDebug.Data.Theme
+  langs:
+  - csharp
+  - vb
+  name: themeName
+  nameWithType: Theme.themeName
+  fullName: BennyKok.RuntimeDebug.Data.Theme.themeName
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/Theme.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: themeName
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/Theme.cs
+    startLine: 9
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public string themeName
+    return:
+      type: System.String
+    content.vb: Public themeName As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.Theme.prefab
+  commentId: F:BennyKok.RuntimeDebug.Data.Theme.prefab
+  id: prefab
+  parent: BennyKok.RuntimeDebug.Data.Theme
+  langs:
+  - csharp
+  - vb
+  name: prefab
+  nameWithType: Theme.prefab
+  fullName: BennyKok.RuntimeDebug.Data.Theme.prefab
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/Theme.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: prefab
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/Theme.cs
+    startLine: 10
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public DebugUIHandler prefab
+    return:
+      type: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
+    content.vb: Public prefab As DebugUIHandler
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BennyKok.RuntimeDebug.Data
+  commentId: N:BennyKok.RuntimeDebug.Data
+  name: BennyKok.RuntimeDebug.Data
+  nameWithType: BennyKok.RuntimeDebug.Data
+  fullName: BennyKok.RuntimeDebug.Data
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
+  parent: BennyKok.RuntimeDebug.Components.UI
+  name: DebugUIHandler
+  nameWithType: DebugUIHandler
+  fullName: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
+- uid: BennyKok.RuntimeDebug.Components.UI
+  commentId: N:BennyKok.RuntimeDebug.Components.UI
+  name: BennyKok.RuntimeDebug.Components.UI
+  nameWithType: BennyKok.RuntimeDebug.Components.UI
+  fullName: BennyKok.RuntimeDebug.Components.UI

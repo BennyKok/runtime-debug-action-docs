@@ -1,0 +1,732 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.ListView
+  id: ListView
+  parent: BennyKok.RuntimeDebug.Components.UI
+  children:
+  - BennyKok.RuntimeDebug.Components.UI.ListView.AddItem(BennyKok.RuntimeDebug.Data.ListItem)
+  - BennyKok.RuntimeDebug.Components.UI.ListView.AttachUI(BennyKok.RuntimeDebug.Components.UI.DebugUIHandler)
+  - BennyKok.RuntimeDebug.Components.UI.ListView.Clear
+  - BennyKok.RuntimeDebug.Components.UI.ListView.indicator
+  - BennyKok.RuntimeDebug.Components.UI.ListView.itemPrefab
+  - BennyKok.RuntimeDebug.Components.UI.ListView.listParent
+  - BennyKok.RuntimeDebug.Components.UI.ListView.OnBackNavigation
+  - BennyKok.RuntimeDebug.Components.UI.ListView.OnResume
+  - BennyKok.RuntimeDebug.Components.UI.ListView.OnStop
+  - BennyKok.RuntimeDebug.Components.UI.ListView.RefreshStatus
+  - BennyKok.RuntimeDebug.Components.UI.ListView.reverseOrder
+  - BennyKok.RuntimeDebug.Components.UI.ListView.SetItem(BennyKok.RuntimeDebug.Data.ListItem)
+  - BennyKok.RuntimeDebug.Components.UI.ListView.SetNavigationBackTarget(BennyKok.RuntimeDebug.Components.UI.ListView)
+  - BennyKok.RuntimeDebug.Components.UI.ListView.subActionList
+  - BennyKok.RuntimeDebug.Components.UI.ListView.uiParent
+  langs:
+  - csharp
+  - vb
+  name: ListView
+  nameWithType: ListView
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView
+  type: Class
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: ListView
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
+    startLine: 8
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: >-
+      [AddComponentMenu("Runtime Debug Action/UI/List View")]
+
+      public class ListView : MonoBehaviour
+    content.vb: >-
+      <AddComponentMenu("Runtime Debug Action/UI/List View")>
+
+      Public Class ListView
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  attributes:
+  - type: UnityEngine.AddComponentMenu
+    ctor: UnityEngine.AddComponentMenu.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Runtime Debug Action/UI/List View
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.listParent
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListView.listParent
+  id: listParent
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: listParent
+  nameWithType: ListView.listParent
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.listParent
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: listParent
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
+    startLine: 12
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: >-
+      [Title("References", false, 1)]
+
+      public RectTransform listParent
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: >-
+      <Title("References", False, 1)>
+
+      Public listParent As RectTransform
+  attributes:
+  - type: BennyKok.RuntimeDebug.Utils.TitleAttribute
+    ctor: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Boolean,System.Int32)
+    arguments:
+    - type: System.String
+      value: References
+    - type: System.Boolean
+      value: false
+    - type: System.Int32
+      value: 1
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.indicator
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListView.indicator
+  id: indicator
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: indicator
+  nameWithType: ListView.indicator
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.indicator
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: indicator
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
+    startLine: 13
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public RectTransform indicator
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public indicator As RectTransform
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.itemPrefab
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListView.itemPrefab
+  id: itemPrefab
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: itemPrefab
+  nameWithType: ListView.itemPrefab
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.itemPrefab
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: itemPrefab
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
+    startLine: 16
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: >-
+      [Title("Prefabs", 1)]
+
+      public GameObject itemPrefab
+    return:
+      type: UnityEngine.GameObject
+    content.vb: >-
+      <Title("Prefabs", 1)>
+
+      Public itemPrefab As GameObject
+  attributes:
+  - type: BennyKok.RuntimeDebug.Utils.TitleAttribute
+    ctor: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: Prefabs
+    - type: System.Int32
+      value: 1
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.subActionList
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListView.subActionList
+  id: subActionList
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: subActionList
+  nameWithType: ListView.subActionList
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.subActionList
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: subActionList
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
+    startLine: 19
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: >-
+      [Title("Options", 1)]
+
+      public ListView subActionList
+    return:
+      type: BennyKok.RuntimeDebug.Components.UI.ListView
+    content.vb: >-
+      <Title("Options", 1)>
+
+      Public subActionList As ListView
+  attributes:
+  - type: BennyKok.RuntimeDebug.Utils.TitleAttribute
+    ctor: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: Options
+    - type: System.Int32
+      value: 1
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.reverseOrder
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListView.reverseOrder
+  id: reverseOrder
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: reverseOrder
+  nameWithType: ListView.reverseOrder
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.reverseOrder
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: reverseOrder
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
+    startLine: 20
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public bool reverseOrder
+    return:
+      type: System.Boolean
+    content.vb: Public reverseOrder As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.uiParent
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListView.uiParent
+  id: uiParent
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: uiParent
+  nameWithType: ListView.uiParent
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.uiParent
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: uiParent
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
+    startLine: 25
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: >-
+      [NonSerialized]
+
+      public DebugUIHandler uiParent
+    return:
+      type: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
+    content.vb: >-
+      <NonSerialized>
+
+      Public uiParent As DebugUIHandler
+  attributes:
+  - type: System.NonSerializedAttribute
+    ctor: System.NonSerializedAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.AttachUI(BennyKok.RuntimeDebug.Components.UI.DebugUIHandler)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.AttachUI(BennyKok.RuntimeDebug.Components.UI.DebugUIHandler)
+  id: AttachUI(BennyKok.RuntimeDebug.Components.UI.DebugUIHandler)
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: AttachUI(DebugUIHandler)
+  nameWithType: ListView.AttachUI(DebugUIHandler)
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.AttachUI(BennyKok.RuntimeDebug.Components.UI.DebugUIHandler)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: AttachUI
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
+    startLine: 29
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void AttachUI(DebugUIHandler ui)
+    parameters:
+    - id: ui
+      type: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
+    content.vb: Public Sub AttachUI(ui As DebugUIHandler)
+  overload: BennyKok.RuntimeDebug.Components.UI.ListView.AttachUI*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.OnResume
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.OnResume
+  id: OnResume
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: OnResume()
+  nameWithType: ListView.OnResume()
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.OnResume()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: OnResume
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
+    startLine: 125
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void OnResume()
+    content.vb: Public Sub OnResume
+  overload: BennyKok.RuntimeDebug.Components.UI.ListView.OnResume*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.OnStop
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.OnStop
+  id: OnStop
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: OnStop()
+  nameWithType: ListView.OnStop()
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.OnStop()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: OnStop
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
+    startLine: 137
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void OnStop()
+    content.vb: Public Sub OnStop
+  overload: BennyKok.RuntimeDebug.Components.UI.ListView.OnStop*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.SetItem(BennyKok.RuntimeDebug.Data.ListItem)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.SetItem(BennyKok.RuntimeDebug.Data.ListItem)
+  id: SetItem(BennyKok.RuntimeDebug.Data.ListItem)
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: SetItem(ListItem)
+  nameWithType: ListView.SetItem(ListItem)
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.SetItem(BennyKok.RuntimeDebug.Data.ListItem)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: SetItem
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
+    startLine: 143
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void SetItem(ListItem item)
+    parameters:
+    - id: item
+      type: BennyKok.RuntimeDebug.Data.ListItem
+    content.vb: Public Sub SetItem(item As ListItem)
+  overload: BennyKok.RuntimeDebug.Components.UI.ListView.SetItem*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.OnBackNavigation
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.OnBackNavigation
+  id: OnBackNavigation
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: OnBackNavigation()
+  nameWithType: ListView.OnBackNavigation()
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.OnBackNavigation()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: OnBackNavigation
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
+    startLine: 156
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void OnBackNavigation()
+    content.vb: Public Sub OnBackNavigation
+  overload: BennyKok.RuntimeDebug.Components.UI.ListView.OnBackNavigation*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.RefreshStatus
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.RefreshStatus
+  id: RefreshStatus
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: RefreshStatus()
+  nameWithType: ListView.RefreshStatus()
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.RefreshStatus()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: RefreshStatus
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
+    startLine: 172
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void RefreshStatus()
+    content.vb: Public Sub RefreshStatus
+  overload: BennyKok.RuntimeDebug.Components.UI.ListView.RefreshStatus*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.Clear
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.Clear
+  id: Clear
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: ListView.Clear()
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.Clear()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Clear
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
+    startLine: 180
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+  overload: BennyKok.RuntimeDebug.Components.UI.ListView.Clear*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.SetNavigationBackTarget(BennyKok.RuntimeDebug.Components.UI.ListView)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.SetNavigationBackTarget(BennyKok.RuntimeDebug.Components.UI.ListView)
+  id: SetNavigationBackTarget(BennyKok.RuntimeDebug.Components.UI.ListView)
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: SetNavigationBackTarget(ListView)
+  nameWithType: ListView.SetNavigationBackTarget(ListView)
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.SetNavigationBackTarget(BennyKok.RuntimeDebug.Components.UI.ListView)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: SetNavigationBackTarget
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
+    startLine: 195
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void SetNavigationBackTarget(ListView list)
+    parameters:
+    - id: list
+      type: BennyKok.RuntimeDebug.Components.UI.ListView
+    content.vb: Public Sub SetNavigationBackTarget(list As ListView)
+  overload: BennyKok.RuntimeDebug.Components.UI.ListView.SetNavigationBackTarget*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.AddItem(BennyKok.RuntimeDebug.Data.ListItem)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.AddItem(BennyKok.RuntimeDebug.Data.ListItem)
+  id: AddItem(BennyKok.RuntimeDebug.Data.ListItem)
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: AddItem(ListItem)
+  nameWithType: ListView.AddItem(ListItem)
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.AddItem(BennyKok.RuntimeDebug.Data.ListItem)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: AddItem
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
+    startLine: 200
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void AddItem(ListItem item)
+    parameters:
+    - id: item
+      type: BennyKok.RuntimeDebug.Data.ListItem
+    content.vb: Public Sub AddItem(item As ListItem)
+  overload: BennyKok.RuntimeDebug.Components.UI.ListView.AddItem*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BennyKok.RuntimeDebug.Components.UI
+  commentId: N:BennyKok.RuntimeDebug.Components.UI
+  name: BennyKok.RuntimeDebug.Components.UI
+  nameWithType: BennyKok.RuntimeDebug.Components.UI
+  fullName: BennyKok.RuntimeDebug.Components.UI
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.RectTransform
+  commentId: T:UnityEngine.RectTransform
+  parent: UnityEngine
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: UnityEngine.RectTransform
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.ListView
+  parent: BennyKok.RuntimeDebug.Components.UI
+  name: ListView
+  nameWithType: ListView
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
+  parent: BennyKok.RuntimeDebug.Components.UI
+  name: DebugUIHandler
+  nameWithType: DebugUIHandler
+  fullName: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.AttachUI*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.AttachUI
+  name: AttachUI
+  nameWithType: ListView.AttachUI
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.AttachUI
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.OnResume*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.OnResume
+  name: OnResume
+  nameWithType: ListView.OnResume
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.OnResume
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.OnStop*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.OnStop
+  name: OnStop
+  nameWithType: ListView.OnStop
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.OnStop
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.SetItem*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.SetItem
+  name: SetItem
+  nameWithType: ListView.SetItem
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.SetItem
+- uid: BennyKok.RuntimeDebug.Data.ListItem
+  commentId: T:BennyKok.RuntimeDebug.Data.ListItem
+  parent: BennyKok.RuntimeDebug.Data
+  name: ListItem
+  nameWithType: ListItem
+  fullName: BennyKok.RuntimeDebug.Data.ListItem
+- uid: BennyKok.RuntimeDebug.Data
+  commentId: N:BennyKok.RuntimeDebug.Data
+  name: BennyKok.RuntimeDebug.Data
+  nameWithType: BennyKok.RuntimeDebug.Data
+  fullName: BennyKok.RuntimeDebug.Data
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.OnBackNavigation*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.OnBackNavigation
+  name: OnBackNavigation
+  nameWithType: ListView.OnBackNavigation
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.OnBackNavigation
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.RefreshStatus*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.RefreshStatus
+  name: RefreshStatus
+  nameWithType: ListView.RefreshStatus
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.RefreshStatus
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.Clear*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.Clear
+  name: Clear
+  nameWithType: ListView.Clear
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.Clear
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.SetNavigationBackTarget*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.SetNavigationBackTarget
+  name: SetNavigationBackTarget
+  nameWithType: ListView.SetNavigationBackTarget
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.SetNavigationBackTarget
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.AddItem*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.AddItem
+  name: AddItem
+  nameWithType: ListView.AddItem
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.AddItem

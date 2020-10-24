@@ -1,18 +1,18 @@
 ### YamlMime:ManagedReference
 items:
-- uid: BK.RDAction.Utils.CommentAttribute
-  commentId: T:BK.RDAction.Utils.CommentAttribute
+- uid: BennyKok.RuntimeDebug.Utils.CommentAttribute
+  commentId: T:BennyKok.RuntimeDebug.Utils.CommentAttribute
   id: CommentAttribute
-  parent: BK.RDAction.Utils
+  parent: BennyKok.RuntimeDebug.Utils
   children:
-  - BK.RDAction.Utils.CommentAttribute.#ctor(System.String)
-  - BK.RDAction.Utils.CommentAttribute.text
+  - BennyKok.RuntimeDebug.Utils.CommentAttribute.#ctor(System.String)
+  - BennyKok.RuntimeDebug.Utils.CommentAttribute.text
   langs:
   - csharp
   - vb
   name: CommentAttribute
   nameWithType: CommentAttribute
-  fullName: BK.RDAction.Utils.CommentAttribute
+  fullName: BennyKok.RuntimeDebug.Utils.CommentAttribute
   type: Class
   source:
     remote:
@@ -24,7 +24,7 @@ items:
     startLine: 55
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Utils
+  namespace: BennyKok.RuntimeDebug.Utils
   syntax:
     content: 'public class CommentAttribute : PropertyAttribute, _Attribute'
     content.vb: >-
@@ -41,16 +41,16 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: BK.RDAction.Utils.CommentAttribute.text
-  commentId: F:BK.RDAction.Utils.CommentAttribute.text
+- uid: BennyKok.RuntimeDebug.Utils.CommentAttribute.text
+  commentId: F:BennyKok.RuntimeDebug.Utils.CommentAttribute.text
   id: text
-  parent: BK.RDAction.Utils.CommentAttribute
+  parent: BennyKok.RuntimeDebug.Utils.CommentAttribute
   langs:
   - csharp
   - vb
   name: text
   nameWithType: CommentAttribute.text
-  fullName: BK.RDAction.Utils.CommentAttribute.text
+  fullName: BennyKok.RuntimeDebug.Utils.CommentAttribute.text
   type: Field
   source:
     remote:
@@ -62,7 +62,7 @@ items:
     startLine: 57
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Utils
+  namespace: BennyKok.RuntimeDebug.Utils
   syntax:
     content: public string text
     return:
@@ -72,16 +72,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BK.RDAction.Utils.CommentAttribute.#ctor(System.String)
-  commentId: M:BK.RDAction.Utils.CommentAttribute.#ctor(System.String)
+- uid: BennyKok.RuntimeDebug.Utils.CommentAttribute.#ctor(System.String)
+  commentId: M:BennyKok.RuntimeDebug.Utils.CommentAttribute.#ctor(System.String)
   id: '#ctor(System.String)'
-  parent: BK.RDAction.Utils.CommentAttribute
+  parent: BennyKok.RuntimeDebug.Utils.CommentAttribute
   langs:
   - csharp
   - vb
   name: CommentAttribute(String)
   nameWithType: CommentAttribute.CommentAttribute(String)
-  fullName: BK.RDAction.Utils.CommentAttribute.CommentAttribute(System.String)
+  fullName: BennyKok.RuntimeDebug.Utils.CommentAttribute.CommentAttribute(System.String)
   type: Constructor
   source:
     remote:
@@ -93,24 +93,24 @@ items:
     startLine: 59
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Utils
+  namespace: BennyKok.RuntimeDebug.Utils
   syntax:
     content: public CommentAttribute(string text)
     parameters:
     - id: text
       type: System.String
     content.vb: Public Sub New(text As String)
-  overload: BK.RDAction.Utils.CommentAttribute.#ctor*
+  overload: BennyKok.RuntimeDebug.Utils.CommentAttribute.#ctor*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
 references:
-- uid: BK.RDAction.Utils
-  commentId: N:BK.RDAction.Utils
-  name: BK.RDAction.Utils
-  nameWithType: BK.RDAction.Utils
-  fullName: BK.RDAction.Utils
+- uid: BennyKok.RuntimeDebug.Utils
+  commentId: N:BennyKok.RuntimeDebug.Utils
+  name: BennyKok.RuntimeDebug.Utils
+  nameWithType: BennyKok.RuntimeDebug.Utils
+  fullName: BennyKok.RuntimeDebug.Utils
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -151,8 +151,8 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: BK.RDAction.Utils.CommentAttribute.#ctor*
-  commentId: Overload:BK.RDAction.Utils.CommentAttribute.#ctor
+- uid: BennyKok.RuntimeDebug.Utils.CommentAttribute.#ctor*
+  commentId: Overload:BennyKok.RuntimeDebug.Utils.CommentAttribute.#ctor
   name: CommentAttribute
   nameWithType: CommentAttribute.CommentAttribute
-  fullName: BK.RDAction.Utils.CommentAttribute.CommentAttribute
+  fullName: BennyKok.RuntimeDebug.Utils.CommentAttribute.CommentAttribute

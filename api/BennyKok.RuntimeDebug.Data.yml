@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.Data
+  commentId: N:BennyKok.RuntimeDebug.Data
+  id: BennyKok.RuntimeDebug.Data
+  children:
+  - BennyKok.RuntimeDebug.Data.DebugFlag
+  - BennyKok.RuntimeDebug.Data.DebugFlagList
+  - BennyKok.RuntimeDebug.Data.ListItem
+  - BennyKok.RuntimeDebug.Data.Settings
+  - BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
+  - BennyKok.RuntimeDebug.Data.Theme
+  - BennyKok.RuntimeDebug.Data.ThemeList
+  langs:
+  - csharp
+  - vb
+  name: BennyKok.RuntimeDebug.Data
+  nameWithType: BennyKok.RuntimeDebug.Data
+  fullName: BennyKok.RuntimeDebug.Data
+  type: Namespace
+  assemblies:
+  - com.bennykok.runtime-debug-action
+references:
+- uid: BennyKok.RuntimeDebug.Data.DebugFlagList
+  commentId: T:BennyKok.RuntimeDebug.Data.DebugFlagList
+  parent: BennyKok.RuntimeDebug.Data
+  name: DebugFlagList
+  nameWithType: DebugFlagList
+  fullName: BennyKok.RuntimeDebug.Data.DebugFlagList
+- uid: BennyKok.RuntimeDebug.Data.DebugFlag
+  commentId: T:BennyKok.RuntimeDebug.Data.DebugFlag
+  name: DebugFlag
+  nameWithType: DebugFlag
+  fullName: BennyKok.RuntimeDebug.Data.DebugFlag
+- uid: BennyKok.RuntimeDebug.Data.ListItem
+  commentId: T:BennyKok.RuntimeDebug.Data.ListItem
+  parent: BennyKok.RuntimeDebug.Data
+  name: ListItem
+  nameWithType: ListItem
+  fullName: BennyKok.RuntimeDebug.Data.ListItem
+- uid: BennyKok.RuntimeDebug.Data.Settings
+  commentId: T:BennyKok.RuntimeDebug.Data.Settings
+  parent: BennyKok.RuntimeDebug.Data
+  name: Settings
+  nameWithType: Settings
+  fullName: BennyKok.RuntimeDebug.Data.Settings
+- uid: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
+  commentId: T:BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
+  parent: BennyKok.RuntimeDebug.Data
+  name: Settings.TouchToggleMode
+  nameWithType: Settings.TouchToggleMode
+  fullName: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
+- uid: BennyKok.RuntimeDebug.Data.Theme
+  commentId: T:BennyKok.RuntimeDebug.Data.Theme
+  parent: BennyKok.RuntimeDebug.Data
+  name: Theme
+  nameWithType: Theme
+  fullName: BennyKok.RuntimeDebug.Data.Theme
+- uid: BennyKok.RuntimeDebug.Data.ThemeList
+  commentId: T:BennyKok.RuntimeDebug.Data.ThemeList
+  parent: BennyKok.RuntimeDebug.Data
+  name: ThemeList
+  nameWithType: ThemeList
+  fullName: BennyKok.RuntimeDebug.Data.ThemeList
+- uid: BennyKok.RuntimeDebug.Data
+  commentId: N:BennyKok.RuntimeDebug.Data
+  name: BennyKok.RuntimeDebug.Data
+  nameWithType: BennyKok.RuntimeDebug.Data
+  fullName: BennyKok.RuntimeDebug.Data

@@ -1,16 +1,16 @@
 ### YamlMime:ManagedReference
 items:
-- uid: BK.RDAction.Utils.ReorderableBase
-  commentId: T:BK.RDAction.Utils.ReorderableBase
+- uid: BennyKok.RuntimeDebug.Utils.ReorderableBase
+  commentId: T:BennyKok.RuntimeDebug.Utils.ReorderableBase
   id: ReorderableBase
-  parent: BK.RDAction.Utils
+  parent: BennyKok.RuntimeDebug.Utils
   children: []
   langs:
   - csharp
   - vb
   name: ReorderableBase
   nameWithType: ReorderableBase
-  fullName: BK.RDAction.Utils.ReorderableBase
+  fullName: BennyKok.RuntimeDebug.Utils.ReorderableBase
   type: Class
   source:
     remote:
@@ -22,7 +22,7 @@ items:
     startLine: 41
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Utils
+  namespace: BennyKok.RuntimeDebug.Utils
   syntax:
     content: >-
       [Serializable]
@@ -35,7 +35,7 @@ items:
   inheritance:
   - System.Object
   derivedClasses:
-  - BK.RDAction.Utils.ReorderableList`1
+  - BennyKok.RuntimeDebug.Utils.ReorderableList`1
   attributes:
   - type: System.SerializableAttribute
     ctor: System.SerializableAttribute.#ctor
@@ -47,11 +47,11 @@ items:
   - Public
   - Class
 references:
-- uid: BK.RDAction.Utils
-  commentId: N:BK.RDAction.Utils
-  name: BK.RDAction.Utils
-  nameWithType: BK.RDAction.Utils
-  fullName: BK.RDAction.Utils
+- uid: BennyKok.RuntimeDebug.Utils
+  commentId: N:BennyKok.RuntimeDebug.Utils
+  name: BennyKok.RuntimeDebug.Utils
+  nameWithType: BennyKok.RuntimeDebug.Utils
+  fullName: BennyKok.RuntimeDebug.Utils
 - uid: System.Object
   commentId: T:System.Object
   parent: System

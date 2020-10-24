@@ -1,0 +1,145 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.DebugInput.ParamType
+  commentId: T:BennyKok.RuntimeDebug.DebugInput.ParamType
+  id: ParamType
+  parent: BennyKok.RuntimeDebug.DebugInput
+  children:
+  - BennyKok.RuntimeDebug.DebugInput.ParamType.Bool
+  - BennyKok.RuntimeDebug.DebugInput.ParamType.Float
+  - BennyKok.RuntimeDebug.DebugInput.ParamType.String
+  langs:
+  - csharp
+  - vb
+  name: ParamType
+  nameWithType: ParamType
+  fullName: BennyKok.RuntimeDebug.DebugInput.ParamType
+  type: Enum
+  source:
+    remote:
+      path: Runtime/Input/ParamType.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: ParamType
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/ParamType.cs
+    startLine: 2
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: public enum ParamType
+    content.vb: Public Enum ParamType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: BennyKok.RuntimeDebug.DebugInput.ParamType.String
+  commentId: F:BennyKok.RuntimeDebug.DebugInput.ParamType.String
+  id: String
+  parent: BennyKok.RuntimeDebug.DebugInput.ParamType
+  langs:
+  - csharp
+  - vb
+  name: String
+  nameWithType: ParamType.String
+  fullName: BennyKok.RuntimeDebug.DebugInput.ParamType.String
+  type: Field
+  source:
+    remote:
+      path: Runtime/Input/ParamType.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: String
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/ParamType.cs
+    startLine: 4
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: String = 0
+    return:
+      type: BennyKok.RuntimeDebug.DebugInput.ParamType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BennyKok.RuntimeDebug.DebugInput.ParamType.Float
+  commentId: F:BennyKok.RuntimeDebug.DebugInput.ParamType.Float
+  id: Float
+  parent: BennyKok.RuntimeDebug.DebugInput.ParamType
+  langs:
+  - csharp
+  - vb
+  name: Float
+  nameWithType: ParamType.Float
+  fullName: BennyKok.RuntimeDebug.DebugInput.ParamType.Float
+  type: Field
+  source:
+    remote:
+      path: Runtime/Input/ParamType.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Float
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/ParamType.cs
+    startLine: 5
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: Float = 1
+    return:
+      type: BennyKok.RuntimeDebug.DebugInput.ParamType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BennyKok.RuntimeDebug.DebugInput.ParamType.Bool
+  commentId: F:BennyKok.RuntimeDebug.DebugInput.ParamType.Bool
+  id: Bool
+  parent: BennyKok.RuntimeDebug.DebugInput.ParamType
+  langs:
+  - csharp
+  - vb
+  name: Bool
+  nameWithType: ParamType.Bool
+  fullName: BennyKok.RuntimeDebug.DebugInput.ParamType.Bool
+  type: Field
+  source:
+    remote:
+      path: Runtime/Input/ParamType.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Bool
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/ParamType.cs
+    startLine: 6
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: Bool = 2
+    return:
+      type: BennyKok.RuntimeDebug.DebugInput.ParamType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: BennyKok.RuntimeDebug.DebugInput
+  commentId: N:BennyKok.RuntimeDebug.DebugInput
+  name: BennyKok.RuntimeDebug.DebugInput
+  nameWithType: BennyKok.RuntimeDebug.DebugInput
+  fullName: BennyKok.RuntimeDebug.DebugInput
+- uid: BennyKok.RuntimeDebug.DebugInput.ParamType
+  commentId: T:BennyKok.RuntimeDebug.DebugInput.ParamType
+  parent: BennyKok.RuntimeDebug.DebugInput
+  name: ParamType
+  nameWithType: ParamType
+  fullName: BennyKok.RuntimeDebug.DebugInput.ParamType

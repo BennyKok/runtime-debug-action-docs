@@ -1,0 +1,560 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.Data.ListItem
+  commentId: T:BennyKok.RuntimeDebug.Data.ListItem
+  id: ListItem
+  parent: BennyKok.RuntimeDebug.Data
+  children:
+  - BennyKok.RuntimeDebug.Data.ListItem.#ctor
+  - BennyKok.RuntimeDebug.Data.ListItem.#ctor(BennyKok.RuntimeDebug.Actions.BaseAction)
+  - BennyKok.RuntimeDebug.Data.ListItem.actionTrigger
+  - BennyKok.RuntimeDebug.Data.ListItem.children
+  - BennyKok.RuntimeDebug.Data.ListItem.fullPath
+  - BennyKok.RuntimeDebug.Data.ListItem.groupName
+  - BennyKok.RuntimeDebug.Data.ListItem.IsGroup
+  - BennyKok.RuntimeDebug.Data.ListItem.Name
+  - BennyKok.RuntimeDebug.Data.ListItem.tag
+  - BennyKok.RuntimeDebug.Data.ListItem.uiList
+  - BennyKok.RuntimeDebug.Data.ListItem.view
+  langs:
+  - csharp
+  - vb
+  name: ListItem
+  nameWithType: ListItem
+  fullName: BennyKok.RuntimeDebug.Data.ListItem
+  type: Class
+  source:
+    remote:
+      path: Runtime/Data/ListItem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: ListItem
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/ListItem.cs
+    startLine: 6
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public class ListItem
+    content.vb: Public Class ListItem
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BennyKok.RuntimeDebug.Data.ListItem.children
+  commentId: F:BennyKok.RuntimeDebug.Data.ListItem.children
+  id: children
+  parent: BennyKok.RuntimeDebug.Data.ListItem
+  langs:
+  - csharp
+  - vb
+  name: children
+  nameWithType: ListItem.children
+  fullName: BennyKok.RuntimeDebug.Data.ListItem.children
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/ListItem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: children
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/ListItem.cs
+    startLine: 8
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public List<ListItem> children
+    return:
+      type: System.Collections.Generic.List{BennyKok.RuntimeDebug.Data.ListItem}
+    content.vb: Public children As List(Of ListItem)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.ListItem.actionTrigger
+  commentId: F:BennyKok.RuntimeDebug.Data.ListItem.actionTrigger
+  id: actionTrigger
+  parent: BennyKok.RuntimeDebug.Data.ListItem
+  langs:
+  - csharp
+  - vb
+  name: actionTrigger
+  nameWithType: ListItem.actionTrigger
+  fullName: BennyKok.RuntimeDebug.Data.ListItem.actionTrigger
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/ListItem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: actionTrigger
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/ListItem.cs
+    startLine: 9
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public BaseAction actionTrigger
+    return:
+      type: BennyKok.RuntimeDebug.Actions.BaseAction
+    content.vb: Public actionTrigger As BaseAction
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.ListItem.view
+  commentId: F:BennyKok.RuntimeDebug.Data.ListItem.view
+  id: view
+  parent: BennyKok.RuntimeDebug.Data.ListItem
+  langs:
+  - csharp
+  - vb
+  name: view
+  nameWithType: ListItem.view
+  fullName: BennyKok.RuntimeDebug.Data.ListItem.view
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/ListItem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: view
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/ListItem.cs
+    startLine: 10
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public ListItemView view
+    return:
+      type: BennyKok.RuntimeDebug.Components.UI.ListItemView
+    content.vb: Public view As ListItemView
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.ListItem.uiList
+  commentId: F:BennyKok.RuntimeDebug.Data.ListItem.uiList
+  id: uiList
+  parent: BennyKok.RuntimeDebug.Data.ListItem
+  langs:
+  - csharp
+  - vb
+  name: uiList
+  nameWithType: ListItem.uiList
+  fullName: BennyKok.RuntimeDebug.Data.ListItem.uiList
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/ListItem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: uiList
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/ListItem.cs
+    startLine: 11
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public ListView uiList
+    return:
+      type: BennyKok.RuntimeDebug.Components.UI.ListView
+    content.vb: Public uiList As ListView
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.ListItem.fullPath
+  commentId: F:BennyKok.RuntimeDebug.Data.ListItem.fullPath
+  id: fullPath
+  parent: BennyKok.RuntimeDebug.Data.ListItem
+  langs:
+  - csharp
+  - vb
+  name: fullPath
+  nameWithType: ListItem.fullPath
+  fullName: BennyKok.RuntimeDebug.Data.ListItem.fullPath
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/ListItem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: fullPath
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/ListItem.cs
+    startLine: 12
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public string fullPath
+    return:
+      type: System.String
+    content.vb: Public fullPath As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.ListItem.groupName
+  commentId: F:BennyKok.RuntimeDebug.Data.ListItem.groupName
+  id: groupName
+  parent: BennyKok.RuntimeDebug.Data.ListItem
+  langs:
+  - csharp
+  - vb
+  name: groupName
+  nameWithType: ListItem.groupName
+  fullName: BennyKok.RuntimeDebug.Data.ListItem.groupName
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/ListItem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: groupName
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/ListItem.cs
+    startLine: 13
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public string groupName
+    return:
+      type: System.String
+    content.vb: Public groupName As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.ListItem.tag
+  commentId: F:BennyKok.RuntimeDebug.Data.ListItem.tag
+  id: tag
+  parent: BennyKok.RuntimeDebug.Data.ListItem
+  langs:
+  - csharp
+  - vb
+  name: tag
+  nameWithType: ListItem.tag
+  fullName: BennyKok.RuntimeDebug.Data.ListItem.tag
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/ListItem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: tag
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/ListItem.cs
+    startLine: 14
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public string tag
+    return:
+      type: System.String
+    content.vb: Public tag As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.ListItem.IsGroup
+  commentId: P:BennyKok.RuntimeDebug.Data.ListItem.IsGroup
+  id: IsGroup
+  parent: BennyKok.RuntimeDebug.Data.ListItem
+  langs:
+  - csharp
+  - vb
+  name: IsGroup
+  nameWithType: ListItem.IsGroup
+  fullName: BennyKok.RuntimeDebug.Data.ListItem.IsGroup
+  type: Property
+  source:
+    remote:
+      path: Runtime/Data/ListItem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: IsGroup
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/ListItem.cs
+    startLine: 16
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public bool IsGroup { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsGroup As Boolean
+  overload: BennyKok.RuntimeDebug.Data.ListItem.IsGroup*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BennyKok.RuntimeDebug.Data.ListItem.Name
+  commentId: P:BennyKok.RuntimeDebug.Data.ListItem.Name
+  id: Name
+  parent: BennyKok.RuntimeDebug.Data.ListItem
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ListItem.Name
+  fullName: BennyKok.RuntimeDebug.Data.ListItem.Name
+  type: Property
+  source:
+    remote:
+      path: Runtime/Data/ListItem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Name
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/ListItem.cs
+    startLine: 17
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: BennyKok.RuntimeDebug.Data.ListItem.Name*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BennyKok.RuntimeDebug.Data.ListItem.#ctor(BennyKok.RuntimeDebug.Actions.BaseAction)
+  commentId: M:BennyKok.RuntimeDebug.Data.ListItem.#ctor(BennyKok.RuntimeDebug.Actions.BaseAction)
+  id: '#ctor(BennyKok.RuntimeDebug.Actions.BaseAction)'
+  parent: BennyKok.RuntimeDebug.Data.ListItem
+  langs:
+  - csharp
+  - vb
+  name: ListItem(BaseAction)
+  nameWithType: ListItem.ListItem(BaseAction)
+  fullName: BennyKok.RuntimeDebug.Data.ListItem.ListItem(BennyKok.RuntimeDebug.Actions.BaseAction)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Data/ListItem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: .ctor
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/ListItem.cs
+    startLine: 19
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public ListItem(BaseAction actionTrigger)
+    parameters:
+    - id: actionTrigger
+      type: BennyKok.RuntimeDebug.Actions.BaseAction
+    content.vb: Public Sub New(actionTrigger As BaseAction)
+  overload: BennyKok.RuntimeDebug.Data.ListItem.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.ListItem.#ctor
+  commentId: M:BennyKok.RuntimeDebug.Data.ListItem.#ctor
+  id: '#ctor'
+  parent: BennyKok.RuntimeDebug.Data.ListItem
+  langs:
+  - csharp
+  - vb
+  name: ListItem()
+  nameWithType: ListItem.ListItem()
+  fullName: BennyKok.RuntimeDebug.Data.ListItem.ListItem()
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Data/ListItem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: .ctor
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/ListItem.cs
+    startLine: 24
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public ListItem()
+    content.vb: Public Sub New
+  overload: BennyKok.RuntimeDebug.Data.ListItem.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BennyKok.RuntimeDebug.Data
+  commentId: N:BennyKok.RuntimeDebug.Data
+  name: BennyKok.RuntimeDebug.Data
+  nameWithType: BennyKok.RuntimeDebug.Data
+  fullName: BennyKok.RuntimeDebug.Data
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.List{BennyKok.RuntimeDebug.Data.ListItem}
+  commentId: T:System.Collections.Generic.List{BennyKok.RuntimeDebug.Data.ListItem}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ListItem>
+  nameWithType: List<ListItem>
+  fullName: System.Collections.Generic.List<BennyKok.RuntimeDebug.Data.ListItem>
+  nameWithType.vb: List(Of ListItem)
+  fullName.vb: System.Collections.Generic.List(Of BennyKok.RuntimeDebug.Data.ListItem)
+  name.vb: List(Of ListItem)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BennyKok.RuntimeDebug.Data.ListItem
+    name: ListItem
+    nameWithType: ListItem
+    fullName: BennyKok.RuntimeDebug.Data.ListItem
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BennyKok.RuntimeDebug.Data.ListItem
+    name: ListItem
+    nameWithType: ListItem
+    fullName: BennyKok.RuntimeDebug.Data.ListItem
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: BennyKok.RuntimeDebug.Actions.BaseAction
+  commentId: T:BennyKok.RuntimeDebug.Actions.BaseAction
+  parent: BennyKok.RuntimeDebug.Actions
+  name: BaseAction
+  nameWithType: BaseAction
+  fullName: BennyKok.RuntimeDebug.Actions.BaseAction
+- uid: BennyKok.RuntimeDebug.Actions
+  commentId: N:BennyKok.RuntimeDebug.Actions
+  name: BennyKok.RuntimeDebug.Actions
+  nameWithType: BennyKok.RuntimeDebug.Actions
+  fullName: BennyKok.RuntimeDebug.Actions
+- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.ListItemView
+  parent: BennyKok.RuntimeDebug.Components.UI
+  name: ListItemView
+  nameWithType: ListItemView
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView
+- uid: BennyKok.RuntimeDebug.Components.UI
+  commentId: N:BennyKok.RuntimeDebug.Components.UI
+  name: BennyKok.RuntimeDebug.Components.UI
+  nameWithType: BennyKok.RuntimeDebug.Components.UI
+  fullName: BennyKok.RuntimeDebug.Components.UI
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.ListView
+  parent: BennyKok.RuntimeDebug.Components.UI
+  name: ListView
+  nameWithType: ListView
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BennyKok.RuntimeDebug.Data.ListItem.IsGroup*
+  commentId: Overload:BennyKok.RuntimeDebug.Data.ListItem.IsGroup
+  name: IsGroup
+  nameWithType: ListItem.IsGroup
+  fullName: BennyKok.RuntimeDebug.Data.ListItem.IsGroup
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: BennyKok.RuntimeDebug.Data.ListItem.Name*
+  commentId: Overload:BennyKok.RuntimeDebug.Data.ListItem.Name
+  name: Name
+  nameWithType: ListItem.Name
+  fullName: BennyKok.RuntimeDebug.Data.ListItem.Name
+- uid: BennyKok.RuntimeDebug.Data.ListItem.#ctor*
+  commentId: Overload:BennyKok.RuntimeDebug.Data.ListItem.#ctor
+  name: ListItem
+  nameWithType: ListItem.ListItem
+  fullName: BennyKok.RuntimeDebug.Data.ListItem.ListItem

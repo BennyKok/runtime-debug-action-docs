@@ -1,41 +1,41 @@
 ### YamlMime:ManagedReference
 items:
-- uid: BK.RDAction.Data.RDFlag
-  commentId: T:BK.RDAction.Data.RDFlag
-  id: RDFlag
-  parent: BK.RDAction.Data
+- uid: BennyKok.RuntimeDebug.Data.DebugFlag
+  commentId: T:BennyKok.RuntimeDebug.Data.DebugFlag
+  id: DebugFlag
+  parent: BennyKok.RuntimeDebug.Data
   children:
-  - BK.RDAction.Data.RDFlag.#ctor
-  - BK.RDAction.Data.RDFlag.defaultValue
-  - BK.RDAction.Data.RDFlag.name
-  - BK.RDAction.Data.RDFlag.runtimeValue
+  - BennyKok.RuntimeDebug.Data.DebugFlag.#ctor
+  - BennyKok.RuntimeDebug.Data.DebugFlag.defaultValue
+  - BennyKok.RuntimeDebug.Data.DebugFlag.name
+  - BennyKok.RuntimeDebug.Data.DebugFlag.runtimeValue
   langs:
   - csharp
   - vb
-  name: RDFlag
-  nameWithType: RDFlag
-  fullName: BK.RDAction.Data.RDFlag
+  name: DebugFlag
+  nameWithType: DebugFlag
+  fullName: BennyKok.RuntimeDebug.Data.DebugFlag
   type: Class
   source:
     remote:
-      path: Runtime/Data/RDFlag.cs
+      path: Runtime/Data/DebugFlag.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: RDFlag
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDFlag.cs
+    id: DebugFlag
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/DebugFlag.cs
     startLine: 8
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Data
+  namespace: BennyKok.RuntimeDebug.Data
   syntax:
     content: >-
       [Serializable]
 
-      public class RDFlag
+      public class DebugFlag
     content.vb: >-
       <Serializable>
 
-      Public Class RDFlag
+      Public Class DebugFlag
   inheritance:
   - System.Object
   attributes:
@@ -48,28 +48,28 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: BK.RDAction.Data.RDFlag.name
-  commentId: F:BK.RDAction.Data.RDFlag.name
+- uid: BennyKok.RuntimeDebug.Data.DebugFlag.name
+  commentId: F:BennyKok.RuntimeDebug.Data.DebugFlag.name
   id: name
-  parent: BK.RDAction.Data.RDFlag
+  parent: BennyKok.RuntimeDebug.Data.DebugFlag
   langs:
   - csharp
   - vb
   name: name
-  nameWithType: RDFlag.name
-  fullName: BK.RDAction.Data.RDFlag.name
+  nameWithType: DebugFlag.name
+  fullName: BennyKok.RuntimeDebug.Data.DebugFlag.name
   type: Field
   source:
     remote:
-      path: Runtime/Data/RDFlag.cs
+      path: Runtime/Data/DebugFlag.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: name
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDFlag.cs
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/DebugFlag.cs
     startLine: 11
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Data
+  namespace: BennyKok.RuntimeDebug.Data
   syntax:
     content: public string name
     return:
@@ -79,28 +79,28 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BK.RDAction.Data.RDFlag.defaultValue
-  commentId: F:BK.RDAction.Data.RDFlag.defaultValue
+- uid: BennyKok.RuntimeDebug.Data.DebugFlag.defaultValue
+  commentId: F:BennyKok.RuntimeDebug.Data.DebugFlag.defaultValue
   id: defaultValue
-  parent: BK.RDAction.Data.RDFlag
+  parent: BennyKok.RuntimeDebug.Data.DebugFlag
   langs:
   - csharp
   - vb
   name: defaultValue
-  nameWithType: RDFlag.defaultValue
-  fullName: BK.RDAction.Data.RDFlag.defaultValue
+  nameWithType: DebugFlag.defaultValue
+  fullName: BennyKok.RuntimeDebug.Data.DebugFlag.defaultValue
   type: Field
   source:
     remote:
-      path: Runtime/Data/RDFlag.cs
+      path: Runtime/Data/DebugFlag.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: defaultValue
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDFlag.cs
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/DebugFlag.cs
     startLine: 12
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Data
+  namespace: BennyKok.RuntimeDebug.Data
   syntax:
     content: public bool defaultValue
     return:
@@ -110,28 +110,28 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BK.RDAction.Data.RDFlag.runtimeValue
-  commentId: F:BK.RDAction.Data.RDFlag.runtimeValue
+- uid: BennyKok.RuntimeDebug.Data.DebugFlag.runtimeValue
+  commentId: F:BennyKok.RuntimeDebug.Data.DebugFlag.runtimeValue
   id: runtimeValue
-  parent: BK.RDAction.Data.RDFlag
+  parent: BennyKok.RuntimeDebug.Data.DebugFlag
   langs:
   - csharp
   - vb
   name: runtimeValue
-  nameWithType: RDFlag.runtimeValue
-  fullName: BK.RDAction.Data.RDFlag.runtimeValue
+  nameWithType: DebugFlag.runtimeValue
+  fullName: BennyKok.RuntimeDebug.Data.DebugFlag.runtimeValue
   type: Field
   source:
     remote:
-      path: Runtime/Data/RDFlag.cs
+      path: Runtime/Data/DebugFlag.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: runtimeValue
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDFlag.cs
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/DebugFlag.cs
     startLine: 14
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Data
+  namespace: BennyKok.RuntimeDebug.Data
   syntax:
     content: >-
       [NonSerialized]
@@ -151,42 +151,42 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BK.RDAction.Data.RDFlag.#ctor
-  commentId: M:BK.RDAction.Data.RDFlag.#ctor
+- uid: BennyKok.RuntimeDebug.Data.DebugFlag.#ctor
+  commentId: M:BennyKok.RuntimeDebug.Data.DebugFlag.#ctor
   id: '#ctor'
-  parent: BK.RDAction.Data.RDFlag
+  parent: BennyKok.RuntimeDebug.Data.DebugFlag
   langs:
   - csharp
   - vb
-  name: RDFlag()
-  nameWithType: RDFlag.RDFlag()
-  fullName: BK.RDAction.Data.RDFlag.RDFlag()
+  name: DebugFlag()
+  nameWithType: DebugFlag.DebugFlag()
+  fullName: BennyKok.RuntimeDebug.Data.DebugFlag.DebugFlag()
   type: Constructor
   source:
     remote:
-      path: Runtime/Data/RDFlag.cs
+      path: Runtime/Data/DebugFlag.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: .ctor
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/RDFlag.cs
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/DebugFlag.cs
     startLine: 16
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Data
+  namespace: BennyKok.RuntimeDebug.Data
   syntax:
-    content: public RDFlag()
+    content: public DebugFlag()
     content.vb: Public Sub New
-  overload: BK.RDAction.Data.RDFlag.#ctor*
+  overload: BennyKok.RuntimeDebug.Data.DebugFlag.#ctor*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
 references:
-- uid: BK.RDAction.Data
-  commentId: N:BK.RDAction.Data
-  name: BK.RDAction.Data
-  nameWithType: BK.RDAction.Data
-  fullName: BK.RDAction.Data
+- uid: BennyKok.RuntimeDebug.Data
+  commentId: N:BennyKok.RuntimeDebug.Data
+  name: BennyKok.RuntimeDebug.Data
+  nameWithType: BennyKok.RuntimeDebug.Data
+  fullName: BennyKok.RuntimeDebug.Data
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -214,8 +214,8 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
-- uid: BK.RDAction.Data.RDFlag.#ctor*
-  commentId: Overload:BK.RDAction.Data.RDFlag.#ctor
-  name: RDFlag
-  nameWithType: RDFlag.RDFlag
-  fullName: BK.RDAction.Data.RDFlag.RDFlag
+- uid: BennyKok.RuntimeDebug.Data.DebugFlag.#ctor*
+  commentId: Overload:BennyKok.RuntimeDebug.Data.DebugFlag.#ctor
+  name: DebugFlag
+  nameWithType: DebugFlag.DebugFlag
+  fullName: BennyKok.RuntimeDebug.Data.DebugFlag.DebugFlag

@@ -1,18 +1,18 @@
 ### YamlMime:ManagedReference
 items:
-- uid: BK.RDAction.Utils.Singleton`1
-  commentId: T:BK.RDAction.Utils.Singleton`1
+- uid: BennyKok.RuntimeDebug.Utils.Singleton`1
+  commentId: T:BennyKok.RuntimeDebug.Utils.Singleton`1
   id: Singleton`1
-  parent: BK.RDAction.Utils
+  parent: BennyKok.RuntimeDebug.Utils
   children:
-  - BK.RDAction.Utils.Singleton`1.Awake
-  - BK.RDAction.Utils.Singleton`1.Instance
+  - BennyKok.RuntimeDebug.Utils.Singleton`1.Awake
+  - BennyKok.RuntimeDebug.Utils.Singleton`1.Instance
   langs:
   - csharp
   - vb
   name: Singleton<T>
   nameWithType: Singleton<T>
-  fullName: BK.RDAction.Utils.Singleton<T>
+  fullName: BennyKok.RuntimeDebug.Utils.Singleton<T>
   type: Class
   source:
     remote:
@@ -24,7 +24,7 @@ items:
     startLine: 4
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Utils
+  namespace: BennyKok.RuntimeDebug.Utils
   syntax:
     content: 'public class Singleton<T> : MonoBehaviour where T : MonoBehaviour'
     typeParameters:
@@ -39,7 +39,7 @@ items:
   - UnityEngine.Behaviour
   - UnityEngine.MonoBehaviour
   derivedClasses:
-  - BK.RDAction.Managers.RDActionSystem
+  - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
   nameWithType.vb: Singleton(Of T)
   modifiers.csharp:
   - public
@@ -47,18 +47,18 @@ items:
   modifiers.vb:
   - Public
   - Class
-  fullName.vb: BK.RDAction.Utils.Singleton(Of T)
+  fullName.vb: BennyKok.RuntimeDebug.Utils.Singleton(Of T)
   name.vb: Singleton(Of T)
-- uid: BK.RDAction.Utils.Singleton`1.Instance
-  commentId: P:BK.RDAction.Utils.Singleton`1.Instance
+- uid: BennyKok.RuntimeDebug.Utils.Singleton`1.Instance
+  commentId: P:BennyKok.RuntimeDebug.Utils.Singleton`1.Instance
   id: Instance
-  parent: BK.RDAction.Utils.Singleton`1
+  parent: BennyKok.RuntimeDebug.Utils.Singleton`1
   langs:
   - csharp
   - vb
   name: Instance
   nameWithType: Singleton<T>.Instance
-  fullName: BK.RDAction.Utils.Singleton<T>.Instance
+  fullName: BennyKok.RuntimeDebug.Utils.Singleton<T>.Instance
   type: Property
   source:
     remote:
@@ -70,14 +70,14 @@ items:
     startLine: 8
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Utils
+  namespace: BennyKok.RuntimeDebug.Utils
   syntax:
     content: public static T Instance { get; }
     parameters: []
     return:
       type: '{T}'
     content.vb: Public Shared ReadOnly Property Instance As T
-  overload: BK.RDAction.Utils.Singleton`1.Instance*
+  overload: BennyKok.RuntimeDebug.Utils.Singleton`1.Instance*
   nameWithType.vb: Singleton(Of T).Instance
   modifiers.csharp:
   - public
@@ -87,17 +87,17 @@ items:
   - Public
   - Shared
   - ReadOnly
-  fullName.vb: BK.RDAction.Utils.Singleton(Of T).Instance
-- uid: BK.RDAction.Utils.Singleton`1.Awake
-  commentId: M:BK.RDAction.Utils.Singleton`1.Awake
+  fullName.vb: BennyKok.RuntimeDebug.Utils.Singleton(Of T).Instance
+- uid: BennyKok.RuntimeDebug.Utils.Singleton`1.Awake
+  commentId: M:BennyKok.RuntimeDebug.Utils.Singleton`1.Awake
   id: Awake
-  parent: BK.RDAction.Utils.Singleton`1
+  parent: BennyKok.RuntimeDebug.Utils.Singleton`1
   langs:
   - csharp
   - vb
   name: Awake()
   nameWithType: Singleton<T>.Awake()
-  fullName: BK.RDAction.Utils.Singleton<T>.Awake()
+  fullName: BennyKok.RuntimeDebug.Utils.Singleton<T>.Awake()
   type: Method
   source:
     remote:
@@ -109,11 +109,11 @@ items:
     startLine: 16
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Utils
+  namespace: BennyKok.RuntimeDebug.Utils
   syntax:
     content: protected virtual void Awake()
     content.vb: Protected Overridable Sub Awake
-  overload: BK.RDAction.Utils.Singleton`1.Awake*
+  overload: BennyKok.RuntimeDebug.Utils.Singleton`1.Awake*
   nameWithType.vb: Singleton(Of T).Awake()
   modifiers.csharp:
   - protected
@@ -121,13 +121,13 @@ items:
   modifiers.vb:
   - Protected
   - Overridable
-  fullName.vb: BK.RDAction.Utils.Singleton(Of T).Awake()
+  fullName.vb: BennyKok.RuntimeDebug.Utils.Singleton(Of T).Awake()
 references:
-- uid: BK.RDAction.Utils
-  commentId: N:BK.RDAction.Utils
-  name: BK.RDAction.Utils
-  nameWithType: BK.RDAction.Utils
-  fullName: BK.RDAction.Utils
+- uid: BennyKok.RuntimeDebug.Utils
+  commentId: N:BennyKok.RuntimeDebug.Utils
+  name: BennyKok.RuntimeDebug.Utils
+  nameWithType: BennyKok.RuntimeDebug.Utils
+  fullName: BennyKok.RuntimeDebug.Utils
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -175,13 +175,13 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
-- uid: BK.RDAction.Utils.Singleton`1.Instance*
-  commentId: Overload:BK.RDAction.Utils.Singleton`1.Instance
+- uid: BennyKok.RuntimeDebug.Utils.Singleton`1.Instance*
+  commentId: Overload:BennyKok.RuntimeDebug.Utils.Singleton`1.Instance
   name: Instance
   nameWithType: Singleton<T>.Instance
-  fullName: BK.RDAction.Utils.Singleton<T>.Instance
+  fullName: BennyKok.RuntimeDebug.Utils.Singleton<T>.Instance
   nameWithType.vb: Singleton(Of T).Instance
-  fullName.vb: BK.RDAction.Utils.Singleton(Of T).Instance
+  fullName.vb: BennyKok.RuntimeDebug.Utils.Singleton(Of T).Instance
 - uid: '{T}'
   commentId: '!:T'
   definition: T
@@ -189,14 +189,13 @@ references:
   nameWithType: T
   fullName: T
 - uid: T
-  commentId: '!:T'
   name: T
   nameWithType: T
   fullName: T
-- uid: BK.RDAction.Utils.Singleton`1.Awake*
-  commentId: Overload:BK.RDAction.Utils.Singleton`1.Awake
+- uid: BennyKok.RuntimeDebug.Utils.Singleton`1.Awake*
+  commentId: Overload:BennyKok.RuntimeDebug.Utils.Singleton`1.Awake
   name: Awake
   nameWithType: Singleton<T>.Awake
-  fullName: BK.RDAction.Utils.Singleton<T>.Awake
+  fullName: BennyKok.RuntimeDebug.Utils.Singleton<T>.Awake
   nameWithType.vb: Singleton(Of T).Awake
-  fullName.vb: BK.RDAction.Utils.Singleton(Of T).Awake
+  fullName.vb: BennyKok.RuntimeDebug.Utils.Singleton(Of T).Awake

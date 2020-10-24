@@ -5,7 +5,7 @@
 - Plug n play debug menu
 - Trigger debug action from input key or debug menu
 - Debug action & debug action toggle (on/off)
-- Mobile Frendly
+- Mobile Friendly
 - Add debug action via scripts and components
 - Debug Flags
 - Default debug action

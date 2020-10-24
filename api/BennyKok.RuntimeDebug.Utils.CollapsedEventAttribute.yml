@@ -1,19 +1,19 @@
 ### YamlMime:ManagedReference
 items:
-- uid: BK.RDAction.Utils.CollapsedEventAttribute
-  commentId: T:BK.RDAction.Utils.CollapsedEventAttribute
+- uid: BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute
+  commentId: T:BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute
   id: CollapsedEventAttribute
-  parent: BK.RDAction.Utils
+  parent: BennyKok.RuntimeDebug.Utils
   children:
-  - BK.RDAction.Utils.CollapsedEventAttribute.#ctor(System.String)
-  - BK.RDAction.Utils.CollapsedEventAttribute.tooltip
-  - BK.RDAction.Utils.CollapsedEventAttribute.visible
+  - BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute.#ctor(System.String)
+  - BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute.tooltip
+  - BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute.visible
   langs:
   - csharp
   - vb
   name: CollapsedEventAttribute
   nameWithType: CollapsedEventAttribute
-  fullName: BK.RDAction.Utils.CollapsedEventAttribute
+  fullName: BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute
   type: Class
   source:
     remote:
@@ -25,7 +25,7 @@ items:
     startLine: 44
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Utils
+  namespace: BennyKok.RuntimeDebug.Utils
   syntax:
     content: 'public class CollapsedEventAttribute : PropertyAttribute, _Attribute'
     content.vb: >-
@@ -42,16 +42,16 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: BK.RDAction.Utils.CollapsedEventAttribute.visible
-  commentId: F:BK.RDAction.Utils.CollapsedEventAttribute.visible
+- uid: BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute.visible
+  commentId: F:BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute.visible
   id: visible
-  parent: BK.RDAction.Utils.CollapsedEventAttribute
+  parent: BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute
   langs:
   - csharp
   - vb
   name: visible
   nameWithType: CollapsedEventAttribute.visible
-  fullName: BK.RDAction.Utils.CollapsedEventAttribute.visible
+  fullName: BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute.visible
   type: Field
   source:
     remote:
@@ -63,7 +63,7 @@ items:
     startLine: 46
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Utils
+  namespace: BennyKok.RuntimeDebug.Utils
   syntax:
     content: public bool visible
     return:
@@ -73,16 +73,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BK.RDAction.Utils.CollapsedEventAttribute.tooltip
-  commentId: F:BK.RDAction.Utils.CollapsedEventAttribute.tooltip
+- uid: BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute.tooltip
+  commentId: F:BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute.tooltip
   id: tooltip
-  parent: BK.RDAction.Utils.CollapsedEventAttribute
+  parent: BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute
   langs:
   - csharp
   - vb
   name: tooltip
   nameWithType: CollapsedEventAttribute.tooltip
-  fullName: BK.RDAction.Utils.CollapsedEventAttribute.tooltip
+  fullName: BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute.tooltip
   type: Field
   source:
     remote:
@@ -94,7 +94,7 @@ items:
     startLine: 47
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Utils
+  namespace: BennyKok.RuntimeDebug.Utils
   syntax:
     content: public string tooltip
     return:
@@ -104,16 +104,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BK.RDAction.Utils.CollapsedEventAttribute.#ctor(System.String)
-  commentId: M:BK.RDAction.Utils.CollapsedEventAttribute.#ctor(System.String)
+- uid: BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute.#ctor(System.String)
+  commentId: M:BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute.#ctor(System.String)
   id: '#ctor(System.String)'
-  parent: BK.RDAction.Utils.CollapsedEventAttribute
+  parent: BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute
   langs:
   - csharp
   - vb
   name: CollapsedEventAttribute(String)
   nameWithType: CollapsedEventAttribute.CollapsedEventAttribute(String)
-  fullName: BK.RDAction.Utils.CollapsedEventAttribute.CollapsedEventAttribute(System.String)
+  fullName: BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute.CollapsedEventAttribute(System.String)
   type: Constructor
   source:
     remote:
@@ -125,24 +125,24 @@ items:
     startLine: 49
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Utils
+  namespace: BennyKok.RuntimeDebug.Utils
   syntax:
     content: public CollapsedEventAttribute(string tooltip = null)
     parameters:
     - id: tooltip
       type: System.String
     content.vb: Public Sub New(tooltip As String = Nothing)
-  overload: BK.RDAction.Utils.CollapsedEventAttribute.#ctor*
+  overload: BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute.#ctor*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
 references:
-- uid: BK.RDAction.Utils
-  commentId: N:BK.RDAction.Utils
-  name: BK.RDAction.Utils
-  nameWithType: BK.RDAction.Utils
-  fullName: BK.RDAction.Utils
+- uid: BennyKok.RuntimeDebug.Utils
+  commentId: N:BennyKok.RuntimeDebug.Utils
+  name: BennyKok.RuntimeDebug.Utils
+  nameWithType: BennyKok.RuntimeDebug.Utils
+  fullName: BennyKok.RuntimeDebug.Utils
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -190,8 +190,8 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: BK.RDAction.Utils.CollapsedEventAttribute.#ctor*
-  commentId: Overload:BK.RDAction.Utils.CollapsedEventAttribute.#ctor
+- uid: BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute.#ctor*
+  commentId: Overload:BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute.#ctor
   name: CollapsedEventAttribute
   nameWithType: CollapsedEventAttribute.CollapsedEventAttribute
-  fullName: BK.RDAction.Utils.CollapsedEventAttribute.CollapsedEventAttribute
+  fullName: BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute.CollapsedEventAttribute

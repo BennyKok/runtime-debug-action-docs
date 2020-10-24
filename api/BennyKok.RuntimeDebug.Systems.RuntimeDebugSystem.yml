@@ -1,0 +1,1121 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
+  commentId: T:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
+  id: RuntimeDebugSystem
+  parent: BennyKok.RuntimeDebug.Systems
+  children:
+  - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.allActions
+  - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Awake
+  - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.HasFlag(System.String)
+  - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.OnDebugMenuToggle
+  - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterActions(BennyKok.RuntimeDebug.Actions.BaseAction[])
+  - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterActions(System.String,BennyKok.RuntimeDebug.Actions.BaseAction[])
+  - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.ReleaseInputBlock
+  - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RequsetInputBlock
+  - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.runtimeDebugUI
+  - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SetTheme(BennyKok.RuntimeDebug.Data.Theme,System.Boolean)
+  - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.settings
+  - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Settings
+  - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UIHandler
+  - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActionByPath(System.String)
+  - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActions(BennyKok.RuntimeDebug.Actions.BaseAction[])
+  langs:
+  - csharp
+  - vb
+  name: RuntimeDebugSystem
+  nameWithType: RuntimeDebugSystem
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
+  type: Class
+  source:
+    remote:
+      path: Runtime/Systems/RuntimeDebugSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: RuntimeDebugSystem
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Systems/RuntimeDebugSystem.cs
+    startLine: 10
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Systems
+  syntax:
+    content: >-
+      [AddComponentMenu("")]
+
+      public class RuntimeDebugSystem : Singleton<RuntimeDebugSystem>
+    content.vb: >-
+      <AddComponentMenu("")>
+
+      Public Class RuntimeDebugSystem
+          Inherits Singleton(Of RuntimeDebugSystem)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - BennyKok.RuntimeDebug.Utils.Singleton{BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem}
+  inheritedMembers:
+  - BennyKok.RuntimeDebug.Utils.Singleton{BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem}.Instance
+  attributes:
+  - type: UnityEngine.AddComponentMenu
+    ctor: UnityEngine.AddComponentMenu.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ''
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.settings
+  commentId: F:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.settings
+  id: settings
+  parent: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
+  langs:
+  - csharp
+  - vb
+  name: settings
+  nameWithType: RuntimeDebugSystem.settings
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.settings
+  type: Field
+  source:
+    remote:
+      path: Runtime/Systems/RuntimeDebugSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: settings
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Systems/RuntimeDebugSystem.cs
+    startLine: 27
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Systems
+  syntax:
+    content: >-
+      [NonSerialized]
+
+      public Settings settings
+    return:
+      type: BennyKok.RuntimeDebug.Data.Settings
+    content.vb: >-
+      <NonSerialized>
+
+      Public settings As Settings
+  attributes:
+  - type: System.NonSerializedAttribute
+    ctor: System.NonSerializedAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.runtimeDebugUI
+  commentId: F:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.runtimeDebugUI
+  id: runtimeDebugUI
+  parent: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
+  langs:
+  - csharp
+  - vb
+  name: runtimeDebugUI
+  nameWithType: RuntimeDebugSystem.runtimeDebugUI
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.runtimeDebugUI
+  type: Field
+  source:
+    remote:
+      path: Runtime/Systems/RuntimeDebugSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: runtimeDebugUI
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Systems/RuntimeDebugSystem.cs
+    startLine: 28
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Systems
+  syntax:
+    content: >-
+      [NonSerialized]
+
+      public DebugUIHandler runtimeDebugUI
+    return:
+      type: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
+    content.vb: >-
+      <NonSerialized>
+
+      Public runtimeDebugUI As DebugUIHandler
+  attributes:
+  - type: System.NonSerializedAttribute
+    ctor: System.NonSerializedAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.allActions
+  commentId: F:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.allActions
+  id: allActions
+  parent: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
+  langs:
+  - csharp
+  - vb
+  name: allActions
+  nameWithType: RuntimeDebugSystem.allActions
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.allActions
+  type: Field
+  source:
+    remote:
+      path: Runtime/Systems/RuntimeDebugSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: allActions
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Systems/RuntimeDebugSystem.cs
+    startLine: 30
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Systems
+  syntax:
+    content: >-
+      [NonSerialized]
+
+      public List<BaseAction> allActions
+    return:
+      type: System.Collections.Generic.List{BennyKok.RuntimeDebug.Actions.BaseAction}
+    content.vb: >-
+      <NonSerialized>
+
+      Public allActions As List(Of BaseAction)
+  attributes:
+  - type: System.NonSerializedAttribute
+    ctor: System.NonSerializedAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.OnDebugMenuToggle
+  commentId: E:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.OnDebugMenuToggle
+  id: OnDebugMenuToggle
+  parent: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
+  langs:
+  - csharp
+  - vb
+  name: OnDebugMenuToggle
+  nameWithType: RuntimeDebugSystem.OnDebugMenuToggle
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.OnDebugMenuToggle
+  type: Event
+  source:
+    remote:
+      path: Runtime/Systems/RuntimeDebugSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: OnDebugMenuToggle
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Systems/RuntimeDebugSystem.cs
+    startLine: 34
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Systems
+  syntax:
+    content: public event Action<bool> OnDebugMenuToggle
+    return:
+      type: System.Action{System.Boolean}
+    content.vb: Public Event OnDebugMenuToggle As Action(Of Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Settings
+  commentId: P:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Settings
+  id: Settings
+  parent: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
+  langs:
+  - csharp
+  - vb
+  name: Settings
+  nameWithType: RuntimeDebugSystem.Settings
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Settings
+  type: Property
+  source:
+    remote:
+      path: Runtime/Systems/RuntimeDebugSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Settings
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Systems/RuntimeDebugSystem.cs
+    startLine: 37
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Systems
+  syntax:
+    content: public static Settings Settings { get; }
+    parameters: []
+    return:
+      type: BennyKok.RuntimeDebug.Data.Settings
+    content.vb: Public Shared ReadOnly Property Settings As Settings
+  overload: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Settings*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UIHandler
+  commentId: P:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UIHandler
+  id: UIHandler
+  parent: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
+  langs:
+  - csharp
+  - vb
+  name: UIHandler
+  nameWithType: RuntimeDebugSystem.UIHandler
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UIHandler
+  type: Property
+  source:
+    remote:
+      path: Runtime/Systems/RuntimeDebugSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: UIHandler
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Systems/RuntimeDebugSystem.cs
+    startLine: 38
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Systems
+  syntax:
+    content: public static DebugUIHandler UIHandler { get; }
+    parameters: []
+    return:
+      type: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
+    content.vb: Public Shared ReadOnly Property UIHandler As DebugUIHandler
+  overload: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UIHandler*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Awake
+  commentId: M:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Awake
+  id: Awake
+  parent: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
+  langs:
+  - csharp
+  - vb
+  name: Awake()
+  nameWithType: RuntimeDebugSystem.Awake()
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Awake()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Systems/RuntimeDebugSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Awake
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Systems/RuntimeDebugSystem.cs
+    startLine: 40
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Systems
+  syntax:
+    content: protected override void Awake()
+    content.vb: Protected Overrides Sub Awake
+  overridden: BennyKok.RuntimeDebug.Utils.Singleton{BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem}.Awake
+  overload: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Awake*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SetTheme(BennyKok.RuntimeDebug.Data.Theme,System.Boolean)
+  commentId: M:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SetTheme(BennyKok.RuntimeDebug.Data.Theme,System.Boolean)
+  id: SetTheme(BennyKok.RuntimeDebug.Data.Theme,System.Boolean)
+  parent: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
+  langs:
+  - csharp
+  - vb
+  name: SetTheme(Theme, Boolean)
+  nameWithType: RuntimeDebugSystem.SetTheme(Theme, Boolean)
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SetTheme(BennyKok.RuntimeDebug.Data.Theme, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Systems/RuntimeDebugSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: SetTheme
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Systems/RuntimeDebugSystem.cs
+    startLine: 93
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Systems
+  summary: "\nChange the theme of the current debug menu\n"
+  example: []
+  syntax:
+    content: public static void SetTheme(Theme theme, bool dirty = true)
+    parameters:
+    - id: theme
+      type: BennyKok.RuntimeDebug.Data.Theme
+      description: The theme to change to
+    - id: dirty
+      type: System.Boolean
+      description: If dirty, all the action will be re-initialized
+    content.vb: Public Shared Sub SetTheme(theme As Theme, dirty As Boolean = True)
+  overload: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SetTheme*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RequsetInputBlock
+  commentId: M:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RequsetInputBlock
+  id: RequsetInputBlock
+  parent: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
+  langs:
+  - csharp
+  - vb
+  name: RequsetInputBlock()
+  nameWithType: RuntimeDebugSystem.RequsetInputBlock()
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RequsetInputBlock()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Systems/RuntimeDebugSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: RequsetInputBlock
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Systems/RuntimeDebugSystem.cs
+    startLine: 111
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Systems
+  syntax:
+    content: public void RequsetInputBlock()
+    content.vb: Public Sub RequsetInputBlock
+  overload: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RequsetInputBlock*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.ReleaseInputBlock
+  commentId: M:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.ReleaseInputBlock
+  id: ReleaseInputBlock
+  parent: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
+  langs:
+  - csharp
+  - vb
+  name: ReleaseInputBlock()
+  nameWithType: RuntimeDebugSystem.ReleaseInputBlock()
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.ReleaseInputBlock()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Systems/RuntimeDebugSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: ReleaseInputBlock
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Systems/RuntimeDebugSystem.cs
+    startLine: 116
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Systems
+  syntax:
+    content: public void ReleaseInputBlock()
+    content.vb: Public Sub ReleaseInputBlock
+  overload: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.ReleaseInputBlock*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.HasFlag(System.String)
+  commentId: M:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.HasFlag(System.String)
+  id: HasFlag(System.String)
+  parent: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
+  langs:
+  - csharp
+  - vb
+  name: HasFlag(String)
+  nameWithType: RuntimeDebugSystem.HasFlag(String)
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.HasFlag(System.String)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Systems/RuntimeDebugSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: HasFlag
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Systems/RuntimeDebugSystem.cs
+    startLine: 159
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Systems
+  summary: "\nCheck if there&apos;s any flags turn on\n"
+  example: []
+  syntax:
+    content: public static bool HasFlag(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the flag
+    return:
+      type: System.Boolean
+      description: If the flag is on
+    content.vb: Public Shared Function HasFlag(name As String) As Boolean
+  overload: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.HasFlag*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterActions(System.String,BennyKok.RuntimeDebug.Actions.BaseAction[])
+  commentId: M:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterActions(System.String,BennyKok.RuntimeDebug.Actions.BaseAction[])
+  id: RegisterActions(System.String,BennyKok.RuntimeDebug.Actions.BaseAction[])
+  parent: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
+  langs:
+  - csharp
+  - vb
+  name: RegisterActions(String, BaseAction[])
+  nameWithType: RuntimeDebugSystem.RegisterActions(String, BaseAction[])
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterActions(System.String, BennyKok.RuntimeDebug.Actions.BaseAction[])
+  type: Method
+  source:
+    remote:
+      path: Runtime/Systems/RuntimeDebugSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: RegisterActions
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Systems/RuntimeDebugSystem.cs
+    startLine: 170
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Systems
+  syntax:
+    content: public static void RegisterActions(string path, params BaseAction[] list)
+    parameters:
+    - id: path
+      type: System.String
+    - id: list
+      type: BennyKok.RuntimeDebug.Actions.BaseAction[]
+    content.vb: Public Shared Sub RegisterActions(path As String, ParamArray list As BaseAction())
+  overload: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterActions*
+  nameWithType.vb: RuntimeDebugSystem.RegisterActions(String, BaseAction())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterActions(System.String, BennyKok.RuntimeDebug.Actions.BaseAction())
+  name.vb: RegisterActions(String, BaseAction())
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterActions(BennyKok.RuntimeDebug.Actions.BaseAction[])
+  commentId: M:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterActions(BennyKok.RuntimeDebug.Actions.BaseAction[])
+  id: RegisterActions(BennyKok.RuntimeDebug.Actions.BaseAction[])
+  parent: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
+  langs:
+  - csharp
+  - vb
+  name: RegisterActions(BaseAction[])
+  nameWithType: RuntimeDebugSystem.RegisterActions(BaseAction[])
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterActions(BennyKok.RuntimeDebug.Actions.BaseAction[])
+  type: Method
+  source:
+    remote:
+      path: Runtime/Systems/RuntimeDebugSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: RegisterActions
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Systems/RuntimeDebugSystem.cs
+    startLine: 178
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Systems
+  syntax:
+    content: public static void RegisterActions(params BaseAction[] list)
+    parameters:
+    - id: list
+      type: BennyKok.RuntimeDebug.Actions.BaseAction[]
+    content.vb: Public Shared Sub RegisterActions(ParamArray list As BaseAction())
+  overload: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterActions*
+  nameWithType.vb: RuntimeDebugSystem.RegisterActions(BaseAction())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterActions(BennyKok.RuntimeDebug.Actions.BaseAction())
+  name.vb: RegisterActions(BaseAction())
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActionByPath(System.String)
+  commentId: M:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActionByPath(System.String)
+  id: UnregisterActionByPath(System.String)
+  parent: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
+  langs:
+  - csharp
+  - vb
+  name: UnregisterActionByPath(String)
+  nameWithType: RuntimeDebugSystem.UnregisterActionByPath(String)
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActionByPath(System.String)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Systems/RuntimeDebugSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: UnregisterActionByPath
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Systems/RuntimeDebugSystem.cs
+    startLine: 187
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Systems
+  syntax:
+    content: public static void UnregisterActionByPath(string path)
+    parameters:
+    - id: path
+      type: System.String
+    content.vb: Public Shared Sub UnregisterActionByPath(path As String)
+  overload: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActionByPath*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActions(BennyKok.RuntimeDebug.Actions.BaseAction[])
+  commentId: M:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActions(BennyKok.RuntimeDebug.Actions.BaseAction[])
+  id: UnregisterActions(BennyKok.RuntimeDebug.Actions.BaseAction[])
+  parent: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
+  langs:
+  - csharp
+  - vb
+  name: UnregisterActions(BaseAction[])
+  nameWithType: RuntimeDebugSystem.UnregisterActions(BaseAction[])
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActions(BennyKok.RuntimeDebug.Actions.BaseAction[])
+  type: Method
+  source:
+    remote:
+      path: Runtime/Systems/RuntimeDebugSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: UnregisterActions
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Systems/RuntimeDebugSystem.cs
+    startLine: 200
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Systems
+  syntax:
+    content: public static void UnregisterActions(params BaseAction[] list)
+    parameters:
+    - id: list
+      type: BennyKok.RuntimeDebug.Actions.BaseAction[]
+    content.vb: Public Shared Sub UnregisterActions(ParamArray list As BaseAction())
+  overload: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActions*
+  nameWithType.vb: RuntimeDebugSystem.UnregisterActions(BaseAction())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActions(BennyKok.RuntimeDebug.Actions.BaseAction())
+  name.vb: UnregisterActions(BaseAction())
+references:
+- uid: BennyKok.RuntimeDebug.Systems
+  commentId: N:BennyKok.RuntimeDebug.Systems
+  name: BennyKok.RuntimeDebug.Systems
+  nameWithType: BennyKok.RuntimeDebug.Systems
+  fullName: BennyKok.RuntimeDebug.Systems
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: BennyKok.RuntimeDebug.Utils.Singleton{BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem}
+  commentId: T:BennyKok.RuntimeDebug.Utils.Singleton{BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem}
+  parent: BennyKok.RuntimeDebug.Utils
+  definition: BennyKok.RuntimeDebug.Utils.Singleton`1
+  name: Singleton<RuntimeDebugSystem>
+  nameWithType: Singleton<RuntimeDebugSystem>
+  fullName: BennyKok.RuntimeDebug.Utils.Singleton<BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem>
+  nameWithType.vb: Singleton(Of RuntimeDebugSystem)
+  fullName.vb: BennyKok.RuntimeDebug.Utils.Singleton(Of BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem)
+  name.vb: Singleton(Of RuntimeDebugSystem)
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Utils.Singleton`1
+    name: Singleton
+    nameWithType: Singleton
+    fullName: BennyKok.RuntimeDebug.Utils.Singleton
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
+    name: RuntimeDebugSystem
+    nameWithType: RuntimeDebugSystem
+    fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Utils.Singleton`1
+    name: Singleton
+    nameWithType: Singleton
+    fullName: BennyKok.RuntimeDebug.Utils.Singleton
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
+    name: RuntimeDebugSystem
+    nameWithType: RuntimeDebugSystem
+    fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Utils.Singleton{BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem}.Instance
+  commentId: P:BennyKok.RuntimeDebug.Utils.Singleton{BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem}.Instance
+  parent: BennyKok.RuntimeDebug.Utils.Singleton{BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem}
+  definition: BennyKok.RuntimeDebug.Utils.Singleton`1.Instance
+  name: Instance
+  nameWithType: Singleton<RuntimeDebugSystem>.Instance
+  fullName: BennyKok.RuntimeDebug.Utils.Singleton<BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem>.Instance
+  nameWithType.vb: Singleton(Of RuntimeDebugSystem).Instance
+  fullName.vb: BennyKok.RuntimeDebug.Utils.Singleton(Of BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem).Instance
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BennyKok.RuntimeDebug.Utils.Singleton`1
+  commentId: T:BennyKok.RuntimeDebug.Utils.Singleton`1
+  name: Singleton<T>
+  nameWithType: Singleton<T>
+  fullName: BennyKok.RuntimeDebug.Utils.Singleton<T>
+  nameWithType.vb: Singleton(Of T)
+  fullName.vb: BennyKok.RuntimeDebug.Utils.Singleton(Of T)
+  name.vb: Singleton(Of T)
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Utils.Singleton`1
+    name: Singleton
+    nameWithType: Singleton
+    fullName: BennyKok.RuntimeDebug.Utils.Singleton
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Utils.Singleton`1
+    name: Singleton
+    nameWithType: Singleton
+    fullName: BennyKok.RuntimeDebug.Utils.Singleton
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Utils
+  commentId: N:BennyKok.RuntimeDebug.Utils
+  name: BennyKok.RuntimeDebug.Utils
+  nameWithType: BennyKok.RuntimeDebug.Utils
+  fullName: BennyKok.RuntimeDebug.Utils
+- uid: BennyKok.RuntimeDebug.Utils.Singleton`1.Instance
+  commentId: P:BennyKok.RuntimeDebug.Utils.Singleton`1.Instance
+  name: Instance
+  nameWithType: Singleton<T>.Instance
+  fullName: BennyKok.RuntimeDebug.Utils.Singleton<T>.Instance
+  nameWithType.vb: Singleton(Of T).Instance
+  fullName.vb: BennyKok.RuntimeDebug.Utils.Singleton(Of T).Instance
+- uid: BennyKok.RuntimeDebug.Data.Settings
+  commentId: T:BennyKok.RuntimeDebug.Data.Settings
+  parent: BennyKok.RuntimeDebug.Data
+  name: Settings
+  nameWithType: Settings
+  fullName: BennyKok.RuntimeDebug.Data.Settings
+- uid: BennyKok.RuntimeDebug.Data
+  commentId: N:BennyKok.RuntimeDebug.Data
+  name: BennyKok.RuntimeDebug.Data
+  nameWithType: BennyKok.RuntimeDebug.Data
+  fullName: BennyKok.RuntimeDebug.Data
+- uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
+  parent: BennyKok.RuntimeDebug.Components.UI
+  name: DebugUIHandler
+  nameWithType: DebugUIHandler
+  fullName: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
+- uid: BennyKok.RuntimeDebug.Components.UI
+  commentId: N:BennyKok.RuntimeDebug.Components.UI
+  name: BennyKok.RuntimeDebug.Components.UI
+  nameWithType: BennyKok.RuntimeDebug.Components.UI
+  fullName: BennyKok.RuntimeDebug.Components.UI
+- uid: System.Collections.Generic.List{BennyKok.RuntimeDebug.Actions.BaseAction}
+  commentId: T:System.Collections.Generic.List{BennyKok.RuntimeDebug.Actions.BaseAction}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<BaseAction>
+  nameWithType: List<BaseAction>
+  fullName: System.Collections.Generic.List<BennyKok.RuntimeDebug.Actions.BaseAction>
+  nameWithType.vb: List(Of BaseAction)
+  fullName.vb: System.Collections.Generic.List(Of BennyKok.RuntimeDebug.Actions.BaseAction)
+  name.vb: List(Of BaseAction)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BennyKok.RuntimeDebug.Actions.BaseAction
+    name: BaseAction
+    nameWithType: BaseAction
+    fullName: BennyKok.RuntimeDebug.Actions.BaseAction
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BennyKok.RuntimeDebug.Actions.BaseAction
+    name: BaseAction
+    nameWithType: BaseAction
+    fullName: BennyKok.RuntimeDebug.Actions.BaseAction
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Action{System.Boolean}
+  commentId: T:System.Action{System.Boolean}
+  parent: System
+  definition: System.Action`1
+  name: Action<Boolean>
+  nameWithType: Action<Boolean>
+  fullName: System.Action<System.Boolean>
+  nameWithType.vb: Action(Of Boolean)
+  fullName.vb: System.Action(Of System.Boolean)
+  name.vb: Action(Of Boolean)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Settings*
+  commentId: Overload:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Settings
+  name: Settings
+  nameWithType: RuntimeDebugSystem.Settings
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Settings
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UIHandler*
+  commentId: Overload:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UIHandler
+  name: UIHandler
+  nameWithType: RuntimeDebugSystem.UIHandler
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UIHandler
+- uid: BennyKok.RuntimeDebug.Utils.Singleton{BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem}.Awake
+  commentId: M:BennyKok.RuntimeDebug.Utils.Singleton{BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem}.Awake
+  parent: BennyKok.RuntimeDebug.Utils.Singleton{BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem}
+  definition: BennyKok.RuntimeDebug.Utils.Singleton`1.Awake
+  name: Awake()
+  nameWithType: Singleton<RuntimeDebugSystem>.Awake()
+  fullName: BennyKok.RuntimeDebug.Utils.Singleton<BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem>.Awake()
+  nameWithType.vb: Singleton(Of RuntimeDebugSystem).Awake()
+  fullName.vb: BennyKok.RuntimeDebug.Utils.Singleton(Of BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem).Awake()
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Utils.Singleton`1.Awake
+    name: Awake
+    nameWithType: Singleton<RuntimeDebugSystem>.Awake
+    fullName: BennyKok.RuntimeDebug.Utils.Singleton<BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem>.Awake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Utils.Singleton`1.Awake
+    name: Awake
+    nameWithType: Singleton(Of RuntimeDebugSystem).Awake
+    fullName: BennyKok.RuntimeDebug.Utils.Singleton(Of BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem).Awake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Awake*
+  commentId: Overload:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Awake
+  name: Awake
+  nameWithType: RuntimeDebugSystem.Awake
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Awake
+- uid: BennyKok.RuntimeDebug.Utils.Singleton`1.Awake
+  commentId: M:BennyKok.RuntimeDebug.Utils.Singleton`1.Awake
+  name: Awake()
+  nameWithType: Singleton<T>.Awake()
+  fullName: BennyKok.RuntimeDebug.Utils.Singleton<T>.Awake()
+  nameWithType.vb: Singleton(Of T).Awake()
+  fullName.vb: BennyKok.RuntimeDebug.Utils.Singleton(Of T).Awake()
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Utils.Singleton`1.Awake
+    name: Awake
+    nameWithType: Singleton<T>.Awake
+    fullName: BennyKok.RuntimeDebug.Utils.Singleton<T>.Awake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Utils.Singleton`1.Awake
+    name: Awake
+    nameWithType: Singleton(Of T).Awake
+    fullName: BennyKok.RuntimeDebug.Utils.Singleton(Of T).Awake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SetTheme*
+  commentId: Overload:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SetTheme
+  name: SetTheme
+  nameWithType: RuntimeDebugSystem.SetTheme
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SetTheme
+- uid: BennyKok.RuntimeDebug.Data.Theme
+  commentId: T:BennyKok.RuntimeDebug.Data.Theme
+  parent: BennyKok.RuntimeDebug.Data
+  name: Theme
+  nameWithType: Theme
+  fullName: BennyKok.RuntimeDebug.Data.Theme
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RequsetInputBlock*
+  commentId: Overload:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RequsetInputBlock
+  name: RequsetInputBlock
+  nameWithType: RuntimeDebugSystem.RequsetInputBlock
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RequsetInputBlock
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.ReleaseInputBlock*
+  commentId: Overload:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.ReleaseInputBlock
+  name: ReleaseInputBlock
+  nameWithType: RuntimeDebugSystem.ReleaseInputBlock
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.ReleaseInputBlock
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.HasFlag*
+  commentId: Overload:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.HasFlag
+  name: HasFlag
+  nameWithType: RuntimeDebugSystem.HasFlag
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.HasFlag
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterActions*
+  commentId: Overload:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterActions
+  name: RegisterActions
+  nameWithType: RuntimeDebugSystem.RegisterActions
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterActions
+- uid: BennyKok.RuntimeDebug.Actions.BaseAction[]
+  isExternal: true
+  name: BaseAction[]
+  nameWithType: BaseAction[]
+  fullName: BennyKok.RuntimeDebug.Actions.BaseAction[]
+  nameWithType.vb: BaseAction()
+  fullName.vb: BennyKok.RuntimeDebug.Actions.BaseAction()
+  name.vb: BaseAction()
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Actions.BaseAction
+    name: BaseAction
+    nameWithType: BaseAction
+    fullName: BennyKok.RuntimeDebug.Actions.BaseAction
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Actions.BaseAction
+    name: BaseAction
+    nameWithType: BaseAction
+    fullName: BennyKok.RuntimeDebug.Actions.BaseAction
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActionByPath*
+  commentId: Overload:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActionByPath
+  name: UnregisterActionByPath
+  nameWithType: RuntimeDebugSystem.UnregisterActionByPath
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActionByPath
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActions*
+  commentId: Overload:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActions
+  name: UnregisterActions
+  nameWithType: RuntimeDebugSystem.UnregisterActions
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActions

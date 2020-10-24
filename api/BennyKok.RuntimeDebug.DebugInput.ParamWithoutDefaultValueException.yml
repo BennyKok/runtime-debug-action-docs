@@ -1,0 +1,102 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException
+  commentId: T:BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException
+  id: ParamWithoutDefaultValueException
+  parent: BennyKok.RuntimeDebug.DebugInput
+  children:
+  - BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException.#ctor
+  langs:
+  - csharp
+  - vb
+  name: ParamWithoutDefaultValueException
+  nameWithType: ParamWithoutDefaultValueException
+  fullName: BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException
+  type: Class
+  source:
+    remote:
+      path: Runtime/Input/InputQuery.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: ParamWithoutDefaultValueException
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/InputQuery.cs
+    startLine: 48
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: 'public class ParamWithoutDefaultValueException : Exception, _Exception, ISerializable'
+    content.vb: >-
+      Public Class ParamWithoutDefaultValueException
+          Inherits Exception
+          Implements _Exception, ISerializable
+  inheritance:
+  - System.Object
+  - System.Exception
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException.#ctor
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException.#ctor
+  id: '#ctor'
+  parent: BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException
+  langs:
+  - csharp
+  - vb
+  name: ParamWithoutDefaultValueException()
+  nameWithType: ParamWithoutDefaultValueException.ParamWithoutDefaultValueException()
+  fullName: BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException.ParamWithoutDefaultValueException()
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Input/InputQuery.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: .ctor
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/InputQuery.cs
+    startLine: 50
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: public ParamWithoutDefaultValueException()
+    content.vb: Public Sub New
+  overload: BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BennyKok.RuntimeDebug.DebugInput
+  commentId: N:BennyKok.RuntimeDebug.DebugInput
+  name: BennyKok.RuntimeDebug.DebugInput
+  nameWithType: BennyKok.RuntimeDebug.DebugInput
+  fullName: BennyKok.RuntimeDebug.DebugInput
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException.#ctor*
+  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException.#ctor
+  name: ParamWithoutDefaultValueException
+  nameWithType: ParamWithoutDefaultValueException.ParamWithoutDefaultValueException
+  fullName: BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException.ParamWithoutDefaultValueException

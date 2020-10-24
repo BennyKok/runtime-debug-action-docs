@@ -1,0 +1,529 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.DebugInput.InputResponse
+  commentId: T:BennyKok.RuntimeDebug.DebugInput.InputResponse
+  id: InputResponse
+  parent: BennyKok.RuntimeDebug.DebugInput
+  children:
+  - BennyKok.RuntimeDebug.DebugInput.InputResponse.#ctor(System.Collections.Generic.Dictionary{BennyKok.RuntimeDebug.DebugInput.Param,System.String})
+  - BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParam(System.String)
+  - BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamBool(System.String)
+  - BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamFloat(System.String)
+  - BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamString(System.String)
+  - BennyKok.RuntimeDebug.DebugInput.InputResponse.responses
+  langs:
+  - csharp
+  - vb
+  name: InputResponse
+  nameWithType: InputResponse
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputResponse
+  type: Struct
+  source:
+    remote:
+      path: Runtime/Input/InputResponse.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: InputResponse
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/InputResponse.cs
+    startLine: 5
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: public struct InputResponse
+    content.vb: Public Structure InputResponse
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: BennyKok.RuntimeDebug.DebugInput.InputResponse.responses
+  commentId: F:BennyKok.RuntimeDebug.DebugInput.InputResponse.responses
+  id: responses
+  parent: BennyKok.RuntimeDebug.DebugInput.InputResponse
+  langs:
+  - csharp
+  - vb
+  name: responses
+  nameWithType: InputResponse.responses
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputResponse.responses
+  type: Field
+  source:
+    remote:
+      path: Runtime/Input/InputResponse.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: responses
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/InputResponse.cs
+    startLine: 7
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: public Dictionary<Param, string> responses
+    return:
+      type: System.Collections.Generic.Dictionary{BennyKok.RuntimeDebug.DebugInput.Param,System.String}
+    content.vb: Public responses As Dictionary(Of Param, String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.DebugInput.InputResponse.#ctor(System.Collections.Generic.Dictionary{BennyKok.RuntimeDebug.DebugInput.Param,System.String})
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputResponse.#ctor(System.Collections.Generic.Dictionary{BennyKok.RuntimeDebug.DebugInput.Param,System.String})
+  id: '#ctor(System.Collections.Generic.Dictionary{BennyKok.RuntimeDebug.DebugInput.Param,System.String})'
+  parent: BennyKok.RuntimeDebug.DebugInput.InputResponse
+  langs:
+  - csharp
+  - vb
+  name: InputResponse(Dictionary<Param, String>)
+  nameWithType: InputResponse.InputResponse(Dictionary<Param, String>)
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputResponse.InputResponse(System.Collections.Generic.Dictionary<BennyKok.RuntimeDebug.DebugInput.Param, System.String>)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Input/InputResponse.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: .ctor
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/InputResponse.cs
+    startLine: 9
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: public InputResponse(Dictionary<Param, string> responses)
+    parameters:
+    - id: responses
+      type: System.Collections.Generic.Dictionary{BennyKok.RuntimeDebug.DebugInput.Param,System.String}
+    content.vb: Public Sub New(responses As Dictionary(Of Param, String))
+  overload: BennyKok.RuntimeDebug.DebugInput.InputResponse.#ctor*
+  nameWithType.vb: InputResponse.InputResponse(Dictionary(Of Param, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: BennyKok.RuntimeDebug.DebugInput.InputResponse.InputResponse(System.Collections.Generic.Dictionary(Of BennyKok.RuntimeDebug.DebugInput.Param, System.String))
+  name.vb: InputResponse(Dictionary(Of Param, String))
+- uid: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParam(System.String)
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParam(System.String)
+  id: GetParam(System.String)
+  parent: BennyKok.RuntimeDebug.DebugInput.InputResponse
+  langs:
+  - csharp
+  - vb
+  name: GetParam(String)
+  nameWithType: InputResponse.GetParam(String)
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParam(System.String)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/InputResponse.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: GetParam
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/InputResponse.cs
+    startLine: 14
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: public KeyValuePair<Param, string> GetParam(string paramName)
+    parameters:
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Collections.Generic.KeyValuePair{BennyKok.RuntimeDebug.DebugInput.Param,System.String}
+    content.vb: Public Function GetParam(paramName As String) As KeyValuePair(Of Param, String)
+  overload: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParam*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamString(System.String)
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamString(System.String)
+  id: GetParamString(System.String)
+  parent: BennyKok.RuntimeDebug.DebugInput.InputResponse
+  langs:
+  - csharp
+  - vb
+  name: GetParamString(String)
+  nameWithType: InputResponse.GetParamString(String)
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamString(System.String)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/InputResponse.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: GetParamString
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/InputResponse.cs
+    startLine: 23
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: public string GetParamString(string paramName)
+    parameters:
+    - id: paramName
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function GetParamString(paramName As String) As String
+  overload: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamString*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamBool(System.String)
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamBool(System.String)
+  id: GetParamBool(System.String)
+  parent: BennyKok.RuntimeDebug.DebugInput.InputResponse
+  langs:
+  - csharp
+  - vb
+  name: GetParamBool(String)
+  nameWithType: InputResponse.GetParamBool(String)
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamBool(System.String)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/InputResponse.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: GetParamBool
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/InputResponse.cs
+    startLine: 33
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: public bool GetParamBool(string paramName)
+    parameters:
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function GetParamBool(paramName As String) As Boolean
+  overload: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamBool*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamFloat(System.String)
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamFloat(System.String)
+  id: GetParamFloat(System.String)
+  parent: BennyKok.RuntimeDebug.DebugInput.InputResponse
+  langs:
+  - csharp
+  - vb
+  name: GetParamFloat(String)
+  nameWithType: InputResponse.GetParamFloat(String)
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamFloat(System.String)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/InputResponse.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: GetParamFloat
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/InputResponse.cs
+    startLine: 43
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: public float GetParamFloat(string paramName)
+    parameters:
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Single
+    content.vb: Public Function GetParamFloat(paramName As String) As Single
+  overload: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamFloat*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BennyKok.RuntimeDebug.DebugInput
+  commentId: N:BennyKok.RuntimeDebug.DebugInput
+  name: BennyKok.RuntimeDebug.DebugInput
+  nameWithType: BennyKok.RuntimeDebug.DebugInput
+  fullName: BennyKok.RuntimeDebug.DebugInput
+- uid: System.Collections.Generic.Dictionary{BennyKok.RuntimeDebug.DebugInput.Param,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{BennyKok.RuntimeDebug.DebugInput.Param,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<Param, String>
+  nameWithType: Dictionary<Param, String>
+  fullName: System.Collections.Generic.Dictionary<BennyKok.RuntimeDebug.DebugInput.Param, System.String>
+  nameWithType.vb: Dictionary(Of Param, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of BennyKok.RuntimeDebug.DebugInput.Param, System.String)
+  name.vb: Dictionary(Of Param, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BennyKok.RuntimeDebug.DebugInput.Param
+    name: Param
+    nameWithType: Param
+    fullName: BennyKok.RuntimeDebug.DebugInput.Param
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BennyKok.RuntimeDebug.DebugInput.Param
+    name: Param
+    nameWithType: Param
+    fullName: BennyKok.RuntimeDebug.DebugInput.Param
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: BennyKok.RuntimeDebug.DebugInput.InputResponse.#ctor*
+  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.InputResponse.#ctor
+  name: InputResponse
+  nameWithType: InputResponse.InputResponse
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputResponse.InputResponse
+- uid: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParam*
+  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParam
+  name: GetParam
+  nameWithType: InputResponse.GetParam
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParam
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic.KeyValuePair{BennyKok.RuntimeDebug.DebugInput.Param,System.String}
+  commentId: T:System.Collections.Generic.KeyValuePair{BennyKok.RuntimeDebug.DebugInput.Param,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.KeyValuePair`2
+  name: KeyValuePair<Param, String>
+  nameWithType: KeyValuePair<Param, String>
+  fullName: System.Collections.Generic.KeyValuePair<BennyKok.RuntimeDebug.DebugInput.Param, System.String>
+  nameWithType.vb: KeyValuePair(Of Param, String)
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of BennyKok.RuntimeDebug.DebugInput.Param, System.String)
+  name.vb: KeyValuePair(Of Param, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BennyKok.RuntimeDebug.DebugInput.Param
+    name: Param
+    nameWithType: Param
+    fullName: BennyKok.RuntimeDebug.DebugInput.Param
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BennyKok.RuntimeDebug.DebugInput.Param
+    name: Param
+    nameWithType: Param
+    fullName: BennyKok.RuntimeDebug.DebugInput.Param
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.KeyValuePair`2
+  commentId: T:System.Collections.Generic.KeyValuePair`2
+  isExternal: true
+  name: KeyValuePair<TKey, TValue>
+  nameWithType: KeyValuePair<TKey, TValue>
+  fullName: System.Collections.Generic.KeyValuePair<TKey, TValue>
+  nameWithType.vb: KeyValuePair(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of TKey, TValue)
+  name.vb: KeyValuePair(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamString*
+  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamString
+  name: GetParamString
+  nameWithType: InputResponse.GetParamString
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamString
+- uid: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamBool*
+  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamBool
+  name: GetParamBool
+  nameWithType: InputResponse.GetParamBool
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamBool
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamFloat*
+  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamFloat
+  name: GetParamFloat
+  nameWithType: InputResponse.GetParamFloat
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamFloat
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single

@@ -1,0 +1,218 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.Components.DebugActionHandler
+  commentId: T:BennyKok.RuntimeDebug.Components.DebugActionHandler
+  id: DebugActionHandler
+  parent: BennyKok.RuntimeDebug.Components
+  children:
+  - BennyKok.RuntimeDebug.Components.DebugActionHandler.actions
+  - BennyKok.RuntimeDebug.Components.DebugActionHandler.actionsToggle
+  langs:
+  - csharp
+  - vb
+  name: DebugActionHandler
+  nameWithType: DebugActionHandler
+  fullName: BennyKok.RuntimeDebug.Components.DebugActionHandler
+  type: Class
+  source:
+    remote:
+      path: Runtime/Components/DebugActionHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: DebugActionHandler
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/DebugActionHandler.cs
+    startLine: 7
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components
+  syntax:
+    content: >-
+      [AddComponentMenu("Runtime Debug Action/Debug Action Handler")]
+
+      public class DebugActionHandler : MonoBehaviour
+    content.vb: >-
+      <AddComponentMenu("Runtime Debug Action/Debug Action Handler")>
+
+      Public Class DebugActionHandler
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  attributes:
+  - type: UnityEngine.AddComponentMenu
+    ctor: UnityEngine.AddComponentMenu.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Runtime Debug Action/Debug Action Handler
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BennyKok.RuntimeDebug.Components.DebugActionHandler.actions
+  commentId: F:BennyKok.RuntimeDebug.Components.DebugActionHandler.actions
+  id: actions
+  parent: BennyKok.RuntimeDebug.Components.DebugActionHandler
+  langs:
+  - csharp
+  - vb
+  name: actions
+  nameWithType: DebugActionHandler.actions
+  fullName: BennyKok.RuntimeDebug.Components.DebugActionHandler.actions
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/DebugActionHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: actions
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/DebugActionHandler.cs
+    startLine: 10
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components
+  syntax:
+    content: public DebugActionButton[] actions
+    return:
+      type: BennyKok.RuntimeDebug.Actions.DebugActionButton[]
+    content.vb: Public actions As DebugActionButton()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.DebugActionHandler.actionsToggle
+  commentId: F:BennyKok.RuntimeDebug.Components.DebugActionHandler.actionsToggle
+  id: actionsToggle
+  parent: BennyKok.RuntimeDebug.Components.DebugActionHandler
+  langs:
+  - csharp
+  - vb
+  name: actionsToggle
+  nameWithType: DebugActionHandler.actionsToggle
+  fullName: BennyKok.RuntimeDebug.Components.DebugActionHandler.actionsToggle
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/DebugActionHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: actionsToggle
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/DebugActionHandler.cs
+    startLine: 11
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components
+  syntax:
+    content: public DebugActionToggle[] actionsToggle
+    return:
+      type: BennyKok.RuntimeDebug.Actions.DebugActionToggle[]
+    content.vb: Public actionsToggle As DebugActionToggle()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BennyKok.RuntimeDebug.Components
+  commentId: N:BennyKok.RuntimeDebug.Components
+  name: BennyKok.RuntimeDebug.Components
+  nameWithType: BennyKok.RuntimeDebug.Components
+  fullName: BennyKok.RuntimeDebug.Components
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionButton[]
+  isExternal: true
+  name: DebugActionButton[]
+  nameWithType: DebugActionButton[]
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionButton[]
+  nameWithType.vb: DebugActionButton()
+  fullName.vb: BennyKok.RuntimeDebug.Actions.DebugActionButton()
+  name.vb: DebugActionButton()
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Actions.DebugActionButton
+    name: DebugActionButton
+    nameWithType: DebugActionButton
+    fullName: BennyKok.RuntimeDebug.Actions.DebugActionButton
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Actions.DebugActionButton
+    name: DebugActionButton
+    nameWithType: DebugActionButton
+    fullName: BennyKok.RuntimeDebug.Actions.DebugActionButton
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle[]
+  isExternal: true
+  name: DebugActionToggle[]
+  nameWithType: DebugActionToggle[]
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle[]
+  nameWithType.vb: DebugActionToggle()
+  fullName.vb: BennyKok.RuntimeDebug.Actions.DebugActionToggle()
+  name.vb: DebugActionToggle()
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle
+    name: DebugActionToggle
+    nameWithType: DebugActionToggle
+    fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle
+    name: DebugActionToggle
+    nameWithType: DebugActionToggle
+    fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle
+  - name: ()
+    nameWithType: ()
+    fullName: ()

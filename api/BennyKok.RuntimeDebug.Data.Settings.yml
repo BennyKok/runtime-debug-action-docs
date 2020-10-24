@@ -1,0 +1,710 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.Data.Settings
+  commentId: T:BennyKok.RuntimeDebug.Data.Settings
+  id: Settings
+  parent: BennyKok.RuntimeDebug.Data
+  children:
+  - BennyKok.RuntimeDebug.Data.Settings.actionDisplayFadeTime
+  - BennyKok.RuntimeDebug.Data.Settings.actionDisplayShowTime
+  - BennyKok.RuntimeDebug.Data.Settings.addLoadSceneOptions
+  - BennyKok.RuntimeDebug.Data.Settings.addQualityOptions
+  - BennyKok.RuntimeDebug.Data.Settings.enabled
+  - BennyKok.RuntimeDebug.Data.Settings.GetDefaultTheme
+  - BennyKok.RuntimeDebug.Data.Settings.globalFlags
+  - BennyKok.RuntimeDebug.Data.Settings.hideCursorOnStart
+  - BennyKok.RuntimeDebug.Data.Settings.IsShowTouchToggle
+  - BennyKok.RuntimeDebug.Data.Settings.menuKey
+  - BennyKok.RuntimeDebug.Data.Settings.settingsAssetName
+  - BennyKok.RuntimeDebug.Data.Settings.settingsFolderPath
+  - BennyKok.RuntimeDebug.Data.Settings.settingsPath
+  - BennyKok.RuntimeDebug.Data.Settings.themes
+  - BennyKok.RuntimeDebug.Data.Settings.touchToggleMode
+  langs:
+  - csharp
+  - vb
+  name: Settings
+  nameWithType: Settings
+  fullName: BennyKok.RuntimeDebug.Data.Settings
+  type: Class
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Settings
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/Settings.cs
+    startLine: 14
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: 'public class Settings : ScriptableObject'
+    content.vb: >-
+      Public Class Settings
+          Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BennyKok.RuntimeDebug.Data.Settings.settingsAssetName
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.settingsAssetName
+  id: settingsAssetName
+  parent: BennyKok.RuntimeDebug.Data.Settings
+  langs:
+  - csharp
+  - vb
+  name: settingsAssetName
+  nameWithType: Settings.settingsAssetName
+  fullName: BennyKok.RuntimeDebug.Data.Settings.settingsAssetName
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: settingsAssetName
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/Settings.cs
+    startLine: 17
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public const string settingsAssetName = "RDActionSettings"
+    return:
+      type: System.String
+    content.vb: Public Const settingsAssetName As String = "RDActionSettings"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BennyKok.RuntimeDebug.Data.Settings.settingsFolderPath
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.settingsFolderPath
+  id: settingsFolderPath
+  parent: BennyKok.RuntimeDebug.Data.Settings
+  langs:
+  - csharp
+  - vb
+  name: settingsFolderPath
+  nameWithType: Settings.settingsFolderPath
+  fullName: BennyKok.RuntimeDebug.Data.Settings.settingsFolderPath
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: settingsFolderPath
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/Settings.cs
+    startLine: 19
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public const string settingsFolderPath = "Assets/Resources/"
+    return:
+      type: System.String
+    content.vb: Public Const settingsFolderPath As String = "Assets/Resources/"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BennyKok.RuntimeDebug.Data.Settings.settingsPath
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.settingsPath
+  id: settingsPath
+  parent: BennyKok.RuntimeDebug.Data.Settings
+  langs:
+  - csharp
+  - vb
+  name: settingsPath
+  nameWithType: Settings.settingsPath
+  fullName: BennyKok.RuntimeDebug.Data.Settings.settingsPath
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: settingsPath
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/Settings.cs
+    startLine: 21
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public const string settingsPath = "Assets/Resources/RDActionSettings.asset"
+    return:
+      type: System.String
+    content.vb: Public Const settingsPath As String = "Assets/Resources/RDActionSettings.asset"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BennyKok.RuntimeDebug.Data.Settings.enabled
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.enabled
+  id: enabled
+  parent: BennyKok.RuntimeDebug.Data.Settings
+  langs:
+  - csharp
+  - vb
+  name: enabled
+  nameWithType: Settings.enabled
+  fullName: BennyKok.RuntimeDebug.Data.Settings.enabled
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: enabled
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/Settings.cs
+    startLine: 27
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: >-
+      [Title("Setup", false, 0)]
+
+      public bool enabled
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Title("Setup", False, 0)>
+
+      Public enabled As Boolean
+  attributes:
+  - type: BennyKok.RuntimeDebug.Utils.TitleAttribute
+    ctor: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Boolean,System.Int32)
+    arguments:
+    - type: System.String
+      value: Setup
+    - type: System.Boolean
+      value: false
+    - type: System.Int32
+      value: 0
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.Settings.themes
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.themes
+  id: themes
+  parent: BennyKok.RuntimeDebug.Data.Settings
+  langs:
+  - csharp
+  - vb
+  name: themes
+  nameWithType: Settings.themes
+  fullName: BennyKok.RuntimeDebug.Data.Settings.themes
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: themes
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/Settings.cs
+    startLine: 28
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public ThemeList themes
+    return:
+      type: BennyKok.RuntimeDebug.Data.ThemeList
+    content.vb: Public themes As ThemeList
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.Settings.actionDisplayShowTime
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.actionDisplayShowTime
+  id: actionDisplayShowTime
+  parent: BennyKok.RuntimeDebug.Data.Settings
+  langs:
+  - csharp
+  - vb
+  name: actionDisplayShowTime
+  nameWithType: Settings.actionDisplayShowTime
+  fullName: BennyKok.RuntimeDebug.Data.Settings.actionDisplayShowTime
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: actionDisplayShowTime
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/Settings.cs
+    startLine: 32
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: >-
+      [Title("Animation", 0)]
+
+      public float actionDisplayShowTime
+    return:
+      type: System.Single
+    content.vb: >-
+      <Title("Animation", 0)>
+
+      Public actionDisplayShowTime As Single
+  attributes:
+  - type: BennyKok.RuntimeDebug.Utils.TitleAttribute
+    ctor: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: Animation
+    - type: System.Int32
+      value: 0
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.Settings.actionDisplayFadeTime
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.actionDisplayFadeTime
+  id: actionDisplayFadeTime
+  parent: BennyKok.RuntimeDebug.Data.Settings
+  langs:
+  - csharp
+  - vb
+  name: actionDisplayFadeTime
+  nameWithType: Settings.actionDisplayFadeTime
+  fullName: BennyKok.RuntimeDebug.Data.Settings.actionDisplayFadeTime
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: actionDisplayFadeTime
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/Settings.cs
+    startLine: 33
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public float actionDisplayFadeTime
+    return:
+      type: System.Single
+    content.vb: Public actionDisplayFadeTime As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.Settings.menuKey
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.menuKey
+  id: menuKey
+  parent: BennyKok.RuntimeDebug.Data.Settings
+  langs:
+  - csharp
+  - vb
+  name: menuKey
+  nameWithType: Settings.menuKey
+  fullName: BennyKok.RuntimeDebug.Data.Settings.menuKey
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: menuKey
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/Settings.cs
+    startLine: 37
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: >-
+      [Title("Interaction", 0)]
+
+      public KeyCode menuKey
+    return:
+      type: UnityEngine.KeyCode
+    content.vb: >-
+      <Title("Interaction", 0)>
+
+      Public menuKey As KeyCode
+  attributes:
+  - type: BennyKok.RuntimeDebug.Utils.TitleAttribute
+    ctor: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: Interaction
+    - type: System.Int32
+      value: 0
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.Settings.touchToggleMode
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.touchToggleMode
+  id: touchToggleMode
+  parent: BennyKok.RuntimeDebug.Data.Settings
+  langs:
+  - csharp
+  - vb
+  name: touchToggleMode
+  nameWithType: Settings.touchToggleMode
+  fullName: BennyKok.RuntimeDebug.Data.Settings.touchToggleMode
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: touchToggleMode
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/Settings.cs
+    startLine: 39
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public Settings.TouchToggleMode touchToggleMode
+    return:
+      type: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
+    content.vb: Public touchToggleMode As Settings.TouchToggleMode
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.Settings.hideCursorOnStart
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.hideCursorOnStart
+  id: hideCursorOnStart
+  parent: BennyKok.RuntimeDebug.Data.Settings
+  langs:
+  - csharp
+  - vb
+  name: hideCursorOnStart
+  nameWithType: Settings.hideCursorOnStart
+  fullName: BennyKok.RuntimeDebug.Data.Settings.hideCursorOnStart
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: hideCursorOnStart
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/Settings.cs
+    startLine: 41
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public bool hideCursorOnStart
+    return:
+      type: System.Boolean
+    content.vb: Public hideCursorOnStart As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.Settings.addQualityOptions
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.addQualityOptions
+  id: addQualityOptions
+  parent: BennyKok.RuntimeDebug.Data.Settings
+  langs:
+  - csharp
+  - vb
+  name: addQualityOptions
+  nameWithType: Settings.addQualityOptions
+  fullName: BennyKok.RuntimeDebug.Data.Settings.addQualityOptions
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: addQualityOptions
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/Settings.cs
+    startLine: 45
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: >-
+      [Title("Default Menu", 0)]
+
+      public bool addQualityOptions
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Title("Default Menu", 0)>
+
+      Public addQualityOptions As Boolean
+  attributes:
+  - type: BennyKok.RuntimeDebug.Utils.TitleAttribute
+    ctor: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: Default Menu
+    - type: System.Int32
+      value: 0
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.Settings.addLoadSceneOptions
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.addLoadSceneOptions
+  id: addLoadSceneOptions
+  parent: BennyKok.RuntimeDebug.Data.Settings
+  langs:
+  - csharp
+  - vb
+  name: addLoadSceneOptions
+  nameWithType: Settings.addLoadSceneOptions
+  fullName: BennyKok.RuntimeDebug.Data.Settings.addLoadSceneOptions
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: addLoadSceneOptions
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/Settings.cs
+    startLine: 46
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public bool addLoadSceneOptions
+    return:
+      type: System.Boolean
+    content.vb: Public addLoadSceneOptions As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.Settings.globalFlags
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.globalFlags
+  id: globalFlags
+  parent: BennyKok.RuntimeDebug.Data.Settings
+  langs:
+  - csharp
+  - vb
+  name: globalFlags
+  nameWithType: Settings.globalFlags
+  fullName: BennyKok.RuntimeDebug.Data.Settings.globalFlags
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: globalFlags
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/Settings.cs
+    startLine: 52
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: >-
+      [Title("Debug Flags", 0)]
+
+      [ReorderableDisplay("Flag")]
+
+      public DebugFlagList globalFlags
+    return:
+      type: BennyKok.RuntimeDebug.Data.DebugFlagList
+    content.vb: >-
+      <Title("Debug Flags", 0)>
+
+      <ReorderableDisplay("Flag")>
+
+      Public globalFlags As DebugFlagList
+  attributes:
+  - type: BennyKok.RuntimeDebug.Utils.TitleAttribute
+    ctor: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: Debug Flags
+    - type: System.Int32
+      value: 0
+  - type: BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute
+    ctor: BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Flag
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.Settings.IsShowTouchToggle
+  commentId: M:BennyKok.RuntimeDebug.Data.Settings.IsShowTouchToggle
+  id: IsShowTouchToggle
+  parent: BennyKok.RuntimeDebug.Data.Settings
+  langs:
+  - csharp
+  - vb
+  name: IsShowTouchToggle()
+  nameWithType: Settings.IsShowTouchToggle()
+  fullName: BennyKok.RuntimeDebug.Data.Settings.IsShowTouchToggle()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: IsShowTouchToggle
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/Settings.cs
+    startLine: 62
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public bool IsShowTouchToggle()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsShowTouchToggle As Boolean
+  overload: BennyKok.RuntimeDebug.Data.Settings.IsShowTouchToggle*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.Settings.GetDefaultTheme
+  commentId: M:BennyKok.RuntimeDebug.Data.Settings.GetDefaultTheme
+  id: GetDefaultTheme
+  parent: BennyKok.RuntimeDebug.Data.Settings
+  langs:
+  - csharp
+  - vb
+  name: GetDefaultTheme()
+  nameWithType: Settings.GetDefaultTheme()
+  fullName: BennyKok.RuntimeDebug.Data.Settings.GetDefaultTheme()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: GetDefaultTheme
+    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/Settings.cs
+    startLine: 74
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public Theme GetDefaultTheme()
+    return:
+      type: BennyKok.RuntimeDebug.Data.Theme
+    content.vb: Public Function GetDefaultTheme As Theme
+  overload: BennyKok.RuntimeDebug.Data.Settings.GetDefaultTheme*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BennyKok.RuntimeDebug.Data
+  commentId: N:BennyKok.RuntimeDebug.Data
+  name: BennyKok.RuntimeDebug.Data
+  nameWithType: BennyKok.RuntimeDebug.Data
+  fullName: BennyKok.RuntimeDebug.Data
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: BennyKok.RuntimeDebug.Data.ThemeList
+  commentId: T:BennyKok.RuntimeDebug.Data.ThemeList
+  parent: BennyKok.RuntimeDebug.Data
+  name: ThemeList
+  nameWithType: ThemeList
+  fullName: BennyKok.RuntimeDebug.Data.ThemeList
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: UnityEngine.KeyCode
+  commentId: T:UnityEngine.KeyCode
+  parent: UnityEngine
+  isExternal: true
+  name: KeyCode
+  nameWithType: KeyCode
+  fullName: UnityEngine.KeyCode
+- uid: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
+  commentId: T:BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
+  parent: BennyKok.RuntimeDebug.Data
+  name: Settings.TouchToggleMode
+  nameWithType: Settings.TouchToggleMode
+  fullName: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
+- uid: BennyKok.RuntimeDebug.Data.DebugFlagList
+  commentId: T:BennyKok.RuntimeDebug.Data.DebugFlagList
+  parent: BennyKok.RuntimeDebug.Data
+  name: DebugFlagList
+  nameWithType: DebugFlagList
+  fullName: BennyKok.RuntimeDebug.Data.DebugFlagList
+- uid: BennyKok.RuntimeDebug.Data.Settings.IsShowTouchToggle*
+  commentId: Overload:BennyKok.RuntimeDebug.Data.Settings.IsShowTouchToggle
+  name: IsShowTouchToggle
+  nameWithType: Settings.IsShowTouchToggle
+  fullName: BennyKok.RuntimeDebug.Data.Settings.IsShowTouchToggle
+- uid: BennyKok.RuntimeDebug.Data.Settings.GetDefaultTheme*
+  commentId: Overload:BennyKok.RuntimeDebug.Data.Settings.GetDefaultTheme
+  name: GetDefaultTheme
+  nameWithType: Settings.GetDefaultTheme
+  fullName: BennyKok.RuntimeDebug.Data.Settings.GetDefaultTheme
+- uid: BennyKok.RuntimeDebug.Data.Theme
+  commentId: T:BennyKok.RuntimeDebug.Data.Theme
+  parent: BennyKok.RuntimeDebug.Data
+  name: Theme
+  nameWithType: Theme
+  fullName: BennyKok.RuntimeDebug.Data.Theme

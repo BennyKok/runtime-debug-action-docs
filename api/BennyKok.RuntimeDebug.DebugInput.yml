@@ -1,0 +1,60 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.DebugInput
+  commentId: N:BennyKok.RuntimeDebug.DebugInput
+  id: BennyKok.RuntimeDebug.DebugInput
+  children:
+  - BennyKok.RuntimeDebug.DebugInput.InputQuery
+  - BennyKok.RuntimeDebug.DebugInput.InputResponse
+  - BennyKok.RuntimeDebug.DebugInput.Param
+  - BennyKok.RuntimeDebug.DebugInput.ParamNameDuplicatedException
+  - BennyKok.RuntimeDebug.DebugInput.ParamType
+  - BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException
+  langs:
+  - csharp
+  - vb
+  name: BennyKok.RuntimeDebug.DebugInput
+  nameWithType: BennyKok.RuntimeDebug.DebugInput
+  fullName: BennyKok.RuntimeDebug.DebugInput
+  type: Namespace
+  assemblies:
+  - com.bennykok.runtime-debug-action
+references:
+- uid: BennyKok.RuntimeDebug.DebugInput.InputQuery
+  commentId: T:BennyKok.RuntimeDebug.DebugInput.InputQuery
+  parent: BennyKok.RuntimeDebug.DebugInput
+  name: InputQuery
+  nameWithType: InputQuery
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputQuery
+- uid: BennyKok.RuntimeDebug.DebugInput.ParamNameDuplicatedException
+  commentId: T:BennyKok.RuntimeDebug.DebugInput.ParamNameDuplicatedException
+  name: ParamNameDuplicatedException
+  nameWithType: ParamNameDuplicatedException
+  fullName: BennyKok.RuntimeDebug.DebugInput.ParamNameDuplicatedException
+- uid: BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException
+  commentId: T:BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException
+  name: ParamWithoutDefaultValueException
+  nameWithType: ParamWithoutDefaultValueException
+  fullName: BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException
+- uid: BennyKok.RuntimeDebug.DebugInput.InputResponse
+  commentId: T:BennyKok.RuntimeDebug.DebugInput.InputResponse
+  name: InputResponse
+  nameWithType: InputResponse
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputResponse
+- uid: BennyKok.RuntimeDebug.DebugInput.Param
+  commentId: T:BennyKok.RuntimeDebug.DebugInput.Param
+  parent: BennyKok.RuntimeDebug.DebugInput
+  name: Param
+  nameWithType: Param
+  fullName: BennyKok.RuntimeDebug.DebugInput.Param
+- uid: BennyKok.RuntimeDebug.DebugInput.ParamType
+  commentId: T:BennyKok.RuntimeDebug.DebugInput.ParamType
+  parent: BennyKok.RuntimeDebug.DebugInput
+  name: ParamType
+  nameWithType: ParamType
+  fullName: BennyKok.RuntimeDebug.DebugInput.ParamType
+- uid: BennyKok.RuntimeDebug.DebugInput
+  commentId: N:BennyKok.RuntimeDebug.DebugInput
+  name: BennyKok.RuntimeDebug.DebugInput
+  nameWithType: BennyKok.RuntimeDebug.DebugInput
+  fullName: BennyKok.RuntimeDebug.DebugInput

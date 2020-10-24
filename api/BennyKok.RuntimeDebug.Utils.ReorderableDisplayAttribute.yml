@@ -1,18 +1,18 @@
 ### YamlMime:ManagedReference
 items:
-- uid: BK.RDAction.Utils.ReorderableDisplayAttribute
-  commentId: T:BK.RDAction.Utils.ReorderableDisplayAttribute
+- uid: BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute
+  commentId: T:BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute
   id: ReorderableDisplayAttribute
-  parent: BK.RDAction.Utils
+  parent: BennyKok.RuntimeDebug.Utils
   children:
-  - BK.RDAction.Utils.ReorderableDisplayAttribute.#ctor(System.String)
-  - BK.RDAction.Utils.ReorderableDisplayAttribute.header
+  - BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute.#ctor(System.String)
+  - BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute.header
   langs:
   - csharp
   - vb
   name: ReorderableDisplayAttribute
   nameWithType: ReorderableDisplayAttribute
-  fullName: BK.RDAction.Utils.ReorderableDisplayAttribute
+  fullName: BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute
   type: Class
   source:
     remote:
@@ -24,7 +24,7 @@ items:
     startLine: 31
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Utils
+  namespace: BennyKok.RuntimeDebug.Utils
   syntax:
     content: 'public class ReorderableDisplayAttribute : PropertyAttribute, _Attribute'
     content.vb: >-
@@ -41,16 +41,16 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: BK.RDAction.Utils.ReorderableDisplayAttribute.header
-  commentId: F:BK.RDAction.Utils.ReorderableDisplayAttribute.header
+- uid: BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute.header
+  commentId: F:BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute.header
   id: header
-  parent: BK.RDAction.Utils.ReorderableDisplayAttribute
+  parent: BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute
   langs:
   - csharp
   - vb
   name: header
   nameWithType: ReorderableDisplayAttribute.header
-  fullName: BK.RDAction.Utils.ReorderableDisplayAttribute.header
+  fullName: BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute.header
   type: Field
   source:
     remote:
@@ -62,7 +62,7 @@ items:
     startLine: 33
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Utils
+  namespace: BennyKok.RuntimeDebug.Utils
   syntax:
     content: public string header
     return:
@@ -72,16 +72,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BK.RDAction.Utils.ReorderableDisplayAttribute.#ctor(System.String)
-  commentId: M:BK.RDAction.Utils.ReorderableDisplayAttribute.#ctor(System.String)
+- uid: BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute.#ctor(System.String)
+  commentId: M:BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute.#ctor(System.String)
   id: '#ctor(System.String)'
-  parent: BK.RDAction.Utils.ReorderableDisplayAttribute
+  parent: BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute
   langs:
   - csharp
   - vb
   name: ReorderableDisplayAttribute(String)
   nameWithType: ReorderableDisplayAttribute.ReorderableDisplayAttribute(String)
-  fullName: BK.RDAction.Utils.ReorderableDisplayAttribute.ReorderableDisplayAttribute(System.String)
+  fullName: BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute.ReorderableDisplayAttribute(System.String)
   type: Constructor
   source:
     remote:
@@ -93,24 +93,24 @@ items:
     startLine: 35
   assemblies:
   - com.bennykok.runtime-debug-action
-  namespace: BK.RDAction.Utils
+  namespace: BennyKok.RuntimeDebug.Utils
   syntax:
     content: public ReorderableDisplayAttribute(string header)
     parameters:
     - id: header
       type: System.String
     content.vb: Public Sub New(header As String)
-  overload: BK.RDAction.Utils.ReorderableDisplayAttribute.#ctor*
+  overload: BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute.#ctor*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
 references:
-- uid: BK.RDAction.Utils
-  commentId: N:BK.RDAction.Utils
-  name: BK.RDAction.Utils
-  nameWithType: BK.RDAction.Utils
-  fullName: BK.RDAction.Utils
+- uid: BennyKok.RuntimeDebug.Utils
+  commentId: N:BennyKok.RuntimeDebug.Utils
+  name: BennyKok.RuntimeDebug.Utils
+  nameWithType: BennyKok.RuntimeDebug.Utils
+  fullName: BennyKok.RuntimeDebug.Utils
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -151,8 +151,8 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: BK.RDAction.Utils.ReorderableDisplayAttribute.#ctor*
-  commentId: Overload:BK.RDAction.Utils.ReorderableDisplayAttribute.#ctor
+- uid: BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute.#ctor*
+  commentId: Overload:BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute.#ctor
   name: ReorderableDisplayAttribute
   nameWithType: ReorderableDisplayAttribute.ReorderableDisplayAttribute
-  fullName: BK.RDAction.Utils.ReorderableDisplayAttribute.ReorderableDisplayAttribute
+  fullName: BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute.ReorderableDisplayAttribute
