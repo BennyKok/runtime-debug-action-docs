@@ -25,8 +25,8 @@
       },
       {
         "files": [
-          "articles/**.md",
-          "articles/**/toc.yml",
+          "manual/**.md",
+          "manual/**/toc.yml",
           "toc.yml",
           "*.md"
         ]
@@ -54,7 +54,8 @@
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
-      "default"
+      "default",
+      "templates/material"
     ],
     "postProcessors": [],
     "markdownEngineName": "markdig",

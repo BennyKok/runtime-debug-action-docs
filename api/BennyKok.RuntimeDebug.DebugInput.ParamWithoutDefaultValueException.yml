@@ -19,17 +19,17 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ParamWithoutDefaultValueException
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/InputQuery.cs
-    startLine: 48
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputQuery.cs
+    startLine: 56
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput
   syntax:
-    content: 'public class ParamWithoutDefaultValueException : Exception, _Exception, ISerializable'
+    content: 'public class ParamWithoutDefaultValueException : Exception, ISerializable'
     content.vb: >-
       Public Class ParamWithoutDefaultValueException
           Inherits Exception
-          Implements _Exception, ISerializable
+          Implements ISerializable
   inheritance:
   - System.Object
   - System.Exception
@@ -56,8 +56,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: .ctor
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/InputQuery.cs
-    startLine: 50
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputQuery.cs
+    startLine: 58
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput

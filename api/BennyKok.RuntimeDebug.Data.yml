@@ -8,6 +8,7 @@ items:
   - BennyKok.RuntimeDebug.Data.DebugFlagList
   - BennyKok.RuntimeDebug.Data.ListItem
   - BennyKok.RuntimeDebug.Data.Settings
+  - BennyKok.RuntimeDebug.Data.Settings.EnableMode
   - BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
   - BennyKok.RuntimeDebug.Data.Theme
   - BennyKok.RuntimeDebug.Data.ThemeList
@@ -50,6 +51,12 @@ references:
   name: Settings.TouchToggleMode
   nameWithType: Settings.TouchToggleMode
   fullName: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
+- uid: BennyKok.RuntimeDebug.Data.Settings.EnableMode
+  commentId: T:BennyKok.RuntimeDebug.Data.Settings.EnableMode
+  parent: BennyKok.RuntimeDebug.Data
+  name: Settings.EnableMode
+  nameWithType: Settings.EnableMode
+  fullName: BennyKok.RuntimeDebug.Data.Settings.EnableMode
 - uid: BennyKok.RuntimeDebug.Data.Theme
   commentId: T:BennyKok.RuntimeDebug.Data.Theme
   parent: BennyKok.RuntimeDebug.Data

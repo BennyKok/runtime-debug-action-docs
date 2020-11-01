@@ -24,11 +24,13 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: InputResponse
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/InputResponse.cs
-    startLine: 5
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputResponse.cs
+    startLine: 8
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput
+  summary: "\nData class to warp around the response returned by the Input debug action\n"
+  example: []
   syntax:
     content: public struct InputResponse
     content.vb: Public Structure InputResponse
@@ -55,8 +57,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: responses
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/InputResponse.cs
-    startLine: 7
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputResponse.cs
+    startLine: 10
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput
@@ -86,8 +88,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: .ctor
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/InputResponse.cs
-    startLine: 9
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputResponse.cs
+    startLine: 12
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput
@@ -122,8 +124,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetParam
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/InputResponse.cs
-    startLine: 14
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputResponse.cs
+    startLine: 17
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput
@@ -157,8 +159,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetParamString
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/InputResponse.cs
-    startLine: 23
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputResponse.cs
+    startLine: 26
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput
@@ -192,8 +194,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetParamBool
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/InputResponse.cs
-    startLine: 33
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputResponse.cs
+    startLine: 36
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput
@@ -227,8 +229,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetParamFloat
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/InputResponse.cs
-    startLine: 43
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputResponse.cs
+    startLine: 46
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput

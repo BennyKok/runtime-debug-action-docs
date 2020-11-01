@@ -33,7 +33,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ListView
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
     startLine: 8
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -83,7 +83,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: listParent
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
     startLine: 12
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -130,7 +130,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: indicator
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
     startLine: 13
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -161,7 +161,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: itemPrefab
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
     startLine: 16
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -206,7 +206,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: subActionList
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
     startLine: 19
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -251,7 +251,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: reverseOrder
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
     startLine: 20
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -282,7 +282,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: uiParent
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
     startLine: 25
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -323,7 +323,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: AttachUI
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
     startLine: 29
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -356,8 +356,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnResume
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
-    startLine: 125
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
+    startLine: 131
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -386,8 +386,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnStop
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
-    startLine: 137
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
+    startLine: 143
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -416,8 +416,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: SetItem
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
-    startLine: 143
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
+    startLine: 150
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -449,8 +449,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnBackNavigation
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
-    startLine: 156
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
+    startLine: 163
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -479,8 +479,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: RefreshStatus
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
-    startLine: 172
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
+    startLine: 179
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -509,8 +509,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Clear
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
-    startLine: 180
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
+    startLine: 187
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -539,8 +539,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: SetNavigationBackTarget
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
-    startLine: 195
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
+    startLine: 202
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -572,8 +572,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: AddItem
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListView.cs
-    startLine: 200
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
+    startLine: 207
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI

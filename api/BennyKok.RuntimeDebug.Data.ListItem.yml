@@ -29,7 +29,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ListItem
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/ListItem.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/ListItem.cs
     startLine: 6
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -62,7 +62,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: children
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/ListItem.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/ListItem.cs
     startLine: 8
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -93,7 +93,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: actionTrigger
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/ListItem.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/ListItem.cs
     startLine: 9
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -124,7 +124,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: view
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/ListItem.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/ListItem.cs
     startLine: 10
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -155,7 +155,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: uiList
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/ListItem.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/ListItem.cs
     startLine: 11
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -186,7 +186,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: fullPath
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/ListItem.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/ListItem.cs
     startLine: 12
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -217,7 +217,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: groupName
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/ListItem.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/ListItem.cs
     startLine: 13
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -248,7 +248,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: tag
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/ListItem.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/ListItem.cs
     startLine: 14
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -279,7 +279,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: IsGroup
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/ListItem.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/ListItem.cs
     startLine: 16
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -314,7 +314,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Name
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/ListItem.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/ListItem.cs
     startLine: 17
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -349,7 +349,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: .ctor
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/ListItem.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/ListItem.cs
     startLine: 19
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -382,7 +382,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: .ctor
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/ListItem.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/ListItem.cs
     startLine: 24
   assemblies:
   - com.bennykok.runtime-debug-action

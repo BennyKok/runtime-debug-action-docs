@@ -1,5 +1,7 @@
-- name: Articles
-  href: articles/
+- name: Manual
+  href: manual/
 - name: API
   href: api/
-  homepage: api/index.md
+- name: Changelog
+  homepage: CHANGELOG.md
+  # homepage: api/index.md

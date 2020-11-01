@@ -22,11 +22,13 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: DebugFlag
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/DebugFlag.cs
-    startLine: 8
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/DebugFlag.cs
+    startLine: 11
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
+  summary: "\nData class for a debug flag\n"
+  example: []
   syntax:
     content: >-
       [Serializable]
@@ -65,8 +67,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: name
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/DebugFlag.cs
-    startLine: 11
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/DebugFlag.cs
+    startLine: 14
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -96,8 +98,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: defaultValue
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/DebugFlag.cs
-    startLine: 12
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/DebugFlag.cs
+    startLine: 15
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -127,8 +129,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: runtimeValue
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/DebugFlag.cs
-    startLine: 14
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/DebugFlag.cs
+    startLine: 17
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -168,8 +170,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: .ctor
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Data/DebugFlag.cs
-    startLine: 16
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/DebugFlag.cs
+    startLine: 19
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data

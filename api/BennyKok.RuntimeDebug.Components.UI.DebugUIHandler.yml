@@ -47,7 +47,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: DebugUIHandler
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
     startLine: 13
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -97,7 +97,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: searchField
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
     startLine: 17
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -144,7 +144,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: touchToggle
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
     startLine: 18
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -175,7 +175,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: backButton
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
     startLine: 19
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -206,7 +206,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: navigationHeader
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
     startLine: 20
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -237,7 +237,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: actionListLayer
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
     startLine: 21
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -268,7 +268,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: dimLayer
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
     startLine: 22
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -299,7 +299,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: rootList
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
     startLine: 23
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -330,7 +330,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: inputHandler
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
     startLine: 24
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -361,7 +361,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: actionDisplayPrefab
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
     startLine: 27
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -406,7 +406,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: customFont
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
     startLine: 30
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -451,7 +451,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: IsSearching
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
     startLine: 41
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -486,7 +486,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: system
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
     startLine: 44
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -527,7 +527,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: showCursorAfterClose
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
     startLine: 45
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -568,7 +568,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: HideSearchField
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
     startLine: 60
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -598,7 +598,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ShowSearchField
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
     startLine: 65
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -628,7 +628,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnSearch
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
     startLine: 100
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -661,8 +661,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnBackNavigation
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 132
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
+    startLine: 147
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -691,8 +691,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ShowBackNavigation
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 137
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
+    startLine: 152
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -721,8 +721,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: BackNavigationVisible
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 143
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
+    startLine: 158
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -756,8 +756,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: HideBackNavigation
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 145
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
+    startLine: 160
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -786,8 +786,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: SetNavigationHeader
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 151
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
+    startLine: 166
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -819,8 +819,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: AttachSystem
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 174
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
+    startLine: 189
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -852,8 +852,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: IsVisible
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 211
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
+    startLine: 226
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -887,8 +887,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: TogglePanel
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 213
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
+    startLine: 228
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -922,8 +922,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ShowCursor
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 242
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
+    startLine: 257
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -952,8 +952,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: HideCursor
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 248
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
+    startLine: 263
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -982,8 +982,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnDisplayAction
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 254
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
+    startLine: 269
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -1017,8 +1017,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnAddAction
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 270
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
+    startLine: 285
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -1050,8 +1050,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnRemoveAction
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 351
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
+    startLine: 366
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI

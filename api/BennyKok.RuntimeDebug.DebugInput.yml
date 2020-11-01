@@ -43,7 +43,6 @@ references:
   fullName: BennyKok.RuntimeDebug.DebugInput.InputResponse
 - uid: BennyKok.RuntimeDebug.DebugInput.Param
   commentId: T:BennyKok.RuntimeDebug.DebugInput.Param
-  parent: BennyKok.RuntimeDebug.DebugInput
   name: Param
   nameWithType: Param
   fullName: BennyKok.RuntimeDebug.DebugInput.Param

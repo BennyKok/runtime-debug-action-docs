@@ -1,0 +1,151 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.Data.Settings.EnableMode
+  commentId: T:BennyKok.RuntimeDebug.Data.Settings.EnableMode
+  id: Settings.EnableMode
+  parent: BennyKok.RuntimeDebug.Data
+  children:
+  - BennyKok.RuntimeDebug.Data.Settings.EnableMode.AlwaysOff
+  - BennyKok.RuntimeDebug.Data.Settings.EnableMode.AlwaysOn
+  - BennyKok.RuntimeDebug.Data.Settings.EnableMode.OnInDevelopmentBuild
+  langs:
+  - csharp
+  - vb
+  name: Settings.EnableMode
+  nameWithType: Settings.EnableMode
+  fullName: BennyKok.RuntimeDebug.Data.Settings.EnableMode
+  type: Enum
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: EnableMode
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
+    startLine: 69
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public enum EnableMode
+    content.vb: Public Enum EnableMode
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: BennyKok.RuntimeDebug.Data.Settings.EnableMode.AlwaysOn
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.EnableMode.AlwaysOn
+  id: AlwaysOn
+  parent: BennyKok.RuntimeDebug.Data.Settings.EnableMode
+  langs:
+  - csharp
+  - vb
+  name: AlwaysOn
+  nameWithType: Settings.EnableMode.AlwaysOn
+  fullName: BennyKok.RuntimeDebug.Data.Settings.EnableMode.AlwaysOn
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: AlwaysOn
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
+    startLine: 74
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  summary: "\nThe debug system is always on\n"
+  example: []
+  syntax:
+    content: AlwaysOn = 0
+    return:
+      type: BennyKok.RuntimeDebug.Data.Settings.EnableMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BennyKok.RuntimeDebug.Data.Settings.EnableMode.AlwaysOff
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.EnableMode.AlwaysOff
+  id: AlwaysOff
+  parent: BennyKok.RuntimeDebug.Data.Settings.EnableMode
+  langs:
+  - csharp
+  - vb
+  name: AlwaysOff
+  nameWithType: Settings.EnableMode.AlwaysOff
+  fullName: BennyKok.RuntimeDebug.Data.Settings.EnableMode.AlwaysOff
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: AlwaysOff
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
+    startLine: 79
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  summary: "\nThe debug system is always off\n"
+  example: []
+  syntax:
+    content: AlwaysOff = 1
+    return:
+      type: BennyKok.RuntimeDebug.Data.Settings.EnableMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BennyKok.RuntimeDebug.Data.Settings.EnableMode.OnInDevelopmentBuild
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.EnableMode.OnInDevelopmentBuild
+  id: OnInDevelopmentBuild
+  parent: BennyKok.RuntimeDebug.Data.Settings.EnableMode
+  langs:
+  - csharp
+  - vb
+  name: OnInDevelopmentBuild
+  nameWithType: Settings.EnableMode.OnInDevelopmentBuild
+  fullName: BennyKok.RuntimeDebug.Data.Settings.EnableMode.OnInDevelopmentBuild
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: OnInDevelopmentBuild
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
+    startLine: 84
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  summary: "\nThe debug system is only on in &apos;Development Build&apos; \n"
+  example: []
+  syntax:
+    content: OnInDevelopmentBuild = 2
+    return:
+      type: BennyKok.RuntimeDebug.Data.Settings.EnableMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: BennyKok.RuntimeDebug.Data
+  commentId: N:BennyKok.RuntimeDebug.Data
+  name: BennyKok.RuntimeDebug.Data
+  nameWithType: BennyKok.RuntimeDebug.Data
+  fullName: BennyKok.RuntimeDebug.Data
+- uid: BennyKok.RuntimeDebug.Data.Settings.EnableMode
+  commentId: T:BennyKok.RuntimeDebug.Data.Settings.EnableMode
+  parent: BennyKok.RuntimeDebug.Data
+  name: Settings.EnableMode
+  nameWithType: Settings.EnableMode
+  fullName: BennyKok.RuntimeDebug.Data.Settings.EnableMode

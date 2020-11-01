@@ -5,8 +5,6 @@ items:
   id: DebugActionToggle
   parent: BennyKok.RuntimeDebug.Actions
   children:
-  - BennyKok.RuntimeDebug.Actions.DebugActionToggle.#ctor
-  - BennyKok.RuntimeDebug.Actions.DebugActionToggle.#ctor(System.String,System.Func{System.Boolean},System.Action{System.Boolean})
   - BennyKok.RuntimeDebug.Actions.DebugActionToggle.actionGet
   - BennyKok.RuntimeDebug.Actions.DebugActionToggle.actionSet
   - BennyKok.RuntimeDebug.Actions.DebugActionToggle.actionSwitch
@@ -15,6 +13,8 @@ items:
   - BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnBeforeSerialize
   - BennyKok.RuntimeDebug.Actions.DebugActionToggle.ResolveAction
   - BennyKok.RuntimeDebug.Actions.DebugActionToggle.unityActionSwitch
+  - BennyKok.RuntimeDebug.Actions.DebugActionToggle.WithActionGet(System.Func{System.Boolean})
+  - BennyKok.RuntimeDebug.Actions.DebugActionToggle.WithActionSet(System.Action{System.Boolean})
   langs:
   - csharp
   - vb
@@ -28,7 +28,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: DebugActionToggle
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/DebugActionToggle.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionToggle.cs
     startLine: 6
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -51,14 +51,14 @@ items:
   inheritedMembers:
   - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.WithId(System.String)
   - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.WithAction(System.Action)
-  - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.WithLabel(System.String)
+  - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.WithName(System.String)
   - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.WithDescription(System.String)
   - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.WithPath(System.String)
   - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.WithShortcutKey(System.String)
   - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.WithActionColor(UnityEngine.Color)
   - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.WithClosePanelAfterTrigger(System.Boolean)
   - BennyKok.RuntimeDebug.Actions.BaseAction.path
-  - BennyKok.RuntimeDebug.Actions.BaseAction.label
+  - BennyKok.RuntimeDebug.Actions.BaseAction.name
   - BennyKok.RuntimeDebug.Actions.BaseAction.id
   - BennyKok.RuntimeDebug.Actions.BaseAction.description
   - BennyKok.RuntimeDebug.Actions.BaseAction.key
@@ -94,7 +94,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: isOn
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/DebugActionToggle.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionToggle.cs
     startLine: 9
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -125,7 +125,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: actionSwitch
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/DebugActionToggle.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionToggle.cs
     startLine: 11
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -156,7 +156,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: unityActionSwitch
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/DebugActionToggle.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionToggle.cs
     startLine: 12
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -187,7 +187,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: actionSet
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/DebugActionToggle.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionToggle.cs
     startLine: 14
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -218,7 +218,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: actionGet
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/DebugActionToggle.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionToggle.cs
     startLine: 15
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -232,76 +232,82 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle.#ctor
-  commentId: M:BennyKok.RuntimeDebug.Actions.DebugActionToggle.#ctor
-  id: '#ctor'
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle.WithActionGet(System.Func{System.Boolean})
+  commentId: M:BennyKok.RuntimeDebug.Actions.DebugActionToggle.WithActionGet(System.Func{System.Boolean})
+  id: WithActionGet(System.Func{System.Boolean})
   parent: BennyKok.RuntimeDebug.Actions.DebugActionToggle
   langs:
   - csharp
   - vb
-  name: DebugActionToggle()
-  nameWithType: DebugActionToggle.DebugActionToggle()
-  fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle.DebugActionToggle()
-  type: Constructor
+  name: WithActionGet(Func<Boolean>)
+  nameWithType: DebugActionToggle.WithActionGet(Func<Boolean>)
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle.WithActionGet(System.Func<System.Boolean>)
+  type: Method
   source:
     remote:
       path: Runtime/Actions/DebugActionToggle.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: .ctor
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/DebugActionToggle.cs
+    id: WithActionGet
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionToggle.cs
     startLine: 19
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
   syntax:
-    content: public DebugActionToggle()
-    content.vb: Public Sub New
-  overload: BennyKok.RuntimeDebug.Actions.DebugActionToggle.#ctor*
+    content: public DebugActionToggle WithActionGet(Func<bool> actionGet)
+    parameters:
+    - id: actionGet
+      type: System.Func{System.Boolean}
+    return:
+      type: BennyKok.RuntimeDebug.Actions.DebugActionToggle
+    content.vb: Public Function WithActionGet(actionGet As Func(Of Boolean)) As DebugActionToggle
+  overload: BennyKok.RuntimeDebug.Actions.DebugActionToggle.WithActionGet*
+  nameWithType.vb: DebugActionToggle.WithActionGet(Func(Of Boolean))
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle.#ctor(System.String,System.Func{System.Boolean},System.Action{System.Boolean})
-  commentId: M:BennyKok.RuntimeDebug.Actions.DebugActionToggle.#ctor(System.String,System.Func{System.Boolean},System.Action{System.Boolean})
-  id: '#ctor(System.String,System.Func{System.Boolean},System.Action{System.Boolean})'
+  fullName.vb: BennyKok.RuntimeDebug.Actions.DebugActionToggle.WithActionGet(System.Func(Of System.Boolean))
+  name.vb: WithActionGet(Func(Of Boolean))
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle.WithActionSet(System.Action{System.Boolean})
+  commentId: M:BennyKok.RuntimeDebug.Actions.DebugActionToggle.WithActionSet(System.Action{System.Boolean})
+  id: WithActionSet(System.Action{System.Boolean})
   parent: BennyKok.RuntimeDebug.Actions.DebugActionToggle
   langs:
   - csharp
   - vb
-  name: DebugActionToggle(String, Func<Boolean>, Action<Boolean>)
-  nameWithType: DebugActionToggle.DebugActionToggle(String, Func<Boolean>, Action<Boolean>)
-  fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle.DebugActionToggle(System.String, System.Func<System.Boolean>, System.Action<System.Boolean>)
-  type: Constructor
+  name: WithActionSet(Action<Boolean>)
+  nameWithType: DebugActionToggle.WithActionSet(Action<Boolean>)
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle.WithActionSet(System.Action<System.Boolean>)
+  type: Method
   source:
     remote:
       path: Runtime/Actions/DebugActionToggle.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: .ctor
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/DebugActionToggle.cs
-    startLine: 21
+    id: WithActionSet
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionToggle.cs
+    startLine: 26
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
   syntax:
-    content: public DebugActionToggle(string label, Func<bool> actionGet, Action<bool> actionSet)
+    content: public DebugActionToggle WithActionSet(Action<bool> actionSet)
     parameters:
-    - id: label
-      type: System.String
-    - id: actionGet
-      type: System.Func{System.Boolean}
     - id: actionSet
       type: System.Action{System.Boolean}
-    content.vb: Public Sub New(label As String, actionGet As Func(Of Boolean), actionSet As Action(Of Boolean))
-  overload: BennyKok.RuntimeDebug.Actions.DebugActionToggle.#ctor*
-  nameWithType.vb: DebugActionToggle.DebugActionToggle(String, Func(Of Boolean), Action(Of Boolean))
+    return:
+      type: BennyKok.RuntimeDebug.Actions.DebugActionToggle
+    content.vb: Public Function WithActionSet(actionSet As Action(Of Boolean)) As DebugActionToggle
+  overload: BennyKok.RuntimeDebug.Actions.DebugActionToggle.WithActionSet*
+  nameWithType.vb: DebugActionToggle.WithActionSet(Action(Of Boolean))
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: BennyKok.RuntimeDebug.Actions.DebugActionToggle.DebugActionToggle(System.String, System.Func(Of System.Boolean), System.Action(Of System.Boolean))
-  name.vb: DebugActionToggle(String, Func(Of Boolean), Action(Of Boolean))
+  fullName.vb: BennyKok.RuntimeDebug.Actions.DebugActionToggle.WithActionSet(System.Action(Of System.Boolean))
+  name.vb: WithActionSet(Action(Of Boolean))
 - uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle.ResolveAction
   commentId: M:BennyKok.RuntimeDebug.Actions.DebugActionToggle.ResolveAction
   id: ResolveAction
@@ -319,8 +325,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ResolveAction
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/DebugActionToggle.cs
-    startLine: 30
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionToggle.cs
+    startLine: 32
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -352,8 +358,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnBeforeSerialize
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/DebugActionToggle.cs
-    startLine: 36
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionToggle.cs
+    startLine: 38
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -382,8 +388,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnAfterDeserialize
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/DebugActionToggle.cs
-    startLine: 38
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionToggle.cs
+    startLine: 40
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -536,20 +542,20 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.WithLabel(System.String)
-  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.WithLabel(System.String)
+- uid: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.WithName(System.String)
+  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.WithName(System.String)
   parent: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}
-  definition: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel(System.String)
-  name: WithLabel(String)
-  nameWithType: FluentAction<DebugActionToggle>.WithLabel(String)
-  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionToggle>.WithLabel(System.String)
-  nameWithType.vb: FluentAction(Of DebugActionToggle).WithLabel(String)
-  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionToggle).WithLabel(System.String)
+  definition: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithName(System.String)
+  name: WithName(String)
+  nameWithType: FluentAction<DebugActionToggle>.WithName(String)
+  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionToggle>.WithName(System.String)
+  nameWithType.vb: FluentAction(Of DebugActionToggle).WithName(String)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionToggle).WithName(System.String)
   spec.csharp:
-  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel(System.String)
-    name: WithLabel
-    nameWithType: FluentAction<DebugActionToggle>.WithLabel
-    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionToggle>.WithLabel
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithName(System.String)
+    name: WithName
+    nameWithType: FluentAction<DebugActionToggle>.WithName
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionToggle>.WithName
   - name: (
     nameWithType: (
     fullName: (
@@ -562,10 +568,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel(System.String)
-    name: WithLabel
-    nameWithType: FluentAction(Of DebugActionToggle).WithLabel
-    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionToggle).WithLabel
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithName(System.String)
+    name: WithName
+    nameWithType: FluentAction(Of DebugActionToggle).WithName
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionToggle).WithName
   - name: (
     nameWithType: (
     fullName: (
@@ -788,12 +794,12 @@ references:
   name: path
   nameWithType: BaseAction.path
   fullName: BennyKok.RuntimeDebug.Actions.BaseAction.path
-- uid: BennyKok.RuntimeDebug.Actions.BaseAction.label
-  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.label
+- uid: BennyKok.RuntimeDebug.Actions.BaseAction.name
+  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.name
   parent: BennyKok.RuntimeDebug.Actions.BaseAction
-  name: label
-  nameWithType: BaseAction.label
-  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.label
+  name: name
+  nameWithType: BaseAction.name
+  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.name
 - uid: BennyKok.RuntimeDebug.Actions.BaseAction.id
   commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.id
   parent: BennyKok.RuntimeDebug.Actions.BaseAction
@@ -964,19 +970,19 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel(System.String)
-  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel(System.String)
+- uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithName(System.String)
+  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction`1.WithName(System.String)
   isExternal: true
-  name: WithLabel(String)
-  nameWithType: FluentAction<T>.WithLabel(String)
-  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithLabel(System.String)
-  nameWithType.vb: FluentAction(Of T).WithLabel(String)
-  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithLabel(System.String)
+  name: WithName(String)
+  nameWithType: FluentAction<T>.WithName(String)
+  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithName(System.String)
+  nameWithType.vb: FluentAction(Of T).WithName(String)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithName(System.String)
   spec.csharp:
-  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel(System.String)
-    name: WithLabel
-    nameWithType: FluentAction<T>.WithLabel
-    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithLabel
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithName(System.String)
+    name: WithName
+    nameWithType: FluentAction<T>.WithName
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithName
   - name: (
     nameWithType: (
     fullName: (
@@ -989,10 +995,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel(System.String)
-    name: WithLabel
-    nameWithType: FluentAction(Of T).WithLabel
-    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithLabel
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithName(System.String)
+    name: WithName
+    nameWithType: FluentAction(Of T).WithName
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithName
   - name: (
     nameWithType: (
     fullName: (
@@ -1397,18 +1403,22 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle.#ctor*
-  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugActionToggle.#ctor
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle.WithActionGet*
+  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugActionToggle.WithActionGet
+  name: WithActionGet
+  nameWithType: DebugActionToggle.WithActionGet
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle.WithActionGet
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle
+  commentId: T:BennyKok.RuntimeDebug.Actions.DebugActionToggle
+  parent: BennyKok.RuntimeDebug.Actions
   name: DebugActionToggle
-  nameWithType: DebugActionToggle.DebugActionToggle
-  fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle.DebugActionToggle
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
+  nameWithType: DebugActionToggle
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle.WithActionSet*
+  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugActionToggle.WithActionSet
+  name: WithActionSet
+  nameWithType: DebugActionToggle.WithActionSet
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle.WithActionSet
 - uid: BennyKok.RuntimeDebug.Actions.BaseAction.ResolveAction
   commentId: M:BennyKok.RuntimeDebug.Actions.BaseAction.ResolveAction
   parent: BennyKok.RuntimeDebug.Actions.BaseAction

@@ -19,17 +19,17 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ParamNameDuplicatedException
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/InputQuery.cs
-    startLine: 42
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputQuery.cs
+    startLine: 50
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput
   syntax:
-    content: 'public class ParamNameDuplicatedException : Exception, _Exception, ISerializable'
+    content: 'public class ParamNameDuplicatedException : Exception, ISerializable'
     content.vb: >-
       Public Class ParamNameDuplicatedException
           Inherits Exception
-          Implements _Exception, ISerializable
+          Implements ISerializable
   inheritance:
   - System.Object
   - System.Exception
@@ -56,8 +56,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: .ctor
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/InputQuery.cs
-    startLine: 44
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputQuery.cs
+    startLine: 52
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput

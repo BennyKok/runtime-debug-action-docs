@@ -46,6 +46,8 @@
     name: ListItem
   - uid: BennyKok.RuntimeDebug.Data.Settings
     name: Settings
+  - uid: BennyKok.RuntimeDebug.Data.Settings.EnableMode
+    name: Settings.EnableMode
   - uid: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
     name: Settings.TouchToggleMode
   - uid: BennyKok.RuntimeDebug.Data.Theme

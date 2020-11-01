@@ -13,7 +13,7 @@ items:
   - BennyKok.RuntimeDebug.Actions.BaseAction.description
   - BennyKok.RuntimeDebug.Actions.BaseAction.id
   - BennyKok.RuntimeDebug.Actions.BaseAction.key
-  - BennyKok.RuntimeDebug.Actions.BaseAction.label
+  - BennyKok.RuntimeDebug.Actions.BaseAction.name
   - BennyKok.RuntimeDebug.Actions.BaseAction.path
   - BennyKok.RuntimeDebug.Actions.BaseAction.ResolveAction
   - BennyKok.RuntimeDebug.Actions.BaseAction.unityAction
@@ -30,7 +30,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: BaseAction
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/BaseAction.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/BaseAction.cs
     startLine: 6
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -75,7 +75,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: path
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/BaseAction.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/BaseAction.cs
     startLine: 9
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -89,33 +89,33 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BennyKok.RuntimeDebug.Actions.BaseAction.label
-  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.label
-  id: label
+- uid: BennyKok.RuntimeDebug.Actions.BaseAction.name
+  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.name
+  id: name
   parent: BennyKok.RuntimeDebug.Actions.BaseAction
   langs:
   - csharp
   - vb
-  name: label
-  nameWithType: BaseAction.label
-  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.label
+  name: name
+  nameWithType: BaseAction.name
+  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.name
   type: Field
   source:
     remote:
       path: Runtime/Actions/BaseAction.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: label
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/BaseAction.cs
+    id: name
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/BaseAction.cs
     startLine: 10
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
   syntax:
-    content: public string label
+    content: public string name
     return:
       type: System.String
-    content.vb: Public label As String
+    content.vb: Public name As String
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -137,7 +137,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: id
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/BaseAction.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/BaseAction.cs
     startLine: 11
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -168,7 +168,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: description
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/BaseAction.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/BaseAction.cs
     startLine: 12
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -199,7 +199,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: key
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/BaseAction.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/BaseAction.cs
     startLine: 13
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -230,7 +230,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: closePanelAfterTrigger
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/BaseAction.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/BaseAction.cs
     startLine: 14
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -261,7 +261,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: actionColor
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/BaseAction.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/BaseAction.cs
     startLine: 15
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -292,7 +292,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: unityAction
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/BaseAction.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/BaseAction.cs
     startLine: 16
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -323,7 +323,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: action
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/BaseAction.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/BaseAction.cs
     startLine: 17
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -354,7 +354,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: actionStatus
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/BaseAction.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/BaseAction.cs
     startLine: 18
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -385,7 +385,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ResolveAction
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/BaseAction.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/BaseAction.cs
     startLine: 20
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -417,7 +417,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: .ctor
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/BaseAction.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/BaseAction.cs
     startLine: 25
   assemblies:
   - com.bennykok.runtime-debug-action

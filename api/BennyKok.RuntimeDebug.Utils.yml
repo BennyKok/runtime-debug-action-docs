@@ -76,7 +76,6 @@ references:
   fullName: BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute
 - uid: BennyKok.RuntimeDebug.Utils.CommentAttribute
   commentId: T:BennyKok.RuntimeDebug.Utils.CommentAttribute
-  parent: BennyKok.RuntimeDebug.Utils
   name: CommentAttribute
   nameWithType: CommentAttribute
   fullName: BennyKok.RuntimeDebug.Utils.CommentAttribute

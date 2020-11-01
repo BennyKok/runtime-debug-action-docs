@@ -6,8 +6,9 @@ items:
   parent: BennyKok.RuntimeDebug.DebugInput
   children:
   - BennyKok.RuntimeDebug.DebugInput.InputQuery.allParams
+  - BennyKok.RuntimeDebug.DebugInput.InputQuery.Create
   - BennyKok.RuntimeDebug.DebugInput.InputQuery.GetParamsDisplay
-  - BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(BennyKok.RuntimeDebug.DebugInput.Param)
+  - BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String,System.Object)
   langs:
   - csharp
   - vb
@@ -21,7 +22,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: InputQuery
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/InputQuery.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputQuery.cs
     startLine: 9
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -49,6 +50,43 @@ items:
   modifiers.vb:
   - Public
   - Class
+- uid: BennyKok.RuntimeDebug.DebugInput.InputQuery.Create
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputQuery.Create
+  id: Create
+  parent: BennyKok.RuntimeDebug.DebugInput.InputQuery
+  langs:
+  - csharp
+  - vb
+  name: Create()
+  nameWithType: InputQuery.Create()
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputQuery.Create()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/InputQuery.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Create
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputQuery.cs
+    startLine: 16
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  summary: "\nCreate a new instance of <xref href=\"BennyKok.RuntimeDebug.DebugInput.InputQuery\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static InputQuery Create()
+    return:
+      type: BennyKok.RuntimeDebug.DebugInput.InputQuery
+      description: A new instace of <xref href="BennyKok.RuntimeDebug.DebugInput.InputQuery" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Shared Function Create As InputQuery
+  overload: BennyKok.RuntimeDebug.DebugInput.InputQuery.Create*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 - uid: BennyKok.RuntimeDebug.DebugInput.InputQuery.allParams
   commentId: F:BennyKok.RuntimeDebug.DebugInput.InputQuery.allParams
   id: allParams
@@ -66,8 +104,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: allParams
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/InputQuery.cs
-    startLine: 12
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputQuery.cs
+    startLine: 18
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput
@@ -97,8 +135,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetParamsDisplay
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/InputQuery.cs
-    startLine: 18
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputQuery.cs
+    startLine: 24
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput
@@ -115,16 +153,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(BennyKok.RuntimeDebug.DebugInput.Param)
-  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(BennyKok.RuntimeDebug.DebugInput.Param)
-  id: Query(BennyKok.RuntimeDebug.DebugInput.Param)
+- uid: BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String,System.Object)
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String,System.Object)
+  id: Query(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String,System.Object)
   parent: BennyKok.RuntimeDebug.DebugInput.InputQuery
   langs:
   - csharp
   - vb
-  name: Query(Param)
-  nameWithType: InputQuery.Query(Param)
-  fullName: BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(BennyKok.RuntimeDebug.DebugInput.Param)
+  name: Query(String, ParamType, String, Object)
+  nameWithType: InputQuery.Query(String, ParamType, String, Object)
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(System.String, BennyKok.RuntimeDebug.DebugInput.ParamType, System.String, System.Object)
   type: Method
   source:
     remote:
@@ -132,22 +170,27 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Query
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Input/InputQuery.cs
-    startLine: 29
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputQuery.cs
+    startLine: 35
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput
   summary: "\nAdd a new param to the param list\n"
   example: []
   syntax:
-    content: public InputQuery Query(Param param)
+    content: public InputQuery Query(string name, ParamType type, string description = null, object defaultValue = null)
     parameters:
-    - id: param
-      type: BennyKok.RuntimeDebug.DebugInput.Param
-      description: The new param to add the list
+    - id: name
+      type: System.String
+    - id: type
+      type: BennyKok.RuntimeDebug.DebugInput.ParamType
+    - id: description
+      type: System.String
+    - id: defaultValue
+      type: System.Object
     return:
       type: BennyKok.RuntimeDebug.DebugInput.InputQuery
-    content.vb: Public Function Query(param As Param) As InputQuery
+    content.vb: Public Function Query(name As String, type As ParamType, description As String = Nothing, defaultValue As Object = Nothing) As InputQuery
   overload: BennyKok.RuntimeDebug.DebugInput.InputQuery.Query*
   exceptions:
   - type: BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException
@@ -190,6 +233,17 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: BennyKok.RuntimeDebug.DebugInput.InputQuery
+  commentId: T:BennyKok.RuntimeDebug.DebugInput.InputQuery
+  parent: BennyKok.RuntimeDebug.DebugInput
+  name: InputQuery
+  nameWithType: InputQuery
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputQuery
+- uid: BennyKok.RuntimeDebug.DebugInput.InputQuery.Create*
+  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.InputQuery.Create
+  name: Create
+  nameWithType: InputQuery.Create
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputQuery.Create
 - uid: System.Collections.Generic.List{BennyKok.RuntimeDebug.DebugInput.Param}
   commentId: T:System.Collections.Generic.List{BennyKok.RuntimeDebug.DebugInput.Param}
   parent: System.Collections.Generic
@@ -304,15 +358,9 @@ references:
   name: Query
   nameWithType: InputQuery.Query
   fullName: BennyKok.RuntimeDebug.DebugInput.InputQuery.Query
-- uid: BennyKok.RuntimeDebug.DebugInput.Param
-  commentId: T:BennyKok.RuntimeDebug.DebugInput.Param
+- uid: BennyKok.RuntimeDebug.DebugInput.ParamType
+  commentId: T:BennyKok.RuntimeDebug.DebugInput.ParamType
   parent: BennyKok.RuntimeDebug.DebugInput
-  name: Param
-  nameWithType: Param
-  fullName: BennyKok.RuntimeDebug.DebugInput.Param
-- uid: BennyKok.RuntimeDebug.DebugInput.InputQuery
-  commentId: T:BennyKok.RuntimeDebug.DebugInput.InputQuery
-  parent: BennyKok.RuntimeDebug.DebugInput
-  name: InputQuery
-  nameWithType: InputQuery
-  fullName: BennyKok.RuntimeDebug.DebugInput.InputQuery
+  name: ParamType
+  nameWithType: ParamType
+  fullName: BennyKok.RuntimeDebug.DebugInput.ParamType

@@ -8,8 +8,8 @@ items:
   - BennyKok.RuntimeDebug.Actions.DebugActionInput.inputAction
   - BennyKok.RuntimeDebug.Actions.DebugActionInput.inputQuery
   - BennyKok.RuntimeDebug.Actions.DebugActionInput.ResolveAction
-  - BennyKok.RuntimeDebug.Actions.DebugActionInput.WithInput(BennyKok.RuntimeDebug.DebugInput.InputQuery)
   - BennyKok.RuntimeDebug.Actions.DebugActionInput.WithInputAction(System.Action{BennyKok.RuntimeDebug.DebugInput.InputResponse})
+  - BennyKok.RuntimeDebug.Actions.DebugActionInput.WithInputQuery(BennyKok.RuntimeDebug.DebugInput.InputQuery)
   langs:
   - csharp
   - vb
@@ -23,7 +23,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: DebugActionInput
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/DebugActionInput.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionInput.cs
     startLine: 10
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -45,14 +45,14 @@ items:
   inheritedMembers:
   - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionInput}.WithId(System.String)
   - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionInput}.WithAction(System.Action)
-  - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionInput}.WithLabel(System.String)
+  - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionInput}.WithName(System.String)
   - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionInput}.WithDescription(System.String)
   - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionInput}.WithPath(System.String)
   - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionInput}.WithShortcutKey(System.String)
   - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionInput}.WithActionColor(UnityEngine.Color)
   - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionInput}.WithClosePanelAfterTrigger(System.Boolean)
   - BennyKok.RuntimeDebug.Actions.BaseAction.path
-  - BennyKok.RuntimeDebug.Actions.BaseAction.label
+  - BennyKok.RuntimeDebug.Actions.BaseAction.name
   - BennyKok.RuntimeDebug.Actions.BaseAction.id
   - BennyKok.RuntimeDebug.Actions.BaseAction.description
   - BennyKok.RuntimeDebug.Actions.BaseAction.key
@@ -88,7 +88,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: inputQuery
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/DebugActionInput.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionInput.cs
     startLine: 13
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -119,7 +119,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: inputAction
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/DebugActionInput.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionInput.cs
     startLine: 15
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -150,7 +150,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ResolveAction
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/DebugActionInput.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionInput.cs
     startLine: 20
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -183,7 +183,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: WithInputAction
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/DebugActionInput.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionInput.cs
     startLine: 52
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -204,37 +204,37 @@ items:
   - Public
   fullName.vb: BennyKok.RuntimeDebug.Actions.DebugActionInput.WithInputAction(System.Action(Of BennyKok.RuntimeDebug.DebugInput.InputResponse))
   name.vb: WithInputAction(Action(Of InputResponse))
-- uid: BennyKok.RuntimeDebug.Actions.DebugActionInput.WithInput(BennyKok.RuntimeDebug.DebugInput.InputQuery)
-  commentId: M:BennyKok.RuntimeDebug.Actions.DebugActionInput.WithInput(BennyKok.RuntimeDebug.DebugInput.InputQuery)
-  id: WithInput(BennyKok.RuntimeDebug.DebugInput.InputQuery)
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionInput.WithInputQuery(BennyKok.RuntimeDebug.DebugInput.InputQuery)
+  commentId: M:BennyKok.RuntimeDebug.Actions.DebugActionInput.WithInputQuery(BennyKok.RuntimeDebug.DebugInput.InputQuery)
+  id: WithInputQuery(BennyKok.RuntimeDebug.DebugInput.InputQuery)
   parent: BennyKok.RuntimeDebug.Actions.DebugActionInput
   langs:
   - csharp
   - vb
-  name: WithInput(InputQuery)
-  nameWithType: DebugActionInput.WithInput(InputQuery)
-  fullName: BennyKok.RuntimeDebug.Actions.DebugActionInput.WithInput(BennyKok.RuntimeDebug.DebugInput.InputQuery)
+  name: WithInputQuery(InputQuery)
+  nameWithType: DebugActionInput.WithInputQuery(InputQuery)
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionInput.WithInputQuery(BennyKok.RuntimeDebug.DebugInput.InputQuery)
   type: Method
   source:
     remote:
       path: Runtime/Actions/DebugActionInput.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: WithInput
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/DebugActionInput.cs
+    id: WithInputQuery
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionInput.cs
     startLine: 58
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
   syntax:
-    content: public DebugActionInput WithInput(InputQuery inputQuery)
+    content: public DebugActionInput WithInputQuery(InputQuery inputQuery)
     parameters:
     - id: inputQuery
       type: BennyKok.RuntimeDebug.DebugInput.InputQuery
     return:
       type: BennyKok.RuntimeDebug.Actions.DebugActionInput
-    content.vb: Public Function WithInput(inputQuery As InputQuery) As DebugActionInput
-  overload: BennyKok.RuntimeDebug.Actions.DebugActionInput.WithInput*
+    content.vb: Public Function WithInputQuery(inputQuery As InputQuery) As DebugActionInput
+  overload: BennyKok.RuntimeDebug.Actions.DebugActionInput.WithInputQuery*
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -380,20 +380,20 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionInput}.WithLabel(System.String)
-  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionInput}.WithLabel(System.String)
+- uid: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionInput}.WithName(System.String)
+  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionInput}.WithName(System.String)
   parent: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionInput}
-  definition: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel(System.String)
-  name: WithLabel(String)
-  nameWithType: FluentAction<DebugActionInput>.WithLabel(String)
-  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionInput>.WithLabel(System.String)
-  nameWithType.vb: FluentAction(Of DebugActionInput).WithLabel(String)
-  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionInput).WithLabel(System.String)
+  definition: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithName(System.String)
+  name: WithName(String)
+  nameWithType: FluentAction<DebugActionInput>.WithName(String)
+  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionInput>.WithName(System.String)
+  nameWithType.vb: FluentAction(Of DebugActionInput).WithName(String)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionInput).WithName(System.String)
   spec.csharp:
-  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel(System.String)
-    name: WithLabel
-    nameWithType: FluentAction<DebugActionInput>.WithLabel
-    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionInput>.WithLabel
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithName(System.String)
+    name: WithName
+    nameWithType: FluentAction<DebugActionInput>.WithName
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionInput>.WithName
   - name: (
     nameWithType: (
     fullName: (
@@ -406,10 +406,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel(System.String)
-    name: WithLabel
-    nameWithType: FluentAction(Of DebugActionInput).WithLabel
-    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionInput).WithLabel
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithName(System.String)
+    name: WithName
+    nameWithType: FluentAction(Of DebugActionInput).WithName
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionInput).WithName
   - name: (
     nameWithType: (
     fullName: (
@@ -632,12 +632,12 @@ references:
   name: path
   nameWithType: BaseAction.path
   fullName: BennyKok.RuntimeDebug.Actions.BaseAction.path
-- uid: BennyKok.RuntimeDebug.Actions.BaseAction.label
-  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.label
+- uid: BennyKok.RuntimeDebug.Actions.BaseAction.name
+  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.name
   parent: BennyKok.RuntimeDebug.Actions.BaseAction
-  name: label
-  nameWithType: BaseAction.label
-  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.label
+  name: name
+  nameWithType: BaseAction.name
+  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.name
 - uid: BennyKok.RuntimeDebug.Actions.BaseAction.id
   commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.id
   parent: BennyKok.RuntimeDebug.Actions.BaseAction
@@ -808,19 +808,19 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel(System.String)
-  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel(System.String)
+- uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithName(System.String)
+  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction`1.WithName(System.String)
   isExternal: true
-  name: WithLabel(String)
-  nameWithType: FluentAction<T>.WithLabel(String)
-  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithLabel(System.String)
-  nameWithType.vb: FluentAction(Of T).WithLabel(String)
-  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithLabel(System.String)
+  name: WithName(String)
+  nameWithType: FluentAction<T>.WithName(String)
+  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithName(System.String)
+  nameWithType.vb: FluentAction(Of T).WithName(String)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithName(System.String)
   spec.csharp:
-  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel(System.String)
-    name: WithLabel
-    nameWithType: FluentAction<T>.WithLabel
-    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithLabel
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithName(System.String)
+    name: WithName
+    nameWithType: FluentAction<T>.WithName
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithName
   - name: (
     nameWithType: (
     fullName: (
@@ -833,10 +833,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel(System.String)
-    name: WithLabel
-    nameWithType: FluentAction(Of T).WithLabel
-    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithLabel
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithName(System.String)
+    name: WithName
+    nameWithType: FluentAction(Of T).WithName
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithName
   - name: (
     nameWithType: (
     fullName: (
@@ -1184,8 +1184,8 @@ references:
   name: DebugActionInput
   nameWithType: DebugActionInput
   fullName: BennyKok.RuntimeDebug.Actions.DebugActionInput
-- uid: BennyKok.RuntimeDebug.Actions.DebugActionInput.WithInput*
-  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugActionInput.WithInput
-  name: WithInput
-  nameWithType: DebugActionInput.WithInput
-  fullName: BennyKok.RuntimeDebug.Actions.DebugActionInput.WithInput
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionInput.WithInputQuery*
+  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugActionInput.WithInputQuery
+  name: WithInputQuery
+  nameWithType: DebugActionInput.WithInputQuery
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionInput.WithInputQuery

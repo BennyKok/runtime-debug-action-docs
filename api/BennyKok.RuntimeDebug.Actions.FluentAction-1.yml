@@ -10,7 +10,7 @@ items:
   - BennyKok.RuntimeDebug.Actions.FluentAction`1.WithClosePanelAfterTrigger(System.Boolean)
   - BennyKok.RuntimeDebug.Actions.FluentAction`1.WithDescription(System.String)
   - BennyKok.RuntimeDebug.Actions.FluentAction`1.WithId(System.String)
-  - BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel(System.String)
+  - BennyKok.RuntimeDebug.Actions.FluentAction`1.WithName(System.String)
   - BennyKok.RuntimeDebug.Actions.FluentAction`1.WithPath(System.String)
   - BennyKok.RuntimeDebug.Actions.FluentAction`1.WithShortcutKey(System.String)
   langs:
@@ -26,7 +26,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: FluentAction
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/FluentAction.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/FluentAction.cs
     startLine: 6
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -52,7 +52,7 @@ items:
   - BennyKok.RuntimeDebug.Actions.DebugActionToggle
   inheritedMembers:
   - BennyKok.RuntimeDebug.Actions.BaseAction.path
-  - BennyKok.RuntimeDebug.Actions.BaseAction.label
+  - BennyKok.RuntimeDebug.Actions.BaseAction.name
   - BennyKok.RuntimeDebug.Actions.BaseAction.id
   - BennyKok.RuntimeDebug.Actions.BaseAction.description
   - BennyKok.RuntimeDebug.Actions.BaseAction.key
@@ -92,7 +92,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: WithId
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/FluentAction.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/FluentAction.cs
     startLine: 10
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -131,7 +131,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: WithAction
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/FluentAction.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/FluentAction.cs
     startLine: 16
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -153,45 +153,45 @@ items:
   - Public
   - Overridable
   fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithAction(System.Action)
-- uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel(System.String)
-  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel(System.String)
-  id: WithLabel(System.String)
+- uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithName(System.String)
+  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction`1.WithName(System.String)
+  id: WithName(System.String)
   parent: BennyKok.RuntimeDebug.Actions.FluentAction`1
   langs:
   - csharp
   - vb
-  name: WithLabel(String)
-  nameWithType: FluentAction<T>.WithLabel(String)
-  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithLabel(System.String)
+  name: WithName(String)
+  nameWithType: FluentAction<T>.WithName(String)
+  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithName(System.String)
   type: Method
   source:
     remote:
       path: Runtime/Actions/FluentAction.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: WithLabel
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/FluentAction.cs
+    id: WithName
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/FluentAction.cs
     startLine: 22
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
   syntax:
-    content: public virtual T WithLabel(string label)
+    content: public virtual T WithName(string name)
     parameters:
-    - id: label
+    - id: name
       type: System.String
     return:
       type: '{T}'
-    content.vb: Public Overridable Function WithLabel(label As String) As T
-  overload: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel*
-  nameWithType.vb: FluentAction(Of T).WithLabel(String)
+    content.vb: Public Overridable Function WithName(name As String) As T
+  overload: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithName*
+  nameWithType.vb: FluentAction(Of T).WithName(String)
   modifiers.csharp:
   - public
   - virtual
   modifiers.vb:
   - Public
   - Overridable
-  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithLabel(System.String)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithName(System.String)
 - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithDescription(System.String)
   commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction`1.WithDescription(System.String)
   id: WithDescription(System.String)
@@ -209,7 +209,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: WithDescription
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/FluentAction.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/FluentAction.cs
     startLine: 28
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -248,7 +248,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: WithPath
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/FluentAction.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/FluentAction.cs
     startLine: 34
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -287,7 +287,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: WithShortcutKey
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/FluentAction.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/FluentAction.cs
     startLine: 40
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -326,7 +326,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: WithActionColor
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/FluentAction.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/FluentAction.cs
     startLine: 46
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -365,7 +365,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: WithClosePanelAfterTrigger
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/FluentAction.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/FluentAction.cs
     startLine: 52
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -412,12 +412,12 @@ references:
   name: path
   nameWithType: BaseAction.path
   fullName: BennyKok.RuntimeDebug.Actions.BaseAction.path
-- uid: BennyKok.RuntimeDebug.Actions.BaseAction.label
-  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.label
+- uid: BennyKok.RuntimeDebug.Actions.BaseAction.name
+  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.name
   parent: BennyKok.RuntimeDebug.Actions.BaseAction
-  name: label
-  nameWithType: BaseAction.label
-  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.label
+  name: name
+  nameWithType: BaseAction.name
+  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.name
 - uid: BennyKok.RuntimeDebug.Actions.BaseAction.id
   commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.id
   parent: BennyKok.RuntimeDebug.Actions.BaseAction
@@ -538,13 +538,13 @@ references:
   name: Action
   nameWithType: Action
   fullName: System.Action
-- uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel*
-  commentId: Overload:BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel
-  name: WithLabel
-  nameWithType: FluentAction<T>.WithLabel
-  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithLabel
-  nameWithType.vb: FluentAction(Of T).WithLabel
-  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithLabel
+- uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithName*
+  commentId: Overload:BennyKok.RuntimeDebug.Actions.FluentAction`1.WithName
+  name: WithName
+  nameWithType: FluentAction<T>.WithName
+  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithName
+  nameWithType.vb: FluentAction(Of T).WithName
+  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithName
 - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithDescription*
   commentId: Overload:BennyKok.RuntimeDebug.Actions.FluentAction`1.WithDescription
   name: WithDescription

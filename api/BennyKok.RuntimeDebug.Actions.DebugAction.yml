@@ -21,7 +21,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: DebugAction
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/DebugActionBuilder.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionBuilder.cs
     startLine: 2
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -55,15 +55,18 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Button
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/DebugActionBuilder.cs
-    startLine: 4
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionBuilder.cs
+    startLine: 8
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
+  summary: "\nCreate a new <xref href=\"BennyKok.RuntimeDebug.Actions.DebugActionButton\" data-throw-if-not-resolved=\"false\"></xref> instance\n"
+  example: []
   syntax:
     content: public static DebugActionButton Button()
     return:
       type: BennyKok.RuntimeDebug.Actions.DebugActionButton
+      description: A new <xref href="BennyKok.RuntimeDebug.Actions.DebugActionButton" data-throw-if-not-resolved="false"></xref> instance
     content.vb: Public Shared Function Button As DebugActionButton
   overload: BennyKok.RuntimeDebug.Actions.DebugAction.Button*
   modifiers.csharp:
@@ -89,15 +92,18 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Toggle
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/DebugActionBuilder.cs
-    startLine: 5
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionBuilder.cs
+    startLine: 14
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
+  summary: "\nCreate a new <xref href=\"BennyKok.RuntimeDebug.Actions.DebugActionToggle\" data-throw-if-not-resolved=\"false\"></xref> instance\n"
+  example: []
   syntax:
     content: public static DebugActionToggle Toggle()
     return:
       type: BennyKok.RuntimeDebug.Actions.DebugActionToggle
+      description: A aew <xref href="BennyKok.RuntimeDebug.Actions.DebugActionToggle" data-throw-if-not-resolved="false"></xref> instance
     content.vb: Public Shared Function Toggle As DebugActionToggle
   overload: BennyKok.RuntimeDebug.Actions.DebugAction.Toggle*
   modifiers.csharp:
@@ -123,15 +129,18 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Input
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Actions/DebugActionBuilder.cs
-    startLine: 6
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionBuilder.cs
+    startLine: 20
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
+  summary: "\nCreate a new <xref href=\"BennyKok.RuntimeDebug.Actions.DebugActionInput\" data-throw-if-not-resolved=\"false\"></xref> instance\n"
+  example: []
   syntax:
     content: public static DebugActionInput Input()
     return:
       type: BennyKok.RuntimeDebug.Actions.DebugActionInput
+      description: A new <xref href="BennyKok.RuntimeDebug.Actions.DebugActionInput" data-throw-if-not-resolved="false"></xref> instance
     content.vb: Public Shared Function Input As DebugActionInput
   overload: BennyKok.RuntimeDebug.Actions.DebugAction.Input*
   modifiers.csharp:
@@ -159,36 +168,36 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: BennyKok.RuntimeDebug.Actions.DebugAction.Button*
-  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugAction.Button
-  name: Button
-  nameWithType: DebugAction.Button
-  fullName: BennyKok.RuntimeDebug.Actions.DebugAction.Button
 - uid: BennyKok.RuntimeDebug.Actions.DebugActionButton
   commentId: T:BennyKok.RuntimeDebug.Actions.DebugActionButton
   parent: BennyKok.RuntimeDebug.Actions
   name: DebugActionButton
   nameWithType: DebugActionButton
   fullName: BennyKok.RuntimeDebug.Actions.DebugActionButton
-- uid: BennyKok.RuntimeDebug.Actions.DebugAction.Toggle*
-  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugAction.Toggle
-  name: Toggle
-  nameWithType: DebugAction.Toggle
-  fullName: BennyKok.RuntimeDebug.Actions.DebugAction.Toggle
+- uid: BennyKok.RuntimeDebug.Actions.DebugAction.Button*
+  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugAction.Button
+  name: Button
+  nameWithType: DebugAction.Button
+  fullName: BennyKok.RuntimeDebug.Actions.DebugAction.Button
 - uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle
   commentId: T:BennyKok.RuntimeDebug.Actions.DebugActionToggle
   parent: BennyKok.RuntimeDebug.Actions
   name: DebugActionToggle
   nameWithType: DebugActionToggle
   fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle
-- uid: BennyKok.RuntimeDebug.Actions.DebugAction.Input*
-  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugAction.Input
-  name: Input
-  nameWithType: DebugAction.Input
-  fullName: BennyKok.RuntimeDebug.Actions.DebugAction.Input
+- uid: BennyKok.RuntimeDebug.Actions.DebugAction.Toggle*
+  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugAction.Toggle
+  name: Toggle
+  nameWithType: DebugAction.Toggle
+  fullName: BennyKok.RuntimeDebug.Actions.DebugAction.Toggle
 - uid: BennyKok.RuntimeDebug.Actions.DebugActionInput
   commentId: T:BennyKok.RuntimeDebug.Actions.DebugActionInput
   parent: BennyKok.RuntimeDebug.Actions
   name: DebugActionInput
   nameWithType: DebugActionInput
   fullName: BennyKok.RuntimeDebug.Actions.DebugActionInput
+- uid: BennyKok.RuntimeDebug.Actions.DebugAction.Input*
+  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugAction.Input
+  name: Input
+  nameWithType: DebugAction.Input
+  fullName: BennyKok.RuntimeDebug.Actions.DebugAction.Input

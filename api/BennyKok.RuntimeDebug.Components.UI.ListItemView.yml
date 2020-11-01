@@ -8,6 +8,7 @@ items:
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.actionColor
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.button
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.folderIcon
+  - BennyKok.RuntimeDebug.Components.UI.ListItemView.hideIconSpace
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.icon
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.isFocused
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.IsGroup
@@ -32,7 +33,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ListItemView
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListItemView.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
     startLine: 10
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -82,36 +83,23 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: label
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListItemView.cs
-    startLine: 18
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
+    startLine: 17
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
   syntax:
     content: >-
-      [Comment("Handling the data binding of the action trigger.", order = 0)]
-
       [Title("Reference", false, 2, order = 1)]
 
       public TextMeshProUGUI label
     return:
       type: TMPro.TextMeshProUGUI
     content.vb: >-
-      <Comment("Handling the data binding of the action trigger.", order:=0)>
-
       <Title("Reference", False, 2, order:=1)>
 
       Public label As TextMeshProUGUI
   attributes:
-  - type: BennyKok.RuntimeDebug.Utils.CommentAttribute
-    ctor: BennyKok.RuntimeDebug.Utils.CommentAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Handling the data binding of the action trigger.
-    namedArguments:
-    - name: order
-      type: System.Int32
-      value: 0
   - type: BennyKok.RuntimeDebug.Utils.TitleAttribute
     ctor: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Boolean,System.Int32)
     arguments:
@@ -146,8 +134,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: tagLabel
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListItemView.cs
-    startLine: 19
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
+    startLine: 18
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -177,8 +165,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: button
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListItemView.cs
-    startLine: 20
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
+    startLine: 19
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -208,8 +196,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: actionColor
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListItemView.cs
-    startLine: 21
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
+    startLine: 20
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -239,8 +227,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: icon
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListItemView.cs
-    startLine: 22
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
+    startLine: 21
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -270,7 +258,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: folderIcon
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListItemView.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
     startLine: 25
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -279,11 +267,15 @@ items:
     content: >-
       [Title("Options", 2)]
 
+      [Tooltip("The custom icon used if this list item is a group item")]
+
       public Sprite folderIcon
     return:
       type: UnityEngine.Sprite
     content.vb: >-
       <Title("Options", 2)>
+
+      <Tooltip("The custom icon used if this list item is a group item")>
 
       Public folderIcon As Sprite
   attributes:
@@ -294,6 +286,11 @@ items:
       value: Options
     - type: System.Int32
       value: 2
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: The custom icon used if this list item is a group item
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -315,16 +312,71 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: showIcon
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListItemView.cs
-    startLine: 26
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
+    startLine: 27
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
   syntax:
-    content: public bool showIcon
+    content: >-
+      [Tooltip("Enable the icon display of this list item")]
+
+      public bool showIcon
     return:
       type: System.Boolean
-    content.vb: Public showIcon As Boolean
+    content.vb: >-
+      <Tooltip("Enable the icon display of this list item")>
+
+      Public showIcon As Boolean
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Enable the icon display of this list item
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.hideIconSpace
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListItemView.hideIconSpace
+  id: hideIconSpace
+  parent: BennyKok.RuntimeDebug.Components.UI.ListItemView
+  langs:
+  - csharp
+  - vb
+  name: hideIconSpace
+  nameWithType: ListItemView.hideIconSpace
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.hideIconSpace
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/ListItemView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: hideIconSpace
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
+    startLine: 29
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: >-
+      [Tooltip("When there's no icon, hide the actual icon without taking up empty space")]
+
+      public bool hideIconSpace
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Tooltip("When there's no icon, hide the actual icon without taking up empty space")>
+
+      Public hideIconSpace As Boolean
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: When there's no icon, hide the actual icon without taking up empty space
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -346,16 +398,28 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: showTag
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListItemView.cs
-    startLine: 27
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
+    startLine: 31
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
   syntax:
-    content: public bool showTag
+    content: >-
+      [Tooltip("Show the tag of this item when selected")]
+
+      public bool showTag
     return:
       type: System.Boolean
-    content.vb: Public showTag As Boolean
+    content.vb: >-
+      <Tooltip("Show the tag of this item when selected")>
+
+      Public showTag As Boolean
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Show the tag of this item when selected
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -377,16 +441,28 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: showActionColor
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListItemView.cs
-    startLine: 28
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
+    startLine: 33
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
   syntax:
-    content: public bool showActionColor
+    content: >-
+      [Tooltip("Show the action color of the list item")]
+
+      public bool showActionColor
     return:
       type: System.Boolean
-    content.vb: Public showActionColor As Boolean
+    content.vb: >-
+      <Tooltip("Show the action color of the list item")>
+
+      Public showActionColor As Boolean
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Show the action color of the list item
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -408,8 +484,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: rectTransform
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListItemView.cs
-    startLine: 30
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
+    startLine: 35
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -449,8 +525,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: IsGroup
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListItemView.cs
-    startLine: 32
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
+    startLine: 37
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -484,8 +560,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: isFocused
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListItemView.cs
-    startLine: 34
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
+    startLine: 39
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -525,8 +601,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: RefreshStatus
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListItemView.cs
-    startLine: 61
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
+    startLine: 66
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -560,8 +636,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: SetItem
-    path: ../Assets/Plugins/Runtime Debug Action/Runtime/Components/UI/ListItemView.cs
-    startLine: 119
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
+    startLine: 130
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
