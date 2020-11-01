@@ -4,12 +4,24 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
+      "type": "Conceptual",
+      "source_relative_path": "CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "CHANGELOG.html",
+          "hash": "knwqDIV8msNc0zc9X3Lnzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "ManagedReference",
       "source_relative_path": "api/BennyKok.RuntimeDebug.Actions.BaseAction.yml",
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Actions.BaseAction.html",
-          "hash": "E3VHOXugrciT8Ey1TqMYbA=="
+          "hash": "FgYdTAhGu9ofja+lhu0g3Q=="
         }
       },
       "is_incremental": false,
@@ -21,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Actions.DebugAction.html",
-          "hash": "gN+WBYAw3S9uBbT9R4P5JA=="
+          "hash": "YToxROZremOY3yBSF+KuoA=="
         }
       },
       "is_incremental": false,
@@ -33,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Actions.DebugActionButton.html",
-          "hash": "SzzuVGqXDU1N0RrTxTfQBQ=="
+          "hash": "EGdxCA6gIi4ekYd+n6gxTw=="
         }
       },
       "is_incremental": false,
@@ -45,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Actions.DebugActionInput.html",
-          "hash": "Y3oqYckzwNn4A13xiZlmnA=="
+          "hash": "SK8uB7/LnD+mEe3kxHVVyA=="
         }
       },
       "is_incremental": false,
@@ -57,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Actions.DebugActionToggle.html",
-          "hash": "Q7QeTJ0n0l/+Ttt4bAZVEg=="
+          "hash": "tFcYh7fUPwmF8p8GOxUOuw=="
         }
       },
       "is_incremental": false,
@@ -69,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Actions.FluentAction-1.html",
-          "hash": "/zKYXMS1h04AhKOMCHvzMg=="
+          "hash": "s8Npgk3V/I3Cq4uS05ZtSg=="
         }
       },
       "is_incremental": false,
@@ -81,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Actions.html",
-          "hash": "dzZn9ilks8Q7SnMrtME0cA=="
+          "hash": "/JwtIJv1glwDpqJhmaSnjA=="
         }
       },
       "is_incremental": false,
@@ -93,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Components.DebugActionHandler.html",
-          "hash": "crx/HqsS4gBDaaUrrS7LGw=="
+          "hash": "qOL/4L1/o1B7f9JzVwK6mA=="
         }
       },
       "is_incremental": false,
@@ -105,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Components.UI.DebugSystemEventHandler.html",
-          "hash": "yq7MItd/+o7rH0ZyXQSLuw=="
+          "hash": "X9mOPITzo9zDLTZQq+YC7w=="
         }
       },
       "is_incremental": false,
@@ -117,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.html",
-          "hash": "Gz8ARmMOVHZ3o7Kwc9pTXA=="
+          "hash": "6C7KZVrDimWLE17QOzRxFw=="
         }
       },
       "is_incremental": false,
@@ -129,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Components.UI.FontSetter.html",
-          "hash": "H0e+TnWE9Agc2/hVJS/k5w=="
+          "hash": "E8KpGR42N20hFJa7fzdqKg=="
         }
       },
       "is_incremental": false,
@@ -141,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Components.UI.InputUIHandler.html",
-          "hash": "mtmj8wvDAkKERYI0aFgsRg=="
+          "hash": "janWiF/Ne7GSOawog2LOFg=="
         }
       },
       "is_incremental": false,
@@ -153,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Components.UI.ListItemView.html",
-          "hash": "/kOMZ7LKwP6atQGdp1b2rQ=="
+          "hash": "CKyLW6oKcot5As3wLXaJ8g=="
         }
       },
       "is_incremental": false,
@@ -165,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Components.UI.ListView.html",
-          "hash": "5KDNu/5/POU5MWpdt64O+A=="
+          "hash": "H6rw+lJXlmF1v/cJN/pItA=="
         }
       },
       "is_incremental": false,
@@ -177,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Components.UI.html",
-          "hash": "/k4SyRuaVbmjoODBYkSD9A=="
+          "hash": "sCg+XpnAEAMdR3HQezowQg=="
         }
       },
       "is_incremental": false,
@@ -189,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Components.html",
-          "hash": "zNPCFOdqm5wPft2CbWHOBw=="
+          "hash": "ckPkoLgKPbQy7sNJ9A0kYw=="
         }
       },
       "is_incremental": false,
@@ -201,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Data.DebugFlag.html",
-          "hash": "JRZ2hF/WkJtwVtYT8Yx3dQ=="
+          "hash": "kHqJrPcpTrTIBBRLAd7W5g=="
         }
       },
       "is_incremental": false,
@@ -213,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Data.DebugFlagList.html",
-          "hash": "gsGSb5jKHcXH/KFp7x7YYQ=="
+          "hash": "PMxVv98hL6SHPoVTurk6rw=="
         }
       },
       "is_incremental": false,
@@ -225,7 +237,19 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Data.ListItem.html",
-          "hash": "igBBlIHY08S8L+3vW2w+Sg=="
+          "hash": "B0aT0iv6w1EcAoPhtlBZ3g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BennyKok.RuntimeDebug.Data.Settings.EnableMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BennyKok.RuntimeDebug.Data.Settings.EnableMode.html",
+          "hash": "dblC2fK2XGMaYlf8OFrUYQ=="
         }
       },
       "is_incremental": false,
@@ -237,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.html",
-          "hash": "9wodwpjd6jsIOemtuWIQLg=="
+          "hash": "TVT5wEXQMHqinxAD4HFDRw=="
         }
       },
       "is_incremental": false,
@@ -249,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Data.Settings.html",
-          "hash": "Al1TQFN7h3xOF/GNfNhPng=="
+          "hash": "6TYWzPO2STVcPwSm7J0tjA=="
         }
       },
       "is_incremental": false,
@@ -261,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Data.Theme.html",
-          "hash": "QoGIqGKXo/gsZtnK6iFChw=="
+          "hash": "/fFdi+TnSwY8cL9uiLjFTA=="
         }
       },
       "is_incremental": false,
@@ -273,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Data.ThemeList.html",
-          "hash": "kU4epz6CPvIXLFdQDS5PJw=="
+          "hash": "+jKytFv5Sf2GQlxY4Pdzew=="
         }
       },
       "is_incremental": false,
@@ -285,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Data.html",
-          "hash": "uXY5eW4/lUrSuEBDXPQ7TQ=="
+          "hash": "zb2ZRbc2ia6SxisY6uzX7Q=="
         }
       },
       "is_incremental": false,
@@ -297,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.DebugInput.InputQuery.html",
-          "hash": "RV5E1cG6SG/ZVnhRBINK/A=="
+          "hash": "CX4P8ZvzMjvJjecWb16TdQ=="
         }
       },
       "is_incremental": false,
@@ -309,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.DebugInput.InputResponse.html",
-          "hash": "/xs8N/r8G1WdL2VHJOetng=="
+          "hash": "ab6ZdMhN2G9Dfe1BK9iqsg=="
         }
       },
       "is_incremental": false,
@@ -321,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.DebugInput.Param.html",
-          "hash": "Zmd4/64h7Sf7GM0h+Rtfqg=="
+          "hash": "IFH9zzK311dzzfRnbxsUag=="
         }
       },
       "is_incremental": false,
@@ -333,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.DebugInput.ParamNameDuplicatedException.html",
-          "hash": "I9aOTcB/jkq9MUpTAZW9tA=="
+          "hash": "I42O9m5n1wyMQ9aI4sbH6g=="
         }
       },
       "is_incremental": false,
@@ -345,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.DebugInput.ParamType.html",
-          "hash": "exTba2zpVAbtxY+VpbMKgA=="
+          "hash": "JHqyLksSMskkxrYJco7PrA=="
         }
       },
       "is_incremental": false,
@@ -357,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException.html",
-          "hash": "sriTbGqDfmu+mPPhZzqF1Q=="
+          "hash": "pZx5LN7KpRSCsrcIEiusSQ=="
         }
       },
       "is_incremental": false,
@@ -369,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.DebugInput.html",
-          "hash": "TmtzY+JSpJodq4DK1vcunw=="
+          "hash": "t6yMEJjPk2W9ZYwRJnBIaA=="
         }
       },
       "is_incremental": false,
@@ -381,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Systems.DebugActionDefaults.html",
-          "hash": "3XxdtQ/vw5utZmDoBIoPZQ=="
+          "hash": "hFOyb1C317D0LDAm6I8Yrg=="
         }
       },
       "is_incremental": false,
@@ -393,7 +417,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html",
-          "hash": "33/7F3MdDmmIX8PQSVxjyg=="
+          "hash": "pvz3wU2ANzgE65M/qQ1JGw=="
         }
       },
       "is_incremental": false,
@@ -405,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Systems.html",
-          "hash": "G0axS0Udot7MZysTVFyc5g=="
+          "hash": "fvcunczAQ2UqMobpXD4W8w=="
         }
       },
       "is_incremental": false,
@@ -417,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute.html",
-          "hash": "CbXxR06E3wF3pdrmB1ZHmQ=="
+          "hash": "OcwwIVIXZLoja3pBCRGYgQ=="
         }
       },
       "is_incremental": false,
@@ -429,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Utils.CommentAttribute.html",
-          "hash": "T/K3sI36HvNKRUY44BnfKw=="
+          "hash": "vOUXKKsF3OX9iRkZwIhQ0Q=="
         }
       },
       "is_incremental": false,
@@ -441,7 +465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Utils.ReorderableBase.html",
-          "hash": "9ZI52T6J8VMwT2zlhHruAA=="
+          "hash": "RXLp6myq35BfacN/5RSC1Q=="
         }
       },
       "is_incremental": false,
@@ -453,7 +477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute.html",
-          "hash": "ughprTM0FPSnKpN4Wl/1gg=="
+          "hash": "tUTtm8D5U7aVzvX42GcvXQ=="
         }
       },
       "is_incremental": false,
@@ -465,7 +489,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Utils.ReorderableList-1.html",
-          "hash": "WudF9hAMSsgjxDus/1sPdQ=="
+          "hash": "5U03Sl8MyrkSRqoeenbeDg=="
         }
       },
       "is_incremental": false,
@@ -477,7 +501,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Utils.Singleton-1.html",
-          "hash": "PWGmflvR1h2eRQSoaWp8Mw=="
+          "hash": "t37jX6TeyYnwTpUtX5fS3Q=="
         }
       },
       "is_incremental": false,
@@ -489,7 +513,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Utils.TitleAttribute.html",
-          "hash": "Tp1JdInKqZc5mTtJuCk9hA=="
+          "hash": "Ou4IywubvDANYG5vERmCAQ=="
         }
       },
       "is_incremental": false,
@@ -501,7 +525,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Utils.html",
-          "hash": "egc78lpOe6jGJvvVxE1Nuw=="
+          "hash": "/Z2vamfvo+l8zcOouu669A=="
         }
       },
       "is_incremental": false,
@@ -513,7 +537,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "tQFsTajqOEHN1fQpxZZ5bg=="
+          "hash": "wFlvlDYhwmnhyEPe0cLFAw=="
         }
       },
       "is_incremental": false,
@@ -525,7 +549,22 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "WO8GqMbuhQsP0PWD78Gktg=="
+          "hash": "XltkDEB4eCUx0EeU0RrfLw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "fdrBnOG/5SV4PwfLOT/G1A=="
         }
       },
       "is_incremental": false,
@@ -533,11 +572,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/intro.md",
+      "source_relative_path": "manual/intro.md",
       "output": {
         ".html": {
-          "relative_path": "articles/intro.html",
-          "hash": "Vc/jpoyYPpnqYm/jiNVNDQ=="
+          "relative_path": "manual/intro.html",
+          "hash": "bt4tqNSN9CaHeTP4XqAB3A=="
         }
       },
       "is_incremental": false,
@@ -545,23 +584,11 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "articles/toc.yml",
+      "source_relative_path": "manual/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "articles/toc.html",
-          "hash": "gB8AESyvNru97tzIZofEEg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "index.md",
-      "output": {
-        ".html": {
-          "relative_path": "index.html",
-          "hash": "0P4M3WKZfzWF4flQbedVHQ=="
+          "relative_path": "manual/toc.html",
+          "hash": "/i5D+QCjhO1LCSskWZcHNA=="
         }
       },
       "is_incremental": false,
@@ -573,7 +600,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "x0zJh67Ruamrb6kFiyu0vQ=="
+          "hash": "QafdTtcQMTyIQEXsmoiE0Q=="
         }
       },
       "is_incremental": false,
@@ -594,13 +621,13 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 3,
+          "total_file_count": 4,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 42,
+          "total_file_count": 43,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

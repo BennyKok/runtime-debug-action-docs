@@ -10,19 +10,19 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class RuntimeDebugSystem
    ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
     
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -37,9 +37,10 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
-              </a>
-            </div>
+                <!-- <div style="color: white; font-weight: 900; height: 38pt; line-height: 38pt;">Runtime Debug
+                  ACTION</div> -->
+                <img id="logo" class="svg" src="../rda-web-icon.svg" alt="">
+              </a>    </div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
                 <div class="form-group">
@@ -49,14 +50,6 @@
             </div>
           </div>
         </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
-        </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
         
@@ -73,7 +66,8 @@
   
   <h1 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem" class="text-break">Class RuntimeDebugSystem
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The singleton system class to handle the lifecycle of all runtiem debug actions, loading of the settings ScriptableObject and also the communication between the system and UIHandler</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -121,6 +115,30 @@ public List&lt;BaseAction&gt; allActions</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseAction.html">BaseAction</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_PREF_KEY_THEME" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.PREF_KEY_THEME">PREF_KEY_THEME</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PREF_KEY_THEME</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -245,7 +263,7 @@ public Settings settings</code></pre>
   
   <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_HasFlag_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.HasFlag*"></a>
   <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_HasFlag_System_String_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.HasFlag(System.String)">HasFlag(String)</h4>
-  <div class="markdown level1 summary"><p>Check if there's any flags turn on</p>
+  <div class="markdown level1 summary"><p>Check if there's any flags turned on</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -290,11 +308,12 @@ public Settings settings</code></pre>
   
   <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_RegisterActions_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterActions*"></a>
   <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_RegisterActions_BennyKok_RuntimeDebug_Actions_BaseAction___" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterActions(BennyKok.RuntimeDebug.Actions.BaseAction[])">RegisterActions(BaseAction[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Register any actions to the system</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void RegisterActions(params BaseAction[] list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void RegisterActions(params BaseAction[] actions)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -308,8 +327,9 @@ public Settings settings</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseAction.html">BaseAction</a>[]</td>
-        <td><span class="parametername">list</span></td>
-        <td></td>
+        <td><span class="parametername">actions</span></td>
+        <td><p>The actions to register</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -317,11 +337,12 @@ public Settings settings</code></pre>
   
   <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_RegisterActions_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterActions*"></a>
   <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_RegisterActions_System_String_BennyKok_RuntimeDebug_Actions_BaseAction___" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterActions(System.String,BennyKok.RuntimeDebug.Actions.BaseAction[])">RegisterActions(String, BaseAction[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Register any actions to the system with a specific path</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void RegisterActions(string path, params BaseAction[] list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void RegisterActions(string path, params BaseAction[] actions)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -336,12 +357,14 @@ public Settings settings</code></pre>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">path</span></td>
-        <td></td>
+        <td><p>The path to set for each actions</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseAction.html">BaseAction</a>[]</td>
-        <td><span class="parametername">list</span></td>
-        <td></td>
+        <td><span class="parametername">actions</span></td>
+        <td><p>The actions to register</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -402,13 +425,43 @@ public Settings settings</code></pre>
   </table>
   
   
-  <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_UnregisterActionByPath_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActionByPath*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_UnregisterActionByPath_System_String_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActionByPath(System.String)">UnregisterActionByPath(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_UnregisterActionById_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActionById*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_UnregisterActionById_System_String_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActionById(System.String)">UnregisterActionById(String)</h4>
+  <div class="markdown level1 summary"><p>Unregister any actions that has the same id</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void UnregisterActionByPath(string path)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void UnregisterActionById(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The id of the actions to unregister</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_UnregisterActionByPath_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActionByPath*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_UnregisterActionByPath_System_String_System_Boolean_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActionByPath(System.String,System.Boolean)">UnregisterActionByPath(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Unregister any actions that is in the path</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnregisterActionByPath(string path, bool ignoreTag = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -423,7 +476,14 @@ public Settings settings</code></pre>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">path</span></td>
-        <td></td>
+        <td><p>The path to unregister the actions</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ignoreTag</span></td>
+        <td><p>Should we ignore the tag # and remove all the actions under this path</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -431,11 +491,12 @@ public Settings settings</code></pre>
   
   <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_UnregisterActions_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActions*"></a>
   <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_UnregisterActions_BennyKok_RuntimeDebug_Actions_BaseAction___" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActions(BennyKok.RuntimeDebug.Actions.BaseAction[])">UnregisterActions(BaseAction[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Unregister specific actions from the system and menu</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void UnregisterActions(params BaseAction[] list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void UnregisterActions(params BaseAction[] actions)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -449,8 +510,9 @@ public Settings settings</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseAction.html">BaseAction</a>[]</td>
-        <td><span class="parametername">list</span></td>
-        <td></td>
+        <td><span class="parametername">actions</span></td>
+        <td><p>The actions to remove</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -490,7 +552,8 @@ public Settings settings</code></pre>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
@@ -502,14 +565,17 @@ public Settings settings</code></pre>
         <div class="footer">
           <div class="container">
             <span class="pull-right">
-              <a href="#top">Back to top</a>
+              <a href="#top">
+                👆
+              </a>
             </span>
             
-            <span>Generated by <strong>DocFX</strong></span>
+            <span>
+              RuntimeDebugAction by ❤️ <a href="https://bennykok.com">BennyKok</a>
+            </span>
           </div>
         </div>
-      </footer>
-    </div>
+      </footer>    </div>
     
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>

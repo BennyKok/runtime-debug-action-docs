@@ -10,19 +10,19 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class FluentAction&lt;T&gt;
    ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
     
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -37,9 +37,10 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
-              </a>
-            </div>
+                <!-- <div style="color: white; font-weight: 900; height: 38pt; line-height: 38pt;">Runtime Debug
+                  ACTION</div> -->
+                <img id="logo" class="svg" src="../rda-web-icon.svg" alt="">
+              </a>    </div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
                 <div class="form-group">
@@ -49,14 +50,6 @@
             </div>
           </div>
         </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
-        </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
         
@@ -90,7 +83,7 @@
       <a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseAction.html#BennyKok_RuntimeDebug_Actions_BaseAction_path">BaseAction.path</a>
     </div>
     <div>
-      <a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseAction.html#BennyKok_RuntimeDebug_Actions_BaseAction_label">BaseAction.label</a>
+      <a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseAction.html#BennyKok_RuntimeDebug_Actions_BaseAction_name">BaseAction.name</a>
     </div>
     <div>
       <a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseAction.html#BennyKok_RuntimeDebug_Actions_BaseAction_id">BaseAction.id</a>
@@ -356,13 +349,13 @@ public class FluentAction&lt;T&gt; : BaseAction where T : FluentAction&lt;T&gt;<
   </table>
   
   
-  <a id="BennyKok_RuntimeDebug_Actions_FluentAction_1_WithLabel_" data-uid="BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Actions_FluentAction_1_WithLabel_System_String_" data-uid="BennyKok.RuntimeDebug.Actions.FluentAction`1.WithLabel(System.String)">WithLabel(String)</h4>
+  <a id="BennyKok_RuntimeDebug_Actions_FluentAction_1_WithName_" data-uid="BennyKok.RuntimeDebug.Actions.FluentAction`1.WithName*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Actions_FluentAction_1_WithName_System_String_" data-uid="BennyKok.RuntimeDebug.Actions.FluentAction`1.WithName(System.String)">WithName(String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual T WithLabel(string label)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual T WithName(string name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -376,7 +369,7 @@ public class FluentAction&lt;T&gt; : BaseAction where T : FluentAction&lt;T&gt;<
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">label</span></td>
+        <td><span class="parametername">name</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -490,7 +483,8 @@ public class FluentAction&lt;T&gt; : BaseAction where T : FluentAction&lt;T&gt;<
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
@@ -502,14 +496,17 @@ public class FluentAction&lt;T&gt; : BaseAction where T : FluentAction&lt;T&gt;<
         <div class="footer">
           <div class="container">
             <span class="pull-right">
-              <a href="#top">Back to top</a>
+              <a href="#top">
+                👆
+              </a>
             </span>
             
-            <span>Generated by <strong>DocFX</strong></span>
+            <span>
+              RuntimeDebugAction by ❤️ <a href="https://bennykok.com">BennyKok</a>
+            </span>
           </div>
         </div>
-      </footer>
-    </div>
+      </footer>    </div>
     
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
