@@ -62,6 +62,47 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="quick-start">Quick Start</h1>
 
+<h3 id="setup">Setup</h3>
+<p><strong>RuntimeDebugAction</strong> is designed to be plug &amp; play, once you imported the package,
+a <a href="/api/BennyKok.RuntimeDebug.Data.Settings.html"><code>RDASettings</code></a> ScriptableObject will be created in your project folder <code>Assets/Resources/</code>.</p>
+<p>Afterward, it's recommended to import TextMeshPro's default resources, since some of the asset prefabs uses TextMeshPro.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you encountered weird font size of the debug menu after first import, it's because the TextMeshPro's default resource was imported after the prefab's import, you can simplily right click on the assets's Prefabs folder and reimport.</p>
+</div>
+<p>Then you will be good to go!</p>
+<h3 id="lifecycle">Lifecycle</h3>
+<p>The <a href="/api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html">RuntimeDebugSystem</a> is auto injected to you first scene with the <a href="https://docs.unity3d.com/ScriptReference/RuntimeInitializeOnLoadMethodAttribute.html"><code>RuntimeInitializeOnLoadMethod</code></a> method.</p>
+<p>Then the system GameObject with the UI canvas will be set to <code>DontDestoryOnLoad</code> and keeps the debug system alive across scene load.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You are required to have a EventSystem created in your scene so that the UI interaction of the system will work.</p>
+</div>
+<h3 id="menu-interaction">Menu Interaction</h3>
+<p>The debug menu have full keyboard navigation and touch input handling at the same time since the UI prefab is using Unity's normal UI component.</p>
+<h5 id="default-key">Default Key</h5>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tab</td>
+<td>Toggle Menu</td>
+</tr>
+<tr>
+<td>Arow Up/ Down</td>
+<td>Menu Navigation</td>
+</tr>
+<tr>
+<td>Enter</td>
+<td>Trigger Action, Enter Group, Confrim Input</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           
