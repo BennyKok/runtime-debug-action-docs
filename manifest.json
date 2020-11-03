@@ -16,6 +16,18 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "QcRHxSKx0RWhz4KViEpHXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "ManagedReference",
       "source_relative_path": "api/BennyKok.RuntimeDebug.Actions.BaseAction.yml",
       "output": {
@@ -571,36 +583,12 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "manual/intro.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/intro.html",
-          "hash": "ReiGNBnkdUVtzPhAaY5eRw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "manual/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "manual/toc.html",
-          "hash": "/i5D+QCjhO1LCSskWZcHNA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "QafdTtcQMTyIQEXsmoiE0Q=="
+          "hash": "NkEEmtxIE8/N2Trep4M06Q=="
         }
       },
       "is_incremental": false,
