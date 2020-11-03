@@ -2,6 +2,13 @@
   href: quick-start.md
 - name: Custom Actions
   href: custom-actions.md
+  items: 
+    - name: Building Actions
+      href: building-actions.md
+    - name: Registering Actions
+      href: registering-actions.md
+    - name: Unregistering Actions
+      href: unregistering-actions.md
 - name: Custom Themes
   href: custom-themes.md
 
