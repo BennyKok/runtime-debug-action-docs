@@ -625,15 +625,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "EmptyTocItemName"
-      ],
       "type": "Toc",
       "source_relative_path": "manuals/toc.yml",
       "output": {
         ".html": {
           "relative_path": "manuals/toc.html",
-          "hash": "b8WXEbw1Ney55KALr4lpuQ=="
+          "hash": "rpIPDKTVZ/hFOhc6aE95EA=="
         }
       },
       "is_incremental": false,

@@ -201,9 +201,9 @@ article h4 {
 }
 
 /* Custom */
-#breadcrumb > ul > li:nth-child(1) > a {
+/*#breadcrumb > ul > li:nth-child(1) > a {
   color: black;
-}
+}*/
 
 .breadcrumb {
   font-weight: 600;
