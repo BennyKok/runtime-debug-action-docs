@@ -1,7 +1,7 @@
-- name: Quick start
+- name: Quick Start
   href: quick-start.md
 - name: Custom Actions
-- href: custom-actions.md
+  href: custom-actions.md
 - name: Custom Themes
   href: custom-themes.md
 
