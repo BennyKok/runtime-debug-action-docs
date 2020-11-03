@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "dKlZf/UrxZEFLG40Z15TjQ=="
+          "hash": "Js/scer0CIXvBxGDuyLZbg=="
         }
       },
       "is_incremental": false,
@@ -584,11 +584,23 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "manuals/building-actions.md",
+      "output": {
+        ".html": {
+          "relative_path": "manuals/building-actions.html",
+          "hash": "nSD/0UOPKsNfmUs58VJ0zg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "manuals/custom-actions.md",
       "output": {
         ".html": {
           "relative_path": "manuals/custom-actions.html",
-          "hash": "kgxjvK1FGvsyLKdMYjg3Rg=="
+          "hash": "ykjexydBSR1LokidSjNZvg=="
         }
       },
       "is_incremental": false,
@@ -625,12 +637,36 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "manuals/registering-actions.md",
+      "output": {
+        ".html": {
+          "relative_path": "manuals/registering-actions.html",
+          "hash": "tEU61CDPppQ6DpArCayNRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "manuals/toc.yml",
       "output": {
         ".html": {
           "relative_path": "manuals/toc.html",
-          "hash": "rpIPDKTVZ/hFOhc6aE95EA=="
+          "hash": "VIt7IhHvUt4S+dulj6Wb9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manuals/unregistering-actions.md",
+      "output": {
+        ".html": {
+          "relative_path": "manuals/unregistering-actions.html",
+          "hash": "dUdX1fHBqksZSppbNHbjIg=="
         }
       },
       "is_incremental": false,
@@ -663,7 +699,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 7,
+          "total_file_count": 10,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {

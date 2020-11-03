@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Custom Actions </title>
+    <title>Unregistering Actions </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Custom Actions ">
+    <meta name="title" content="Unregistering Actions ">
     <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -60,10 +60,23 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="custom-actions">Custom Actions</h1>
+<h1 id="unregistering-actions">Unregistering Actions</h1>
 
-<h3 id="overview">Overview</h3>
-<p>The most common thing you are going to do is adding custom debug action that is sepecific to your game, and with the Fluent API design, it's extremely easy.</p>
+<p>There are few ways to remove actions from the system</p>
+<h2 id="by-path">By path</h2>
+<p>If you have defined custom path for you actions via <code>WithPath(&quot;YourPath&quot;)</code> or the argument <code>path</code> in the <code>RegisterActions</code> method, you can do as below to remove the actions with same path.</p>
+<pre><code class="lang-csharp">RuntimeDebugSystem.UnregisterActionsByPath(
+    &quot;YourPath/&quot;
+);
+</code></pre>
+<h2 id="by-references">By references</h2>
+<p>If you have references to you actions, you can pass them into the <code>RuntimeDebugAction.UnregisterActions</code> method directly.</p>
+<h2 id="by-id">By id</h2>
+<p>If you have defined a id for your actions via <code>WithId(&quot;YourId&quot;)</code>, you can do as below to remove the actions with the same id.</p>
+<pre><code class="lang-csharp">RuntimeDebugSystem.UnregisterActionsById(
+    &quot;YourId&quot;
+);
+</code></pre>
 </article>
           </div>
           
@@ -72,7 +85,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/BennyKok/runtime-debug-action-docs/blob/master/manuals/custom-actions.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/BennyKok/runtime-debug-action-docs/blob/master/manuals/unregistering-actions.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

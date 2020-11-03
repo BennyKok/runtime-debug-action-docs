@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Custom Actions </title>
+    <title>Registering Actions </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Custom Actions ">
+    <meta name="title" content="Registering Actions ">
     <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -60,10 +60,14 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="custom-actions">Custom Actions</h1>
+<h1 id="registering-actions">Registering Actions</h1>
 
-<h3 id="overview">Overview</h3>
-<p>The most common thing you are going to do is adding custom debug action that is sepecific to your game, and with the Fluent API design, it's extremely easy.</p>
+<p>To register any actions</p>
+<pre><code class="lang-csharp">RuntimeDebugSystem.RegisterActions(
+    DebugAction.Button()
+        .WithName(&quot;Your actions&quot;)
+);
+</code></pre>
 </article>
           </div>
           
@@ -72,7 +76,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/BennyKok/runtime-debug-action-docs/blob/master/manuals/custom-actions.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/BennyKok/runtime-debug-action-docs/blob/master/manuals/registering-actions.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

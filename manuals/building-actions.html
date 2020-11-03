@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Custom Actions </title>
+    <title>Building Actions </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Custom Actions ">
+    <meta name="title" content="Building Actions ">
     <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -60,10 +60,35 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="custom-actions">Custom Actions</h1>
+<h1 id="building-actions">Building Actions</h1>
 
-<h3 id="overview">Overview</h3>
-<p>The most common thing you are going to do is adding custom debug action that is sepecific to your game, and with the Fluent API design, it's extremely easy.</p>
+<pre><code class="lang-csharp">DebugAction.Button()
+    .WithName(&quot;Some Action&quot;)
+    .WithAction(()=&gt;{ });
+</code></pre>
+<h4 id="action-type">Action Type</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Button</td>
+<td>Oneshot action</td>
+</tr>
+<tr>
+<td>Toggle</td>
+<td>On/Off state action</td>
+</tr>
+<tr>
+<td>Input</td>
+<td>Params input action</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           
@@ -72,7 +97,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/BennyKok/runtime-debug-action-docs/blob/master/manuals/custom-actions.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/BennyKok/runtime-debug-action-docs/blob/master/manuals/building-actions.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
