@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Custom Themes </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Custom Themes ">
+    <meta name="generator" content="docfx 2.56.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <!-- <div style="color: white; font-weight: 900; height: 38pt; line-height: 38pt;">Runtime Debug
+                  ACTION</div> -->
+                <img id="logo" class="svg" src="../rda-web-icon.svg" alt="">
+              </a>    </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="custom-themes">Custom Themes</h1>
+
+<h3 id="overview">Overview</h3>
+<p>It's very easy to customize the theme, all the default UI prefabs are located under the <code>Plugins/RuntimeDebugAction/Prefabs/</code>.</p>
+<p>Duplicate from any of the UI prefab or create a prefab varient from it and customize from it.</p>
+<h4 id="default-theme-list">Default Theme List</h4>
+<table>
+<thead>
+<tr>
+<th>Theme UI</th>
+<th>Prefab Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UI Default</td>
+<td>Original</td>
+</tr>
+<tr>
+<td>UI Compact</td>
+<td>Variant</td>
+</tr>
+<tr>
+<td>UI Compact Bottom</td>
+<td>Variant</td>
+</tr>
+</tbody>
+</table>
+<p>Then add and assign the new prefab as a new theme in the <code>RDASettings</code> located under <code>Assets/Resources/</code>.</p>
+<p>You can arrange the new theme to the top to as the default theme.</p>
+<h3 id="changing-font">Changing font</h3>
+<p>To assign a different font to the UI prefab, simply import your new font, create a TextMeshPro font asset from it, and assign to the <a href="../api/BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.html">DebugUIHandler</a>'s <code>customFont</code> field in the inspector of the UI prefab.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/BennyKok/runtime-debug-action-docs/blob/master/manuals/custom-themes.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">
+                👆
+              </a>
+            </span>
+            
+            <span>
+              RuntimeDebugAction by ❤️ <a href="https://bennykok.com">BennyKok</a>
+            </span>
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

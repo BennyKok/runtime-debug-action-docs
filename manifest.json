@@ -583,12 +583,69 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "manuals/custom-actions.md",
+      "output": {
+        ".html": {
+          "relative_path": "manuals/custom-actions.html",
+          "hash": "kgxjvK1FGvsyLKdMYjg3Rg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "manuals/custom-themes.md",
+      "output": {
+        ".html": {
+          "relative_path": "manuals/custom-themes.html",
+          "hash": "hd/VmgngmCL4TQ0Mi5ZdAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "manuals/quick-start.md",
+      "output": {
+        ".html": {
+          "relative_path": "manuals/quick-start.html",
+          "hash": "71JveExth0bdFy+yxyY/mw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "EmptyTocItemName"
+      ],
+      "type": "Toc",
+      "source_relative_path": "manuals/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manuals/toc.html",
+          "hash": "b8WXEbw1Ney55KALr4lpuQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "NkEEmtxIE8/N2Trep4M06Q=="
+          "hash": "j+iGCUEwbpv6Sv2naN9AzQ=="
         }
       },
       "is_incremental": false,
@@ -609,7 +666,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 4,
+          "total_file_count": 7,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
