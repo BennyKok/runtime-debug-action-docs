@@ -21,7 +21,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: TouchToggleMode
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 56
+    startLine: 50
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -52,11 +52,11 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: MobileOnly
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 61
+    startLine: 55
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
-  summary: "\nThe UI toggle will only be enabled when the build platfrom is Android or iOS\n"
+  summary: "\nThe UI toggle will only be enabled when the build platfrom is a known mobile platform\n"
   example: []
   syntax:
     content: MobileOnly = 0
@@ -86,7 +86,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Always
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 66
+    startLine: 60
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data

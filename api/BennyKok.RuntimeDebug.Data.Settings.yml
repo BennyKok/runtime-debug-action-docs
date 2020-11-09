@@ -12,11 +12,10 @@ items:
   - BennyKok.RuntimeDebug.Data.Settings.enableMode
   - BennyKok.RuntimeDebug.Data.Settings.GetDefaultTheme
   - BennyKok.RuntimeDebug.Data.Settings.GetThemeByName(System.String)
-  - BennyKok.RuntimeDebug.Data.Settings.globalFlags
   - BennyKok.RuntimeDebug.Data.Settings.hideCursorOnStart
+  - BennyKok.RuntimeDebug.Data.Settings.inputLayer
   - BennyKok.RuntimeDebug.Data.Settings.IsShowTouchToggle
   - BennyKok.RuntimeDebug.Data.Settings.IsSystemEnabled
-  - BennyKok.RuntimeDebug.Data.Settings.menuKey
   - BennyKok.RuntimeDebug.Data.Settings.settingsAssetName
   - BennyKok.RuntimeDebug.Data.Settings.settingsFolderPath
   - BennyKok.RuntimeDebug.Data.Settings.settingsPath
@@ -308,23 +307,23 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BennyKok.RuntimeDebug.Data.Settings.menuKey
-  commentId: F:BennyKok.RuntimeDebug.Data.Settings.menuKey
-  id: menuKey
+- uid: BennyKok.RuntimeDebug.Data.Settings.inputLayer
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.inputLayer
+  id: inputLayer
   parent: BennyKok.RuntimeDebug.Data.Settings
   langs:
   - csharp
   - vb
-  name: menuKey
-  nameWithType: Settings.menuKey
-  fullName: BennyKok.RuntimeDebug.Data.Settings.menuKey
+  name: inputLayer
+  nameWithType: Settings.inputLayer
+  fullName: BennyKok.RuntimeDebug.Data.Settings.inputLayer
   type: Field
   source:
     remote:
       path: Runtime/Data/Settings.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: menuKey
+    id: inputLayer
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
     startLine: 37
   assemblies:
@@ -334,13 +333,13 @@ items:
     content: >-
       [Title("Interaction", 0)]
 
-      public KeyCode menuKey
+      public InputLayer inputLayer
     return:
-      type: UnityEngine.KeyCode
+      type: BennyKok.RuntimeDebug.Data.InputLayer
     content.vb: >-
       <Title("Interaction", 0)>
 
-      Public menuKey As KeyCode
+      Public inputLayer As InputLayer
   attributes:
   - type: BennyKok.RuntimeDebug.Utils.TitleAttribute
     ctor: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Int32)
@@ -491,60 +490,6 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BennyKok.RuntimeDebug.Data.Settings.globalFlags
-  commentId: F:BennyKok.RuntimeDebug.Data.Settings.globalFlags
-  id: globalFlags
-  parent: BennyKok.RuntimeDebug.Data.Settings
-  langs:
-  - csharp
-  - vb
-  name: globalFlags
-  nameWithType: Settings.globalFlags
-  fullName: BennyKok.RuntimeDebug.Data.Settings.globalFlags
-  type: Field
-  source:
-    remote:
-      path: Runtime/Data/Settings.cs
-      branch: master
-      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: globalFlags
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 52
-  assemblies:
-  - com.bennykok.runtime-debug-action
-  namespace: BennyKok.RuntimeDebug.Data
-  syntax:
-    content: >-
-      [Title("Debug Flags", 0)]
-
-      [ReorderableDisplay("Flag")]
-
-      public DebugFlagList globalFlags
-    return:
-      type: BennyKok.RuntimeDebug.Data.DebugFlagList
-    content.vb: >-
-      <Title("Debug Flags", 0)>
-
-      <ReorderableDisplay("Flag")>
-
-      Public globalFlags As DebugFlagList
-  attributes:
-  - type: BennyKok.RuntimeDebug.Utils.TitleAttribute
-    ctor: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Int32)
-    arguments:
-    - type: System.String
-      value: Debug Flags
-    - type: System.Int32
-      value: 0
-  - type: BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute
-    ctor: BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Flag
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
 - uid: BennyKok.RuntimeDebug.Data.Settings.IsSystemEnabled
   commentId: M:BennyKok.RuntimeDebug.Data.Settings.IsSystemEnabled
   id: IsSystemEnabled
@@ -563,7 +508,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: IsSystemEnabled
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 90
+    startLine: 84
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -597,7 +542,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: IsShowTouchToggle
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 105
+    startLine: 99
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -629,7 +574,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetDefaultTheme
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 117
+    startLine: 111
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -661,7 +606,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetThemeByName
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 119
+    startLine: 113
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -743,13 +688,12 @@ references:
   name: Single
   nameWithType: Single
   fullName: System.Single
-- uid: UnityEngine.KeyCode
-  commentId: T:UnityEngine.KeyCode
-  parent: UnityEngine
-  isExternal: true
-  name: KeyCode
-  nameWithType: KeyCode
-  fullName: UnityEngine.KeyCode
+- uid: BennyKok.RuntimeDebug.Data.InputLayer
+  commentId: T:BennyKok.RuntimeDebug.Data.InputLayer
+  parent: BennyKok.RuntimeDebug.Data
+  name: InputLayer
+  nameWithType: InputLayer
+  fullName: BennyKok.RuntimeDebug.Data.InputLayer
 - uid: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
   commentId: T:BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
   parent: BennyKok.RuntimeDebug.Data
@@ -763,12 +707,6 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
-- uid: BennyKok.RuntimeDebug.Data.DebugFlagList
-  commentId: T:BennyKok.RuntimeDebug.Data.DebugFlagList
-  parent: BennyKok.RuntimeDebug.Data
-  name: DebugFlagList
-  nameWithType: DebugFlagList
-  fullName: BennyKok.RuntimeDebug.Data.DebugFlagList
 - uid: BennyKok.RuntimeDebug.Data.Settings.IsSystemEnabled*
   commentId: Overload:BennyKok.RuntimeDebug.Data.Settings.IsSystemEnabled
   name: IsSystemEnabled

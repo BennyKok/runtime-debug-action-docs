@@ -4,8 +4,7 @@ items:
   commentId: N:BennyKok.RuntimeDebug.Data
   id: BennyKok.RuntimeDebug.Data
   children:
-  - BennyKok.RuntimeDebug.Data.DebugFlag
-  - BennyKok.RuntimeDebug.Data.DebugFlagList
+  - BennyKok.RuntimeDebug.Data.InputLayer
   - BennyKok.RuntimeDebug.Data.ListItem
   - BennyKok.RuntimeDebug.Data.Settings
   - BennyKok.RuntimeDebug.Data.Settings.EnableMode
@@ -22,17 +21,12 @@ items:
   assemblies:
   - com.bennykok.runtime-debug-action
 references:
-- uid: BennyKok.RuntimeDebug.Data.DebugFlagList
-  commentId: T:BennyKok.RuntimeDebug.Data.DebugFlagList
+- uid: BennyKok.RuntimeDebug.Data.InputLayer
+  commentId: T:BennyKok.RuntimeDebug.Data.InputLayer
   parent: BennyKok.RuntimeDebug.Data
-  name: DebugFlagList
-  nameWithType: DebugFlagList
-  fullName: BennyKok.RuntimeDebug.Data.DebugFlagList
-- uid: BennyKok.RuntimeDebug.Data.DebugFlag
-  commentId: T:BennyKok.RuntimeDebug.Data.DebugFlag
-  name: DebugFlag
-  nameWithType: DebugFlag
-  fullName: BennyKok.RuntimeDebug.Data.DebugFlag
+  name: InputLayer
+  nameWithType: InputLayer
+  fullName: BennyKok.RuntimeDebug.Data.InputLayer
 - uid: BennyKok.RuntimeDebug.Data.ListItem
   commentId: T:BennyKok.RuntimeDebug.Data.ListItem
   parent: BennyKok.RuntimeDebug.Data

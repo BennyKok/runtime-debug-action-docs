@@ -25,11 +25,11 @@ items:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput
   syntax:
-    content: 'public class ParamWithoutDefaultValueException : Exception, ISerializable'
+    content: 'public class ParamWithoutDefaultValueException : Exception, _Exception, ISerializable'
     content.vb: >-
       Public Class ParamWithoutDefaultValueException
           Inherits Exception
-          Implements ISerializable
+          Implements _Exception, ISerializable
   inheritance:
   - System.Object
   - System.Exception

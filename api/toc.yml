@@ -4,10 +4,12 @@
   items:
   - uid: BennyKok.RuntimeDebug.Actions.BaseAction
     name: BaseAction
-  - uid: BennyKok.RuntimeDebug.Actions.DebugAction
-    name: DebugAction
+  - uid: BennyKok.RuntimeDebug.Actions.DebugActionBuilder
+    name: DebugActionBuilder
   - uid: BennyKok.RuntimeDebug.Actions.DebugActionButton
     name: DebugActionButton
+  - uid: BennyKok.RuntimeDebug.Actions.DebugActionFlag
+    name: DebugActionFlag
   - uid: BennyKok.RuntimeDebug.Actions.DebugActionInput
     name: DebugActionInput
   - uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle
@@ -18,8 +20,17 @@
 - uid: BennyKok.RuntimeDebug.Components
   name: BennyKok.RuntimeDebug.Components
   items:
-  - uid: BennyKok.RuntimeDebug.Components.DebugActionHandler
-    name: DebugActionHandler
+  - uid: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler`1
+    name: BaseDebugActionHandler<T>
+    name.vb: BaseDebugActionHandler(Of T)
+  - uid: BennyKok.RuntimeDebug.Components.DebugActionButtonHandler
+    name: DebugActionButtonHandler
+  - uid: BennyKok.RuntimeDebug.Components.DebugActionFlagHandler
+    name: DebugActionFlagHandler
+  - uid: BennyKok.RuntimeDebug.Components.DebugActionInputHandler
+    name: DebugActionInputHandler
+  - uid: BennyKok.RuntimeDebug.Components.DebugActionToggleHandler
+    name: DebugActionToggleHandler
 - uid: BennyKok.RuntimeDebug.Components.UI
   name: BennyKok.RuntimeDebug.Components.UI
   items:
@@ -35,13 +46,17 @@
     name: ListItemView
   - uid: BennyKok.RuntimeDebug.Components.UI.ListView
     name: ListView
+  - uid: BennyKok.RuntimeDebug.Components.UI.SafeAreaExtender
+    name: SafeAreaExtender
+  - uid: BennyKok.RuntimeDebug.Components.UI.SafeAreaHelper
+    name: SafeAreaHelper
+  - uid: BennyKok.RuntimeDebug.Components.UI.SizeMatcher
+    name: SizeMatcher
 - uid: BennyKok.RuntimeDebug.Data
   name: BennyKok.RuntimeDebug.Data
   items:
-  - uid: BennyKok.RuntimeDebug.Data.DebugFlag
-    name: DebugFlag
-  - uid: BennyKok.RuntimeDebug.Data.DebugFlagList
-    name: DebugFlagList
+  - uid: BennyKok.RuntimeDebug.Data.InputLayer
+    name: InputLayer
   - uid: BennyKok.RuntimeDebug.Data.ListItem
     name: ListItem
   - uid: BennyKok.RuntimeDebug.Data.Settings

@@ -26,10 +26,11 @@ items:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Utils
   syntax:
-    content: 'public class ReorderableDisplayAttribute : PropertyAttribute'
+    content: 'public class ReorderableDisplayAttribute : PropertyAttribute, _Attribute'
     content.vb: >-
       Public Class ReorderableDisplayAttribute
           Inherits PropertyAttribute
+          Implements _Attribute
   inheritance:
   - System.Object
   - System.Attribute

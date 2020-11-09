@@ -33,10 +33,11 @@ items:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Utils
   syntax:
-    content: 'public class TitleAttribute : PropertyAttribute'
+    content: 'public class TitleAttribute : PropertyAttribute, _Attribute'
     content.vb: >-
       Public Class TitleAttribute
           Inherits PropertyAttribute
+          Implements _Attribute
   inheritance:
   - System.Object
   - System.Attribute

@@ -10,6 +10,9 @@ items:
   - BennyKok.RuntimeDebug.Components.UI.InputUIHandler
   - BennyKok.RuntimeDebug.Components.UI.ListItemView
   - BennyKok.RuntimeDebug.Components.UI.ListView
+  - BennyKok.RuntimeDebug.Components.UI.SafeAreaExtender
+  - BennyKok.RuntimeDebug.Components.UI.SafeAreaHelper
+  - BennyKok.RuntimeDebug.Components.UI.SizeMatcher
   langs:
   - csharp
   - vb
@@ -54,6 +57,21 @@ references:
   name: ListView
   nameWithType: ListView
   fullName: BennyKok.RuntimeDebug.Components.UI.ListView
+- uid: BennyKok.RuntimeDebug.Components.UI.SafeAreaExtender
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.SafeAreaExtender
+  name: SafeAreaExtender
+  nameWithType: SafeAreaExtender
+  fullName: BennyKok.RuntimeDebug.Components.UI.SafeAreaExtender
+- uid: BennyKok.RuntimeDebug.Components.UI.SafeAreaHelper
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.SafeAreaHelper
+  name: SafeAreaHelper
+  nameWithType: SafeAreaHelper
+  fullName: BennyKok.RuntimeDebug.Components.UI.SafeAreaHelper
+- uid: BennyKok.RuntimeDebug.Components.UI.SizeMatcher
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.SizeMatcher
+  name: SizeMatcher
+  nameWithType: SizeMatcher
+  fullName: BennyKok.RuntimeDebug.Components.UI.SizeMatcher
 - uid: BennyKok.RuntimeDebug.Components.UI
   commentId: N:BennyKok.RuntimeDebug.Components.UI
   name: BennyKok.RuntimeDebug.Components.UI

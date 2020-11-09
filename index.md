@@ -27,7 +27,7 @@ Welcome to the documentation for RuntimeDebugAction
 The [`RuntimeDebugSystem`](api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html) class provide the entry point for registering your custom action, with a Fluent API design, it's a joy to add custom actions. 
 
 ```csharp
-DebugAction.Button()
+DebugActionBuilder.Button()
     .WithName($"Set {theme.themeName} Theme")
     .WithAction(() =>
     {

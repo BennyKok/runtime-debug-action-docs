@@ -6,7 +6,9 @@ items:
   parent: BennyKok.RuntimeDebug.Components.UI
   children:
   - BennyKok.RuntimeDebug.Components.UI.InputUIHandler.AskForInput(BennyKok.RuntimeDebug.DebugInput.InputQuery,System.Action{System.String},System.Action)
+  - BennyKok.RuntimeDebug.Components.UI.InputUIHandler.cancelButton
   - BennyKok.RuntimeDebug.Components.UI.InputUIHandler.DimissInput
+  - BennyKok.RuntimeDebug.Components.UI.InputUIHandler.inputField
   langs:
   - csharp
   - vb
@@ -21,7 +23,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: InputUIHandler
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/InputUIHandler.cs
-    startLine: 9
+    startLine: 11
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -53,6 +55,84 @@ items:
   modifiers.vb:
   - Public
   - Class
+- uid: BennyKok.RuntimeDebug.Components.UI.InputUIHandler.inputField
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.InputUIHandler.inputField
+  id: inputField
+  parent: BennyKok.RuntimeDebug.Components.UI.InputUIHandler
+  langs:
+  - csharp
+  - vb
+  name: inputField
+  nameWithType: InputUIHandler.inputField
+  fullName: BennyKok.RuntimeDebug.Components.UI.InputUIHandler.inputField
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/InputUIHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: inputField
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/InputUIHandler.cs
+    startLine: 15
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: >-
+      [Title("References", false, 3)]
+
+      public TMP_InputField inputField
+    return:
+      type: TMPro.TMP_InputField
+    content.vb: >-
+      <Title("References", False, 3)>
+
+      Public inputField As TMP_InputField
+  attributes:
+  - type: BennyKok.RuntimeDebug.Utils.TitleAttribute
+    ctor: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Boolean,System.Int32)
+    arguments:
+    - type: System.String
+      value: References
+    - type: System.Boolean
+      value: false
+    - type: System.Int32
+      value: 3
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.InputUIHandler.cancelButton
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.InputUIHandler.cancelButton
+  id: cancelButton
+  parent: BennyKok.RuntimeDebug.Components.UI.InputUIHandler
+  langs:
+  - csharp
+  - vb
+  name: cancelButton
+  nameWithType: InputUIHandler.cancelButton
+  fullName: BennyKok.RuntimeDebug.Components.UI.InputUIHandler.cancelButton
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/InputUIHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: cancelButton
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/InputUIHandler.cs
+    startLine: 16
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public Button cancelButton
+    return:
+      type: UnityEngine.UI.Button
+    content.vb: Public cancelButton As Button
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: BennyKok.RuntimeDebug.Components.UI.InputUIHandler.DimissInput
   commentId: M:BennyKok.RuntimeDebug.Components.UI.InputUIHandler.DimissInput
   id: DimissInput
@@ -71,7 +151,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: DimissInput
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/InputUIHandler.cs
-    startLine: 47
+    startLine: 58
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -103,7 +183,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: AskForInput
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/InputUIHandler.cs
-    startLine: 54
+    startLine: 65
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -178,6 +258,32 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
+- uid: TMPro.TMP_InputField
+  commentId: T:TMPro.TMP_InputField
+  parent: TMPro
+  isExternal: true
+  name: TMP_InputField
+  nameWithType: TMP_InputField
+  fullName: TMPro.TMP_InputField
+- uid: TMPro
+  commentId: N:TMPro
+  isExternal: true
+  name: TMPro
+  nameWithType: TMPro
+  fullName: TMPro
+- uid: UnityEngine.UI.Button
+  commentId: T:UnityEngine.UI.Button
+  parent: UnityEngine.UI
+  isExternal: true
+  name: Button
+  nameWithType: Button
+  fullName: UnityEngine.UI.Button
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  isExternal: true
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
 - uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
   commentId: T:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
   parent: BennyKok.RuntimeDebug.Systems

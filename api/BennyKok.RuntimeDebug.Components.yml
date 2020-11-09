@@ -4,7 +4,11 @@ items:
   commentId: N:BennyKok.RuntimeDebug.Components
   id: BennyKok.RuntimeDebug.Components
   children:
-  - BennyKok.RuntimeDebug.Components.DebugActionHandler
+  - BennyKok.RuntimeDebug.Components.BaseDebugActionHandler`1
+  - BennyKok.RuntimeDebug.Components.DebugActionButtonHandler
+  - BennyKok.RuntimeDebug.Components.DebugActionFlagHandler
+  - BennyKok.RuntimeDebug.Components.DebugActionInputHandler
+  - BennyKok.RuntimeDebug.Components.DebugActionToggleHandler
   langs:
   - csharp
   - vb
@@ -15,8 +19,59 @@ items:
   assemblies:
   - com.bennykok.runtime-debug-action
 references:
-- uid: BennyKok.RuntimeDebug.Components.DebugActionHandler
-  commentId: T:BennyKok.RuntimeDebug.Components.DebugActionHandler
-  name: DebugActionHandler
-  nameWithType: DebugActionHandler
-  fullName: BennyKok.RuntimeDebug.Components.DebugActionHandler
+- uid: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler`1
+  commentId: T:BennyKok.RuntimeDebug.Components.BaseDebugActionHandler`1
+  name: BaseDebugActionHandler<T>
+  nameWithType: BaseDebugActionHandler<T>
+  fullName: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler<T>
+  nameWithType.vb: BaseDebugActionHandler(Of T)
+  fullName.vb: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler(Of T)
+  name.vb: BaseDebugActionHandler(Of T)
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler`1
+    name: BaseDebugActionHandler
+    nameWithType: BaseDebugActionHandler
+    fullName: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler`1
+    name: BaseDebugActionHandler
+    nameWithType: BaseDebugActionHandler
+    fullName: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Components.DebugActionButtonHandler
+  commentId: T:BennyKok.RuntimeDebug.Components.DebugActionButtonHandler
+  name: DebugActionButtonHandler
+  nameWithType: DebugActionButtonHandler
+  fullName: BennyKok.RuntimeDebug.Components.DebugActionButtonHandler
+- uid: BennyKok.RuntimeDebug.Components.DebugActionFlagHandler
+  commentId: T:BennyKok.RuntimeDebug.Components.DebugActionFlagHandler
+  name: DebugActionFlagHandler
+  nameWithType: DebugActionFlagHandler
+  fullName: BennyKok.RuntimeDebug.Components.DebugActionFlagHandler
+- uid: BennyKok.RuntimeDebug.Components.DebugActionInputHandler
+  commentId: T:BennyKok.RuntimeDebug.Components.DebugActionInputHandler
+  name: DebugActionInputHandler
+  nameWithType: DebugActionInputHandler
+  fullName: BennyKok.RuntimeDebug.Components.DebugActionInputHandler
+- uid: BennyKok.RuntimeDebug.Components.DebugActionToggleHandler
+  commentId: T:BennyKok.RuntimeDebug.Components.DebugActionToggleHandler
+  name: DebugActionToggleHandler
+  nameWithType: DebugActionToggleHandler
+  fullName: BennyKok.RuntimeDebug.Components.DebugActionToggleHandler

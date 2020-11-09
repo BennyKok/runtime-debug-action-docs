@@ -1,0 +1,438 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.Components.UI.SizeMatcher
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.SizeMatcher
+  id: SizeMatcher
+  parent: BennyKok.RuntimeDebug.Components.UI
+  children:
+  - BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnDisable
+  - BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnEnable
+  - BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnRectTransformDimensionsChange
+  - BennyKok.RuntimeDebug.Components.UI.SizeMatcher.reference
+  - BennyKok.RuntimeDebug.Components.UI.SizeMatcher.SetDirty
+  - BennyKok.RuntimeDebug.Components.UI.SizeMatcher.target
+  langs:
+  - csharp
+  - vb
+  name: SizeMatcher
+  nameWithType: SizeMatcher
+  fullName: BennyKok.RuntimeDebug.Components.UI.SizeMatcher
+  type: Class
+  source:
+    remote:
+      path: Runtime/Components/UI/SizeMatcher.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: SizeMatcher
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/SizeMatcher.cs
+    startLine: 9
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  summary: "\nHelper component to match the RectTransfrom&apos;s size to the reference RectTransform \n"
+  example: []
+  syntax:
+    content: >-
+      [ExecuteAlways]
+
+      public class SizeMatcher : UIBehaviour, ILayoutController
+    content.vb: >-
+      <ExecuteAlways>
+
+      Public Class SizeMatcher
+          Inherits UIBehaviour
+          Implements ILayoutController
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - UnityEngine.EventSystems.UIBehaviour
+  attributes:
+  - type: UnityEngine.ExecuteAlways
+    ctor: UnityEngine.ExecuteAlways.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BennyKok.RuntimeDebug.Components.UI.SizeMatcher.target
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.SizeMatcher.target
+  id: target
+  parent: BennyKok.RuntimeDebug.Components.UI.SizeMatcher
+  langs:
+  - csharp
+  - vb
+  name: target
+  nameWithType: SizeMatcher.target
+  fullName: BennyKok.RuntimeDebug.Components.UI.SizeMatcher.target
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/SizeMatcher.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: target
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/SizeMatcher.cs
+    startLine: 12
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public RectTransform target
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public target As RectTransform
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.SizeMatcher.reference
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.SizeMatcher.reference
+  id: reference
+  parent: BennyKok.RuntimeDebug.Components.UI.SizeMatcher
+  langs:
+  - csharp
+  - vb
+  name: reference
+  nameWithType: SizeMatcher.reference
+  fullName: BennyKok.RuntimeDebug.Components.UI.SizeMatcher.reference
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/SizeMatcher.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: reference
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/SizeMatcher.cs
+    startLine: 13
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public RectTransform reference
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public reference As RectTransform
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnEnable
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnEnable
+  id: OnEnable
+  parent: BennyKok.RuntimeDebug.Components.UI.SizeMatcher
+  langs:
+  - csharp
+  - vb
+  name: OnEnable()
+  nameWithType: SizeMatcher.OnEnable()
+  fullName: BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnEnable()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/SizeMatcher.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: OnEnable
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/SizeMatcher.cs
+    startLine: 17
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: protected override void OnEnable()
+    content.vb: Protected Overrides Sub OnEnable
+  overridden: UnityEngine.EventSystems.UIBehaviour.OnEnable
+  overload: BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnEnable*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnDisable
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnDisable
+  id: OnDisable
+  parent: BennyKok.RuntimeDebug.Components.UI.SizeMatcher
+  langs:
+  - csharp
+  - vb
+  name: OnDisable()
+  nameWithType: SizeMatcher.OnDisable()
+  fullName: BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnDisable()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/SizeMatcher.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: OnDisable
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/SizeMatcher.cs
+    startLine: 23
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: protected override void OnDisable()
+    content.vb: Protected Overrides Sub OnDisable
+  overridden: UnityEngine.EventSystems.UIBehaviour.OnDisable
+  overload: BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnDisable*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: BennyKok.RuntimeDebug.Components.UI.SizeMatcher.SetDirty
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.SizeMatcher.SetDirty
+  id: SetDirty
+  parent: BennyKok.RuntimeDebug.Components.UI.SizeMatcher
+  langs:
+  - csharp
+  - vb
+  name: SetDirty()
+  nameWithType: SizeMatcher.SetDirty()
+  fullName: BennyKok.RuntimeDebug.Components.UI.SizeMatcher.SetDirty()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/SizeMatcher.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: SetDirty
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/SizeMatcher.cs
+    startLine: 30
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: protected void SetDirty()
+    content.vb: Protected Sub SetDirty
+  overload: BennyKok.RuntimeDebug.Components.UI.SizeMatcher.SetDirty*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnRectTransformDimensionsChange
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnRectTransformDimensionsChange
+  id: OnRectTransformDimensionsChange
+  parent: BennyKok.RuntimeDebug.Components.UI.SizeMatcher
+  langs:
+  - csharp
+  - vb
+  name: OnRectTransformDimensionsChange()
+  nameWithType: SizeMatcher.OnRectTransformDimensionsChange()
+  fullName: BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnRectTransformDimensionsChange()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/SizeMatcher.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: OnRectTransformDimensionsChange
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/SizeMatcher.cs
+    startLine: 38
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: protected override void OnRectTransformDimensionsChange()
+    content.vb: Protected Overrides Sub OnRectTransformDimensionsChange
+  overridden: UnityEngine.EventSystems.UIBehaviour.OnRectTransformDimensionsChange
+  overload: BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnRectTransformDimensionsChange*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: BennyKok.RuntimeDebug.Components.UI
+  commentId: N:BennyKok.RuntimeDebug.Components.UI
+  name: BennyKok.RuntimeDebug.Components.UI
+  nameWithType: BennyKok.RuntimeDebug.Components.UI
+  fullName: BennyKok.RuntimeDebug.Components.UI
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.EventSystems.UIBehaviour
+  commentId: T:UnityEngine.EventSystems.UIBehaviour
+  parent: UnityEngine.EventSystems
+  isExternal: true
+  name: UIBehaviour
+  nameWithType: UIBehaviour
+  fullName: UnityEngine.EventSystems.UIBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  isExternal: true
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+- uid: UnityEngine.RectTransform
+  commentId: T:UnityEngine.RectTransform
+  parent: UnityEngine
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: UnityEngine.RectTransform
+- uid: UnityEngine.EventSystems.UIBehaviour.OnEnable
+  commentId: M:UnityEngine.EventSystems.UIBehaviour.OnEnable
+  parent: UnityEngine.EventSystems.UIBehaviour
+  isExternal: true
+  name: OnEnable()
+  nameWithType: UIBehaviour.OnEnable()
+  fullName: UnityEngine.EventSystems.UIBehaviour.OnEnable()
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.UIBehaviour.OnEnable
+    name: OnEnable
+    nameWithType: UIBehaviour.OnEnable
+    fullName: UnityEngine.EventSystems.UIBehaviour.OnEnable
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.EventSystems.UIBehaviour.OnEnable
+    name: OnEnable
+    nameWithType: UIBehaviour.OnEnable
+    fullName: UnityEngine.EventSystems.UIBehaviour.OnEnable
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnEnable*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnEnable
+  name: OnEnable
+  nameWithType: SizeMatcher.OnEnable
+  fullName: BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnEnable
+- uid: UnityEngine.EventSystems.UIBehaviour.OnDisable
+  commentId: M:UnityEngine.EventSystems.UIBehaviour.OnDisable
+  parent: UnityEngine.EventSystems.UIBehaviour
+  isExternal: true
+  name: OnDisable()
+  nameWithType: UIBehaviour.OnDisable()
+  fullName: UnityEngine.EventSystems.UIBehaviour.OnDisable()
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.UIBehaviour.OnDisable
+    name: OnDisable
+    nameWithType: UIBehaviour.OnDisable
+    fullName: UnityEngine.EventSystems.UIBehaviour.OnDisable
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.EventSystems.UIBehaviour.OnDisable
+    name: OnDisable
+    nameWithType: UIBehaviour.OnDisable
+    fullName: UnityEngine.EventSystems.UIBehaviour.OnDisable
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnDisable*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnDisable
+  name: OnDisable
+  nameWithType: SizeMatcher.OnDisable
+  fullName: BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnDisable
+- uid: BennyKok.RuntimeDebug.Components.UI.SizeMatcher.SetDirty*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.SizeMatcher.SetDirty
+  name: SetDirty
+  nameWithType: SizeMatcher.SetDirty
+  fullName: BennyKok.RuntimeDebug.Components.UI.SizeMatcher.SetDirty
+- uid: UnityEngine.EventSystems.UIBehaviour.OnRectTransformDimensionsChange
+  commentId: M:UnityEngine.EventSystems.UIBehaviour.OnRectTransformDimensionsChange
+  parent: UnityEngine.EventSystems.UIBehaviour
+  isExternal: true
+  name: OnRectTransformDimensionsChange()
+  nameWithType: UIBehaviour.OnRectTransformDimensionsChange()
+  fullName: UnityEngine.EventSystems.UIBehaviour.OnRectTransformDimensionsChange()
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.UIBehaviour.OnRectTransformDimensionsChange
+    name: OnRectTransformDimensionsChange
+    nameWithType: UIBehaviour.OnRectTransformDimensionsChange
+    fullName: UnityEngine.EventSystems.UIBehaviour.OnRectTransformDimensionsChange
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.EventSystems.UIBehaviour.OnRectTransformDimensionsChange
+    name: OnRectTransformDimensionsChange
+    nameWithType: UIBehaviour.OnRectTransformDimensionsChange
+    fullName: UnityEngine.EventSystems.UIBehaviour.OnRectTransformDimensionsChange
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnRectTransformDimensionsChange*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnRectTransformDimensionsChange
+  name: OnRectTransformDimensionsChange
+  nameWithType: SizeMatcher.OnRectTransformDimensionsChange
+  fullName: BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnRectTransformDimensionsChange

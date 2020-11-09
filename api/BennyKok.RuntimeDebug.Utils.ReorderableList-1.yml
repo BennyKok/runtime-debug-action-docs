@@ -47,7 +47,6 @@ items:
   - System.Object
   - BennyKok.RuntimeDebug.Utils.ReorderableBase
   derivedClasses:
-  - BennyKok.RuntimeDebug.Data.DebugFlagList
   - BennyKok.RuntimeDebug.Data.ThemeList
   attributes:
   - type: System.SerializableAttribute

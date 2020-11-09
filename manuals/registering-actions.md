@@ -4,7 +4,7 @@ To register any actions
 
 ```csharp
 RuntimeDebugSystem.RegisterActions(
-    DebugAction.Button()
+    DebugActionBuilder.Button()
         .WithName("Your actions")
 );
 ```

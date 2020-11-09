@@ -38,6 +38,7 @@ references:
   fullName: BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException
 - uid: BennyKok.RuntimeDebug.DebugInput.InputResponse
   commentId: T:BennyKok.RuntimeDebug.DebugInput.InputResponse
+  parent: BennyKok.RuntimeDebug.DebugInput
   name: InputResponse
   nameWithType: InputResponse
   fullName: BennyKok.RuntimeDebug.DebugInput.InputResponse

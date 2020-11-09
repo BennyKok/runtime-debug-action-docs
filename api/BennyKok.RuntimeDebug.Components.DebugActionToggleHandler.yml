@@ -1,0 +1,201 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.Components.DebugActionToggleHandler
+  commentId: T:BennyKok.RuntimeDebug.Components.DebugActionToggleHandler
+  id: DebugActionToggleHandler
+  parent: BennyKok.RuntimeDebug.Components
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: DebugActionToggleHandler
+  nameWithType: DebugActionToggleHandler
+  fullName: BennyKok.RuntimeDebug.Components.DebugActionToggleHandler
+  type: Class
+  source:
+    remote:
+      path: Runtime/Components/Actions/DebugActionToggleHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: DebugActionToggleHandler
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/Actions/DebugActionToggleHandler.cs
+    startLine: 8
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components
+  syntax:
+    content: >-
+      [AddComponentMenu("Runtime Debug Action/Actions/Debug Action Toggle")]
+
+      public class DebugActionToggleHandler : BaseDebugActionHandler<DebugActionToggle>
+    content.vb: >-
+      <AddComponentMenu("Runtime Debug Action/Actions/Debug Action Toggle")>
+
+      Public Class DebugActionToggleHandler
+          Inherits BaseDebugActionHandler(Of DebugActionToggle)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - BennyKok.RuntimeDebug.Components.BaseDebugActionHandler{BennyKok.RuntimeDebug.Actions.DebugActionToggle}
+  inheritedMembers:
+  - BennyKok.RuntimeDebug.Components.BaseDebugActionHandler{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.action
+  attributes:
+  - type: UnityEngine.AddComponentMenu
+    ctor: UnityEngine.AddComponentMenu.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Runtime Debug Action/Actions/Debug Action Toggle
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: BennyKok.RuntimeDebug.Components
+  commentId: N:BennyKok.RuntimeDebug.Components
+  name: BennyKok.RuntimeDebug.Components
+  nameWithType: BennyKok.RuntimeDebug.Components
+  fullName: BennyKok.RuntimeDebug.Components
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler{BennyKok.RuntimeDebug.Actions.DebugActionToggle}
+  commentId: T:BennyKok.RuntimeDebug.Components.BaseDebugActionHandler{BennyKok.RuntimeDebug.Actions.DebugActionToggle}
+  parent: BennyKok.RuntimeDebug.Components
+  definition: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler`1
+  name: BaseDebugActionHandler<DebugActionToggle>
+  nameWithType: BaseDebugActionHandler<DebugActionToggle>
+  fullName: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler<BennyKok.RuntimeDebug.Actions.DebugActionToggle>
+  nameWithType.vb: BaseDebugActionHandler(Of DebugActionToggle)
+  fullName.vb: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler(Of BennyKok.RuntimeDebug.Actions.DebugActionToggle)
+  name.vb: BaseDebugActionHandler(Of DebugActionToggle)
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler`1
+    name: BaseDebugActionHandler
+    nameWithType: BaseDebugActionHandler
+    fullName: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle
+    name: DebugActionToggle
+    nameWithType: DebugActionToggle
+    fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler`1
+    name: BaseDebugActionHandler
+    nameWithType: BaseDebugActionHandler
+    fullName: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle
+    name: DebugActionToggle
+    nameWithType: DebugActionToggle
+    fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.action
+  commentId: F:BennyKok.RuntimeDebug.Components.BaseDebugActionHandler{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.action
+  parent: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler{BennyKok.RuntimeDebug.Actions.DebugActionToggle}
+  definition: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler`1.action
+  name: action
+  nameWithType: BaseDebugActionHandler<DebugActionToggle>.action
+  fullName: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler<BennyKok.RuntimeDebug.Actions.DebugActionToggle>.action
+  nameWithType.vb: BaseDebugActionHandler(Of DebugActionToggle).action
+  fullName.vb: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler(Of BennyKok.RuntimeDebug.Actions.DebugActionToggle).action
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler`1
+  commentId: T:BennyKok.RuntimeDebug.Components.BaseDebugActionHandler`1
+  name: BaseDebugActionHandler<T>
+  nameWithType: BaseDebugActionHandler<T>
+  fullName: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler<T>
+  nameWithType.vb: BaseDebugActionHandler(Of T)
+  fullName.vb: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler(Of T)
+  name.vb: BaseDebugActionHandler(Of T)
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler`1
+    name: BaseDebugActionHandler
+    nameWithType: BaseDebugActionHandler
+    fullName: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler`1
+    name: BaseDebugActionHandler
+    nameWithType: BaseDebugActionHandler
+    fullName: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler`1.action
+  commentId: F:BennyKok.RuntimeDebug.Components.BaseDebugActionHandler`1.action
+  name: action
+  nameWithType: BaseDebugActionHandler<T>.action
+  fullName: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler<T>.action
+  nameWithType.vb: BaseDebugActionHandler(Of T).action
+  fullName.vb: BennyKok.RuntimeDebug.Components.BaseDebugActionHandler(Of T).action

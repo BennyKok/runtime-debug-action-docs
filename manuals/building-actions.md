@@ -1,7 +1,7 @@
 # Building Actions
 
 ```csharp
-DebugAction.Button()
+DebugActionBuilder.Button()
     .WithName("Some Action")
     .WithAction(()=>{ });
 ```
@@ -10,6 +10,6 @@ DebugAction.Button()
 
 | Name | Description |
 | ---- | ---- |
-| Button | Oneshot action |
+| Button | OneShot action |
 | Toggle | On/Off state action |
 | Input | Params input action |

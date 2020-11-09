@@ -27,10 +27,11 @@ items:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Utils
   syntax:
-    content: 'public class CollapsedEventAttribute : PropertyAttribute'
+    content: 'public class CollapsedEventAttribute : PropertyAttribute, _Attribute'
     content.vb: >-
       Public Class CollapsedEventAttribute
           Inherits PropertyAttribute
+          Implements _Attribute
   inheritance:
   - System.Object
   - System.Attribute

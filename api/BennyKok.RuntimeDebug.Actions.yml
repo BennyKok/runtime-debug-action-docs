@@ -5,8 +5,9 @@ items:
   id: BennyKok.RuntimeDebug.Actions
   children:
   - BennyKok.RuntimeDebug.Actions.BaseAction
-  - BennyKok.RuntimeDebug.Actions.DebugAction
+  - BennyKok.RuntimeDebug.Actions.DebugActionBuilder
   - BennyKok.RuntimeDebug.Actions.DebugActionButton
+  - BennyKok.RuntimeDebug.Actions.DebugActionFlag
   - BennyKok.RuntimeDebug.Actions.DebugActionInput
   - BennyKok.RuntimeDebug.Actions.DebugActionToggle
   - BennyKok.RuntimeDebug.Actions.FluentAction`1
@@ -26,17 +27,23 @@ references:
   name: BaseAction
   nameWithType: BaseAction
   fullName: BennyKok.RuntimeDebug.Actions.BaseAction
-- uid: BennyKok.RuntimeDebug.Actions.DebugAction
-  commentId: T:BennyKok.RuntimeDebug.Actions.DebugAction
-  name: DebugAction
-  nameWithType: DebugAction
-  fullName: BennyKok.RuntimeDebug.Actions.DebugAction
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionBuilder
+  commentId: T:BennyKok.RuntimeDebug.Actions.DebugActionBuilder
+  name: DebugActionBuilder
+  nameWithType: DebugActionBuilder
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionBuilder
 - uid: BennyKok.RuntimeDebug.Actions.DebugActionButton
   commentId: T:BennyKok.RuntimeDebug.Actions.DebugActionButton
   parent: BennyKok.RuntimeDebug.Actions
   name: DebugActionButton
   nameWithType: DebugActionButton
   fullName: BennyKok.RuntimeDebug.Actions.DebugActionButton
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionFlag
+  commentId: T:BennyKok.RuntimeDebug.Actions.DebugActionFlag
+  parent: BennyKok.RuntimeDebug.Actions
+  name: DebugActionFlag
+  nameWithType: DebugActionFlag
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionFlag
 - uid: BennyKok.RuntimeDebug.Actions.DebugActionInput
   commentId: T:BennyKok.RuntimeDebug.Actions.DebugActionInput
   parent: BennyKok.RuntimeDebug.Actions

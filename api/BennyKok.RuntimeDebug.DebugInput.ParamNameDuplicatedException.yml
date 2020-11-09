@@ -25,11 +25,11 @@ items:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput
   syntax:
-    content: 'public class ParamNameDuplicatedException : Exception, ISerializable'
+    content: 'public class ParamNameDuplicatedException : Exception, _Exception, ISerializable'
     content.vb: >-
       Public Class ParamNameDuplicatedException
           Inherits Exception
-          Implements ISerializable
+          Implements _Exception, ISerializable
   inheritance:
   - System.Object
   - System.Exception

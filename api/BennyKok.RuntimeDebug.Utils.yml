@@ -59,7 +59,6 @@ references:
     fullName: )
 - uid: BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute
   commentId: T:BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute
-  parent: BennyKok.RuntimeDebug.Utils
   name: ReorderableDisplayAttribute
   nameWithType: ReorderableDisplayAttribute
   fullName: BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute
@@ -71,11 +70,13 @@ references:
   fullName: BennyKok.RuntimeDebug.Utils.ReorderableBase
 - uid: BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute
   commentId: T:BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute
+  parent: BennyKok.RuntimeDebug.Utils
   name: CollapsedEventAttribute
   nameWithType: CollapsedEventAttribute
   fullName: BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute
 - uid: BennyKok.RuntimeDebug.Utils.CommentAttribute
   commentId: T:BennyKok.RuntimeDebug.Utils.CommentAttribute
+  parent: BennyKok.RuntimeDebug.Utils
   name: CommentAttribute
   nameWithType: CommentAttribute
   fullName: BennyKok.RuntimeDebug.Utils.CommentAttribute

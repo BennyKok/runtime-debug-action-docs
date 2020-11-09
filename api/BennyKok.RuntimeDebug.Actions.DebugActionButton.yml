@@ -50,13 +50,14 @@ items:
   - BennyKok.RuntimeDebug.Actions.BaseAction.name
   - BennyKok.RuntimeDebug.Actions.BaseAction.id
   - BennyKok.RuntimeDebug.Actions.BaseAction.description
-  - BennyKok.RuntimeDebug.Actions.BaseAction.key
+  - BennyKok.RuntimeDebug.Actions.BaseAction.shortcutKey
   - BennyKok.RuntimeDebug.Actions.BaseAction.closePanelAfterTrigger
   - BennyKok.RuntimeDebug.Actions.BaseAction.actionColor
   - BennyKok.RuntimeDebug.Actions.BaseAction.unityAction
   - BennyKok.RuntimeDebug.Actions.BaseAction.action
   - BennyKok.RuntimeDebug.Actions.BaseAction.actionStatus
   - BennyKok.RuntimeDebug.Actions.BaseAction.ResolveAction
+  - BennyKok.RuntimeDebug.Actions.BaseAction.CanDisplayAction
   attributes:
   - type: System.SerializableAttribute
     ctor: System.SerializableAttribute.#ctor
@@ -478,12 +479,12 @@ references:
   name: description
   nameWithType: BaseAction.description
   fullName: BennyKok.RuntimeDebug.Actions.BaseAction.description
-- uid: BennyKok.RuntimeDebug.Actions.BaseAction.key
-  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.key
+- uid: BennyKok.RuntimeDebug.Actions.BaseAction.shortcutKey
+  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.shortcutKey
   parent: BennyKok.RuntimeDebug.Actions.BaseAction
-  name: key
-  nameWithType: BaseAction.key
-  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.key
+  name: shortcutKey
+  nameWithType: BaseAction.shortcutKey
+  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.shortcutKey
 - uid: BennyKok.RuntimeDebug.Actions.BaseAction.closePanelAfterTrigger
   commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.closePanelAfterTrigger
   parent: BennyKok.RuntimeDebug.Actions.BaseAction
@@ -536,6 +537,34 @@ references:
     name: ResolveAction
     nameWithType: BaseAction.ResolveAction
     fullName: BennyKok.RuntimeDebug.Actions.BaseAction.ResolveAction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Actions.BaseAction.CanDisplayAction
+  commentId: M:BennyKok.RuntimeDebug.Actions.BaseAction.CanDisplayAction
+  parent: BennyKok.RuntimeDebug.Actions.BaseAction
+  name: CanDisplayAction()
+  nameWithType: BaseAction.CanDisplayAction()
+  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.CanDisplayAction()
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Actions.BaseAction.CanDisplayAction
+    name: CanDisplayAction
+    nameWithType: BaseAction.CanDisplayAction
+    fullName: BennyKok.RuntimeDebug.Actions.BaseAction.CanDisplayAction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Actions.BaseAction.CanDisplayAction
+    name: CanDisplayAction
+    nameWithType: BaseAction.CanDisplayAction
+    fullName: BennyKok.RuntimeDebug.Actions.BaseAction.CanDisplayAction
   - name: (
     nameWithType: (
     fullName: (

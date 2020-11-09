@@ -26,10 +26,11 @@ items:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Utils
   syntax:
-    content: 'public class CommentAttribute : PropertyAttribute'
+    content: 'public class CommentAttribute : PropertyAttribute, _Attribute'
     content.vb: >-
       Public Class CommentAttribute
           Inherits PropertyAttribute
+          Implements _Attribute
   inheritance:
   - System.Object
   - System.Attribute
