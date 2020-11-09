@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class DebugAction
+    <title>Class BaseDebugActionHandler&lt;T&gt;
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class DebugAction
+    <meta name="title" content="Class BaseDebugActionHandler&lt;T&gt;
    ">
     <meta name="generator" content="docfx 2.56.4.0">
     
@@ -61,38 +61,59 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.Actions.DebugAction">
+            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.Components.BaseDebugActionHandler`1">
   
   
-  <h1 id="BennyKok_RuntimeDebug_Actions_DebugAction" data-uid="BennyKok.RuntimeDebug.Actions.DebugAction" class="text-break">Class DebugAction
+  <h1 id="BennyKok_RuntimeDebug_Components_BaseDebugActionHandler_1" data-uid="BennyKok.RuntimeDebug.Components.BaseDebugActionHandler`1" class="text-break">Class BaseDebugActionHandler&lt;T&gt;
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">DebugAction</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">BaseDebugActionHandler&lt;T&gt;</span></div>
+      <div class="level6"><a class="xref" href="BennyKok.RuntimeDebug.Components.DebugActionButtonHandler.html">DebugActionButtonHandler</a></div>
+      <div class="level6"><a class="xref" href="BennyKok.RuntimeDebug.Components.DebugActionFlagHandler.html">DebugActionFlagHandler</a></div>
+      <div class="level6"><a class="xref" href="BennyKok.RuntimeDebug.Components.DebugActionInputHandler.html">DebugActionInputHandler</a></div>
+      <div class="level6"><a class="xref" href="BennyKok.RuntimeDebug.Components.DebugActionToggleHandler.html">DebugActionToggleHandler</a></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Actions.html">BennyKok.RuntimeDebug.Actions</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Components.html">BennyKok.RuntimeDebug.Components</a></h6>
   <h6><strong>Assembly</strong>: com.bennykok.runtime-debug-action.dll</h6>
-  <h5 id="BennyKok_RuntimeDebug_Actions_DebugAction_syntax">Syntax</h5>
+  <h5 id="BennyKok_RuntimeDebug_Components_BaseDebugActionHandler_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class DebugAction</code></pre>
+    <pre><code class="lang-csharp hljs">public class BaseDebugActionHandler&lt;T&gt; : MonoBehaviour where T : BaseAction</code></pre>
   </div>
-  <h3 id="methods">Methods
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
   </h3>
   
   
-  <a id="BennyKok_RuntimeDebug_Actions_DebugAction_Button_" data-uid="BennyKok.RuntimeDebug.Actions.DebugAction.Button*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Actions_DebugAction_Button" data-uid="BennyKok.RuntimeDebug.Actions.DebugAction.Button">Button()</h4>
-  <div class="markdown level1 summary"><p>Create a new <a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionButton.html">DebugActionButton</a> instance</p>
-</div>
+  <h4 id="BennyKok_RuntimeDebug_Components_BaseDebugActionHandler_1_action" data-uid="BennyKok.RuntimeDebug.Components.BaseDebugActionHandler`1.action">action</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DebugActionButton Button()</code></pre>
+    <pre><code class="lang-csharp hljs">public T action</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -102,63 +123,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionButton.html">DebugActionButton</a></td>
-        <td><p>A new <a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionButton.html">DebugActionButton</a> instance</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="BennyKok_RuntimeDebug_Actions_DebugAction_Input_" data-uid="BennyKok.RuntimeDebug.Actions.DebugAction.Input*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Actions_DebugAction_Input" data-uid="BennyKok.RuntimeDebug.Actions.DebugAction.Input">Input()</h4>
-  <div class="markdown level1 summary"><p>Create a new <a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionInput.html">DebugActionInput</a> instance</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DebugActionInput Input()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionInput.html">DebugActionInput</a></td>
-        <td><p>A new <a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionInput.html">DebugActionInput</a> instance</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="BennyKok_RuntimeDebug_Actions_DebugAction_Toggle_" data-uid="BennyKok.RuntimeDebug.Actions.DebugAction.Toggle*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Actions_DebugAction_Toggle" data-uid="BennyKok.RuntimeDebug.Actions.DebugAction.Toggle">Toggle()</h4>
-  <div class="markdown level1 summary"><p>Create a new <a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionToggle.html">DebugActionToggle</a> instance</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DebugActionToggle Toggle()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionToggle.html">DebugActionToggle</a></td>
-        <td><p>A aew <a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionToggle.html">DebugActionToggle</a> instance</p>
-</td>
+        <td><span class="xref">T</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

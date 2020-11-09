@@ -114,7 +114,7 @@
       <a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseAction.html#BennyKok_RuntimeDebug_Actions_BaseAction_description">BaseAction.description</a>
     </div>
     <div>
-      <a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseAction.html#BennyKok_RuntimeDebug_Actions_BaseAction_key">BaseAction.key</a>
+      <a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseAction.html#BennyKok_RuntimeDebug_Actions_BaseAction_shortcutKey">BaseAction.shortcutKey</a>
     </div>
     <div>
       <a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseAction.html#BennyKok_RuntimeDebug_Actions_BaseAction_closePanelAfterTrigger">BaseAction.closePanelAfterTrigger</a>
@@ -130,6 +130,9 @@
     </div>
     <div>
       <a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseAction.html#BennyKok_RuntimeDebug_Actions_BaseAction_actionStatus">BaseAction.actionStatus</a>
+    </div>
+    <div>
+      <a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseAction.html#BennyKok_RuntimeDebug_Actions_BaseAction_CanDisplayAction">BaseAction.CanDisplayAction()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Actions.html">BennyKok.RuntimeDebug.Actions</a></h6>
@@ -220,7 +223,8 @@ public class DebugActionToggle : FluentAction&lt;DebugActionToggle&gt;, ISeriali
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool isOn</code></pre>
+    <pre><code class="lang-csharp hljs">[Title(&quot;Toggle&quot;, 0)]
+public bool isOn</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -239,12 +243,13 @@ public class DebugActionToggle : FluentAction&lt;DebugActionToggle&gt;, ISeriali
   </table>
   
   
-  <h4 id="BennyKok_RuntimeDebug_Actions_DebugActionToggle_unityActionSwitch" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionToggle.unityActionSwitch">unityActionSwitch</h4>
+  <h4 id="BennyKok_RuntimeDebug_Actions_DebugActionToggle_unityActionOff" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionToggle.unityActionOff">unityActionOff</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UnityEvent unityActionSwitch</code></pre>
+    <pre><code class="lang-csharp hljs">[CollapsedEvent(null)]
+public UnityEvent unityActionOff</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -263,6 +268,48 @@ public class DebugActionToggle : FluentAction&lt;DebugActionToggle&gt;, ISeriali
   </table>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Actions_DebugActionToggle_GetDisplayStatus_" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionToggle.GetDisplayStatus*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Actions_DebugActionToggle_GetDisplayStatus_System_Boolean_" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionToggle.GetDisplayStatus(System.Boolean)">GetDisplayStatus(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string GetDisplayStatus(bool isOn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isOn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="BennyKok_RuntimeDebug_Actions_DebugActionToggle_OnAfterDeserialize_" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnAfterDeserialize*"></a>
@@ -303,7 +350,7 @@ public class DebugActionToggle : FluentAction&lt;DebugActionToggle&gt;, ISeriali
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DebugActionToggle WithActionGet(Func&lt;bool&gt; actionGet)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual DebugActionToggle WithActionGet(Func&lt;bool&gt; actionGet)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -345,7 +392,7 @@ public class DebugActionToggle : FluentAction&lt;DebugActionToggle&gt;, ISeriali
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DebugActionToggle WithActionSet(Action&lt;bool&gt; actionSet)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual DebugActionToggle WithActionSet(Action&lt;bool&gt; actionSet)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

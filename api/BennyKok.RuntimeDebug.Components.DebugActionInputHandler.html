@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class DebugFlagList
+    <title>Class DebugActionInputHandler
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class DebugFlagList
+    <meta name="title" content="Class DebugActionInputHandler
    ">
     <meta name="generator" content="docfx 2.56.4.0">
     
@@ -61,41 +61,35 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.Data.DebugFlagList">
+            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.Components.DebugActionInputHandler">
   
   
-  <h1 id="BennyKok_RuntimeDebug_Data_DebugFlagList" data-uid="BennyKok.RuntimeDebug.Data.DebugFlagList" class="text-break">Class DebugFlagList
+  <h1 id="BennyKok_RuntimeDebug_Components_DebugActionInputHandler" data-uid="BennyKok.RuntimeDebug.Components.DebugActionInputHandler" class="text-break">Class DebugActionInputHandler
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><a class="xref" href="BennyKok.RuntimeDebug.Utils.ReorderableBase.html">ReorderableBase</a></div>
-    <div class="level2"><a class="xref" href="BennyKok.RuntimeDebug.Utils.ReorderableList-1.html">ReorderableList</a>&lt;<a class="xref" href="BennyKok.RuntimeDebug.Data.DebugFlag.html">DebugFlag</a>&gt;</div>
-    <div class="level3"><span class="xref">DebugFlagList</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><a class="xref" href="BennyKok.RuntimeDebug.Components.BaseDebugActionHandler-1.html">BaseDebugActionHandler</a>&lt;<a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionInput.html">DebugActionInput</a>&gt;</div>
+    <div class="level6"><span class="xref">DebugActionInputHandler</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="BennyKok.RuntimeDebug.Utils.ReorderableList-1.html#BennyKok_RuntimeDebug_Utils_ReorderableList_1_values">ReorderableList&lt;DebugFlag&gt;.values</a>
-    </div>
-    <div>
-      <a class="xref" href="BennyKok.RuntimeDebug.Utils.ReorderableList-1.html#BennyKok_RuntimeDebug_Utils_ReorderableList_1_Item_System_Int32_">ReorderableList&lt;DebugFlag&gt;.Item[Int32]</a>
-    </div>
-    <div>
-      <a class="xref" href="BennyKok.RuntimeDebug.Utils.ReorderableList-1.html#BennyKok_RuntimeDebug_Utils_ReorderableList_1_Count">ReorderableList&lt;DebugFlag&gt;.Count</a>
-    </div>
-    <div>
-      <a class="xref" href="BennyKok.RuntimeDebug.Utils.ReorderableList-1.html#BennyKok_RuntimeDebug_Utils_ReorderableList_1_GetEnumerator">ReorderableList&lt;DebugFlag&gt;.GetEnumerator()</a>
+      <a class="xref" href="BennyKok.RuntimeDebug.Components.BaseDebugActionHandler-1.html#BennyKok_RuntimeDebug_Components_BaseDebugActionHandler_1_action">BaseDebugActionHandler&lt;DebugActionInput&gt;.action</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Data.html">BennyKok.RuntimeDebug.Data</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Components.html">BennyKok.RuntimeDebug.Components</a></h6>
   <h6><strong>Assembly</strong>: com.bennykok.runtime-debug-action.dll</h6>
-  <h5 id="BennyKok_RuntimeDebug_Data_DebugFlagList_syntax">Syntax</h5>
+  <h5 id="BennyKok_RuntimeDebug_Components_DebugActionInputHandler_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Serializable]
-public class DebugFlagList : ReorderableList&lt;DebugFlag&gt;, IEnumerable&lt;DebugFlag&gt;, IEnumerable</code></pre>
+    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;Runtime Debug Action/Actions/Debug Action Input&quot;)]
+public class DebugActionInputHandler : BaseDebugActionHandler&lt;DebugActionInput&gt;</code></pre>
   </div>
 </article>
           </div>

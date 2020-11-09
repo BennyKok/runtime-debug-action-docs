@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class CollapsedEventAttribute
+    <title>Class SizeMatcher
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class CollapsedEventAttribute
+    <meta name="title" content="Class SizeMatcher
    ">
     <meta name="generator" content="docfx 2.56.4.0">
     
@@ -61,65 +61,41 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute">
+            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.Components.UI.SizeMatcher">
   
   
-  <h1 id="BennyKok_RuntimeDebug_Utils_CollapsedEventAttribute" data-uid="BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute" class="text-break">Class CollapsedEventAttribute
+  <h1 id="BennyKok_RuntimeDebug_Components_UI_SizeMatcher" data-uid="BennyKok.RuntimeDebug.Components.UI.SizeMatcher" class="text-break">Class SizeMatcher
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Helper component to match the RectTransfrom's size to the reference RectTransform</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">System.Attribute</span></div>
-    <div class="level2"><span class="xref">UnityEngine.PropertyAttribute</span></div>
-    <div class="level3"><span class="xref">CollapsedEventAttribute</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">UnityEngine.EventSystems.UIBehaviour</span></div>
+    <div class="level6"><span class="xref">SizeMatcher</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Utils.html">BennyKok.RuntimeDebug.Utils</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Components.UI.html">BennyKok.RuntimeDebug.Components.UI</a></h6>
   <h6><strong>Assembly</strong>: com.bennykok.runtime-debug-action.dll</h6>
-  <h5 id="BennyKok_RuntimeDebug_Utils_CollapsedEventAttribute_syntax">Syntax</h5>
+  <h5 id="BennyKok_RuntimeDebug_Components_UI_SizeMatcher_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CollapsedEventAttribute : PropertyAttribute, _Attribute</code></pre>
+    <pre><code class="lang-csharp hljs">[ExecuteAlways]
+public class SizeMatcher : UIBehaviour, ILayoutController</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  
-  
-  <a id="BennyKok_RuntimeDebug_Utils_CollapsedEventAttribute__ctor_" data-uid="BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute.#ctor*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Utils_CollapsedEventAttribute__ctor_System_String_" data-uid="BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute.#ctor(System.String)">CollapsedEventAttribute(String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CollapsedEventAttribute(string tooltip = null)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">tooltip</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="fields">Fields
   </h3>
   
   
-  <h4 id="BennyKok_RuntimeDebug_Utils_CollapsedEventAttribute_tooltip" data-uid="BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute.tooltip">tooltip</h4>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_SizeMatcher_reference" data-uid="BennyKok.RuntimeDebug.Components.UI.SizeMatcher.reference">reference</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string tooltip</code></pre>
+    <pre><code class="lang-csharp hljs">public RectTransform reference</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -131,19 +107,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">UnityEngine.RectTransform</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BennyKok_RuntimeDebug_Utils_CollapsedEventAttribute_visible" data-uid="BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute.visible">visible</h4>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_SizeMatcher_target" data-uid="BennyKok.RuntimeDebug.Components.UI.SizeMatcher.target">target</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool visible</code></pre>
+    <pre><code class="lang-csharp hljs">public RectTransform target</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -155,11 +131,59 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">UnityEngine.RectTransform</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_SizeMatcher_OnDisable_" data-uid="BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnDisable*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_SizeMatcher_OnDisable" data-uid="BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnDisable">OnDisable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDisable()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">UnityEngine.EventSystems.UIBehaviour.OnDisable()</span></div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_SizeMatcher_OnEnable_" data-uid="BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnEnable*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_SizeMatcher_OnEnable" data-uid="BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnEnable">OnEnable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnEnable()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">UnityEngine.EventSystems.UIBehaviour.OnEnable()</span></div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_SizeMatcher_OnRectTransformDimensionsChange_" data-uid="BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnRectTransformDimensionsChange*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_SizeMatcher_OnRectTransformDimensionsChange" data-uid="BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnRectTransformDimensionsChange">OnRectTransformDimensionsChange()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnRectTransformDimensionsChange()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">UnityEngine.EventSystems.UIBehaviour.OnRectTransformDimensionsChange()</span></div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_SizeMatcher_SetDirty_" data-uid="BennyKok.RuntimeDebug.Components.UI.SizeMatcher.SetDirty*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_SizeMatcher_SetDirty" data-uid="BennyKok.RuntimeDebug.Components.UI.SizeMatcher.SetDirty">SetDirty()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetDirty()</code></pre>
+  </div>
 </article>
           </div>
           

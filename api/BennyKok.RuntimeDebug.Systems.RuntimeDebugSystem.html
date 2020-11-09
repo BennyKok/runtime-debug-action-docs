@@ -66,7 +66,7 @@
   
   <h1 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem" class="text-break">Class RuntimeDebugSystem
   </h1>
-  <div class="markdown level0 summary"><p>The singleton system class to handle the lifecycle of all runtiem debug actions, loading of the settings ScriptableObject and also the communication between the system and UIHandler</p>
+  <div class="markdown level0 summary"><p>The singleton system class to handle the lifecycle of all runtime debug actions, loading of the settings ScriptableObject and also the communication between the system and UIHandler</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -121,12 +121,37 @@ public List&lt;BaseAction&gt; allActions</code></pre>
   </table>
   
   
+  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_allFlags" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.allFlags">allFlags</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public List&lt;DebugActionFlag&gt; allFlags</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionFlag.html">DebugActionFlag</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_PREF_KEY_THEME" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.PREF_KEY_THEME">PREF_KEY_THEME</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string PREF_KEY_THEME</code></pre>
+    <pre><code class="lang-csharp hljs">public const string PREF_KEY_THEME = &quot;RDA_PREF_THEME&quot;</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -197,6 +222,31 @@ public Settings settings</code></pre>
   </h3>
   
   
+  <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_InputLayer_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.InputLayer*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_InputLayer" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.InputLayer">InputLayer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InputLayer InputLayer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Data.InputLayer.html">InputLayer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_Settings_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Settings*"></a>
   <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_Settings" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Settings">Settings</h4>
   <div class="markdown level1 summary"></div>
@@ -261,14 +311,14 @@ public Settings settings</code></pre>
   <div><span class="xref">BennyKok.RuntimeDebug.Utils.Singleton&lt;BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem&gt;.Awake()</span></div>
   
   
-  <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_HasFlag_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.HasFlag*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_HasFlag_System_String_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.HasFlag(System.String)">HasFlag(String)</h4>
+  <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_GetFlagValue_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.GetFlagValue*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_GetFlagValue_System_String_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.GetFlagValue(System.String)">GetFlagValue(String)</h4>
   <div class="markdown level1 summary"><p>Check if there's any flags turned on</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool HasFlag(string name)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int GetFlagValue(string key)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -282,8 +332,8 @@ public Settings settings</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>The name of the flag</p>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the flag</p>
 </td>
       </tr>
     </tbody>
@@ -298,7 +348,7 @@ public Settings settings</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">System.Int32</span></td>
         <td><p>If the flag is on</p>
 </td>
       </tr>
@@ -370,6 +420,33 @@ public Settings settings</code></pre>
   </table>
   
   
+  <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_RegisterFlags_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterFlags*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_RegisterFlags_BennyKok_RuntimeDebug_Actions_DebugActionFlag___" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterFlags(BennyKok.RuntimeDebug.Actions.DebugActionFlag[])">RegisterFlags(DebugActionFlag[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterFlags(params DebugActionFlag[] flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionFlag.html">DebugActionFlag</a>[]</td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_ReleaseInputBlock_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.ReleaseInputBlock*"></a>
   <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_ReleaseInputBlock" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.ReleaseInputBlock">ReleaseInputBlock()</h4>
   <div class="markdown level1 summary"></div>
@@ -388,6 +465,35 @@ public Settings settings</code></pre>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void RequsetInputBlock()</code></pre>
   </div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_SetCustomInputLayer_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SetCustomInputLayer*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_SetCustomInputLayer_BennyKok_RuntimeDebug_Data_InputLayer_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SetCustomInputLayer(BennyKok.RuntimeDebug.Data.InputLayer)">SetCustomInputLayer(InputLayer)</h4>
+  <div class="markdown level1 summary"><p>Set a custom input layer which handles the core part of the keyboard input of the debug system</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetCustomInputLayer(InputLayer inputLayer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Data.InputLayer.html">InputLayer</a></td>
+        <td><span class="parametername">inputLayer</span></td>
+        <td><p>Your custom input layer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_SetTheme_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SetTheme*"></a>
@@ -425,70 +531,6 @@ public Settings settings</code></pre>
   </table>
   
   
-  <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_UnregisterActionById_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActionById*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_UnregisterActionById_System_String_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActionById(System.String)">UnregisterActionById(String)</h4>
-  <div class="markdown level1 summary"><p>Unregister any actions that has the same id</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void UnregisterActionById(string id)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">id</span></td>
-        <td><p>The id of the actions to unregister</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_UnregisterActionByPath_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActionByPath*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_UnregisterActionByPath_System_String_System_Boolean_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActionByPath(System.String,System.Boolean)">UnregisterActionByPath(String, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Unregister any actions that is in the path</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void UnregisterActionByPath(string path, bool ignoreTag = false)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">path</span></td>
-        <td><p>The path to unregister the actions</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">ignoreTag</span></td>
-        <td><p>Should we ignore the tag # and remove all the actions under this path</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_UnregisterActions_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActions*"></a>
   <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_UnregisterActions_BennyKok_RuntimeDebug_Actions_BaseAction___" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActions(BennyKok.RuntimeDebug.Actions.BaseAction[])">UnregisterActions(BaseAction[])</h4>
   <div class="markdown level1 summary"><p>Unregister specific actions from the system and menu</p>
@@ -512,6 +554,70 @@ public Settings settings</code></pre>
         <td><a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseAction.html">BaseAction</a>[]</td>
         <td><span class="parametername">actions</span></td>
         <td><p>The actions to remove</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_UnregisterActionsById_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActionsById*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_UnregisterActionsById_System_String_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActionsById(System.String)">UnregisterActionsById(String)</h4>
+  <div class="markdown level1 summary"><p>Unregister any actions that has the same id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnregisterActionsById(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The id of the actions to unregister</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_UnregisterActionsByPath_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActionsByPath*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_UnregisterActionsByPath_System_String_System_Boolean_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActionsByPath(System.String,System.Boolean)">UnregisterActionsByPath(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Unregister any actions that is in the path</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnregisterActionsByPath(string path, bool ignoreTag = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path to unregister the actions</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ignoreTag</span></td>
+        <td><p>Should we ignore the tag # and remove all the actions under this path</p>
 </td>
       </tr>
     </tbody>

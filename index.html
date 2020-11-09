@@ -85,7 +85,7 @@
 </ul>
 <h2 id="fluent-api">Fluent API</h2>
 <p>The <a href="api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html"><code>RuntimeDebugSystem</code></a> class provide the entry point for registering your custom action, with a Fluent API design, it's a joy to add custom actions.</p>
-<pre><code class="lang-csharp">DebugAction.Button()
+<pre><code class="lang-csharp">DebugActionBuilder.Button()
     .WithName($&quot;Set {theme.themeName} Theme&quot;)
     .WithAction(() =&gt;
     {

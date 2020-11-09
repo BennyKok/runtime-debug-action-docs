@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class FluentAction&lt;T&gt;
+    <title>Class DebugActionFlag
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class FluentAction&lt;T&gt;
+    <meta name="title" content="Class DebugActionFlag
    ">
     <meta name="generator" content="docfx 2.56.4.0">
     
@@ -61,10 +61,10 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.Actions.FluentAction`1">
+            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionFlag">
   
   
-  <h1 id="BennyKok_RuntimeDebug_Actions_FluentAction_1" data-uid="BennyKok.RuntimeDebug.Actions.FluentAction`1" class="text-break">Class FluentAction&lt;T&gt;
+  <h1 id="BennyKok_RuntimeDebug_Actions_DebugActionFlag" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionFlag" class="text-break">Class DebugActionFlag
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
@@ -72,14 +72,32 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseAction.html">BaseAction</a></div>
-    <div class="level2"><span class="xref">FluentAction&lt;T&gt;</span></div>
-      <div class="level3"><a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionButton.html">DebugActionButton</a></div>
-      <div class="level3"><a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionFlag.html">DebugActionFlag</a></div>
-      <div class="level3"><a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionInput.html">DebugActionInput</a></div>
-      <div class="level3"><a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionToggle.html">DebugActionToggle</a></div>
+    <div class="level2"><a class="xref" href="BennyKok.RuntimeDebug.Actions.FluentAction-1.html">FluentAction</a>&lt;<a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionFlag.html">DebugActionFlag</a>&gt;</div>
+    <div class="level3"><span class="xref">DebugActionFlag</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="BennyKok.RuntimeDebug.Actions.FluentAction-1.html#BennyKok_RuntimeDebug_Actions_FluentAction_1_WithId_System_String_">FluentAction&lt;DebugActionFlag&gt;.WithId(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="BennyKok.RuntimeDebug.Actions.FluentAction-1.html#BennyKok_RuntimeDebug_Actions_FluentAction_1_WithAction_System_Action_">FluentAction&lt;DebugActionFlag&gt;.WithAction(Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="BennyKok.RuntimeDebug.Actions.FluentAction-1.html#BennyKok_RuntimeDebug_Actions_FluentAction_1_WithDescription_System_String_">FluentAction&lt;DebugActionFlag&gt;.WithDescription(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="BennyKok.RuntimeDebug.Actions.FluentAction-1.html#BennyKok_RuntimeDebug_Actions_FluentAction_1_WithPath_System_String_">FluentAction&lt;DebugActionFlag&gt;.WithPath(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="BennyKok.RuntimeDebug.Actions.FluentAction-1.html#BennyKok_RuntimeDebug_Actions_FluentAction_1_WithShortcutKey_System_String_">FluentAction&lt;DebugActionFlag&gt;.WithShortcutKey(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="BennyKok.RuntimeDebug.Actions.FluentAction-1.html#BennyKok_RuntimeDebug_Actions_FluentAction_1_WithActionColor_UnityEngine_Color_">FluentAction&lt;DebugActionFlag&gt;.WithActionColor(Color)</a>
+    </div>
+    <div>
+      <a class="xref" href="BennyKok.RuntimeDebug.Actions.FluentAction-1.html#BennyKok_RuntimeDebug_Actions_FluentAction_1_WithClosePanelAfterTrigger_System_Boolean_">FluentAction&lt;DebugActionFlag&gt;.WithClosePanelAfterTrigger(Boolean)</a>
+    </div>
     <div>
       <a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseAction.html#BennyKok_RuntimeDebug_Actions_BaseAction_path">BaseAction.path</a>
     </div>
@@ -119,22 +137,155 @@
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Actions.html">BennyKok.RuntimeDebug.Actions</a></h6>
   <h6><strong>Assembly</strong>: com.bennykok.runtime-debug-action.dll</h6>
-  <h5 id="BennyKok_RuntimeDebug_Actions_FluentAction_1_syntax">Syntax</h5>
+  <h5 id="BennyKok_RuntimeDebug_Actions_DebugActionFlag_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
-public class FluentAction&lt;T&gt; : BaseAction where T : FluentAction&lt;T&gt;</code></pre>
+public class DebugActionFlag : FluentAction&lt;DebugActionFlag&gt;, ISerializationCallbackReceiver</code></pre>
   </div>
-  <h5 class="typeParameters">Type Parameters</h5>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Actions_DebugActionFlag_BOOLEAN_VALUES" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionFlag.BOOLEAN_VALUES">BOOLEAN_VALUES</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string[] BOOLEAN_VALUES</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Name</th>
+        <th>Type</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Actions_DebugActionFlag_flagKey" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionFlag.flagKey">flagKey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string flagKey</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Actions_DebugActionFlag_flagValue" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionFlag.flagValue">flagValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int flagValue</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Actions_DebugActionFlag_flagValues" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionFlag.flagValues">flagValues</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] flagValues</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Actions_DebugActionFlag_isPersistence" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionFlag.isPersistence">isPersistence</h4>
+  <div class="markdown level1 summary"><p>If true, the key will be saved to PlayerPrefs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Title(&quot;Flag&quot;, 2)]
+public bool isPersistence</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Actions_DebugActionFlag_onFlagChange" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionFlag.onFlagChange">onFlagChange</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;DebugActionFlag&gt; onFlagChange</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionFlag.html">DebugActionFlag</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -143,13 +294,13 @@ public class FluentAction&lt;T&gt; : BaseAction where T : FluentAction&lt;T&gt;<
   </h3>
   
   
-  <a id="BennyKok_RuntimeDebug_Actions_FluentAction_1_WithAction_" data-uid="BennyKok.RuntimeDebug.Actions.FluentAction`1.WithAction*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Actions_FluentAction_1_WithAction_System_Action_" data-uid="BennyKok.RuntimeDebug.Actions.FluentAction`1.WithAction(System.Action)">WithAction(Action)</h4>
+  <a id="BennyKok_RuntimeDebug_Actions_DebugActionFlag_GetFlagKeyWithPrefix_" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionFlag.GetFlagKeyWithPrefix*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Actions_DebugActionFlag_GetFlagKeyWithPrefix_System_String_" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionFlag.GetFlagKeyWithPrefix(System.String)">GetFlagKeyWithPrefix(String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual T WithAction(Action action)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string GetFlagKeyWithPrefix(string key)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -162,8 +313,8 @@ public class FluentAction&lt;T&gt; : BaseAction where T : FluentAction&lt;T&gt;<
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Action</span></td>
-        <td><span class="parametername">action</span></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -178,20 +329,40 @@ public class FluentAction&lt;T&gt; : BaseAction where T : FluentAction&lt;T&gt;<
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="BennyKok_RuntimeDebug_Actions_FluentAction_1_WithActionColor_" data-uid="BennyKok.RuntimeDebug.Actions.FluentAction`1.WithActionColor*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Actions_FluentAction_1_WithActionColor_UnityEngine_Color_" data-uid="BennyKok.RuntimeDebug.Actions.FluentAction`1.WithActionColor(UnityEngine.Color)">WithActionColor(Color)</h4>
+  <a id="BennyKok_RuntimeDebug_Actions_DebugActionFlag_OnAfterDeserialize_" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionFlag.OnAfterDeserialize*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Actions_DebugActionFlag_OnAfterDeserialize" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionFlag.OnAfterDeserialize">OnAfterDeserialize()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual T WithActionColor(Color actionColor)</code></pre>
+    <pre><code class="lang-csharp hljs">public void OnAfterDeserialize()</code></pre>
+  </div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Actions_DebugActionFlag_OnBeforeSerialize_" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionFlag.OnBeforeSerialize*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Actions_DebugActionFlag_OnBeforeSerialize" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionFlag.OnBeforeSerialize">OnBeforeSerialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnBeforeSerialize()</code></pre>
+  </div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Actions_DebugActionFlag_WithFlag_" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionFlag.WithFlag*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Actions_DebugActionFlag_WithFlag_System_String_System_Boolean_System_Boolean_" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionFlag.WithFlag(System.String,System.Boolean,System.Boolean)">WithFlag(String, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DebugActionFlag WithFlag(string flagKey, bool persistence = true, bool defaultValue = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -204,50 +375,18 @@ public class FluentAction&lt;T&gt; : BaseAction where T : FluentAction&lt;T&gt;<
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UnityEngine.Color</span></td>
-        <td><span class="parametername">actionColor</span></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">flagKey</span></td>
         <td></td>
       </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="BennyKok_RuntimeDebug_Actions_FluentAction_1_WithClosePanelAfterTrigger_" data-uid="BennyKok.RuntimeDebug.Actions.FluentAction`1.WithClosePanelAfterTrigger*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Actions_FluentAction_1_WithClosePanelAfterTrigger_System_Boolean_" data-uid="BennyKok.RuntimeDebug.Actions.FluentAction`1.WithClosePanelAfterTrigger(System.Boolean)">WithClosePanelAfterTrigger(Boolean)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual T WithClosePanelAfterTrigger(bool closePanelAfterTrigger = true)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">closePanelAfterTrigger</span></td>
+        <td><span class="parametername">persistence</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">defaultValue</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -262,20 +401,20 @@ public class FluentAction&lt;T&gt; : BaseAction where T : FluentAction&lt;T&gt;<
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionFlag.html">DebugActionFlag</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="BennyKok_RuntimeDebug_Actions_FluentAction_1_WithDescription_" data-uid="BennyKok.RuntimeDebug.Actions.FluentAction`1.WithDescription*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Actions_FluentAction_1_WithDescription_System_String_" data-uid="BennyKok.RuntimeDebug.Actions.FluentAction`1.WithDescription(System.String)">WithDescription(String)</h4>
+  <a id="BennyKok_RuntimeDebug_Actions_DebugActionFlag_WithFlag_" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionFlag.WithFlag*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Actions_DebugActionFlag_WithFlag_System_String_System_String___System_Boolean_System_Int32_" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionFlag.WithFlag(System.String,System.String[],System.Boolean,System.Int32)">WithFlag(String, String[], Boolean, Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual T WithDescription(string description)</code></pre>
+    <pre><code class="lang-csharp hljs">public DebugActionFlag WithFlag(string flagKey, string[] values, bool persistence = true, int defaultValue = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -289,7 +428,22 @@ public class FluentAction&lt;T&gt; : BaseAction where T : FluentAction&lt;T&gt;<
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">description</span></td>
+        <td><span class="parametername">flagKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">persistence</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">defaultValue</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -304,20 +458,20 @@ public class FluentAction&lt;T&gt; : BaseAction where T : FluentAction&lt;T&gt;<
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionFlag.html">DebugActionFlag</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="BennyKok_RuntimeDebug_Actions_FluentAction_1_WithId_" data-uid="BennyKok.RuntimeDebug.Actions.FluentAction`1.WithId*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Actions_FluentAction_1_WithId_System_String_" data-uid="BennyKok.RuntimeDebug.Actions.FluentAction`1.WithId(System.String)">WithId(String)</h4>
+  <a id="BennyKok_RuntimeDebug_Actions_DebugActionFlag_WithFlagListener_" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionFlag.WithFlagListener*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Actions_DebugActionFlag_WithFlagListener_System_Action_BennyKok_RuntimeDebug_Actions_DebugActionFlag__System_Boolean_" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionFlag.WithFlagListener(System.Action{BennyKok.RuntimeDebug.Actions.DebugActionFlag},System.Boolean)">WithFlagListener(Action&lt;DebugActionFlag&gt;, Boolean)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual T WithId(string id)</code></pre>
+    <pre><code class="lang-csharp hljs">public DebugActionFlag WithFlagListener(Action&lt;DebugActionFlag&gt; onFlagChange, bool invokeNow = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -330,8 +484,13 @@ public class FluentAction&lt;T&gt; : BaseAction where T : FluentAction&lt;T&gt;<
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">id</span></td>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionFlag.html">DebugActionFlag</a>&gt;</td>
+        <td><span class="parametername">onFlagChange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">invokeNow</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -346,20 +505,20 @@ public class FluentAction&lt;T&gt; : BaseAction where T : FluentAction&lt;T&gt;<
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionFlag.html">DebugActionFlag</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="BennyKok_RuntimeDebug_Actions_FluentAction_1_WithName_" data-uid="BennyKok.RuntimeDebug.Actions.FluentAction`1.WithName*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Actions_FluentAction_1_WithName_System_String_" data-uid="BennyKok.RuntimeDebug.Actions.FluentAction`1.WithName(System.String)">WithName(String)</h4>
+  <a id="BennyKok_RuntimeDebug_Actions_DebugActionFlag_WithName_" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionFlag.WithName*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Actions_DebugActionFlag_WithName_System_String_" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionFlag.WithName(System.String)">WithName(String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual T WithName(string name)</code></pre>
+    <pre><code class="lang-csharp hljs">public override DebugActionFlag WithName(string name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -388,20 +547,24 @@ public class FluentAction&lt;T&gt; : BaseAction where T : FluentAction&lt;T&gt;<
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionFlag.html">DebugActionFlag</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">BennyKok.RuntimeDebug.Actions.FluentAction&lt;BennyKok.RuntimeDebug.Actions.DebugActionFlag&gt;.WithName(System.String)</span></div>
+  <h3 id="operators">Operators
+  </h3>
   
   
-  <a id="BennyKok_RuntimeDebug_Actions_FluentAction_1_WithPath_" data-uid="BennyKok.RuntimeDebug.Actions.FluentAction`1.WithPath*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Actions_FluentAction_1_WithPath_System_String_" data-uid="BennyKok.RuntimeDebug.Actions.FluentAction`1.WithPath(System.String)">WithPath(String)</h4>
+  <a id="BennyKok_RuntimeDebug_Actions_DebugActionFlag_op_Implicit_" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionFlag.op_Implicit*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Actions_DebugActionFlag_op_Implicit_BennyKok_RuntimeDebug_Actions_DebugActionFlag__System_Int32" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionFlag.op_Implicit(BennyKok.RuntimeDebug.Actions.DebugActionFlag)~System.Int32">Implicit(DebugActionFlag to Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual T WithPath(string path)</code></pre>
+    <pre><code class="lang-csharp hljs">public static implicit operator int (DebugActionFlag flag)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -414,8 +577,8 @@ public class FluentAction&lt;T&gt; : BaseAction where T : FluentAction&lt;T&gt;<
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">path</span></td>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionFlag.html">DebugActionFlag</a></td>
+        <td><span class="parametername">flag</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -430,49 +593,7 @@ public class FluentAction&lt;T&gt; : BaseAction where T : FluentAction&lt;T&gt;<
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="BennyKok_RuntimeDebug_Actions_FluentAction_1_WithShortcutKey_" data-uid="BennyKok.RuntimeDebug.Actions.FluentAction`1.WithShortcutKey*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Actions_FluentAction_1_WithShortcutKey_System_String_" data-uid="BennyKok.RuntimeDebug.Actions.FluentAction`1.WithShortcutKey(System.String)">WithShortcutKey(String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual T WithShortcutKey(string keycode)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">keycode</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>

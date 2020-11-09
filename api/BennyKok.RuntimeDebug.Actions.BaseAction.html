@@ -198,7 +198,8 @@ public class BaseAction</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string description</code></pre>
+    <pre><code class="lang-csharp hljs">[Multiline]
+public string description</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -223,30 +224,6 @@ public class BaseAction</code></pre>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string id</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BennyKok_RuntimeDebug_Actions_BaseAction_key" data-uid="BennyKok.RuntimeDebug.Actions.BaseAction.key">key</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string key</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -294,7 +271,32 @@ public class BaseAction</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string path</code></pre>
+    <pre><code class="lang-csharp hljs">[Comment(&quot;Base Action Properties&quot;)]
+public string path</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Actions_BaseAction_shortcutKey" data-uid="BennyKok.RuntimeDebug.Actions.BaseAction.shortcutKey">shortcutKey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string shortcutKey</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -318,7 +320,10 @@ public class BaseAction</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UnityEvent unityAction</code></pre>
+    <pre><code class="lang-csharp hljs">[Space]
+[Comment(&quot;Action Event&quot;, order = 1)]
+[CollapsedEvent(null)]
+public UnityEvent unityAction</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -337,6 +342,31 @@ public class BaseAction</code></pre>
   </table>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Actions_BaseAction_CanDisplayAction_" data-uid="BennyKok.RuntimeDebug.Actions.BaseAction.CanDisplayAction*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Actions_BaseAction_CanDisplayAction" data-uid="BennyKok.RuntimeDebug.Actions.BaseAction.CanDisplayAction">CanDisplayAction()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CanDisplayAction()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="BennyKok_RuntimeDebug_Actions_BaseAction_ResolveAction_" data-uid="BennyKok.RuntimeDebug.Actions.BaseAction.ResolveAction*"></a>

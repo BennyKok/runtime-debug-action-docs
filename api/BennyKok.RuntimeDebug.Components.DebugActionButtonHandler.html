@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class DebugFlag
+    <title>Class DebugActionButtonHandler
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class DebugFlag
+    <meta name="title" content="Class DebugActionButtonHandler
    ">
     <meta name="generator" content="docfx 2.56.4.0">
     
@@ -61,113 +61,36 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.Data.DebugFlag">
+            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.Components.DebugActionButtonHandler">
   
   
-  <h1 id="BennyKok_RuntimeDebug_Data_DebugFlag" data-uid="BennyKok.RuntimeDebug.Data.DebugFlag" class="text-break">Class DebugFlag
+  <h1 id="BennyKok_RuntimeDebug_Components_DebugActionButtonHandler" data-uid="BennyKok.RuntimeDebug.Components.DebugActionButtonHandler" class="text-break">Class DebugActionButtonHandler
   </h1>
-  <div class="markdown level0 summary"><p>Data class for a debug flag</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">DebugFlag</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><a class="xref" href="BennyKok.RuntimeDebug.Components.BaseDebugActionHandler-1.html">BaseDebugActionHandler</a>&lt;<a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionButton.html">DebugActionButton</a>&gt;</div>
+    <div class="level6"><span class="xref">DebugActionButtonHandler</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Data.html">BennyKok.RuntimeDebug.Data</a></h6>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="BennyKok.RuntimeDebug.Components.BaseDebugActionHandler-1.html#BennyKok_RuntimeDebug_Components_BaseDebugActionHandler_1_action">BaseDebugActionHandler&lt;DebugActionButton&gt;.action</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Components.html">BennyKok.RuntimeDebug.Components</a></h6>
   <h6><strong>Assembly</strong>: com.bennykok.runtime-debug-action.dll</h6>
-  <h5 id="BennyKok_RuntimeDebug_Data_DebugFlag_syntax">Syntax</h5>
+  <h5 id="BennyKok_RuntimeDebug_Components_DebugActionButtonHandler_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Serializable]
-public class DebugFlag</code></pre>
+    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;Runtime Debug Action/Actions/Debug Action Button&quot;)]
+public class DebugActionButtonHandler : BaseDebugActionHandler&lt;DebugActionButton&gt;</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  
-  
-  <a id="BennyKok_RuntimeDebug_Data_DebugFlag__ctor_" data-uid="BennyKok.RuntimeDebug.Data.DebugFlag.#ctor*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Data_DebugFlag__ctor" data-uid="BennyKok.RuntimeDebug.Data.DebugFlag.#ctor">DebugFlag()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DebugFlag()</code></pre>
-  </div>
-  <h3 id="fields">Fields
-  </h3>
-  
-  
-  <h4 id="BennyKok_RuntimeDebug_Data_DebugFlag_defaultValue" data-uid="BennyKok.RuntimeDebug.Data.DebugFlag.defaultValue">defaultValue</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool defaultValue</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BennyKok_RuntimeDebug_Data_DebugFlag_name" data-uid="BennyKok.RuntimeDebug.Data.DebugFlag.name">name</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string name</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BennyKok_RuntimeDebug_Data_DebugFlag_runtimeValue" data-uid="BennyKok.RuntimeDebug.Data.DebugFlag.runtimeValue">runtimeValue</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NonSerialized]
-public bool runtimeValue</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 </article>
           </div>
           

@@ -81,7 +81,7 @@
   <h6><strong>Assembly</strong>: com.bennykok.runtime-debug-action.dll</h6>
   <h5 id="BennyKok_RuntimeDebug_Components_UI_DebugSystemEventHandler_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;Runtime Debug Action/Debug System Event Handler&quot;)]
+    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;Runtime Debug Action/Event/Debug System Event Handler&quot;)]
 public class DebugSystemEventHandler : MonoBehaviour</code></pre>
   </div>
   <h3 id="fields">Fields
@@ -93,7 +93,8 @@ public class DebugSystemEventHandler : MonoBehaviour</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UnityEvent onDebugMenuHide</code></pre>
+    <pre><code class="lang-csharp hljs">[CollapsedEvent(null)]
+public UnityEvent onDebugMenuHide</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -117,7 +118,9 @@ public class DebugSystemEventHandler : MonoBehaviour</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UnityEvent onDebugMenuShow</code></pre>
+    <pre><code class="lang-csharp hljs">[Title(&quot;Events&quot;, false, 2)]
+[CollapsedEvent(null)]
+public UnityEvent onDebugMenuShow</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
