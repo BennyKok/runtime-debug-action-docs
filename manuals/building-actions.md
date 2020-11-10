@@ -10,6 +10,7 @@ DebugActionBuilder.Button()
 
 | Name | Description |
 | ---- | ---- |
-| Button | OneShot action |
+| Button | One-shot action |
 | Toggle | On/Off state action |
 | Input | Params input action |
+| Flag | Int based value selector action |

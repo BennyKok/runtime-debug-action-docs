@@ -12,10 +12,11 @@ Welcome to the documentation for RuntimeDebugAction
 - Full Keyboard navigation supported
 - The menu is built for mobile 
 - Action Type
-    - Button (Oneshot action)
+    - Button (One-shot action)
     - Toggle (On/Off state action)
     - Input (Params input action)
-- Mobile Friendly 
+    - Flag (Int based value selector action)
+- Mobile Friendly
 - Simple searchable menu
 - Fluent API for action registering
 - Default debug action 
