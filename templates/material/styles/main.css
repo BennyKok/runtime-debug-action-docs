@@ -173,7 +173,7 @@ article h4 {
 
 .navbar-inverse .navbar-toggle:focus,
 .navbar-inverse .navbar-toggle:hover {
-  background-color: var(--highlight-dark);
+  /*background-color: var(--highlight-dark);*/
 }
 
 /* SIDEBAR */
@@ -291,7 +291,7 @@ pre {
   /*margin: 0 0 10px;*/
   /*font-size: 13px;*/
   word-break: break-all;
-  word-wrap: break-word;
+  /*word-wrap: break-word;*/
   /*background-color: #fffaef;*/
   border-radius: 4px;
   border: none;
