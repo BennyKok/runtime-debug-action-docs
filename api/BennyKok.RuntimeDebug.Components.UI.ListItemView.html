@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ListItemView
    ">
-    <meta name="generator" content="docfx 2.56.4.0">
+    <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -75,14 +75,24 @@
     <div class="level2"><span class="xref">UnityEngine.Component</span></div>
     <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
     <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
-    <div class="level5"><span class="xref">ListItemView</span></div>
+    <div class="level5"><a class="xref" href="BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.html">PoolItemBehaviour</a></div>
+    <div class="level6"><span class="xref">ListItemView</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.html#BennyKok_RuntimeDebug_Utils_PoolItemBehaviour_used">PoolItemBehaviour.used</a>
+    </div>
+    <div>
+      <a class="xref" href="BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.html#BennyKok_RuntimeDebug_Utils_PoolItemBehaviour_pool">PoolItemBehaviour.pool</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Components.UI.html">BennyKok.RuntimeDebug.Components.UI</a></h6>
   <h6><strong>Assembly</strong>: com.bennykok.runtime-debug-action.dll</h6>
   <h5 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;Runtime Debug Action/UI/List Item View&quot;)]
-public class ListItemView : MonoBehaviour</code></pre>
+public class ListItemView : PoolItemBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerExitHandler, IPointerEnterHandler, IEventSystemHandler</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -136,6 +146,31 @@ public class ListItemView : MonoBehaviour</code></pre>
   </table>
   
   
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_darkenActionColor" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.darkenActionColor">darkenActionColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Darken the action color for visibility&quot;)]
+public bool darkenActionColor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_folderIcon" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.folderIcon">folderIcon</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -162,31 +197,6 @@ public Sprite folderIcon</code></pre>
   </table>
   
   
-  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_hideIconSpace" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.hideIconSpace">hideIconSpace</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Tooltip(&quot;When there's no icon, hide the actual icon without taking up empty space&quot;)]
-public bool hideIconSpace</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_icon" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.icon">icon</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -205,31 +215,6 @@ public bool hideIconSpace</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">UnityEngine.UI.Image</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_isFocused" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.isFocused">isFocused</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NonSerialized]
-public bool isFocused</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -261,6 +246,31 @@ public TextMeshProUGUI label</code></pre>
   </table>
   
   
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_previousDown" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.previousDown">previousDown</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public bool previousDown</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_rectTransform" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.rectTransform">rectTransform</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -280,31 +290,6 @@ public RectTransform rectTransform</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">UnityEngine.RectTransform</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_showActionColor" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.showActionColor">showActionColor</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Show the action color of the list item&quot;)]
-public bool showActionColor</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -334,17 +319,19 @@ public bool showIcon</code></pre>
       </tr>
     </tbody>
   </table>
+  <h3 id="properties">Properties
+  </h3>
   
   
-  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_showTag" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.showTag">showTag</h4>
+  <a id="BennyKok_RuntimeDebug_Components_UI_ListItemView_isFocused_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.isFocused*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_isFocused" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.isFocused">isFocused</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Show the tag of this item when selected&quot;)]
-public bool showTag</code></pre>
+    <pre><code class="lang-csharp hljs">public bool isFocused { get; set; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -359,32 +346,6 @@ public bool showTag</code></pre>
       </tr>
     </tbody>
   </table>
-  
-  
-  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_tagLabel" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.tagLabel">tagLabel</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TextMeshProUGUI tagLabel</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">TMPro.TextMeshProUGUI</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
   
   
   <a id="BennyKok_RuntimeDebug_Components_UI_ListItemView_IsGroup_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.IsGroup*"></a>
@@ -414,13 +375,13 @@ public bool showTag</code></pre>
   </h3>
   
   
-  <a id="BennyKok_RuntimeDebug_Components_UI_ListItemView_RefreshStatus_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.RefreshStatus*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_RefreshStatus_BennyKok_RuntimeDebug_Actions_BaseAction_BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.RefreshStatus(BennyKok.RuntimeDebug.Actions.BaseAction,BennyKok.RuntimeDebug.Components.UI.DebugUIHandler)">RefreshStatus(BaseAction, DebugUIHandler)</h4>
+  <a id="BennyKok_RuntimeDebug_Components_UI_ListItemView_OnPointerDown_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerDown*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_OnPointerDown_UnityEngine_EventSystems_PointerEventData_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerDown(UnityEngine.EventSystems.PointerEventData)">OnPointerDown(PointerEventData)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RefreshStatus(BaseAction action = null, DebugUIHandler uiHandler = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public void OnPointerDown(PointerEventData eventData)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -433,7 +394,127 @@ public bool showTag</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseAction.html">BaseAction</a></td>
+        <td><span class="xref">UnityEngine.EventSystems.PointerEventData</span></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_ListItemView_OnPointerEnter_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerEnter*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_OnPointerEnter_UnityEngine_EventSystems_PointerEventData_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerEnter(UnityEngine.EventSystems.PointerEventData)">OnPointerEnter(PointerEventData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPointerEnter(PointerEventData eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.EventSystems.PointerEventData</span></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_ListItemView_OnPointerExit_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerExit*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_OnPointerExit_UnityEngine_EventSystems_PointerEventData_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerExit(UnityEngine.EventSystems.PointerEventData)">OnPointerExit(PointerEventData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPointerExit(PointerEventData eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.EventSystems.PointerEventData</span></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_ListItemView_OnPointerUp_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerUp*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_OnPointerUp_UnityEngine_EventSystems_PointerEventData_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerUp(UnityEngine.EventSystems.PointerEventData)">OnPointerUp(PointerEventData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPointerUp(PointerEventData eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.EventSystems.PointerEventData</span></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_ListItemView_Recycle_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.Recycle*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_Recycle" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.Recycle">Recycle()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Recycle()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.html#BennyKok_RuntimeDebug_Utils_PoolItemBehaviour_Recycle">PoolItemBehaviour.Recycle()</a></div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_ListItemView_RefreshStatus_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.RefreshStatus*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_RefreshStatus_BennyKok_RuntimeDebug_Actions_BaseDebugAction_BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.RefreshStatus(BennyKok.RuntimeDebug.Actions.BaseDebugAction,BennyKok.RuntimeDebug.Components.UI.DebugUIHandler)">RefreshStatus(BaseDebugAction, DebugUIHandler)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RefreshStatus(BaseDebugAction action = null, DebugUIHandler uiHandler = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseDebugAction.html">BaseDebugAction</a></td>
         <td><span class="parametername">action</span></td>
         <td></td>
       </tr>
@@ -447,12 +528,12 @@ public bool showTag</code></pre>
   
   
   <a id="BennyKok_RuntimeDebug_Components_UI_ListItemView_SetItem_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.SetItem*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_SetItem_BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_BennyKok_RuntimeDebug_Data_ListItem_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.SetItem(BennyKok.RuntimeDebug.Components.UI.DebugUIHandler,BennyKok.RuntimeDebug.Data.ListItem)">SetItem(DebugUIHandler, ListItem)</h4>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_SetItem_BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_BennyKok_RuntimeDebug_Components_UI_ListView_BennyKok_RuntimeDebug_Data_ListItem_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.SetItem(BennyKok.RuntimeDebug.Components.UI.DebugUIHandler,BennyKok.RuntimeDebug.Components.UI.ListView,BennyKok.RuntimeDebug.Data.ListItem)">SetItem(DebugUIHandler, ListView, ListItem)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetItem(DebugUIHandler ui, ListItem item)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetItem(DebugUIHandler ui, ListView listParent, ListItem item)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -467,6 +548,11 @@ public bool showTag</code></pre>
       <tr>
         <td><a class="xref" href="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.html">DebugUIHandler</a></td>
         <td><span class="parametername">ui</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Components.UI.ListView.html">ListView</a></td>
+        <td><span class="parametername">listParent</span></td>
         <td></td>
       </tr>
       <tr>

@@ -8,7 +8,7 @@
     <title>&#129658; Runtime Debug Action </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="&#129658; Runtime Debug Action ">
-    <meta name="generator" content="docfx 2.56.4.0">
+    <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/docfx.vendor.css">
@@ -57,8 +57,13 @@
 
 <p>Welcome to the documentation for RuntimeDebugAction</p>
 <!-- ![RDA Cover](images/rda-as-cover.png) -->
+<p><img src="images/2020-11-21-15-28-50.png" alt=""></p>
 <h2 id="overview">Overview</h2>
 <p><strong>RuntimeDebugAction</strong> is a runtime debug menu system that lets you register and trigger actions in your game development process.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This documentation is still in it's early stages, please tell me if there's anything out of place or not explained well.</p>
+</div>
 <h2 id="features">Features</h2>
 <ul>
 <li>Plug &amp; play debug menu system</li>
@@ -93,9 +98,14 @@
         RuntimeDebugSystem.SetTheme(theme, true);
         RuntimeDebugSystem.UIHandler.TogglePanel(true, true);
     })
-    .WithPath(themeTag)
+    .WithGroup(&quot;Themes&quot;)
 );
 </code></pre>
+<h2 id="quick-start">Quick Start</h2>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Take a look at the <a href="manuals/quick-start.md">QuickStart</a> to get started</p>
+</div>
 </article>
           </div>
           

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Struct InputResponse
+    <title>Struct LoggerHandler.Log
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Struct InputResponse
+    <meta name="title" content="Struct LoggerHandler.Log
    ">
     <meta name="generator" content="docfx 2.56.5.0">
     
@@ -61,31 +61,30 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.DebugInput.InputResponse">
+            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log">
   
   
-  <h1 id="BennyKok_RuntimeDebug_DebugInput_InputResponse" data-uid="BennyKok.RuntimeDebug.DebugInput.InputResponse" class="text-break">Struct InputResponse
+  <h1 id="BennyKok_RuntimeDebug_Components_UI_LoggerHandler_Log" data-uid="BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log" class="text-break">Struct LoggerHandler.Log
   </h1>
-  <div class="markdown level0 summary"><p>Data class to warp around the response returned by the Input debug action</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.DebugInput.html">BennyKok.RuntimeDebug.DebugInput</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Components.UI.html">BennyKok.RuntimeDebug.Components.UI</a></h6>
   <h6><strong>Assembly</strong>: com.bennykok.runtime-debug-action.dll</h6>
-  <h5 id="BennyKok_RuntimeDebug_DebugInput_InputResponse_syntax">Syntax</h5>
+  <h5 id="BennyKok_RuntimeDebug_Components_UI_LoggerHandler_Log_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct InputResponse</code></pre>
+    <pre><code class="lang-csharp hljs">public struct Log</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="BennyKok_RuntimeDebug_DebugInput_InputResponse__ctor_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputResponse.#ctor*"></a>
-  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputResponse__ctor_System_Collections_Generic_Dictionary_BennyKok_RuntimeDebug_DebugInput_Param_System_String__BennyKok_RuntimeDebug_DebugInput_InputQuery_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputResponse.#ctor(System.Collections.Generic.Dictionary{BennyKok.RuntimeDebug.DebugInput.Param,System.String},BennyKok.RuntimeDebug.DebugInput.InputQuery)">InputResponse(Dictionary&lt;Param, String&gt;, InputQuery)</h4>
+  <a id="BennyKok_RuntimeDebug_Components_UI_LoggerHandler_Log__ctor_" data-uid="BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.#ctor*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_LoggerHandler_Log__ctor_System_String_System_String_UnityEngine_LogType_System_DateTime_" data-uid="BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.#ctor(System.String,System.String,UnityEngine.LogType,System.DateTime)">Log(String, String, LogType, DateTime)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public InputResponse(Dictionary&lt;Param, string&gt; responses, InputQuery query)</code></pre>
+    <pre><code class="lang-csharp hljs">public Log(string logString, string stackTrace, LogType type, DateTime time)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -98,13 +97,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="BennyKok.RuntimeDebug.DebugInput.Param.html">Param</a>, <span class="xref">System.String</span>&gt;</td>
-        <td><span class="parametername">responses</span></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">logString</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="BennyKok.RuntimeDebug.DebugInput.InputQuery.html">InputQuery</a></td>
-        <td><span class="parametername">query</span></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">stackTrace</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.LogType</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="parametername">time</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -113,12 +122,12 @@
   </h3>
   
   
-  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputResponse_responses" data-uid="BennyKok.RuntimeDebug.DebugInput.InputResponse.responses">responses</h4>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_LoggerHandler_Log_logString" data-uid="BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.logString">logString</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Dictionary&lt;Param, string&gt; responses</code></pre>
+    <pre><code class="lang-csharp hljs">public string logString</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -130,7 +139,79 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="BennyKok.RuntimeDebug.DebugInput.Param.html">Param</a>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_LoggerHandler_Log_stackTrace" data-uid="BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.stackTrace">stackTrace</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string stackTrace</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_LoggerHandler_Log_time" data-uid="BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.time">time</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime time</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_LoggerHandler_Log_type" data-uid="BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.type">type</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LogType type</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.LogType</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -139,157 +220,14 @@
   </h3>
   
   
-  <a id="BennyKok_RuntimeDebug_DebugInput_InputResponse_GetParam_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParam*"></a>
-  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputResponse_GetParam_System_String_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParam(System.String)">GetParam(String)</h4>
+  <a id="BennyKok_RuntimeDebug_Components_UI_LoggerHandler_Log_ToString_" data-uid="BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.ToString*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_LoggerHandler_Log_ToString" data-uid="BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.ToString">ToString()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public KeyValuePair&lt;Param, string&gt; GetParam(string paramName)</code></pre>
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">paramName</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.KeyValuePair</span>&lt;<a class="xref" href="BennyKok.RuntimeDebug.DebugInput.Param.html">Param</a>, <span class="xref">System.String</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="BennyKok_RuntimeDebug_DebugInput_InputResponse_GetParamBool_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamBool*"></a>
-  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputResponse_GetParamBool_System_String_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamBool(System.String)">GetParamBool(String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool GetParamBool(string paramName)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">paramName</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="BennyKok_RuntimeDebug_DebugInput_InputResponse_GetParamFloat_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamFloat*"></a>
-  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputResponse_GetParamFloat_System_String_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamFloat(System.String)">GetParamFloat(String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float GetParamFloat(string paramName)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">paramName</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="BennyKok_RuntimeDebug_DebugInput_InputResponse_GetParamString_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamString*"></a>
-  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputResponse_GetParamString_System_String_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamString(System.String)">GetParamString(String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string GetParamString(string paramName)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">paramName</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -305,6 +243,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.ToString()</span></div>
 </article>
           </div>
           

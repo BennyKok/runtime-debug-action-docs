@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Singleton&lt;T&gt;
+    <title>Class PoolItemBehaviour
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Singleton&lt;T&gt;
+    <meta name="title" content="Class PoolItemBehaviour
    ">
     <meta name="generator" content="docfx 2.56.5.0">
     
@@ -61,10 +61,10 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.Utils.Singleton`1">
+            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.Utils.PoolItemBehaviour">
   
   
-  <h1 id="BennyKok_RuntimeDebug_Utils_Singleton_1" data-uid="BennyKok.RuntimeDebug.Utils.Singleton`1" class="text-break">Class Singleton&lt;T&gt;
+  <h1 id="BennyKok_RuntimeDebug_Utils_PoolItemBehaviour" data-uid="BennyKok.RuntimeDebug.Utils.PoolItemBehaviour" class="text-break">Class PoolItemBehaviour
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
@@ -75,43 +75,28 @@
     <div class="level2"><span class="xref">UnityEngine.Component</span></div>
     <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
     <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
-    <div class="level5"><span class="xref">Singleton&lt;T&gt;</span></div>
-      <div class="level6"><a class="xref" href="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html">RuntimeDebugSystem</a></div>
+    <div class="level5"><span class="xref">PoolItemBehaviour</span></div>
+      <div class="level6"><a class="xref" href="BennyKok.RuntimeDebug.Components.UI.ListItemView.html">ListItemView</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Utils.html">BennyKok.RuntimeDebug.Utils</a></h6>
   <h6><strong>Assembly</strong>: com.bennykok.runtime-debug-action.dll</h6>
-  <h5 id="BennyKok_RuntimeDebug_Utils_Singleton_1_syntax">Syntax</h5>
+  <h5 id="BennyKok_RuntimeDebug_Utils_PoolItemBehaviour_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Singleton&lt;T&gt; : MonoBehaviour where T : MonoBehaviour</code></pre>
+    <pre><code class="lang-csharp hljs">public class PoolItemBehaviour : MonoBehaviour</code></pre>
   </div>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
+  <h3 id="fields">Fields
   </h3>
   
   
-  <a id="BennyKok_RuntimeDebug_Utils_Singleton_1_Instance_" data-uid="BennyKok.RuntimeDebug.Utils.Singleton`1.Instance*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Utils_Singleton_1_Instance" data-uid="BennyKok.RuntimeDebug.Utils.Singleton`1.Instance">Instance</h4>
+  <h4 id="BennyKok_RuntimeDebug_Utils_PoolItemBehaviour_pool" data-uid="BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.pool">pool</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T Instance { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public ObjectPool pool</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -121,7 +106,32 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Utils.ObjectPool.html">ObjectPool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Utils_PoolItemBehaviour_used" data-uid="BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.used">used</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public bool used</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -130,13 +140,13 @@
   </h3>
   
   
-  <a id="BennyKok_RuntimeDebug_Utils_Singleton_1_Awake_" data-uid="BennyKok.RuntimeDebug.Utils.Singleton`1.Awake*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Utils_Singleton_1_Awake" data-uid="BennyKok.RuntimeDebug.Utils.Singleton`1.Awake">Awake()</h4>
+  <a id="BennyKok_RuntimeDebug_Utils_PoolItemBehaviour_Recycle_" data-uid="BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.Recycle*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Utils_PoolItemBehaviour_Recycle" data-uid="BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.Recycle">Recycle()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual void Awake()</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Recycle()</code></pre>
   </div>
 </article>
           </div>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ListView
    ">
-    <meta name="generator" content="docfx 2.56.4.0">
+    <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -88,12 +88,12 @@ public class ListView : MonoBehaviour</code></pre>
   </h3>
   
   
-  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListView_indicator" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.indicator">indicator</h4>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListView_actionDisplayPool" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.actionDisplayPool">actionDisplayPool</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RectTransform indicator</code></pre>
+    <pre><code class="lang-csharp hljs">public ObjectPool actionDisplayPool</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -105,32 +105,7 @@ public class ListView : MonoBehaviour</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UnityEngine.RectTransform</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListView_itemPrefab" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.itemPrefab">itemPrefab</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Title(&quot;Prefabs&quot;, 1)]
-public GameObject itemPrefab</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Utils.ObjectPool.html">ObjectPool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -167,7 +142,8 @@ public RectTransform listParent</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool reverseOrder</code></pre>
+    <pre><code class="lang-csharp hljs">[Title(&quot;Options&quot;, 1)]
+public bool reverseOrder</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -180,31 +156,6 @@ public RectTransform listParent</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListView_subActionList" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.subActionList">subActionList</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Title(&quot;Options&quot;, 1)]
-public ListView subActionList</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="BennyKok.RuntimeDebug.Components.UI.ListView.html">ListView</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -234,6 +185,33 @@ public DebugUIHandler uiParent</code></pre>
       </tr>
     </tbody>
   </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_ListView_IsRootLevel_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.IsRootLevel*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListView_IsRootLevel" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.IsRootLevel">IsRootLevel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRootLevel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
@@ -244,7 +222,7 @@ public DebugUIHandler uiParent</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddItem(ListItem item)</code></pre>
+    <pre><code class="lang-csharp hljs">public void AddItem(ListItem subItem)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -258,7 +236,7 @@ public DebugUIHandler uiParent</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="BennyKok.RuntimeDebug.Data.ListItem.html">ListItem</a></td>
-        <td><span class="parametername">item</span></td>
+        <td><span class="parametername">subItem</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -293,13 +271,30 @@ public DebugUIHandler uiParent</code></pre>
   
   
   <a id="BennyKok_RuntimeDebug_Components_UI_ListView_Clear_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.Clear*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListView_Clear" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.Clear">Clear()</h4>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListView_Clear_System_Int32_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.Clear(System.Int32)">Clear(Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+    <pre><code class="lang-csharp hljs">public void Clear(int count)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="BennyKok_RuntimeDebug_Components_UI_ListView_OnBackNavigation_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.OnBackNavigation*"></a>
@@ -308,28 +303,23 @@ public DebugUIHandler uiParent</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnBackNavigation()</code></pre>
+    <pre><code class="lang-csharp hljs">public bool OnBackNavigation()</code></pre>
   </div>
-  
-  
-  <a id="BennyKok_RuntimeDebug_Components_UI_ListView_OnResume_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.OnResume*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListView_OnResume" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.OnResume">OnResume()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnResume()</code></pre>
-  </div>
-  
-  
-  <a id="BennyKok_RuntimeDebug_Components_UI_ListView_OnStop_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.OnStop*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListView_OnStop" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.OnStop">OnStop()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnStop()</code></pre>
-  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="BennyKok_RuntimeDebug_Components_UI_ListView_RefreshStatus_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.RefreshStatus*"></a>
@@ -369,13 +359,13 @@ public DebugUIHandler uiParent</code></pre>
   </table>
   
   
-  <a id="BennyKok_RuntimeDebug_Components_UI_ListView_SetNavigationBackTarget_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.SetNavigationBackTarget*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListView_SetNavigationBackTarget_BennyKok_RuntimeDebug_Components_UI_ListView_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.SetNavigationBackTarget(BennyKok.RuntimeDebug.Components.UI.ListView)">SetNavigationBackTarget(ListView)</h4>
+  <a id="BennyKok_RuntimeDebug_Components_UI_ListView_UpdateTooltip_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.UpdateTooltip*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListView_UpdateTooltip_BennyKok_RuntimeDebug_Data_ListItem_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListView.UpdateTooltip(BennyKok.RuntimeDebug.Data.ListItem)">UpdateTooltip(ListItem)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetNavigationBackTarget(ListView list)</code></pre>
+    <pre><code class="lang-csharp hljs">public void UpdateTooltip(ListItem item)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -388,8 +378,8 @@ public DebugUIHandler uiParent</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BennyKok.RuntimeDebug.Components.UI.ListView.html">ListView</a></td>
-        <td><span class="parametername">list</span></td>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Data.ListItem.html">ListItem</a></td>
+        <td><span class="parametername">item</span></td>
         <td></td>
       </tr>
     </tbody>

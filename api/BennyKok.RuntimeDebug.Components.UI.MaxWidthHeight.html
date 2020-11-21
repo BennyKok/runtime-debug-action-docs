@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ListItem
+    <title>Class MaxWidthHeight
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ListItem
+    <meta name="title" content="Class MaxWidthHeight
    ">
     <meta name="generator" content="docfx 2.56.5.0">
     
@@ -61,45 +61,186 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.Data.ListItem">
+            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight">
   
   
-  <h1 id="BennyKok_RuntimeDebug_Data_ListItem" data-uid="BennyKok.RuntimeDebug.Data.ListItem" class="text-break">Class ListItem
+  <h1 id="BennyKok_RuntimeDebug_Components_UI_MaxWidthHeight" data-uid="BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight" class="text-break">Class MaxWidthHeight
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Helper class to constraint a RectTransfrom with a max size</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">ListItem</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">UnityEngine.EventSystems.UIBehaviour</span></div>
+    <div class="level6"><span class="xref">MaxWidthHeight</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Data.html">BennyKok.RuntimeDebug.Data</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Components.UI.html">BennyKok.RuntimeDebug.Components.UI</a></h6>
   <h6><strong>Assembly</strong>: com.bennykok.runtime-debug-action.dll</h6>
-  <h5 id="BennyKok_RuntimeDebug_Data_ListItem_syntax">Syntax</h5>
+  <h5 id="BennyKok_RuntimeDebug_Components_UI_MaxWidthHeight_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ListItem</code></pre>
+    <pre><code class="lang-csharp hljs">[ExecuteAlways]
+[RequireComponent(typeof(RectTransform))]
+public class MaxWidthHeight : UIBehaviour, ILayoutSelfController, ILayoutController</code></pre>
   </div>
-  <h3 id="constructors">Constructors
+  <h3 id="fields">Fields
   </h3>
   
   
-  <a id="BennyKok_RuntimeDebug_Data_ListItem__ctor_" data-uid="BennyKok.RuntimeDebug.Data.ListItem.#ctor*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Data_ListItem__ctor" data-uid="BennyKok.RuntimeDebug.Data.ListItem.#ctor">ListItem()</h4>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_MaxWidthHeight_MaximumPreferredSize" data-uid="BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.MaximumPreferredSize">MaximumPreferredSize</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ListItem()</code></pre>
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Maximum Preferred size when using Preferred Size&quot;)]
+public Vector2 MaximumPreferredSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_MaxWidthHeight_rectTransform" data-uid="BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.rectTransform">rectTransform</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform rectTransform</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.RectTransform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_MaxWidthHeight_referenceRectTransfrom" data-uid="BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.referenceRectTransfrom">referenceRectTransfrom</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform referenceRectTransfrom</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.RectTransform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_MaxWidthHeight_OnDisable_" data-uid="BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnDisable*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_MaxWidthHeight_OnDisable" data-uid="BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnDisable">OnDisable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDisable()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">UnityEngine.EventSystems.UIBehaviour.OnDisable()</span></div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_MaxWidthHeight_OnEnable_" data-uid="BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnEnable*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_MaxWidthHeight_OnEnable" data-uid="BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnEnable">OnEnable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnEnable()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">UnityEngine.EventSystems.UIBehaviour.OnEnable()</span></div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_MaxWidthHeight_OnRectTransformDimensionsChange_" data-uid="BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnRectTransformDimensionsChange*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_MaxWidthHeight_OnRectTransformDimensionsChange" data-uid="BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnRectTransformDimensionsChange">OnRectTransformDimensionsChange()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnRectTransformDimensionsChange()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">UnityEngine.EventSystems.UIBehaviour.OnRectTransformDimensionsChange()</span></div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_MaxWidthHeight_SetDirty_" data-uid="BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetDirty*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_MaxWidthHeight_SetDirty" data-uid="BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetDirty">SetDirty()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetDirty()</code></pre>
   </div>
   
   
-  <a id="BennyKok_RuntimeDebug_Data_ListItem__ctor_" data-uid="BennyKok.RuntimeDebug.Data.ListItem.#ctor*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Data_ListItem__ctor_BennyKok_RuntimeDebug_Actions_BaseDebugAction_" data-uid="BennyKok.RuntimeDebug.Data.ListItem.#ctor(BennyKok.RuntimeDebug.Actions.BaseDebugAction)">ListItem(BaseDebugAction)</h4>
+  <a id="BennyKok_RuntimeDebug_Components_UI_MaxWidthHeight_SetLayoutHorizontal_" data-uid="BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetLayoutHorizontal*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_MaxWidthHeight_SetLayoutHorizontal" data-uid="BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetLayoutHorizontal">SetLayoutHorizontal()</h4>
+  <div class="markdown level1 summary"><p>Calculate and apply the horizontal component of the size to the RectTransform</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetLayoutHorizontal()</code></pre>
+  </div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_MaxWidthHeight_SetLayoutVertical_" data-uid="BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetLayoutVertical*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_MaxWidthHeight_SetLayoutVertical" data-uid="BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetLayoutVertical">SetLayoutVertical()</h4>
+  <div class="markdown level1 summary"><p>Calculate and apply the vertical component of the size to the RectTransform</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetLayoutVertical()</code></pre>
+  </div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_MaxWidthHeight_SetPreferredHeight_" data-uid="BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetPreferredHeight*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_MaxWidthHeight_SetPreferredHeight_System_Single_" data-uid="BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetPreferredHeight(System.Single)">SetPreferredHeight(Single)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ListItem(BaseDebugAction actionTrigger)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetPreferredHeight(float newHeight)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -112,206 +253,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseDebugAction.html">BaseDebugAction</a></td>
-        <td><span class="parametername">actionTrigger</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="fields">Fields
-  </h3>
-  
-  
-  <h4 id="BennyKok_RuntimeDebug_Data_ListItem_actionTrigger" data-uid="BennyKok.RuntimeDebug.Data.ListItem.actionTrigger">actionTrigger</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BaseDebugAction actionTrigger</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseDebugAction.html">BaseDebugAction</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BennyKok_RuntimeDebug_Data_ListItem_children" data-uid="BennyKok.RuntimeDebug.Data.ListItem.children">children</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;ListItem&gt; children</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BennyKok.RuntimeDebug.Data.ListItem.html">ListItem</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BennyKok_RuntimeDebug_Data_ListItem_fullPath" data-uid="BennyKok.RuntimeDebug.Data.ListItem.fullPath">fullPath</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string fullPath</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BennyKok_RuntimeDebug_Data_ListItem_groupName" data-uid="BennyKok.RuntimeDebug.Data.ListItem.groupName">groupName</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string groupName</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BennyKok_RuntimeDebug_Data_ListItem_uiList" data-uid="BennyKok.RuntimeDebug.Data.ListItem.uiList">uiList</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ListView uiList</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="BennyKok.RuntimeDebug.Components.UI.ListView.html">ListView</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BennyKok_RuntimeDebug_Data_ListItem_view" data-uid="BennyKok.RuntimeDebug.Data.ListItem.view">view</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ListItemView view</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="BennyKok.RuntimeDebug.Components.UI.ListItemView.html">ListItemView</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
-  
-  
-  <a id="BennyKok_RuntimeDebug_Data_ListItem_IsGroup_" data-uid="BennyKok.RuntimeDebug.Data.ListItem.IsGroup*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Data_ListItem_IsGroup" data-uid="BennyKok.RuntimeDebug.Data.ListItem.IsGroup">IsGroup</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsGroup { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="BennyKok_RuntimeDebug_Data_ListItem_Name_" data-uid="BennyKok.RuntimeDebug.Data.ListItem.Name*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Data_ListItem_Name" data-uid="BennyKok.RuntimeDebug.Data.ListItem.Name">Name</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">newHeight</span></td>
         <td></td>
       </tr>
     </tbody>

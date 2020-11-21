@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Param
    ">
-    <meta name="generator" content="docfx 2.56.4.0">
+    <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -86,12 +86,12 @@ public class Param</code></pre>
   
   
   <a id="BennyKok_RuntimeDebug_DebugInput_Param__ctor_" data-uid="BennyKok.RuntimeDebug.DebugInput.Param.#ctor*"></a>
-  <h4 id="BennyKok_RuntimeDebug_DebugInput_Param__ctor_System_String_BennyKok_RuntimeDebug_DebugInput_ParamType_System_String_System_Object_" data-uid="BennyKok.RuntimeDebug.DebugInput.Param.#ctor(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String,System.Object)">Param(String, ParamType, String, Object)</h4>
+  <h4 id="BennyKok_RuntimeDebug_DebugInput_Param__ctor_System_String_BennyKok_RuntimeDebug_DebugInput_ParamType_System_String_System_Object_System_Func_System_Object__" data-uid="BennyKok.RuntimeDebug.DebugInput.Param.#ctor(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String,System.Object,System.Func{System.Object})">Param(String, ParamType, String, Object, Func&lt;Object&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Param(string name, ParamType type, string description = null, object defaultValue = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Param(string name, ParamType type, string description = null, object defaultValue = null, Func&lt;object&gt; valuePrefillCallback = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -121,6 +121,11 @@ public class Param</code></pre>
       <tr>
         <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">defaultValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">valuePrefillCallback</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -219,6 +224,30 @@ public class Param</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="BennyKok.RuntimeDebug.DebugInput.ParamType.html">ParamType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_DebugInput_Param_valuePrefillCallback" data-uid="BennyKok.RuntimeDebug.DebugInput.Param.valuePrefillCallback">valuePrefillCallback</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;object&gt; valuePrefillCallback</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Object</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

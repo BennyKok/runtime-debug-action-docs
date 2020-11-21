@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class InputQuery
    ">
-    <meta name="generator" content="docfx 2.56.4.0">
+    <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -166,13 +166,235 @@ public class InputQuery</code></pre>
   
   
   <a id="BennyKok_RuntimeDebug_DebugInput_InputQuery_Query_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputQuery.Query*"></a>
+  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputQuery_Query_System_String_BennyKok_RuntimeDebug_DebugInput_ParamType_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType)">Query(String, ParamType)</h4>
+  <div class="markdown level1 summary"><p>Add a new param to the param list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputQuery Query(string name, ParamType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.DebugInput.ParamType.html">ParamType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.DebugInput.InputQuery.html">InputQuery</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException.html">ParamWithoutDefaultValueException</a></td>
+        <td><p>Thrown when there's no default value for optional param</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.DebugInput.ParamNameDuplicatedException.html">ParamNameDuplicatedException</a></td>
+        <td><p>Thrown when there's a duplicated param name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_DebugInput_InputQuery_Query_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputQuery.Query*"></a>
+  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputQuery_Query_System_String_BennyKok_RuntimeDebug_DebugInput_ParamType_System_String_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String)">Query(String, ParamType, String)</h4>
+  <div class="markdown level1 summary"><p>Add a new param to the param list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputQuery Query(string name, ParamType type, string description)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.DebugInput.ParamType.html">ParamType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.DebugInput.InputQuery.html">InputQuery</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException.html">ParamWithoutDefaultValueException</a></td>
+        <td><p>Thrown when there's no default value for optional param</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.DebugInput.ParamNameDuplicatedException.html">ParamNameDuplicatedException</a></td>
+        <td><p>Thrown when there's a duplicated param name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_DebugInput_InputQuery_Query_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputQuery.Query*"></a>
+  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputQuery_Query_System_String_BennyKok_RuntimeDebug_DebugInput_ParamType_System_String_System_Func_System_Object__" data-uid="BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String,System.Func{System.Object})">Query(String, ParamType, String, Func&lt;Object&gt;)</h4>
+  <div class="markdown level1 summary"><p>Add a new param to the param list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputQuery Query(string name, ParamType type, string description, Func&lt;object&gt; valuePrefillCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.DebugInput.ParamType.html">ParamType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">valuePrefillCallback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.DebugInput.InputQuery.html">InputQuery</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException.html">ParamWithoutDefaultValueException</a></td>
+        <td><p>Thrown when there's no default value for optional param</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.DebugInput.ParamNameDuplicatedException.html">ParamNameDuplicatedException</a></td>
+        <td><p>Thrown when there's a duplicated param name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_DebugInput_InputQuery_Query_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputQuery.Query*"></a>
   <h4 id="BennyKok_RuntimeDebug_DebugInput_InputQuery_Query_System_String_BennyKok_RuntimeDebug_DebugInput_ParamType_System_String_System_Object_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String,System.Object)">Query(String, ParamType, String, Object)</h4>
   <div class="markdown level1 summary"><p>Add a new param to the param list</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public InputQuery Query(string name, ParamType type, string description = null, object defaultValue = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public InputQuery Query(string name, ParamType type, string description, object defaultValue)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

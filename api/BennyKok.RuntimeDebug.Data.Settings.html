@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Settings
    ">
-    <meta name="generator" content="docfx 2.56.4.0">
+    <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -85,6 +85,32 @@
   </h3>
   
   
+  <h4 id="BennyKok_RuntimeDebug_Data_Settings_actionDisplayFadeInTime" data-uid="BennyKok.RuntimeDebug.Data.Settings.actionDisplayFadeInTime">actionDisplayFadeInTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Title(&quot;Animation&quot;, 0)]
+[Comment(&quot;When using shortcut key on action, there will be a popup display, these values configure the fade in/out time&quot;, order = 1)]
+public float actionDisplayFadeInTime</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="BennyKok_RuntimeDebug_Data_Settings_actionDisplayFadeTime" data-uid="BennyKok.RuntimeDebug.Data.Settings.actionDisplayFadeTime">actionDisplayFadeTime</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -109,13 +135,14 @@
   </table>
   
   
-  <h4 id="BennyKok_RuntimeDebug_Data_Settings_actionDisplayShowTime" data-uid="BennyKok.RuntimeDebug.Data.Settings.actionDisplayShowTime">actionDisplayShowTime</h4>
+  <h4 id="BennyKok_RuntimeDebug_Data_Settings_addApplicationOptions" data-uid="BennyKok.RuntimeDebug.Data.Settings.addApplicationOptions">addApplicationOptions</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Title(&quot;Animation&quot;, 0)]
-public float actionDisplayShowTime</code></pre>
+    <pre><code class="lang-csharp hljs">[Title(&quot;Default Actions&quot;, 0)]
+[Comment(&quot;Configure what types of default actions you want to be added by the system&quot;, order = 1)]
+public bool addApplicationOptions</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -127,19 +154,19 @@ public float actionDisplayShowTime</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Single</span></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BennyKok_RuntimeDebug_Data_Settings_addLoadSceneOptions" data-uid="BennyKok.RuntimeDebug.Data.Settings.addLoadSceneOptions">addLoadSceneOptions</h4>
+  <h4 id="BennyKok_RuntimeDebug_Data_Settings_addLoggerOptions" data-uid="BennyKok.RuntimeDebug.Data.Settings.addLoggerOptions">addLoggerOptions</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool addLoadSceneOptions</code></pre>
+    <pre><code class="lang-csharp hljs">public bool addLoggerOptions</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -163,8 +190,80 @@ public float actionDisplayShowTime</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Title(&quot;Default Menu&quot;, 0)]
-public bool addQualityOptions</code></pre>
+    <pre><code class="lang-csharp hljs">public bool addQualityOptions</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Data_Settings_addSceneOptions" data-uid="BennyKok.RuntimeDebug.Data.Settings.addSceneOptions">addSceneOptions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool addSceneOptions</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Data_Settings_addThemeOptions" data-uid="BennyKok.RuntimeDebug.Data.Settings.addThemeOptions">addThemeOptions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool addThemeOptions</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Data_Settings_disableLogger" data-uid="BennyKok.RuntimeDebug.Data.Settings.disableLogger">disableLogger</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Title(&quot;Logger&quot;, 0)]
+public bool disableLogger</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -188,8 +287,7 @@ public bool addQualityOptions</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Title(&quot;Setup&quot;, false, 0)]
-public Settings.EnableMode enableMode</code></pre>
+    <pre><code class="lang-csharp hljs">public Settings.EnableMode enableMode</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -251,6 +349,80 @@ public InputLayer inputLayer</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="BennyKok.RuntimeDebug.Data.InputLayer.html">InputLayer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Data_Settings_loggerMaxLine" data-uid="BennyKok.RuntimeDebug.Data.Settings.loggerMaxLine">loggerMaxLine</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int loggerMaxLine</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Data_Settings_selectionColorHighlight" data-uid="BennyKok.RuntimeDebug.Data.Settings.selectionColorHighlight">selectionColorHighlight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Title(&quot;Selection Hightlight&quot;, 0)]
+[Comment(&quot;Configure indication style for the selected action item when using keyboard navigation&quot;, order = 1)]
+public bool selectionColorHighlight</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Data_Settings_selectionUnderlineHighlight" data-uid="BennyKok.RuntimeDebug.Data.Settings.selectionUnderlineHighlight">selectionUnderlineHighlight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool selectionUnderlineHighlight</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -323,6 +495,56 @@ public InputLayer inputLayer</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Data_Settings_showTooltipOnKeyboardNavigation" data-uid="BennyKok.RuntimeDebug.Data.Settings.showTooltipOnKeyboardNavigation">showTooltipOnKeyboardNavigation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Title(&quot;Tooltip&quot;, 0)]
+[Comment(&quot;show tooltip options will not be used on mobile platfrom, long press on an action to display tooltip instead&quot;, order = 1)]
+public bool showTooltipOnKeyboardNavigation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Data_Settings_showTooltipOnPointerHover" data-uid="BennyKok.RuntimeDebug.Data.Settings.showTooltipOnPointerHover">showTooltipOnPointerHover</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool showTooltipOnPointerHover</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>

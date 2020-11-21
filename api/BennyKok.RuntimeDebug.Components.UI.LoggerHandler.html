@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class InputLayer
+    <title>Class LoggerHandler
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class InputLayer
+    <meta name="title" content="Class LoggerHandler
    ">
     <meta name="generator" content="docfx 2.56.5.0">
     
@@ -61,35 +61,38 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.Data.InputLayer">
+            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.Components.UI.LoggerHandler">
   
   
-  <h1 id="BennyKok_RuntimeDebug_Data_InputLayer" data-uid="BennyKok.RuntimeDebug.Data.InputLayer" class="text-break">Class InputLayer
+  <h1 id="BennyKok_RuntimeDebug_Components_UI_LoggerHandler" data-uid="BennyKok.RuntimeDebug.Components.UI.LoggerHandler" class="text-break">Class LoggerHandler
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">InputLayer</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">LoggerHandler</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Data.html">BennyKok.RuntimeDebug.Data</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Components.UI.html">BennyKok.RuntimeDebug.Components.UI</a></h6>
   <h6><strong>Assembly</strong>: com.bennykok.runtime-debug-action.dll</h6>
-  <h5 id="BennyKok_RuntimeDebug_Data_InputLayer_syntax">Syntax</h5>
+  <h5 id="BennyKok_RuntimeDebug_Components_UI_LoggerHandler_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Serializable]
-public class InputLayer</code></pre>
+    <pre><code class="lang-csharp hljs">public class LoggerHandler : MonoBehaviour</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
   
   
-  <h4 id="BennyKok_RuntimeDebug_Data_InputLayer_menuKey" data-uid="BennyKok.RuntimeDebug.Data.InputLayer.menuKey">menuKey</h4>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_LoggerHandler_allLogs" data-uid="BennyKok.RuntimeDebug.Components.UI.LoggerHandler.allLogs">allLogs</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public KeyCode menuKey</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;LoggerHandler.Log&gt; allLogs</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -101,7 +104,55 @@ public class InputLayer</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UnityEngine.KeyCode</span></td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.html">LoggerHandler.Log</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_LoggerHandler_logText" data-uid="BennyKok.RuntimeDebug.Components.UI.LoggerHandler.logText">logText</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextMeshProUGUI logText</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TMPro.TextMeshProUGUI</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_LoggerHandler_scrollRect" data-uid="BennyKok.RuntimeDebug.Components.UI.LoggerHandler.scrollRect">scrollRect</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScrollRect scrollRect</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.UI.ScrollRect</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -110,63 +161,33 @@ public class InputLayer</code></pre>
   </h3>
   
   
-  <a id="BennyKok_RuntimeDebug_Data_InputLayer_IsBackAction_" data-uid="BennyKok.RuntimeDebug.Data.InputLayer.IsBackAction*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Data_InputLayer_IsBackAction" data-uid="BennyKok.RuntimeDebug.Data.InputLayer.IsBackAction">IsBackAction()</h4>
+  <a id="BennyKok_RuntimeDebug_Components_UI_LoggerHandler_Close_" data-uid="BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Close*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_LoggerHandler_Close" data-uid="BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Close">Close()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual bool IsBackAction()</code></pre>
+    <pre><code class="lang-csharp hljs">public void Close()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   
   
-  <a id="BennyKok_RuntimeDebug_Data_InputLayer_IsConfirmAction_" data-uid="BennyKok.RuntimeDebug.Data.InputLayer.IsConfirmAction*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Data_InputLayer_IsConfirmAction" data-uid="BennyKok.RuntimeDebug.Data.InputLayer.IsConfirmAction">IsConfirmAction()</h4>
+  <a id="BennyKok_RuntimeDebug_Components_UI_LoggerHandler_Hold_" data-uid="BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Hold*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_LoggerHandler_Hold" data-uid="BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Hold">Hold()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual bool IsConfirmAction()</code></pre>
+    <pre><code class="lang-csharp hljs">public void Hold()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   
   
-  <a id="BennyKok_RuntimeDebug_Data_InputLayer_IsKeyDown_" data-uid="BennyKok.RuntimeDebug.Data.InputLayer.IsKeyDown*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Data_InputLayer_IsKeyDown_System_String_" data-uid="BennyKok.RuntimeDebug.Data.InputLayer.IsKeyDown(System.String)">IsKeyDown(String)</h4>
+  <a id="BennyKok_RuntimeDebug_Components_UI_LoggerHandler_OnLogUpdated_" data-uid="BennyKok.RuntimeDebug.Components.UI.LoggerHandler.OnLogUpdated*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_LoggerHandler_OnLogUpdated_System_String_System_String_UnityEngine_LogType_" data-uid="BennyKok.RuntimeDebug.Components.UI.LoggerHandler.OnLogUpdated(System.String,System.String,UnityEngine.LogType)">OnLogUpdated(String, String, LogType)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual bool IsKeyDown(string keycode)</code></pre>
+    <pre><code class="lang-csharp hljs">public void OnLogUpdated(string logString, string stackTrace, LogType type)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -180,51 +201,41 @@ public class InputLayer</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">keycode</span></td>
+        <td><span class="parametername">logString</span></td>
         <td></td>
       </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">stackTrace</span></td>
+        <td></td>
       </tr>
-    </thead>
-    <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">UnityEngine.LogType</span></td>
+        <td><span class="parametername">type</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="BennyKok_RuntimeDebug_Data_InputLayer_IsMenuAction_" data-uid="BennyKok.RuntimeDebug.Data.InputLayer.IsMenuAction*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Data_InputLayer_IsMenuAction" data-uid="BennyKok.RuntimeDebug.Data.InputLayer.IsMenuAction">IsMenuAction()</h4>
+  <a id="BennyKok_RuntimeDebug_Components_UI_LoggerHandler_Resume_" data-uid="BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Resume*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_LoggerHandler_Resume" data-uid="BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Resume">Resume()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual bool IsMenuAction()</code></pre>
+    <pre><code class="lang-csharp hljs">public void Resume()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_LoggerHandler_SwitchHeight_" data-uid="BennyKok.RuntimeDebug.Components.UI.LoggerHandler.SwitchHeight*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_LoggerHandler_SwitchHeight" data-uid="BennyKok.RuntimeDebug.Components.UI.LoggerHandler.SwitchHeight">SwitchHeight()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SwitchHeight()</code></pre>
+  </div>
 </article>
           </div>
           
