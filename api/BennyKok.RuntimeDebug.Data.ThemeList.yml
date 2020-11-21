@@ -19,7 +19,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ThemeList
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Theme.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data

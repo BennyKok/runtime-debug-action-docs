@@ -1,0 +1,619 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight
+  id: MaxWidthHeight
+  parent: BennyKok.RuntimeDebug.Components.UI
+  children:
+  - BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.MaximumPreferredSize
+  - BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnDisable
+  - BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnEnable
+  - BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnRectTransformDimensionsChange
+  - BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.rectTransform
+  - BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.referenceRectTransfrom
+  - BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetDirty
+  - BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetLayoutHorizontal
+  - BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetLayoutVertical
+  - BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetPreferredHeight(System.Single)
+  langs:
+  - csharp
+  - vb
+  name: MaxWidthHeight
+  nameWithType: MaxWidthHeight
+  fullName: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight
+  type: Class
+  source:
+    remote:
+      path: Runtime/Components/UI/Utils/MaxWidthHeight.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: MaxWidthHeight
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/MaxWidthHeight.cs
+    startLine: 14
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  summary: "\nHelper class to constraint a RectTransfrom with a max size\n"
+  example: []
+  syntax:
+    content: >-
+      [ExecuteAlways]
+
+      [RequireComponent(typeof(RectTransform))]
+
+      public class MaxWidthHeight : UIBehaviour, ILayoutSelfController, ILayoutController
+    content.vb: >-
+      <ExecuteAlways>
+
+      <RequireComponent(GetType(RectTransform))>
+
+      Public Class MaxWidthHeight
+          Inherits UIBehaviour
+          Implements ILayoutSelfController, ILayoutController
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - UnityEngine.EventSystems.UIBehaviour
+  attributes:
+  - type: UnityEngine.ExecuteAlways
+    ctor: UnityEngine.ExecuteAlways.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.referenceRectTransfrom
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.referenceRectTransfrom
+  id: referenceRectTransfrom
+  parent: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight
+  langs:
+  - csharp
+  - vb
+  name: referenceRectTransfrom
+  nameWithType: MaxWidthHeight.referenceRectTransfrom
+  fullName: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.referenceRectTransfrom
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/Utils/MaxWidthHeight.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: referenceRectTransfrom
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/MaxWidthHeight.cs
+    startLine: 18
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public RectTransform referenceRectTransfrom
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public referenceRectTransfrom As RectTransform
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.rectTransform
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.rectTransform
+  id: rectTransform
+  parent: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight
+  langs:
+  - csharp
+  - vb
+  name: rectTransform
+  nameWithType: MaxWidthHeight.rectTransform
+  fullName: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.rectTransform
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/Utils/MaxWidthHeight.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: rectTransform
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/MaxWidthHeight.cs
+    startLine: 19
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public RectTransform rectTransform
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public rectTransform As RectTransform
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.MaximumPreferredSize
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.MaximumPreferredSize
+  id: MaximumPreferredSize
+  parent: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight
+  langs:
+  - csharp
+  - vb
+  name: MaximumPreferredSize
+  nameWithType: MaxWidthHeight.MaximumPreferredSize
+  fullName: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.MaximumPreferredSize
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/Utils/MaxWidthHeight.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: MaximumPreferredSize
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/MaxWidthHeight.cs
+    startLine: 25
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: >-
+      [Tooltip("Maximum Preferred size when using Preferred Size")]
+
+      public Vector2 MaximumPreferredSize
+    return:
+      type: UnityEngine.Vector2
+    content.vb: >-
+      <Tooltip("Maximum Preferred size when using Preferred Size")>
+
+      Public MaximumPreferredSize As Vector2
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Maximum Preferred size when using Preferred Size
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnEnable
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnEnable
+  id: OnEnable
+  parent: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight
+  langs:
+  - csharp
+  - vb
+  name: OnEnable()
+  nameWithType: MaxWidthHeight.OnEnable()
+  fullName: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnEnable()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/Utils/MaxWidthHeight.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: OnEnable
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/MaxWidthHeight.cs
+    startLine: 29
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: protected override void OnEnable()
+    content.vb: Protected Overrides Sub OnEnable
+  overridden: UnityEngine.EventSystems.UIBehaviour.OnEnable
+  overload: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnEnable*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetPreferredHeight(System.Single)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetPreferredHeight(System.Single)
+  id: SetPreferredHeight(System.Single)
+  parent: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight
+  langs:
+  - csharp
+  - vb
+  name: SetPreferredHeight(Single)
+  nameWithType: MaxWidthHeight.SetPreferredHeight(Single)
+  fullName: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetPreferredHeight(System.Single)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/Utils/MaxWidthHeight.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: SetPreferredHeight
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/MaxWidthHeight.cs
+    startLine: 35
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void SetPreferredHeight(float newHeight)
+    parameters:
+    - id: newHeight
+      type: System.Single
+    content.vb: Public Sub SetPreferredHeight(newHeight As Single)
+  overload: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetPreferredHeight*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnDisable
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnDisable
+  id: OnDisable
+  parent: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight
+  langs:
+  - csharp
+  - vb
+  name: OnDisable()
+  nameWithType: MaxWidthHeight.OnDisable()
+  fullName: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnDisable()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/Utils/MaxWidthHeight.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: OnDisable
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/MaxWidthHeight.cs
+    startLine: 44
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: protected override void OnDisable()
+    content.vb: Protected Overrides Sub OnDisable
+  overridden: UnityEngine.EventSystems.UIBehaviour.OnDisable
+  overload: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnDisable*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnRectTransformDimensionsChange
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnRectTransformDimensionsChange
+  id: OnRectTransformDimensionsChange
+  parent: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight
+  langs:
+  - csharp
+  - vb
+  name: OnRectTransformDimensionsChange()
+  nameWithType: MaxWidthHeight.OnRectTransformDimensionsChange()
+  fullName: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnRectTransformDimensionsChange()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/Utils/MaxWidthHeight.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: OnRectTransformDimensionsChange
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/MaxWidthHeight.cs
+    startLine: 63
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: protected override void OnRectTransformDimensionsChange()
+    content.vb: Protected Overrides Sub OnRectTransformDimensionsChange
+  overridden: UnityEngine.EventSystems.UIBehaviour.OnRectTransformDimensionsChange
+  overload: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnRectTransformDimensionsChange*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetLayoutHorizontal
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetLayoutHorizontal
+  id: SetLayoutHorizontal
+  parent: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight
+  langs:
+  - csharp
+  - vb
+  name: SetLayoutHorizontal()
+  nameWithType: MaxWidthHeight.SetLayoutHorizontal()
+  fullName: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetLayoutHorizontal()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/Utils/MaxWidthHeight.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: SetLayoutHorizontal
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/MaxWidthHeight.cs
+    startLine: 85
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  summary: "\nCalculate and apply the horizontal component of the size to the RectTransform\n"
+  example: []
+  syntax:
+    content: public virtual void SetLayoutHorizontal()
+    content.vb: Public Overridable Sub SetLayoutHorizontal
+  overload: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetLayoutHorizontal*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetLayoutVertical
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetLayoutVertical
+  id: SetLayoutVertical
+  parent: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight
+  langs:
+  - csharp
+  - vb
+  name: SetLayoutVertical()
+  nameWithType: MaxWidthHeight.SetLayoutVertical()
+  fullName: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetLayoutVertical()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/Utils/MaxWidthHeight.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: SetLayoutVertical
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/MaxWidthHeight.cs
+    startLine: 94
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  summary: "\nCalculate and apply the vertical component of the size to the RectTransform\n"
+  example: []
+  syntax:
+    content: public virtual void SetLayoutVertical()
+    content.vb: Public Overridable Sub SetLayoutVertical
+  overload: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetLayoutVertical*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetDirty
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetDirty
+  id: SetDirty
+  parent: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight
+  langs:
+  - csharp
+  - vb
+  name: SetDirty()
+  nameWithType: MaxWidthHeight.SetDirty()
+  fullName: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetDirty()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/Utils/MaxWidthHeight.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: SetDirty
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/MaxWidthHeight.cs
+    startLine: 99
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: protected void SetDirty()
+    content.vb: Protected Sub SetDirty
+  overload: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetDirty*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: BennyKok.RuntimeDebug.Components.UI
+  commentId: N:BennyKok.RuntimeDebug.Components.UI
+  name: BennyKok.RuntimeDebug.Components.UI
+  nameWithType: BennyKok.RuntimeDebug.Components.UI
+  fullName: BennyKok.RuntimeDebug.Components.UI
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.EventSystems.UIBehaviour
+  commentId: T:UnityEngine.EventSystems.UIBehaviour
+  parent: UnityEngine.EventSystems
+  isExternal: true
+  name: UIBehaviour
+  nameWithType: UIBehaviour
+  fullName: UnityEngine.EventSystems.UIBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  isExternal: true
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+- uid: UnityEngine.RectTransform
+  commentId: T:UnityEngine.RectTransform
+  parent: UnityEngine
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: UnityEngine.RectTransform
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine.EventSystems.UIBehaviour.OnEnable
+  commentId: M:UnityEngine.EventSystems.UIBehaviour.OnEnable
+  parent: UnityEngine.EventSystems.UIBehaviour
+  isExternal: true
+  name: OnEnable()
+  nameWithType: UIBehaviour.OnEnable()
+  fullName: UnityEngine.EventSystems.UIBehaviour.OnEnable()
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.UIBehaviour.OnEnable
+    name: OnEnable
+    nameWithType: UIBehaviour.OnEnable
+    fullName: UnityEngine.EventSystems.UIBehaviour.OnEnable
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.EventSystems.UIBehaviour.OnEnable
+    name: OnEnable
+    nameWithType: UIBehaviour.OnEnable
+    fullName: UnityEngine.EventSystems.UIBehaviour.OnEnable
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnEnable*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnEnable
+  name: OnEnable
+  nameWithType: MaxWidthHeight.OnEnable
+  fullName: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnEnable
+- uid: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetPreferredHeight*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetPreferredHeight
+  name: SetPreferredHeight
+  nameWithType: MaxWidthHeight.SetPreferredHeight
+  fullName: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetPreferredHeight
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: UnityEngine.EventSystems.UIBehaviour.OnDisable
+  commentId: M:UnityEngine.EventSystems.UIBehaviour.OnDisable
+  parent: UnityEngine.EventSystems.UIBehaviour
+  isExternal: true
+  name: OnDisable()
+  nameWithType: UIBehaviour.OnDisable()
+  fullName: UnityEngine.EventSystems.UIBehaviour.OnDisable()
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.UIBehaviour.OnDisable
+    name: OnDisable
+    nameWithType: UIBehaviour.OnDisable
+    fullName: UnityEngine.EventSystems.UIBehaviour.OnDisable
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.EventSystems.UIBehaviour.OnDisable
+    name: OnDisable
+    nameWithType: UIBehaviour.OnDisable
+    fullName: UnityEngine.EventSystems.UIBehaviour.OnDisable
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnDisable*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnDisable
+  name: OnDisable
+  nameWithType: MaxWidthHeight.OnDisable
+  fullName: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnDisable
+- uid: UnityEngine.EventSystems.UIBehaviour.OnRectTransformDimensionsChange
+  commentId: M:UnityEngine.EventSystems.UIBehaviour.OnRectTransformDimensionsChange
+  parent: UnityEngine.EventSystems.UIBehaviour
+  isExternal: true
+  name: OnRectTransformDimensionsChange()
+  nameWithType: UIBehaviour.OnRectTransformDimensionsChange()
+  fullName: UnityEngine.EventSystems.UIBehaviour.OnRectTransformDimensionsChange()
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.UIBehaviour.OnRectTransformDimensionsChange
+    name: OnRectTransformDimensionsChange
+    nameWithType: UIBehaviour.OnRectTransformDimensionsChange
+    fullName: UnityEngine.EventSystems.UIBehaviour.OnRectTransformDimensionsChange
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.EventSystems.UIBehaviour.OnRectTransformDimensionsChange
+    name: OnRectTransformDimensionsChange
+    nameWithType: UIBehaviour.OnRectTransformDimensionsChange
+    fullName: UnityEngine.EventSystems.UIBehaviour.OnRectTransformDimensionsChange
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnRectTransformDimensionsChange*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnRectTransformDimensionsChange
+  name: OnRectTransformDimensionsChange
+  nameWithType: MaxWidthHeight.OnRectTransformDimensionsChange
+  fullName: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.OnRectTransformDimensionsChange
+- uid: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetLayoutHorizontal*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetLayoutHorizontal
+  name: SetLayoutHorizontal
+  nameWithType: MaxWidthHeight.SetLayoutHorizontal
+  fullName: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetLayoutHorizontal
+- uid: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetLayoutVertical*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetLayoutVertical
+  name: SetLayoutVertical
+  nameWithType: MaxWidthHeight.SetLayoutVertical
+  fullName: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetLayoutVertical
+- uid: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetDirty*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetDirty
+  name: SetDirty
+  nameWithType: MaxWidthHeight.SetDirty
+  fullName: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight.SetDirty

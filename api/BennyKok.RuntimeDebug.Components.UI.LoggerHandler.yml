@@ -1,0 +1,505 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.LoggerHandler
+  id: LoggerHandler
+  parent: BennyKok.RuntimeDebug.Components.UI
+  children:
+  - BennyKok.RuntimeDebug.Components.UI.LoggerHandler.allLogs
+  - BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Close
+  - BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Hold
+  - BennyKok.RuntimeDebug.Components.UI.LoggerHandler.logText
+  - BennyKok.RuntimeDebug.Components.UI.LoggerHandler.OnLogUpdated(System.String,System.String,UnityEngine.LogType)
+  - BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Resume
+  - BennyKok.RuntimeDebug.Components.UI.LoggerHandler.scrollRect
+  - BennyKok.RuntimeDebug.Components.UI.LoggerHandler.SwitchHeight
+  langs:
+  - csharp
+  - vb
+  name: LoggerHandler
+  nameWithType: LoggerHandler
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler
+  type: Class
+  source:
+    remote:
+      path: Runtime/Components/UI/LoggerHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: LoggerHandler
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerHandler.cs
+    startLine: 10
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: 'public class LoggerHandler : MonoBehaviour'
+    content.vb: >-
+      Public Class LoggerHandler
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.logText
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.LoggerHandler.logText
+  id: logText
+  parent: BennyKok.RuntimeDebug.Components.UI.LoggerHandler
+  langs:
+  - csharp
+  - vb
+  name: logText
+  nameWithType: LoggerHandler.logText
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.logText
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/LoggerHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: logText
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerHandler.cs
+    startLine: 12
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public TextMeshProUGUI logText
+    return:
+      type: TMPro.TextMeshProUGUI
+    content.vb: Public logText As TextMeshProUGUI
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.scrollRect
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.LoggerHandler.scrollRect
+  id: scrollRect
+  parent: BennyKok.RuntimeDebug.Components.UI.LoggerHandler
+  langs:
+  - csharp
+  - vb
+  name: scrollRect
+  nameWithType: LoggerHandler.scrollRect
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.scrollRect
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/LoggerHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: scrollRect
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerHandler.cs
+    startLine: 13
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public ScrollRect scrollRect
+    return:
+      type: UnityEngine.UI.ScrollRect
+    content.vb: Public scrollRect As ScrollRect
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.allLogs
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.LoggerHandler.allLogs
+  id: allLogs
+  parent: BennyKok.RuntimeDebug.Components.UI.LoggerHandler
+  langs:
+  - csharp
+  - vb
+  name: allLogs
+  nameWithType: LoggerHandler.allLogs
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.allLogs
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/LoggerHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: allLogs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerHandler.cs
+    startLine: 15
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public List<LoggerHandler.Log> allLogs
+    return:
+      type: System.Collections.Generic.List{BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log}
+    content.vb: Public allLogs As List(Of LoggerHandler.Log)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Hold
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Hold
+  id: Hold
+  parent: BennyKok.RuntimeDebug.Components.UI.LoggerHandler
+  langs:
+  - csharp
+  - vb
+  name: Hold()
+  nameWithType: LoggerHandler.Hold()
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Hold()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/LoggerHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Hold
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerHandler.cs
+    startLine: 53
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void Hold()
+    content.vb: Public Sub Hold
+  overload: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Hold*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Resume
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Resume
+  id: Resume
+  parent: BennyKok.RuntimeDebug.Components.UI.LoggerHandler
+  langs:
+  - csharp
+  - vb
+  name: Resume()
+  nameWithType: LoggerHandler.Resume()
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Resume()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/LoggerHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Resume
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerHandler.cs
+    startLine: 60
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void Resume()
+    content.vb: Public Sub Resume
+  overload: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Resume*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Close
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Close
+  id: Close
+  parent: BennyKok.RuntimeDebug.Components.UI.LoggerHandler
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: LoggerHandler.Close()
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Close()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/LoggerHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Close
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerHandler.cs
+    startLine: 89
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void Close()
+    content.vb: Public Sub Close
+  overload: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Close*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.SwitchHeight
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.LoggerHandler.SwitchHeight
+  id: SwitchHeight
+  parent: BennyKok.RuntimeDebug.Components.UI.LoggerHandler
+  langs:
+  - csharp
+  - vb
+  name: SwitchHeight()
+  nameWithType: LoggerHandler.SwitchHeight()
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.SwitchHeight()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/LoggerHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: SwitchHeight
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerHandler.cs
+    startLine: 94
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void SwitchHeight()
+    content.vb: Public Sub SwitchHeight
+  overload: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.SwitchHeight*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.OnLogUpdated(System.String,System.String,UnityEngine.LogType)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.LoggerHandler.OnLogUpdated(System.String,System.String,UnityEngine.LogType)
+  id: OnLogUpdated(System.String,System.String,UnityEngine.LogType)
+  parent: BennyKok.RuntimeDebug.Components.UI.LoggerHandler
+  langs:
+  - csharp
+  - vb
+  name: OnLogUpdated(String, String, LogType)
+  nameWithType: LoggerHandler.OnLogUpdated(String, String, LogType)
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.OnLogUpdated(System.String, System.String, UnityEngine.LogType)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/LoggerHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: OnLogUpdated
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerHandler.cs
+    startLine: 99
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void OnLogUpdated(string logString, string stackTrace, LogType type)
+    parameters:
+    - id: logString
+      type: System.String
+    - id: stackTrace
+      type: System.String
+    - id: type
+      type: UnityEngine.LogType
+    content.vb: Public Sub OnLogUpdated(logString As String, stackTrace As String, type As LogType)
+  overload: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.OnLogUpdated*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BennyKok.RuntimeDebug.Components.UI
+  commentId: N:BennyKok.RuntimeDebug.Components.UI
+  name: BennyKok.RuntimeDebug.Components.UI
+  nameWithType: BennyKok.RuntimeDebug.Components.UI
+  fullName: BennyKok.RuntimeDebug.Components.UI
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: TMPro.TextMeshProUGUI
+  commentId: T:TMPro.TextMeshProUGUI
+  parent: TMPro
+  isExternal: true
+  name: TextMeshProUGUI
+  nameWithType: TextMeshProUGUI
+  fullName: TMPro.TextMeshProUGUI
+- uid: TMPro
+  commentId: N:TMPro
+  isExternal: true
+  name: TMPro
+  nameWithType: TMPro
+  fullName: TMPro
+- uid: UnityEngine.UI.ScrollRect
+  commentId: T:UnityEngine.UI.ScrollRect
+  parent: UnityEngine.UI
+  isExternal: true
+  name: ScrollRect
+  nameWithType: ScrollRect
+  fullName: UnityEngine.UI.ScrollRect
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  isExternal: true
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+- uid: System.Collections.Generic.List{BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log}
+  commentId: T:System.Collections.Generic.List{BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<LoggerHandler.Log>
+  nameWithType: List<LoggerHandler.Log>
+  fullName: System.Collections.Generic.List<BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log>
+  nameWithType.vb: List(Of LoggerHandler.Log)
+  fullName.vb: System.Collections.Generic.List(Of BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log)
+  name.vb: List(Of LoggerHandler.Log)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log
+    name: LoggerHandler.Log
+    nameWithType: LoggerHandler.Log
+    fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log
+    name: LoggerHandler.Log
+    nameWithType: LoggerHandler.Log
+    fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Hold*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Hold
+  name: Hold
+  nameWithType: LoggerHandler.Hold
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Hold
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Resume*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Resume
+  name: Resume
+  nameWithType: LoggerHandler.Resume
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Resume
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Close*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Close
+  name: Close
+  nameWithType: LoggerHandler.Close
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Close
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.SwitchHeight*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.LoggerHandler.SwitchHeight
+  name: SwitchHeight
+  nameWithType: LoggerHandler.SwitchHeight
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.SwitchHeight
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.OnLogUpdated*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.LoggerHandler.OnLogUpdated
+  name: OnLogUpdated
+  nameWithType: LoggerHandler.OnLogUpdated
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.OnLogUpdated
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: UnityEngine.LogType
+  commentId: T:UnityEngine.LogType
+  parent: UnityEngine
+  isExternal: true
+  name: LogType
+  nameWithType: LogType
+  fullName: UnityEngine.LogType

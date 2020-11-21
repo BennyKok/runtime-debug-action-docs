@@ -8,6 +8,9 @@ items:
   - BennyKok.RuntimeDebug.DebugInput.InputQuery.allParams
   - BennyKok.RuntimeDebug.DebugInput.InputQuery.Create
   - BennyKok.RuntimeDebug.DebugInput.InputQuery.GetParamsDisplay
+  - BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType)
+  - BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String)
+  - BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String,System.Func{System.Object})
   - BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String,System.Object)
   langs:
   - csharp
@@ -153,6 +156,100 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType)
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType)
+  id: Query(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType)
+  parent: BennyKok.RuntimeDebug.DebugInput.InputQuery
+  langs:
+  - csharp
+  - vb
+  name: Query(String, ParamType)
+  nameWithType: InputQuery.Query(String, ParamType)
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(System.String, BennyKok.RuntimeDebug.DebugInput.ParamType)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/InputQuery.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Query
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputQuery.cs
+    startLine: 34
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  summary: "\nAdd a new param to the param list\n"
+  example: []
+  syntax:
+    content: public InputQuery Query(string name, ParamType type)
+    parameters:
+    - id: name
+      type: System.String
+    - id: type
+      type: BennyKok.RuntimeDebug.DebugInput.ParamType
+    return:
+      type: BennyKok.RuntimeDebug.DebugInput.InputQuery
+    content.vb: Public Function Query(name As String, type As ParamType) As InputQuery
+  overload: BennyKok.RuntimeDebug.DebugInput.InputQuery.Query*
+  exceptions:
+  - type: BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException
+    commentId: T:BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException
+    description: Thrown when there&apos;s no default value for optional param
+  - type: BennyKok.RuntimeDebug.DebugInput.ParamNameDuplicatedException
+    commentId: T:BennyKok.RuntimeDebug.DebugInput.ParamNameDuplicatedException
+    description: Thrown when there&apos;s a duplicated param name
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String)
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String)
+  id: Query(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String)
+  parent: BennyKok.RuntimeDebug.DebugInput.InputQuery
+  langs:
+  - csharp
+  - vb
+  name: Query(String, ParamType, String)
+  nameWithType: InputQuery.Query(String, ParamType, String)
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(System.String, BennyKok.RuntimeDebug.DebugInput.ParamType, System.String)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/InputQuery.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Query
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputQuery.cs
+    startLine: 44
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  summary: "\nAdd a new param to the param list\n"
+  example: []
+  syntax:
+    content: public InputQuery Query(string name, ParamType type, string description)
+    parameters:
+    - id: name
+      type: System.String
+    - id: type
+      type: BennyKok.RuntimeDebug.DebugInput.ParamType
+    - id: description
+      type: System.String
+    return:
+      type: BennyKok.RuntimeDebug.DebugInput.InputQuery
+    content.vb: Public Function Query(name As String, type As ParamType, description As String) As InputQuery
+  overload: BennyKok.RuntimeDebug.DebugInput.InputQuery.Query*
+  exceptions:
+  - type: BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException
+    commentId: T:BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException
+    description: Thrown when there&apos;s no default value for optional param
+  - type: BennyKok.RuntimeDebug.DebugInput.ParamNameDuplicatedException
+    commentId: T:BennyKok.RuntimeDebug.DebugInput.ParamNameDuplicatedException
+    description: Thrown when there&apos;s a duplicated param name
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String,System.Object)
   commentId: M:BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String,System.Object)
   id: Query(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String,System.Object)
@@ -171,14 +268,14 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Query
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputQuery.cs
-    startLine: 35
+    startLine: 54
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput
   summary: "\nAdd a new param to the param list\n"
   example: []
   syntax:
-    content: public InputQuery Query(string name, ParamType type, string description = null, object defaultValue = null)
+    content: public InputQuery Query(string name, ParamType type, string description, object defaultValue)
     parameters:
     - id: name
       type: System.String
@@ -190,7 +287,7 @@ items:
       type: System.Object
     return:
       type: BennyKok.RuntimeDebug.DebugInput.InputQuery
-    content.vb: Public Function Query(name As String, type As ParamType, description As String = Nothing, defaultValue As Object = Nothing) As InputQuery
+    content.vb: Public Function Query(name As String, type As ParamType, description As String, defaultValue As Object) As InputQuery
   overload: BennyKok.RuntimeDebug.DebugInput.InputQuery.Query*
   exceptions:
   - type: BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException
@@ -203,6 +300,59 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String,System.Func{System.Object})
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String,System.Func{System.Object})
+  id: Query(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String,System.Func{System.Object})
+  parent: BennyKok.RuntimeDebug.DebugInput.InputQuery
+  langs:
+  - csharp
+  - vb
+  name: Query(String, ParamType, String, Func<Object>)
+  nameWithType: InputQuery.Query(String, ParamType, String, Func<Object>)
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(System.String, BennyKok.RuntimeDebug.DebugInput.ParamType, System.String, System.Func<System.Object>)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/InputQuery.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Query
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputQuery.cs
+    startLine: 64
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  summary: "\nAdd a new param to the param list\n"
+  example: []
+  syntax:
+    content: public InputQuery Query(string name, ParamType type, string description, Func<object> valuePrefillCallback)
+    parameters:
+    - id: name
+      type: System.String
+    - id: type
+      type: BennyKok.RuntimeDebug.DebugInput.ParamType
+    - id: description
+      type: System.String
+    - id: valuePrefillCallback
+      type: System.Func{System.Object}
+    return:
+      type: BennyKok.RuntimeDebug.DebugInput.InputQuery
+    content.vb: Public Function Query(name As String, type As ParamType, description As String, valuePrefillCallback As Func(Of Object)) As InputQuery
+  overload: BennyKok.RuntimeDebug.DebugInput.InputQuery.Query*
+  exceptions:
+  - type: BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException
+    commentId: T:BennyKok.RuntimeDebug.DebugInput.ParamWithoutDefaultValueException
+    description: Thrown when there&apos;s no default value for optional param
+  - type: BennyKok.RuntimeDebug.DebugInput.ParamNameDuplicatedException
+    commentId: T:BennyKok.RuntimeDebug.DebugInput.ParamNameDuplicatedException
+    description: Thrown when there&apos;s a duplicated param name
+  nameWithType.vb: InputQuery.Query(String, ParamType, String, Func(Of Object))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: BennyKok.RuntimeDebug.DebugInput.InputQuery.Query(System.String, BennyKok.RuntimeDebug.DebugInput.ParamType, System.String, System.Func(Of System.Object))
+  name.vb: Query(String, ParamType, String, Func(Of Object))
 references:
 - uid: BennyKok.RuntimeDebug.Actions.DebugActionInput
   commentId: T:BennyKok.RuntimeDebug.Actions.DebugActionInput
@@ -364,3 +514,86 @@ references:
   name: ParamType
   nameWithType: ParamType
   fullName: BennyKok.RuntimeDebug.DebugInput.ParamType
+- uid: System.Func{System.Object}
+  commentId: T:System.Func{System.Object}
+  parent: System
+  definition: System.Func`1
+  name: Func<Object>
+  nameWithType: Func<Object>
+  fullName: System.Func<System.Object>
+  nameWithType.vb: Func(Of Object)
+  fullName.vb: System.Func(Of System.Object)
+  name.vb: Func(Of Object)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )

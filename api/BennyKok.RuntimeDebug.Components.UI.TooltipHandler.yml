@@ -1,0 +1,270 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.Components.UI.TooltipHandler
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.TooltipHandler
+  id: TooltipHandler
+  parent: BennyKok.RuntimeDebug.Components.UI
+  children:
+  - BennyKok.RuntimeDebug.Components.UI.TooltipHandler.ClearTooltip
+  - BennyKok.RuntimeDebug.Components.UI.TooltipHandler.IsActive
+  - BennyKok.RuntimeDebug.Components.UI.TooltipHandler.ShowTooltip(System.String)
+  - BennyKok.RuntimeDebug.Components.UI.TooltipHandler.tooltip
+  langs:
+  - csharp
+  - vb
+  name: TooltipHandler
+  nameWithType: TooltipHandler
+  fullName: BennyKok.RuntimeDebug.Components.UI.TooltipHandler
+  type: Class
+  source:
+    remote:
+      path: Runtime/Components/UI/TooltipHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: TooltipHandler
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/TooltipHandler.cs
+    startLine: 5
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: 'public class TooltipHandler : MonoBehaviour'
+    content.vb: >-
+      Public Class TooltipHandler
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BennyKok.RuntimeDebug.Components.UI.TooltipHandler.tooltip
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.TooltipHandler.tooltip
+  id: tooltip
+  parent: BennyKok.RuntimeDebug.Components.UI.TooltipHandler
+  langs:
+  - csharp
+  - vb
+  name: tooltip
+  nameWithType: TooltipHandler.tooltip
+  fullName: BennyKok.RuntimeDebug.Components.UI.TooltipHandler.tooltip
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/TooltipHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: tooltip
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/TooltipHandler.cs
+    startLine: 7
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public TextMeshProUGUI tooltip
+    return:
+      type: TMPro.TextMeshProUGUI
+    content.vb: Public tooltip As TextMeshProUGUI
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.TooltipHandler.IsActive
+  commentId: P:BennyKok.RuntimeDebug.Components.UI.TooltipHandler.IsActive
+  id: IsActive
+  parent: BennyKok.RuntimeDebug.Components.UI.TooltipHandler
+  langs:
+  - csharp
+  - vb
+  name: IsActive
+  nameWithType: TooltipHandler.IsActive
+  fullName: BennyKok.RuntimeDebug.Components.UI.TooltipHandler.IsActive
+  type: Property
+  source:
+    remote:
+      path: Runtime/Components/UI/TooltipHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: IsActive
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/TooltipHandler.cs
+    startLine: 11
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public bool IsActive { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsActive As Boolean
+  overload: BennyKok.RuntimeDebug.Components.UI.TooltipHandler.IsActive*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BennyKok.RuntimeDebug.Components.UI.TooltipHandler.ShowTooltip(System.String)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.TooltipHandler.ShowTooltip(System.String)
+  id: ShowTooltip(System.String)
+  parent: BennyKok.RuntimeDebug.Components.UI.TooltipHandler
+  langs:
+  - csharp
+  - vb
+  name: ShowTooltip(String)
+  nameWithType: TooltipHandler.ShowTooltip(String)
+  fullName: BennyKok.RuntimeDebug.Components.UI.TooltipHandler.ShowTooltip(System.String)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/TooltipHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: ShowTooltip
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/TooltipHandler.cs
+    startLine: 18
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void ShowTooltip(string text)
+    parameters:
+    - id: text
+      type: System.String
+    content.vb: Public Sub ShowTooltip(text As String)
+  overload: BennyKok.RuntimeDebug.Components.UI.TooltipHandler.ShowTooltip*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.TooltipHandler.ClearTooltip
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.TooltipHandler.ClearTooltip
+  id: ClearTooltip
+  parent: BennyKok.RuntimeDebug.Components.UI.TooltipHandler
+  langs:
+  - csharp
+  - vb
+  name: ClearTooltip()
+  nameWithType: TooltipHandler.ClearTooltip()
+  fullName: BennyKok.RuntimeDebug.Components.UI.TooltipHandler.ClearTooltip()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/TooltipHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: ClearTooltip
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/TooltipHandler.cs
+    startLine: 24
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void ClearTooltip()
+    content.vb: Public Sub ClearTooltip
+  overload: BennyKok.RuntimeDebug.Components.UI.TooltipHandler.ClearTooltip*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BennyKok.RuntimeDebug.Components.UI
+  commentId: N:BennyKok.RuntimeDebug.Components.UI
+  name: BennyKok.RuntimeDebug.Components.UI
+  nameWithType: BennyKok.RuntimeDebug.Components.UI
+  fullName: BennyKok.RuntimeDebug.Components.UI
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: TMPro.TextMeshProUGUI
+  commentId: T:TMPro.TextMeshProUGUI
+  parent: TMPro
+  isExternal: true
+  name: TextMeshProUGUI
+  nameWithType: TextMeshProUGUI
+  fullName: TMPro.TextMeshProUGUI
+- uid: TMPro
+  commentId: N:TMPro
+  isExternal: true
+  name: TMPro
+  nameWithType: TMPro
+  fullName: TMPro
+- uid: BennyKok.RuntimeDebug.Components.UI.TooltipHandler.IsActive*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.TooltipHandler.IsActive
+  name: IsActive
+  nameWithType: TooltipHandler.IsActive
+  fullName: BennyKok.RuntimeDebug.Components.UI.TooltipHandler.IsActive
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: BennyKok.RuntimeDebug.Components.UI.TooltipHandler.ShowTooltip*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.TooltipHandler.ShowTooltip
+  name: ShowTooltip
+  nameWithType: TooltipHandler.ShowTooltip
+  fullName: BennyKok.RuntimeDebug.Components.UI.TooltipHandler.ShowTooltip
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BennyKok.RuntimeDebug.Components.UI.TooltipHandler.ClearTooltip*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.TooltipHandler.ClearTooltip
+  name: ClearTooltip
+  nameWithType: TooltipHandler.ClearTooltip
+  fullName: BennyKok.RuntimeDebug.Components.UI.TooltipHandler.ClearTooltip

@@ -5,6 +5,7 @@ items:
   id: SizeMatcher
   parent: BennyKok.RuntimeDebug.Components.UI
   children:
+  - BennyKok.RuntimeDebug.Components.UI.SizeMatcher.matchPositionRotation
   - BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnDisable
   - BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnEnable
   - BennyKok.RuntimeDebug.Components.UI.SizeMatcher.OnRectTransformDimensionsChange
@@ -20,11 +21,11 @@ items:
   type: Class
   source:
     remote:
-      path: Runtime/Components/UI/SizeMatcher.cs
+      path: Runtime/Components/UI/Utils/SizeMatcher.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: SizeMatcher
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/SizeMatcher.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/SizeMatcher.cs
     startLine: 9
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -35,9 +36,13 @@ items:
     content: >-
       [ExecuteAlways]
 
+      [AddComponentMenu("")]
+
       public class SizeMatcher : UIBehaviour, ILayoutController
     content.vb: >-
       <ExecuteAlways>
+
+      <AddComponentMenu("")>
 
       Public Class SizeMatcher
           Inherits UIBehaviour
@@ -53,6 +58,11 @@ items:
   - type: UnityEngine.ExecuteAlways
     ctor: UnityEngine.ExecuteAlways.#ctor
     arguments: []
+  - type: UnityEngine.AddComponentMenu
+    ctor: UnityEngine.AddComponentMenu.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ''
   modifiers.csharp:
   - public
   - class
@@ -72,12 +82,12 @@ items:
   type: Field
   source:
     remote:
-      path: Runtime/Components/UI/SizeMatcher.cs
+      path: Runtime/Components/UI/Utils/SizeMatcher.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: target
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/SizeMatcher.cs
-    startLine: 12
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/SizeMatcher.cs
+    startLine: 13
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -103,12 +113,12 @@ items:
   type: Field
   source:
     remote:
-      path: Runtime/Components/UI/SizeMatcher.cs
+      path: Runtime/Components/UI/Utils/SizeMatcher.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: reference
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/SizeMatcher.cs
-    startLine: 13
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/SizeMatcher.cs
+    startLine: 14
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -117,6 +127,37 @@ items:
     return:
       type: UnityEngine.RectTransform
     content.vb: Public reference As RectTransform
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.SizeMatcher.matchPositionRotation
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.SizeMatcher.matchPositionRotation
+  id: matchPositionRotation
+  parent: BennyKok.RuntimeDebug.Components.UI.SizeMatcher
+  langs:
+  - csharp
+  - vb
+  name: matchPositionRotation
+  nameWithType: SizeMatcher.matchPositionRotation
+  fullName: BennyKok.RuntimeDebug.Components.UI.SizeMatcher.matchPositionRotation
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/Utils/SizeMatcher.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: matchPositionRotation
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/SizeMatcher.cs
+    startLine: 16
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public bool matchPositionRotation
+    return:
+      type: System.Boolean
+    content.vb: Public matchPositionRotation As Boolean
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -134,12 +175,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Components/UI/SizeMatcher.cs
+      path: Runtime/Components/UI/Utils/SizeMatcher.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnEnable
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/SizeMatcher.cs
-    startLine: 17
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/SizeMatcher.cs
+    startLine: 20
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -167,12 +208,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Components/UI/SizeMatcher.cs
+      path: Runtime/Components/UI/Utils/SizeMatcher.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnDisable
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/SizeMatcher.cs
-    startLine: 23
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/SizeMatcher.cs
+    startLine: 26
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -200,12 +241,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Components/UI/SizeMatcher.cs
+      path: Runtime/Components/UI/Utils/SizeMatcher.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: SetDirty
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/SizeMatcher.cs
-    startLine: 30
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/SizeMatcher.cs
+    startLine: 33
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -230,12 +271,12 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Components/UI/SizeMatcher.cs
+      path: Runtime/Components/UI/Utils/SizeMatcher.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnRectTransformDimensionsChange
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/SizeMatcher.cs
-    startLine: 38
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/SizeMatcher.cs
+    startLine: 41
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -323,6 +364,13 @@ references:
   name: RectTransform
   nameWithType: RectTransform
   fullName: UnityEngine.RectTransform
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: UnityEngine.EventSystems.UIBehaviour.OnEnable
   commentId: M:UnityEngine.EventSystems.UIBehaviour.OnEnable
   parent: UnityEngine.EventSystems.UIBehaviour

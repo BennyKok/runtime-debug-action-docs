@@ -1,0 +1,524 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.Utils.ObjectPool
+  commentId: T:BennyKok.RuntimeDebug.Utils.ObjectPool
+  id: ObjectPool
+  parent: BennyKok.RuntimeDebug.Utils
+  children:
+  - BennyKok.RuntimeDebug.Utils.ObjectPool.#ctor(UnityEngine.Transform,UnityEngine.GameObject,System.Int32,System.Boolean,System.Single)
+  - BennyKok.RuntimeDebug.Utils.ObjectPool.AddNew
+  - BennyKok.RuntimeDebug.Utils.ObjectPool.allItems
+  - BennyKok.RuntimeDebug.Utils.ObjectPool.autoRecycle
+  - BennyKok.RuntimeDebug.Utils.ObjectPool.autoRecycleDuration
+  - BennyKok.RuntimeDebug.Utils.ObjectPool.count
+  - BennyKok.RuntimeDebug.Utils.ObjectPool.Get(UnityEngine.Transform)
+  - BennyKok.RuntimeDebug.Utils.ObjectPool.prefab
+  - BennyKok.RuntimeDebug.Utils.ObjectPool.Recycle(BennyKok.RuntimeDebug.Utils.PoolItemBehaviour)
+  langs:
+  - csharp
+  - vb
+  name: ObjectPool
+  nameWithType: ObjectPool
+  fullName: BennyKok.RuntimeDebug.Utils.ObjectPool
+  type: Class
+  source:
+    remote:
+      path: Runtime/Utils/Pool/ObjectPool.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: ObjectPool
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Utils/Pool/ObjectPool.cs
+    startLine: 8
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Utils
+  syntax:
+    content: public class ObjectPool
+    content.vb: Public Class ObjectPool
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BennyKok.RuntimeDebug.Utils.ObjectPool.prefab
+  commentId: F:BennyKok.RuntimeDebug.Utils.ObjectPool.prefab
+  id: prefab
+  parent: BennyKok.RuntimeDebug.Utils.ObjectPool
+  langs:
+  - csharp
+  - vb
+  name: prefab
+  nameWithType: ObjectPool.prefab
+  fullName: BennyKok.RuntimeDebug.Utils.ObjectPool.prefab
+  type: Field
+  source:
+    remote:
+      path: Runtime/Utils/Pool/ObjectPool.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: prefab
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Utils/Pool/ObjectPool.cs
+    startLine: 10
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Utils
+  syntax:
+    content: public GameObject prefab
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public prefab As GameObject
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Utils.ObjectPool.count
+  commentId: F:BennyKok.RuntimeDebug.Utils.ObjectPool.count
+  id: count
+  parent: BennyKok.RuntimeDebug.Utils.ObjectPool
+  langs:
+  - csharp
+  - vb
+  name: count
+  nameWithType: ObjectPool.count
+  fullName: BennyKok.RuntimeDebug.Utils.ObjectPool.count
+  type: Field
+  source:
+    remote:
+      path: Runtime/Utils/Pool/ObjectPool.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: count
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Utils/Pool/ObjectPool.cs
+    startLine: 11
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Utils
+  syntax:
+    content: public int count
+    return:
+      type: System.Int32
+    content.vb: Public count As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Utils.ObjectPool.autoRecycle
+  commentId: F:BennyKok.RuntimeDebug.Utils.ObjectPool.autoRecycle
+  id: autoRecycle
+  parent: BennyKok.RuntimeDebug.Utils.ObjectPool
+  langs:
+  - csharp
+  - vb
+  name: autoRecycle
+  nameWithType: ObjectPool.autoRecycle
+  fullName: BennyKok.RuntimeDebug.Utils.ObjectPool.autoRecycle
+  type: Field
+  source:
+    remote:
+      path: Runtime/Utils/Pool/ObjectPool.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: autoRecycle
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Utils/Pool/ObjectPool.cs
+    startLine: 12
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Utils
+  syntax:
+    content: public bool autoRecycle
+    return:
+      type: System.Boolean
+    content.vb: Public autoRecycle As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Utils.ObjectPool.autoRecycleDuration
+  commentId: F:BennyKok.RuntimeDebug.Utils.ObjectPool.autoRecycleDuration
+  id: autoRecycleDuration
+  parent: BennyKok.RuntimeDebug.Utils.ObjectPool
+  langs:
+  - csharp
+  - vb
+  name: autoRecycleDuration
+  nameWithType: ObjectPool.autoRecycleDuration
+  fullName: BennyKok.RuntimeDebug.Utils.ObjectPool.autoRecycleDuration
+  type: Field
+  source:
+    remote:
+      path: Runtime/Utils/Pool/ObjectPool.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: autoRecycleDuration
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Utils/Pool/ObjectPool.cs
+    startLine: 13
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Utils
+  syntax:
+    content: public float autoRecycleDuration
+    return:
+      type: System.Single
+    content.vb: Public autoRecycleDuration As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Utils.ObjectPool.allItems
+  commentId: F:BennyKok.RuntimeDebug.Utils.ObjectPool.allItems
+  id: allItems
+  parent: BennyKok.RuntimeDebug.Utils.ObjectPool
+  langs:
+  - csharp
+  - vb
+  name: allItems
+  nameWithType: ObjectPool.allItems
+  fullName: BennyKok.RuntimeDebug.Utils.ObjectPool.allItems
+  type: Field
+  source:
+    remote:
+      path: Runtime/Utils/Pool/ObjectPool.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: allItems
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Utils/Pool/ObjectPool.cs
+    startLine: 16
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Utils
+  syntax:
+    content: >-
+      [NonSerialized]
+
+      public List<PoolItemBehaviour> allItems
+    return:
+      type: System.Collections.Generic.List{BennyKok.RuntimeDebug.Utils.PoolItemBehaviour}
+    content.vb: >-
+      <NonSerialized>
+
+      Public allItems As List(Of PoolItemBehaviour)
+  attributes:
+  - type: System.NonSerializedAttribute
+    ctor: System.NonSerializedAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Utils.ObjectPool.#ctor(UnityEngine.Transform,UnityEngine.GameObject,System.Int32,System.Boolean,System.Single)
+  commentId: M:BennyKok.RuntimeDebug.Utils.ObjectPool.#ctor(UnityEngine.Transform,UnityEngine.GameObject,System.Int32,System.Boolean,System.Single)
+  id: '#ctor(UnityEngine.Transform,UnityEngine.GameObject,System.Int32,System.Boolean,System.Single)'
+  parent: BennyKok.RuntimeDebug.Utils.ObjectPool
+  langs:
+  - csharp
+  - vb
+  name: ObjectPool(Transform, GameObject, Int32, Boolean, Single)
+  nameWithType: ObjectPool.ObjectPool(Transform, GameObject, Int32, Boolean, Single)
+  fullName: BennyKok.RuntimeDebug.Utils.ObjectPool.ObjectPool(UnityEngine.Transform, UnityEngine.GameObject, System.Int32, System.Boolean, System.Single)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Utils/Pool/ObjectPool.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: .ctor
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Utils/Pool/ObjectPool.cs
+    startLine: 21
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Utils
+  syntax:
+    content: public ObjectPool(Transform poolParent, GameObject prefab, int count, bool autoRecycle = false, float autoRecycleDuration = 0F)
+    parameters:
+    - id: poolParent
+      type: UnityEngine.Transform
+    - id: prefab
+      type: UnityEngine.GameObject
+    - id: count
+      type: System.Int32
+    - id: autoRecycle
+      type: System.Boolean
+    - id: autoRecycleDuration
+      type: System.Single
+    content.vb: Public Sub New(poolParent As Transform, prefab As GameObject, count As Integer, autoRecycle As Boolean = False, autoRecycleDuration As Single = 0F)
+  overload: BennyKok.RuntimeDebug.Utils.ObjectPool.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Utils.ObjectPool.AddNew
+  commentId: M:BennyKok.RuntimeDebug.Utils.ObjectPool.AddNew
+  id: AddNew
+  parent: BennyKok.RuntimeDebug.Utils.ObjectPool
+  langs:
+  - csharp
+  - vb
+  name: AddNew()
+  nameWithType: ObjectPool.AddNew()
+  fullName: BennyKok.RuntimeDebug.Utils.ObjectPool.AddNew()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Utils/Pool/ObjectPool.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: AddNew
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Utils/Pool/ObjectPool.cs
+    startLine: 39
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Utils
+  syntax:
+    content: public PoolItemBehaviour AddNew()
+    return:
+      type: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
+    content.vb: Public Function AddNew As PoolItemBehaviour
+  overload: BennyKok.RuntimeDebug.Utils.ObjectPool.AddNew*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Utils.ObjectPool.Get(UnityEngine.Transform)
+  commentId: M:BennyKok.RuntimeDebug.Utils.ObjectPool.Get(UnityEngine.Transform)
+  id: Get(UnityEngine.Transform)
+  parent: BennyKok.RuntimeDebug.Utils.ObjectPool
+  langs:
+  - csharp
+  - vb
+  name: Get(Transform)
+  nameWithType: ObjectPool.Get(Transform)
+  fullName: BennyKok.RuntimeDebug.Utils.ObjectPool.Get(UnityEngine.Transform)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Utils/Pool/ObjectPool.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Get
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Utils/Pool/ObjectPool.cs
+    startLine: 62
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Utils
+  syntax:
+    content: public PoolItemBehaviour Get(Transform customTransform = null)
+    parameters:
+    - id: customTransform
+      type: UnityEngine.Transform
+    return:
+      type: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
+    content.vb: Public Function Get(customTransform As Transform = Nothing) As PoolItemBehaviour
+  overload: BennyKok.RuntimeDebug.Utils.ObjectPool.Get*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Utils.ObjectPool.Recycle(BennyKok.RuntimeDebug.Utils.PoolItemBehaviour)
+  commentId: M:BennyKok.RuntimeDebug.Utils.ObjectPool.Recycle(BennyKok.RuntimeDebug.Utils.PoolItemBehaviour)
+  id: Recycle(BennyKok.RuntimeDebug.Utils.PoolItemBehaviour)
+  parent: BennyKok.RuntimeDebug.Utils.ObjectPool
+  langs:
+  - csharp
+  - vb
+  name: Recycle(PoolItemBehaviour)
+  nameWithType: ObjectPool.Recycle(PoolItemBehaviour)
+  fullName: BennyKok.RuntimeDebug.Utils.ObjectPool.Recycle(BennyKok.RuntimeDebug.Utils.PoolItemBehaviour)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Utils/Pool/ObjectPool.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Recycle
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Utils/Pool/ObjectPool.cs
+    startLine: 81
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Utils
+  syntax:
+    content: public void Recycle(PoolItemBehaviour target)
+    parameters:
+    - id: target
+      type: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
+    content.vb: Public Sub Recycle(target As PoolItemBehaviour)
+  overload: BennyKok.RuntimeDebug.Utils.ObjectPool.Recycle*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BennyKok.RuntimeDebug.Utils
+  commentId: N:BennyKok.RuntimeDebug.Utils
+  name: BennyKok.RuntimeDebug.Utils
+  nameWithType: BennyKok.RuntimeDebug.Utils
+  fullName: BennyKok.RuntimeDebug.Utils
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System.Collections.Generic.List{BennyKok.RuntimeDebug.Utils.PoolItemBehaviour}
+  commentId: T:System.Collections.Generic.List{BennyKok.RuntimeDebug.Utils.PoolItemBehaviour}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<PoolItemBehaviour>
+  nameWithType: List<PoolItemBehaviour>
+  fullName: System.Collections.Generic.List<BennyKok.RuntimeDebug.Utils.PoolItemBehaviour>
+  nameWithType.vb: List(Of PoolItemBehaviour)
+  fullName.vb: System.Collections.Generic.List(Of BennyKok.RuntimeDebug.Utils.PoolItemBehaviour)
+  name.vb: List(Of PoolItemBehaviour)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
+    name: PoolItemBehaviour
+    nameWithType: PoolItemBehaviour
+    fullName: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
+    name: PoolItemBehaviour
+    nameWithType: PoolItemBehaviour
+    fullName: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: BennyKok.RuntimeDebug.Utils.ObjectPool.#ctor*
+  commentId: Overload:BennyKok.RuntimeDebug.Utils.ObjectPool.#ctor
+  name: ObjectPool
+  nameWithType: ObjectPool.ObjectPool
+  fullName: BennyKok.RuntimeDebug.Utils.ObjectPool.ObjectPool
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: BennyKok.RuntimeDebug.Utils.ObjectPool.AddNew*
+  commentId: Overload:BennyKok.RuntimeDebug.Utils.ObjectPool.AddNew
+  name: AddNew
+  nameWithType: ObjectPool.AddNew
+  fullName: BennyKok.RuntimeDebug.Utils.ObjectPool.AddNew
+- uid: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
+  commentId: T:BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
+  parent: BennyKok.RuntimeDebug.Utils
+  name: PoolItemBehaviour
+  nameWithType: PoolItemBehaviour
+  fullName: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
+- uid: BennyKok.RuntimeDebug.Utils.ObjectPool.Get*
+  commentId: Overload:BennyKok.RuntimeDebug.Utils.ObjectPool.Get
+  name: Get
+  nameWithType: ObjectPool.Get
+  fullName: BennyKok.RuntimeDebug.Utils.ObjectPool.Get
+- uid: BennyKok.RuntimeDebug.Utils.ObjectPool.Recycle*
+  commentId: Overload:BennyKok.RuntimeDebug.Utils.ObjectPool.Recycle
+  name: Recycle
+  nameWithType: ObjectPool.Recycle
+  fullName: BennyKok.RuntimeDebug.Utils.ObjectPool.Recycle

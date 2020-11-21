@@ -22,7 +22,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: EnableMode
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 63
+    startLine: 79
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -53,7 +53,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: AlwaysOn
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 68
+    startLine: 84
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -87,7 +87,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: AlwaysOff
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 73
+    startLine: 89
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -121,7 +121,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnInDevelopmentBuild
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 78
+    startLine: 94
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data

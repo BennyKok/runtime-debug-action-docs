@@ -20,7 +20,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ParamWithoutDefaultValueException
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputQuery.cs
-    startLine: 56
+    startLine: 91
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput
@@ -57,7 +57,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: .ctor
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputQuery.cs
-    startLine: 58
+    startLine: 93
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput

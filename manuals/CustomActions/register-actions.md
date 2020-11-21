@@ -1,4 +1,8 @@
-# Registering Actions
+---
+name: Register Actions
+---
+
+# Register Actions
 
 To register any actions
 

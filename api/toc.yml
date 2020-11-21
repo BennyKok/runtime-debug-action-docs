@@ -2,8 +2,8 @@
 - uid: BennyKok.RuntimeDebug.Actions
   name: BennyKok.RuntimeDebug.Actions
   items:
-  - uid: BennyKok.RuntimeDebug.Actions.BaseAction
-    name: BaseAction
+  - uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction
+    name: BaseDebugAction
   - uid: BennyKok.RuntimeDebug.Actions.DebugActionBuilder
     name: DebugActionBuilder
   - uid: BennyKok.RuntimeDebug.Actions.DebugActionButton
@@ -34,6 +34,8 @@
 - uid: BennyKok.RuntimeDebug.Components.UI
   name: BennyKok.RuntimeDebug.Components.UI
   items:
+  - uid: BennyKok.RuntimeDebug.Components.UI.ChangeSiblingIndexOnAwake
+    name: ChangeSiblingIndexOnAwake
   - uid: BennyKok.RuntimeDebug.Components.UI.DebugSystemEventHandler
     name: DebugSystemEventHandler
   - uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
@@ -46,12 +48,22 @@
     name: ListItemView
   - uid: BennyKok.RuntimeDebug.Components.UI.ListView
     name: ListView
+  - uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler
+    name: LoggerHandler
+  - uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log
+    name: LoggerHandler.Log
+  - uid: BennyKok.RuntimeDebug.Components.UI.LoggerLineSelectHandler
+    name: LoggerLineSelectHandler
+  - uid: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight
+    name: MaxWidthHeight
   - uid: BennyKok.RuntimeDebug.Components.UI.SafeAreaExtender
     name: SafeAreaExtender
   - uid: BennyKok.RuntimeDebug.Components.UI.SafeAreaHelper
     name: SafeAreaHelper
   - uid: BennyKok.RuntimeDebug.Components.UI.SizeMatcher
     name: SizeMatcher
+  - uid: BennyKok.RuntimeDebug.Components.UI.TooltipHandler
+    name: TooltipHandler
 - uid: BennyKok.RuntimeDebug.Data
   name: BennyKok.RuntimeDebug.Data
   items:
@@ -98,6 +110,10 @@
     name: CollapsedEventAttribute
   - uid: BennyKok.RuntimeDebug.Utils.CommentAttribute
     name: CommentAttribute
+  - uid: BennyKok.RuntimeDebug.Utils.ObjectPool
+    name: ObjectPool
+  - uid: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
+    name: PoolItemBehaviour
   - uid: BennyKok.RuntimeDebug.Utils.ReorderableBase
     name: ReorderableBase
   - uid: BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute

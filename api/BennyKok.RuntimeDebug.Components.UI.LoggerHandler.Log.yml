@@ -1,0 +1,325 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log
+  id: LoggerHandler.Log
+  parent: BennyKok.RuntimeDebug.Components.UI
+  children:
+  - BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.#ctor(System.String,System.String,UnityEngine.LogType,System.DateTime)
+  - BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.logString
+  - BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.stackTrace
+  - BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.time
+  - BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.ToString
+  - BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.type
+  langs:
+  - csharp
+  - vb
+  name: LoggerHandler.Log
+  nameWithType: LoggerHandler.Log
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log
+  type: Struct
+  source:
+    remote:
+      path: Runtime/Components/UI/LoggerHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Log
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerHandler.cs
+    startLine: 21
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public struct Log
+    content.vb: Public Structure Log
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.logString
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.logString
+  id: logString
+  parent: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log
+  langs:
+  - csharp
+  - vb
+  name: logString
+  nameWithType: LoggerHandler.Log.logString
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.logString
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/LoggerHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: logString
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerHandler.cs
+    startLine: 23
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public string logString
+    return:
+      type: System.String
+    content.vb: Public logString As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.stackTrace
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.stackTrace
+  id: stackTrace
+  parent: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log
+  langs:
+  - csharp
+  - vb
+  name: stackTrace
+  nameWithType: LoggerHandler.Log.stackTrace
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.stackTrace
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/LoggerHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: stackTrace
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerHandler.cs
+    startLine: 24
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public string stackTrace
+    return:
+      type: System.String
+    content.vb: Public stackTrace As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.type
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.type
+  id: type
+  parent: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log
+  langs:
+  - csharp
+  - vb
+  name: type
+  nameWithType: LoggerHandler.Log.type
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.type
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/LoggerHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: type
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerHandler.cs
+    startLine: 25
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public LogType type
+    return:
+      type: UnityEngine.LogType
+    content.vb: Public type As LogType
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.time
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.time
+  id: time
+  parent: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log
+  langs:
+  - csharp
+  - vb
+  name: time
+  nameWithType: LoggerHandler.Log.time
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.time
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/LoggerHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: time
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerHandler.cs
+    startLine: 26
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public DateTime time
+    return:
+      type: System.DateTime
+    content.vb: Public time As Date
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.#ctor(System.String,System.String,UnityEngine.LogType,System.DateTime)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.#ctor(System.String,System.String,UnityEngine.LogType,System.DateTime)
+  id: '#ctor(System.String,System.String,UnityEngine.LogType,System.DateTime)'
+  parent: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log
+  langs:
+  - csharp
+  - vb
+  name: Log(String, String, LogType, DateTime)
+  nameWithType: LoggerHandler.Log.Log(String, String, LogType, DateTime)
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.Log(System.String, System.String, UnityEngine.LogType, System.DateTime)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Components/UI/LoggerHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: .ctor
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerHandler.cs
+    startLine: 28
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public Log(string logString, string stackTrace, LogType type, DateTime time)
+    parameters:
+    - id: logString
+      type: System.String
+    - id: stackTrace
+      type: System.String
+    - id: type
+      type: UnityEngine.LogType
+    - id: time
+      type: System.DateTime
+    content.vb: Public Sub New(logString As String, stackTrace As String, type As LogType, time As Date)
+  overload: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.ToString
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.ToString
+  id: ToString
+  parent: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: LoggerHandler.Log.ToString()
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.ToString()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/LoggerHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: ToString
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerHandler.cs
+    startLine: 36
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.ValueType.ToString
+  overload: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: BennyKok.RuntimeDebug.Components.UI
+  commentId: N:BennyKok.RuntimeDebug.Components.UI
+  name: BennyKok.RuntimeDebug.Components.UI
+  nameWithType: BennyKok.RuntimeDebug.Components.UI
+  fullName: BennyKok.RuntimeDebug.Components.UI
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.LogType
+  commentId: T:UnityEngine.LogType
+  parent: UnityEngine
+  isExternal: true
+  name: LogType
+  nameWithType: LogType
+  fullName: UnityEngine.LogType
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.#ctor*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.#ctor
+  name: Log
+  nameWithType: LoggerHandler.Log.Log
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.Log
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.ToString*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.ToString
+  name: ToString
+  nameWithType: LoggerHandler.Log.ToString
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log.ToString
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType

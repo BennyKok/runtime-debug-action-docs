@@ -3,8 +3,13 @@ Welcome to the documentation for RuntimeDebugAction
 
 <!-- ![RDA Cover](images/rda-as-cover.png) -->
 
+![](images/2020-11-21-15-28-50.png)
+
 ## Overview
 **RuntimeDebugAction** is a runtime debug menu system that lets you register and trigger actions in your game development process.
+
+> [!NOTE]
+> This documentation is still in it's early stages, please tell me if there's anything out of place or not explained well. 
 
 ## Features
 - Plug & play debug menu system
@@ -35,6 +40,11 @@ DebugActionBuilder.Button()
         RuntimeDebugSystem.SetTheme(theme, true);
         RuntimeDebugSystem.UIHandler.TogglePanel(true, true);
     })
-    .WithPath(themeTag)
+    .WithGroup("Themes")
 );
 ```
+
+## Quick Start
+
+> [!NOTE]
+> Take a look at the [QuickStart](manuals/quick-start.md) to get started 

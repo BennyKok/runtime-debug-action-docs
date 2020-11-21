@@ -4,4 +4,7 @@
   href: api/
 - name: Changelog
   homepage: CHANGELOG.md
-  # homepage: api/index.md
+- name: Assets Store
+  href: https://assetstore.unity.com/publishers/28510
+- name: Home
+  href: https://www.bennykok.com/home

@@ -23,7 +23,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: InputUIHandler
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/InputUIHandler.cs
-    startLine: 11
+    startLine: 14
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -73,7 +73,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: inputField
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/InputUIHandler.cs
-    startLine: 15
+    startLine: 18
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -120,7 +120,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: cancelButton
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/InputUIHandler.cs
-    startLine: 16
+    startLine: 19
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -151,7 +151,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: DimissInput
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/InputUIHandler.cs
-    startLine: 58
+    startLine: 69
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -183,7 +183,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: AskForInput
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/InputUIHandler.cs
-    startLine: 65
+    startLine: 76
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI

@@ -25,11 +25,11 @@ items:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components
   syntax:
-    content: 'public class BaseDebugActionHandler<T> : MonoBehaviour where T : BaseAction'
+    content: 'public class BaseDebugActionHandler<T> : MonoBehaviour where T : BaseDebugAction'
     typeParameters:
     - id: T
     content.vb: >-
-      Public Class BaseDebugActionHandler(Of T As BaseAction)
+      Public Class BaseDebugActionHandler(Of T As BaseDebugAction)
           Inherits MonoBehaviour
   inheritance:
   - System.Object

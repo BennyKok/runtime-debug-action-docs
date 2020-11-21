@@ -1,3 +1,8 @@
+---
+name: Quick Start
+order: 100
+---
+
 # Quick Start
 
 ### Setup

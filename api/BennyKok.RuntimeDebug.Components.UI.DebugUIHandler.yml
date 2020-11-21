@@ -5,12 +5,15 @@ items:
   id: DebugUIHandler
   parent: BennyKok.RuntimeDebug.Components.UI
   children:
+  - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.actionDisplayAnchor
   - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.actionDisplayPrefab
   - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.actionListLayer
   - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.AttachSystem(BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem)
   - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.backButton
   - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.backgroundLayer
   - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.BackNavigationVisible
+  - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.bottomLayoutPanel
+  - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.canvasScaler
   - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.customFont
   - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.HideBackNavigation
   - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.HideCursor
@@ -19,14 +22,14 @@ items:
   - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.inputHandler
   - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.IsSearching
   - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.IsVisible
-  - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.logText
+  - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.loggerHandler
   - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.navigationHeader
-  - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnAddAction(BennyKok.RuntimeDebug.Actions.BaseAction)
+  - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnAddAction(BennyKok.RuntimeDebug.Actions.BaseDebugAction)
   - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnBackNavigation
-  - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnDisplayAction(BennyKok.RuntimeDebug.Actions.BaseAction,UnityEngine.RectTransform)
-  - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnLogUpdated(System.String)
+  - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnBackNavigationDelay
+  - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnDisplayAction(BennyKok.RuntimeDebug.Actions.BaseDebugAction,UnityEngine.RectTransform)
   - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnMenuToggle
-  - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnRemoveAction(BennyKok.RuntimeDebug.Actions.BaseAction)
+  - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnRemoveAction(BennyKok.RuntimeDebug.Actions.BaseDebugAction)
   - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnSearch(System.String)
   - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.rootList
   - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.searchField
@@ -37,6 +40,7 @@ items:
   - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.ShowSearchField
   - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.system
   - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.TogglePanel(System.Boolean,System.Boolean)
+  - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.tooltip
   - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.touchToggle
   langs:
   - csharp
@@ -52,7 +56,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: DebugUIHandler
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -102,7 +106,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: searchField
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 17
+    startLine: 18
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -149,7 +153,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: touchToggle
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 18
+    startLine: 19
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -180,7 +184,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: backButton
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 19
+    startLine: 20
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -211,7 +215,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: navigationHeader
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 20
+    startLine: 21
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -242,15 +246,15 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: actionListLayer
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 21
+    startLine: 22
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
   syntax:
-    content: public GameObject actionListLayer
+    content: public Canvas actionListLayer
     return:
-      type: UnityEngine.GameObject
-    content.vb: Public actionListLayer As GameObject
+      type: UnityEngine.Canvas
+    content.vb: Public actionListLayer As Canvas
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -273,15 +277,15 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: backgroundLayer
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 22
+    startLine: 23
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
   syntax:
-    content: public GameObject backgroundLayer
+    content: public Canvas backgroundLayer
     return:
-      type: UnityEngine.GameObject
-    content.vb: Public backgroundLayer As GameObject
+      type: UnityEngine.Canvas
+    content.vb: Public backgroundLayer As Canvas
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -304,7 +308,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: rootList
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 23
+    startLine: 24
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -313,6 +317,68 @@ items:
     return:
       type: BennyKok.RuntimeDebug.Components.UI.ListView
     content.vb: Public rootList As ListView
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.actionDisplayAnchor
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.actionDisplayAnchor
+  id: actionDisplayAnchor
+  parent: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
+  langs:
+  - csharp
+  - vb
+  name: actionDisplayAnchor
+  nameWithType: DebugUIHandler.actionDisplayAnchor
+  fullName: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.actionDisplayAnchor
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/DebugUIHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: actionDisplayAnchor
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
+    startLine: 25
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public RectTransform actionDisplayAnchor
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public actionDisplayAnchor As RectTransform
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.bottomLayoutPanel
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.bottomLayoutPanel
+  id: bottomLayoutPanel
+  parent: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
+  langs:
+  - csharp
+  - vb
+  name: bottomLayoutPanel
+  nameWithType: DebugUIHandler.bottomLayoutPanel
+  fullName: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.bottomLayoutPanel
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/DebugUIHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: bottomLayoutPanel
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
+    startLine: 26
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public MaxWidthHeight bottomLayoutPanel
+    return:
+      type: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight
+    content.vb: Public bottomLayoutPanel As MaxWidthHeight
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -335,7 +401,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: inputDimLayer
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 24
+    startLine: 27
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -366,7 +432,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: inputHandler
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 25
+    startLine: 28
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -379,33 +445,64 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.logText
-  commentId: F:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.logText
-  id: logText
+- uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.tooltip
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.tooltip
+  id: tooltip
   parent: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
   langs:
   - csharp
   - vb
-  name: logText
-  nameWithType: DebugUIHandler.logText
-  fullName: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.logText
+  name: tooltip
+  nameWithType: DebugUIHandler.tooltip
+  fullName: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.tooltip
   type: Field
   source:
     remote:
       path: Runtime/Components/UI/DebugUIHandler.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: logText
+    id: tooltip
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 26
+    startLine: 29
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
   syntax:
-    content: public TextMeshProUGUI logText
+    content: public TooltipHandler tooltip
     return:
-      type: TMPro.TextMeshProUGUI
-    content.vb: Public logText As TextMeshProUGUI
+      type: BennyKok.RuntimeDebug.Components.UI.TooltipHandler
+    content.vb: Public tooltip As TooltipHandler
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.loggerHandler
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.loggerHandler
+  id: loggerHandler
+  parent: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
+  langs:
+  - csharp
+  - vb
+  name: loggerHandler
+  nameWithType: DebugUIHandler.loggerHandler
+  fullName: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.loggerHandler
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/DebugUIHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: loggerHandler
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
+    startLine: 30
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public LoggerHandler loggerHandler
+    return:
+      type: BennyKok.RuntimeDebug.Components.UI.LoggerHandler
+    content.vb: Public loggerHandler As LoggerHandler
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -428,7 +525,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: actionDisplayPrefab
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 29
+    startLine: 33
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -473,7 +570,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: customFont
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 32
+    startLine: 36
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -518,7 +615,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: IsSearching
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 43
+    startLine: 47
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -535,6 +632,47 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
+- uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.canvasScaler
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.canvasScaler
+  id: canvasScaler
+  parent: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
+  langs:
+  - csharp
+  - vb
+  name: canvasScaler
+  nameWithType: DebugUIHandler.canvasScaler
+  fullName: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.canvasScaler
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/DebugUIHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: canvasScaler
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
+    startLine: 50
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: >-
+      [NonSerialized]
+
+      public CanvasScaler canvasScaler
+    return:
+      type: UnityEngine.UI.CanvasScaler
+    content.vb: >-
+      <NonSerialized>
+
+      Public canvasScaler As CanvasScaler
+  attributes:
+  - type: System.NonSerializedAttribute
+    ctor: System.NonSerializedAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.system
   commentId: F:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.system
   id: system
@@ -553,7 +691,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: system
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 46
+    startLine: 51
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -594,7 +732,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: showCursorAfterClose
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 47
+    startLine: 52
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -617,6 +755,36 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnBackNavigationDelay
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnBackNavigationDelay
+  id: OnBackNavigationDelay
+  parent: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
+  langs:
+  - csharp
+  - vb
+  name: OnBackNavigationDelay()
+  nameWithType: DebugUIHandler.OnBackNavigationDelay()
+  fullName: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnBackNavigationDelay()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/DebugUIHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: OnBackNavigationDelay
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
+    startLine: 72
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void OnBackNavigationDelay()
+    content.vb: Public Sub OnBackNavigationDelay
+  overload: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnBackNavigationDelay*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.HideSearchField
   commentId: M:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.HideSearchField
   id: HideSearchField
@@ -635,7 +803,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: HideSearchField
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 62
+    startLine: 113
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -665,7 +833,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ShowSearchField
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 67
+    startLine: 118
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -695,7 +863,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnSearch
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 102
+    startLine: 153
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -706,39 +874,6 @@ items:
       type: System.String
     content.vb: Public Sub OnSearch(query As String)
   overload: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnSearch*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnLogUpdated(System.String)
-  commentId: M:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnLogUpdated(System.String)
-  id: OnLogUpdated(System.String)
-  parent: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
-  langs:
-  - csharp
-  - vb
-  name: OnLogUpdated(String)
-  nameWithType: DebugUIHandler.OnLogUpdated(String)
-  fullName: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnLogUpdated(System.String)
-  type: Method
-  source:
-    remote:
-      path: Runtime/Components/UI/DebugUIHandler.cs
-      branch: master
-      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: OnLogUpdated
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 149
-  assemblies:
-  - com.bennykok.runtime-debug-action
-  namespace: BennyKok.RuntimeDebug.Components.UI
-  syntax:
-    content: public void OnLogUpdated(string logString)
-    parameters:
-    - id: logString
-      type: System.String
-    content.vb: Public Sub OnLogUpdated(logString As String)
-  overload: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnLogUpdated*
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -761,7 +896,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnBackNavigation
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 154
+    startLine: 196
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -791,7 +926,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ShowBackNavigation
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 162
+    startLine: 215
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -821,7 +956,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: BackNavigationVisible
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 168
+    startLine: 221
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -856,7 +991,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: HideBackNavigation
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 170
+    startLine: 223
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -886,7 +1021,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: SetNavigationHeader
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 176
+    startLine: 229
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -919,7 +1054,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: AttachSystem
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 199
+    startLine: 255
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -952,7 +1087,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnMenuToggle
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 209
+    startLine: 265
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -982,7 +1117,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: IsVisible
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 249
+    startLine: 303
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -1017,7 +1152,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: TogglePanel
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 251
+    startLine: 305
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -1052,7 +1187,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ShowCursor
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 282
+    startLine: 343
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -1082,7 +1217,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: HideCursor
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 288
+    startLine: 349
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -1094,16 +1229,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnDisplayAction(BennyKok.RuntimeDebug.Actions.BaseAction,UnityEngine.RectTransform)
-  commentId: M:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnDisplayAction(BennyKok.RuntimeDebug.Actions.BaseAction,UnityEngine.RectTransform)
-  id: OnDisplayAction(BennyKok.RuntimeDebug.Actions.BaseAction,UnityEngine.RectTransform)
+- uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnDisplayAction(BennyKok.RuntimeDebug.Actions.BaseDebugAction,UnityEngine.RectTransform)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnDisplayAction(BennyKok.RuntimeDebug.Actions.BaseDebugAction,UnityEngine.RectTransform)
+  id: OnDisplayAction(BennyKok.RuntimeDebug.Actions.BaseDebugAction,UnityEngine.RectTransform)
   parent: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
   langs:
   - csharp
   - vb
-  name: OnDisplayAction(BaseAction, RectTransform)
-  nameWithType: DebugUIHandler.OnDisplayAction(BaseAction, RectTransform)
-  fullName: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnDisplayAction(BennyKok.RuntimeDebug.Actions.BaseAction, UnityEngine.RectTransform)
+  name: OnDisplayAction(BaseDebugAction, RectTransform)
+  nameWithType: DebugUIHandler.OnDisplayAction(BaseDebugAction, RectTransform)
+  fullName: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnDisplayAction(BennyKok.RuntimeDebug.Actions.BaseDebugAction, UnityEngine.RectTransform)
   type: Method
   source:
     remote:
@@ -1112,33 +1247,33 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnDisplayAction
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 294
+    startLine: 355
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
   syntax:
-    content: public void OnDisplayAction(BaseAction trigger, RectTransform from = null)
+    content: public void OnDisplayAction(BaseDebugAction trigger, RectTransform from = null)
     parameters:
     - id: trigger
-      type: BennyKok.RuntimeDebug.Actions.BaseAction
+      type: BennyKok.RuntimeDebug.Actions.BaseDebugAction
     - id: from
       type: UnityEngine.RectTransform
-    content.vb: Public Sub OnDisplayAction(trigger As BaseAction, from As RectTransform = Nothing)
+    content.vb: Public Sub OnDisplayAction(trigger As BaseDebugAction, from As RectTransform = Nothing)
   overload: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnDisplayAction*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnAddAction(BennyKok.RuntimeDebug.Actions.BaseAction)
-  commentId: M:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnAddAction(BennyKok.RuntimeDebug.Actions.BaseAction)
-  id: OnAddAction(BennyKok.RuntimeDebug.Actions.BaseAction)
+- uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnAddAction(BennyKok.RuntimeDebug.Actions.BaseDebugAction)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnAddAction(BennyKok.RuntimeDebug.Actions.BaseDebugAction)
+  id: OnAddAction(BennyKok.RuntimeDebug.Actions.BaseDebugAction)
   parent: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
   langs:
   - csharp
   - vb
-  name: OnAddAction(BaseAction)
-  nameWithType: DebugUIHandler.OnAddAction(BaseAction)
-  fullName: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnAddAction(BennyKok.RuntimeDebug.Actions.BaseAction)
+  name: OnAddAction(BaseDebugAction)
+  nameWithType: DebugUIHandler.OnAddAction(BaseDebugAction)
+  fullName: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnAddAction(BennyKok.RuntimeDebug.Actions.BaseDebugAction)
   type: Method
   source:
     remote:
@@ -1147,31 +1282,31 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnAddAction
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 311
+    startLine: 372
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
   syntax:
-    content: public void OnAddAction(BaseAction action)
+    content: public void OnAddAction(BaseDebugAction action)
     parameters:
     - id: action
-      type: BennyKok.RuntimeDebug.Actions.BaseAction
-    content.vb: Public Sub OnAddAction(action As BaseAction)
+      type: BennyKok.RuntimeDebug.Actions.BaseDebugAction
+    content.vb: Public Sub OnAddAction(action As BaseDebugAction)
   overload: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnAddAction*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnRemoveAction(BennyKok.RuntimeDebug.Actions.BaseAction)
-  commentId: M:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnRemoveAction(BennyKok.RuntimeDebug.Actions.BaseAction)
-  id: OnRemoveAction(BennyKok.RuntimeDebug.Actions.BaseAction)
+- uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnRemoveAction(BennyKok.RuntimeDebug.Actions.BaseDebugAction)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnRemoveAction(BennyKok.RuntimeDebug.Actions.BaseDebugAction)
+  id: OnRemoveAction(BennyKok.RuntimeDebug.Actions.BaseDebugAction)
   parent: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
   langs:
   - csharp
   - vb
-  name: OnRemoveAction(BaseAction)
-  nameWithType: DebugUIHandler.OnRemoveAction(BaseAction)
-  fullName: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnRemoveAction(BennyKok.RuntimeDebug.Actions.BaseAction)
+  name: OnRemoveAction(BaseDebugAction)
+  nameWithType: DebugUIHandler.OnRemoveAction(BaseDebugAction)
+  fullName: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnRemoveAction(BennyKok.RuntimeDebug.Actions.BaseDebugAction)
   type: Method
   source:
     remote:
@@ -1180,16 +1315,16 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnRemoveAction
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/DebugUIHandler.cs
-    startLine: 392
+    startLine: 429
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
   syntax:
-    content: public void OnRemoveAction(BaseAction action)
+    content: public void OnRemoveAction(BaseDebugAction action)
     parameters:
     - id: action
-      type: BennyKok.RuntimeDebug.Actions.BaseAction
-    content.vb: Public Sub OnRemoveAction(action As BaseAction)
+      type: BennyKok.RuntimeDebug.Actions.BaseDebugAction
+    content.vb: Public Sub OnRemoveAction(action As BaseDebugAction)
   overload: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnRemoveAction*
   modifiers.csharp:
   - public
@@ -1281,6 +1416,32 @@ references:
   name: TextMeshProUGUI
   nameWithType: TextMeshProUGUI
   fullName: TMPro.TextMeshProUGUI
+- uid: UnityEngine.Canvas
+  commentId: T:UnityEngine.Canvas
+  parent: UnityEngine
+  isExternal: true
+  name: Canvas
+  nameWithType: Canvas
+  fullName: UnityEngine.Canvas
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.ListView
+  parent: BennyKok.RuntimeDebug.Components.UI
+  name: ListView
+  nameWithType: ListView
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView
+- uid: UnityEngine.RectTransform
+  commentId: T:UnityEngine.RectTransform
+  parent: UnityEngine
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: UnityEngine.RectTransform
+- uid: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight
+  parent: BennyKok.RuntimeDebug.Components.UI
+  name: MaxWidthHeight
+  nameWithType: MaxWidthHeight
+  fullName: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight
 - uid: UnityEngine.GameObject
   commentId: T:UnityEngine.GameObject
   parent: UnityEngine
@@ -1288,18 +1449,24 @@ references:
   name: GameObject
   nameWithType: GameObject
   fullName: UnityEngine.GameObject
-- uid: BennyKok.RuntimeDebug.Components.UI.ListView
-  commentId: T:BennyKok.RuntimeDebug.Components.UI.ListView
-  parent: BennyKok.RuntimeDebug.Components.UI
-  name: ListView
-  nameWithType: ListView
-  fullName: BennyKok.RuntimeDebug.Components.UI.ListView
 - uid: BennyKok.RuntimeDebug.Components.UI.InputUIHandler
   commentId: T:BennyKok.RuntimeDebug.Components.UI.InputUIHandler
   parent: BennyKok.RuntimeDebug.Components.UI
   name: InputUIHandler
   nameWithType: InputUIHandler
   fullName: BennyKok.RuntimeDebug.Components.UI.InputUIHandler
+- uid: BennyKok.RuntimeDebug.Components.UI.TooltipHandler
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.TooltipHandler
+  parent: BennyKok.RuntimeDebug.Components.UI
+  name: TooltipHandler
+  nameWithType: TooltipHandler
+  fullName: BennyKok.RuntimeDebug.Components.UI.TooltipHandler
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.LoggerHandler
+  parent: BennyKok.RuntimeDebug.Components.UI
+  name: LoggerHandler
+  nameWithType: LoggerHandler
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler
 - uid: BennyKok.RuntimeDebug.Components.UI.ListItemView
   commentId: T:BennyKok.RuntimeDebug.Components.UI.ListItemView
   parent: BennyKok.RuntimeDebug.Components.UI
@@ -1325,6 +1492,13 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
+- uid: UnityEngine.UI.CanvasScaler
+  commentId: T:UnityEngine.UI.CanvasScaler
+  parent: UnityEngine.UI
+  isExternal: true
+  name: CanvasScaler
+  nameWithType: CanvasScaler
+  fullName: UnityEngine.UI.CanvasScaler
 - uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
   commentId: T:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
   parent: BennyKok.RuntimeDebug.Systems
@@ -1336,6 +1510,11 @@ references:
   name: BennyKok.RuntimeDebug.Systems
   nameWithType: BennyKok.RuntimeDebug.Systems
   fullName: BennyKok.RuntimeDebug.Systems
+- uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnBackNavigationDelay*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnBackNavigationDelay
+  name: OnBackNavigationDelay
+  nameWithType: DebugUIHandler.OnBackNavigationDelay
+  fullName: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnBackNavigationDelay
 - uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.HideSearchField*
   commentId: Overload:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.HideSearchField
   name: HideSearchField
@@ -1358,11 +1537,6 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnLogUpdated*
-  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnLogUpdated
-  name: OnLogUpdated
-  nameWithType: DebugUIHandler.OnLogUpdated
-  fullName: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnLogUpdated
 - uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnBackNavigation*
   commentId: Overload:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnBackNavigation
   name: OnBackNavigation
@@ -1423,19 +1597,12 @@ references:
   name: OnDisplayAction
   nameWithType: DebugUIHandler.OnDisplayAction
   fullName: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.OnDisplayAction
-- uid: BennyKok.RuntimeDebug.Actions.BaseAction
-  commentId: T:BennyKok.RuntimeDebug.Actions.BaseAction
+- uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction
+  commentId: T:BennyKok.RuntimeDebug.Actions.BaseDebugAction
   parent: BennyKok.RuntimeDebug.Actions
-  name: BaseAction
-  nameWithType: BaseAction
-  fullName: BennyKok.RuntimeDebug.Actions.BaseAction
-- uid: UnityEngine.RectTransform
-  commentId: T:UnityEngine.RectTransform
-  parent: UnityEngine
-  isExternal: true
-  name: RectTransform
-  nameWithType: RectTransform
-  fullName: UnityEngine.RectTransform
+  name: BaseDebugAction
+  nameWithType: BaseDebugAction
+  fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction
 - uid: BennyKok.RuntimeDebug.Actions
   commentId: N:BennyKok.RuntimeDebug.Actions
   name: BennyKok.RuntimeDebug.Actions

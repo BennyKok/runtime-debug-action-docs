@@ -5,11 +5,12 @@ items:
   id: Param
   parent: BennyKok.RuntimeDebug.DebugInput
   children:
-  - BennyKok.RuntimeDebug.DebugInput.Param.#ctor(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String,System.Object)
+  - BennyKok.RuntimeDebug.DebugInput.Param.#ctor(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String,System.Object,System.Func{System.Object})
   - BennyKok.RuntimeDebug.DebugInput.Param.defaultValue
   - BennyKok.RuntimeDebug.DebugInput.Param.description
   - BennyKok.RuntimeDebug.DebugInput.Param.name
   - BennyKok.RuntimeDebug.DebugInput.Param.type
+  - BennyKok.RuntimeDebug.DebugInput.Param.valuePrefillCallback
   langs:
   - csharp
   - vb
@@ -175,16 +176,47 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BennyKok.RuntimeDebug.DebugInput.Param.#ctor(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String,System.Object)
-  commentId: M:BennyKok.RuntimeDebug.DebugInput.Param.#ctor(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String,System.Object)
-  id: '#ctor(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String,System.Object)'
+- uid: BennyKok.RuntimeDebug.DebugInput.Param.valuePrefillCallback
+  commentId: F:BennyKok.RuntimeDebug.DebugInput.Param.valuePrefillCallback
+  id: valuePrefillCallback
   parent: BennyKok.RuntimeDebug.DebugInput.Param
   langs:
   - csharp
   - vb
-  name: Param(String, ParamType, String, Object)
-  nameWithType: Param.Param(String, ParamType, String, Object)
-  fullName: BennyKok.RuntimeDebug.DebugInput.Param.Param(System.String, BennyKok.RuntimeDebug.DebugInput.ParamType, System.String, System.Object)
+  name: valuePrefillCallback
+  nameWithType: Param.valuePrefillCallback
+  fullName: BennyKok.RuntimeDebug.DebugInput.Param.valuePrefillCallback
+  type: Field
+  source:
+    remote:
+      path: Runtime/Input/Param.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: valuePrefillCallback
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/Param.cs
+    startLine: 14
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: public Func<object> valuePrefillCallback
+    return:
+      type: System.Func{System.Object}
+    content.vb: Public valuePrefillCallback As Func(Of Object)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.DebugInput.Param.#ctor(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String,System.Object,System.Func{System.Object})
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.Param.#ctor(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String,System.Object,System.Func{System.Object})
+  id: '#ctor(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String,System.Object,System.Func{System.Object})'
+  parent: BennyKok.RuntimeDebug.DebugInput.Param
+  langs:
+  - csharp
+  - vb
+  name: Param(String, ParamType, String, Object, Func<Object>)
+  nameWithType: Param.Param(String, ParamType, String, Object, Func<Object>)
+  fullName: BennyKok.RuntimeDebug.DebugInput.Param.Param(System.String, BennyKok.RuntimeDebug.DebugInput.ParamType, System.String, System.Object, System.Func<System.Object>)
   type: Constructor
   source:
     remote:
@@ -193,12 +225,12 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: .ctor
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/Param.cs
-    startLine: 15
+    startLine: 16
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput
   syntax:
-    content: public Param(string name, ParamType type, string description = null, object defaultValue = null)
+    content: public Param(string name, ParamType type, string description = null, object defaultValue = null, Func<object> valuePrefillCallback = null)
     parameters:
     - id: name
       type: System.String
@@ -208,12 +240,17 @@ items:
       type: System.String
     - id: defaultValue
       type: System.Object
-    content.vb: Public Sub New(name As String, type As ParamType, description As String = Nothing, defaultValue As Object = Nothing)
+    - id: valuePrefillCallback
+      type: System.Func{System.Object}
+    content.vb: Public Sub New(name As String, type As ParamType, description As String = Nothing, defaultValue As Object = Nothing, valuePrefillCallback As Func(Of Object) = Nothing)
   overload: BennyKok.RuntimeDebug.DebugInput.Param.#ctor*
+  nameWithType.vb: Param.Param(String, ParamType, String, Object, Func(Of Object))
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
+  fullName.vb: BennyKok.RuntimeDebug.DebugInput.Param.Param(System.String, BennyKok.RuntimeDebug.DebugInput.ParamType, System.String, System.Object, System.Func(Of System.Object))
+  name.vb: Param(String, ParamType, String, Object, Func(Of Object))
 references:
 - uid: BennyKok.RuntimeDebug.DebugInput.InputQuery
   commentId: T:BennyKok.RuntimeDebug.DebugInput.InputQuery
@@ -252,6 +289,89 @@ references:
   name: ParamType
   nameWithType: ParamType
   fullName: BennyKok.RuntimeDebug.DebugInput.ParamType
+- uid: System.Func{System.Object}
+  commentId: T:System.Func{System.Object}
+  parent: System
+  definition: System.Func`1
+  name: Func<Object>
+  nameWithType: Func<Object>
+  fullName: System.Func<System.Object>
+  nameWithType.vb: Func(Of Object)
+  fullName.vb: System.Func(Of System.Object)
+  name.vb: Func(Of Object)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: BennyKok.RuntimeDebug.DebugInput.Param.#ctor*
   commentId: Overload:BennyKok.RuntimeDebug.DebugInput.Param.#ctor
   name: Param

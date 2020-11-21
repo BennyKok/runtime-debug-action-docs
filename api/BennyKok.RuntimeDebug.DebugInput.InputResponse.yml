@@ -5,7 +5,7 @@ items:
   id: InputResponse
   parent: BennyKok.RuntimeDebug.DebugInput
   children:
-  - BennyKok.RuntimeDebug.DebugInput.InputResponse.#ctor(System.Collections.Generic.Dictionary{BennyKok.RuntimeDebug.DebugInput.Param,System.String})
+  - BennyKok.RuntimeDebug.DebugInput.InputResponse.#ctor(System.Collections.Generic.Dictionary{BennyKok.RuntimeDebug.DebugInput.Param,System.String},BennyKok.RuntimeDebug.DebugInput.InputQuery)
   - BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParam(System.String)
   - BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamBool(System.String)
   - BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParamFloat(System.String)
@@ -25,7 +25,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: InputResponse
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputResponse.cs
-    startLine: 8
+    startLine: 9
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput
@@ -58,7 +58,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: responses
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputResponse.cs
-    startLine: 10
+    startLine: 11
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput
@@ -71,16 +71,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BennyKok.RuntimeDebug.DebugInput.InputResponse.#ctor(System.Collections.Generic.Dictionary{BennyKok.RuntimeDebug.DebugInput.Param,System.String})
-  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputResponse.#ctor(System.Collections.Generic.Dictionary{BennyKok.RuntimeDebug.DebugInput.Param,System.String})
-  id: '#ctor(System.Collections.Generic.Dictionary{BennyKok.RuntimeDebug.DebugInput.Param,System.String})'
+- uid: BennyKok.RuntimeDebug.DebugInput.InputResponse.#ctor(System.Collections.Generic.Dictionary{BennyKok.RuntimeDebug.DebugInput.Param,System.String},BennyKok.RuntimeDebug.DebugInput.InputQuery)
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputResponse.#ctor(System.Collections.Generic.Dictionary{BennyKok.RuntimeDebug.DebugInput.Param,System.String},BennyKok.RuntimeDebug.DebugInput.InputQuery)
+  id: '#ctor(System.Collections.Generic.Dictionary{BennyKok.RuntimeDebug.DebugInput.Param,System.String},BennyKok.RuntimeDebug.DebugInput.InputQuery)'
   parent: BennyKok.RuntimeDebug.DebugInput.InputResponse
   langs:
   - csharp
   - vb
-  name: InputResponse(Dictionary<Param, String>)
-  nameWithType: InputResponse.InputResponse(Dictionary<Param, String>)
-  fullName: BennyKok.RuntimeDebug.DebugInput.InputResponse.InputResponse(System.Collections.Generic.Dictionary<BennyKok.RuntimeDebug.DebugInput.Param, System.String>)
+  name: InputResponse(Dictionary<Param, String>, InputQuery)
+  nameWithType: InputResponse.InputResponse(Dictionary<Param, String>, InputQuery)
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputResponse.InputResponse(System.Collections.Generic.Dictionary<BennyKok.RuntimeDebug.DebugInput.Param, System.String>, BennyKok.RuntimeDebug.DebugInput.InputQuery)
   type: Constructor
   source:
     remote:
@@ -89,24 +89,26 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: .ctor
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputResponse.cs
-    startLine: 12
+    startLine: 15
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput
   syntax:
-    content: public InputResponse(Dictionary<Param, string> responses)
+    content: public InputResponse(Dictionary<Param, string> responses, InputQuery query)
     parameters:
     - id: responses
       type: System.Collections.Generic.Dictionary{BennyKok.RuntimeDebug.DebugInput.Param,System.String}
-    content.vb: Public Sub New(responses As Dictionary(Of Param, String))
+    - id: query
+      type: BennyKok.RuntimeDebug.DebugInput.InputQuery
+    content.vb: Public Sub New(responses As Dictionary(Of Param, String), query As InputQuery)
   overload: BennyKok.RuntimeDebug.DebugInput.InputResponse.#ctor*
-  nameWithType.vb: InputResponse.InputResponse(Dictionary(Of Param, String))
+  nameWithType.vb: InputResponse.InputResponse(Dictionary(Of Param, String), InputQuery)
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: BennyKok.RuntimeDebug.DebugInput.InputResponse.InputResponse(System.Collections.Generic.Dictionary(Of BennyKok.RuntimeDebug.DebugInput.Param, System.String))
-  name.vb: InputResponse(Dictionary(Of Param, String))
+  fullName.vb: BennyKok.RuntimeDebug.DebugInput.InputResponse.InputResponse(System.Collections.Generic.Dictionary(Of BennyKok.RuntimeDebug.DebugInput.Param, System.String), BennyKok.RuntimeDebug.DebugInput.InputQuery)
+  name.vb: InputResponse(Dictionary(Of Param, String), InputQuery)
 - uid: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParam(System.String)
   commentId: M:BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParam(System.String)
   id: GetParam(System.String)
@@ -125,7 +127,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetParam
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputResponse.cs
-    startLine: 17
+    startLine: 21
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput
@@ -160,7 +162,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetParamString
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputResponse.cs
-    startLine: 26
+    startLine: 35
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput
@@ -195,7 +197,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetParamBool
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputResponse.cs
-    startLine: 36
+    startLine: 45
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput
@@ -230,7 +232,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetParamFloat
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/InputResponse.cs
-    startLine: 46
+    startLine: 55
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput
@@ -373,6 +375,12 @@ references:
   name: InputResponse
   nameWithType: InputResponse.InputResponse
   fullName: BennyKok.RuntimeDebug.DebugInput.InputResponse.InputResponse
+- uid: BennyKok.RuntimeDebug.DebugInput.InputQuery
+  commentId: T:BennyKok.RuntimeDebug.DebugInput.InputQuery
+  parent: BennyKok.RuntimeDebug.DebugInput
+  name: InputQuery
+  nameWithType: InputQuery
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputQuery
 - uid: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParam*
   commentId: Overload:BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParam
   name: GetParam

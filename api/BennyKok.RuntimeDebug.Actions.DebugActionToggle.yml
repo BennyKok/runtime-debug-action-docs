@@ -47,28 +47,29 @@ items:
           Implements ISerializationCallbackReceiver
   inheritance:
   - System.Object
-  - BennyKok.RuntimeDebug.Actions.BaseAction
+  - BennyKok.RuntimeDebug.Actions.BaseDebugAction
   - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}
   inheritedMembers:
   - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.WithId(System.String)
   - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.WithAction(System.Action)
   - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.WithName(System.String)
   - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.WithDescription(System.String)
-  - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.WithPath(System.String)
+  - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.WithGroup(System.String)
   - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.WithShortcutKey(System.String)
   - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.WithActionColor(UnityEngine.Color)
   - BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.WithClosePanelAfterTrigger(System.Boolean)
-  - BennyKok.RuntimeDebug.Actions.BaseAction.path
-  - BennyKok.RuntimeDebug.Actions.BaseAction.name
-  - BennyKok.RuntimeDebug.Actions.BaseAction.id
-  - BennyKok.RuntimeDebug.Actions.BaseAction.description
-  - BennyKok.RuntimeDebug.Actions.BaseAction.shortcutKey
-  - BennyKok.RuntimeDebug.Actions.BaseAction.closePanelAfterTrigger
-  - BennyKok.RuntimeDebug.Actions.BaseAction.actionColor
-  - BennyKok.RuntimeDebug.Actions.BaseAction.unityAction
-  - BennyKok.RuntimeDebug.Actions.BaseAction.action
-  - BennyKok.RuntimeDebug.Actions.BaseAction.actionStatus
-  - BennyKok.RuntimeDebug.Actions.BaseAction.CanDisplayAction
+  - BennyKok.RuntimeDebug.Actions.BaseDebugAction.group
+  - BennyKok.RuntimeDebug.Actions.BaseDebugAction.name
+  - BennyKok.RuntimeDebug.Actions.BaseDebugAction.id
+  - BennyKok.RuntimeDebug.Actions.BaseDebugAction.description
+  - BennyKok.RuntimeDebug.Actions.BaseDebugAction.shortcutKey
+  - BennyKok.RuntimeDebug.Actions.BaseDebugAction.closePanelAfterTrigger
+  - BennyKok.RuntimeDebug.Actions.BaseDebugAction.actionColor
+  - BennyKok.RuntimeDebug.Actions.BaseDebugAction.unityAction
+  - BennyKok.RuntimeDebug.Actions.BaseDebugAction.action
+  - BennyKok.RuntimeDebug.Actions.BaseDebugAction.actionStatus
+  - BennyKok.RuntimeDebug.Actions.BaseDebugAction.CanDisplayAction
+  - BennyKok.RuntimeDebug.Actions.BaseDebugAction.GetDescription
   attributes:
   - type: System.SerializableAttribute
     ctor: System.SerializableAttribute.#ctor
@@ -399,7 +400,7 @@ items:
   syntax:
     content: public override void ResolveAction()
     content.vb: Public Overrides Sub ResolveAction
-  overridden: BennyKok.RuntimeDebug.Actions.BaseAction.ResolveAction
+  overridden: BennyKok.RuntimeDebug.Actions.BaseDebugAction.ResolveAction
   overload: BennyKok.RuntimeDebug.Actions.DebugActionToggle.ResolveAction*
   modifiers.csharp:
   - public
@@ -480,12 +481,12 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
-- uid: BennyKok.RuntimeDebug.Actions.BaseAction
-  commentId: T:BennyKok.RuntimeDebug.Actions.BaseAction
+- uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction
+  commentId: T:BennyKok.RuntimeDebug.Actions.BaseDebugAction
   parent: BennyKok.RuntimeDebug.Actions
-  name: BaseAction
-  nameWithType: BaseAction
-  fullName: BennyKok.RuntimeDebug.Actions.BaseAction
+  name: BaseDebugAction
+  nameWithType: BaseDebugAction
+  fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction
 - uid: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}
   commentId: T:BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}
   parent: BennyKok.RuntimeDebug.Actions
@@ -690,20 +691,20 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.WithPath(System.String)
-  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.WithPath(System.String)
+- uid: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.WithGroup(System.String)
+  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}.WithGroup(System.String)
   parent: BennyKok.RuntimeDebug.Actions.FluentAction{BennyKok.RuntimeDebug.Actions.DebugActionToggle}
-  definition: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithPath(System.String)
-  name: WithPath(String)
-  nameWithType: FluentAction<DebugActionToggle>.WithPath(String)
-  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionToggle>.WithPath(System.String)
-  nameWithType.vb: FluentAction(Of DebugActionToggle).WithPath(String)
-  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionToggle).WithPath(System.String)
+  definition: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithGroup(System.String)
+  name: WithGroup(String)
+  nameWithType: FluentAction<DebugActionToggle>.WithGroup(String)
+  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionToggle>.WithGroup(System.String)
+  nameWithType.vb: FluentAction(Of DebugActionToggle).WithGroup(String)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionToggle).WithGroup(System.String)
   spec.csharp:
-  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithPath(System.String)
-    name: WithPath
-    nameWithType: FluentAction<DebugActionToggle>.WithPath
-    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionToggle>.WithPath
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithGroup(System.String)
+    name: WithGroup
+    nameWithType: FluentAction<DebugActionToggle>.WithGroup
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<BennyKok.RuntimeDebug.Actions.DebugActionToggle>.WithGroup
   - name: (
     nameWithType: (
     fullName: (
@@ -716,10 +717,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithPath(System.String)
-    name: WithPath
-    nameWithType: FluentAction(Of DebugActionToggle).WithPath
-    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionToggle).WithPath
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithGroup(System.String)
+    name: WithGroup
+    nameWithType: FluentAction(Of DebugActionToggle).WithGroup
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of BennyKok.RuntimeDebug.Actions.DebugActionToggle).WithGroup
   - name: (
     nameWithType: (
     fullName: (
@@ -854,77 +855,77 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: BennyKok.RuntimeDebug.Actions.BaseAction.path
-  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.path
-  parent: BennyKok.RuntimeDebug.Actions.BaseAction
-  name: path
-  nameWithType: BaseAction.path
-  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.path
-- uid: BennyKok.RuntimeDebug.Actions.BaseAction.name
-  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.name
-  parent: BennyKok.RuntimeDebug.Actions.BaseAction
+- uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.group
+  commentId: F:BennyKok.RuntimeDebug.Actions.BaseDebugAction.group
+  parent: BennyKok.RuntimeDebug.Actions.BaseDebugAction
+  name: group
+  nameWithType: BaseDebugAction.group
+  fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.group
+- uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.name
+  commentId: F:BennyKok.RuntimeDebug.Actions.BaseDebugAction.name
+  parent: BennyKok.RuntimeDebug.Actions.BaseDebugAction
   name: name
-  nameWithType: BaseAction.name
-  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.name
-- uid: BennyKok.RuntimeDebug.Actions.BaseAction.id
-  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.id
-  parent: BennyKok.RuntimeDebug.Actions.BaseAction
+  nameWithType: BaseDebugAction.name
+  fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.name
+- uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.id
+  commentId: F:BennyKok.RuntimeDebug.Actions.BaseDebugAction.id
+  parent: BennyKok.RuntimeDebug.Actions.BaseDebugAction
   name: id
-  nameWithType: BaseAction.id
-  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.id
-- uid: BennyKok.RuntimeDebug.Actions.BaseAction.description
-  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.description
-  parent: BennyKok.RuntimeDebug.Actions.BaseAction
+  nameWithType: BaseDebugAction.id
+  fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.id
+- uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.description
+  commentId: F:BennyKok.RuntimeDebug.Actions.BaseDebugAction.description
+  parent: BennyKok.RuntimeDebug.Actions.BaseDebugAction
   name: description
-  nameWithType: BaseAction.description
-  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.description
-- uid: BennyKok.RuntimeDebug.Actions.BaseAction.shortcutKey
-  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.shortcutKey
-  parent: BennyKok.RuntimeDebug.Actions.BaseAction
+  nameWithType: BaseDebugAction.description
+  fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.description
+- uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.shortcutKey
+  commentId: F:BennyKok.RuntimeDebug.Actions.BaseDebugAction.shortcutKey
+  parent: BennyKok.RuntimeDebug.Actions.BaseDebugAction
   name: shortcutKey
-  nameWithType: BaseAction.shortcutKey
-  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.shortcutKey
-- uid: BennyKok.RuntimeDebug.Actions.BaseAction.closePanelAfterTrigger
-  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.closePanelAfterTrigger
-  parent: BennyKok.RuntimeDebug.Actions.BaseAction
+  nameWithType: BaseDebugAction.shortcutKey
+  fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.shortcutKey
+- uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.closePanelAfterTrigger
+  commentId: F:BennyKok.RuntimeDebug.Actions.BaseDebugAction.closePanelAfterTrigger
+  parent: BennyKok.RuntimeDebug.Actions.BaseDebugAction
   name: closePanelAfterTrigger
-  nameWithType: BaseAction.closePanelAfterTrigger
-  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.closePanelAfterTrigger
-- uid: BennyKok.RuntimeDebug.Actions.BaseAction.actionColor
-  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.actionColor
-  parent: BennyKok.RuntimeDebug.Actions.BaseAction
+  nameWithType: BaseDebugAction.closePanelAfterTrigger
+  fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.closePanelAfterTrigger
+- uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.actionColor
+  commentId: F:BennyKok.RuntimeDebug.Actions.BaseDebugAction.actionColor
+  parent: BennyKok.RuntimeDebug.Actions.BaseDebugAction
   name: actionColor
-  nameWithType: BaseAction.actionColor
-  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.actionColor
-- uid: BennyKok.RuntimeDebug.Actions.BaseAction.unityAction
-  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.unityAction
-  parent: BennyKok.RuntimeDebug.Actions.BaseAction
+  nameWithType: BaseDebugAction.actionColor
+  fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.actionColor
+- uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.unityAction
+  commentId: F:BennyKok.RuntimeDebug.Actions.BaseDebugAction.unityAction
+  parent: BennyKok.RuntimeDebug.Actions.BaseDebugAction
   name: unityAction
-  nameWithType: BaseAction.unityAction
-  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.unityAction
-- uid: BennyKok.RuntimeDebug.Actions.BaseAction.action
-  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.action
-  parent: BennyKok.RuntimeDebug.Actions.BaseAction
+  nameWithType: BaseDebugAction.unityAction
+  fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.unityAction
+- uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.action
+  commentId: F:BennyKok.RuntimeDebug.Actions.BaseDebugAction.action
+  parent: BennyKok.RuntimeDebug.Actions.BaseDebugAction
   name: action
-  nameWithType: BaseAction.action
-  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.action
-- uid: BennyKok.RuntimeDebug.Actions.BaseAction.actionStatus
-  commentId: F:BennyKok.RuntimeDebug.Actions.BaseAction.actionStatus
-  parent: BennyKok.RuntimeDebug.Actions.BaseAction
+  nameWithType: BaseDebugAction.action
+  fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.action
+- uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.actionStatus
+  commentId: F:BennyKok.RuntimeDebug.Actions.BaseDebugAction.actionStatus
+  parent: BennyKok.RuntimeDebug.Actions.BaseDebugAction
   name: actionStatus
-  nameWithType: BaseAction.actionStatus
-  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.actionStatus
-- uid: BennyKok.RuntimeDebug.Actions.BaseAction.CanDisplayAction
-  commentId: M:BennyKok.RuntimeDebug.Actions.BaseAction.CanDisplayAction
-  parent: BennyKok.RuntimeDebug.Actions.BaseAction
+  nameWithType: BaseDebugAction.actionStatus
+  fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.actionStatus
+- uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.CanDisplayAction
+  commentId: M:BennyKok.RuntimeDebug.Actions.BaseDebugAction.CanDisplayAction
+  parent: BennyKok.RuntimeDebug.Actions.BaseDebugAction
   name: CanDisplayAction()
-  nameWithType: BaseAction.CanDisplayAction()
-  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.CanDisplayAction()
+  nameWithType: BaseDebugAction.CanDisplayAction()
+  fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.CanDisplayAction()
   spec.csharp:
-  - uid: BennyKok.RuntimeDebug.Actions.BaseAction.CanDisplayAction
+  - uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.CanDisplayAction
     name: CanDisplayAction
-    nameWithType: BaseAction.CanDisplayAction
-    fullName: BennyKok.RuntimeDebug.Actions.BaseAction.CanDisplayAction
+    nameWithType: BaseDebugAction.CanDisplayAction
+    fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.CanDisplayAction
   - name: (
     nameWithType: (
     fullName: (
@@ -932,10 +933,38 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: BennyKok.RuntimeDebug.Actions.BaseAction.CanDisplayAction
+  - uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.CanDisplayAction
     name: CanDisplayAction
-    nameWithType: BaseAction.CanDisplayAction
-    fullName: BennyKok.RuntimeDebug.Actions.BaseAction.CanDisplayAction
+    nameWithType: BaseDebugAction.CanDisplayAction
+    fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.CanDisplayAction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.GetDescription
+  commentId: M:BennyKok.RuntimeDebug.Actions.BaseDebugAction.GetDescription
+  parent: BennyKok.RuntimeDebug.Actions.BaseDebugAction
+  name: GetDescription()
+  nameWithType: BaseDebugAction.GetDescription()
+  fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.GetDescription()
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.GetDescription
+    name: GetDescription
+    nameWithType: BaseDebugAction.GetDescription
+    fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.GetDescription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.GetDescription
+    name: GetDescription
+    nameWithType: BaseDebugAction.GetDescription
+    fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.GetDescription
   - name: (
     nameWithType: (
     fullName: (
@@ -1144,19 +1173,19 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithPath(System.String)
-  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction`1.WithPath(System.String)
+- uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithGroup(System.String)
+  commentId: M:BennyKok.RuntimeDebug.Actions.FluentAction`1.WithGroup(System.String)
   isExternal: true
-  name: WithPath(String)
-  nameWithType: FluentAction<T>.WithPath(String)
-  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithPath(System.String)
-  nameWithType.vb: FluentAction(Of T).WithPath(String)
-  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithPath(System.String)
+  name: WithGroup(String)
+  nameWithType: FluentAction<T>.WithGroup(String)
+  fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithGroup(System.String)
+  nameWithType.vb: FluentAction(Of T).WithGroup(String)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithGroup(System.String)
   spec.csharp:
-  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithPath(System.String)
-    name: WithPath
-    nameWithType: FluentAction<T>.WithPath
-    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithPath
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithGroup(System.String)
+    name: WithGroup
+    nameWithType: FluentAction<T>.WithGroup
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction<T>.WithGroup
   - name: (
     nameWithType: (
     fullName: (
@@ -1169,10 +1198,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithPath(System.String)
-    name: WithPath
-    nameWithType: FluentAction(Of T).WithPath
-    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithPath
+  - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1.WithGroup(System.String)
+    name: WithGroup
+    nameWithType: FluentAction(Of T).WithGroup
+    fullName: BennyKok.RuntimeDebug.Actions.FluentAction(Of T).WithGroup
   - name: (
     nameWithType: (
     fullName: (
@@ -1525,17 +1554,17 @@ references:
   name: WithActionSet
   nameWithType: DebugActionToggle.WithActionSet
   fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle.WithActionSet
-- uid: BennyKok.RuntimeDebug.Actions.BaseAction.ResolveAction
-  commentId: M:BennyKok.RuntimeDebug.Actions.BaseAction.ResolveAction
-  parent: BennyKok.RuntimeDebug.Actions.BaseAction
+- uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.ResolveAction
+  commentId: M:BennyKok.RuntimeDebug.Actions.BaseDebugAction.ResolveAction
+  parent: BennyKok.RuntimeDebug.Actions.BaseDebugAction
   name: ResolveAction()
-  nameWithType: BaseAction.ResolveAction()
-  fullName: BennyKok.RuntimeDebug.Actions.BaseAction.ResolveAction()
+  nameWithType: BaseDebugAction.ResolveAction()
+  fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.ResolveAction()
   spec.csharp:
-  - uid: BennyKok.RuntimeDebug.Actions.BaseAction.ResolveAction
+  - uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.ResolveAction
     name: ResolveAction
-    nameWithType: BaseAction.ResolveAction
-    fullName: BennyKok.RuntimeDebug.Actions.BaseAction.ResolveAction
+    nameWithType: BaseDebugAction.ResolveAction
+    fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.ResolveAction
   - name: (
     nameWithType: (
     fullName: (
@@ -1543,10 +1572,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: BennyKok.RuntimeDebug.Actions.BaseAction.ResolveAction
+  - uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.ResolveAction
     name: ResolveAction
-    nameWithType: BaseAction.ResolveAction
-    fullName: BennyKok.RuntimeDebug.Actions.BaseAction.ResolveAction
+    nameWithType: BaseDebugAction.ResolveAction
+    fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.ResolveAction
   - name: (
     nameWithType: (
     fullName: (

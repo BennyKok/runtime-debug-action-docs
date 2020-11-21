@@ -1,4 +1,8 @@
-# Unregistering Actions
+---
+name: Register Actions
+---
+
+# Unregister Actions
 
 There are few ways to remove actions from the system
 

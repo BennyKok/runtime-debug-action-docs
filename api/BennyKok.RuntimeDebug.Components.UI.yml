@@ -4,15 +4,21 @@ items:
   commentId: N:BennyKok.RuntimeDebug.Components.UI
   id: BennyKok.RuntimeDebug.Components.UI
   children:
+  - BennyKok.RuntimeDebug.Components.UI.ChangeSiblingIndexOnAwake
   - BennyKok.RuntimeDebug.Components.UI.DebugSystemEventHandler
   - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
   - BennyKok.RuntimeDebug.Components.UI.FontSetter
   - BennyKok.RuntimeDebug.Components.UI.InputUIHandler
   - BennyKok.RuntimeDebug.Components.UI.ListItemView
   - BennyKok.RuntimeDebug.Components.UI.ListView
+  - BennyKok.RuntimeDebug.Components.UI.LoggerHandler
+  - BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log
+  - BennyKok.RuntimeDebug.Components.UI.LoggerLineSelectHandler
+  - BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight
   - BennyKok.RuntimeDebug.Components.UI.SafeAreaExtender
   - BennyKok.RuntimeDebug.Components.UI.SafeAreaHelper
   - BennyKok.RuntimeDebug.Components.UI.SizeMatcher
+  - BennyKok.RuntimeDebug.Components.UI.TooltipHandler
   langs:
   - csharp
   - vb
@@ -57,6 +63,39 @@ references:
   name: ListView
   nameWithType: ListView
   fullName: BennyKok.RuntimeDebug.Components.UI.ListView
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.LoggerHandler
+  parent: BennyKok.RuntimeDebug.Components.UI
+  name: LoggerHandler
+  nameWithType: LoggerHandler
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log
+  name: LoggerHandler.Log
+  nameWithType: LoggerHandler.Log
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log
+- uid: BennyKok.RuntimeDebug.Components.UI.LoggerLineSelectHandler
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.LoggerLineSelectHandler
+  name: LoggerLineSelectHandler
+  nameWithType: LoggerLineSelectHandler
+  fullName: BennyKok.RuntimeDebug.Components.UI.LoggerLineSelectHandler
+- uid: BennyKok.RuntimeDebug.Components.UI.TooltipHandler
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.TooltipHandler
+  parent: BennyKok.RuntimeDebug.Components.UI
+  name: TooltipHandler
+  nameWithType: TooltipHandler
+  fullName: BennyKok.RuntimeDebug.Components.UI.TooltipHandler
+- uid: BennyKok.RuntimeDebug.Components.UI.ChangeSiblingIndexOnAwake
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.ChangeSiblingIndexOnAwake
+  name: ChangeSiblingIndexOnAwake
+  nameWithType: ChangeSiblingIndexOnAwake
+  fullName: BennyKok.RuntimeDebug.Components.UI.ChangeSiblingIndexOnAwake
+- uid: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight
+  parent: BennyKok.RuntimeDebug.Components.UI
+  name: MaxWidthHeight
+  nameWithType: MaxWidthHeight
+  fullName: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight
 - uid: BennyKok.RuntimeDebug.Components.UI.SafeAreaExtender
   commentId: T:BennyKok.RuntimeDebug.Components.UI.SafeAreaExtender
   name: SafeAreaExtender

@@ -18,11 +18,11 @@ items:
   type: Class
   source:
     remote:
-      path: Runtime/Actions/DebugActionBuilder.cs
+      path: Runtime/Actions/Builder/DebugActionBuilder.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: DebugActionBuilder
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionBuilder.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/Builder/DebugActionBuilder.cs
     startLine: 2
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -52,11 +52,11 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Actions/DebugActionBuilder.cs
+      path: Runtime/Actions/Builder/DebugActionBuilder.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Button
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionBuilder.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/Builder/DebugActionBuilder.cs
     startLine: 8
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -89,11 +89,11 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Actions/DebugActionBuilder.cs
+      path: Runtime/Actions/Builder/DebugActionBuilder.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Toggle
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionBuilder.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/Builder/DebugActionBuilder.cs
     startLine: 14
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -126,11 +126,11 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Actions/DebugActionBuilder.cs
+      path: Runtime/Actions/Builder/DebugActionBuilder.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Input
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionBuilder.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/Builder/DebugActionBuilder.cs
     startLine: 20
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -163,11 +163,11 @@ items:
   type: Method
   source:
     remote:
-      path: Runtime/Actions/DebugActionBuilder.cs
+      path: Runtime/Actions/Builder/DebugActionBuilder.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Flag
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionBuilder.cs
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/Builder/DebugActionBuilder.cs
     startLine: 26
   assemblies:
   - com.bennykok.runtime-debug-action

@@ -6,14 +6,13 @@ items:
   parent: BennyKok.RuntimeDebug.Data
   children:
   - BennyKok.RuntimeDebug.Data.ListItem.#ctor
-  - BennyKok.RuntimeDebug.Data.ListItem.#ctor(BennyKok.RuntimeDebug.Actions.BaseAction)
+  - BennyKok.RuntimeDebug.Data.ListItem.#ctor(BennyKok.RuntimeDebug.Actions.BaseDebugAction)
   - BennyKok.RuntimeDebug.Data.ListItem.actionTrigger
   - BennyKok.RuntimeDebug.Data.ListItem.children
   - BennyKok.RuntimeDebug.Data.ListItem.fullPath
   - BennyKok.RuntimeDebug.Data.ListItem.groupName
   - BennyKok.RuntimeDebug.Data.ListItem.IsGroup
   - BennyKok.RuntimeDebug.Data.ListItem.Name
-  - BennyKok.RuntimeDebug.Data.ListItem.tag
   - BennyKok.RuntimeDebug.Data.ListItem.uiList
   - BennyKok.RuntimeDebug.Data.ListItem.view
   langs:
@@ -99,10 +98,10 @@ items:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
   syntax:
-    content: public BaseAction actionTrigger
+    content: public BaseDebugAction actionTrigger
     return:
-      type: BennyKok.RuntimeDebug.Actions.BaseAction
-    content.vb: Public actionTrigger As BaseAction
+      type: BennyKok.RuntimeDebug.Actions.BaseDebugAction
+    content.vb: Public actionTrigger As BaseDebugAction
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -231,37 +230,6 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BennyKok.RuntimeDebug.Data.ListItem.tag
-  commentId: F:BennyKok.RuntimeDebug.Data.ListItem.tag
-  id: tag
-  parent: BennyKok.RuntimeDebug.Data.ListItem
-  langs:
-  - csharp
-  - vb
-  name: tag
-  nameWithType: ListItem.tag
-  fullName: BennyKok.RuntimeDebug.Data.ListItem.tag
-  type: Field
-  source:
-    remote:
-      path: Runtime/Data/ListItem.cs
-      branch: master
-      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: tag
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/ListItem.cs
-    startLine: 14
-  assemblies:
-  - com.bennykok.runtime-debug-action
-  namespace: BennyKok.RuntimeDebug.Data
-  syntax:
-    content: public string tag
-    return:
-      type: System.String
-    content.vb: Public tag As String
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
 - uid: BennyKok.RuntimeDebug.Data.ListItem.IsGroup
   commentId: P:BennyKok.RuntimeDebug.Data.ListItem.IsGroup
   id: IsGroup
@@ -280,7 +248,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: IsGroup
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/ListItem.cs
-    startLine: 16
+    startLine: 15
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -315,7 +283,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Name
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/ListItem.cs
-    startLine: 17
+    startLine: 16
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -332,16 +300,16 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: BennyKok.RuntimeDebug.Data.ListItem.#ctor(BennyKok.RuntimeDebug.Actions.BaseAction)
-  commentId: M:BennyKok.RuntimeDebug.Data.ListItem.#ctor(BennyKok.RuntimeDebug.Actions.BaseAction)
-  id: '#ctor(BennyKok.RuntimeDebug.Actions.BaseAction)'
+- uid: BennyKok.RuntimeDebug.Data.ListItem.#ctor(BennyKok.RuntimeDebug.Actions.BaseDebugAction)
+  commentId: M:BennyKok.RuntimeDebug.Data.ListItem.#ctor(BennyKok.RuntimeDebug.Actions.BaseDebugAction)
+  id: '#ctor(BennyKok.RuntimeDebug.Actions.BaseDebugAction)'
   parent: BennyKok.RuntimeDebug.Data.ListItem
   langs:
   - csharp
   - vb
-  name: ListItem(BaseAction)
-  nameWithType: ListItem.ListItem(BaseAction)
-  fullName: BennyKok.RuntimeDebug.Data.ListItem.ListItem(BennyKok.RuntimeDebug.Actions.BaseAction)
+  name: ListItem(BaseDebugAction)
+  nameWithType: ListItem.ListItem(BaseDebugAction)
+  fullName: BennyKok.RuntimeDebug.Data.ListItem.ListItem(BennyKok.RuntimeDebug.Actions.BaseDebugAction)
   type: Constructor
   source:
     remote:
@@ -350,16 +318,16 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: .ctor
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/ListItem.cs
-    startLine: 19
+    startLine: 18
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
   syntax:
-    content: public ListItem(BaseAction actionTrigger)
+    content: public ListItem(BaseDebugAction actionTrigger)
     parameters:
     - id: actionTrigger
-      type: BennyKok.RuntimeDebug.Actions.BaseAction
-    content.vb: Public Sub New(actionTrigger As BaseAction)
+      type: BennyKok.RuntimeDebug.Actions.BaseDebugAction
+    content.vb: Public Sub New(actionTrigger As BaseDebugAction)
   overload: BennyKok.RuntimeDebug.Data.ListItem.#ctor*
   modifiers.csharp:
   - public
@@ -383,7 +351,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: .ctor
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/ListItem.cs
-    startLine: 24
+    startLine: 23
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -501,12 +469,12 @@ references:
   name: System.Collections.Generic
   nameWithType: System.Collections.Generic
   fullName: System.Collections.Generic
-- uid: BennyKok.RuntimeDebug.Actions.BaseAction
-  commentId: T:BennyKok.RuntimeDebug.Actions.BaseAction
+- uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction
+  commentId: T:BennyKok.RuntimeDebug.Actions.BaseDebugAction
   parent: BennyKok.RuntimeDebug.Actions
-  name: BaseAction
-  nameWithType: BaseAction
-  fullName: BennyKok.RuntimeDebug.Actions.BaseAction
+  name: BaseDebugAction
+  nameWithType: BaseDebugAction
+  fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction
 - uid: BennyKok.RuntimeDebug.Actions
   commentId: N:BennyKok.RuntimeDebug.Actions
   name: BennyKok.RuntimeDebug.Actions

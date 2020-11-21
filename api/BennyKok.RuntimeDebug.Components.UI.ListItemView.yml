@@ -7,19 +7,22 @@ items:
   children:
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.actionColor
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.button
+  - BennyKok.RuntimeDebug.Components.UI.ListItemView.darkenActionColor
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.folderIcon
-  - BennyKok.RuntimeDebug.Components.UI.ListItemView.hideIconSpace
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.icon
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.isFocused
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.IsGroup
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.label
+  - BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  - BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
+  - BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerExit(UnityEngine.EventSystems.PointerEventData)
+  - BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerUp(UnityEngine.EventSystems.PointerEventData)
+  - BennyKok.RuntimeDebug.Components.UI.ListItemView.previousDown
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.rectTransform
-  - BennyKok.RuntimeDebug.Components.UI.ListItemView.RefreshStatus(BennyKok.RuntimeDebug.Actions.BaseAction,BennyKok.RuntimeDebug.Components.UI.DebugUIHandler)
-  - BennyKok.RuntimeDebug.Components.UI.ListItemView.SetItem(BennyKok.RuntimeDebug.Components.UI.DebugUIHandler,BennyKok.RuntimeDebug.Data.ListItem)
-  - BennyKok.RuntimeDebug.Components.UI.ListItemView.showActionColor
+  - BennyKok.RuntimeDebug.Components.UI.ListItemView.Recycle
+  - BennyKok.RuntimeDebug.Components.UI.ListItemView.RefreshStatus(BennyKok.RuntimeDebug.Actions.BaseDebugAction,BennyKok.RuntimeDebug.Components.UI.DebugUIHandler)
+  - BennyKok.RuntimeDebug.Components.UI.ListItemView.SetItem(BennyKok.RuntimeDebug.Components.UI.DebugUIHandler,BennyKok.RuntimeDebug.Components.UI.ListView,BennyKok.RuntimeDebug.Data.ListItem)
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.showIcon
-  - BennyKok.RuntimeDebug.Components.UI.ListItemView.showTag
-  - BennyKok.RuntimeDebug.Components.UI.ListItemView.tagLabel
   langs:
   - csharp
   - vb
@@ -34,7 +37,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ListItemView
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 10
+    startLine: 11
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -42,18 +45,23 @@ items:
     content: >-
       [AddComponentMenu("Runtime Debug Action/UI/List Item View")]
 
-      public class ListItemView : MonoBehaviour
+      public class ListItemView : PoolItemBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerExitHandler, IPointerEnterHandler, IEventSystemHandler
     content.vb: >-
       <AddComponentMenu("Runtime Debug Action/UI/List Item View")>
 
       Public Class ListItemView
-          Inherits MonoBehaviour
+          Inherits PoolItemBehaviour
+          Implements IPointerDownHandler, IPointerUpHandler, IPointerExitHandler, IPointerEnterHandler, IEventSystemHandler
   inheritance:
   - System.Object
   - UnityEngine.Object
   - UnityEngine.Component
   - UnityEngine.Behaviour
   - UnityEngine.MonoBehaviour
+  - BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
+  inheritedMembers:
+  - BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.used
+  - BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.pool
   attributes:
   - type: UnityEngine.AddComponentMenu
     ctor: UnityEngine.AddComponentMenu.#ctor(System.String)
@@ -84,7 +92,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: label
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 17
+    startLine: 19
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -117,37 +125,6 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.tagLabel
-  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListItemView.tagLabel
-  id: tagLabel
-  parent: BennyKok.RuntimeDebug.Components.UI.ListItemView
-  langs:
-  - csharp
-  - vb
-  name: tagLabel
-  nameWithType: ListItemView.tagLabel
-  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.tagLabel
-  type: Field
-  source:
-    remote:
-      path: Runtime/Components/UI/ListItemView.cs
-      branch: master
-      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: tagLabel
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 18
-  assemblies:
-  - com.bennykok.runtime-debug-action
-  namespace: BennyKok.RuntimeDebug.Components.UI
-  syntax:
-    content: public TextMeshProUGUI tagLabel
-    return:
-      type: TMPro.TextMeshProUGUI
-    content.vb: Public tagLabel As TextMeshProUGUI
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
 - uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.button
   commentId: F:BennyKok.RuntimeDebug.Components.UI.ListItemView.button
   id: button
@@ -166,7 +143,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: button
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 19
+    startLine: 21
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -197,7 +174,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: actionColor
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 20
+    startLine: 22
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -228,7 +205,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: icon
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 21
+    startLine: 23
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -259,7 +236,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: folderIcon
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 25
+    startLine: 27
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -313,7 +290,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: showIcon
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 27
+    startLine: 30
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -338,131 +315,45 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.hideIconSpace
-  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListItemView.hideIconSpace
-  id: hideIconSpace
+- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.darkenActionColor
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListItemView.darkenActionColor
+  id: darkenActionColor
   parent: BennyKok.RuntimeDebug.Components.UI.ListItemView
   langs:
   - csharp
   - vb
-  name: hideIconSpace
-  nameWithType: ListItemView.hideIconSpace
-  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.hideIconSpace
+  name: darkenActionColor
+  nameWithType: ListItemView.darkenActionColor
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.darkenActionColor
   type: Field
   source:
     remote:
       path: Runtime/Components/UI/ListItemView.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: hideIconSpace
+    id: darkenActionColor
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 29
+    startLine: 39
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
   syntax:
     content: >-
-      [Tooltip("When there's no icon, hide the actual icon without taking up empty space")]
+      [Tooltip("Darken the action color for visibility")]
 
-      public bool hideIconSpace
+      public bool darkenActionColor
     return:
       type: System.Boolean
     content.vb: >-
-      <Tooltip("When there's no icon, hide the actual icon without taking up empty space")>
+      <Tooltip("Darken the action color for visibility")>
 
-      Public hideIconSpace As Boolean
+      Public darkenActionColor As Boolean
   attributes:
   - type: UnityEngine.TooltipAttribute
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: When there's no icon, hide the actual icon without taking up empty space
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.showTag
-  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListItemView.showTag
-  id: showTag
-  parent: BennyKok.RuntimeDebug.Components.UI.ListItemView
-  langs:
-  - csharp
-  - vb
-  name: showTag
-  nameWithType: ListItemView.showTag
-  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.showTag
-  type: Field
-  source:
-    remote:
-      path: Runtime/Components/UI/ListItemView.cs
-      branch: master
-      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: showTag
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 31
-  assemblies:
-  - com.bennykok.runtime-debug-action
-  namespace: BennyKok.RuntimeDebug.Components.UI
-  syntax:
-    content: >-
-      [Tooltip("Show the tag of this item when selected")]
-
-      public bool showTag
-    return:
-      type: System.Boolean
-    content.vb: >-
-      <Tooltip("Show the tag of this item when selected")>
-
-      Public showTag As Boolean
-  attributes:
-  - type: UnityEngine.TooltipAttribute
-    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Show the tag of this item when selected
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.showActionColor
-  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListItemView.showActionColor
-  id: showActionColor
-  parent: BennyKok.RuntimeDebug.Components.UI.ListItemView
-  langs:
-  - csharp
-  - vb
-  name: showActionColor
-  nameWithType: ListItemView.showActionColor
-  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.showActionColor
-  type: Field
-  source:
-    remote:
-      path: Runtime/Components/UI/ListItemView.cs
-      branch: master
-      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: showActionColor
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 33
-  assemblies:
-  - com.bennykok.runtime-debug-action
-  namespace: BennyKok.RuntimeDebug.Components.UI
-  syntax:
-    content: >-
-      [Tooltip("Show the action color of the list item")]
-
-      public bool showActionColor
-    return:
-      type: System.Boolean
-    content.vb: >-
-      <Tooltip("Show the action color of the list item")>
-
-      Public showActionColor As Boolean
-  attributes:
-  - type: UnityEngine.TooltipAttribute
-    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: Show the action color of the list item
+      value: Darken the action color for visibility
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -485,7 +376,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: rectTransform
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 35
+    startLine: 41
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -526,7 +417,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: IsGroup
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 37
+    startLine: 43
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -544,7 +435,7 @@ items:
   - Public
   - ReadOnly
 - uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.isFocused
-  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListItemView.isFocused
+  commentId: P:BennyKok.RuntimeDebug.Components.UI.ListItemView.isFocused
   id: isFocused
   parent: BennyKok.RuntimeDebug.Components.UI.ListItemView
   langs:
@@ -553,7 +444,7 @@ items:
   name: isFocused
   nameWithType: ListItemView.isFocused
   fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.isFocused
-  type: Field
+  type: Property
   source:
     remote:
       path: Runtime/Components/UI/ListItemView.cs
@@ -561,7 +452,42 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: isFocused
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 39
+    startLine: 47
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public bool isFocused { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property isFocused As Boolean
+  overload: BennyKok.RuntimeDebug.Components.UI.ListItemView.isFocused*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.previousDown
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListItemView.previousDown
+  id: previousDown
+  parent: BennyKok.RuntimeDebug.Components.UI.ListItemView
+  langs:
+  - csharp
+  - vb
+  name: previousDown
+  nameWithType: ListItemView.previousDown
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.previousDown
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/ListItemView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: previousDown
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
+    startLine: 77
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -569,13 +495,13 @@ items:
     content: >-
       [NonSerialized]
 
-      public bool isFocused
+      public bool previousDown
     return:
       type: System.Boolean
     content.vb: >-
       <NonSerialized>
 
-      Public isFocused As Boolean
+      Public previousDown As Boolean
   attributes:
   - type: System.NonSerializedAttribute
     ctor: System.NonSerializedAttribute.#ctor
@@ -584,16 +510,148 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.RefreshStatus(BennyKok.RuntimeDebug.Actions.BaseAction,BennyKok.RuntimeDebug.Components.UI.DebugUIHandler)
-  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListItemView.RefreshStatus(BennyKok.RuntimeDebug.Actions.BaseAction,BennyKok.RuntimeDebug.Components.UI.DebugUIHandler)
-  id: RefreshStatus(BennyKok.RuntimeDebug.Actions.BaseAction,BennyKok.RuntimeDebug.Components.UI.DebugUIHandler)
+- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  id: OnPointerDown(UnityEngine.EventSystems.PointerEventData)
   parent: BennyKok.RuntimeDebug.Components.UI.ListItemView
   langs:
   - csharp
   - vb
-  name: RefreshStatus(BaseAction, DebugUIHandler)
-  nameWithType: ListItemView.RefreshStatus(BaseAction, DebugUIHandler)
-  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.RefreshStatus(BennyKok.RuntimeDebug.Actions.BaseAction, BennyKok.RuntimeDebug.Components.UI.DebugUIHandler)
+  name: OnPointerDown(PointerEventData)
+  nameWithType: ListItemView.OnPointerDown(PointerEventData)
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListItemView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: OnPointerDown
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
+    startLine: 88
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void OnPointerDown(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Public Sub OnPointerDown(eventData As PointerEventData)
+  overload: BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerDown*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerUp(UnityEngine.EventSystems.PointerEventData)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerUp(UnityEngine.EventSystems.PointerEventData)
+  id: OnPointerUp(UnityEngine.EventSystems.PointerEventData)
+  parent: BennyKok.RuntimeDebug.Components.UI.ListItemView
+  langs:
+  - csharp
+  - vb
+  name: OnPointerUp(PointerEventData)
+  nameWithType: ListItemView.OnPointerUp(PointerEventData)
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerUp(UnityEngine.EventSystems.PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListItemView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: OnPointerUp
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
+    startLine: 95
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void OnPointerUp(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Public Sub OnPointerUp(eventData As PointerEventData)
+  overload: BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerUp*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
+  id: OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
+  parent: BennyKok.RuntimeDebug.Components.UI.ListItemView
+  langs:
+  - csharp
+  - vb
+  name: OnPointerEnter(PointerEventData)
+  nameWithType: ListItemView.OnPointerEnter(PointerEventData)
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListItemView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: OnPointerEnter
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
+    startLine: 101
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void OnPointerEnter(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Public Sub OnPointerEnter(eventData As PointerEventData)
+  overload: BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerEnter*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerExit(UnityEngine.EventSystems.PointerEventData)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerExit(UnityEngine.EventSystems.PointerEventData)
+  id: OnPointerExit(UnityEngine.EventSystems.PointerEventData)
+  parent: BennyKok.RuntimeDebug.Components.UI.ListItemView
+  langs:
+  - csharp
+  - vb
+  name: OnPointerExit(PointerEventData)
+  nameWithType: ListItemView.OnPointerExit(PointerEventData)
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerExit(UnityEngine.EventSystems.PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListItemView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: OnPointerExit
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
+    startLine: 107
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void OnPointerExit(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Public Sub OnPointerExit(eventData As PointerEventData)
+  overload: BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerExit*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.RefreshStatus(BennyKok.RuntimeDebug.Actions.BaseDebugAction,BennyKok.RuntimeDebug.Components.UI.DebugUIHandler)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListItemView.RefreshStatus(BennyKok.RuntimeDebug.Actions.BaseDebugAction,BennyKok.RuntimeDebug.Components.UI.DebugUIHandler)
+  id: RefreshStatus(BennyKok.RuntimeDebug.Actions.BaseDebugAction,BennyKok.RuntimeDebug.Components.UI.DebugUIHandler)
+  parent: BennyKok.RuntimeDebug.Components.UI.ListItemView
+  langs:
+  - csharp
+  - vb
+  name: RefreshStatus(BaseDebugAction, DebugUIHandler)
+  nameWithType: ListItemView.RefreshStatus(BaseDebugAction, DebugUIHandler)
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.RefreshStatus(BennyKok.RuntimeDebug.Actions.BaseDebugAction, BennyKok.RuntimeDebug.Components.UI.DebugUIHandler)
   type: Method
   source:
     remote:
@@ -602,33 +660,33 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: RefreshStatus
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 66
+    startLine: 131
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
   syntax:
-    content: public void RefreshStatus(BaseAction action = null, DebugUIHandler uiHandler = null)
+    content: public void RefreshStatus(BaseDebugAction action = null, DebugUIHandler uiHandler = null)
     parameters:
     - id: action
-      type: BennyKok.RuntimeDebug.Actions.BaseAction
+      type: BennyKok.RuntimeDebug.Actions.BaseDebugAction
     - id: uiHandler
       type: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
-    content.vb: Public Sub RefreshStatus(action As BaseAction = Nothing, uiHandler As DebugUIHandler = Nothing)
+    content.vb: Public Sub RefreshStatus(action As BaseDebugAction = Nothing, uiHandler As DebugUIHandler = Nothing)
   overload: BennyKok.RuntimeDebug.Components.UI.ListItemView.RefreshStatus*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.SetItem(BennyKok.RuntimeDebug.Components.UI.DebugUIHandler,BennyKok.RuntimeDebug.Data.ListItem)
-  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListItemView.SetItem(BennyKok.RuntimeDebug.Components.UI.DebugUIHandler,BennyKok.RuntimeDebug.Data.ListItem)
-  id: SetItem(BennyKok.RuntimeDebug.Components.UI.DebugUIHandler,BennyKok.RuntimeDebug.Data.ListItem)
+- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.SetItem(BennyKok.RuntimeDebug.Components.UI.DebugUIHandler,BennyKok.RuntimeDebug.Components.UI.ListView,BennyKok.RuntimeDebug.Data.ListItem)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListItemView.SetItem(BennyKok.RuntimeDebug.Components.UI.DebugUIHandler,BennyKok.RuntimeDebug.Components.UI.ListView,BennyKok.RuntimeDebug.Data.ListItem)
+  id: SetItem(BennyKok.RuntimeDebug.Components.UI.DebugUIHandler,BennyKok.RuntimeDebug.Components.UI.ListView,BennyKok.RuntimeDebug.Data.ListItem)
   parent: BennyKok.RuntimeDebug.Components.UI.ListItemView
   langs:
   - csharp
   - vb
-  name: SetItem(DebugUIHandler, ListItem)
-  nameWithType: ListItemView.SetItem(DebugUIHandler, ListItem)
-  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.SetItem(BennyKok.RuntimeDebug.Components.UI.DebugUIHandler, BennyKok.RuntimeDebug.Data.ListItem)
+  name: SetItem(DebugUIHandler, ListView, ListItem)
+  nameWithType: ListItemView.SetItem(DebugUIHandler, ListView, ListItem)
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.SetItem(BennyKok.RuntimeDebug.Components.UI.DebugUIHandler, BennyKok.RuntimeDebug.Components.UI.ListView, BennyKok.RuntimeDebug.Data.ListItem)
   type: Method
   source:
     remote:
@@ -637,23 +695,58 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: SetItem
     path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 130
+    startLine: 194
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
   syntax:
-    content: public void SetItem(DebugUIHandler ui, ListItem item)
+    content: public void SetItem(DebugUIHandler ui, ListView listParent, ListItem item)
     parameters:
     - id: ui
       type: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
+    - id: listParent
+      type: BennyKok.RuntimeDebug.Components.UI.ListView
     - id: item
       type: BennyKok.RuntimeDebug.Data.ListItem
-    content.vb: Public Sub SetItem(ui As DebugUIHandler, item As ListItem)
+    content.vb: Public Sub SetItem(ui As DebugUIHandler, listParent As ListView, item As ListItem)
   overload: BennyKok.RuntimeDebug.Components.UI.ListItemView.SetItem*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.Recycle
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListItemView.Recycle
+  id: Recycle
+  parent: BennyKok.RuntimeDebug.Components.UI.ListItemView
+  langs:
+  - csharp
+  - vb
+  name: Recycle()
+  nameWithType: ListItemView.Recycle()
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.Recycle()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListItemView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Recycle
+    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
+    startLine: 205
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public override void Recycle()
+    content.vb: Public Overrides Sub Recycle
+  overridden: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.Recycle
+  overload: BennyKok.RuntimeDebug.Components.UI.ListItemView.Recycle*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
 references:
 - uid: BennyKok.RuntimeDebug.Components.UI
   commentId: N:BennyKok.RuntimeDebug.Components.UI
@@ -695,6 +788,24 @@ references:
   name: MonoBehaviour
   nameWithType: MonoBehaviour
   fullName: UnityEngine.MonoBehaviour
+- uid: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
+  commentId: T:BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
+  parent: BennyKok.RuntimeDebug.Utils
+  name: PoolItemBehaviour
+  nameWithType: PoolItemBehaviour
+  fullName: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
+- uid: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.used
+  commentId: F:BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.used
+  parent: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
+  name: used
+  nameWithType: PoolItemBehaviour.used
+  fullName: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.used
+- uid: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.pool
+  commentId: F:BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.pool
+  parent: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
+  name: pool
+  nameWithType: PoolItemBehaviour.pool
+  fullName: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.pool
 - uid: System
   commentId: N:System
   isExternal: true
@@ -707,6 +818,11 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
+- uid: BennyKok.RuntimeDebug.Utils
+  commentId: N:BennyKok.RuntimeDebug.Utils
+  name: BennyKok.RuntimeDebug.Utils
+  nameWithType: BennyKok.RuntimeDebug.Utils
+  fullName: BennyKok.RuntimeDebug.Utils
 - uid: TMPro.TextMeshProUGUI
   commentId: T:TMPro.TextMeshProUGUI
   parent: TMPro
@@ -766,17 +882,55 @@ references:
   name: IsGroup
   nameWithType: ListItemView.IsGroup
   fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.IsGroup
+- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.isFocused*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListItemView.isFocused
+  name: isFocused
+  nameWithType: ListItemView.isFocused
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.isFocused
+- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerDown*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerDown
+  name: OnPointerDown
+  nameWithType: ListItemView.OnPointerDown
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerDown
+- uid: UnityEngine.EventSystems.PointerEventData
+  commentId: T:UnityEngine.EventSystems.PointerEventData
+  parent: UnityEngine.EventSystems
+  isExternal: true
+  name: PointerEventData
+  nameWithType: PointerEventData
+  fullName: UnityEngine.EventSystems.PointerEventData
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  isExternal: true
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerUp*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerUp
+  name: OnPointerUp
+  nameWithType: ListItemView.OnPointerUp
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerUp
+- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerEnter*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerEnter
+  name: OnPointerEnter
+  nameWithType: ListItemView.OnPointerEnter
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerEnter
+- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerExit*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerExit
+  name: OnPointerExit
+  nameWithType: ListItemView.OnPointerExit
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerExit
 - uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.RefreshStatus*
   commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListItemView.RefreshStatus
   name: RefreshStatus
   nameWithType: ListItemView.RefreshStatus
   fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.RefreshStatus
-- uid: BennyKok.RuntimeDebug.Actions.BaseAction
-  commentId: T:BennyKok.RuntimeDebug.Actions.BaseAction
+- uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction
+  commentId: T:BennyKok.RuntimeDebug.Actions.BaseDebugAction
   parent: BennyKok.RuntimeDebug.Actions
-  name: BaseAction
-  nameWithType: BaseAction
-  fullName: BennyKok.RuntimeDebug.Actions.BaseAction
+  name: BaseDebugAction
+  nameWithType: BaseDebugAction
+  fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction
 - uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
   commentId: T:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
   parent: BennyKok.RuntimeDebug.Components.UI
@@ -793,6 +947,12 @@ references:
   name: SetItem
   nameWithType: ListItemView.SetItem
   fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.SetItem
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.ListView
+  parent: BennyKok.RuntimeDebug.Components.UI
+  name: ListView
+  nameWithType: ListView
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView
 - uid: BennyKok.RuntimeDebug.Data.ListItem
   commentId: T:BennyKok.RuntimeDebug.Data.ListItem
   parent: BennyKok.RuntimeDebug.Data
@@ -804,3 +964,36 @@ references:
   name: BennyKok.RuntimeDebug.Data
   nameWithType: BennyKok.RuntimeDebug.Data
   fullName: BennyKok.RuntimeDebug.Data
+- uid: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.Recycle
+  commentId: M:BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.Recycle
+  parent: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
+  name: Recycle()
+  nameWithType: PoolItemBehaviour.Recycle()
+  fullName: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.Recycle()
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.Recycle
+    name: Recycle
+    nameWithType: PoolItemBehaviour.Recycle
+    fullName: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.Recycle
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.Recycle
+    name: Recycle
+    nameWithType: PoolItemBehaviour.Recycle
+    fullName: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.Recycle
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.Recycle*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListItemView.Recycle
+  name: Recycle
+  nameWithType: ListItemView.Recycle
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.Recycle
