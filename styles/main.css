@@ -251,7 +251,7 @@ article h4 {
 
 .alert > p {
   margin-bottom: 0;
-  padding: 5px 10px;
+  padding: 5px 16px;
 }
 
 .alert > ul {
@@ -260,7 +260,10 @@ article h4 {
 }
 
 .alert > h5 {
-  padding: 10px 15px;
+  padding-top: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 0px;
   margin-top: 0;
   text-transform: uppercase;
   font-weight: bold;
@@ -269,19 +272,31 @@ article h4 {
 
 .alert-info > h5 {
   color: #1976d2;
-  border-bottom: 4px solid #1976d2;
-  background-color: #e3f2fd;
 }
 
 .alert-warning > h5 {
   color: #f57f17;
-  border-bottom: 4px solid #f57f17;
-  background-color: #fff3e0;
 }
 
 .alert-danger > h5 {
   color: #d32f2f;
-  border-bottom: 4px solid #d32f2f;
+}
+
+.alert-info {
+  /* color: #1976d2; */
+  /* border-bottom: 4px solid #1976d2; */
+  background-color: #e3f2fd;
+}
+
+.alert-warning {
+  /* color: #f57f17; */
+  /* border-bottom: 4px solid #f57f17; */
+  background-color: #fff3e0;
+}
+
+.alert-danger {
+  /* color: #d32f2f; */
+  /* border-bottom: 4px solid #d32f2f; */
   background-color: #ffebee;
 }
 
