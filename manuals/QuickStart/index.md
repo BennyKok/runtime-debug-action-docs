@@ -10,6 +10,8 @@ order: 100
 **RuntimeDebugAction** is designed to be plug & play, once you imported the package,
 a [`Settings`](~/api/BennyKok.RuntimeDebug.Data.Settings.html) ScriptableObject will be created in your project folder `Assets/Resources/`.
 
+![](../../images/2020-11-22-14-29-18.png)
+
 Afterward, it's recommended to import TextMeshPro's default resources before play, since some of the asset prefabs uses TextMeshPro.
 
 > [!NOTE]
@@ -30,7 +32,7 @@ The debug menu have full keyboard navigation and touch input handling at the sam
 > [!NOTE]
 > You are required to have a EventSystem in your scene for event interaction (touch,hover,etc..) of the system to work.
 
-**Default Key**
+**Default Shortcut Keys**
 
 | Key | Description |
 | ----------- | ----------- |
@@ -40,7 +42,7 @@ The debug menu have full keyboard navigation and touch input handling at the sam
 
 <br/>
 
-**Default Action Shortcut Key**
+**Default Action Shortcut Keys**
 
 Some default actions has shortcut predefined for ease of access.
 
