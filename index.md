@@ -1,15 +1,22 @@
 # 🩺 Runtime Debug Action
 Welcome to the documentation for RuntimeDebugAction
 
-<!-- ![RDA Cover](images/rda-as-cover.png) -->
-
 ![](images/2020-11-21-15-28-50.png)
 
 ## Overview
-**RuntimeDebugAction** is a runtime debug menu system that lets you register and trigger actions in your game development process.
+**RuntimeDebugAction** is a runtime debug menu system that lets you register and trigger debug actions with no extra setup. With a set of built-in debug actions and a tiny logger that works out of the box, RDA is built to supercharge your mobile and desktop game development.
+
+> [!WARNING]
+> This documentation is still in it's early stages, please notify me if there's anything out of place or not explained well.
+
+## Quick Start
 
 > [!NOTE]
-> This documentation is still in it's early stages, please tell me if there's anything out of place or not explained well. 
+> Take a look at the [QuickStart](manuals/QuickStart/index.html) to get started
+
+## Discord
+
+> Join our [💬discord](https://discord.gg/yHHKfNJeUc) server for quick questions and support!
 
 ## Features
 - Plug & play debug menu system
@@ -27,7 +34,6 @@ Welcome to the documentation for RuntimeDebugAction
 - Default debug action 
     - Load scene action 
     - Quality settings actions
-    - URP settings actions
 
 ## Fluent API
 The [`RuntimeDebugSystem`](api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html) class provide the entry point for registering your custom action, with a Fluent API design, it's a joy to add custom actions. 
@@ -43,8 +49,3 @@ DebugActionBuilder.Button()
     .WithGroup("Themes")
 );
 ```
-
-## Quick Start
-
-> [!NOTE]
-> Take a look at the [QuickStart](manuals/quick-start.md) to get started 

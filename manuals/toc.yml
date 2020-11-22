@@ -1,20 +1,20 @@
-- href: QuickStart\index.md
-  order: 100
+- order: 100
+  href: QuickStart\index.md
   name: Quick Start
-- href: CustomActions\index.md
-  order: 0
+- order: 0
+  href: CustomActions\index.md
   name: Custom Actions
   items:
-  - href: CustomActions\building-actions.md
-    order: 0
+  - order: 0
+    href: CustomActions\building-actions.md
     name: Building Actions
-  - href: CustomActions\register-actions.md
-    order: 0
+  - order: 0
+    href: CustomActions\register-actions.md
     name: Register Actions
-  - href: CustomActions\unregister-actions.md
-    order: 0
+  - order: 0
+    href: CustomActions\unregister-actions.md
     name: Register Actions
-- href: custom-themes.md
-  order: 0
+- order: 0
+  href: custom-themes.md
   name: Custom Themes
 

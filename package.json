@@ -1,0 +1,43 @@
+{
+  "name": "runtime-debug-action-docs",
+  "version": "1.0.0",
+  "description": "This is the documentation repo for the RuntimeDebugAction for Unity.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "watch_docfx": "npm-watch build_serve",
+    "build_serve": "docfx build --serve",
+    "copy_changelog": "copyfiles -f ../Assets/Plugins/unity-runtime-debug-action/CHANGELOG.md .",
+    "build_toc": "@pwsh -NoProfile -ExecutionPolicy Unrestricted -Command ./docfx-toc-generator/docfx-toc-generator.ps1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BennyKok/runtime-debug-action-docs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BennyKok/runtime-debug-action-docs/issues"
+  },
+  "homepage": "https://github.com/BennyKok/runtime-debug-action-docs#readme",
+  "dependencies": {
+    "npm-watch": "^0.7.0"
+  },
+  "watch": {
+    "build_serve": {
+      "patterns": [
+        "manuals/**/*",
+        "templates/**/*",
+        "api/**/*",
+        "./*.md"
+      ],
+      "extensions": "md,yml,css",
+      "quiet": true,
+      "legacyWatch": true,
+      "delay": 500,
+      "runOnChangeOnly": false
+    }
+  }
+}
