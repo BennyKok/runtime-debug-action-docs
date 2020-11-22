@@ -12,7 +12,7 @@ Welcome to the documentation for RuntimeDebugAction
 ## Quick Start
 
 > [!NOTE]
-> Take a look at the [QuickStart](manuals/QuickStart/index.html) to get started
+> Take a look at the [➜QuickStart](manuals/QuickStart/index.md) to get started
 
 ## Discord
 
@@ -20,23 +20,24 @@ Welcome to the documentation for RuntimeDebugAction
 
 ## Features
 - Plug & play debug menu system
-- Keyboard & Touch input
-- Full Keyboard navigation supported
-- The menu is built for mobile 
-- Action Type
+- Keyboard navigation & touch input
+- Full keyboard navigation supported
+- Mobile friendly
+- [Action Types](~/manuals/CustomActions/index.md#action-type)
     - Button (One-shot action)
     - Toggle (On/Off state action)
     - Input (Params input action)
     - Flag (Int based value selector action)
-- Mobile Friendly
 - Simple searchable menu
-- Fluent API for action registering
-- Default debug action 
-    - Load scene action 
-    - Quality settings actions
+- Tiny logger
+- [Custom Actions](~/manuals/CustomActions/index.md)
+    - Fluent API
+    - Debug Action Component
+- Support Enter Play Mode Options, faster iteration
+- [Default debug action](~/manuals/default-actions.md)
 
 ## Fluent API
-The [`RuntimeDebugSystem`](api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html) class provide the entry point for registering your custom action, with a Fluent API design, it's a joy to add custom actions. 
+The [`RuntimeDebugSystem`](api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.yml) class provide the entry point for registering your custom action, with a Fluent API design, it's a joy to add custom actions. 
 
 ```csharp
 DebugActionBuilder.Button()
@@ -49,3 +50,5 @@ DebugActionBuilder.Button()
     .WithGroup("Themes")
 );
 ```
+
+More details of registering actions [here](~/manuals/CustomActions/index.md).

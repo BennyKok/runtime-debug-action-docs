@@ -1,17 +1,16 @@
-- name: Quick Start
-  order: 100
+- order: 100
+  name: ➜ Quick Start
   href: QuickStart\index.md
-- name: Building Actions
-  order: 0
+- order: 90
+  name: Adding Actions
   href: CustomActions\index.md
-  items:
-  - name: Register Actions
-    order: 0
-    href: CustomActions\register-actions.md
-  - name: Register Actions
-    order: 0
-    href: CustomActions\unregister-actions.md
-- name: Custom Themes
-  order: 0
+- order: 80
+  name: Default Actions
+  href: default-actions.md
+- order: 40
+  name: Custom Themes
   href: custom-themes.md
+- order: 0
+  name: Testing With Mobile
+  href: testing-with-mobile.md
 
