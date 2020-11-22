@@ -9,7 +9,7 @@
   "scripts": {
     "watch_docfx": "npm-watch build_serve",
     "build_serve": "docfx build --serve",
-    "copy_changelog": "copyfiles -f ../Assets/Plugins/unity-runtime-debug-action/CHANGELOG.md .",
+    "copy_changelog": "copyfiles -f ../Assets/Plugins/RuntimeDebugAction/CHANGELOG.md .",
     "build_toc": "@pwsh -NoProfile -ExecutionPolicy Unrestricted -Command ./docfx-toc-generator/docfx-toc-generator.ps1"
   },
   "repository": {
