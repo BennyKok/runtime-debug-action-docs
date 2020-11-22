@@ -66,7 +66,7 @@
 <h2 id="quick-start">Quick Start</h2>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Take a look at the <a href="manuals/QuickStart/index.html">QuickStart</a> to get started</p>
+<p>Take a look at the <a href="manuals/QuickStart/index.html">➜QuickStart</a> to get started</p>
 </div>
 <h2 id="discord">Discord</h2>
 <blockquote>
@@ -75,10 +75,10 @@
 <h2 id="features">Features</h2>
 <ul>
 <li>Plug &amp; play debug menu system</li>
-<li>Keyboard &amp; Touch input</li>
-<li>Full Keyboard navigation supported</li>
-<li>The menu is built for mobile</li>
-<li>Action Type
+<li>Keyboard navigation &amp; touch input</li>
+<li>Full keyboard navigation supported</li>
+<li>Mobile friendly</li>
+<li><a href="manuals/CustomActions/index.html#action-type">Action Types</a>
 <ul>
 <li>Button (One-shot action)</li>
 <li>Toggle (On/Off state action)</li>
@@ -86,15 +86,16 @@
 <li>Flag (Int based value selector action)</li>
 </ul>
 </li>
-<li>Mobile Friendly</li>
 <li>Simple searchable menu</li>
-<li>Fluent API for action registering</li>
-<li>Default debug action
+<li>Tiny logger</li>
+<li><a href="manuals/CustomActions/index.html">Custom Actions</a>
 <ul>
-<li>Load scene action</li>
-<li>Quality settings actions</li>
+<li>Fluent API</li>
+<li>Debug Action Component</li>
 </ul>
 </li>
+<li>Support Enter Play Mode Options, faster iteration</li>
+<li><a href="manuals/default-actions.html">Default debug action</a></li>
 </ul>
 <h2 id="fluent-api">Fluent API</h2>
 <p>The <a href="api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html"><code>RuntimeDebugSystem</code></a> class provide the entry point for registering your custom action, with a Fluent API design, it's a joy to add custom actions.</p>
@@ -108,6 +109,7 @@
     .WithGroup(&quot;Themes&quot;)
 );
 </code></pre>
+<p>More details of registering actions <a href="manuals/CustomActions/index.html">here</a>.</p>
 </article>
           </div>
           

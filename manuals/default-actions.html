@@ -5,18 +5,18 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Unregister Actions </title>
+    <title>Default Actions </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Unregister Actions ">
+    <meta name="title" content="Default Actions ">
     <meta name="generator" content="docfx 2.56.5.0">
     
-    <link rel="shortcut icon" href="../../favicon.ico">
-    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../styles/docfx.css">
-    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
-    <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
     
     
     
@@ -34,10 +34,10 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../index.html">
+              <a class="navbar-brand" href="../index.html">
                 <!-- <div style="color: white; font-weight: 900; height: 38pt; line-height: 38pt;">Runtime Debug
                   ACTION</div> -->
-                <img id="logo" class="svg" src="../../rda-web-icon.svg" alt="">
+                <img id="logo" class="svg" src="../rda-web-icon.svg" alt="">
               </a>    </div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
@@ -60,23 +60,43 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="unregister-actions">Unregister Actions</h1>
+<h1 id="default-actions">Default Actions</h1>
 
-<p>There are few ways to remove actions from the system</p>
-<h2 id="by-path">By path</h2>
-<p>If you have defined custom path for you actions via <code>WithPath(&quot;YourPath&quot;)</code> or the argument <code>path</code> in the <code>RegisterActions</code> method, you can do as below to remove the actions with same path.</p>
-<pre><code class="lang-csharp">RuntimeDebugSystem.UnregisterActionsByPath(
-    &quot;YourPath/&quot;
-);
-</code></pre>
-<h2 id="by-references">By references</h2>
-<p>If you have references to you actions, you can pass them into the <code>RuntimeDebugAction.UnregisterActions</code> method directly.</p>
-<h2 id="by-id">By id</h2>
-<p>If you have defined a id for your actions via <code>WithId(&quot;YourId&quot;)</code>, you can do as below to remove the actions with the same id.</p>
-<pre><code class="lang-csharp">RuntimeDebugSystem.UnregisterActionsById(
-    &quot;YourId&quot;
-);
-</code></pre>
+<p>There's a set of built-in actions that works out of the box. Can be configured from the <code>RDASettings</code>.</p>
+<p><img src="../images/2020-11-22-18-56-54.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Application</td>
+<td>Quit/hide cursor/clear player prefs/target fps/cycle orientation action</td>
+</tr>
+<tr>
+<td>Quality</td>
+<td>Cycle quality level/URP specific actions</td>
+</tr>
+<tr>
+<td>Scene</td>
+<td>Reload/Load other scene actions</td>
+</tr>
+<tr>
+<td>Theme</td>
+<td>Change theme actions</td>
+</tr>
+<tr>
+<td>Logger</td>
+<td>Show/hide/clear logger actions</td>
+</tr>
+</tbody>
+</table>
+<br>
+<p>To fully customize the built-in actions, see <a href="../api/BennyKok.RuntimeDebug.Systems.DebugActionDefaults.html">DebugActionDefaults</a> in the assets and edit them directly.</p>
+<p><img src="../images/2020-11-22-19-02-08.png" alt=""></p>
 </article>
           </div>
           
@@ -85,7 +105,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/BennyKok/runtime-debug-action-docs/blob/master/manuals/CustomActions/unregister-actions.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/BennyKok/runtime-debug-action-docs/blob/master/manuals/default-actions.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -115,8 +135,8 @@
         </div>
       </footer>    </div>
     
-    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

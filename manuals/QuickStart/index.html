@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Quick Start </title>
+    <title>&#10140; Quick Start </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Quick Start ">
+    <meta name="title" content="&#10140; Quick Start ">
     <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -60,17 +60,25 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="quick-start">Quick Start</h1>
+<h1 id="-quick-start">➜ Quick Start</h1>
 
 <h3 id="setup">Setup</h3>
+<p>First, it's recommended to import TextMeshPro's default resources before play, since some of the asset prefabs uses TextMeshPro.</p>
+<p><img src="../../images/2020-11-22-19-11-43.png" alt=""></p>
+<p>Then make sure your scene have an <code>EventSystem</code>.</p>
+<p><img src="../../images/2020-11-22-19-19-20.png" alt=""></p>
 <p><strong>RuntimeDebugAction</strong> is designed to be plug &amp; play, once you imported the package,
 a <a href="../../api/BennyKok.RuntimeDebug.Data.Settings.html"><code>Settings</code></a> ScriptableObject will be created in your project folder <code>Assets/Resources/</code>.</p>
-<p>Afterward, it's recommended to import TextMeshPro's default resources before play, since some of the asset prefabs uses TextMeshPro.</p>
+<p><img src="../../images/2020-11-22-14-29-18.png" alt=""></p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>If you encountered weird font size of the debug menu after first import, it's because the TextMeshPro's default resource was imported after the prefab's import, you can simply right click on the asset's Prefabs folder and reimport.</p>
 </div>
-<p>Then you will be good to go!</p>
+<p>By pressing &quot;Tab&quot;, the menu will be enabled, then you will be good to go! You can expect seeing a set of pre-configured debug actions.</p>
+<p><img src="../../images/2020-11-22-19-09-30.png" alt=""></p>
+<p>See more details of <a href="../default-actions.html">default actions</a>.</p>
+<p>On mobile, there will be a touch toggle on the top left of the screen</p>
+<p><img src="../../images/2020-11-22-19-22-13.png" alt=""></p>
 <h3 id="lifecycle">Lifecycle</h3>
 <p>The <a href="../../api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html"><code>RuntimeDebugSystem</code></a> is auto injected to you first scene with the <a href="https://docs.unity3d.com/ScriptReference/RuntimeInitializeOnLoadMethodAttribute.html"><code>RuntimeInitializeOnLoadMethod</code></a> method.</p>
 <p>Then the system GameObject with the UI canvas will be set to <code>DontDestoryOnLoad</code> and keeps the debug system alive across scene load.</p>
@@ -80,7 +88,7 @@ a <a href="../../api/BennyKok.RuntimeDebug.Data.Settings.html"><code>Settings</c
 <h5>Note</h5>
 <p>You are required to have a EventSystem in your scene for event interaction (touch,hover,etc..) of the system to work.</p>
 </div>
-<p><strong>Default Key</strong></p>
+<p><strong>Default Shortcut Keys</strong></p>
 <table>
 <thead>
 <tr>
@@ -104,7 +112,7 @@ a <a href="../../api/BennyKok.RuntimeDebug.Data.Settings.html"><code>Settings</c
 </tbody>
 </table>
 <br>
-<p><strong>Default Action Shortcut Key</strong></p>
+<p><strong>Default Action Shortcut Keys</strong></p>
 <p>Some default actions has shortcut predefined for ease of access.</p>
 <table>
 <thead>
@@ -120,6 +128,10 @@ a <a href="../../api/BennyKok.RuntimeDebug.Data.Settings.html"><code>Settings</c
 </tr>
 </tbody>
 </table>
+<h3 id="settings">Settings</h3>
+<p>To disable the debug menu, go to the <strong>RDASettings</strong> in your project folder <code>Assets/Resources/</code>.</p>
+<p>There are also other settings you can configure there.</p>
+<p><img src="../../images/2020-11-22-19-13-54.png" alt=""></p>
 </article>
           </div>
           

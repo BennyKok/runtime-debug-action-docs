@@ -759,15 +759,176 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "index.md",
+      "type": "Resource",
+      "source_relative_path": "images/2020-11-22-14-29-18.png",
       "output": {
-        ".html": {
-          "relative_path": "index.html",
-          "hash": "URhYd5OWyO8y2kWwLeQ7hg=="
+        "resource": {
+          "relative_path": "images/2020-11-22-14-29-18.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-11-22-14-31-19.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-11-22-14-31-19.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-11-22-14-32-47.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-11-22-14-32-47.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-11-22-14-34-09.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-11-22-14-34-09.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-11-22-14-35-25.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-11-22-14-35-25.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-11-22-14-36-34.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-11-22-14-36-34.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-11-22-14-38-47.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-11-22-14-38-47.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-11-22-18-56-54.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-11-22-18-56-54.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-11-22-19-02-08.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-11-22-19-02-08.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-11-22-19-09-30.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-11-22-19-09-30.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-11-22-19-11-43.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-11-22-19-11-43.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-11-22-19-13-54.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-11-22-19-13-54.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-11-22-19-19-20.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-11-22-19-19-20.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-11-22-19-22-13.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-11-22-19-22-13.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-11-22-19-26-00.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-11-22-19-26-00.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-11-22-19-26-54.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-11-22-19-26-54.png"
         }
       },
       "is_incremental": false,
@@ -775,11 +936,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manuals/CustomActions/building-actions.md",
+      "source_relative_path": "index.md",
       "output": {
         ".html": {
-          "relative_path": "manuals/CustomActions/building-actions.html",
-          "hash": "MoNfIWHXgO247w892ff/dQ=="
+          "relative_path": "index.html",
+          "hash": "L+S8bc2/B1mFHXdOode0IA=="
         }
       },
       "is_incremental": false,
@@ -791,61 +952,55 @@
       "output": {
         ".html": {
           "relative_path": "manuals/CustomActions/index.html",
-          "hash": "m7JRRH8at5TzXkQKML5C4Q=="
+          "hash": "UJWOlR/FgoebaYaD6h+VvQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "manuals/CustomActions/register-actions.md",
-      "output": {
-        ".html": {
-          "relative_path": "manuals/CustomActions/register-actions.html",
-          "hash": "Qifa27xjBqheJHwBwHTFig=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manuals/CustomActions/unregister-actions.md",
-      "output": {
-        ".html": {
-          "relative_path": "manuals/CustomActions/unregister-actions.html",
-          "hash": "2qDw0eA0+8Q/RJkzwtxdJg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "manuals/QuickStart/index.md",
       "output": {
         ".html": {
           "relative_path": "manuals/QuickStart/index.html",
-          "hash": "LaiYbLPauY1GrpPqibr+cQ=="
+          "hash": "4Awu3xBz/qcCSmnpdN3d5A=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "manuals/custom-themes.md",
       "output": {
         ".html": {
           "relative_path": "manuals/custom-themes.html",
-          "hash": "2O9D1q9Me6LFw8WnU5Pgbw=="
+          "hash": "2jxwqsW6fvvrqB0JdHFaaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manuals/default-actions.md",
+      "output": {
+        ".html": {
+          "relative_path": "manuals/default-actions.html",
+          "hash": "rvYUiHXHIDKrIU3ISABnBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manuals/testing-with-mobile.md",
+      "output": {
+        ".html": {
+          "relative_path": "manuals/testing-with-mobile.html",
+          "hash": "6+AL4IOlUlr7NXImmpRNjg=="
         }
       },
       "is_incremental": false,
@@ -857,7 +1012,7 @@
       "output": {
         ".html": {
           "relative_path": "manuals/toc.html",
-          "hash": "ONPDApmKvDgFmy8VlNSkpw=="
+          "hash": "oeKYHkWS+oao5d8HQ3Ls4w=="
         }
       },
       "is_incremental": false,
@@ -890,7 +1045,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 10,
+          "total_file_count": 9,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
