@@ -1,7 +1,7 @@
 # 🩺 Runtime Debug Action
 Welcome to the documentation for RuntimeDebugAction
 
-![](images/2020-11-21-15-28-50.png)
+![](images/2020-12-02-16-28-04.png)
 
 ## Overview
 **RuntimeDebugAction** is a runtime debug menu system that lets you register and trigger debug actions with no extra setup. With a set of built-in debug actions and a tiny logger that works out of the box, RDA is built to supercharge your mobile and desktop game development.

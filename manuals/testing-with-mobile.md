@@ -1,9 +1,9 @@
 ---
-name: Testing With Mobile
+name: Testing With Device Device Simulator
 order: 0
 ---
 
-# Testing With Mobile
+# Testing With Device Simulator
 
 To see how RDA performs on a mobile layout in Unity Editor, use Device Simulator.
 

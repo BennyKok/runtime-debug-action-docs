@@ -11,6 +11,12 @@
   name: Custom Themes
   href: custom-themes.md
 - order: 0
-  name: Testing With Mobile
+  name: Debug Menu Event
+  href: debug-menu-event.md
+- order: 0
+  name: Setup with Input System
+  href: setup-with-input-system.md
+- order: 0
+  name: Testing With Device Device Simulator
   href: testing-with-mobile.md
 

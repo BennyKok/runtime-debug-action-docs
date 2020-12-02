@@ -15,6 +15,9 @@ Then make sure your scene have an `EventSystem`.
 
 ![](../../images/2020-11-22-19-19-20.png)
 
+> [!NOTE]
+> If you using Unity's new input system, please [see](~/manuals/setup-with-input-system.md)
+
 **RuntimeDebugAction** is designed to be plug & play, once you imported the package,
 a [`Settings`](~/api/BennyKok.RuntimeDebug.Data.Settings.yml) ScriptableObject will be created in your project folder `Assets/Resources/`.
 
@@ -71,4 +74,4 @@ To disable the debug menu, go to the **RDASettings** in your project folder `Ass
 
 There are also other settings you can configure there.
 
-![](../../images/2020-11-22-19-13-54.png)
+![](../../images/2020-12-02-17-56-18.png)
