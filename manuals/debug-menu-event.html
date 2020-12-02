@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Testing With Device Simulator </title>
+    <title>Debug Menu Event </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Testing With Device Simulator ">
+    <meta name="title" content="Debug Menu Event ">
     <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -60,14 +60,27 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="testing-with-device-simulator">Testing With Device Simulator</h1>
+<h1 id="debug-menu-event">Debug Menu Event</h1>
 
-<p>To see how RDA performs on a mobile layout in Unity Editor, use Device Simulator.</p>
-<p><img src="../images/2020-11-22-19-22-13.png" alt=""></p>
-<p>First install the Device Simulator from the package manager.</p>
-<p><img src="../images/2020-11-22-19-26-00.png" alt=""></p>
-<p>Then go to Device Simulator's project settings and add in <code>com.bennykok.runtime-debug-action</code> as a custom assembly.</p>
-<p><img src="../images/2020-11-22-19-26-54.png" alt=""></p>
+<h3 id="checking-if-the-debug-menu-is-visible">Checking if the debug menu is visible</h3>
+<p>You may want to stop specific code from running if the debug menu is being displayed.</p>
+<pre><code class="lang-csharp">if (RuntimeDebugSystem.IsVisible)
+</code></pre>
+<h3 id="hooking-into-the-event">Hooking into the event</h3>
+<pre><code class="lang-csharp">private void OnEnable() =&gt; RuntimeDebugSystem.Instance.OnDebugMenuToggleEvent += OnToggle;
+
+private void OnDisable() =&gt; RuntimeDebugSystem.Instance.OnDebugMenuToggleEvent -= OnToggle;
+
+public void OnToggle(bool isVisible)
+{
+    if (isVisible)
+        onDebugMenuShow.Invoke();
+    else
+        onDebugMenuHide.Invoke();
+}
+</code></pre>
+<p>or directly using the component with UnityEvent</p>
+<p><img src="../images/2020-12-02-18-03-37.png" alt=""></p>
 </article>
           </div>
           
@@ -76,7 +89,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/BennyKok/runtime-debug-action-docs/blob/master/manuals/testing-with-mobile.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/BennyKok/runtime-debug-action-docs/blob/master/manuals/debug-menu-event.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

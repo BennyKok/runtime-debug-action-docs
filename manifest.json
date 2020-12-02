@@ -749,17 +749,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/2020-11-21-15-28-50.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/2020-11-21-15-28-50.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "images/2020-11-22-14-29-18.png",
       "output": {
         "resource": {
@@ -881,17 +870,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/2020-11-22-19-13-54.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/2020-11-22-19-13-54.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "images/2020-11-22-19-19-20.png",
       "output": {
         "resource": {
@@ -935,12 +913,111 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/2020-12-02-16-28-04.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-12-02-16-28-04.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-12-02-16-43-02.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-12-02-16-43-02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-12-02-16-48-32.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-12-02-16-48-32.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-12-02-16-49-42.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-12-02-16-49-42.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-12-02-16-50-22.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-12-02-16-50-22.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-12-02-17-25-01.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-12-02-17-25-01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-12-02-17-33-50.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-12-02-17-33-50.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-12-02-17-56-18.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-12-02-17-56-18.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-12-02-18-03-37.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-12-02-18-03-37.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "L+S8bc2/B1mFHXdOode0IA=="
+          "hash": "oMQonl2SOQnYbjhaobkdGA=="
         }
       },
       "is_incremental": false,
@@ -964,7 +1041,7 @@
       "output": {
         ".html": {
           "relative_path": "manuals/QuickStart/index.html",
-          "hash": "4Awu3xBz/qcCSmnpdN3d5A=="
+          "hash": "MjGAcuhhT+Ug2fGjHCB1Rg=="
         }
       },
       "is_incremental": false,
@@ -984,6 +1061,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "manuals/debug-menu-event.md",
+      "output": {
+        ".html": {
+          "relative_path": "manuals/debug-menu-event.html",
+          "hash": "M81F8EtAtQBLElUp9W0I2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "manuals/default-actions.md",
       "output": {
         ".html": {
@@ -996,11 +1085,23 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "manuals/setup-with-input-system.md",
+      "output": {
+        ".html": {
+          "relative_path": "manuals/setup-with-input-system.html",
+          "hash": "hCZNSRL8RQbJ2TTFikx5Ag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "manuals/testing-with-mobile.md",
       "output": {
         ".html": {
           "relative_path": "manuals/testing-with-mobile.html",
-          "hash": "6+AL4IOlUlr7NXImmpRNjg=="
+          "hash": "nNCryS+5mYHqb2wjLVGlUQ=="
         }
       },
       "is_incremental": false,
@@ -1012,7 +1113,7 @@
       "output": {
         ".html": {
           "relative_path": "manuals/toc.html",
-          "hash": "oeKYHkWS+oao5d8HQ3Ls4w=="
+          "hash": "gsxXrncQ5TF43ZuoVnRGCw=="
         }
       },
       "is_incremental": false,
@@ -1045,7 +1146,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 9,
+          "total_file_count": 11,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Testing With Device Simulator </title>
+    <title>Setup with Input System </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Testing With Device Simulator ">
+    <meta name="title" content="Setup with Input System ">
     <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -60,14 +60,24 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="testing-with-device-simulator">Testing With Device Simulator</h1>
+<h1 id="setup-with-input-system">Setup with Input System</h1>
 
-<p>To see how RDA performs on a mobile layout in Unity Editor, use Device Simulator.</p>
-<p><img src="../images/2020-11-22-19-22-13.png" alt=""></p>
-<p>First install the Device Simulator from the package manager.</p>
-<p><img src="../images/2020-11-22-19-26-00.png" alt=""></p>
-<p>Then go to Device Simulator's project settings and add in <code>com.bennykok.runtime-debug-action</code> as a custom assembly.</p>
-<p><img src="../images/2020-11-22-19-26-54.png" alt=""></p>
+<p>RuntimeDebugAction support input system, to use the new input system. Make sure it's installed and enabled.</p>
+<p>In UPM</p>
+<p><img src="../images/2020-12-02-16-43-02.png" alt=""></p>
+<p>In player settings</p>
+<p><img src="../images/2020-12-02-16-48-32.png" alt=""></p>
+<h2 id="event-system">Event System</h2>
+<h3 id="1-using-your-own-event-system">1. Using your own event system</h3>
+<p><img src="../images/2020-12-02-16-49-42.png" alt=""></p>
+<p>Then make sure it is replaced with the new Input System UI Input module</p>
+<p><img src="../images/2020-12-02-16-50-22.png" alt=""></p>
+<h3 id="2-using-the-embedded-event-system">2. Using the embedded event system</h3>
+<p>Drag in the EmbeddedEventSystemInputSystem into your RDASettings</p>
+<p><img src="../images/2020-12-02-17-25-01.png" alt=""></p>
+<p>or</p>
+<p>loading the preset RDASettings InputSystem</p>
+<p><img src="../images/2020-12-02-17-33-50.png" alt=""></p>
 </article>
           </div>
           
@@ -76,7 +86,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/BennyKok/runtime-debug-action-docs/blob/master/manuals/testing-with-mobile.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/BennyKok/runtime-debug-action-docs/blob/master/manuals/setup-with-input-system.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
