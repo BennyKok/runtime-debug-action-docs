@@ -9,7 +9,7 @@ name: Debug Menu Event
 You may want to stop specific code from running if the debug menu is being displayed.
 
 ```csharp
-if (RuntimeDebugSystem.IsVisible)
+if (RuntimeDebugSystem.IsActive)
 ```
 
 ### Hooking into the event
