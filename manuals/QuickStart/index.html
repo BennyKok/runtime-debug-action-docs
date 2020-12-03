@@ -69,7 +69,7 @@
 <p><img src="../../images/2020-11-22-19-19-20.png" alt=""></p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>If you using Unity's new input system, please <a href="../setup-with-input-system.html">see</a></p>
+<p>If you using Unity's new input system, please <a href="../setup-with-input-system.html">see here</a>.</p>
 </div>
 <p><strong>RuntimeDebugAction</strong> is designed to be plug &amp; play, once you imported the package,
 a <a href="../../api/BennyKok.RuntimeDebug.Data.Settings.html"><code>Settings</code></a> ScriptableObject will be created in your project folder <code>Assets/Resources/</code>.</p>
@@ -83,6 +83,39 @@ a <a href="../../api/BennyKok.RuntimeDebug.Data.Settings.html"><code>Settings</c
 <p>See more details of <a href="../default-actions.html">default actions</a>.</p>
 <p>On mobile, there will be a touch toggle on the top left of the screen</p>
 <p><img src="../../images/2020-11-22-19-22-13.png" alt=""></p>
+<h3 id="input">Input</h3>
+<p>RuntimeDebugAction support multiple input method for different platform and input devices, and here is some common use case being tested in development.</p>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Device</th>
+<th>Input Manager / Input System</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standalone</td>
+<td>Keyboard</td>
+<td>Both</td>
+<td>Tested with Windows</td>
+</tr>
+<tr>
+<td>Standalone</td>
+<td>Controller</td>
+<td>Input System</td>
+<td>Tested with Xbox controller for Windows</td>
+</tr>
+<tr>
+<td>Mobile</td>
+<td>Touch</td>
+<td>Both</td>
+<td>Tested with Android / iOS</td>
+</tr>
+</tbody>
+</table>
+<p>For the new Input System setup, please <a href="../setup-with-input-system.html">see here</a>. With the Input System enable, its possible to support more input devices for the debug menu navigation with custom input action mapping.</p>
 <h3 id="lifecycle">Lifecycle</h3>
 <p>The <a href="../../api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html"><code>RuntimeDebugSystem</code></a> is auto injected to you first scene with the <a href="https://docs.unity3d.com/ScriptReference/RuntimeInitializeOnLoadMethodAttribute.html"><code>RuntimeInitializeOnLoadMethod</code></a> method.</p>
 <p>Then the system GameObject with the UI canvas will be set to <code>DontDestoryOnLoad</code> and keeps the debug system alive across scene load.</p>
