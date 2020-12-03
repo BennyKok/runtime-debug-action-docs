@@ -16,7 +16,7 @@ Then make sure your scene have an `EventSystem`.
 ![](../../images/2020-11-22-19-19-20.png)
 
 > [!NOTE]
-> If you using Unity's new input system, please [see](~/manuals/setup-with-input-system.md)
+> If you using Unity's new input system, please [see here](~/manuals/setup-with-input-system.md).
 
 **RuntimeDebugAction** is designed to be plug & play, once you imported the package,
 a [`Settings`](~/api/BennyKok.RuntimeDebug.Data.Settings.yml) ScriptableObject will be created in your project folder `Assets/Resources/`.
@@ -35,6 +35,18 @@ See more details of [default actions](~/manuals/default-actions.md).
 On mobile, there will be a touch toggle on the top left of the screen
 
 ![](../../images/2020-11-22-19-22-13.png)
+
+### Input
+
+RuntimeDebugAction support multiple input method for different platform and input devices, and here is some common use case being tested in development.
+
+| Platform | Device | Input Manager / Input System | Note
+| ----------- | ----------- | ----------- | ----------- |
+| Standalone | Keyboard | Both | Tested with Windows |
+| Standalone | Controller | Input System | Tested with Xbox controller for Windows |
+| Mobile | Touch |  Both  | Tested with Android / iOS |
+
+For the new Input System setup, please [see here](~/manuals/setup-with-input-system.md). With the Input System enable, its possible to support more input devices for the debug menu navigation with custom input action mapping.
 
 ### Lifecycle
 
