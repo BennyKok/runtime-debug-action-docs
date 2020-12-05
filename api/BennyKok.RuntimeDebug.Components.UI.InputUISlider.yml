@@ -1,0 +1,402 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.Components.UI.InputUISlider
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.InputUISlider
+  id: InputUISlider
+  parent: BennyKok.RuntimeDebug.Components.UI
+  children:
+  - BennyKok.RuntimeDebug.Components.UI.InputUISlider.Clear
+  - BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnBeginDrag(UnityEngine.EventSystems.PointerEventData)
+  - BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnDrag(UnityEngine.EventSystems.PointerEventData)
+  - BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnEndDrag(UnityEngine.EventSystems.PointerEventData)
+  - BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnNewInput(BennyKok.RuntimeDebug.DebugInput.InputQuery)
+  - BennyKok.RuntimeDebug.Components.UI.InputUISlider.RoundToNearest(System.Double,System.Double)
+  - BennyKok.RuntimeDebug.Components.UI.InputUISlider.target
+  langs:
+  - csharp
+  - vb
+  name: InputUISlider
+  nameWithType: InputUISlider
+  fullName: BennyKok.RuntimeDebug.Components.UI.InputUISlider
+  type: Class
+  source:
+    remote:
+      path: Runtime/Components/UI/InputUISlider.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: InputUISlider
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/InputUISlider.cs
+    startLine: 9
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: 'public class InputUISlider : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IEventSystemHandler'
+    content.vb: >-
+      Public Class InputUISlider
+          Inherits MonoBehaviour
+          Implements IBeginDragHandler, IDragHandler, IEndDragHandler, IEventSystemHandler
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BennyKok.RuntimeDebug.Components.UI.InputUISlider.target
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.InputUISlider.target
+  id: target
+  parent: BennyKok.RuntimeDebug.Components.UI.InputUISlider
+  langs:
+  - csharp
+  - vb
+  name: target
+  nameWithType: InputUISlider.target
+  fullName: BennyKok.RuntimeDebug.Components.UI.InputUISlider.target
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/InputUISlider.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: target
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/InputUISlider.cs
+    startLine: 11
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public InputUIHandler target
+    return:
+      type: BennyKok.RuntimeDebug.Components.UI.InputUIHandler
+    content.vb: Public target As InputUIHandler
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnBeginDrag(UnityEngine.EventSystems.PointerEventData)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnBeginDrag(UnityEngine.EventSystems.PointerEventData)
+  id: OnBeginDrag(UnityEngine.EventSystems.PointerEventData)
+  parent: BennyKok.RuntimeDebug.Components.UI.InputUISlider
+  langs:
+  - csharp
+  - vb
+  name: OnBeginDrag(PointerEventData)
+  nameWithType: InputUISlider.OnBeginDrag(PointerEventData)
+  fullName: BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnBeginDrag(UnityEngine.EventSystems.PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/InputUISlider.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: OnBeginDrag
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/InputUISlider.cs
+    startLine: 22
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void OnBeginDrag(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Public Sub OnBeginDrag(eventData As PointerEventData)
+  overload: BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnBeginDrag*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnDrag(UnityEngine.EventSystems.PointerEventData)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnDrag(UnityEngine.EventSystems.PointerEventData)
+  id: OnDrag(UnityEngine.EventSystems.PointerEventData)
+  parent: BennyKok.RuntimeDebug.Components.UI.InputUISlider
+  langs:
+  - csharp
+  - vb
+  name: OnDrag(PointerEventData)
+  nameWithType: InputUISlider.OnDrag(PointerEventData)
+  fullName: BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnDrag(UnityEngine.EventSystems.PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/InputUISlider.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: OnDrag
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/InputUISlider.cs
+    startLine: 33
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void OnDrag(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Public Sub OnDrag(eventData As PointerEventData)
+  overload: BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnDrag*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.InputUISlider.RoundToNearest(System.Double,System.Double)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.InputUISlider.RoundToNearest(System.Double,System.Double)
+  id: RoundToNearest(System.Double,System.Double)
+  parent: BennyKok.RuntimeDebug.Components.UI.InputUISlider
+  langs:
+  - csharp
+  - vb
+  name: RoundToNearest(Double, Double)
+  nameWithType: InputUISlider.RoundToNearest(Double, Double)
+  fullName: BennyKok.RuntimeDebug.Components.UI.InputUISlider.RoundToNearest(System.Double, System.Double)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/InputUISlider.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: RoundToNearest
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/InputUISlider.cs
+    startLine: 44
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public static double RoundToNearest(double value, double step)
+    parameters:
+    - id: value
+      type: System.Double
+    - id: step
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Public Shared Function RoundToNearest(value As Double, step As Double) As Double
+  overload: BennyKok.RuntimeDebug.Components.UI.InputUISlider.RoundToNearest*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnEndDrag(UnityEngine.EventSystems.PointerEventData)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnEndDrag(UnityEngine.EventSystems.PointerEventData)
+  id: OnEndDrag(UnityEngine.EventSystems.PointerEventData)
+  parent: BennyKok.RuntimeDebug.Components.UI.InputUISlider
+  langs:
+  - csharp
+  - vb
+  name: OnEndDrag(PointerEventData)
+  nameWithType: InputUISlider.OnEndDrag(PointerEventData)
+  fullName: BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnEndDrag(UnityEngine.EventSystems.PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/InputUISlider.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: OnEndDrag
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/InputUISlider.cs
+    startLine: 49
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void OnEndDrag(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Public Sub OnEndDrag(eventData As PointerEventData)
+  overload: BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnEndDrag*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnNewInput(BennyKok.RuntimeDebug.DebugInput.InputQuery)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnNewInput(BennyKok.RuntimeDebug.DebugInput.InputQuery)
+  id: OnNewInput(BennyKok.RuntimeDebug.DebugInput.InputQuery)
+  parent: BennyKok.RuntimeDebug.Components.UI.InputUISlider
+  langs:
+  - csharp
+  - vb
+  name: OnNewInput(InputQuery)
+  nameWithType: InputUISlider.OnNewInput(InputQuery)
+  fullName: BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnNewInput(BennyKok.RuntimeDebug.DebugInput.InputQuery)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/InputUISlider.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: OnNewInput
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/InputUISlider.cs
+    startLine: 51
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void OnNewInput(InputQuery query)
+    parameters:
+    - id: query
+      type: BennyKok.RuntimeDebug.DebugInput.InputQuery
+    content.vb: Public Sub OnNewInput(query As InputQuery)
+  overload: BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnNewInput*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.InputUISlider.Clear
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.InputUISlider.Clear
+  id: Clear
+  parent: BennyKok.RuntimeDebug.Components.UI.InputUISlider
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: InputUISlider.Clear()
+  fullName: BennyKok.RuntimeDebug.Components.UI.InputUISlider.Clear()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/InputUISlider.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Clear
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/InputUISlider.cs
+    startLine: 63
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+  overload: BennyKok.RuntimeDebug.Components.UI.InputUISlider.Clear*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BennyKok.RuntimeDebug.Components.UI
+  commentId: N:BennyKok.RuntimeDebug.Components.UI
+  name: BennyKok.RuntimeDebug.Components.UI
+  nameWithType: BennyKok.RuntimeDebug.Components.UI
+  fullName: BennyKok.RuntimeDebug.Components.UI
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BennyKok.RuntimeDebug.Components.UI.InputUIHandler
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.InputUIHandler
+  parent: BennyKok.RuntimeDebug.Components.UI
+  name: InputUIHandler
+  nameWithType: InputUIHandler
+  fullName: BennyKok.RuntimeDebug.Components.UI.InputUIHandler
+- uid: BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnBeginDrag*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnBeginDrag
+  name: OnBeginDrag
+  nameWithType: InputUISlider.OnBeginDrag
+  fullName: BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnBeginDrag
+- uid: UnityEngine.EventSystems.PointerEventData
+  commentId: T:UnityEngine.EventSystems.PointerEventData
+  parent: UnityEngine.EventSystems
+  isExternal: true
+  name: PointerEventData
+  nameWithType: PointerEventData
+  fullName: UnityEngine.EventSystems.PointerEventData
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  isExternal: true
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+- uid: BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnDrag*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnDrag
+  name: OnDrag
+  nameWithType: InputUISlider.OnDrag
+  fullName: BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnDrag
+- uid: BennyKok.RuntimeDebug.Components.UI.InputUISlider.RoundToNearest*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.InputUISlider.RoundToNearest
+  name: RoundToNearest
+  nameWithType: InputUISlider.RoundToNearest
+  fullName: BennyKok.RuntimeDebug.Components.UI.InputUISlider.RoundToNearest
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnEndDrag*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnEndDrag
+  name: OnEndDrag
+  nameWithType: InputUISlider.OnEndDrag
+  fullName: BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnEndDrag
+- uid: BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnNewInput*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnNewInput
+  name: OnNewInput
+  nameWithType: InputUISlider.OnNewInput
+  fullName: BennyKok.RuntimeDebug.Components.UI.InputUISlider.OnNewInput
+- uid: BennyKok.RuntimeDebug.DebugInput.InputQuery
+  commentId: T:BennyKok.RuntimeDebug.DebugInput.InputQuery
+  parent: BennyKok.RuntimeDebug.DebugInput
+  name: InputQuery
+  nameWithType: InputQuery
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputQuery
+- uid: BennyKok.RuntimeDebug.DebugInput
+  commentId: N:BennyKok.RuntimeDebug.DebugInput
+  name: BennyKok.RuntimeDebug.DebugInput
+  nameWithType: BennyKok.RuntimeDebug.DebugInput
+  fullName: BennyKok.RuntimeDebug.DebugInput
+- uid: BennyKok.RuntimeDebug.Components.UI.InputUISlider.Clear*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.InputUISlider.Clear
+  name: Clear
+  nameWithType: InputUISlider.Clear
+  fullName: BennyKok.RuntimeDebug.Components.UI.InputUISlider.Clear

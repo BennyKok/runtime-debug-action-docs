@@ -4,6 +4,8 @@ items:
   commentId: N:BennyKok.RuntimeDebug.DebugInput
   id: BennyKok.RuntimeDebug.DebugInput
   children:
+  - BennyKok.RuntimeDebug.DebugInput.InputLayer
+  - BennyKok.RuntimeDebug.DebugInput.InputManagerLayer
   - BennyKok.RuntimeDebug.DebugInput.InputQuery
   - BennyKok.RuntimeDebug.DebugInput.InputResponse
   - BennyKok.RuntimeDebug.DebugInput.Param
@@ -53,6 +55,18 @@ references:
   name: ParamType
   nameWithType: ParamType
   fullName: BennyKok.RuntimeDebug.DebugInput.ParamType
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer
+  commentId: T:BennyKok.RuntimeDebug.DebugInput.InputLayer
+  parent: BennyKok.RuntimeDebug.DebugInput
+  name: InputLayer
+  nameWithType: InputLayer
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer
+- uid: BennyKok.RuntimeDebug.DebugInput.InputManagerLayer
+  commentId: T:BennyKok.RuntimeDebug.DebugInput.InputManagerLayer
+  parent: BennyKok.RuntimeDebug.DebugInput
+  name: InputManagerLayer
+  nameWithType: InputManagerLayer
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputManagerLayer
 - uid: BennyKok.RuntimeDebug.DebugInput
   commentId: N:BennyKok.RuntimeDebug.DebugInput
   name: BennyKok.RuntimeDebug.DebugInput

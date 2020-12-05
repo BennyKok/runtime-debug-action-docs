@@ -22,7 +22,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: TooltipHandler
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/TooltipHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/TooltipHandler.cs
     startLine: 5
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -61,7 +61,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: tooltip
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/TooltipHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/TooltipHandler.cs
     startLine: 7
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -92,7 +92,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: IsActive
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/TooltipHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/TooltipHandler.cs
     startLine: 11
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -127,7 +127,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ShowTooltip
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/TooltipHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/TooltipHandler.cs
     startLine: 18
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -160,7 +160,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ClearTooltip
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/TooltipHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/TooltipHandler.cs
     startLine: 24
   assemblies:
   - com.bennykok.runtime-debug-action

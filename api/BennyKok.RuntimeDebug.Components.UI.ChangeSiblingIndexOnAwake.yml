@@ -19,7 +19,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ChangeSiblingIndexOnAwake
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/ChangeSiblingIndexOnAwake.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/Utils/ChangeSiblingIndexOnAwake.cs
     startLine: 7
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -58,7 +58,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: targetIndex
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/ChangeSiblingIndexOnAwake.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/Utils/ChangeSiblingIndexOnAwake.cs
     startLine: 10
   assemblies:
   - com.bennykok.runtime-debug-action

@@ -5,17 +5,39 @@ items:
   id: ListView
   parent: BennyKok.RuntimeDebug.Components.UI
   children:
-  - BennyKok.RuntimeDebug.Components.UI.ListView.actionDisplayPool
-  - BennyKok.RuntimeDebug.Components.UI.ListView.AddItem(BennyKok.RuntimeDebug.Data.ListItem)
   - BennyKok.RuntimeDebug.Components.UI.ListView.AttachUI(BennyKok.RuntimeDebug.Components.UI.DebugUIHandler)
-  - BennyKok.RuntimeDebug.Components.UI.ListView.Clear(System.Int32)
+  - BennyKok.RuntimeDebug.Components.UI.ListView.AutoScroll(System.Int32)
+  - BennyKok.RuntimeDebug.Components.UI.ListView.CheckChildItems
+  - BennyKok.RuntimeDebug.Components.UI.ListView.childBufferStart
+  - BennyKok.RuntimeDebug.Components.UI.ListView.childItems
+  - BennyKok.RuntimeDebug.Components.UI.ListView.Clear
+  - BennyKok.RuntimeDebug.Components.UI.ListView.DisableAllChildren
+  - BennyKok.RuntimeDebug.Components.UI.ListView.GetRowItem(System.Int32)
+  - BennyKok.RuntimeDebug.Components.UI.ListView.GetRowScrollPosition(System.Int32,System.Int32)
+  - BennyKok.RuntimeDebug.Components.UI.ListView.ignoreScrollChange
   - BennyKok.RuntimeDebug.Components.UI.ListView.IsRootLevel
-  - BennyKok.RuntimeDebug.Components.UI.ListView.listParent
+  - BennyKok.RuntimeDebug.Components.UI.ListView.Navigate(BennyKok.RuntimeDebug.Data.ListItem)
   - BennyKok.RuntimeDebug.Components.UI.ListView.OnBackNavigation
+  - BennyKok.RuntimeDebug.Components.UI.ListView.OnDisable
+  - BennyKok.RuntimeDebug.Components.UI.ListView.OnScrollChanged(UnityEngine.Vector2)
+  - BennyKok.RuntimeDebug.Components.UI.ListView.previousBuildHeight
+  - BennyKok.RuntimeDebug.Components.UI.ListView.Refresh
+  - BennyKok.RuntimeDebug.Components.UI.ListView.Refresh(BennyKok.RuntimeDebug.Components.UI.ListItemView)
+  - BennyKok.RuntimeDebug.Components.UI.ListView.Refresh(System.Int32,System.Int32)
+  - BennyKok.RuntimeDebug.Components.UI.ListView.RefreshCurrent
   - BennyKok.RuntimeDebug.Components.UI.ListView.RefreshStatus
+  - BennyKok.RuntimeDebug.Components.UI.ListView.ReorganiseContent(System.Boolean)
   - BennyKok.RuntimeDebug.Components.UI.ListView.reverseOrder
+  - BennyKok.RuntimeDebug.Components.UI.ListView.rowCount
+  - BennyKok.RuntimeDebug.Components.UI.ListView.RowCount
+  - BennyKok.RuntimeDebug.Components.UI.ListView.rowsAboveBelow
+  - BennyKok.RuntimeDebug.Components.UI.ListView.scrollRect
+  - BennyKok.RuntimeDebug.Components.UI.ListView.ScrollToRow(System.Int32)
   - BennyKok.RuntimeDebug.Components.UI.ListView.SetItem(BennyKok.RuntimeDebug.Data.ListItem)
+  - BennyKok.RuntimeDebug.Components.UI.ListView.sourceDataRowStart
   - BennyKok.RuntimeDebug.Components.UI.ListView.uiParent
+  - BennyKok.RuntimeDebug.Components.UI.ListView.UpdateChild(BennyKok.RuntimeDebug.Components.UI.ListItemView,System.Int32)
+  - BennyKok.RuntimeDebug.Components.UI.ListView.UpdateContentHeight
   - BennyKok.RuntimeDebug.Components.UI.ListView.UpdateTooltip(BennyKok.RuntimeDebug.Data.ListItem)
   langs:
   - csharp
@@ -30,8 +52,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ListView
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
-    startLine: 9
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 33
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -63,53 +85,6 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: BennyKok.RuntimeDebug.Components.UI.ListView.listParent
-  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListView.listParent
-  id: listParent
-  parent: BennyKok.RuntimeDebug.Components.UI.ListView
-  langs:
-  - csharp
-  - vb
-  name: listParent
-  nameWithType: ListView.listParent
-  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.listParent
-  type: Field
-  source:
-    remote:
-      path: Runtime/Components/UI/ListView.cs
-      branch: master
-      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: listParent
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
-    startLine: 13
-  assemblies:
-  - com.bennykok.runtime-debug-action
-  namespace: BennyKok.RuntimeDebug.Components.UI
-  syntax:
-    content: >-
-      [Title("References", false, 1)]
-
-      public RectTransform listParent
-    return:
-      type: UnityEngine.RectTransform
-    content.vb: >-
-      <Title("References", False, 1)>
-
-      Public listParent As RectTransform
-  attributes:
-  - type: BennyKok.RuntimeDebug.Utils.TitleAttribute
-    ctor: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Boolean,System.Int32)
-    arguments:
-    - type: System.String
-      value: References
-    - type: System.Boolean
-      value: false
-    - type: System.Int32
-      value: 1
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
 - uid: BennyKok.RuntimeDebug.Components.UI.ListView.reverseOrder
   commentId: F:BennyKok.RuntimeDebug.Components.UI.ListView.reverseOrder
   id: reverseOrder
@@ -127,8 +102,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: reverseOrder
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
-    startLine: 16
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 37
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -172,8 +147,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: IsRootLevel
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
-    startLine: 21
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 42
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -207,8 +182,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: uiParent
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
-    startLine: 23
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 44
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -231,37 +206,6 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BennyKok.RuntimeDebug.Components.UI.ListView.actionDisplayPool
-  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListView.actionDisplayPool
-  id: actionDisplayPool
-  parent: BennyKok.RuntimeDebug.Components.UI.ListView
-  langs:
-  - csharp
-  - vb
-  name: actionDisplayPool
-  nameWithType: ListView.actionDisplayPool
-  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.actionDisplayPool
-  type: Field
-  source:
-    remote:
-      path: Runtime/Components/UI/ListView.cs
-      branch: master
-      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: actionDisplayPool
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
-    startLine: 28
-  assemblies:
-  - com.bennykok.runtime-debug-action
-  namespace: BennyKok.RuntimeDebug.Components.UI
-  syntax:
-    content: public ObjectPool actionDisplayPool
-    return:
-      type: BennyKok.RuntimeDebug.Utils.ObjectPool
-    content.vb: Public actionDisplayPool As ObjectPool
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
 - uid: BennyKok.RuntimeDebug.Components.UI.ListView.AttachUI(BennyKok.RuntimeDebug.Components.UI.DebugUIHandler)
   commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.AttachUI(BennyKok.RuntimeDebug.Components.UI.DebugUIHandler)
   id: AttachUI(BennyKok.RuntimeDebug.Components.UI.DebugUIHandler)
@@ -279,8 +223,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: AttachUI
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
-    startLine: 32
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 48
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -295,6 +239,38 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.OnDisable
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.OnDisable
+  id: OnDisable
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: OnDisable()
+  nameWithType: ListView.OnDisable()
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.OnDisable()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: OnDisable
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 67
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: protected virtual void OnDisable()
+    content.vb: Protected Overridable Sub OnDisable
+  overload: BennyKok.RuntimeDebug.Components.UI.ListView.OnDisable*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
 - uid: BennyKok.RuntimeDebug.Components.UI.ListView.UpdateTooltip(BennyKok.RuntimeDebug.Data.ListItem)
   commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.UpdateTooltip(BennyKok.RuntimeDebug.Data.ListItem)
   id: UpdateTooltip(BennyKok.RuntimeDebug.Data.ListItem)
@@ -312,8 +288,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: UpdateTooltip
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
-    startLine: 51
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 92
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -324,6 +300,36 @@ items:
       type: BennyKok.RuntimeDebug.Data.ListItem
     content.vb: Public Sub UpdateTooltip(item As ListItem)
   overload: BennyKok.RuntimeDebug.Components.UI.ListView.UpdateTooltip*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.RefreshCurrent
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.RefreshCurrent
+  id: RefreshCurrent
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: RefreshCurrent()
+  nameWithType: ListView.RefreshCurrent()
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.RefreshCurrent()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: RefreshCurrent
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 223
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void RefreshCurrent()
+    content.vb: Public Sub RefreshCurrent
+  overload: BennyKok.RuntimeDebug.Components.UI.ListView.RefreshCurrent*
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -345,8 +351,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: SetItem
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
-    startLine: 162
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 228
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -378,8 +384,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnBackNavigation
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
-    startLine: 173
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 240
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -410,8 +416,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: RefreshStatus
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
-    startLine: 187
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 254
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -423,16 +429,449 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BennyKok.RuntimeDebug.Components.UI.ListView.Clear(System.Int32)
-  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.Clear(System.Int32)
-  id: Clear(System.Int32)
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.Navigate(BennyKok.RuntimeDebug.Data.ListItem)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.Navigate(BennyKok.RuntimeDebug.Data.ListItem)
+  id: Navigate(BennyKok.RuntimeDebug.Data.ListItem)
   parent: BennyKok.RuntimeDebug.Components.UI.ListView
   langs:
   - csharp
   - vb
-  name: Clear(Int32)
-  nameWithType: ListView.Clear(Int32)
-  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.Clear(System.Int32)
+  name: Navigate(ListItem)
+  nameWithType: ListView.Navigate(ListItem)
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.Navigate(BennyKok.RuntimeDebug.Data.ListItem)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Navigate
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 261
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public void Navigate(ListItem subItem)
+    parameters:
+    - id: subItem
+      type: BennyKok.RuntimeDebug.Data.ListItem
+    content.vb: Public Sub Navigate(subItem As ListItem)
+  overload: BennyKok.RuntimeDebug.Components.UI.ListView.Navigate*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.rowCount
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListView.rowCount
+  id: rowCount
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: rowCount
+  nameWithType: ListView.rowCount
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.rowCount
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: rowCount
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 304
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: protected int rowCount
+    return:
+      type: System.Int32
+    content.vb: Protected rowCount As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.RowCount
+  commentId: P:BennyKok.RuntimeDebug.Components.UI.ListView.RowCount
+  id: RowCount
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: RowCount
+  nameWithType: ListView.RowCount
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.RowCount
+  type: Property
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: RowCount
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 310
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  summary: "\nGet / set the number of rows in the list. If changed, will cause a rebuild of\nthe contents of the list. Call Refresh() instead to update contents without changing\nlength.\n"
+  example: []
+  syntax:
+    content: public int RowCount { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property RowCount As Integer
+  overload: BennyKok.RuntimeDebug.Components.UI.ListView.RowCount*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.scrollRect
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListView.scrollRect
+  id: scrollRect
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: scrollRect
+  nameWithType: ListView.scrollRect
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.scrollRect
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: scrollRect
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 327
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: protected ScrollRect scrollRect
+    return:
+      type: UnityEngine.UI.ScrollRect
+    content.vb: Protected scrollRect As ScrollRect
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.childItems
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListView.childItems
+  id: childItems
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: childItems
+  nameWithType: ListView.childItems
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.childItems
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: childItems
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 329
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: protected ListItemView[] childItems
+    return:
+      type: BennyKok.RuntimeDebug.Components.UI.ListItemView[]
+    content.vb: Protected childItems As ListItemView()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.childBufferStart
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListView.childBufferStart
+  id: childBufferStart
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: childBufferStart
+  nameWithType: ListView.childBufferStart
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.childBufferStart
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: childBufferStart
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 331
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: protected int childBufferStart
+    return:
+      type: System.Int32
+    content.vb: Protected childBufferStart As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.sourceDataRowStart
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListView.sourceDataRowStart
+  id: sourceDataRowStart
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: sourceDataRowStart
+  nameWithType: ListView.sourceDataRowStart
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.sourceDataRowStart
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: sourceDataRowStart
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 333
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: protected int sourceDataRowStart
+    return:
+      type: System.Int32
+    content.vb: Protected sourceDataRowStart As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.ignoreScrollChange
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListView.ignoreScrollChange
+  id: ignoreScrollChange
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: ignoreScrollChange
+  nameWithType: ListView.ignoreScrollChange
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.ignoreScrollChange
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: ignoreScrollChange
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 335
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: protected bool ignoreScrollChange
+    return:
+      type: System.Boolean
+    content.vb: Protected ignoreScrollChange As Boolean
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.previousBuildHeight
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListView.previousBuildHeight
+  id: previousBuildHeight
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: previousBuildHeight
+  nameWithType: ListView.previousBuildHeight
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.previousBuildHeight
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: previousBuildHeight
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 336
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: protected float previousBuildHeight
+    return:
+      type: System.Single
+    content.vb: Protected previousBuildHeight As Single
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.rowsAboveBelow
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListView.rowsAboveBelow
+  id: rowsAboveBelow
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: rowsAboveBelow
+  nameWithType: ListView.rowsAboveBelow
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.rowsAboveBelow
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: rowsAboveBelow
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 337
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: protected const int rowsAboveBelow = 1
+    return:
+      type: System.Int32
+    content.vb: Protected Const rowsAboveBelow As Integer = 1
+  modifiers.csharp:
+  - protected
+  - const
+  modifiers.vb:
+  - Protected
+  - Const
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.Refresh
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.Refresh
+  id: Refresh
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: Refresh()
+  nameWithType: ListView.Refresh()
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.Refresh()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Refresh
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 344
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  summary: "\nTrigger the refreshing of the list content (e.g. if you&apos;ve changed some values).\nUse this if the number of rows hasn&apos;t changed but you want to update the contents\nfor some other reason. All active items will have the ItemCallback invoked. \n"
+  example: []
+  syntax:
+    content: public virtual void Refresh()
+    content.vb: Public Overridable Sub Refresh
+  overload: BennyKok.RuntimeDebug.Components.UI.ListView.Refresh*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.Refresh(System.Int32,System.Int32)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.Refresh(System.Int32,System.Int32)
+  id: Refresh(System.Int32,System.Int32)
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: Refresh(Int32, Int32)
+  nameWithType: ListView.Refresh(Int32, Int32)
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.Refresh(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Refresh
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 355
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  summary: "\nRefresh a subset of the list content. Any rows which currently have data populated in the view\nwill cause a call to ItemCallback. The size of the list or positions won&apos;t change.\n"
+  example: []
+  syntax:
+    content: public virtual void Refresh(int rowStart, int count)
+    parameters:
+    - id: rowStart
+      type: System.Int32
+      description: ''
+    - id: count
+      type: System.Int32
+      description: ''
+    content.vb: Public Overridable Sub Refresh(rowStart As Integer, count As Integer)
+  overload: BennyKok.RuntimeDebug.Components.UI.ListView.Refresh*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.Refresh(BennyKok.RuntimeDebug.Components.UI.ListItemView)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.Refresh(BennyKok.RuntimeDebug.Components.UI.ListItemView)
+  id: Refresh(BennyKok.RuntimeDebug.Components.UI.ListItemView)
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: Refresh(ListItemView)
+  nameWithType: ListView.Refresh(ListItemView)
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.Refresh(BennyKok.RuntimeDebug.Components.UI.ListItemView)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Refresh
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 377
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  summary: "\nRefresh a single row based on its reference.\n"
+  example: []
+  syntax:
+    content: public virtual void Refresh(ListItemView item)
+    parameters:
+    - id: item
+      type: BennyKok.RuntimeDebug.Components.UI.ListItemView
+      description: ''
+    content.vb: Public Overridable Sub Refresh(item As ListItemView)
+  overload: BennyKok.RuntimeDebug.Components.UI.ListView.Refresh*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.Clear
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.Clear
+  id: Clear
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: ListView.Clear()
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.Clear()
   type: Method
   source:
     remote:
@@ -440,55 +879,382 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Clear
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
-    startLine: 195
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 393
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
+  summary: "\nQuick way of clearing all the content from the list (alias for RowCount = 0)\n"
+  example: []
   syntax:
-    content: public void Clear(int count)
-    parameters:
-    - id: count
-      type: System.Int32
-    content.vb: Public Sub Clear(count As Integer)
+    content: public virtual void Clear()
+    content.vb: Public Overridable Sub Clear
   overload: BennyKok.RuntimeDebug.Components.UI.ListView.Clear*
   modifiers.csharp:
   - public
+  - virtual
   modifiers.vb:
   - Public
-- uid: BennyKok.RuntimeDebug.Components.UI.ListView.AddItem(BennyKok.RuntimeDebug.Data.ListItem)
-  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.AddItem(BennyKok.RuntimeDebug.Data.ListItem)
-  id: AddItem(BennyKok.RuntimeDebug.Data.ListItem)
+  - Overridable
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.ScrollToRow(System.Int32)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.ScrollToRow(System.Int32)
+  id: ScrollToRow(System.Int32)
   parent: BennyKok.RuntimeDebug.Components.UI.ListView
   langs:
   - csharp
   - vb
-  name: AddItem(ListItem)
-  nameWithType: ListView.AddItem(ListItem)
-  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.AddItem(BennyKok.RuntimeDebug.Data.ListItem)
+  name: ScrollToRow(Int32)
+  nameWithType: ListView.ScrollToRow(Int32)
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.ScrollToRow(System.Int32)
   type: Method
   source:
     remote:
       path: Runtime/Components/UI/ListView.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: AddItem
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListView.cs
-    startLine: 219
+    id: ScrollToRow
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 402
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  summary: "\nScroll the viewport so that a given row is in view, preferably centred vertically.\n"
+  example: []
+  syntax:
+    content: public virtual void ScrollToRow(int row)
+    parameters:
+    - id: row
+      type: System.Int32
+      description: ''
+    content.vb: Public Overridable Sub ScrollToRow(row As Integer)
+  overload: BennyKok.RuntimeDebug.Components.UI.ListView.ScrollToRow*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.AutoScroll(System.Int32)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.AutoScroll(System.Int32)
+  id: AutoScroll(System.Int32)
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: AutoScroll(Int32)
+  nameWithType: ListView.AutoScroll(Int32)
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.AutoScroll(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: AutoScroll
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 407
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
   syntax:
-    content: public void AddItem(ListItem subItem)
+    content: public void AutoScroll(int dir = 0)
     parameters:
-    - id: subItem
-      type: BennyKok.RuntimeDebug.Data.ListItem
-    content.vb: Public Sub AddItem(subItem As ListItem)
-  overload: BennyKok.RuntimeDebug.Components.UI.ListView.AddItem*
+    - id: dir
+      type: System.Int32
+    content.vb: Public Sub AutoScroll(dir As Integer = 0)
+  overload: BennyKok.RuntimeDebug.Components.UI.ListView.AutoScroll*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.GetRowScrollPosition(System.Int32,System.Int32)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.GetRowScrollPosition(System.Int32,System.Int32)
+  id: GetRowScrollPosition(System.Int32,System.Int32)
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: GetRowScrollPosition(Int32, Int32)
+  nameWithType: ListView.GetRowScrollPosition(Int32, Int32)
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.GetRowScrollPosition(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: GetRowScrollPosition
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 419
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  summary: "\nGet the normalised vertical scroll position which would centre the given row in the view,\nas best as possible without scrolling outside the bounds of the content.\nUse this instead of ScrollToRow if you want to control the actual scrolling yourself.\n"
+  example: []
+  syntax:
+    content: public float GetRowScrollPosition(int row, int dir = 0)
+    parameters:
+    - id: row
+      type: System.Int32
+      description: ''
+    - id: dir
+      type: System.Int32
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function GetRowScrollPosition(row As Integer, dir As Integer = 0) As Single
+  overload: BennyKok.RuntimeDebug.Components.UI.ListView.GetRowScrollPosition*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.GetRowItem(System.Int32)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.GetRowItem(System.Int32)
+  id: GetRowItem(System.Int32)
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: GetRowItem(Int32)
+  nameWithType: ListView.GetRowItem(Int32)
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.GetRowItem(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: GetRowItem
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 458
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  summary: "\nRetrieve the item instance for a given row, IF it is currently allocated for the view.\nBecause these items are recycled as the view moves, you should not hold on to this item beyond\nthe site of the call to this method.\n"
+  example: []
+  syntax:
+    content: public ListItemView GetRowItem(int row)
+    parameters:
+    - id: row
+      type: System.Int32
+      description: The row number
+    return:
+      type: BennyKok.RuntimeDebug.Components.UI.ListItemView
+      description: >-
+        The list view item assigned to this row IF it&apos;s within the window the list currently has
+
+        allocated for viewing. If row is outside this range, returns null.
+    content.vb: Public Function GetRowItem(row As Integer) As ListItemView
+  overload: BennyKok.RuntimeDebug.Components.UI.ListView.GetRowItem*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.CheckChildItems
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.CheckChildItems
+  id: CheckChildItems
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: CheckChildItems()
+  nameWithType: ListView.CheckChildItems()
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.CheckChildItems()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: CheckChildItems
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 471
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: protected virtual bool CheckChildItems()
+    return:
+      type: System.Boolean
+    content.vb: Protected Overridable Function CheckChildItems As Boolean
+  overload: BennyKok.RuntimeDebug.Components.UI.ListView.CheckChildItems*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.OnScrollChanged(UnityEngine.Vector2)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.OnScrollChanged(UnityEngine.Vector2)
+  id: OnScrollChanged(UnityEngine.Vector2)
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: OnScrollChanged(Vector2)
+  nameWithType: ListView.OnScrollChanged(Vector2)
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.OnScrollChanged(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: OnScrollChanged
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 505
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: protected virtual void OnScrollChanged(Vector2 normalisedPos)
+    parameters:
+    - id: normalisedPos
+      type: UnityEngine.Vector2
+    content.vb: Protected Overridable Sub OnScrollChanged(normalisedPos As Vector2)
+  overload: BennyKok.RuntimeDebug.Components.UI.ListView.OnScrollChanged*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.ReorganiseContent(System.Boolean)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.ReorganiseContent(System.Boolean)
+  id: ReorganiseContent(System.Boolean)
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: ReorganiseContent(Boolean)
+  nameWithType: ListView.ReorganiseContent(Boolean)
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.ReorganiseContent(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: ReorganiseContent
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 514
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: protected virtual void ReorganiseContent(bool clearContents)
+    parameters:
+    - id: clearContents
+      type: System.Boolean
+    content.vb: Protected Overridable Sub ReorganiseContent(clearContents As Boolean)
+  overload: BennyKok.RuntimeDebug.Components.UI.ListView.ReorganiseContent*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.UpdateChild(BennyKok.RuntimeDebug.Components.UI.ListItemView,System.Int32)
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.UpdateChild(BennyKok.RuntimeDebug.Components.UI.ListItemView,System.Int32)
+  id: UpdateChild(BennyKok.RuntimeDebug.Components.UI.ListItemView,System.Int32)
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: UpdateChild(ListItemView, Int32)
+  nameWithType: ListView.UpdateChild(ListItemView, Int32)
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.UpdateChild(BennyKok.RuntimeDebug.Components.UI.ListItemView, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: UpdateChild
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 605
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: protected virtual void UpdateChild(ListItemView child, int rowIdx)
+    parameters:
+    - id: child
+      type: BennyKok.RuntimeDebug.Components.UI.ListItemView
+    - id: rowIdx
+      type: System.Int32
+    content.vb: Protected Overridable Sub UpdateChild(child As ListItemView, rowIdx As Integer)
+  overload: BennyKok.RuntimeDebug.Components.UI.ListView.UpdateChild*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.UpdateContentHeight
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.UpdateContentHeight
+  id: UpdateContentHeight
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: UpdateContentHeight()
+  nameWithType: ListView.UpdateContentHeight()
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.UpdateContentHeight()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: UpdateContentHeight
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 652
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: protected virtual void UpdateContentHeight()
+    content.vb: Protected Overridable Sub UpdateContentHeight
+  overload: BennyKok.RuntimeDebug.Components.UI.ListView.UpdateContentHeight*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.DisableAllChildren
+  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListView.DisableAllChildren
+  id: DisableAllChildren
+  parent: BennyKok.RuntimeDebug.Components.UI.ListView
+  langs:
+  - csharp
+  - vb
+  name: DisableAllChildren()
+  nameWithType: ListView.DisableAllChildren()
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.DisableAllChildren()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Components/UI/ListView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: DisableAllChildren
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
+    startLine: 660
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: protected virtual void DisableAllChildren()
+    content.vb: Protected Overridable Sub DisableAllChildren
+  overload: BennyKok.RuntimeDebug.Components.UI.ListView.DisableAllChildren*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
 references:
 - uid: BennyKok.RuntimeDebug.Components.UI
   commentId: N:BennyKok.RuntimeDebug.Components.UI
@@ -542,13 +1308,6 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
-- uid: UnityEngine.RectTransform
-  commentId: T:UnityEngine.RectTransform
-  parent: UnityEngine
-  isExternal: true
-  name: RectTransform
-  nameWithType: RectTransform
-  fullName: UnityEngine.RectTransform
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -567,22 +1326,16 @@ references:
   name: DebugUIHandler
   nameWithType: DebugUIHandler
   fullName: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
-- uid: BennyKok.RuntimeDebug.Utils.ObjectPool
-  commentId: T:BennyKok.RuntimeDebug.Utils.ObjectPool
-  parent: BennyKok.RuntimeDebug.Utils
-  name: ObjectPool
-  nameWithType: ObjectPool
-  fullName: BennyKok.RuntimeDebug.Utils.ObjectPool
-- uid: BennyKok.RuntimeDebug.Utils
-  commentId: N:BennyKok.RuntimeDebug.Utils
-  name: BennyKok.RuntimeDebug.Utils
-  nameWithType: BennyKok.RuntimeDebug.Utils
-  fullName: BennyKok.RuntimeDebug.Utils
 - uid: BennyKok.RuntimeDebug.Components.UI.ListView.AttachUI*
   commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.AttachUI
   name: AttachUI
   nameWithType: ListView.AttachUI
   fullName: BennyKok.RuntimeDebug.Components.UI.ListView.AttachUI
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.OnDisable*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.OnDisable
+  name: OnDisable
+  nameWithType: ListView.OnDisable
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.OnDisable
 - uid: BennyKok.RuntimeDebug.Components.UI.ListView.UpdateTooltip*
   commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.UpdateTooltip
   name: UpdateTooltip
@@ -599,6 +1352,11 @@ references:
   name: BennyKok.RuntimeDebug.Data
   nameWithType: BennyKok.RuntimeDebug.Data
   fullName: BennyKok.RuntimeDebug.Data
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.RefreshCurrent*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.RefreshCurrent
+  name: RefreshCurrent
+  nameWithType: ListView.RefreshCurrent
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.RefreshCurrent
 - uid: BennyKok.RuntimeDebug.Components.UI.ListView.SetItem*
   commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.SetItem
   name: SetItem
@@ -614,11 +1372,11 @@ references:
   name: RefreshStatus
   nameWithType: ListView.RefreshStatus
   fullName: BennyKok.RuntimeDebug.Components.UI.ListView.RefreshStatus
-- uid: BennyKok.RuntimeDebug.Components.UI.ListView.Clear*
-  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.Clear
-  name: Clear
-  nameWithType: ListView.Clear
-  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.Clear
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.Navigate*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.Navigate
+  name: Navigate
+  nameWithType: ListView.Navigate
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.Navigate
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -626,8 +1384,125 @@ references:
   name: Int32
   nameWithType: Int32
   fullName: System.Int32
-- uid: BennyKok.RuntimeDebug.Components.UI.ListView.AddItem*
-  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.AddItem
-  name: AddItem
-  nameWithType: ListView.AddItem
-  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.AddItem
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.RowCount*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.RowCount
+  name: RowCount
+  nameWithType: ListView.RowCount
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.RowCount
+- uid: UnityEngine.UI.ScrollRect
+  commentId: T:UnityEngine.UI.ScrollRect
+  parent: UnityEngine.UI
+  isExternal: true
+  name: ScrollRect
+  nameWithType: ScrollRect
+  fullName: UnityEngine.UI.ScrollRect
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  isExternal: true
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView[]
+  isExternal: true
+  name: ListItemView[]
+  nameWithType: ListItemView[]
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView[]
+  nameWithType.vb: ListItemView()
+  fullName.vb: BennyKok.RuntimeDebug.Components.UI.ListItemView()
+  name.vb: ListItemView()
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Components.UI.ListItemView
+    name: ListItemView
+    nameWithType: ListItemView
+    fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Components.UI.ListItemView
+    name: ListItemView
+    nameWithType: ListItemView
+    fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.Refresh*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.Refresh
+  name: Refresh
+  nameWithType: ListView.Refresh
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.Refresh
+- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.ListItemView
+  parent: BennyKok.RuntimeDebug.Components.UI
+  name: ListItemView
+  nameWithType: ListItemView
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.Clear*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.Clear
+  name: Clear
+  nameWithType: ListView.Clear
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.Clear
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.ScrollToRow*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.ScrollToRow
+  name: ScrollToRow
+  nameWithType: ListView.ScrollToRow
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.ScrollToRow
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.AutoScroll*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.AutoScroll
+  name: AutoScroll
+  nameWithType: ListView.AutoScroll
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.AutoScroll
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.GetRowScrollPosition*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.GetRowScrollPosition
+  name: GetRowScrollPosition
+  nameWithType: ListView.GetRowScrollPosition
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.GetRowScrollPosition
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.GetRowItem*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.GetRowItem
+  name: GetRowItem
+  nameWithType: ListView.GetRowItem
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.GetRowItem
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.CheckChildItems*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.CheckChildItems
+  name: CheckChildItems
+  nameWithType: ListView.CheckChildItems
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.CheckChildItems
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.OnScrollChanged*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.OnScrollChanged
+  name: OnScrollChanged
+  nameWithType: ListView.OnScrollChanged
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.OnScrollChanged
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.ReorganiseContent*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.ReorganiseContent
+  name: ReorganiseContent
+  nameWithType: ListView.ReorganiseContent
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.ReorganiseContent
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.UpdateChild*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.UpdateChild
+  name: UpdateChild
+  nameWithType: ListView.UpdateChild
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.UpdateChild
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.UpdateContentHeight*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.UpdateContentHeight
+  name: UpdateContentHeight
+  nameWithType: ListView.UpdateContentHeight
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.UpdateContentHeight
+- uid: BennyKok.RuntimeDebug.Components.UI.ListView.DisableAllChildren*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListView.DisableAllChildren
+  name: DisableAllChildren
+  nameWithType: ListView.DisableAllChildren
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListView.DisableAllChildren

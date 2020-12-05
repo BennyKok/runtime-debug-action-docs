@@ -27,8 +27,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: TitleAttribute
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Utils/AttributeUtils.cs
-    startLine: 65
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Utils/AttributeUtils.cs
+    startLine: 88
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Utils
@@ -65,8 +65,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: text
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Utils/AttributeUtils.cs
-    startLine: 67
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Utils/AttributeUtils.cs
+    startLine: 90
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Utils
@@ -96,8 +96,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: color
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Utils/AttributeUtils.cs
-    startLine: 68
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Utils/AttributeUtils.cs
+    startLine: 91
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Utils
@@ -127,8 +127,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: spacingTop
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Utils/AttributeUtils.cs
-    startLine: 69
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Utils/AttributeUtils.cs
+    startLine: 92
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Utils
@@ -158,8 +158,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: useColor
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Utils/AttributeUtils.cs
-    startLine: 70
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Utils/AttributeUtils.cs
+    startLine: 93
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Utils
@@ -189,8 +189,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: .ctor
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Utils/AttributeUtils.cs
-    startLine: 72
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Utils/AttributeUtils.cs
+    startLine: 95
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Utils
@@ -222,8 +222,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: .ctor
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Utils/AttributeUtils.cs
-    startLine: 77
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Utils/AttributeUtils.cs
+    startLine: 100
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Utils
@@ -257,8 +257,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: HtmlToColor
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Utils/AttributeUtils.cs
-    startLine: 83
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Utils/AttributeUtils.cs
+    startLine: 106
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Utils
@@ -294,8 +294,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: .ctor
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Utils/AttributeUtils.cs
-    startLine: 92
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Utils/AttributeUtils.cs
+    startLine: 115
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Utils
@@ -331,8 +331,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: .ctor
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Utils/AttributeUtils.cs
-    startLine: 97
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Utils/AttributeUtils.cs
+    startLine: 120
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Utils

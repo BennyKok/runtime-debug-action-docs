@@ -17,6 +17,11 @@
   - uid: BennyKok.RuntimeDebug.Actions.FluentAction`1
     name: FluentAction<T>
     name.vb: FluentAction(Of T)
+- uid: BennyKok.RuntimeDebug.Attributes
+  name: BennyKok.RuntimeDebug.Attributes
+  items:
+  - uid: BennyKok.RuntimeDebug.Attributes.DebugActionAttribute
+    name: DebugActionAttribute
 - uid: BennyKok.RuntimeDebug.Components
   name: BennyKok.RuntimeDebug.Components
   items:
@@ -31,6 +36,8 @@
     name: DebugActionInputHandler
   - uid: BennyKok.RuntimeDebug.Components.DebugActionToggleHandler
     name: DebugActionToggleHandler
+  - uid: BennyKok.RuntimeDebug.Components.RuntimeDebugBehaviour
+    name: RuntimeDebugBehaviour
 - uid: BennyKok.RuntimeDebug.Components.UI
   name: BennyKok.RuntimeDebug.Components.UI
   items:
@@ -44,6 +51,8 @@
     name: FontSetter
   - uid: BennyKok.RuntimeDebug.Components.UI.InputUIHandler
     name: InputUIHandler
+  - uid: BennyKok.RuntimeDebug.Components.UI.InputUISlider
+    name: InputUISlider
   - uid: BennyKok.RuntimeDebug.Components.UI.ListItemView
     name: ListItemView
   - uid: BennyKok.RuntimeDebug.Components.UI.ListView
@@ -54,6 +63,8 @@
     name: LoggerHandler.Log
   - uid: BennyKok.RuntimeDebug.Components.UI.LoggerLineSelectHandler
     name: LoggerLineSelectHandler
+  - uid: BennyKok.RuntimeDebug.Components.UI.LongPressDetector
+    name: LongPressDetector
   - uid: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight
     name: MaxWidthHeight
   - uid: BennyKok.RuntimeDebug.Components.UI.SafeAreaExtender
@@ -67,14 +78,16 @@
 - uid: BennyKok.RuntimeDebug.Data
   name: BennyKok.RuntimeDebug.Data
   items:
-  - uid: BennyKok.RuntimeDebug.Data.InputLayer
-    name: InputLayer
   - uid: BennyKok.RuntimeDebug.Data.ListItem
     name: ListItem
+  - uid: BennyKok.RuntimeDebug.Data.ReflectedActionData
+    name: ReflectedActionData
   - uid: BennyKok.RuntimeDebug.Data.Settings
     name: Settings
   - uid: BennyKok.RuntimeDebug.Data.Settings.EnableMode
     name: Settings.EnableMode
+  - uid: BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode
+    name: Settings.MenuPauseMode
   - uid: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
     name: Settings.TouchToggleMode
   - uid: BennyKok.RuntimeDebug.Data.Theme
@@ -84,6 +97,10 @@
 - uid: BennyKok.RuntimeDebug.DebugInput
   name: BennyKok.RuntimeDebug.DebugInput
   items:
+  - uid: BennyKok.RuntimeDebug.DebugInput.InputLayer
+    name: InputLayer
+  - uid: BennyKok.RuntimeDebug.DebugInput.InputManagerLayer
+    name: InputManagerLayer
   - uid: BennyKok.RuntimeDebug.DebugInput.InputQuery
     name: InputQuery
   - uid: BennyKok.RuntimeDebug.DebugInput.InputResponse
@@ -110,10 +127,6 @@
     name: CollapsedEventAttribute
   - uid: BennyKok.RuntimeDebug.Utils.CommentAttribute
     name: CommentAttribute
-  - uid: BennyKok.RuntimeDebug.Utils.ObjectPool
-    name: ObjectPool
-  - uid: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
-    name: PoolItemBehaviour
   - uid: BennyKok.RuntimeDebug.Utils.ReorderableBase
     name: ReorderableBase
   - uid: BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute
@@ -126,3 +139,5 @@
     name.vb: Singleton(Of T)
   - uid: BennyKok.RuntimeDebug.Utils.TitleAttribute
     name: TitleAttribute
+  - uid: BennyKok.RuntimeDebug.Utils.VisibilityAttribute
+    name: VisibilityAttribute

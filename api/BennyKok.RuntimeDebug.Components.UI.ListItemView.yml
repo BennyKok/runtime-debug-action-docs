@@ -10,16 +10,17 @@ items:
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.darkenActionColor
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.folderIcon
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.icon
+  - BennyKok.RuntimeDebug.Components.UI.ListItemView.idx
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.isFocused
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.IsGroup
+  - BennyKok.RuntimeDebug.Components.UI.ListItemView.item
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.label
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerExit(UnityEngine.EventSystems.PointerEventData)
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.OnPointerUp(UnityEngine.EventSystems.PointerEventData)
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.previousDown
-  - BennyKok.RuntimeDebug.Components.UI.ListItemView.rectTransform
-  - BennyKok.RuntimeDebug.Components.UI.ListItemView.Recycle
+  - BennyKok.RuntimeDebug.Components.UI.ListItemView.RectTransform
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.RefreshStatus(BennyKok.RuntimeDebug.Actions.BaseDebugAction,BennyKok.RuntimeDebug.Components.UI.DebugUIHandler)
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.SetItem(BennyKok.RuntimeDebug.Components.UI.DebugUIHandler,BennyKok.RuntimeDebug.Components.UI.ListView,BennyKok.RuntimeDebug.Data.ListItem)
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.showIcon
@@ -36,7 +37,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ListItemView
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListItemView.cs
     startLine: 11
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -45,12 +46,12 @@ items:
     content: >-
       [AddComponentMenu("Runtime Debug Action/UI/List Item View")]
 
-      public class ListItemView : PoolItemBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerExitHandler, IPointerEnterHandler, IEventSystemHandler
+      public class ListItemView : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerExitHandler, IPointerEnterHandler, IEventSystemHandler
     content.vb: >-
       <AddComponentMenu("Runtime Debug Action/UI/List Item View")>
 
       Public Class ListItemView
-          Inherits PoolItemBehaviour
+          Inherits MonoBehaviour
           Implements IPointerDownHandler, IPointerUpHandler, IPointerExitHandler, IPointerEnterHandler, IEventSystemHandler
   inheritance:
   - System.Object
@@ -58,10 +59,6 @@ items:
   - UnityEngine.Component
   - UnityEngine.Behaviour
   - UnityEngine.MonoBehaviour
-  - BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
-  inheritedMembers:
-  - BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.used
-  - BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.pool
   attributes:
   - type: UnityEngine.AddComponentMenu
     ctor: UnityEngine.AddComponentMenu.#ctor(System.String)
@@ -74,6 +71,88 @@ items:
   modifiers.vb:
   - Public
   - Class
+- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.item
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListItemView.item
+  id: item
+  parent: BennyKok.RuntimeDebug.Components.UI.ListItemView
+  langs:
+  - csharp
+  - vb
+  name: item
+  nameWithType: ListItemView.item
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.item
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/ListItemView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: item
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListItemView.cs
+    startLine: 16
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: >-
+      [NonSerialized]
+
+      public ListItem item
+    return:
+      type: BennyKok.RuntimeDebug.Data.ListItem
+    content.vb: >-
+      <NonSerialized>
+
+      Public item As ListItem
+  attributes:
+  - type: System.NonSerializedAttribute
+    ctor: System.NonSerializedAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.idx
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListItemView.idx
+  id: idx
+  parent: BennyKok.RuntimeDebug.Components.UI.ListItemView
+  langs:
+  - csharp
+  - vb
+  name: idx
+  nameWithType: ListItemView.idx
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.idx
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/ListItemView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: idx
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListItemView.cs
+    startLine: 17
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: >-
+      [NonSerialized]
+
+      public int idx
+    return:
+      type: System.Int32
+    content.vb: >-
+      <NonSerialized>
+
+      Public idx As Integer
+  attributes:
+  - type: System.NonSerializedAttribute
+    ctor: System.NonSerializedAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.label
   commentId: F:BennyKok.RuntimeDebug.Components.UI.ListItemView.label
   id: label
@@ -91,8 +170,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: label
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 19
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListItemView.cs
+    startLine: 20
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -142,8 +221,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: button
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 21
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListItemView.cs
+    startLine: 22
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -173,8 +252,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: actionColor
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 22
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListItemView.cs
+    startLine: 23
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -204,8 +283,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: icon
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 23
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListItemView.cs
+    startLine: 24
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -235,8 +314,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: folderIcon
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 27
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListItemView.cs
+    startLine: 28
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -289,8 +368,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: showIcon
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 30
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListItemView.cs
+    startLine: 31
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -332,8 +411,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: darkenActionColor
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 39
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListItemView.cs
+    startLine: 40
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -358,47 +437,41 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.rectTransform
-  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListItemView.rectTransform
-  id: rectTransform
+- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.RectTransform
+  commentId: P:BennyKok.RuntimeDebug.Components.UI.ListItemView.RectTransform
+  id: RectTransform
   parent: BennyKok.RuntimeDebug.Components.UI.ListItemView
   langs:
   - csharp
   - vb
-  name: rectTransform
-  nameWithType: ListItemView.rectTransform
-  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.rectTransform
-  type: Field
+  name: RectTransform
+  nameWithType: ListItemView.RectTransform
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.RectTransform
+  type: Property
   source:
     remote:
       path: Runtime/Components/UI/ListItemView.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: rectTransform
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 41
+    id: RectTransform
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListItemView.cs
+    startLine: 44
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
   syntax:
-    content: >-
-      [NonSerialized]
-
-      public RectTransform rectTransform
+    content: public RectTransform RectTransform { get; }
+    parameters: []
     return:
       type: UnityEngine.RectTransform
-    content.vb: >-
-      <NonSerialized>
-
-      Public rectTransform As RectTransform
-  attributes:
-  - type: System.NonSerializedAttribute
-    ctor: System.NonSerializedAttribute.#ctor
-    arguments: []
+    content.vb: Public ReadOnly Property RectTransform As RectTransform
+  overload: BennyKok.RuntimeDebug.Components.UI.ListItemView.RectTransform*
   modifiers.csharp:
   - public
+  - get
   modifiers.vb:
   - Public
+  - ReadOnly
 - uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.IsGroup
   commentId: P:BennyKok.RuntimeDebug.Components.UI.ListItemView.IsGroup
   id: IsGroup
@@ -416,8 +489,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: IsGroup
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 43
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListItemView.cs
+    startLine: 54
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -451,8 +524,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: isFocused
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 47
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListItemView.cs
+    startLine: 58
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -486,8 +559,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: previousDown
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 77
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListItemView.cs
+    startLine: 88
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -527,8 +600,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnPointerDown
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 88
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListItemView.cs
+    startLine: 95
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -560,8 +633,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnPointerUp
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 95
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListItemView.cs
+    startLine: 102
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -593,8 +666,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnPointerEnter
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 101
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListItemView.cs
+    startLine: 108
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -626,8 +699,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnPointerExit
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 107
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListItemView.cs
+    startLine: 114
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -659,8 +732,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: RefreshStatus
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 131
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListItemView.cs
+    startLine: 140
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -694,8 +767,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: SetItem
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 194
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListItemView.cs
+    startLine: 203
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -714,39 +787,6 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.Recycle
-  commentId: M:BennyKok.RuntimeDebug.Components.UI.ListItemView.Recycle
-  id: Recycle
-  parent: BennyKok.RuntimeDebug.Components.UI.ListItemView
-  langs:
-  - csharp
-  - vb
-  name: Recycle()
-  nameWithType: ListItemView.Recycle()
-  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.Recycle()
-  type: Method
-  source:
-    remote:
-      path: Runtime/Components/UI/ListItemView.cs
-      branch: master
-      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: Recycle
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/ListItemView.cs
-    startLine: 205
-  assemblies:
-  - com.bennykok.runtime-debug-action
-  namespace: BennyKok.RuntimeDebug.Components.UI
-  syntax:
-    content: public override void Recycle()
-    content.vb: Public Overrides Sub Recycle
-  overridden: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.Recycle
-  overload: BennyKok.RuntimeDebug.Components.UI.ListItemView.Recycle*
-  modifiers.csharp:
-  - public
-  - override
-  modifiers.vb:
-  - Public
-  - Overrides
 references:
 - uid: BennyKok.RuntimeDebug.Components.UI
   commentId: N:BennyKok.RuntimeDebug.Components.UI
@@ -788,24 +828,6 @@ references:
   name: MonoBehaviour
   nameWithType: MonoBehaviour
   fullName: UnityEngine.MonoBehaviour
-- uid: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
-  commentId: T:BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
-  parent: BennyKok.RuntimeDebug.Utils
-  name: PoolItemBehaviour
-  nameWithType: PoolItemBehaviour
-  fullName: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
-- uid: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.used
-  commentId: F:BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.used
-  parent: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
-  name: used
-  nameWithType: PoolItemBehaviour.used
-  fullName: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.used
-- uid: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.pool
-  commentId: F:BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.pool
-  parent: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
-  name: pool
-  nameWithType: PoolItemBehaviour.pool
-  fullName: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.pool
 - uid: System
   commentId: N:System
   isExternal: true
@@ -818,11 +840,24 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
-- uid: BennyKok.RuntimeDebug.Utils
-  commentId: N:BennyKok.RuntimeDebug.Utils
-  name: BennyKok.RuntimeDebug.Utils
-  nameWithType: BennyKok.RuntimeDebug.Utils
-  fullName: BennyKok.RuntimeDebug.Utils
+- uid: BennyKok.RuntimeDebug.Data.ListItem
+  commentId: T:BennyKok.RuntimeDebug.Data.ListItem
+  parent: BennyKok.RuntimeDebug.Data
+  name: ListItem
+  nameWithType: ListItem
+  fullName: BennyKok.RuntimeDebug.Data.ListItem
+- uid: BennyKok.RuntimeDebug.Data
+  commentId: N:BennyKok.RuntimeDebug.Data
+  name: BennyKok.RuntimeDebug.Data
+  nameWithType: BennyKok.RuntimeDebug.Data
+  fullName: BennyKok.RuntimeDebug.Data
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: TMPro.TextMeshProUGUI
   commentId: T:TMPro.TextMeshProUGUI
   parent: TMPro
@@ -870,6 +905,11 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
+- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.RectTransform*
+  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListItemView.RectTransform
+  name: RectTransform
+  nameWithType: ListItemView.RectTransform
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.RectTransform
 - uid: UnityEngine.RectTransform
   commentId: T:UnityEngine.RectTransform
   parent: UnityEngine
@@ -953,47 +993,3 @@ references:
   name: ListView
   nameWithType: ListView
   fullName: BennyKok.RuntimeDebug.Components.UI.ListView
-- uid: BennyKok.RuntimeDebug.Data.ListItem
-  commentId: T:BennyKok.RuntimeDebug.Data.ListItem
-  parent: BennyKok.RuntimeDebug.Data
-  name: ListItem
-  nameWithType: ListItem
-  fullName: BennyKok.RuntimeDebug.Data.ListItem
-- uid: BennyKok.RuntimeDebug.Data
-  commentId: N:BennyKok.RuntimeDebug.Data
-  name: BennyKok.RuntimeDebug.Data
-  nameWithType: BennyKok.RuntimeDebug.Data
-  fullName: BennyKok.RuntimeDebug.Data
-- uid: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.Recycle
-  commentId: M:BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.Recycle
-  parent: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
-  name: Recycle()
-  nameWithType: PoolItemBehaviour.Recycle()
-  fullName: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.Recycle()
-  spec.csharp:
-  - uid: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.Recycle
-    name: Recycle
-    nameWithType: PoolItemBehaviour.Recycle
-    fullName: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.Recycle
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.Recycle
-    name: Recycle
-    nameWithType: PoolItemBehaviour.Recycle
-    fullName: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.Recycle
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.Recycle*
-  commentId: Overload:BennyKok.RuntimeDebug.Components.UI.ListItemView.Recycle
-  name: Recycle
-  nameWithType: ListItemView.Recycle
-  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.Recycle

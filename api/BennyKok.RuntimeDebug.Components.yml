@@ -9,6 +9,7 @@ items:
   - BennyKok.RuntimeDebug.Components.DebugActionFlagHandler
   - BennyKok.RuntimeDebug.Components.DebugActionInputHandler
   - BennyKok.RuntimeDebug.Components.DebugActionToggleHandler
+  - BennyKok.RuntimeDebug.Components.RuntimeDebugBehaviour
   langs:
   - csharp
   - vb
@@ -75,3 +76,8 @@ references:
   name: DebugActionToggleHandler
   nameWithType: DebugActionToggleHandler
   fullName: BennyKok.RuntimeDebug.Components.DebugActionToggleHandler
+- uid: BennyKok.RuntimeDebug.Components.RuntimeDebugBehaviour
+  commentId: T:BennyKok.RuntimeDebug.Components.RuntimeDebugBehaviour
+  name: RuntimeDebugBehaviour
+  nameWithType: RuntimeDebugBehaviour
+  fullName: BennyKok.RuntimeDebug.Components.RuntimeDebugBehaviour

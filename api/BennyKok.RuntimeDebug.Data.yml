@@ -4,10 +4,11 @@ items:
   commentId: N:BennyKok.RuntimeDebug.Data
   id: BennyKok.RuntimeDebug.Data
   children:
-  - BennyKok.RuntimeDebug.Data.InputLayer
   - BennyKok.RuntimeDebug.Data.ListItem
+  - BennyKok.RuntimeDebug.Data.ReflectedActionData
   - BennyKok.RuntimeDebug.Data.Settings
   - BennyKok.RuntimeDebug.Data.Settings.EnableMode
+  - BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode
   - BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
   - BennyKok.RuntimeDebug.Data.Theme
   - BennyKok.RuntimeDebug.Data.ThemeList
@@ -21,24 +22,29 @@ items:
   assemblies:
   - com.bennykok.runtime-debug-action
 references:
-- uid: BennyKok.RuntimeDebug.Data.InputLayer
-  commentId: T:BennyKok.RuntimeDebug.Data.InputLayer
-  parent: BennyKok.RuntimeDebug.Data
-  name: InputLayer
-  nameWithType: InputLayer
-  fullName: BennyKok.RuntimeDebug.Data.InputLayer
 - uid: BennyKok.RuntimeDebug.Data.ListItem
   commentId: T:BennyKok.RuntimeDebug.Data.ListItem
   parent: BennyKok.RuntimeDebug.Data
   name: ListItem
   nameWithType: ListItem
   fullName: BennyKok.RuntimeDebug.Data.ListItem
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData
+  commentId: T:BennyKok.RuntimeDebug.Data.ReflectedActionData
+  name: ReflectedActionData
+  nameWithType: ReflectedActionData
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData
 - uid: BennyKok.RuntimeDebug.Data.Settings
   commentId: T:BennyKok.RuntimeDebug.Data.Settings
   parent: BennyKok.RuntimeDebug.Data
   name: Settings
   nameWithType: Settings
   fullName: BennyKok.RuntimeDebug.Data.Settings
+- uid: BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode
+  commentId: T:BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode
+  parent: BennyKok.RuntimeDebug.Data
+  name: Settings.MenuPauseMode
+  nameWithType: Settings.MenuPauseMode
+  fullName: BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode
 - uid: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
   commentId: T:BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
   parent: BennyKok.RuntimeDebug.Data

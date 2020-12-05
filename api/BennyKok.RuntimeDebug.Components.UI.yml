@@ -9,11 +9,13 @@ items:
   - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
   - BennyKok.RuntimeDebug.Components.UI.FontSetter
   - BennyKok.RuntimeDebug.Components.UI.InputUIHandler
+  - BennyKok.RuntimeDebug.Components.UI.InputUISlider
   - BennyKok.RuntimeDebug.Components.UI.ListItemView
   - BennyKok.RuntimeDebug.Components.UI.ListView
   - BennyKok.RuntimeDebug.Components.UI.LoggerHandler
   - BennyKok.RuntimeDebug.Components.UI.LoggerHandler.Log
   - BennyKok.RuntimeDebug.Components.UI.LoggerLineSelectHandler
+  - BennyKok.RuntimeDebug.Components.UI.LongPressDetector
   - BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight
   - BennyKok.RuntimeDebug.Components.UI.SafeAreaExtender
   - BennyKok.RuntimeDebug.Components.UI.SafeAreaHelper
@@ -51,6 +53,12 @@ references:
   name: InputUIHandler
   nameWithType: InputUIHandler
   fullName: BennyKok.RuntimeDebug.Components.UI.InputUIHandler
+- uid: BennyKok.RuntimeDebug.Components.UI.InputUISlider
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.InputUISlider
+  parent: BennyKok.RuntimeDebug.Components.UI
+  name: InputUISlider
+  nameWithType: InputUISlider
+  fullName: BennyKok.RuntimeDebug.Components.UI.InputUISlider
 - uid: BennyKok.RuntimeDebug.Components.UI.ListItemView
   commentId: T:BennyKok.RuntimeDebug.Components.UI.ListItemView
   parent: BennyKok.RuntimeDebug.Components.UI
@@ -90,6 +98,11 @@ references:
   name: ChangeSiblingIndexOnAwake
   nameWithType: ChangeSiblingIndexOnAwake
   fullName: BennyKok.RuntimeDebug.Components.UI.ChangeSiblingIndexOnAwake
+- uid: BennyKok.RuntimeDebug.Components.UI.LongPressDetector
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.LongPressDetector
+  name: LongPressDetector
+  nameWithType: LongPressDetector
+  fullName: BennyKok.RuntimeDebug.Components.UI.LongPressDetector
 - uid: BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight
   commentId: T:BennyKok.RuntimeDebug.Components.UI.MaxWidthHeight
   parent: BennyKok.RuntimeDebug.Components.UI

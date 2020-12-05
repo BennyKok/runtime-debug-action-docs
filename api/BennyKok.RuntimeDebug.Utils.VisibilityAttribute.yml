@@ -1,0 +1,333 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.Utils.VisibilityAttribute
+  commentId: T:BennyKok.RuntimeDebug.Utils.VisibilityAttribute
+  id: VisibilityAttribute
+  parent: BennyKok.RuntimeDebug.Utils
+  children:
+  - BennyKok.RuntimeDebug.Utils.VisibilityAttribute.#ctor(System.Boolean,System.Boolean)
+  - BennyKok.RuntimeDebug.Utils.VisibilityAttribute.#ctor(System.String,System.Boolean,System.Boolean)
+  - BennyKok.RuntimeDebug.Utils.VisibilityAttribute.drawChildrenOnly
+  - BennyKok.RuntimeDebug.Utils.VisibilityAttribute.hideCompletely
+  - BennyKok.RuntimeDebug.Utils.VisibilityAttribute.ignoreVisibility
+  - BennyKok.RuntimeDebug.Utils.VisibilityAttribute.show
+  - BennyKok.RuntimeDebug.Utils.VisibilityAttribute.targetProperty
+  langs:
+  - csharp
+  - vb
+  name: VisibilityAttribute
+  nameWithType: VisibilityAttribute
+  fullName: BennyKok.RuntimeDebug.Utils.VisibilityAttribute
+  type: Class
+  source:
+    remote:
+      path: Runtime/Utils/AttributeUtils.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: VisibilityAttribute
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Utils/AttributeUtils.cs
+    startLine: 65
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Utils
+  syntax:
+    content: 'public class VisibilityAttribute : PropertyAttribute, _Attribute'
+    content.vb: >-
+      Public Class VisibilityAttribute
+          Inherits PropertyAttribute
+          Implements _Attribute
+  inheritance:
+  - System.Object
+  - System.Attribute
+  - UnityEngine.PropertyAttribute
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BennyKok.RuntimeDebug.Utils.VisibilityAttribute.targetProperty
+  commentId: F:BennyKok.RuntimeDebug.Utils.VisibilityAttribute.targetProperty
+  id: targetProperty
+  parent: BennyKok.RuntimeDebug.Utils.VisibilityAttribute
+  langs:
+  - csharp
+  - vb
+  name: targetProperty
+  nameWithType: VisibilityAttribute.targetProperty
+  fullName: BennyKok.RuntimeDebug.Utils.VisibilityAttribute.targetProperty
+  type: Field
+  source:
+    remote:
+      path: Runtime/Utils/AttributeUtils.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: targetProperty
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Utils/AttributeUtils.cs
+    startLine: 67
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Utils
+  syntax:
+    content: public string targetProperty
+    return:
+      type: System.String
+    content.vb: Public targetProperty As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Utils.VisibilityAttribute.show
+  commentId: F:BennyKok.RuntimeDebug.Utils.VisibilityAttribute.show
+  id: show
+  parent: BennyKok.RuntimeDebug.Utils.VisibilityAttribute
+  langs:
+  - csharp
+  - vb
+  name: show
+  nameWithType: VisibilityAttribute.show
+  fullName: BennyKok.RuntimeDebug.Utils.VisibilityAttribute.show
+  type: Field
+  source:
+    remote:
+      path: Runtime/Utils/AttributeUtils.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: show
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Utils/AttributeUtils.cs
+    startLine: 68
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Utils
+  syntax:
+    content: public bool show
+    return:
+      type: System.Boolean
+    content.vb: Public show As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Utils.VisibilityAttribute.hideCompletely
+  commentId: F:BennyKok.RuntimeDebug.Utils.VisibilityAttribute.hideCompletely
+  id: hideCompletely
+  parent: BennyKok.RuntimeDebug.Utils.VisibilityAttribute
+  langs:
+  - csharp
+  - vb
+  name: hideCompletely
+  nameWithType: VisibilityAttribute.hideCompletely
+  fullName: BennyKok.RuntimeDebug.Utils.VisibilityAttribute.hideCompletely
+  type: Field
+  source:
+    remote:
+      path: Runtime/Utils/AttributeUtils.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: hideCompletely
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Utils/AttributeUtils.cs
+    startLine: 69
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Utils
+  syntax:
+    content: public bool hideCompletely
+    return:
+      type: System.Boolean
+    content.vb: Public hideCompletely As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Utils.VisibilityAttribute.drawChildrenOnly
+  commentId: F:BennyKok.RuntimeDebug.Utils.VisibilityAttribute.drawChildrenOnly
+  id: drawChildrenOnly
+  parent: BennyKok.RuntimeDebug.Utils.VisibilityAttribute
+  langs:
+  - csharp
+  - vb
+  name: drawChildrenOnly
+  nameWithType: VisibilityAttribute.drawChildrenOnly
+  fullName: BennyKok.RuntimeDebug.Utils.VisibilityAttribute.drawChildrenOnly
+  type: Field
+  source:
+    remote:
+      path: Runtime/Utils/AttributeUtils.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: drawChildrenOnly
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Utils/AttributeUtils.cs
+    startLine: 71
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Utils
+  syntax:
+    content: public bool drawChildrenOnly
+    return:
+      type: System.Boolean
+    content.vb: Public drawChildrenOnly As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Utils.VisibilityAttribute.ignoreVisibility
+  commentId: F:BennyKok.RuntimeDebug.Utils.VisibilityAttribute.ignoreVisibility
+  id: ignoreVisibility
+  parent: BennyKok.RuntimeDebug.Utils.VisibilityAttribute
+  langs:
+  - csharp
+  - vb
+  name: ignoreVisibility
+  nameWithType: VisibilityAttribute.ignoreVisibility
+  fullName: BennyKok.RuntimeDebug.Utils.VisibilityAttribute.ignoreVisibility
+  type: Field
+  source:
+    remote:
+      path: Runtime/Utils/AttributeUtils.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: ignoreVisibility
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Utils/AttributeUtils.cs
+    startLine: 72
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Utils
+  syntax:
+    content: public bool ignoreVisibility
+    return:
+      type: System.Boolean
+    content.vb: Public ignoreVisibility As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Utils.VisibilityAttribute.#ctor(System.String,System.Boolean,System.Boolean)
+  commentId: M:BennyKok.RuntimeDebug.Utils.VisibilityAttribute.#ctor(System.String,System.Boolean,System.Boolean)
+  id: '#ctor(System.String,System.Boolean,System.Boolean)'
+  parent: BennyKok.RuntimeDebug.Utils.VisibilityAttribute
+  langs:
+  - csharp
+  - vb
+  name: VisibilityAttribute(String, Boolean, Boolean)
+  nameWithType: VisibilityAttribute.VisibilityAttribute(String, Boolean, Boolean)
+  fullName: BennyKok.RuntimeDebug.Utils.VisibilityAttribute.VisibilityAttribute(System.String, System.Boolean, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Utils/AttributeUtils.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: .ctor
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Utils/AttributeUtils.cs
+    startLine: 74
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Utils
+  syntax:
+    content: public VisibilityAttribute(string targetProperty, bool show, bool hideCompletely = false)
+    parameters:
+    - id: targetProperty
+      type: System.String
+    - id: show
+      type: System.Boolean
+    - id: hideCompletely
+      type: System.Boolean
+    content.vb: Public Sub New(targetProperty As String, show As Boolean, hideCompletely As Boolean = False)
+  overload: BennyKok.RuntimeDebug.Utils.VisibilityAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Utils.VisibilityAttribute.#ctor(System.Boolean,System.Boolean)
+  commentId: M:BennyKok.RuntimeDebug.Utils.VisibilityAttribute.#ctor(System.Boolean,System.Boolean)
+  id: '#ctor(System.Boolean,System.Boolean)'
+  parent: BennyKok.RuntimeDebug.Utils.VisibilityAttribute
+  langs:
+  - csharp
+  - vb
+  name: VisibilityAttribute(Boolean, Boolean)
+  nameWithType: VisibilityAttribute.VisibilityAttribute(Boolean, Boolean)
+  fullName: BennyKok.RuntimeDebug.Utils.VisibilityAttribute.VisibilityAttribute(System.Boolean, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: Runtime/Utils/AttributeUtils.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: .ctor
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Utils/AttributeUtils.cs
+    startLine: 81
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Utils
+  syntax:
+    content: public VisibilityAttribute(bool drawChildrenOnly, bool ignoreVisibility)
+    parameters:
+    - id: drawChildrenOnly
+      type: System.Boolean
+    - id: ignoreVisibility
+      type: System.Boolean
+    content.vb: Public Sub New(drawChildrenOnly As Boolean, ignoreVisibility As Boolean)
+  overload: BennyKok.RuntimeDebug.Utils.VisibilityAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BennyKok.RuntimeDebug.Utils
+  commentId: N:BennyKok.RuntimeDebug.Utils
+  name: BennyKok.RuntimeDebug.Utils
+  nameWithType: BennyKok.RuntimeDebug.Utils
+  fullName: BennyKok.RuntimeDebug.Utils
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Attribute
+  commentId: T:System.Attribute
+  parent: System
+  isExternal: true
+  name: Attribute
+  nameWithType: Attribute
+  fullName: System.Attribute
+- uid: UnityEngine.PropertyAttribute
+  commentId: T:UnityEngine.PropertyAttribute
+  parent: UnityEngine
+  isExternal: true
+  name: PropertyAttribute
+  nameWithType: PropertyAttribute
+  fullName: UnityEngine.PropertyAttribute
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: BennyKok.RuntimeDebug.Utils.VisibilityAttribute.#ctor*
+  commentId: Overload:BennyKok.RuntimeDebug.Utils.VisibilityAttribute.#ctor
+  name: VisibilityAttribute
+  nameWithType: VisibilityAttribute.VisibilityAttribute
+  fullName: BennyKok.RuntimeDebug.Utils.VisibilityAttribute.VisibilityAttribute

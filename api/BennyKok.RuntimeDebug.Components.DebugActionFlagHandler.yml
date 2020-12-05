@@ -18,8 +18,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: DebugActionFlagHandler
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/Actions/DebugActionFlagHandler.cs
-    startLine: 8
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/Actions/DebugActionFlagHandler.cs
+    startLine: 5
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components

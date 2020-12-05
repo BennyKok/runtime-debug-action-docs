@@ -26,7 +26,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: DebugActionInput
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionInput.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionInput.cs
     startLine: 11
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -91,7 +91,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: inputQuery
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionInput.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionInput.cs
     startLine: 15
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -136,7 +136,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: inputAction
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionInput.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionInput.cs
     startLine: 17
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -167,7 +167,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: CurrentInputResponse
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionInput.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionInput.cs
     startLine: 19
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -202,7 +202,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ResolveAction
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionInput.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionInput.cs
     startLine: 26
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -235,7 +235,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: CanDisplayAction
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionInput.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionInput.cs
     startLine: 64
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -270,7 +270,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetDescription
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionInput.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionInput.cs
     startLine: 69
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -305,7 +305,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: WithInputAction
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionInput.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionInput.cs
     startLine: 74
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -343,7 +343,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: WithInputQuery
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionInput.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionInput.cs
     startLine: 80
   assemblies:
   - com.bennykok.runtime-debug-action

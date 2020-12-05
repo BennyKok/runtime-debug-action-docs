@@ -28,7 +28,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: MaxWidthHeight
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/MaxWidthHeight.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/Utils/MaxWidthHeight.cs
     startLine: 14
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -84,7 +84,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: referenceRectTransfrom
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/MaxWidthHeight.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/Utils/MaxWidthHeight.cs
     startLine: 18
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -115,7 +115,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: rectTransform
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/MaxWidthHeight.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/Utils/MaxWidthHeight.cs
     startLine: 19
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -146,7 +146,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: MaximumPreferredSize
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/MaxWidthHeight.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/Utils/MaxWidthHeight.cs
     startLine: 25
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -189,7 +189,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnEnable
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/MaxWidthHeight.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/Utils/MaxWidthHeight.cs
     startLine: 29
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -222,7 +222,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: SetPreferredHeight
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/MaxWidthHeight.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/Utils/MaxWidthHeight.cs
     startLine: 35
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -255,7 +255,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnDisable
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/MaxWidthHeight.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/Utils/MaxWidthHeight.cs
     startLine: 44
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -288,7 +288,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnRectTransformDimensionsChange
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/MaxWidthHeight.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/Utils/MaxWidthHeight.cs
     startLine: 63
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -321,7 +321,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: SetLayoutHorizontal
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/MaxWidthHeight.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/Utils/MaxWidthHeight.cs
     startLine: 85
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -355,7 +355,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: SetLayoutVertical
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/MaxWidthHeight.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/Utils/MaxWidthHeight.cs
     startLine: 94
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -389,7 +389,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: SetDirty
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/Utils/MaxWidthHeight.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/Utils/MaxWidthHeight.cs
     startLine: 99
   assemblies:
   - com.bennykok.runtime-debug-action

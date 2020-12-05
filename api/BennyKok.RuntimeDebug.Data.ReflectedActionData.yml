@@ -1,0 +1,798 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData
+  commentId: T:BennyKok.RuntimeDebug.Data.ReflectedActionData
+  id: ReflectedActionData
+  parent: BennyKok.RuntimeDebug.Data
+  children:
+  - BennyKok.RuntimeDebug.Data.ReflectedActionData.attribute
+  - BennyKok.RuntimeDebug.Data.ReflectedActionData.fieldInfo
+  - BennyKok.RuntimeDebug.Data.ReflectedActionData.GetActionName
+  - BennyKok.RuntimeDebug.Data.ReflectedActionData.GetFlagDisplay
+  - BennyKok.RuntimeDebug.Data.ReflectedActionData.GetFlagValue(System.Object)
+  - BennyKok.RuntimeDebug.Data.ReflectedActionData.GetTargetType
+  - BennyKok.RuntimeDebug.Data.ReflectedActionData.GetValue(System.Object)
+  - BennyKok.RuntimeDebug.Data.ReflectedActionData.IsButton
+  - BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFlag
+  - BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFloat
+  - BennyKok.RuntimeDebug.Data.ReflectedActionData.IsInput
+  - BennyKok.RuntimeDebug.Data.ReflectedActionData.IsInt
+  - BennyKok.RuntimeDebug.Data.ReflectedActionData.IsString
+  - BennyKok.RuntimeDebug.Data.ReflectedActionData.methodInfo
+  - BennyKok.RuntimeDebug.Data.ReflectedActionData.parameterInfos
+  - BennyKok.RuntimeDebug.Data.ReflectedActionData.propertyInfo
+  - BennyKok.RuntimeDebug.Data.ReflectedActionData.SetValue(System.Object,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: ReflectedActionData
+  nameWithType: ReflectedActionData
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData
+  type: Class
+  source:
+    remote:
+      path: Runtime/Data/ReflectedActionData.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: ReflectedActionData
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
+    startLine: 7
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public class ReflectedActionData
+    content.vb: Public Class ReflectedActionData
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.propertyInfo
+  commentId: F:BennyKok.RuntimeDebug.Data.ReflectedActionData.propertyInfo
+  id: propertyInfo
+  parent: BennyKok.RuntimeDebug.Data.ReflectedActionData
+  langs:
+  - csharp
+  - vb
+  name: propertyInfo
+  nameWithType: ReflectedActionData.propertyInfo
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.propertyInfo
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/ReflectedActionData.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: propertyInfo
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
+    startLine: 9
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public PropertyInfo propertyInfo
+    return:
+      type: System.Reflection.PropertyInfo
+    content.vb: Public propertyInfo As PropertyInfo
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.fieldInfo
+  commentId: F:BennyKok.RuntimeDebug.Data.ReflectedActionData.fieldInfo
+  id: fieldInfo
+  parent: BennyKok.RuntimeDebug.Data.ReflectedActionData
+  langs:
+  - csharp
+  - vb
+  name: fieldInfo
+  nameWithType: ReflectedActionData.fieldInfo
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.fieldInfo
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/ReflectedActionData.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: fieldInfo
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
+    startLine: 10
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public FieldInfo fieldInfo
+    return:
+      type: System.Reflection.FieldInfo
+    content.vb: Public fieldInfo As FieldInfo
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.methodInfo
+  commentId: F:BennyKok.RuntimeDebug.Data.ReflectedActionData.methodInfo
+  id: methodInfo
+  parent: BennyKok.RuntimeDebug.Data.ReflectedActionData
+  langs:
+  - csharp
+  - vb
+  name: methodInfo
+  nameWithType: ReflectedActionData.methodInfo
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.methodInfo
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/ReflectedActionData.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: methodInfo
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
+    startLine: 11
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public MethodInfo methodInfo
+    return:
+      type: System.Reflection.MethodInfo
+    content.vb: Public methodInfo As MethodInfo
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.parameterInfos
+  commentId: F:BennyKok.RuntimeDebug.Data.ReflectedActionData.parameterInfos
+  id: parameterInfos
+  parent: BennyKok.RuntimeDebug.Data.ReflectedActionData
+  langs:
+  - csharp
+  - vb
+  name: parameterInfos
+  nameWithType: ReflectedActionData.parameterInfos
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.parameterInfos
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/ReflectedActionData.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: parameterInfos
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
+    startLine: 12
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public ParameterInfo[] parameterInfos
+    return:
+      type: System.Reflection.ParameterInfo[]
+    content.vb: Public parameterInfos As ParameterInfo()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.attribute
+  commentId: F:BennyKok.RuntimeDebug.Data.ReflectedActionData.attribute
+  id: attribute
+  parent: BennyKok.RuntimeDebug.Data.ReflectedActionData
+  langs:
+  - csharp
+  - vb
+  name: attribute
+  nameWithType: ReflectedActionData.attribute
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.attribute
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/ReflectedActionData.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: attribute
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
+    startLine: 13
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public DebugActionAttribute attribute
+    return:
+      type: BennyKok.RuntimeDebug.Attributes.DebugActionAttribute
+    content.vb: Public attribute As DebugActionAttribute
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetActionName
+  commentId: M:BennyKok.RuntimeDebug.Data.ReflectedActionData.GetActionName
+  id: GetActionName
+  parent: BennyKok.RuntimeDebug.Data.ReflectedActionData
+  langs:
+  - csharp
+  - vb
+  name: GetActionName()
+  nameWithType: ReflectedActionData.GetActionName()
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetActionName()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Data/ReflectedActionData.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: GetActionName
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
+    startLine: 15
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public string GetActionName()
+    return:
+      type: System.String
+    content.vb: Public Function GetActionName As String
+  overload: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetActionName*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsButton
+  commentId: M:BennyKok.RuntimeDebug.Data.ReflectedActionData.IsButton
+  id: IsButton
+  parent: BennyKok.RuntimeDebug.Data.ReflectedActionData
+  langs:
+  - csharp
+  - vb
+  name: IsButton()
+  nameWithType: ReflectedActionData.IsButton()
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsButton()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Data/ReflectedActionData.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: IsButton
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
+    startLine: 23
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public bool IsButton()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsButton As Boolean
+  overload: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsButton*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsInput
+  commentId: M:BennyKok.RuntimeDebug.Data.ReflectedActionData.IsInput
+  id: IsInput
+  parent: BennyKok.RuntimeDebug.Data.ReflectedActionData
+  langs:
+  - csharp
+  - vb
+  name: IsInput()
+  nameWithType: ReflectedActionData.IsInput()
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsInput()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Data/ReflectedActionData.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: IsInput
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
+    startLine: 28
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public bool IsInput()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsInput As Boolean
+  overload: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsInput*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetFlagDisplay
+  commentId: M:BennyKok.RuntimeDebug.Data.ReflectedActionData.GetFlagDisplay
+  id: GetFlagDisplay
+  parent: BennyKok.RuntimeDebug.Data.ReflectedActionData
+  langs:
+  - csharp
+  - vb
+  name: GetFlagDisplay()
+  nameWithType: ReflectedActionData.GetFlagDisplay()
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetFlagDisplay()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Data/ReflectedActionData.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: GetFlagDisplay
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
+    startLine: 33
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public string[] GetFlagDisplay()
+    return:
+      type: System.String[]
+    content.vb: Public Function GetFlagDisplay As String()
+  overload: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetFlagDisplay*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetFlagValue(System.Object)
+  commentId: M:BennyKok.RuntimeDebug.Data.ReflectedActionData.GetFlagValue(System.Object)
+  id: GetFlagValue(System.Object)
+  parent: BennyKok.RuntimeDebug.Data.ReflectedActionData
+  langs:
+  - csharp
+  - vb
+  name: GetFlagValue(Object)
+  nameWithType: ReflectedActionData.GetFlagValue(Object)
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetFlagValue(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Data/ReflectedActionData.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: GetFlagValue
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
+    startLine: 48
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public int GetFlagValue(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Int32
+    content.vb: Public Function GetFlagValue(obj As Object) As Integer
+  overload: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetFlagValue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetValue(System.Object)
+  commentId: M:BennyKok.RuntimeDebug.Data.ReflectedActionData.GetValue(System.Object)
+  id: GetValue(System.Object)
+  parent: BennyKok.RuntimeDebug.Data.ReflectedActionData
+  langs:
+  - csharp
+  - vb
+  name: GetValue(Object)
+  nameWithType: ReflectedActionData.GetValue(Object)
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetValue(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Data/ReflectedActionData.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: GetValue
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
+    startLine: 55
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public object GetValue(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Object
+    content.vb: Public Function GetValue(obj As Object) As Object
+  overload: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetValue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.SetValue(System.Object,System.Object)
+  commentId: M:BennyKok.RuntimeDebug.Data.ReflectedActionData.SetValue(System.Object,System.Object)
+  id: SetValue(System.Object,System.Object)
+  parent: BennyKok.RuntimeDebug.Data.ReflectedActionData
+  langs:
+  - csharp
+  - vb
+  name: SetValue(Object, Object)
+  nameWithType: ReflectedActionData.SetValue(Object, Object)
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.SetValue(System.Object, System.Object)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Data/ReflectedActionData.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: SetValue
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
+    startLine: 68
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public void SetValue(object obj, object value)
+    parameters:
+    - id: obj
+      type: System.Object
+    - id: value
+      type: System.Object
+    content.vb: Public Sub SetValue(obj As Object, value As Object)
+  overload: BennyKok.RuntimeDebug.Data.ReflectedActionData.SetValue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetTargetType
+  commentId: M:BennyKok.RuntimeDebug.Data.ReflectedActionData.GetTargetType
+  id: GetTargetType
+  parent: BennyKok.RuntimeDebug.Data.ReflectedActionData
+  langs:
+  - csharp
+  - vb
+  name: GetTargetType()
+  nameWithType: ReflectedActionData.GetTargetType()
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetTargetType()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Data/ReflectedActionData.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: GetTargetType
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
+    startLine: 76
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public Type GetTargetType()
+    return:
+      type: System.Type
+    content.vb: Public Function GetTargetType As Type
+  overload: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetTargetType*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFlag
+  commentId: M:BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFlag
+  id: IsFlag
+  parent: BennyKok.RuntimeDebug.Data.ReflectedActionData
+  langs:
+  - csharp
+  - vb
+  name: IsFlag()
+  nameWithType: ReflectedActionData.IsFlag()
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFlag()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Data/ReflectedActionData.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: IsFlag
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
+    startLine: 85
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public bool IsFlag()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsFlag As Boolean
+  overload: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFlag*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsInt
+  commentId: M:BennyKok.RuntimeDebug.Data.ReflectedActionData.IsInt
+  id: IsInt
+  parent: BennyKok.RuntimeDebug.Data.ReflectedActionData
+  langs:
+  - csharp
+  - vb
+  name: IsInt()
+  nameWithType: ReflectedActionData.IsInt()
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsInt()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Data/ReflectedActionData.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: IsInt
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
+    startLine: 91
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public bool IsInt()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsInt As Boolean
+  overload: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsInt*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFloat
+  commentId: M:BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFloat
+  id: IsFloat
+  parent: BennyKok.RuntimeDebug.Data.ReflectedActionData
+  langs:
+  - csharp
+  - vb
+  name: IsFloat()
+  nameWithType: ReflectedActionData.IsFloat()
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFloat()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Data/ReflectedActionData.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: IsFloat
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
+    startLine: 97
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public bool IsFloat()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsFloat As Boolean
+  overload: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFloat*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsString
+  commentId: M:BennyKok.RuntimeDebug.Data.ReflectedActionData.IsString
+  id: IsString
+  parent: BennyKok.RuntimeDebug.Data.ReflectedActionData
+  langs:
+  - csharp
+  - vb
+  name: IsString()
+  nameWithType: ReflectedActionData.IsString()
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsString()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Data/ReflectedActionData.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: IsString
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
+    startLine: 103
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public bool IsString()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsString As Boolean
+  overload: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsString*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BennyKok.RuntimeDebug.Data
+  commentId: N:BennyKok.RuntimeDebug.Data
+  name: BennyKok.RuntimeDebug.Data
+  nameWithType: BennyKok.RuntimeDebug.Data
+  fullName: BennyKok.RuntimeDebug.Data
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Reflection.PropertyInfo
+  commentId: T:System.Reflection.PropertyInfo
+  parent: System.Reflection
+  isExternal: true
+  name: PropertyInfo
+  nameWithType: PropertyInfo
+  fullName: System.Reflection.PropertyInfo
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+- uid: System.Reflection.FieldInfo
+  commentId: T:System.Reflection.FieldInfo
+  parent: System.Reflection
+  isExternal: true
+  name: FieldInfo
+  nameWithType: FieldInfo
+  fullName: System.Reflection.FieldInfo
+- uid: System.Reflection.MethodInfo
+  commentId: T:System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.Reflection.ParameterInfo[]
+  isExternal: true
+  name: ParameterInfo[]
+  nameWithType: ParameterInfo[]
+  fullName: System.Reflection.ParameterInfo[]
+  nameWithType.vb: ParameterInfo()
+  fullName.vb: System.Reflection.ParameterInfo()
+  name.vb: ParameterInfo()
+  spec.csharp:
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    nameWithType: ParameterInfo
+    fullName: System.Reflection.ParameterInfo
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Reflection.ParameterInfo
+    name: ParameterInfo
+    nameWithType: ParameterInfo
+    fullName: System.Reflection.ParameterInfo
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: BennyKok.RuntimeDebug.Attributes.DebugActionAttribute
+  commentId: T:BennyKok.RuntimeDebug.Attributes.DebugActionAttribute
+  parent: BennyKok.RuntimeDebug.Attributes
+  name: DebugActionAttribute
+  nameWithType: DebugActionAttribute
+  fullName: BennyKok.RuntimeDebug.Attributes.DebugActionAttribute
+- uid: BennyKok.RuntimeDebug.Attributes
+  commentId: N:BennyKok.RuntimeDebug.Attributes
+  name: BennyKok.RuntimeDebug.Attributes
+  nameWithType: BennyKok.RuntimeDebug.Attributes
+  fullName: BennyKok.RuntimeDebug.Attributes
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetActionName*
+  commentId: Overload:BennyKok.RuntimeDebug.Data.ReflectedActionData.GetActionName
+  name: GetActionName
+  nameWithType: ReflectedActionData.GetActionName
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetActionName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsButton*
+  commentId: Overload:BennyKok.RuntimeDebug.Data.ReflectedActionData.IsButton
+  name: IsButton
+  nameWithType: ReflectedActionData.IsButton
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsButton
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsInput*
+  commentId: Overload:BennyKok.RuntimeDebug.Data.ReflectedActionData.IsInput
+  name: IsInput
+  nameWithType: ReflectedActionData.IsInput
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsInput
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetFlagDisplay*
+  commentId: Overload:BennyKok.RuntimeDebug.Data.ReflectedActionData.GetFlagDisplay
+  name: GetFlagDisplay
+  nameWithType: ReflectedActionData.GetFlagDisplay
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetFlagDisplay
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetFlagValue*
+  commentId: Overload:BennyKok.RuntimeDebug.Data.ReflectedActionData.GetFlagValue
+  name: GetFlagValue
+  nameWithType: ReflectedActionData.GetFlagValue
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetFlagValue
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetValue*
+  commentId: Overload:BennyKok.RuntimeDebug.Data.ReflectedActionData.GetValue
+  name: GetValue
+  nameWithType: ReflectedActionData.GetValue
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetValue
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.SetValue*
+  commentId: Overload:BennyKok.RuntimeDebug.Data.ReflectedActionData.SetValue
+  name: SetValue
+  nameWithType: ReflectedActionData.SetValue
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.SetValue
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetTargetType*
+  commentId: Overload:BennyKok.RuntimeDebug.Data.ReflectedActionData.GetTargetType
+  name: GetTargetType
+  nameWithType: ReflectedActionData.GetTargetType
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetTargetType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFlag*
+  commentId: Overload:BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFlag
+  name: IsFlag
+  nameWithType: ReflectedActionData.IsFlag
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFlag
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsInt*
+  commentId: Overload:BennyKok.RuntimeDebug.Data.ReflectedActionData.IsInt
+  name: IsInt
+  nameWithType: ReflectedActionData.IsInt
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsInt
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFloat*
+  commentId: Overload:BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFloat
+  name: IsFloat
+  nameWithType: ReflectedActionData.IsFloat
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFloat
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsString*
+  commentId: Overload:BennyKok.RuntimeDebug.Data.ReflectedActionData.IsString
+  name: IsString
+  nameWithType: ReflectedActionData.IsString
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsString

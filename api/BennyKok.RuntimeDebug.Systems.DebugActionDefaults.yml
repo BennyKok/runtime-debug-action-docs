@@ -19,7 +19,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: DebugActionDefaults
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Systems/DebugActionDefaults.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/DebugActionDefaults.cs
     startLine: 13
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -53,7 +53,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: RegisterDefaultAction
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Systems/DebugActionDefaults.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/DebugActionDefaults.cs
     startLine: 18
   assemblies:
   - com.bennykok.runtime-debug-action

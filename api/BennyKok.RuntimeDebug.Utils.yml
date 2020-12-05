@@ -6,13 +6,12 @@ items:
   children:
   - BennyKok.RuntimeDebug.Utils.CollapsedEventAttribute
   - BennyKok.RuntimeDebug.Utils.CommentAttribute
-  - BennyKok.RuntimeDebug.Utils.ObjectPool
-  - BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
   - BennyKok.RuntimeDebug.Utils.ReorderableBase
   - BennyKok.RuntimeDebug.Utils.ReorderableDisplayAttribute
   - BennyKok.RuntimeDebug.Utils.ReorderableList`1
   - BennyKok.RuntimeDebug.Utils.Singleton`1
   - BennyKok.RuntimeDebug.Utils.TitleAttribute
+  - BennyKok.RuntimeDebug.Utils.VisibilityAttribute
   langs:
   - csharp
   - vb
@@ -82,24 +81,18 @@ references:
   name: CommentAttribute
   nameWithType: CommentAttribute
   fullName: BennyKok.RuntimeDebug.Utils.CommentAttribute
+- uid: BennyKok.RuntimeDebug.Utils.VisibilityAttribute
+  commentId: T:BennyKok.RuntimeDebug.Utils.VisibilityAttribute
+  parent: BennyKok.RuntimeDebug.Utils
+  name: VisibilityAttribute
+  nameWithType: VisibilityAttribute
+  fullName: BennyKok.RuntimeDebug.Utils.VisibilityAttribute
 - uid: BennyKok.RuntimeDebug.Utils.TitleAttribute
   commentId: T:BennyKok.RuntimeDebug.Utils.TitleAttribute
   parent: BennyKok.RuntimeDebug.Utils
   name: TitleAttribute
   nameWithType: TitleAttribute
   fullName: BennyKok.RuntimeDebug.Utils.TitleAttribute
-- uid: BennyKok.RuntimeDebug.Utils.ObjectPool
-  commentId: T:BennyKok.RuntimeDebug.Utils.ObjectPool
-  parent: BennyKok.RuntimeDebug.Utils
-  name: ObjectPool
-  nameWithType: ObjectPool
-  fullName: BennyKok.RuntimeDebug.Utils.ObjectPool
-- uid: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
-  commentId: T:BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
-  parent: BennyKok.RuntimeDebug.Utils
-  name: PoolItemBehaviour
-  nameWithType: PoolItemBehaviour
-  fullName: BennyKok.RuntimeDebug.Utils.PoolItemBehaviour
 - uid: BennyKok.RuntimeDebug.Utils.Singleton`1
   commentId: T:BennyKok.RuntimeDebug.Utils.Singleton`1
   name: Singleton<T>

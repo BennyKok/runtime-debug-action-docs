@@ -14,6 +14,7 @@ items:
   - BennyKok.RuntimeDebug.Data.Settings.addThemeOptions
   - BennyKok.RuntimeDebug.Data.Settings.disableLogger
   - BennyKok.RuntimeDebug.Data.Settings.enableMode
+  - BennyKok.RuntimeDebug.Data.Settings.eventSystemPrefab
   - BennyKok.RuntimeDebug.Data.Settings.GetDefaultTheme
   - BennyKok.RuntimeDebug.Data.Settings.GetThemeByName(System.String)
   - BennyKok.RuntimeDebug.Data.Settings.hideCursorOnStart
@@ -21,6 +22,7 @@ items:
   - BennyKok.RuntimeDebug.Data.Settings.IsShowTouchToggle
   - BennyKok.RuntimeDebug.Data.Settings.IsSystemEnabled
   - BennyKok.RuntimeDebug.Data.Settings.loggerMaxLine
+  - BennyKok.RuntimeDebug.Data.Settings.menuPauseMode
   - BennyKok.RuntimeDebug.Data.Settings.selectionColorHighlight
   - BennyKok.RuntimeDebug.Data.Settings.selectionUnderlineHighlight
   - BennyKok.RuntimeDebug.Data.Settings.settingsAssetName
@@ -30,6 +32,7 @@ items:
   - BennyKok.RuntimeDebug.Data.Settings.showTooltipOnPointerHover
   - BennyKok.RuntimeDebug.Data.Settings.themes
   - BennyKok.RuntimeDebug.Data.Settings.touchToggleMode
+  - BennyKok.RuntimeDebug.Data.Settings.useEmbeddedEventSystem
   langs:
   - csharp
   - vb
@@ -43,8 +46,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Settings
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 12
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 13
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -80,8 +83,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: settingsAssetName
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 15
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 16
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -113,8 +116,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: settingsFolderPath
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 17
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 18
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -146,8 +149,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: settingsPath
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 19
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 20
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -179,8 +182,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: enableMode
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 24
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 25
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -189,6 +192,37 @@ items:
     return:
       type: BennyKok.RuntimeDebug.Data.Settings.EnableMode
     content.vb: Public enableMode As Settings.EnableMode
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.Settings.menuPauseMode
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.menuPauseMode
+  id: menuPauseMode
+  parent: BennyKok.RuntimeDebug.Data.Settings
+  langs:
+  - csharp
+  - vb
+  name: menuPauseMode
+  nameWithType: Settings.menuPauseMode
+  fullName: BennyKok.RuntimeDebug.Data.Settings.menuPauseMode
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: menuPauseMode
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 26
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public Settings.MenuPauseMode menuPauseMode
+    return:
+      type: BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode
+    content.vb: Public menuPauseMode As Settings.MenuPauseMode
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -210,8 +244,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: themes
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 25
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 27
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -241,8 +275,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: actionDisplayFadeInTime
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 30
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 32
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -299,8 +333,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: actionDisplayFadeTime
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 31
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 33
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -309,6 +343,111 @@ items:
     return:
       type: System.Single
     content.vb: Public actionDisplayFadeTime As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.Settings.useEmbeddedEventSystem
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.useEmbeddedEventSystem
+  id: useEmbeddedEventSystem
+  parent: BennyKok.RuntimeDebug.Data.Settings
+  langs:
+  - csharp
+  - vb
+  name: useEmbeddedEventSystem
+  nameWithType: Settings.useEmbeddedEventSystem
+  fullName: BennyKok.RuntimeDebug.Data.Settings.useEmbeddedEventSystem
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: useEmbeddedEventSystem
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 38
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: >-
+      [Title("Event System", 0)]
+
+      [Comment("An event system is required for the UI input & the new input system (if enabled), if using the embedded, it will be created automatically, you can also use your own and disable it", order = 1)]
+
+      public bool useEmbeddedEventSystem
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Title("Event System", 0)>
+
+      <Comment("An event system is required for the UI input & the new input system (if enabled), if using the embedded, it will be created automatically, you can also use your own and disable it", order:=1)>
+
+      Public useEmbeddedEventSystem As Boolean
+  attributes:
+  - type: BennyKok.RuntimeDebug.Utils.TitleAttribute
+    ctor: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: Event System
+    - type: System.Int32
+      value: 0
+  - type: BennyKok.RuntimeDebug.Utils.CommentAttribute
+    ctor: BennyKok.RuntimeDebug.Utils.CommentAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: An event system is required for the UI input & the new input system (if enabled), if using the embedded, it will be created automatically, you can also use your own and disable it
+    namedArguments:
+    - name: order
+      type: System.Int32
+      value: 1
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.Settings.eventSystemPrefab
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.eventSystemPrefab
+  id: eventSystemPrefab
+  parent: BennyKok.RuntimeDebug.Data.Settings
+  langs:
+  - csharp
+  - vb
+  name: eventSystemPrefab
+  nameWithType: Settings.eventSystemPrefab
+  fullName: BennyKok.RuntimeDebug.Data.Settings.eventSystemPrefab
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: eventSystemPrefab
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 40
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: >-
+      [Visibility("useEmbeddedEventSystem", true, false)]
+
+      public GameObject eventSystemPrefab
+    return:
+      type: UnityEngine.GameObject
+    content.vb: >-
+      <Visibility("useEmbeddedEventSystem", True, False)>
+
+      Public eventSystemPrefab As GameObject
+  attributes:
+  - type: BennyKok.RuntimeDebug.Utils.VisibilityAttribute
+    ctor: BennyKok.RuntimeDebug.Utils.VisibilityAttribute.#ctor(System.String,System.Boolean,System.Boolean)
+    arguments:
+    - type: System.String
+      value: useEmbeddedEventSystem
+    - type: System.Boolean
+      value: true
+    - type: System.Boolean
+      value: false
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -330,30 +469,47 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: inputLayer
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 35
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 48
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
   syntax:
     content: >-
-      [Title("Interaction", 0)]
+      [Title("Input", 0)]
 
-      public InputLayer inputLayer
+      [Visibility("useInputSystemLayer", false, true, drawChildrenOnly = true)]
+
+      public InputManagerLayer inputLayer
     return:
-      type: BennyKok.RuntimeDebug.Data.InputLayer
+      type: BennyKok.RuntimeDebug.DebugInput.InputManagerLayer
     content.vb: >-
-      <Title("Interaction", 0)>
+      <Title("Input", 0)>
 
-      Public inputLayer As InputLayer
+      <Visibility("useInputSystemLayer", False, True, drawChildrenOnly:=True)>
+
+      Public inputLayer As InputManagerLayer
   attributes:
   - type: BennyKok.RuntimeDebug.Utils.TitleAttribute
     ctor: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Int32)
     arguments:
     - type: System.String
-      value: Interaction
+      value: Input
     - type: System.Int32
       value: 0
+  - type: BennyKok.RuntimeDebug.Utils.VisibilityAttribute
+    ctor: BennyKok.RuntimeDebug.Utils.VisibilityAttribute.#ctor(System.String,System.Boolean,System.Boolean)
+    arguments:
+    - type: System.String
+      value: useInputSystemLayer
+    - type: System.Boolean
+      value: false
+    - type: System.Boolean
+      value: true
+    namedArguments:
+    - name: drawChildrenOnly
+      type: System.Boolean
+      value: true
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -375,16 +531,30 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: touchToggleMode
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 36
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 55
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
   syntax:
-    content: public Settings.TouchToggleMode touchToggleMode
+    content: >-
+      [Title("Interaction", 0)]
+
+      public Settings.TouchToggleMode touchToggleMode
     return:
       type: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
-    content.vb: Public touchToggleMode As Settings.TouchToggleMode
+    content.vb: >-
+      <Title("Interaction", 0)>
+
+      Public touchToggleMode As Settings.TouchToggleMode
+  attributes:
+  - type: BennyKok.RuntimeDebug.Utils.TitleAttribute
+    ctor: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: Interaction
+    - type: System.Int32
+      value: 0
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -406,8 +576,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: hideCursorOnStart
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 37
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 56
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -437,8 +607,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: showTooltipOnKeyboardNavigation
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 42
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 61
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -446,7 +616,7 @@ items:
     content: >-
       [Title("Tooltip", 0)]
 
-      [Comment("show tooltip options will not be used on mobile platfrom, long press on an action to display tooltip instead", order = 1)]
+      [Comment("Show tooltip options will not be used on mobile platfrom, long press on an action to display tooltip instead", order = 1)]
 
       public bool showTooltipOnKeyboardNavigation
     return:
@@ -454,7 +624,7 @@ items:
     content.vb: >-
       <Title("Tooltip", 0)>
 
-      <Comment("show tooltip options will not be used on mobile platfrom, long press on an action to display tooltip instead", order:=1)>
+      <Comment("Show tooltip options will not be used on mobile platfrom, long press on an action to display tooltip instead", order:=1)>
 
       Public showTooltipOnKeyboardNavigation As Boolean
   attributes:
@@ -469,7 +639,7 @@ items:
     ctor: BennyKok.RuntimeDebug.Utils.CommentAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: show tooltip options will not be used on mobile platfrom, long press on an action to display tooltip instead
+      value: Show tooltip options will not be used on mobile platfrom, long press on an action to display tooltip instead
     namedArguments:
     - name: order
       type: System.Int32
@@ -495,8 +665,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: showTooltipOnPointerHover
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 43
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 62
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -526,8 +696,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: selectionColorHighlight
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 48
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 67
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -584,8 +754,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: selectionUnderlineHighlight
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 49
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 68
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -615,8 +785,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: disableLogger
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 52
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 71
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -660,8 +830,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: loggerMaxLine
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 53
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 72
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -691,8 +861,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: addApplicationOptions
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 58
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 77
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -749,8 +919,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: addQualityOptions
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 59
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 78
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -780,8 +950,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: addSceneOptions
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 60
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 79
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -811,8 +981,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: addThemeOptions
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 61
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 80
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -842,8 +1012,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: addLoggerOptions
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 62
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 81
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -873,8 +1043,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: IsSystemEnabled
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 100
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 132
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -907,8 +1077,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: IsShowTouchToggle
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 115
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 147
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -939,8 +1109,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetDefaultTheme
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 127
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 159
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -971,8 +1141,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetThemeByName
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Settings.cs
-    startLine: 129
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 161
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -1041,6 +1211,12 @@ references:
   name: Settings.EnableMode
   nameWithType: Settings.EnableMode
   fullName: BennyKok.RuntimeDebug.Data.Settings.EnableMode
+- uid: BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode
+  commentId: T:BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode
+  parent: BennyKok.RuntimeDebug.Data
+  name: Settings.MenuPauseMode
+  nameWithType: Settings.MenuPauseMode
+  fullName: BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode
 - uid: BennyKok.RuntimeDebug.Data.ThemeList
   commentId: T:BennyKok.RuntimeDebug.Data.ThemeList
   parent: BennyKok.RuntimeDebug.Data
@@ -1054,18 +1230,6 @@ references:
   name: Single
   nameWithType: Single
   fullName: System.Single
-- uid: BennyKok.RuntimeDebug.Data.InputLayer
-  commentId: T:BennyKok.RuntimeDebug.Data.InputLayer
-  parent: BennyKok.RuntimeDebug.Data
-  name: InputLayer
-  nameWithType: InputLayer
-  fullName: BennyKok.RuntimeDebug.Data.InputLayer
-- uid: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
-  commentId: T:BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
-  parent: BennyKok.RuntimeDebug.Data
-  name: Settings.TouchToggleMode
-  nameWithType: Settings.TouchToggleMode
-  fullName: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -1073,6 +1237,30 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: BennyKok.RuntimeDebug.DebugInput.InputManagerLayer
+  commentId: T:BennyKok.RuntimeDebug.DebugInput.InputManagerLayer
+  parent: BennyKok.RuntimeDebug.DebugInput
+  name: InputManagerLayer
+  nameWithType: InputManagerLayer
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputManagerLayer
+- uid: BennyKok.RuntimeDebug.DebugInput
+  commentId: N:BennyKok.RuntimeDebug.DebugInput
+  name: BennyKok.RuntimeDebug.DebugInput
+  nameWithType: BennyKok.RuntimeDebug.DebugInput
+  fullName: BennyKok.RuntimeDebug.DebugInput
+- uid: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
+  commentId: T:BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
+  parent: BennyKok.RuntimeDebug.Data
+  name: Settings.TouchToggleMode
+  nameWithType: Settings.TouchToggleMode
+  fullName: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System

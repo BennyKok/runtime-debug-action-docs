@@ -24,7 +24,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Log
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/LoggerHandler.cs
     startLine: 21
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -55,7 +55,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: logString
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/LoggerHandler.cs
     startLine: 23
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -86,7 +86,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: stackTrace
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/LoggerHandler.cs
     startLine: 24
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -117,7 +117,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: type
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/LoggerHandler.cs
     startLine: 25
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -148,7 +148,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: time
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/LoggerHandler.cs
     startLine: 26
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -179,7 +179,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: .ctor
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/LoggerHandler.cs
     startLine: 28
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -218,7 +218,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ToString
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/LoggerHandler.cs
     startLine: 36
   assemblies:
   - com.bennykok.runtime-debug-action

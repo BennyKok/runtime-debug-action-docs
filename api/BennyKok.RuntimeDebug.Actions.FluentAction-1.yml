@@ -26,7 +26,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: FluentAction
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/Base/FluentAction.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/Base/FluentAction.cs
     startLine: 6
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -95,7 +95,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: WithId
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/Base/FluentAction.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/Base/FluentAction.cs
     startLine: 10
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -134,7 +134,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: WithAction
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/Base/FluentAction.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/Base/FluentAction.cs
     startLine: 16
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -173,7 +173,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: WithName
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/Base/FluentAction.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/Base/FluentAction.cs
     startLine: 22
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -212,7 +212,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: WithDescription
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/Base/FluentAction.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/Base/FluentAction.cs
     startLine: 28
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -251,7 +251,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: WithGroup
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/Base/FluentAction.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/Base/FluentAction.cs
     startLine: 34
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -290,7 +290,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: WithShortcutKey
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/Base/FluentAction.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/Base/FluentAction.cs
     startLine: 40
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -329,7 +329,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: WithActionColor
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/Base/FluentAction.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/Base/FluentAction.cs
     startLine: 46
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -368,7 +368,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: WithClosePanelAfterTrigger
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/Base/FluentAction.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/Base/FluentAction.cs
     startLine: 52
   assemblies:
   - com.bennykok.runtime-debug-action

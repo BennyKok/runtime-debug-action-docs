@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.Attributes
+  commentId: N:BennyKok.RuntimeDebug.Attributes
+  id: BennyKok.RuntimeDebug.Attributes
+  children:
+  - BennyKok.RuntimeDebug.Attributes.DebugActionAttribute
+  langs:
+  - csharp
+  - vb
+  name: BennyKok.RuntimeDebug.Attributes
+  nameWithType: BennyKok.RuntimeDebug.Attributes
+  fullName: BennyKok.RuntimeDebug.Attributes
+  type: Namespace
+  assemblies:
+  - com.bennykok.runtime-debug-action
+references:
+- uid: BennyKok.RuntimeDebug.Attributes.DebugActionAttribute
+  commentId: T:BennyKok.RuntimeDebug.Attributes.DebugActionAttribute
+  parent: BennyKok.RuntimeDebug.Attributes
+  name: DebugActionAttribute
+  nameWithType: DebugActionAttribute
+  fullName: BennyKok.RuntimeDebug.Attributes.DebugActionAttribute
+- uid: BennyKok.RuntimeDebug.Attributes
+  commentId: N:BennyKok.RuntimeDebug.Attributes
+  name: BennyKok.RuntimeDebug.Attributes
+  nameWithType: BennyKok.RuntimeDebug.Attributes
+  fullName: BennyKok.RuntimeDebug.Attributes

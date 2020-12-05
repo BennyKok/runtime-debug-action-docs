@@ -18,7 +18,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ThemeList
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Data/Theme.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Theme.cs
     startLine: 14
   assemblies:
   - com.bennykok.runtime-debug-action

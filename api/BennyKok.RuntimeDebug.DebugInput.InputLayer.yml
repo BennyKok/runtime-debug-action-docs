@@ -1,0 +1,533 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer
+  commentId: T:BennyKok.RuntimeDebug.DebugInput.InputLayer
+  id: InputLayer
+  parent: BennyKok.RuntimeDebug.DebugInput
+  children:
+  - BennyKok.RuntimeDebug.DebugInput.InputLayer.Check
+  - BennyKok.RuntimeDebug.DebugInput.InputLayer.Disable
+  - BennyKok.RuntimeDebug.DebugInput.InputLayer.Enable
+  - BennyKok.RuntimeDebug.DebugInput.InputLayer.IsBackAction
+  - BennyKok.RuntimeDebug.DebugInput.InputLayer.IsConfirmAction
+  - BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDown
+  - BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDownPressing
+  - BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDownReleased
+  - BennyKok.RuntimeDebug.DebugInput.InputLayer.IsKeyDown(System.String)
+  - BennyKok.RuntimeDebug.DebugInput.InputLayer.IsMenuAction
+  - BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUp
+  - BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUpPressing
+  - BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUpReleased
+  - BennyKok.RuntimeDebug.DebugInput.InputLayer.Update
+  langs:
+  - csharp
+  - vb
+  name: InputLayer
+  nameWithType: InputLayer
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer
+  type: Interface
+  source:
+    remote:
+      path: Runtime/Input/System/InputLayer.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: InputLayer
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/System/InputLayer.cs
+    startLine: 2
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: public interface InputLayer
+    content.vb: Public Interface InputLayer
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.Enable
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputLayer.Enable
+  id: Enable
+  parent: BennyKok.RuntimeDebug.DebugInput.InputLayer
+  langs:
+  - csharp
+  - vb
+  name: Enable()
+  nameWithType: InputLayer.Enable()
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.Enable()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/System/InputLayer.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Enable
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/System/InputLayer.cs
+    startLine: 4
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: void Enable()
+    content.vb: Sub Enable
+  overload: BennyKok.RuntimeDebug.DebugInput.InputLayer.Enable*
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.Disable
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputLayer.Disable
+  id: Disable
+  parent: BennyKok.RuntimeDebug.DebugInput.InputLayer
+  langs:
+  - csharp
+  - vb
+  name: Disable()
+  nameWithType: InputLayer.Disable()
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.Disable()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/System/InputLayer.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Disable
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/System/InputLayer.cs
+    startLine: 5
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: void Disable()
+    content.vb: Sub Disable
+  overload: BennyKok.RuntimeDebug.DebugInput.InputLayer.Disable*
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.Update
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputLayer.Update
+  id: Update
+  parent: BennyKok.RuntimeDebug.DebugInput.InputLayer
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: InputLayer.Update()
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.Update()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/System/InputLayer.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Update
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/System/InputLayer.cs
+    startLine: 6
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: void Update()
+    content.vb: Sub Update
+  overload: BennyKok.RuntimeDebug.DebugInput.InputLayer.Update*
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.Check
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputLayer.Check
+  id: Check
+  parent: BennyKok.RuntimeDebug.DebugInput.InputLayer
+  langs:
+  - csharp
+  - vb
+  name: Check()
+  nameWithType: InputLayer.Check()
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.Check()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/System/InputLayer.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Check
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/System/InputLayer.cs
+    startLine: 8
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: bool Check()
+    return:
+      type: System.Boolean
+    content.vb: Function Check As Boolean
+  overload: BennyKok.RuntimeDebug.DebugInput.InputLayer.Check*
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsConfirmAction
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputLayer.IsConfirmAction
+  id: IsConfirmAction
+  parent: BennyKok.RuntimeDebug.DebugInput.InputLayer
+  langs:
+  - csharp
+  - vb
+  name: IsConfirmAction()
+  nameWithType: InputLayer.IsConfirmAction()
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsConfirmAction()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/System/InputLayer.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: IsConfirmAction
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/System/InputLayer.cs
+    startLine: 10
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: bool IsConfirmAction()
+    return:
+      type: System.Boolean
+    content.vb: Function IsConfirmAction As Boolean
+  overload: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsConfirmAction*
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsBackAction
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputLayer.IsBackAction
+  id: IsBackAction
+  parent: BennyKok.RuntimeDebug.DebugInput.InputLayer
+  langs:
+  - csharp
+  - vb
+  name: IsBackAction()
+  nameWithType: InputLayer.IsBackAction()
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsBackAction()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/System/InputLayer.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: IsBackAction
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/System/InputLayer.cs
+    startLine: 12
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: bool IsBackAction()
+    return:
+      type: System.Boolean
+    content.vb: Function IsBackAction As Boolean
+  overload: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsBackAction*
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsMenuAction
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputLayer.IsMenuAction
+  id: IsMenuAction
+  parent: BennyKok.RuntimeDebug.DebugInput.InputLayer
+  langs:
+  - csharp
+  - vb
+  name: IsMenuAction()
+  nameWithType: InputLayer.IsMenuAction()
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsMenuAction()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/System/InputLayer.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: IsMenuAction
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/System/InputLayer.cs
+    startLine: 14
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: bool IsMenuAction()
+    return:
+      type: System.Boolean
+    content.vb: Function IsMenuAction As Boolean
+  overload: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsMenuAction*
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsKeyDown(System.String)
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputLayer.IsKeyDown(System.String)
+  id: IsKeyDown(System.String)
+  parent: BennyKok.RuntimeDebug.DebugInput.InputLayer
+  langs:
+  - csharp
+  - vb
+  name: IsKeyDown(String)
+  nameWithType: InputLayer.IsKeyDown(String)
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsKeyDown(System.String)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/System/InputLayer.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: IsKeyDown
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/System/InputLayer.cs
+    startLine: 16
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: bool IsKeyDown(string keycode)
+    parameters:
+    - id: keycode
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Function IsKeyDown(keycode As String) As Boolean
+  overload: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsKeyDown*
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUpPressing
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUpPressing
+  id: IsUpPressing
+  parent: BennyKok.RuntimeDebug.DebugInput.InputLayer
+  langs:
+  - csharp
+  - vb
+  name: IsUpPressing()
+  nameWithType: InputLayer.IsUpPressing()
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUpPressing()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/System/InputLayer.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: IsUpPressing
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/System/InputLayer.cs
+    startLine: 19
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: bool IsUpPressing()
+    return:
+      type: System.Boolean
+    content.vb: Function IsUpPressing As Boolean
+  overload: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUpPressing*
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUpReleased
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUpReleased
+  id: IsUpReleased
+  parent: BennyKok.RuntimeDebug.DebugInput.InputLayer
+  langs:
+  - csharp
+  - vb
+  name: IsUpReleased()
+  nameWithType: InputLayer.IsUpReleased()
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUpReleased()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/System/InputLayer.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: IsUpReleased
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/System/InputLayer.cs
+    startLine: 21
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: bool IsUpReleased()
+    return:
+      type: System.Boolean
+    content.vb: Function IsUpReleased As Boolean
+  overload: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUpReleased*
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUp
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUp
+  id: IsUp
+  parent: BennyKok.RuntimeDebug.DebugInput.InputLayer
+  langs:
+  - csharp
+  - vb
+  name: IsUp()
+  nameWithType: InputLayer.IsUp()
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUp()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/System/InputLayer.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: IsUp
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/System/InputLayer.cs
+    startLine: 23
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: bool IsUp()
+    return:
+      type: System.Boolean
+    content.vb: Function IsUp As Boolean
+  overload: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUp*
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDownPressing
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDownPressing
+  id: IsDownPressing
+  parent: BennyKok.RuntimeDebug.DebugInput.InputLayer
+  langs:
+  - csharp
+  - vb
+  name: IsDownPressing()
+  nameWithType: InputLayer.IsDownPressing()
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDownPressing()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/System/InputLayer.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: IsDownPressing
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/System/InputLayer.cs
+    startLine: 26
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: bool IsDownPressing()
+    return:
+      type: System.Boolean
+    content.vb: Function IsDownPressing As Boolean
+  overload: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDownPressing*
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDownReleased
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDownReleased
+  id: IsDownReleased
+  parent: BennyKok.RuntimeDebug.DebugInput.InputLayer
+  langs:
+  - csharp
+  - vb
+  name: IsDownReleased()
+  nameWithType: InputLayer.IsDownReleased()
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDownReleased()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/System/InputLayer.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: IsDownReleased
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/System/InputLayer.cs
+    startLine: 28
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: bool IsDownReleased()
+    return:
+      type: System.Boolean
+    content.vb: Function IsDownReleased As Boolean
+  overload: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDownReleased*
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDown
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDown
+  id: IsDown
+  parent: BennyKok.RuntimeDebug.DebugInput.InputLayer
+  langs:
+  - csharp
+  - vb
+  name: IsDown()
+  nameWithType: InputLayer.IsDown()
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDown()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/System/InputLayer.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: IsDown
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/System/InputLayer.cs
+    startLine: 30
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: bool IsDown()
+    return:
+      type: System.Boolean
+    content.vb: Function IsDown As Boolean
+  overload: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDown*
+references:
+- uid: BennyKok.RuntimeDebug.DebugInput
+  commentId: N:BennyKok.RuntimeDebug.DebugInput
+  name: BennyKok.RuntimeDebug.DebugInput
+  nameWithType: BennyKok.RuntimeDebug.DebugInput
+  fullName: BennyKok.RuntimeDebug.DebugInput
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.Enable*
+  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.InputLayer.Enable
+  name: Enable
+  nameWithType: InputLayer.Enable
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.Enable
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.Disable*
+  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.InputLayer.Disable
+  name: Disable
+  nameWithType: InputLayer.Disable
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.Disable
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.Update*
+  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.InputLayer.Update
+  name: Update
+  nameWithType: InputLayer.Update
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.Update
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.Check*
+  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.InputLayer.Check
+  name: Check
+  nameWithType: InputLayer.Check
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.Check
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsConfirmAction*
+  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.InputLayer.IsConfirmAction
+  name: IsConfirmAction
+  nameWithType: InputLayer.IsConfirmAction
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsConfirmAction
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsBackAction*
+  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.InputLayer.IsBackAction
+  name: IsBackAction
+  nameWithType: InputLayer.IsBackAction
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsBackAction
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsMenuAction*
+  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.InputLayer.IsMenuAction
+  name: IsMenuAction
+  nameWithType: InputLayer.IsMenuAction
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsMenuAction
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsKeyDown*
+  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.InputLayer.IsKeyDown
+  name: IsKeyDown
+  nameWithType: InputLayer.IsKeyDown
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsKeyDown
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUpPressing*
+  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUpPressing
+  name: IsUpPressing
+  nameWithType: InputLayer.IsUpPressing
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUpPressing
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUpReleased*
+  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUpReleased
+  name: IsUpReleased
+  nameWithType: InputLayer.IsUpReleased
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUpReleased
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUp*
+  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUp
+  name: IsUp
+  nameWithType: InputLayer.IsUp
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUp
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDownPressing*
+  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDownPressing
+  name: IsDownPressing
+  nameWithType: InputLayer.IsDownPressing
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDownPressing
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDownReleased*
+  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDownReleased
+  name: IsDownReleased
+  nameWithType: InputLayer.IsDownReleased
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDownReleased
+- uid: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDown*
+  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDown
+  name: IsDown
+  nameWithType: InputLayer.IsDown
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDown

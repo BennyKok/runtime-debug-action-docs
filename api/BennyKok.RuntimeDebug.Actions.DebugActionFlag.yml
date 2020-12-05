@@ -38,7 +38,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: DebugActionFlag
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionFlag.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
     startLine: 6
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -106,7 +106,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: isPersistence
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionFlag.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
     startLine: 13
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -153,7 +153,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: flagKey
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionFlag.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
     startLine: 14
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -184,7 +184,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: defaultFlagValue
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionFlag.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
     startLine: 15
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -225,7 +225,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: flagValue
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionFlag.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
     startLine: 16
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -256,7 +256,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: flagValues
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionFlag.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
     startLine: 17
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -287,7 +287,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: onFlagChange
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionFlag.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
     startLine: 23
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -318,7 +318,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: BOOLEAN_VALUES
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionFlag.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
     startLine: 25
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -353,7 +353,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetFlagKeyWithPrefix
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionFlag.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
     startLine: 27
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -390,7 +390,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: WithFlag
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionFlag.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
     startLine: 32
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -429,7 +429,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: WithFlag
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionFlag.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
     startLine: 38
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -473,7 +473,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: WithFlagListener
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionFlag.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
     startLine: 44
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -513,7 +513,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetDescription
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionFlag.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
     startLine: 54
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -548,7 +548,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ResetFlag
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionFlag.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
     startLine: 69
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -583,7 +583,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: CycleFlagValue
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionFlag.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
     startLine: 74
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -618,7 +618,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: InvokeFlagListener
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionFlag.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
     startLine: 82
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -648,7 +648,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: SetFlagValue
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionFlag.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
     startLine: 87
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -685,7 +685,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnBeforeSerialize
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionFlag.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
     startLine: 149
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -715,7 +715,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnAfterDeserialize
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionFlag.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
     startLine: 151
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -745,7 +745,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: op_Implicit
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionFlag.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
     startLine: 156
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -785,7 +785,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: op_Implicit
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Actions/DebugActionFlag.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
     startLine: 157
   assemblies:
   - com.bennykok.runtime-debug-action

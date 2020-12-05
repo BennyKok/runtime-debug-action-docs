@@ -21,7 +21,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: DebugSystemEventHandler
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/Event/DebugSystemEventHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/Event/DebugSystemEventHandler.cs
     startLine: 8
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -71,7 +71,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: onDebugMenuShow
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/Event/DebugSystemEventHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/Event/DebugSystemEventHandler.cs
     startLine: 13
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -126,7 +126,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: onDebugMenuHide
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/Event/DebugSystemEventHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/Event/DebugSystemEventHandler.cs
     startLine: 16
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -168,7 +168,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnToggle
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/Event/DebugSystemEventHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/Event/DebugSystemEventHandler.cs
     startLine: 23
   assemblies:
   - com.bennykok.runtime-debug-action

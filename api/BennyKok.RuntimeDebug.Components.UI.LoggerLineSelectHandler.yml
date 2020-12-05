@@ -25,7 +25,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: LoggerLineSelectHandler
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerLineSelectHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/LoggerLineSelectHandler.cs
     startLine: 7
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -65,7 +65,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: loggerHandler
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerLineSelectHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/LoggerLineSelectHandler.cs
     startLine: 9
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -96,7 +96,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: text
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerLineSelectHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/LoggerLineSelectHandler.cs
     startLine: 10
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -127,7 +127,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: scrollRect
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerLineSelectHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/LoggerLineSelectHandler.cs
     startLine: 12
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -158,7 +158,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnPointerClick
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerLineSelectHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/LoggerLineSelectHandler.cs
     startLine: 24
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -191,7 +191,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: CloseLogDetails
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerLineSelectHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/LoggerLineSelectHandler.cs
     startLine: 44
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -221,7 +221,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnBeginDrag
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerLineSelectHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/LoggerLineSelectHandler.cs
     startLine: 50
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -254,7 +254,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnEndDrag
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/LoggerLineSelectHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/LoggerLineSelectHandler.cs
     startLine: 55
   assemblies:
   - com.bennykok.runtime-debug-action

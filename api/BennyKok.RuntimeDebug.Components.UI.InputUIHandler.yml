@@ -9,6 +9,7 @@ items:
   - BennyKok.RuntimeDebug.Components.UI.InputUIHandler.cancelButton
   - BennyKok.RuntimeDebug.Components.UI.InputUIHandler.DimissInput
   - BennyKok.RuntimeDebug.Components.UI.InputUIHandler.inputField
+  - BennyKok.RuntimeDebug.Components.UI.InputUIHandler.sliderHelper
   langs:
   - csharp
   - vb
@@ -22,7 +23,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: InputUIHandler
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/InputUIHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/InputUIHandler.cs
     startLine: 14
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -72,7 +73,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: inputField
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/InputUIHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/InputUIHandler.cs
     startLine: 18
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -119,7 +120,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: cancelButton
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/InputUIHandler.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/InputUIHandler.cs
     startLine: 19
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -129,6 +130,37 @@ items:
     return:
       type: UnityEngine.UI.Button
     content.vb: Public cancelButton As Button
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.InputUIHandler.sliderHelper
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.InputUIHandler.sliderHelper
+  id: sliderHelper
+  parent: BennyKok.RuntimeDebug.Components.UI.InputUIHandler
+  langs:
+  - csharp
+  - vb
+  name: sliderHelper
+  nameWithType: InputUIHandler.sliderHelper
+  fullName: BennyKok.RuntimeDebug.Components.UI.InputUIHandler.sliderHelper
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/InputUIHandler.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: sliderHelper
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/InputUIHandler.cs
+    startLine: 20
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public InputUISlider sliderHelper
+    return:
+      type: BennyKok.RuntimeDebug.Components.UI.InputUISlider
+    content.vb: Public sliderHelper As InputUISlider
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -150,8 +182,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: DimissInput
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/InputUIHandler.cs
-    startLine: 69
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/InputUIHandler.cs
+    startLine: 70
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -182,8 +214,8 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: AskForInput
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Components/UI/InputUIHandler.cs
-    startLine: 76
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/InputUIHandler.cs
+    startLine: 79
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -284,6 +316,12 @@ references:
   name: UnityEngine.UI
   nameWithType: UnityEngine.UI
   fullName: UnityEngine.UI
+- uid: BennyKok.RuntimeDebug.Components.UI.InputUISlider
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.InputUISlider
+  parent: BennyKok.RuntimeDebug.Components.UI
+  name: InputUISlider
+  nameWithType: InputUISlider
+  fullName: BennyKok.RuntimeDebug.Components.UI.InputUISlider
 - uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
   commentId: T:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
   parent: BennyKok.RuntimeDebug.Systems

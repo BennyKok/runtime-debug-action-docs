@@ -21,7 +21,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: CollapsedEventAttribute
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Utils/AttributeUtils.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Utils/AttributeUtils.cs
     startLine: 44
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -59,7 +59,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: visible
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Utils/AttributeUtils.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Utils/AttributeUtils.cs
     startLine: 46
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -90,7 +90,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: tooltip
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Utils/AttributeUtils.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Utils/AttributeUtils.cs
     startLine: 47
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -121,7 +121,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: .ctor
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Utils/AttributeUtils.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Utils/AttributeUtils.cs
     startLine: 49
   assemblies:
   - com.bennykok.runtime-debug-action

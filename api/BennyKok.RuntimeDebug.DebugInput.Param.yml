@@ -8,6 +8,8 @@ items:
   - BennyKok.RuntimeDebug.DebugInput.Param.#ctor(System.String,BennyKok.RuntimeDebug.DebugInput.ParamType,System.String,System.Object,System.Func{System.Object})
   - BennyKok.RuntimeDebug.DebugInput.Param.defaultValue
   - BennyKok.RuntimeDebug.DebugInput.Param.description
+  - BennyKok.RuntimeDebug.DebugInput.Param.MapParamTypeToType(BennyKok.RuntimeDebug.DebugInput.ParamType)
+  - BennyKok.RuntimeDebug.DebugInput.Param.MapTypeToParamType(System.Type)
   - BennyKok.RuntimeDebug.DebugInput.Param.name
   - BennyKok.RuntimeDebug.DebugInput.Param.type
   - BennyKok.RuntimeDebug.DebugInput.Param.valuePrefillCallback
@@ -24,7 +26,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Param
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/Param.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/Param.cs
     startLine: 7
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -69,7 +71,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: name
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/Param.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/Param.cs
     startLine: 10
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -100,7 +102,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: type
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/Param.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/Param.cs
     startLine: 11
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -131,7 +133,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: description
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/Param.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/Param.cs
     startLine: 12
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -162,7 +164,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: defaultValue
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/Param.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/Param.cs
     startLine: 13
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -193,7 +195,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: valuePrefillCallback
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/Param.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/Param.cs
     startLine: 14
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -224,7 +226,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: .ctor
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/Param.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/Param.cs
     startLine: 16
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -251,6 +253,80 @@ items:
   - Public
   fullName.vb: BennyKok.RuntimeDebug.DebugInput.Param.Param(System.String, BennyKok.RuntimeDebug.DebugInput.ParamType, System.String, System.Object, System.Func(Of System.Object))
   name.vb: Param(String, ParamType, String, Object, Func(Of Object))
+- uid: BennyKok.RuntimeDebug.DebugInput.Param.MapTypeToParamType(System.Type)
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.Param.MapTypeToParamType(System.Type)
+  id: MapTypeToParamType(System.Type)
+  parent: BennyKok.RuntimeDebug.DebugInput.Param
+  langs:
+  - csharp
+  - vb
+  name: MapTypeToParamType(Type)
+  nameWithType: Param.MapTypeToParamType(Type)
+  fullName: BennyKok.RuntimeDebug.DebugInput.Param.MapTypeToParamType(System.Type)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/Param.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: MapTypeToParamType
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/Param.cs
+    startLine: 25
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: public static ParamType MapTypeToParamType(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: BennyKok.RuntimeDebug.DebugInput.ParamType
+    content.vb: Public Shared Function MapTypeToParamType(type As Type) As ParamType
+  overload: BennyKok.RuntimeDebug.DebugInput.Param.MapTypeToParamType*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: BennyKok.RuntimeDebug.DebugInput.Param.MapParamTypeToType(BennyKok.RuntimeDebug.DebugInput.ParamType)
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.Param.MapParamTypeToType(BennyKok.RuntimeDebug.DebugInput.ParamType)
+  id: MapParamTypeToType(BennyKok.RuntimeDebug.DebugInput.ParamType)
+  parent: BennyKok.RuntimeDebug.DebugInput.Param
+  langs:
+  - csharp
+  - vb
+  name: MapParamTypeToType(ParamType)
+  nameWithType: Param.MapParamTypeToType(ParamType)
+  fullName: BennyKok.RuntimeDebug.DebugInput.Param.MapParamTypeToType(BennyKok.RuntimeDebug.DebugInput.ParamType)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Input/Param.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: MapParamTypeToType
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/Param.cs
+    startLine: 42
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: public static Type MapParamTypeToType(ParamType type)
+    parameters:
+    - id: type
+      type: BennyKok.RuntimeDebug.DebugInput.ParamType
+    return:
+      type: System.Type
+    content.vb: Public Shared Function MapParamTypeToType(type As ParamType) As Type
+  overload: BennyKok.RuntimeDebug.DebugInput.Param.MapParamTypeToType*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 references:
 - uid: BennyKok.RuntimeDebug.DebugInput.InputQuery
   commentId: T:BennyKok.RuntimeDebug.DebugInput.InputQuery
@@ -377,3 +453,20 @@ references:
   name: Param
   nameWithType: Param.Param
   fullName: BennyKok.RuntimeDebug.DebugInput.Param.Param
+- uid: BennyKok.RuntimeDebug.DebugInput.Param.MapTypeToParamType*
+  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.Param.MapTypeToParamType
+  name: MapTypeToParamType
+  nameWithType: Param.MapTypeToParamType
+  fullName: BennyKok.RuntimeDebug.DebugInput.Param.MapTypeToParamType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: BennyKok.RuntimeDebug.DebugInput.Param.MapParamTypeToType*
+  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.Param.MapParamTypeToType
+  name: MapParamTypeToType
+  nameWithType: Param.MapParamTypeToType
+  fullName: BennyKok.RuntimeDebug.DebugInput.Param.MapParamTypeToType

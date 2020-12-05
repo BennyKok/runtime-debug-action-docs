@@ -7,6 +7,7 @@ items:
   children:
   - BennyKok.RuntimeDebug.DebugInput.ParamType.Bool
   - BennyKok.RuntimeDebug.DebugInput.ParamType.Float
+  - BennyKok.RuntimeDebug.DebugInput.ParamType.Int
   - BennyKok.RuntimeDebug.DebugInput.ParamType.String
   langs:
   - csharp
@@ -21,7 +22,7 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ParamType
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/ParamType.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/ParamType.cs
     startLine: 2
   assemblies:
   - com.bennykok.runtime-debug-action
@@ -52,13 +53,45 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: String
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/ParamType.cs
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/ParamType.cs
     startLine: 4
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput
   syntax:
     content: String = 0
+    return:
+      type: BennyKok.RuntimeDebug.DebugInput.ParamType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BennyKok.RuntimeDebug.DebugInput.ParamType.Int
+  commentId: F:BennyKok.RuntimeDebug.DebugInput.ParamType.Int
+  id: Int
+  parent: BennyKok.RuntimeDebug.DebugInput.ParamType
+  langs:
+  - csharp
+  - vb
+  name: Int
+  nameWithType: ParamType.Int
+  fullName: BennyKok.RuntimeDebug.DebugInput.ParamType.Int
+  type: Field
+  source:
+    remote:
+      path: Runtime/Input/ParamType.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Int
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/ParamType.cs
+    startLine: 5
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.DebugInput
+  syntax:
+    content: Int = 1
     return:
       type: BennyKok.RuntimeDebug.DebugInput.ParamType
   modifiers.csharp:
@@ -84,13 +117,13 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Float
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/ParamType.cs
-    startLine: 5
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/ParamType.cs
+    startLine: 6
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput
   syntax:
-    content: Float = 1
+    content: Float = 2
     return:
       type: BennyKok.RuntimeDebug.DebugInput.ParamType
   modifiers.csharp:
@@ -116,13 +149,13 @@ items:
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Bool
-    path: ../Assets/Plugins/unity-runtime-debug-action/Runtime/Input/ParamType.cs
-    startLine: 6
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Input/ParamType.cs
+    startLine: 7
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.DebugInput
   syntax:
-    content: Bool = 2
+    content: Bool = 3
     return:
       type: BennyKok.RuntimeDebug.DebugInput.ParamType
   modifiers.csharp:

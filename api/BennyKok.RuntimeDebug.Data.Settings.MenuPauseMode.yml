@@ -1,0 +1,116 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode
+  commentId: T:BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode
+  id: Settings.MenuPauseMode
+  parent: BennyKok.RuntimeDebug.Data
+  children:
+  - BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode.DoNothing
+  - BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode.SetTimeScale
+  langs:
+  - csharp
+  - vb
+  name: Settings.MenuPauseMode
+  nameWithType: Settings.MenuPauseMode
+  fullName: BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode
+  type: Enum
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: MenuPauseMode
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 85
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public enum MenuPauseMode
+    content.vb: Public Enum MenuPauseMode
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode.SetTimeScale
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode.SetTimeScale
+  id: SetTimeScale
+  parent: BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode
+  langs:
+  - csharp
+  - vb
+  name: SetTimeScale
+  nameWithType: Settings.MenuPauseMode.SetTimeScale
+  fullName: BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode.SetTimeScale
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: SetTimeScale
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 90
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  summary: "\nSet the Time.timeScale to 0 when the debug menu is active\n"
+  example: []
+  syntax:
+    content: SetTimeScale = 0
+    return:
+      type: BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode.DoNothing
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode.DoNothing
+  id: DoNothing
+  parent: BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode
+  langs:
+  - csharp
+  - vb
+  name: DoNothing
+  nameWithType: Settings.MenuPauseMode.DoNothing
+  fullName: BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode.DoNothing
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: DoNothing
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 95
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  summary: "\nDo not pause the game when the debug menu is active\n"
+  example: []
+  syntax:
+    content: DoNothing = 1
+    return:
+      type: BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: BennyKok.RuntimeDebug.Data
+  commentId: N:BennyKok.RuntimeDebug.Data
+  name: BennyKok.RuntimeDebug.Data
+  nameWithType: BennyKok.RuntimeDebug.Data
+  fullName: BennyKok.RuntimeDebug.Data
+- uid: BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode
+  commentId: T:BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode
+  parent: BennyKok.RuntimeDebug.Data
+  name: Settings.MenuPauseMode
+  nameWithType: Settings.MenuPauseMode
+  fullName: BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode
