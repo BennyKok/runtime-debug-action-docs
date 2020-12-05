@@ -75,24 +75,14 @@
     <div class="level2"><span class="xref">UnityEngine.Component</span></div>
     <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
     <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
-    <div class="level5"><a class="xref" href="BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.html">PoolItemBehaviour</a></div>
-    <div class="level6"><span class="xref">ListItemView</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.html#BennyKok_RuntimeDebug_Utils_PoolItemBehaviour_used">PoolItemBehaviour.used</a>
-    </div>
-    <div>
-      <a class="xref" href="BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.html#BennyKok_RuntimeDebug_Utils_PoolItemBehaviour_pool">PoolItemBehaviour.pool</a>
-    </div>
+    <div class="level5"><span class="xref">ListItemView</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Components.UI.html">BennyKok.RuntimeDebug.Components.UI</a></h6>
   <h6><strong>Assembly</strong>: com.bennykok.runtime-debug-action.dll</h6>
   <h5 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;Runtime Debug Action/UI/List Item View&quot;)]
-public class ListItemView : PoolItemBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerExitHandler, IPointerEnterHandler, IEventSystemHandler</code></pre>
+public class ListItemView : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerExitHandler, IPointerEnterHandler, IEventSystemHandler</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -221,6 +211,56 @@ public Sprite folderIcon</code></pre>
   </table>
   
   
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_idx" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.idx">idx</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public int idx</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_item" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.item">item</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public ListItem item</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Data.ListItem.html">ListItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_label" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.label">label</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -265,31 +305,6 @@ public bool previousDown</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_rectTransform" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.rectTransform">rectTransform</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NonSerialized]
-public RectTransform rectTransform</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UnityEngine.RectTransform</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -367,6 +382,31 @@ public bool showIcon</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Components_UI_ListItemView_RectTransform_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.RectTransform*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_RectTransform" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.RectTransform">RectTransform</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform RectTransform { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.RectTransform</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -481,18 +521,6 @@ public bool showIcon</code></pre>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="BennyKok_RuntimeDebug_Components_UI_ListItemView_Recycle_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.Recycle*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Components_UI_ListItemView_Recycle" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.Recycle">Recycle()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Recycle()</code></pre>
-  </div>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.html#BennyKok_RuntimeDebug_Utils_PoolItemBehaviour_Recycle">PoolItemBehaviour.Recycle()</a></div>
   
   
   <a id="BennyKok_RuntimeDebug_Components_UI_ListItemView_RefreshStatus_" data-uid="BennyKok.RuntimeDebug.Components.UI.ListItemView.RefreshStatus*"></a>

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ObjectPool
+    <title>Interface InputLayer
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ObjectPool
+    <meta name="title" content="Interface InputLayer
    ">
     <meta name="generator" content="docfx 2.56.5.0">
     
@@ -61,207 +61,30 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.Utils.ObjectPool">
+            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer">
   
   
-  <h1 id="BennyKok_RuntimeDebug_Utils_ObjectPool" data-uid="BennyKok.RuntimeDebug.Utils.ObjectPool" class="text-break">Class ObjectPool
+  <h1 id="BennyKok_RuntimeDebug_DebugInput_InputLayer" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer" class="text-break">Interface InputLayer
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">ObjectPool</span></div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Utils.html">BennyKok.RuntimeDebug.Utils</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.DebugInput.html">BennyKok.RuntimeDebug.DebugInput</a></h6>
   <h6><strong>Assembly</strong>: com.bennykok.runtime-debug-action.dll</h6>
-  <h5 id="BennyKok_RuntimeDebug_Utils_ObjectPool_syntax">Syntax</h5>
+  <h5 id="BennyKok_RuntimeDebug_DebugInput_InputLayer_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ObjectPool</code></pre>
+    <pre><code class="lang-csharp hljs">public interface InputLayer</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  
-  
-  <a id="BennyKok_RuntimeDebug_Utils_ObjectPool__ctor_" data-uid="BennyKok.RuntimeDebug.Utils.ObjectPool.#ctor*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Utils_ObjectPool__ctor_UnityEngine_Transform_UnityEngine_GameObject_System_Int32_System_Boolean_System_Single_" data-uid="BennyKok.RuntimeDebug.Utils.ObjectPool.#ctor(UnityEngine.Transform,UnityEngine.GameObject,System.Int32,System.Boolean,System.Single)">ObjectPool(Transform, GameObject, Int32, Boolean, Single)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ObjectPool(Transform poolParent, GameObject prefab, int count, bool autoRecycle = false, float autoRecycleDuration = 0F)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UnityEngine.Transform</span></td>
-        <td><span class="parametername">poolParent</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">UnityEngine.GameObject</span></td>
-        <td><span class="parametername">prefab</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">count</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">autoRecycle</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">autoRecycleDuration</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="fields">Fields
-  </h3>
-  
-  
-  <h4 id="BennyKok_RuntimeDebug_Utils_ObjectPool_allItems" data-uid="BennyKok.RuntimeDebug.Utils.ObjectPool.allItems">allItems</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NonSerialized]
-public List&lt;PoolItemBehaviour&gt; allItems</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.html">PoolItemBehaviour</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BennyKok_RuntimeDebug_Utils_ObjectPool_autoRecycle" data-uid="BennyKok.RuntimeDebug.Utils.ObjectPool.autoRecycle">autoRecycle</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool autoRecycle</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BennyKok_RuntimeDebug_Utils_ObjectPool_autoRecycleDuration" data-uid="BennyKok.RuntimeDebug.Utils.ObjectPool.autoRecycleDuration">autoRecycleDuration</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float autoRecycleDuration</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BennyKok_RuntimeDebug_Utils_ObjectPool_count" data-uid="BennyKok.RuntimeDebug.Utils.ObjectPool.count">count</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int count</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BennyKok_RuntimeDebug_Utils_ObjectPool_prefab" data-uid="BennyKok.RuntimeDebug.Utils.ObjectPool.prefab">prefab</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GameObject prefab</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UnityEngine.GameObject</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="BennyKok_RuntimeDebug_Utils_ObjectPool_AddNew_" data-uid="BennyKok.RuntimeDebug.Utils.ObjectPool.AddNew*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Utils_ObjectPool_AddNew" data-uid="BennyKok.RuntimeDebug.Utils.ObjectPool.AddNew">AddNew()</h4>
+  <a id="BennyKok_RuntimeDebug_DebugInput_InputLayer_Check_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.Check*"></a>
+  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputLayer_Check" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.Check">Check()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PoolItemBehaviour AddNew()</code></pre>
+    <pre><code class="lang-csharp hljs">bool Check()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -273,20 +96,165 @@ public List&lt;PoolItemBehaviour&gt; allItems</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.html">PoolItemBehaviour</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="BennyKok_RuntimeDebug_Utils_ObjectPool_Get_" data-uid="BennyKok.RuntimeDebug.Utils.ObjectPool.Get*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Utils_ObjectPool_Get_UnityEngine_Transform_" data-uid="BennyKok.RuntimeDebug.Utils.ObjectPool.Get(UnityEngine.Transform)">Get(Transform)</h4>
+  <a id="BennyKok_RuntimeDebug_DebugInput_InputLayer_Disable_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.Disable*"></a>
+  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputLayer_Disable" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.Disable">Disable()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PoolItemBehaviour Get(Transform customTransform = null)</code></pre>
+    <pre><code class="lang-csharp hljs">void Disable()</code></pre>
+  </div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_DebugInput_InputLayer_Enable_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.Enable*"></a>
+  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputLayer_Enable" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.Enable">Enable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Enable()</code></pre>
+  </div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_DebugInput_InputLayer_IsBackAction_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.IsBackAction*"></a>
+  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputLayer_IsBackAction" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.IsBackAction">IsBackAction()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsBackAction()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_DebugInput_InputLayer_IsConfirmAction_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.IsConfirmAction*"></a>
+  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputLayer_IsConfirmAction" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.IsConfirmAction">IsConfirmAction()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsConfirmAction()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_DebugInput_InputLayer_IsDown_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDown*"></a>
+  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputLayer_IsDown" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDown">IsDown()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsDown()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_DebugInput_InputLayer_IsDownPressing_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDownPressing*"></a>
+  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputLayer_IsDownPressing" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDownPressing">IsDownPressing()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsDownPressing()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_DebugInput_InputLayer_IsDownReleased_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDownReleased*"></a>
+  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputLayer_IsDownReleased" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.IsDownReleased">IsDownReleased()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsDownReleased()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_DebugInput_InputLayer_IsKeyDown_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.IsKeyDown*"></a>
+  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputLayer_IsKeyDown_System_String_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.IsKeyDown(System.String)">IsKeyDown(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsKeyDown(string keycode)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -299,8 +267,8 @@ public List&lt;PoolItemBehaviour&gt; allItems</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UnityEngine.Transform</span></td>
-        <td><span class="parametername">customTransform</span></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">keycode</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -315,38 +283,121 @@ public List&lt;PoolItemBehaviour&gt; allItems</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.html">PoolItemBehaviour</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="BennyKok_RuntimeDebug_Utils_ObjectPool_Recycle_" data-uid="BennyKok.RuntimeDebug.Utils.ObjectPool.Recycle*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Utils_ObjectPool_Recycle_BennyKok_RuntimeDebug_Utils_PoolItemBehaviour_" data-uid="BennyKok.RuntimeDebug.Utils.ObjectPool.Recycle(BennyKok.RuntimeDebug.Utils.PoolItemBehaviour)">Recycle(PoolItemBehaviour)</h4>
+  <a id="BennyKok_RuntimeDebug_DebugInput_InputLayer_IsMenuAction_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.IsMenuAction*"></a>
+  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputLayer_IsMenuAction" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.IsMenuAction">IsMenuAction()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Recycle(PoolItemBehaviour target)</code></pre>
+    <pre><code class="lang-csharp hljs">bool IsMenuAction()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BennyKok.RuntimeDebug.Utils.PoolItemBehaviour.html">PoolItemBehaviour</a></td>
-        <td><span class="parametername">target</span></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_DebugInput_InputLayer_IsUp_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUp*"></a>
+  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputLayer_IsUp" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUp">IsUp()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsUp()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_DebugInput_InputLayer_IsUpPressing_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUpPressing*"></a>
+  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputLayer_IsUpPressing" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUpPressing">IsUpPressing()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsUpPressing()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_DebugInput_InputLayer_IsUpReleased_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUpReleased*"></a>
+  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputLayer_IsUpReleased" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.IsUpReleased">IsUpReleased()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsUpReleased()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_DebugInput_InputLayer_Update_" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.Update*"></a>
+  <h4 id="BennyKok_RuntimeDebug_DebugInput_InputLayer_Update" data-uid="BennyKok.RuntimeDebug.DebugInput.InputLayer.Update">Update()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Update()</code></pre>
+  </div>
 </article>
           </div>
           

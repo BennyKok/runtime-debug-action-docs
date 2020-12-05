@@ -240,20 +240,20 @@ public Settings settings</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BennyKok.RuntimeDebug.Data.InputLayer.html">InputLayer</a></td>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.DebugInput.InputLayer.html">InputLayer</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_IsIsSystemEnabled_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsIsSystemEnabled*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_IsIsSystemEnabled" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsIsSystemEnabled">IsIsSystemEnabled</h4>
+  <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_IsActive_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsActive*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_IsActive" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsActive">IsActive</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsIsSystemEnabled { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool IsActive { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -272,13 +272,13 @@ public Settings settings</code></pre>
   </table>
   
   
-  <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_IsVisible_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsVisible*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_IsVisible" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsVisible">IsVisible</h4>
+  <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_IsIsSystemEnabled_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsIsSystemEnabled*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_IsIsSystemEnabled" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsIsSystemEnabled">IsIsSystemEnabled</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsVisible { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool IsIsSystemEnabled { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -359,6 +359,28 @@ public Settings settings</code></pre>
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">BennyKok.RuntimeDebug.Utils.Singleton&lt;BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem&gt;.Awake()</span></div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_Disable_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Disable*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_Disable" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Disable">Disable()</h4>
+  <div class="markdown level1 summary"><p>To disable the system in runtime</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Disable()</code></pre>
+  </div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_Enable_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Enable*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_Enable" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Enable">Enable()</h4>
+  <div class="markdown level1 summary"><p>To enable back the system in runtime</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Enable()</code></pre>
+  </div>
   
   
   <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_GetFlag_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.GetFlag*"></a>
@@ -456,6 +478,29 @@ public Settings settings</code></pre>
   </table>
   
   
+  <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_Hide_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Hide*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_Hide" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Hide">Hide()</h4>
+  <div class="markdown level1 summary"><p>To hide the debug menu</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Hide()</code></pre>
+  </div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_Init_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Init*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_Init" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Init">Init()</h4>
+  <div class="markdown level1 summary"><p>Auto inject the RuntimeDebugSystem into your scene as a singleton</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+public static void Init()</code></pre>
+  </div>
+  
+  
   <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_RegisterActions_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterActions*"></a>
   <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_RegisterActions_BennyKok_RuntimeDebug_Actions_BaseDebugAction___" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterActions(BennyKok.RuntimeDebug.Actions.BaseDebugAction[])">RegisterActions(BaseDebugAction[])</h4>
   <div class="markdown level1 summary"><p>Register any actions to the system</p>
@@ -520,6 +565,108 @@ public Settings settings</code></pre>
   </table>
   
   
+  <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_RegisterActionsAuto_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterActionsAuto*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_RegisterActionsAuto_System_Object_System_String_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterActionsAuto(System.Object,System.String)">RegisterActionsAuto(Object, String)</h4>
+  <div class="markdown level1 summary"><p>Register actions automatically with reflection looking through method,field,prop with <a class="xref" href="BennyKok.RuntimeDebug.Attributes.DebugActionAttribute.html">DebugActionAttribute</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BaseDebugAction[] RegisterActionsAuto(object target, string group = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>The target to look at</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>Optional group name, if null, will be using the target type's name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseDebugAction.html">BaseDebugAction</a>[]</td>
+        <td><p>The array of the actions created, use this as a reference for action unregistering</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_RegisterActionsAuto_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterActionsAuto*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_RegisterActionsAuto_UnityEngine_Component_System_String_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterActionsAuto(UnityEngine.Component,System.String)">RegisterActionsAuto(Component, String)</h4>
+  <div class="markdown level1 summary"><p>Register actions automatically with reflection looking through method,field,prop with <a class="xref" href="BennyKok.RuntimeDebug.Attributes.DebugActionAttribute.html">DebugActionAttribute</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BaseDebugAction[] RegisterActionsAuto(Component component, string group = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Component</span></td>
+        <td><span class="parametername">component</span></td>
+        <td><p>The component to look at</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>Optional group name, if null, will be using the GameObject's name</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseDebugAction.html">BaseDebugAction</a>[]</td>
+        <td><p>The array of the actions created, use this as a reference for action unregistering</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_ReleaseInputBlock_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.ReleaseInputBlock*"></a>
   <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_ReleaseInputBlock" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.ReleaseInputBlock">ReleaseInputBlock()</h4>
   <div class="markdown level1 summary"></div>
@@ -541,7 +688,7 @@ public Settings settings</code></pre>
   
   
   <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_SetCustomInputLayer_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SetCustomInputLayer*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_SetCustomInputLayer_BennyKok_RuntimeDebug_Data_InputLayer_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SetCustomInputLayer(BennyKok.RuntimeDebug.Data.InputLayer)">SetCustomInputLayer(InputLayer)</h4>
+  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_SetCustomInputLayer_BennyKok_RuntimeDebug_DebugInput_InputLayer_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SetCustomInputLayer(BennyKok.RuntimeDebug.DebugInput.InputLayer)">SetCustomInputLayer(InputLayer)</h4>
   <div class="markdown level1 summary"><p>Set a custom input layer which handles the core part of the keyboard input of the debug system</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -560,7 +707,7 @@ public Settings settings</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BennyKok.RuntimeDebug.Data.InputLayer.html">InputLayer</a></td>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.DebugInput.InputLayer.html">InputLayer</a></td>
         <td><span class="parametername">inputLayer</span></td>
         <td><p>Your custom input layer</p>
 </td>
@@ -602,6 +749,17 @@ public Settings settings</code></pre>
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_Show_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Show*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_Show" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Show">Show()</h4>
+  <div class="markdown level1 summary"><p>To show the debug menu</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Show()</code></pre>
+  </div>
   
   
   <a id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_UnregisterActions_" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.UnregisterActions*"></a>
@@ -693,12 +851,12 @@ public Settings settings</code></pre>
   </h3>
   
   
-  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_OnDebugMenuToggle" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.OnDebugMenuToggle">OnDebugMenuToggle</h4>
+  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_OnDebugMenuToggleEvent" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.OnDebugMenuToggleEvent">OnDebugMenuToggleEvent</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event Action&lt;bool&gt; OnDebugMenuToggle</code></pre>
+    <pre><code class="lang-csharp hljs">public event Action&lt;bool&gt; OnDebugMenuToggleEvent</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
