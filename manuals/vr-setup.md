@@ -29,6 +29,10 @@ If you starting off with Unity's XR Interaction Toolkit, RDA already comes with 
 
 ![](../images/2020-12-06-15-21-20.png)
 
+### Default Input
+
+With XR Interaction Toolkit, the default trigger action is with the trigger button on your controller while you use the controller pointer like on the mobile touch screen.
+
 ### XR Device Simulator
 
 If you don't have device to test, you can use the "XR Device Simulator"
@@ -54,3 +58,7 @@ If you are not familiar with Oculus Integration, read more on Oculus Developer s
 And you will need to also activate the new Input System with Oculus Integration, make sure it is set to both.
 
 ![](../images/2020-12-06-15-43-29.png)
+
+### Default Input
+
+With XR Interaction Toolkit, the default trigger action is with the "A" button (primary button) on your controller while you use the controller pointer like on the mobile touch screen.
