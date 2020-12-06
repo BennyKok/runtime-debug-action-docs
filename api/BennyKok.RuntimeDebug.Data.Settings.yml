@@ -13,6 +13,7 @@ items:
   - BennyKok.RuntimeDebug.Data.Settings.addSceneOptions
   - BennyKok.RuntimeDebug.Data.Settings.addThemeOptions
   - BennyKok.RuntimeDebug.Data.Settings.disableLogger
+  - BennyKok.RuntimeDebug.Data.Settings.enableInputNavigation
   - BennyKok.RuntimeDebug.Data.Settings.enableMode
   - BennyKok.RuntimeDebug.Data.Settings.eventSystemPrefab
   - BennyKok.RuntimeDebug.Data.Settings.GetDefaultTheme
@@ -452,6 +453,60 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: BennyKok.RuntimeDebug.Data.Settings.enableInputNavigation
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.enableInputNavigation
+  id: enableInputNavigation
+  parent: BennyKok.RuntimeDebug.Data.Settings
+  langs:
+  - csharp
+  - vb
+  name: enableInputNavigation
+  nameWithType: Settings.enableInputNavigation
+  fullName: BennyKok.RuntimeDebug.Data.Settings.enableInputNavigation
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: enableInputNavigation
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 45
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: >-
+      [Title("Input", 0)]
+
+      [Tooltip("Do you want use keyboard/input system device for navigation in the menu?")]
+
+      public bool enableInputNavigation
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Title("Input", 0)>
+
+      <Tooltip("Do you want use keyboard/input system device for navigation in the menu?")>
+
+      Public enableInputNavigation As Boolean
+  attributes:
+  - type: BennyKok.RuntimeDebug.Utils.TitleAttribute
+    ctor: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Int32)
+    arguments:
+    - type: System.String
+      value: Input
+    - type: System.Int32
+      value: 0
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Do you want use keyboard/input system device for navigation in the menu?
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: BennyKok.RuntimeDebug.Data.Settings.inputLayer
   commentId: F:BennyKok.RuntimeDebug.Data.Settings.inputLayer
   id: inputLayer
@@ -470,40 +525,29 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: inputLayer
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 48
+    startLine: 51
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
   syntax:
     content: >-
-      [Title("Input", 0)]
-
-      [Visibility("useInputSystemLayer", false, true, drawChildrenOnly = true)]
+      [Visibility("!useInputSystemLayer", true, true, drawChildrenOnly = true)]
 
       public InputManagerLayer inputLayer
     return:
       type: BennyKok.RuntimeDebug.DebugInput.InputManagerLayer
     content.vb: >-
-      <Title("Input", 0)>
-
-      <Visibility("useInputSystemLayer", False, True, drawChildrenOnly:=True)>
+      <Visibility("!useInputSystemLayer", True, True, drawChildrenOnly:=True)>
 
       Public inputLayer As InputManagerLayer
   attributes:
-  - type: BennyKok.RuntimeDebug.Utils.TitleAttribute
-    ctor: BennyKok.RuntimeDebug.Utils.TitleAttribute.#ctor(System.String,System.Int32)
-    arguments:
-    - type: System.String
-      value: Input
-    - type: System.Int32
-      value: 0
   - type: BennyKok.RuntimeDebug.Utils.VisibilityAttribute
     ctor: BennyKok.RuntimeDebug.Utils.VisibilityAttribute.#ctor(System.String,System.Boolean,System.Boolean)
     arguments:
     - type: System.String
-      value: useInputSystemLayer
+      value: '!useInputSystemLayer'
     - type: System.Boolean
-      value: false
+      value: true
     - type: System.Boolean
       value: true
     namedArguments:
@@ -532,7 +576,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: touchToggleMode
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 55
+    startLine: 58
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -577,7 +621,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: hideCursorOnStart
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 56
+    startLine: 59
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -608,7 +652,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: showTooltipOnKeyboardNavigation
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 61
+    startLine: 64
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -666,7 +710,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: showTooltipOnPointerHover
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 62
+    startLine: 65
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -697,7 +741,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: selectionColorHighlight
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 67
+    startLine: 70
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -755,7 +799,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: selectionUnderlineHighlight
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 68
+    startLine: 71
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -786,7 +830,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: disableLogger
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 71
+    startLine: 74
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -831,7 +875,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: loggerMaxLine
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 72
+    startLine: 75
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -862,7 +906,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: addApplicationOptions
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 77
+    startLine: 80
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -920,7 +964,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: addQualityOptions
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 78
+    startLine: 81
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -951,7 +995,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: addSceneOptions
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 79
+    startLine: 82
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -982,7 +1026,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: addThemeOptions
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 80
+    startLine: 83
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -1013,7 +1057,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: addLoggerOptions
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 81
+    startLine: 84
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -1044,7 +1088,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: IsSystemEnabled
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 132
+    startLine: 137
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -1078,7 +1122,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: IsShowTouchToggle
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 147
+    startLine: 152
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -1110,7 +1154,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetDefaultTheme
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 159
+    startLine: 167
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -1142,7 +1186,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetThemeByName
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 161
+    startLine: 169
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data

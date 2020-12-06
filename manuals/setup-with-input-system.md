@@ -1,5 +1,5 @@
 ---
-name: Setup with Input System
+name: Input System Setup
 ---
 
 # Setup with Input System

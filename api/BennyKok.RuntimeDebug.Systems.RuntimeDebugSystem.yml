@@ -16,6 +16,7 @@ items:
   - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Init
   - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.InputLayer
   - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsActive
+  - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.isInputLayerReady
   - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsIsSystemEnabled
   - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.OnDebugMenuToggleEvent
   - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.PREF_KEY_THEME
@@ -57,11 +58,11 @@ items:
   example: []
   syntax:
     content: >-
-      [AddComponentMenu("")]
+      [AddComponentMenu("Runtime Debug Action/System/Runtime Debug System")]
 
       public class RuntimeDebugSystem : Singleton<RuntimeDebugSystem>
     content.vb: >-
-      <AddComponentMenu("")>
+      <AddComponentMenu("Runtime Debug Action/System/Runtime Debug System")>
 
       Public Class RuntimeDebugSystem
           Inherits Singleton(Of RuntimeDebugSystem)
@@ -79,7 +80,7 @@ items:
     ctor: UnityEngine.AddComponentMenu.#ctor(System.String)
     arguments:
     - type: System.String
-      value: ''
+      value: Runtime Debug Action/System/Runtime Debug System
   modifiers.csharp:
   - public
   - class
@@ -150,7 +151,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: PREF_KEY_THEME
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 38
+    startLine: 46
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -183,7 +184,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: settings
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 42
+    startLine: 50
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -224,25 +225,27 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: runtimeDebugUI
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 43
+    startLine: 53
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
   syntax:
     content: >-
-      [NonSerialized]
+      [Comment("Optional, if the UI not found, will be creating from the theme prefabs in the systems")]
 
       public DebugUIHandler runtimeDebugUI
     return:
       type: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
     content.vb: >-
-      <NonSerialized>
+      <Comment("Optional, if the UI not found, will be creating from the theme prefabs in the systems")>
 
       Public runtimeDebugUI As DebugUIHandler
   attributes:
-  - type: System.NonSerializedAttribute
-    ctor: System.NonSerializedAttribute.#ctor
-    arguments: []
+  - type: BennyKok.RuntimeDebug.Utils.CommentAttribute
+    ctor: BennyKok.RuntimeDebug.Utils.CommentAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Optional, if the UI not found, will be creating from the theme prefabs in the systems
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -265,7 +268,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: allActions
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 45
+    startLine: 55
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -306,7 +309,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: allFlags
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 46
+    startLine: 56
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -347,7 +350,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnDebugMenuToggleEvent
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 50
+    startLine: 60
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -378,7 +381,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: IsActive
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 53
+    startLine: 63
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -397,6 +400,39 @@ items:
   - Public
   - Shared
   - ReadOnly
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.isInputLayerReady
+  commentId: F:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.isInputLayerReady
+  id: isInputLayerReady
+  parent: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
+  langs:
+  - csharp
+  - vb
+  name: isInputLayerReady
+  nameWithType: RuntimeDebugSystem.isInputLayerReady
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.isInputLayerReady
+  type: Field
+  source:
+    remote:
+      path: Runtime/Systems/RuntimeDebugSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: isInputLayerReady
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
+    startLine: 64
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Systems
+  syntax:
+    content: public static bool isInputLayerReady
+    return:
+      type: System.Boolean
+    content.vb: Public Shared isInputLayerReady As Boolean
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 - uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsIsSystemEnabled
   commentId: P:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsIsSystemEnabled
   id: IsIsSystemEnabled
@@ -415,7 +451,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: IsIsSystemEnabled
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 54
+    startLine: 65
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -452,7 +488,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Settings
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 56
+    startLine: 67
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -489,7 +525,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: UIHandler
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 57
+    startLine: 68
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -526,7 +562,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: InputLayer
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 58
+    startLine: 69
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -563,7 +599,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: SetCustomInputLayer
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 67
+    startLine: 78
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -601,7 +637,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Awake
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 72
+    startLine: 83
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -634,7 +670,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: SetTheme
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 163
+    startLine: 176
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -675,7 +711,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Disable
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 184
+    startLine: 202
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -707,7 +743,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Enable
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 194
+    startLine: 212
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -739,7 +775,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Show
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 203
+    startLine: 221
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -771,7 +807,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Hide
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 211
+    startLine: 229
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -803,7 +839,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: RequsetInputBlock
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 218
+    startLine: 236
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -833,7 +869,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ReleaseInputBlock
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 223
+    startLine: 241
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -863,7 +899,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetFlag
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 288
+    startLine: 307
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -904,7 +940,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetPersistantFlagValue
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 303
+    startLine: 322
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -948,7 +984,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: RegisterActions
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 313
+    startLine: 332
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -992,7 +1028,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: RegisterActionsAuto
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 332
+    startLine: 351
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -1036,7 +1072,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: RegisterActionsAuto
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 344
+    startLine: 363
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -1080,7 +1116,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: RegisterActions
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 475
+    startLine: 494
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -1121,7 +1157,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: UnregisterActionsByGroup
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 488
+    startLine: 507
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -1159,7 +1195,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: UnregisterActionsById
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 505
+    startLine: 524
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -1197,7 +1233,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: UnregisterActions
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 522
+    startLine: 541
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems

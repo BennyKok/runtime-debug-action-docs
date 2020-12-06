@@ -322,7 +322,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: RefreshCurrent
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 223
+    startLine: 225
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -352,7 +352,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: SetItem
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 228
+    startLine: 230
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -385,7 +385,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnBackNavigation
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 240
+    startLine: 244
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -417,7 +417,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: RefreshStatus
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 254
+    startLine: 258
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -447,7 +447,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Navigate
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 261
+    startLine: 265
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -480,7 +480,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: rowCount
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 304
+    startLine: 308
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -511,7 +511,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: RowCount
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 310
+    startLine: 314
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -548,7 +548,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: scrollRect
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 327
+    startLine: 331
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -579,7 +579,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: childItems
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 329
+    startLine: 333
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -610,7 +610,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: childBufferStart
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 331
+    startLine: 335
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -641,7 +641,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: sourceDataRowStart
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 333
+    startLine: 337
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -672,7 +672,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ignoreScrollChange
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 335
+    startLine: 339
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -703,7 +703,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: previousBuildHeight
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 336
+    startLine: 340
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -734,7 +734,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: rowsAboveBelow
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 337
+    startLine: 341
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -767,7 +767,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Refresh
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 344
+    startLine: 348
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -801,7 +801,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Refresh
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 355
+    startLine: 359
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -842,7 +842,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Refresh
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 377
+    startLine: 381
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -880,7 +880,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Clear
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 393
+    startLine: 397
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -914,7 +914,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ScrollToRow
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 402
+    startLine: 406
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -952,7 +952,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: AutoScroll
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 407
+    startLine: 411
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -985,7 +985,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetRowScrollPosition
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 419
+    startLine: 423
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -1026,7 +1026,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetRowItem
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 458
+    startLine: 462
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -1068,7 +1068,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: CheckChildItems
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 471
+    startLine: 475
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -1102,7 +1102,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnScrollChanged
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 505
+    startLine: 509
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -1137,7 +1137,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ReorganiseContent
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 514
+    startLine: 520
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -1172,7 +1172,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: UpdateChild
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 605
+    startLine: 611
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -1209,7 +1209,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: UpdateContentHeight
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 652
+    startLine: 658
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -1241,7 +1241,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: DisableAllChildren
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 660
+    startLine: 666
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI

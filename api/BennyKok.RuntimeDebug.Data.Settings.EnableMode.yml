@@ -5,8 +5,8 @@ items:
   id: Settings.EnableMode
   parent: BennyKok.RuntimeDebug.Data
   children:
-  - BennyKok.RuntimeDebug.Data.Settings.EnableMode.AlwaysOff
-  - BennyKok.RuntimeDebug.Data.Settings.EnableMode.AlwaysOn
+  - BennyKok.RuntimeDebug.Data.Settings.EnableMode.AutoOn
+  - BennyKok.RuntimeDebug.Data.Settings.EnableMode.Off
   - BennyKok.RuntimeDebug.Data.Settings.EnableMode.OnInDevelopmentBuild
   langs:
   - csharp
@@ -22,7 +22,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: EnableMode
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 111
+    startLine: 116
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -35,32 +35,32 @@ items:
   modifiers.vb:
   - Public
   - Enum
-- uid: BennyKok.RuntimeDebug.Data.Settings.EnableMode.AlwaysOn
-  commentId: F:BennyKok.RuntimeDebug.Data.Settings.EnableMode.AlwaysOn
-  id: AlwaysOn
+- uid: BennyKok.RuntimeDebug.Data.Settings.EnableMode.AutoOn
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.EnableMode.AutoOn
+  id: AutoOn
   parent: BennyKok.RuntimeDebug.Data.Settings.EnableMode
   langs:
   - csharp
   - vb
-  name: AlwaysOn
-  nameWithType: Settings.EnableMode.AlwaysOn
-  fullName: BennyKok.RuntimeDebug.Data.Settings.EnableMode.AlwaysOn
+  name: AutoOn
+  nameWithType: Settings.EnableMode.AutoOn
+  fullName: BennyKok.RuntimeDebug.Data.Settings.EnableMode.AutoOn
   type: Field
   source:
     remote:
       path: Runtime/Data/Settings.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: AlwaysOn
+    id: AutoOn
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 116
+    startLine: 121
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
-  summary: "\nThe debug system is always on\n"
+  summary: "\nThe debug system is auto injected to the scene\n"
   example: []
   syntax:
-    content: AlwaysOn = 0
+    content: AutoOn = 0
     return:
       type: BennyKok.RuntimeDebug.Data.Settings.EnableMode
   modifiers.csharp:
@@ -69,32 +69,32 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: BennyKok.RuntimeDebug.Data.Settings.EnableMode.AlwaysOff
-  commentId: F:BennyKok.RuntimeDebug.Data.Settings.EnableMode.AlwaysOff
-  id: AlwaysOff
+- uid: BennyKok.RuntimeDebug.Data.Settings.EnableMode.Off
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.EnableMode.Off
+  id: Off
   parent: BennyKok.RuntimeDebug.Data.Settings.EnableMode
   langs:
   - csharp
   - vb
-  name: AlwaysOff
-  nameWithType: Settings.EnableMode.AlwaysOff
-  fullName: BennyKok.RuntimeDebug.Data.Settings.EnableMode.AlwaysOff
+  name: Off
+  nameWithType: Settings.EnableMode.Off
+  fullName: BennyKok.RuntimeDebug.Data.Settings.EnableMode.Off
   type: Field
   source:
     remote:
       path: Runtime/Data/Settings.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: AlwaysOff
+    id: Off
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 121
+    startLine: 126
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
-  summary: "\nThe debug system is always off\n"
+  summary: "\nThe debug system is off by default\n"
   example: []
   syntax:
-    content: AlwaysOff = 1
+    content: Off = 1
     return:
       type: BennyKok.RuntimeDebug.Data.Settings.EnableMode
   modifiers.csharp:
@@ -121,11 +121,11 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnInDevelopmentBuild
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 126
+    startLine: 131
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
-  summary: "\nThe debug system is only on in &apos;Development Build&apos; \n"
+  summary: "\nThe debug system is only auto injected in &apos;Development Build&apos; \n"
   example: []
   syntax:
     content: OnInDevelopmentBuild = 2

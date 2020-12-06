@@ -1,22 +1,25 @@
-- order: 100
+- href: QuickStart\index.md
+  order: 100
   name: ➜ Quick Start
-  href: QuickStart\index.md
-- order: 90
+- href: CustomActions\index.md
+  order: 90
   name: Adding Actions
-  href: CustomActions\index.md
-- order: 80
+- href: default-actions.md
+  order: 80
   name: Default Actions
-  href: default-actions.md
-- order: 40
+- href: custom-themes.md
+  order: 40
   name: Custom Themes
-  href: custom-themes.md
-- order: 0
+- href: debug-menu-event.md
+  order: 0
   name: Debug Menu Event
-  href: debug-menu-event.md
-- order: 0
-  name: Setup with Input System
-  href: setup-with-input-system.md
-- order: 0
-  name: Testing With Device Device Simulator
-  href: testing-with-mobile.md
+- href: setup-with-input-system.md
+  order: 0
+  name: Input System Setup
+- href: testing-with-mobile.md
+  order: 0
+  name: Mobile Device Simulator Setup
+- href: vr-setup.md
+  order: 0
+  name: VR Setup
 

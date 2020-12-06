@@ -5,8 +5,9 @@ items:
   id: Settings.TouchToggleMode
   parent: BennyKok.RuntimeDebug.Data
   children:
-  - BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.Always
+  - BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.AlwaysOn
   - BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.MobileOnly
+  - BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.Off
   langs:
   - csharp
   - vb
@@ -21,7 +22,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: TouchToggleMode
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 98
+    startLine: 101
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -52,7 +53,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: MobileOnly
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 103
+    startLine: 106
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -68,32 +69,64 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.Always
-  commentId: F:BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.Always
-  id: Always
+- uid: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.AlwaysOn
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.AlwaysOn
+  id: AlwaysOn
   parent: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
   langs:
   - csharp
   - vb
-  name: Always
-  nameWithType: Settings.TouchToggleMode.Always
-  fullName: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.Always
+  name: AlwaysOn
+  nameWithType: Settings.TouchToggleMode.AlwaysOn
+  fullName: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.AlwaysOn
   type: Field
   source:
     remote:
       path: Runtime/Data/Settings.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: Always
+    id: AlwaysOn
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 108
+    startLine: 111
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
   summary: "\nThe UI toggle is enabled no matter what build platfrom\n"
   example: []
   syntax:
-    content: Always = 1
+    content: AlwaysOn = 1
+    return:
+      type: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.Off
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.Off
+  id: Off
+  parent: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
+  langs:
+  - csharp
+  - vb
+  name: Off
+  nameWithType: Settings.TouchToggleMode.Off
+  fullName: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.Off
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Off
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 113
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: Off = 2
     return:
       type: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
   modifiers.csharp:

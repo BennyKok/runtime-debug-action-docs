@@ -4,6 +4,7 @@ items:
   commentId: N:BennyKok.RuntimeDebug.Components.UI
   id: BennyKok.RuntimeDebug.Components.UI
   children:
+  - BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera
   - BennyKok.RuntimeDebug.Components.UI.ChangeSiblingIndexOnAwake
   - BennyKok.RuntimeDebug.Components.UI.DebugSystemEventHandler
   - BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
@@ -36,6 +37,11 @@ references:
   name: DebugSystemEventHandler
   nameWithType: DebugSystemEventHandler
   fullName: BennyKok.RuntimeDebug.Components.UI.DebugSystemEventHandler
+- uid: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera
+  name: AutoFacingCamera
+  nameWithType: AutoFacingCamera
+  fullName: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera
 - uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
   commentId: T:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler
   parent: BennyKok.RuntimeDebug.Components.UI

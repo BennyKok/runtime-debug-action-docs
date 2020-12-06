@@ -43,10 +43,16 @@ RuntimeDebugAction support multiple input method for different platform and inpu
 | Platform | Device | Input Manager / Input System | Note
 | ----------- | ----------- | ----------- | ----------- |
 | Standalone | Keyboard | Both | Tested with Windows |
-| Standalone | Controller | Input System | Tested with Xbox controller for Windows |
+| Standalone | Controller | Input System* | Tested with Xbox controller for Windows |
 | Mobile | Touch |  Both  | Tested with Android / iOS |
+| VR* | VR Controller | Input System* | Tested with Oculus Quest 2 with Unity XR Interaction Toolkit and Oculus Integration
 
-For the new Input System setup, please [see here](~/manuals/setup-with-input-system.md). With the Input System enable, its possible to support more input devices for the debug menu navigation with custom input action mapping.
+*For the new Input System setup, please [see here](~/manuals/setup-with-input-system.md). With the Input System enable, its possible to support more input devices for the debug menu navigation with custom input action mapping.
+
+*For setting up with VR project please [see here](~/manuals/vr-setup.md).
+
+> [!NOTE]
+> This RDA target desktop and mobile platform primarily, while with Unity's new Input System, Im able to add support for Controller and VR device's input, but I can't guarantee the full potential of RDA especially on VR device, for instance without the keyboard, the shortcut feature won't work in this case.
 
 ### Lifecycle
 

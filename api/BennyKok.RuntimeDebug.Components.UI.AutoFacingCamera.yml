@@ -1,0 +1,166 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera
+  id: AutoFacingCamera
+  parent: BennyKok.RuntimeDebug.Components.UI
+  children:
+  - BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.distanceAwayCamera
+  - BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.recenterTime
+  langs:
+  - csharp
+  - vb
+  name: AutoFacingCamera
+  nameWithType: AutoFacingCamera
+  fullName: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera
+  type: Class
+  source:
+    remote:
+      path: Runtime/Components/UI/AutoFacingCamera.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: AutoFacingCamera
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/AutoFacingCamera.cs
+    startLine: 5
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: 'public class AutoFacingCamera : MonoBehaviour'
+    content.vb: >-
+      Public Class AutoFacingCamera
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.distanceAwayCamera
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.distanceAwayCamera
+  id: distanceAwayCamera
+  parent: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera
+  langs:
+  - csharp
+  - vb
+  name: distanceAwayCamera
+  nameWithType: AutoFacingCamera.distanceAwayCamera
+  fullName: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.distanceAwayCamera
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/AutoFacingCamera.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: distanceAwayCamera
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/AutoFacingCamera.cs
+    startLine: 7
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public float distanceAwayCamera
+    return:
+      type: System.Single
+    content.vb: Public distanceAwayCamera As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.recenterTime
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.recenterTime
+  id: recenterTime
+  parent: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera
+  langs:
+  - csharp
+  - vb
+  name: recenterTime
+  nameWithType: AutoFacingCamera.recenterTime
+  fullName: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.recenterTime
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/AutoFacingCamera.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: recenterTime
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/AutoFacingCamera.cs
+    startLine: 8
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public float recenterTime
+    return:
+      type: System.Single
+    content.vb: Public recenterTime As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BennyKok.RuntimeDebug.Components.UI
+  commentId: N:BennyKok.RuntimeDebug.Components.UI
+  name: BennyKok.RuntimeDebug.Components.UI
+  nameWithType: BennyKok.RuntimeDebug.Components.UI
+  fullName: BennyKok.RuntimeDebug.Components.UI
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single

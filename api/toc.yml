@@ -41,6 +41,8 @@
 - uid: BennyKok.RuntimeDebug.Components.UI
   name: BennyKok.RuntimeDebug.Components.UI
   items:
+  - uid: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera
+    name: AutoFacingCamera
   - uid: BennyKok.RuntimeDebug.Components.UI.ChangeSiblingIndexOnAwake
     name: ChangeSiblingIndexOnAwake
   - uid: BennyKok.RuntimeDebug.Components.UI.DebugSystemEventHandler

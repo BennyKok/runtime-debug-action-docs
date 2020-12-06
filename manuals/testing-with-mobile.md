@@ -1,5 +1,5 @@
 ---
-name: Testing With Device Device Simulator
+name: Mobile Device Simulator Setup
 order: 0
 ---
 
