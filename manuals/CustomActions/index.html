@@ -63,11 +63,97 @@
 <h1 id="adding-actions">Adding Actions</h1>
 
 <h2 id="overview">Overview</h2>
-<p>Adding custom debug action to your game is extremely easy, and you have two options</p>
+<p>Adding custom debug action to your game is extremely easy, and you have three options</p>
 <ol>
+<li><a href="#attribute-reflection">Attribute Reflection</a></li>
 <li><a href="#fluent-api">Fluent API</a></li>
 <li><a href="#debug-action-component">Debug Action Component</a></li>
 </ol>
+<h2 id="attribute-reflection">Attribute Reflection</h2>
+<p>A newly added feature is the ability to auto register actions in a class with reflection under the hood, which makes the action creation process much easier. Using the <a href="../../api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html#BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_RegisterActionsAuto_System_Object_System_String_"><code>RuntimeDebugSystem.RegisterActionsAuto</code></a> method, the system will look for all public field, property, method, method with parameters which has a <a href="../../api/BennyKok.RuntimeDebug.Attributes.DebugActionAttribute.html"><code>DebugAction</code></a> attribute.</p>
+<p>Supported type for field, property</p>
+<ul>
+<li>string</li>
+<li>int</li>
+<li>float</li>
+<li>bool</li>
+<li>enum</li>
+</ul>
+<p>Supported type for method with parameter</p>
+<ul>
+<li>string</li>
+<li>int</li>
+<li>float</li>
+<li>bool</li>
+</ul>
+<h3 id="to-register">To register</h3>
+<p>You can store the action generated somewhere for unregistering.</p>
+<pre><code class="lang-csharp">actions = RuntimeDebugSystem.RegisterActionsAuto(this);
+</code></pre>
+<h3 id="to-unregister">To unregister</h3>
+<pre><code class="lang-csharp">RuntimeDebugSystem.UnregisterActions(actions);
+</code></pre>
+<h3 id="or-simply-extends-you-component-from-runtimedebugbehaviour">Or simply extends you component from RuntimeDebugBehaviour</h3>
+<p>Which already handles the registering and unregistering for you.</p>
+<pre><code class="lang-csharp">public abstract class RuntimeDebugBehaviour : MonoBehaviour
+{
+    private BaseDebugAction[] actions;
+
+    protected virtual void Awake()
+    {
+        actions = RuntimeDebugSystem.RegisterActionsAuto(this);
+    }
+
+    protected virtual void OnDestroy()
+    {
+        RuntimeDebugSystem.UnregisterActions(actions);
+    }
+}
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>To prevent any ghost action hanging in the debug menu, it's suggested to handle your actions' unregistration if they were added from any <code>MonoBehaviour</code> and maybe disabled or destroy in future, e.g.</p>
+<ol>
+<li>Register actions in the <code>OnAwake</code> and unregister actions in the <code>OnDestroy</code></li>
+<li>Register actions in the <code>OnEnable</code> and unregister actions in the <code>OnDisable</code></li>
+</ol>
+</div>
+<h3 id="method-example-button-action">[Method] Example Button Action</h3>
+<pre><code class="lang-csharp">[DebugAction(shortcutKey = &quot;q&quot;, closePanelAfterTrigger = true)]
+public void SpawnACube()
+{
+    var bdy = GameObject.CreatePrimitive(PrimitiveType.Cube)
+                        .AddComponent&lt;Rigidbody&gt;();
+
+    bdy.gameObject.AddComponent&lt;BoxCollider&gt;();
+    bdy.transform.position = new Vector3(0, 3, UnityEngine.Random.Range(-2, 2));
+    bdy.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+    bdy.AddExplosionForce(2, Vector3.zero, 10);
+}
+</code></pre>
+<p><img src="../../images/2020-12-06-17-40-55.png" alt=""></p>
+<h3 id="method-with-parameters-example-input-action">[Method with Parameters] Example Input Action</h3>
+<pre><code class="lang-csharp">[DebugAction]
+public void LogSum(int a, int b)
+{
+    Debug.Log(a + b);
+}
+</code></pre>
+<p><img src="../../images/2020-12-06-18-21-48.png" alt=""></p>
+<h3 id="property-example-string-input-action">[Property] Example String Input Action</h3>
+<pre><code class="lang-csharp">[DebugAction]
+public string GameOverText
+{
+    get =&gt; gameOverText.text.text;
+    set =&gt; gameOverText.text.SetText(value);
+}
+</code></pre>
+<p><img src="../../images/2020-12-06-17-44-26.png" alt=""></p>
+<h3 id="field-example-float-input-action">[Field] Example Float Input Action</h3>
+<pre><code class="lang-csharp">[DebugAction(closePanelAfterTrigger = true)]
+public float obstacleVelocity = 2;
+</code></pre>
+<p><img src="../../images/2020-12-06-17-44-37.png" alt=""></p>
 <h2 id="fluent-api">Fluent API</h2>
 <p>The <a href="../../api/BennyKok.RuntimeDebug.Actions.DebugActionBuilder.html"><code>DebugActionBuilder</code></a> is the builder class for creating actions.</p>
 <pre><code class="lang-csharp">var debugAction = DebugActionBuilder.Button()
@@ -82,12 +168,12 @@
         .WithName(&quot;Your actions&quot;)
 );
 </code></pre>
-<div class="WARNING">
-<h5>Warning</h5>
-<p>To prevent any ghost action hanging in the debug menu, it's suggested to handle your actions' unregistration if they were added from any <code>MonoBehaviour</code>, e.g.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>To prevent any ghost action hanging in the debug menu, it's suggested to handle your actions' unregistration if they were added from any <code>MonoBehaviour</code> and maybe disabled or destroy in future, e.g.</p>
 <ol>
-<li>Register actions in the <code>OnEnable</code> and unregister actions in the <code>OnDisable</code></li>
 <li>Register actions in the <code>OnAwake</code> and unregister actions in the <code>OnDestroy</code></li>
+<li>Register actions in the <code>OnEnable</code> and unregister actions in the <code>OnDisable</code></li>
 </ol>
 </div>
 <h3 id="unregister-actions">Unregister Actions</h3>

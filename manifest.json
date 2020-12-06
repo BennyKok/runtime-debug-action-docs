@@ -1207,6 +1207,50 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/2020-12-06-17-40-55.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-12-06-17-40-55.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-12-06-17-44-26.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-12-06-17-44-26.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-12-06-17-44-37.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-12-06-17-44-37.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-12-06-18-21-48.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-12-06-18-21-48.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
@@ -1224,7 +1268,7 @@
       "output": {
         ".html": {
           "relative_path": "manuals/CustomActions/index.html",
-          "hash": "UJWOlR/FgoebaYaD6h+VvQ=="
+          "hash": "bsxJ8Vk2dNXyVwzV9bf5GA=="
         }
       },
       "is_incremental": false,
@@ -1320,7 +1364,7 @@
       "output": {
         ".html": {
           "relative_path": "manuals/vr-setup.html",
-          "hash": "tCdhA1leHMEh3axbqFf6xA=="
+          "hash": "9IIGV2khX7TDk0Ki5Y/T0g=="
         }
       },
       "is_incremental": false,
