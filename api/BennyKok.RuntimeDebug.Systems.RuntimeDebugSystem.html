@@ -89,7 +89,7 @@
   <h6><strong>Assembly</strong>: com.bennykok.runtime-debug-action.dll</h6>
   <h5 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;&quot;)]
+    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;Runtime Debug Action/System/Runtime Debug System&quot;)]
 public class RuntimeDebugSystem : Singleton&lt;RuntimeDebugSystem&gt;</code></pre>
   </div>
   <h3 id="fields">Fields
@@ -146,6 +146,30 @@ public List&lt;DebugActionFlag&gt; allFlags</code></pre>
   </table>
   
   
+  <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_isInputLayerReady" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.isInputLayerReady">isInputLayerReady</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool isInputLayerReady</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_PREF_KEY_THEME" data-uid="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.PREF_KEY_THEME">PREF_KEY_THEME</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -175,7 +199,7 @@ public List&lt;DebugActionFlag&gt; allFlags</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NonSerialized]
+    <pre><code class="lang-csharp hljs">[Comment(&quot;Optional, if the UI not found, will be creating from the theme prefabs in the systems&quot;)]
 public DebugUIHandler runtimeDebugUI</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>

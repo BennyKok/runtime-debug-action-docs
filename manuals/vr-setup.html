@@ -5,11 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Enum Settings.TouchToggleMode
-   </title>
+    <title>VR Setup </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Enum Settings.TouchToggleMode
-   ">
+    <meta name="title" content="VR Setup ">
     <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -61,45 +59,41 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode">
-  
-  
-  <h1 id="BennyKok_RuntimeDebug_Data_Settings_TouchToggleMode" data-uid="BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode" class="text-break">Enum Settings.TouchToggleMode
-  </h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Data.html">BennyKok.RuntimeDebug.Data</a></h6>
-  <h6><strong>Assembly</strong>: com.bennykok.runtime-debug-action.dll</h6>
-  <h5 id="BennyKok_RuntimeDebug_Data_Settings_TouchToggleMode_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum TouchToggleMode</code></pre>
-  </div>
-  <h3 id="fields">Fields
-  </h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    <thead>
-    <tbody>
-      <tr>
-        <td id="BennyKok_RuntimeDebug_Data_Settings_TouchToggleMode_AlwaysOn">AlwaysOn</td>
-        <td><p>The UI toggle is enabled no matter what build platfrom</p>
-</td>
-      </tr>
-      <tr>
-        <td id="BennyKok_RuntimeDebug_Data_Settings_TouchToggleMode_MobileOnly">MobileOnly</td>
-        <td><p>The UI toggle will only be enabled when the build platfrom is a known mobile platform</p>
-</td>
-      </tr>
-      <tr>
-        <td id="BennyKok_RuntimeDebug_Data_Settings_TouchToggleMode_Off">Off</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </thead></thead></table>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="vr-setup">VR Setup</h1>
+
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Some features are not supported out of the box on VR devices, e.g. menu navigation, action's shortcut (keyboard), debug action input (keyboard)</p>
+</div>
+<p>With the VR setup, RDA comes with a specialized UI prefab for VR device. Which will atomically orient to your looking direction with smooth damping.</p>
+<p>The customized UI prefab, adds the framework specific Graphic Raycaster for all the Canvas components in the prefab.</p>
+<ul>
+<li><p><img src="../images/2020-12-06-15-39-31.png" alt=""><br>Used by XR Interaction Toolkit</p>
+</li>
+<li><p><img src="../images/2020-12-06-15-45-00.png" alt=""><br>Used by Oculus Integration</p>
+</li>
+</ul>
+<h3 id="vr-input">VR Input</h3>
+<p>With VR device, the default input action to toggle the menu has been set to pressing the two secondary button on both of your controller at the same time, so for Quest controller, is the two &quot;Y&quot; button.</p>
+<h2 id="using-xr-interaction-toolkit">Using XR Interaction Toolkit</h2>
+<p><a href="https://github.com/Unity-Technologies/XR-Interaction-Toolkit-Examples">https://github.com/Unity-Technologies/XR-Interaction-Toolkit-Examples</a></p>
+<p>If you starting off with Unity's XR Interaction Toolkit, RDA already comes with a settings preset for the XR Interaction Toolkit, and since the XR Interaction Toolkit is now using the InputSystem, head over the RDASettings and apply the &quot;RDASettings InputSystem XR&quot; preset.</p>
+<p><img src="../images/2020-12-06-15-18-47.png" alt=""></p>
+<p><img src="../images/2020-12-06-15-21-20.png" alt=""></p>
+<h3 id="xr-device-simulator">XR Device Simulator</h3>
+<p>If you don't have device to test, you can use the &quot;XR Device Simulator&quot;</p>
+<p><img src="../images/2020-12-06-15-26-58.png" alt=""></p>
+<p>From UPM, import &quot;XR Device Simulator&quot; from the samples, then drag and drop the simulator into the scene.</p>
+<p><img src="../images/2020-12-06-15-27-40.png" alt=""></p>
+<p>Everything should be ready to go.</p>
+<p><img src="../images/2020-12-06-15-28-56.png" alt=""></p>
+<h2 id="using-oculus-integration">Using Oculus Integration</h2>
+<p>If you are using Oculus Integration instead, apply the &quot;RDASettings InputSystem VR Oculus&quot; preset.</p>
+<p>If you are not familiar with Oculus Integration, read more on Oculus Developer site <a href="https://developer.oculus.com/documentation/unity/unity-import/">https://developer.oculus.com/documentation/unity/unity-import/</a></p>
+<p><img src="../images/2020-12-06-15-42-20.png" alt=""></p>
+<p>And you will need to also activate the new Input System with Oculus Integration, make sure it is set to both.</p>
+<p><img src="../images/2020-12-06-15-43-29.png" alt=""></p>
 </article>
           </div>
           
@@ -107,6 +101,9 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/BennyKok/runtime-debug-action-docs/blob/master/manuals/vr-setup.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

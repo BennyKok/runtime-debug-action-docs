@@ -904,6 +904,24 @@ references:
   commentId: N:BennyKok.RuntimeDebug.Components.UI
   fullName: BennyKok.RuntimeDebug.Components.UI
   nameWithType: BennyKok.RuntimeDebug.Components.UI
+- uid: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera
+  name: AutoFacingCamera
+  href: api/BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.html
+  commentId: T:BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera
+  fullName: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera
+  nameWithType: AutoFacingCamera
+- uid: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.distanceAwayCamera
+  name: distanceAwayCamera
+  href: api/BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.html#BennyKok_RuntimeDebug_Components_UI_AutoFacingCamera_distanceAwayCamera
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.distanceAwayCamera
+  fullName: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.distanceAwayCamera
+  nameWithType: AutoFacingCamera.distanceAwayCamera
+- uid: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.recenterTime
+  name: recenterTime
+  href: api/BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.html#BennyKok_RuntimeDebug_Components_UI_AutoFacingCamera_recenterTime
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.recenterTime
+  fullName: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.recenterTime
+  nameWithType: AutoFacingCamera.recenterTime
 - uid: BennyKok.RuntimeDebug.Components.UI.ChangeSiblingIndexOnAwake
   name: ChangeSiblingIndexOnAwake
   href: api/BennyKok.RuntimeDebug.Components.UI.ChangeSiblingIndexOnAwake.html
@@ -2906,6 +2924,12 @@ references:
   commentId: F:BennyKok.RuntimeDebug.Data.Settings.disableLogger
   fullName: BennyKok.RuntimeDebug.Data.Settings.disableLogger
   nameWithType: Settings.disableLogger
+- uid: BennyKok.RuntimeDebug.Data.Settings.enableInputNavigation
+  name: enableInputNavigation
+  href: api/BennyKok.RuntimeDebug.Data.Settings.html#BennyKok_RuntimeDebug_Data_Settings_enableInputNavigation
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.enableInputNavigation
+  fullName: BennyKok.RuntimeDebug.Data.Settings.enableInputNavigation
+  nameWithType: Settings.enableInputNavigation
 - uid: BennyKok.RuntimeDebug.Data.Settings.enableMode
   name: enableMode
   href: api/BennyKok.RuntimeDebug.Data.Settings.html#BennyKok_RuntimeDebug_Data_Settings_enableMode
@@ -2918,18 +2942,18 @@ references:
   commentId: T:BennyKok.RuntimeDebug.Data.Settings.EnableMode
   fullName: BennyKok.RuntimeDebug.Data.Settings.EnableMode
   nameWithType: Settings.EnableMode
-- uid: BennyKok.RuntimeDebug.Data.Settings.EnableMode.AlwaysOff
-  name: AlwaysOff
-  href: api/BennyKok.RuntimeDebug.Data.Settings.EnableMode.html#BennyKok_RuntimeDebug_Data_Settings_EnableMode_AlwaysOff
-  commentId: F:BennyKok.RuntimeDebug.Data.Settings.EnableMode.AlwaysOff
-  fullName: BennyKok.RuntimeDebug.Data.Settings.EnableMode.AlwaysOff
-  nameWithType: Settings.EnableMode.AlwaysOff
-- uid: BennyKok.RuntimeDebug.Data.Settings.EnableMode.AlwaysOn
-  name: AlwaysOn
-  href: api/BennyKok.RuntimeDebug.Data.Settings.EnableMode.html#BennyKok_RuntimeDebug_Data_Settings_EnableMode_AlwaysOn
-  commentId: F:BennyKok.RuntimeDebug.Data.Settings.EnableMode.AlwaysOn
-  fullName: BennyKok.RuntimeDebug.Data.Settings.EnableMode.AlwaysOn
-  nameWithType: Settings.EnableMode.AlwaysOn
+- uid: BennyKok.RuntimeDebug.Data.Settings.EnableMode.AutoOn
+  name: AutoOn
+  href: api/BennyKok.RuntimeDebug.Data.Settings.EnableMode.html#BennyKok_RuntimeDebug_Data_Settings_EnableMode_AutoOn
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.EnableMode.AutoOn
+  fullName: BennyKok.RuntimeDebug.Data.Settings.EnableMode.AutoOn
+  nameWithType: Settings.EnableMode.AutoOn
+- uid: BennyKok.RuntimeDebug.Data.Settings.EnableMode.Off
+  name: Off
+  href: api/BennyKok.RuntimeDebug.Data.Settings.EnableMode.html#BennyKok_RuntimeDebug_Data_Settings_EnableMode_Off
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.EnableMode.Off
+  fullName: BennyKok.RuntimeDebug.Data.Settings.EnableMode.Off
+  nameWithType: Settings.EnableMode.Off
 - uid: BennyKok.RuntimeDebug.Data.Settings.EnableMode.OnInDevelopmentBuild
   name: OnInDevelopmentBuild
   href: api/BennyKok.RuntimeDebug.Data.Settings.EnableMode.html#BennyKok_RuntimeDebug_Data_Settings_EnableMode_OnInDevelopmentBuild
@@ -3096,18 +3120,24 @@ references:
   commentId: T:BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
   fullName: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode
   nameWithType: Settings.TouchToggleMode
-- uid: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.Always
-  name: Always
-  href: api/BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.html#BennyKok_RuntimeDebug_Data_Settings_TouchToggleMode_Always
-  commentId: F:BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.Always
-  fullName: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.Always
-  nameWithType: Settings.TouchToggleMode.Always
+- uid: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.AlwaysOn
+  name: AlwaysOn
+  href: api/BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.html#BennyKok_RuntimeDebug_Data_Settings_TouchToggleMode_AlwaysOn
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.AlwaysOn
+  fullName: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.AlwaysOn
+  nameWithType: Settings.TouchToggleMode.AlwaysOn
 - uid: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.MobileOnly
   name: MobileOnly
   href: api/BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.html#BennyKok_RuntimeDebug_Data_Settings_TouchToggleMode_MobileOnly
   commentId: F:BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.MobileOnly
   fullName: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.MobileOnly
   nameWithType: Settings.TouchToggleMode.MobileOnly
+- uid: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.Off
+  name: Off
+  href: api/BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.html#BennyKok_RuntimeDebug_Data_Settings_TouchToggleMode_Off
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.Off
+  fullName: BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.Off
+  nameWithType: Settings.TouchToggleMode.Off
 - uid: BennyKok.RuntimeDebug.Data.Settings.useEmbeddedEventSystem
   name: useEmbeddedEventSystem
   href: api/BennyKok.RuntimeDebug.Data.Settings.html#BennyKok_RuntimeDebug_Data_Settings_useEmbeddedEventSystem
@@ -4062,6 +4092,12 @@ references:
   isSpec: "True"
   fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsActive
   nameWithType: RuntimeDebugSystem.IsActive
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.isInputLayerReady
+  name: isInputLayerReady
+  href: api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html#BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_isInputLayerReady
+  commentId: F:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.isInputLayerReady
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.isInputLayerReady
+  nameWithType: RuntimeDebugSystem.isInputLayerReady
 - uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsIsSystemEnabled
   name: IsIsSystemEnabled
   href: api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html#BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_IsIsSystemEnabled

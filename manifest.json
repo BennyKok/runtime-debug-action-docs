@@ -221,6 +221,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.html",
+          "hash": "Lsnz58nOqNyS41QNm1xdzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BennyKok.RuntimeDebug.Components.UI.ChangeSiblingIndexOnAwake.yml",
       "output": {
         ".html": {
@@ -429,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Components.UI.html",
-          "hash": "+a/+Sky2y/qOTrV0nQo2Ow=="
+          "hash": "S2pTxYZBSKuRRyDP63Z0WQ=="
         }
       },
       "is_incremental": false,
@@ -477,7 +489,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Data.Settings.EnableMode.html",
-          "hash": "Q/bvrmQh9fsdev/2GyG7uA=="
+          "hash": "AfH8dGLEnRCIeFqGC6SXCA=="
         }
       },
       "is_incremental": false,
@@ -501,7 +513,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Data.Settings.TouchToggleMode.html",
-          "hash": "1iU1XvIDb3zZbp2BgMLgsA=="
+          "hash": "YTUXKl9FddNNumbsBeNFyw=="
         }
       },
       "is_incremental": false,
@@ -513,7 +525,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Data.Settings.html",
-          "hash": "YfctdoTFSrTMsInEtH3oEg=="
+          "hash": "VLQdEFW24JZmUBNDUdPBMg=="
         }
       },
       "is_incremental": false,
@@ -681,7 +693,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html",
-          "hash": "hHyZNqv2aXwp5E0YMaRCgw=="
+          "hash": "SLvHyUvNZE/7Ndp11iG7RQ=="
         }
       },
       "is_incremental": false,
@@ -825,7 +837,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "m4+++JEe3eJnuYQtd4DjLA=="
+          "hash": "fCc8bhvgIC80gvfxq9hquA=="
         }
       },
       "is_incremental": false,
@@ -1096,6 +1108,105 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/2020-12-06-15-18-47.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-12-06-15-18-47.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-12-06-15-21-20.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-12-06-15-21-20.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-12-06-15-26-58.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-12-06-15-26-58.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-12-06-15-27-40.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-12-06-15-27-40.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-12-06-15-28-56.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-12-06-15-28-56.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-12-06-15-39-31.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-12-06-15-39-31.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-12-06-15-42-20.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-12-06-15-42-20.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-12-06-15-43-29.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-12-06-15-43-29.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/2020-12-06-15-45-00.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-12-06-15-45-00.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
@@ -1125,7 +1236,7 @@
       "output": {
         ".html": {
           "relative_path": "manuals/QuickStart/index.html",
-          "hash": "sBv8JFVwIk2MePmaEfOyfg=="
+          "hash": "7ynldqykidKvjZASBwYvfg=="
         }
       },
       "is_incremental": false,
@@ -1197,7 +1308,19 @@
       "output": {
         ".html": {
           "relative_path": "manuals/toc.html",
-          "hash": "gsxXrncQ5TF43ZuoVnRGCw=="
+          "hash": "ze9vSmC+NnN6+FL7kjYHOw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manuals/vr-setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "manuals/vr-setup.html",
+          "hash": "tCdhA1leHMEh3axbqFf6xA=="
         }
       },
       "is_incremental": false,
@@ -1209,7 +1332,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "UNc5SCjCKmuMNdI9iDkJ3w=="
+          "hash": "6lJ/z8covrFZts/KlRzKFA=="
         }
       },
       "is_incremental": false,
@@ -1230,13 +1353,13 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 11,
+          "total_file_count": 12,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 65,
+          "total_file_count": 66,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

@@ -104,7 +104,7 @@ a <a href="../../api/BennyKok.RuntimeDebug.Data.Settings.html"><code>Settings</c
 <tr>
 <td>Standalone</td>
 <td>Controller</td>
-<td>Input System</td>
+<td>Input System*</td>
 <td>Tested with Xbox controller for Windows</td>
 </tr>
 <tr>
@@ -113,9 +113,20 @@ a <a href="../../api/BennyKok.RuntimeDebug.Data.Settings.html"><code>Settings</c
 <td>Both</td>
 <td>Tested with Android / iOS</td>
 </tr>
+<tr>
+<td>VR*</td>
+<td>VR Controller</td>
+<td>Input System*</td>
+<td>Tested with Oculus Quest 2 with Unity XR Interaction Toolkit and Oculus Integration</td>
+</tr>
 </tbody>
 </table>
-<p>For the new Input System setup, please <a href="../setup-with-input-system.html">see here</a>. With the Input System enable, its possible to support more input devices for the debug menu navigation with custom input action mapping.</p>
+<p>*For the new Input System setup, please <a href="../setup-with-input-system.html">see here</a>. With the Input System enable, its possible to support more input devices for the debug menu navigation with custom input action mapping.</p>
+<p>*For setting up with VR project please <a href="../vr-setup.html">see here</a>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This RDA target desktop and mobile platform primarily, while with Unity's new Input System, Im able to add support for Controller and VR device's input, but I can't guarantee the full potential of RDA especially on VR device, for instance without the keyboard, the shortcut feature won't work in this case.</p>
+</div>
 <h3 id="lifecycle">Lifecycle</h3>
 <p>The <a href="../../api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html"><code>RuntimeDebugSystem</code></a> is auto injected to you first scene with the <a href="https://docs.unity3d.com/ScriptReference/RuntimeInitializeOnLoadMethodAttribute.html"><code>RuntimeInitializeOnLoadMethod</code></a> method.</p>
 <p>Then the system GameObject with the UI canvas will be set to <code>DontDestoryOnLoad</code> and keeps the debug system alive across scene load.</p>
