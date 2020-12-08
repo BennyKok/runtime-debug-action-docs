@@ -75,10 +75,18 @@
 <h2 id="features">Features</h2>
 <ul>
 <li>Plug &amp; play debug menu system</li>
-<li>Keyboard navigation &amp; touch input</li>
-<li>Full keyboard navigation supported</li>
-<li>Mobile friendly</li>
-<li><a href="manuals/CustomActions/index.html#action-type">Action Types</a>
+<li>Keyboard navigation &amp; touch input for mobile</li>
+<li>Support Unity's InputSystem</li>
+<li>No per scene setup require, auto injected UI system</li>
+<li><a href="/manuals/CustomActions/index.html#attribute-reflection">Auto register action with reflection</a>
+<ul>
+<li>Field (int, float, bool, string, enum)</li>
+<li>Property (int, float, bool, string, enum)</li>
+<li>Method</li>
+<li>Method with parameters (int,float,bool,string)</li>
+</ul>
+</li>
+<li><a href="/manuals/CustomActions/index.html#action-type">Action Types</a>
 <ul>
 <li>Button (One-shot action)</li>
 <li>Toggle (On/Off state action)</li>
@@ -86,16 +94,20 @@
 <li>Flag (Int based value selector action)</li>
 </ul>
 </li>
-<li>Simple searchable menu</li>
-<li>Tiny logger</li>
-<li><a href="manuals/CustomActions/index.html">Custom Actions</a>
+<li>Mobile friendly</li>
+<li><a href="/manuals/vr-setup.html">(Beta) *VR Support</a></li>
+<li>Searchable menu</li>
+<li>Logger Panel</li>
+<li><a href="/manuals/CustomActions/index.html">Custom Actions</a>
 <ul>
+<li>Attribute Reflection</li>
 <li>Fluent API</li>
 <li>Debug Action Component</li>
 </ul>
 </li>
 <li>Support Enter Play Mode Options, faster iteration</li>
-<li><a href="manuals/default-actions.html">Default debug action</a></li>
+<li><a href="/manuals/default-actions.html">Built-in debug action </a></li>
+<li>Full source included</li>
 </ul>
 <h2 id="fluent-api">Fluent API</h2>
 <p>The <a href="api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html"><code>RuntimeDebugSystem</code></a> class provide the entry point for registering your custom action, with a Fluent API design, it's a joy to add custom actions.</p>
