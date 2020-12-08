@@ -20,21 +20,30 @@ Welcome to the documentation for RuntimeDebugAction
 
 ## Features
 - Plug & play debug menu system
-- Keyboard navigation & touch input
-- Full keyboard navigation supported
-- Mobile friendly
-- [Action Types](~/manuals/CustomActions/index.md#action-type)
+- Keyboard navigation & touch input for mobile
+- Support Unity's InputSystem
+- No per scene setup require, auto injected UI system
+- <a href="/manuals/CustomActions/index.html#attribute-reflection">Auto register action with reflection</a>
+    - Field (int, float, bool, string, enum)
+    - Property (int, float, bool, string, enum)
+    - Method
+    - Method with parameters (int,float,bool,string)
+- <a href="/manuals/CustomActions/index.html#action-type">Action Types</a>
     - Button (One-shot action)
     - Toggle (On/Off state action)
     - Input (Params input action)
     - Flag (Int based value selector action)
-- Simple searchable menu
-- Tiny logger
-- [Custom Actions](~/manuals/CustomActions/index.md)
+- Mobile friendly
+- <a href="/manuals/vr-setup.html">(Beta) *VR Support</a>
+- Searchable menu
+- Logger Panel
+- <a href="/manuals/CustomActions/index.html">Custom Actions</a>
+    - Attribute Reflection
     - Fluent API
     - Debug Action Component
 - Support Enter Play Mode Options, faster iteration
-- [Default debug action](~/manuals/default-actions.md)
+- <a href="/manuals/default-actions.html">Built-in debug action </a>
+- Full source included
 
 ## Fluent API
 The [`RuntimeDebugSystem`](api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.yml) class provide the entry point for registering your custom action, with a Fluent API design, it's a joy to add custom actions. 
