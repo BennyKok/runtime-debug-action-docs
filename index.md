@@ -7,7 +7,7 @@ Welcome to the documentation for RuntimeDebugAction
 **RuntimeDebugAction** is a runtime debug menu system that lets you register and trigger debug actions with no extra setup. With a set of built-in debug actions and a tiny logger that works out of the box, RDA is built to supercharge your mobile and desktop game development.
 
 > [!WARNING]
-> This documentation is still in it's early stages, please notify me if there's anything out of place or not explained well.
+> This documentation is still in it's early stages, please notify me if there's anything out of place or not covered.
 
 ## Quick Start
 
@@ -16,7 +16,7 @@ Welcome to the documentation for RuntimeDebugAction
 
 ## Discord
 
-> Join our [💬discord](https://discord.gg/yHHKfNJeUc) server for quick questions and support!
+> Join our [💬discord](https://discord.com/invite/fHGsArj) server for quick questions and support!
 
 ## Features
 - Plug & play debug menu system

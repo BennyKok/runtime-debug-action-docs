@@ -5,9 +5,9 @@ name: VR Setup
 # VR Setup
 
 > [!WARNING]
-> Some features are not supported out of the box on VR devices, e.g. menu navigation, action's shortcut (keyboard), debug action input (keyboard)
+> Some features are not supported out of the box on VR devices, e.g. menu navigation, action's shortcut (keyboard), debug action input (keyboard), and currently the input on VR only support using Unity InputSystem.
 
-With the VR setup, RDA comes with a specialized UI prefab for VR device. Which will atomically orient to your looking direction with smooth damping.
+With the VR setup, RDA comes with a specialized UI prefab for VR device. Which will atomically orient the debug menu to your looking direction with smooth damping.
 
 The customized UI prefab, adds the framework specific Graphic Raycaster for all the Canvas components in the prefab.
 
