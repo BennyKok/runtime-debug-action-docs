@@ -844,6 +844,18 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "demo.md",
+      "output": {
+        ".html": {
+          "relative_path": "demo.html",
+          "hash": "vyfuRf6amBEQKJXGf9GV2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Resource",
       "source_relative_path": "images/2020-11-22-14-29-18.png",
       "output": {
@@ -1376,7 +1388,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "9WXc6Q05vSIhlDBL++UosQ=="
+          "hash": "adMnzpbRs+xyshuPodGV/w=="
         }
       },
       "is_incremental": false,
@@ -1397,7 +1409,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 12,
+          "total_file_count": 13,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
