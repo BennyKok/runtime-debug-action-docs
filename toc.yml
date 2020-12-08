@@ -4,6 +4,8 @@
   href: api/
 - name: Changelog
   homepage: CHANGELOG.md
+- name: Demo
+  homepage: demo.md
 - name: Assets Store
   href: https://assetstore.unity.com/publishers/28510
 - name: Discord
