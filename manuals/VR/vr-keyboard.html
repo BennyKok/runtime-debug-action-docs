@@ -5,20 +5,18 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class FontSetter
-   </title>
+    <title>VR Keyboard </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class FontSetter
-   ">
+    <meta name="title" content="VR Keyboard ">
     <meta name="generator" content="docfx 2.56.6.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
     
     
@@ -36,10 +34,10 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../index.html">
+              <a class="navbar-brand" href="../../index.html">
                 <!-- <div style="color: white; font-weight: 900; height: 38pt; line-height: 38pt;">Runtime Debug
                   ACTION</div> -->
-                <img id="logo" class="svg" src="../rda-web-icon.svg" alt="">
+                <img id="logo" class="svg" src="../../rda-web-icon.svg" alt="">
               </a>    </div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
@@ -61,55 +59,15 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.Components.UI.FontSetter">
-  
-  
-  <h1 id="BennyKok_RuntimeDebug_Components_UI_FontSetter" data-uid="BennyKok.RuntimeDebug.Components.UI.FontSetter" class="text-break">Class FontSetter
-  </h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
-    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
-    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
-    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
-    <div class="level5"><span class="xref">FontSetter</span></div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Components.UI.html">BennyKok.RuntimeDebug.Components.UI</a></h6>
-  <h6><strong>Assembly</strong>: com.bennykok.runtime-debug-action.dll</h6>
-  <h5 id="BennyKok_RuntimeDebug_Components_UI_FontSetter_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;Runtime Debug Action/UI/Font Setter&quot;)]
-public class FontSetter : MonoBehaviour</code></pre>
-  </div>
-  <h3 id="fields">Fields
-  </h3>
-  
-  
-  <h4 id="BennyKok_RuntimeDebug_Components_UI_FontSetter_uiHandler" data-uid="BennyKok.RuntimeDebug.Components.UI.FontSetter.uiHandler">uiHandler</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DebugUIHandler uiHandler</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.html">DebugUIHandler</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="vr-keyboard">VR Keyboard</h1>
+
+<p>With the VR RDASetting preset applied, the VR specific UI prefab will be used instead, they both contains a simple virtual keyboard for debugging purpose in VR space.</p>
+<p><img src="../../images/2020-12-13-18-08-42.png" alt=""></p>
+<p>Which provide basic keyboard functions for searching, input actions, triggering shortcut key in VR space.</p>
+<p><img src="../../images/2020-12-13-18-09-50.png" alt=""></p>
+<p>In order to trigger shortcut key for actions, you will need to disable the auto show/hide in the debug menu, this will keep the keyboard open while the debug menu is closed, only when the debug menu is not visible, the keyboard interaction will be routed to the shortcut action checking.</p>
+<p><img src="../../images/2020-12-13-18-11-17.png" alt=""></p>
 </article>
           </div>
           
@@ -117,6 +75,9 @@ public class FontSetter : MonoBehaviour</code></pre>
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/BennyKok/runtime-debug-action-docs/blob/master/manuals/VR/vr-keyboard.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
@@ -145,8 +106,8 @@ public class FontSetter : MonoBehaviour</code></pre>
         </div>
       </footer>    </div>
     
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
   </body>
 </html>

@@ -8,15 +8,15 @@
     <title>VR Setup </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="VR Setup ">
-    <meta name="generator" content="docfx 2.56.5.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
     
     
@@ -34,10 +34,10 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../index.html">
+              <a class="navbar-brand" href="../../index.html">
                 <!-- <div style="color: white; font-weight: 900; height: 38pt; line-height: 38pt;">Runtime Debug
                   ACTION</div> -->
-                <img id="logo" class="svg" src="../rda-web-icon.svg" alt="">
+                <img id="logo" class="svg" src="../../rda-web-icon.svg" alt="">
               </a>    </div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
@@ -64,40 +64,45 @@
 
 <div class="WARNING">
 <h5>Warning</h5>
-<p>Some features are not supported out of the box on VR devices, e.g. menu navigation, action's shortcut (keyboard), debug action input (keyboard), and currently the input on VR only support using Unity InputSystem.</p>
+<p>Beta support VR, currently only tested for</p>
+<ul>
+<li>XR Interaction Toolkit</li>
+<li>Oculus Integration</li>
+</ul>
 </div>
-<p>With the VR setup, RDA comes with a specialized UI prefab for VR device. Which will atomically orient the debug menu to your looking direction with smooth damping.</p>
+<p>RDA comes with a specialized UI prefab for VR target. Which has a world space UI made for VR usage, it also contains a scripts to automatically orient the debug menu to your looking direction with smooth damping.</p>
 <p>The customized UI prefab, adds the framework specific Graphic Raycaster for all the Canvas components in the prefab.</p>
 <ul>
-<li><p><img src="../images/2020-12-06-15-39-31.png" alt=""><br>Used by XR Interaction Toolkit</p>
+<li><p><img src="../../images/2020-12-06-15-39-31.png" alt=""><br>Used by XR Interaction Toolkit</p>
 </li>
-<li><p><img src="../images/2020-12-06-15-45-00.png" alt=""><br>Used by Oculus Integration</p>
+<li><p><img src="../../images/2020-12-06-15-45-00.png" alt=""><br>Used by Oculus Integration</p>
 </li>
 </ul>
-<h3 id="vr-input">VR Input</h3>
-<p>With VR device, the default input action to toggle the menu has been set to pressing the two secondary button on both of your controller at the same time, so for Quest controller, is the two &quot;Y&quot; button.</p>
+<p>Which if are you using other VR input framework, you might need to replace the Graphic Raycaster in the prefab to the one specified in that specific framework.</p>
+<h3 id="vr-menu-toggle">VR Menu Toggle</h3>
+<p>With VR device, the default input action of toggling the menu has been set to pressing the two secondary button on both of your controller at the same time, so for Quest controller, is the two &quot;Y&quot; button. Which will require Unity's Input System. However, you can rebind the shortcut to other input from the RDASettings.</p>
 <h2 id="using-xr-interaction-toolkit">Using XR Interaction Toolkit</h2>
 <p><a href="https://github.com/Unity-Technologies/XR-Interaction-Toolkit-Examples">https://github.com/Unity-Technologies/XR-Interaction-Toolkit-Examples</a></p>
 <p>If you starting off with Unity's XR Interaction Toolkit, RDA already comes with a settings preset for the XR Interaction Toolkit, and since the XR Interaction Toolkit is now using the InputSystem, head over the RDASettings and apply the &quot;RDASettings InputSystem XR&quot; preset.</p>
-<p><img src="../images/2020-12-06-15-18-47.png" alt=""></p>
-<p><img src="../images/2020-12-06-15-21-20.png" alt=""></p>
+<p><img src="../../images/2020-12-06-15-18-47.png" alt=""></p>
+<p><img src="../../images/2020-12-06-15-21-20.png" alt=""></p>
 <h3 id="default-input">Default Input</h3>
 <p>With XR Interaction Toolkit, the default trigger action is with the trigger button on your controller while you use the controller pointer like on the mobile touch screen.</p>
 <h3 id="xr-device-simulator">XR Device Simulator</h3>
 <p>If you don't have device to test, you can use the &quot;XR Device Simulator&quot;</p>
-<p><img src="../images/2020-12-06-15-26-58.png" alt=""></p>
+<p><img src="../../images/2020-12-06-15-26-58.png" alt=""></p>
 <p>From UPM, import &quot;XR Device Simulator&quot; from the samples, then drag and drop the simulator into the scene.</p>
-<p><img src="../images/2020-12-06-15-27-40.png" alt=""></p>
+<p><img src="../../images/2020-12-06-15-27-40.png" alt=""></p>
 <p>Everything should be ready to go.</p>
-<p><img src="../images/2020-12-06-15-28-56.png" alt=""></p>
+<p><img src="../../images/2020-12-06-15-28-56.png" alt=""></p>
 <h2 id="using-oculus-integration">Using Oculus Integration</h2>
 <p>If you are using Oculus Integration instead, apply the &quot;RDASettings InputSystem VR Oculus&quot; preset.</p>
 <p>If you are not familiar with Oculus Integration, read more on Oculus Developer site <a href="https://developer.oculus.com/documentation/unity/unity-import/">https://developer.oculus.com/documentation/unity/unity-import/</a></p>
-<p><img src="../images/2020-12-06-15-42-20.png" alt=""></p>
+<p><img src="../../images/2020-12-06-15-42-20.png" alt=""></p>
 <p>And you will need to also activate the new Input System with Oculus Integration, make sure it is set to both.</p>
-<p><img src="../images/2020-12-06-15-43-29.png" alt=""></p>
+<p><img src="../../images/2020-12-06-15-43-29.png" alt=""></p>
 <h3 id="default-input-1">Default Input</h3>
-<p>With XR Interaction Toolkit, the default trigger action is with the &quot;A&quot; button (primary button) on your controller while you use the controller pointer like on the mobile touch screen.</p>
+<p>With Oculus Integration, the default trigger action is with the &quot;A&quot; button (primary button) on your controller while you use the controller pointer like on the mobile touch screen.</p>
 </article>
           </div>
           
@@ -106,7 +111,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/BennyKok/runtime-debug-action-docs/blob/master/manuals/vr-setup.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/BennyKok/runtime-debug-action-docs/blob/master/manuals/VR/index.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -136,8 +141,8 @@
         </div>
       </footer>    </div>
     
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
   </body>
 </html>
