@@ -19,7 +19,11 @@
 - href: testing-with-mobile.md
   order: 0
   name: Mobile Device Simulator Setup
-- href: vr-setup.md
+- href: VR\index.md
+  items:
+  - href: VR\vr-keyboard.md
+    order: 0
+    name: VR Keyboard
   order: 0
   name: VR Setup
 

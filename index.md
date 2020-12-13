@@ -34,7 +34,7 @@ Welcome to the documentation for RuntimeDebugAction
     - Input (Params input action)
     - Flag (Int based value selector action)
 - Mobile friendly
-- <a href="/manuals/vr-setup.html">(Beta) *VR Support</a>
+- <a href="/manuals/VR/index.html">(Beta) *VR Support</a>
 - Searchable menu
 - Logger Panel
 - <a href="/manuals/CustomActions/index.html">Custom Actions</a>
