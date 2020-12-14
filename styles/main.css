@@ -3,7 +3,7 @@
   --header-bg-color: #3d3d3d;
   --header-ft-color: #fff;
   --highlight-light: #5e92f3;
-  --highlight-dark: #003c8f;
+  --highlight-dark: #004ab1;
   --accent-dim: #e0e0e0;
   --accent-super-dim: #f3f3f3;
   --font-color: #34393e;
@@ -37,7 +37,7 @@ button:focus,
 a:hover,
 a:focus {
   color: var(--highlight-light);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .toc .nav > li.active > a {

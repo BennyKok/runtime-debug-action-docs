@@ -66,7 +66,8 @@
   
   <h1 id="BennyKok_RuntimeDebug_Actions_DebugActionInput" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionInput" class="text-break">Class DebugActionInput
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Input action will be represented as a button in the debug menu, once triggered, an input field will popup, the input will be split by space and parse using regex, if more than one paramenters is defined and you have space between your string, use double quote for string during input.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -131,6 +132,9 @@
     <div>
       <a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseDebugAction.html#BennyKok_RuntimeDebug_Actions_BaseDebugAction_actionStatus">BaseDebugAction.actionStatus</a>
     </div>
+    <div>
+      <a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseDebugAction.html#BennyKok_RuntimeDebug_Actions_BaseDebugAction_Setup">BaseDebugAction.Setup()</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Actions.html">BennyKok.RuntimeDebug.Actions</a></h6>
   <h6><strong>Assembly</strong>: com.bennykok.runtime-debug-action.dll</h6>
@@ -139,6 +143,18 @@
     <pre><code class="lang-csharp hljs">[Serializable]
 public class DebugActionInput : FluentAction&lt;DebugActionInput&gt;</code></pre>
   </div>
+  <h5 id="BennyKok_RuntimeDebug_Actions_DebugActionInput_examples"><strong>Examples</strong></h5>
+  <pre><code>RuntimeDebugSystem.RegisterActions(
+    DebugActionBuilder.Input()
+        .WithName(&quot;Clear Player Prefs&quot;)
+        .WithInputQuery(InputQuery.Create().Query(&quot;clear&quot;, ParamType.String, &quot;Type clear to confirm clearing&quot;))
+        .WithInputAction((response) =>
+         {
+             if (response.GetParamString(&quot;clear&quot;) == &quot;clear&quot;)
+                 PlayerPrefs.DeleteAll();
+         })
+);</code></pre>
+
   <h3 id="fields">Fields
   </h3>
   

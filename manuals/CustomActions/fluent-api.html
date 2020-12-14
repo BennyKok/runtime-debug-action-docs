@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Custom Actions </title>
+    <title>Fluent API </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Custom Actions ">
+    <meta name="title" content="Fluent API ">
     <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -60,46 +60,45 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="custom-actions">Custom Actions</h1>
+<h1 id="fluent-api">Fluent API</h1>
 
-<h2 id="overview">Overview</h2>
-<p>Adding custom debug action to your game is extremely easy, and you have three options</p>
+<p>The <a href="../../api/BennyKok.RuntimeDebug.Actions.DebugActionBuilder.html"><code>DebugActionBuilder</code></a> is the builder class for creating actions.</p>
+<pre><code class="lang-csharp">var debugAction = DebugActionBuilder.Button()
+    .WithName(&quot;Some Action&quot;)
+    .WithAction(()=&gt;{ });
+</code></pre>
+<p>For a full list of common <a href="../../api/BennyKok.RuntimeDebug.Actions.FluentAction-1.html">Fluent APIs</a></p>
+<h3 id="register-actions">Register Actions</h3>
+<p>To register any actions</p>
+<pre><code class="lang-csharp">RuntimeDebugSystem.RegisterActions(
+    DebugActionBuilder.Button()
+        .WithName(&quot;Your actions&quot;)
+);
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>To prevent any ghost action hanging in the debug menu, it's suggested to handle your actions' unregistration if they were added from any <code>MonoBehaviour</code> and maybe disabled or destroy in future, e.g.</p>
 <ol>
-<li><a href="attribute-reflection.html">Attribute Reflection</a></li>
-<li><a href="fluent-api.html">Fluent API</a></li>
-<li><a href="debug-action-component.html">Debug Action Component</a></li>
+<li>Register actions in the <code>OnAwake</code> and unregister actions in the <code>OnDestroy</code></li>
+<li>Register actions in the <code>OnEnable</code> and unregister actions in the <code>OnDisable</code></li>
 </ol>
-<h4 id="action-type">Action Type</h4>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../../api/BennyKok.RuntimeDebug.Actions.DebugActionButton.html"><code>Button</code></a></td>
-<td>One-shot action</td>
-</tr>
-<tr>
-<td><a href="../../api/BennyKok.RuntimeDebug.Actions.DebugActionFlag.html"><code>Toggle</code></a></td>
-<td>On/Off state action</td>
-</tr>
-<tr>
-<td><a href="../../api/BennyKok.RuntimeDebug.Actions.DebugActionInput.html"><code>Input</code></a></td>
-<td>Params input action</td>
-</tr>
-<tr>
-<td><a href="../../api/BennyKok.RuntimeDebug.Actions.DebugActionFlag.html"><code>Flag</code></a></td>
-<td>Int based value selector action</td>
-</tr>
-<tr>
-<td><a href="../../api/BennyKok.RuntimeDebug.Actions.DebugActionEnum.html"><code>Enum</code></a></td>
-<td>Enum based selector action</td>
-</tr>
-</tbody>
-</table>
+</div>
+<h3 id="unregister-actions">Unregister Actions</h3>
+<p>There are few ways to remove actions from the system</p>
+<h4 id="by-group">By group</h4>
+<p>If you have defined custom path for you actions via <code>WithGroup(&quot;YourGroup&quot;)</code> or the argument <code>group</code> in the <code>RegisterActions</code> method, you can do as below to remove the actions with same path.</p>
+<pre><code class="lang-csharp">RuntimeDebugSystem.UnregisterActionsByGroup(
+    &quot;YourGroup&quot;
+);
+</code></pre>
+<h4 id="by-references">By references</h4>
+<p>If you have references to you actions, you can pass them into the <code>RuntimeDebugAction.UnregisterActions</code> method directly.</p>
+<h4 id="by-id">By ID</h4>
+<p>If you have defined a ID for your actions via <code>WithId(&quot;YourId&quot;)</code>, you can do as below to remove the actions with the same ID.</p>
+<pre><code class="lang-csharp">RuntimeDebugSystem.UnregisterActionsById(
+    &quot;YourId&quot;
+);
+</code></pre>
 </article>
           </div>
           
@@ -108,7 +107,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/BennyKok/runtime-debug-action-docs/blob/master/manuals/CustomActions/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/BennyKok/runtime-debug-action-docs/blob/master/manuals/CustomActions/fluent-api.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

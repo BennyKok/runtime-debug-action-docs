@@ -66,7 +66,8 @@
   
   <h1 id="BennyKok_RuntimeDebug_Actions_DebugActionButton" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionButton" class="text-break">Class DebugActionButton
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Button action will be represented as a simple button in the debug menu</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -140,6 +141,9 @@
     <div>
       <a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseDebugAction.html#BennyKok_RuntimeDebug_Actions_BaseDebugAction_GetDescription">BaseDebugAction.GetDescription()</a>
     </div>
+    <div>
+      <a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseDebugAction.html#BennyKok_RuntimeDebug_Actions_BaseDebugAction_Setup">BaseDebugAction.Setup()</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Actions.html">BennyKok.RuntimeDebug.Actions</a></h6>
   <h6><strong>Assembly</strong>: com.bennykok.runtime-debug-action.dll</h6>
@@ -148,6 +152,13 @@
     <pre><code class="lang-csharp hljs">[Serializable]
 public class DebugActionButton : FluentAction&lt;DebugActionButton&gt;</code></pre>
   </div>
+  <h5 id="BennyKok_RuntimeDebug_Actions_DebugActionButton_examples"><strong>Examples</strong></h5>
+  <pre><code>RuntimeDebugSystem.RegisterActions(
+    DebugActionBuilder.Button()
+        .WithName(&quot;Quit&quot;)
+        .WithAction(() => Application.Quit())
+);</code></pre>
+
 </article>
           </div>
           

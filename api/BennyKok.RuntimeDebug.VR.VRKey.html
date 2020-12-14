@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class AutoFacingCamera
+    <title>Class VRKey
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class AutoFacingCamera
+    <meta name="title" content="Class VRKey
    ">
     <meta name="generator" content="docfx 2.56.6.0">
     
@@ -61,10 +61,10 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera">
+            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.VR.VRKey">
   
   
-  <h1 id="BennyKok_RuntimeDebug_Components_UI_AutoFacingCamera" data-uid="BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera" class="text-break">Class AutoFacingCamera
+  <h1 id="BennyKok_RuntimeDebug_VR_VRKey" data-uid="BennyKok.RuntimeDebug.VR.VRKey" class="text-break">Class VRKey
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
@@ -75,25 +75,24 @@
     <div class="level2"><span class="xref">UnityEngine.Component</span></div>
     <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
     <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
-    <div class="level5"><span class="xref">AutoFacingCamera</span></div>
+    <div class="level5"><span class="xref">VRKey</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Components.UI.html">BennyKok.RuntimeDebug.Components.UI</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.VR.html">BennyKok.RuntimeDebug.VR</a></h6>
   <h6><strong>Assembly</strong>: com.bennykok.runtime-debug-action.dll</h6>
-  <h5 id="BennyKok_RuntimeDebug_Components_UI_AutoFacingCamera_syntax">Syntax</h5>
+  <h5 id="BennyKok_RuntimeDebug_VR_VRKey_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AutoFacingCamera : MonoBehaviour</code></pre>
+    <pre><code class="lang-csharp hljs">public class VRKey : MonoBehaviour, IPointerClickHandler, IEventSystemHandler</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
   
   
-  <h4 id="BennyKok_RuntimeDebug_Components_UI_AutoFacingCamera_angleThreshold" data-uid="BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.angleThreshold">angleThreshold</h4>
+  <h4 id="BennyKok_RuntimeDebug_VR_VRKey_ignoreKey" data-uid="BennyKok.RuntimeDebug.VR.VRKey.ignoreKey">ignoreKey</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Range(0F, 300F)]
-public float angleThreshold</code></pre>
+    <pre><code class="lang-csharp hljs">public bool ignoreKey</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -105,19 +104,20 @@ public float angleThreshold</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Single</span></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BennyKok_RuntimeDebug_Components_UI_AutoFacingCamera_distanceAwayCamera" data-uid="BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.distanceAwayCamera">distanceAwayCamera</h4>
+  <h4 id="BennyKok_RuntimeDebug_VR_VRKey_keyboard" data-uid="BennyKok.RuntimeDebug.VR.VRKey.keyboard">keyboard</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float distanceAwayCamera</code></pre>
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public VRKeyboard keyboard</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -129,19 +129,19 @@ public float angleThreshold</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Single</span></td>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.VR.VRKeyboard.html">VRKeyboard</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BennyKok_RuntimeDebug_Components_UI_AutoFacingCamera_distanceThreshold" data-uid="BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.distanceThreshold">distanceThreshold</h4>
+  <h4 id="BennyKok_RuntimeDebug_VR_VRKey_keyCode" data-uid="BennyKok.RuntimeDebug.VR.VRKey.keyCode">keyCode</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float distanceThreshold</code></pre>
+    <pre><code class="lang-csharp hljs">public KeyCode keyCode</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -153,31 +153,105 @@ public float angleThreshold</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Single</span></td>
+        <td><span class="xref">UnityEngine.KeyCode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="BennyKok_RuntimeDebug_VR_VRKey_Label_" data-uid="BennyKok.RuntimeDebug.VR.VRKey.Label*"></a>
+  <h4 id="BennyKok_RuntimeDebug_VR_VRKey_Label" data-uid="BennyKok.RuntimeDebug.VR.VRKey.Label">Label</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextMeshProUGUI Label { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TMPro.TextMeshProUGUI</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="BennyKok_RuntimeDebug_VR_VRKey_GetKeyCodeForShortcut_" data-uid="BennyKok.RuntimeDebug.VR.VRKey.GetKeyCodeForShortcut*"></a>
+  <h4 id="BennyKok_RuntimeDebug_VR_VRKey_GetKeyCodeForShortcut_UnityEngine_KeyCode_" data-uid="BennyKok.RuntimeDebug.VR.VRKey.GetKeyCodeForShortcut(UnityEngine.KeyCode)">GetKeyCodeForShortcut(KeyCode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetKeyCodeForShortcut(KeyCode keyCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.KeyCode</span></td>
+        <td><span class="parametername">keyCode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BennyKok_RuntimeDebug_Components_UI_AutoFacingCamera_recenterTime" data-uid="BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.recenterTime">recenterTime</h4>
+  <a id="BennyKok_RuntimeDebug_VR_VRKey_OnPointerClick_" data-uid="BennyKok.RuntimeDebug.VR.VRKey.OnPointerClick*"></a>
+  <h4 id="BennyKok_RuntimeDebug_VR_VRKey_OnPointerClick_UnityEngine_EventSystems_PointerEventData_" data-uid="BennyKok.RuntimeDebug.VR.VRKey.OnPointerClick(UnityEngine.EventSystems.PointerEventData)">OnPointerClick(PointerEventData)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float recenterTime</code></pre>
+    <pre><code class="lang-csharp hljs">public void OnPointerClick(PointerEventData eventData)</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Single</span></td>
+        <td><span class="xref">UnityEngine.EventSystems.PointerEventData</span></td>
+        <td><span class="parametername">eventData</span></td>
         <td></td>
       </tr>
     </tbody>

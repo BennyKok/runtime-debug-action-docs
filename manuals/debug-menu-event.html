@@ -64,7 +64,7 @@
 
 <h3 id="checking-if-the-debug-menu-is-visible">Checking if the debug menu is visible</h3>
 <p>You may want to stop specific code from running if the debug menu is being displayed.</p>
-<pre><code class="lang-csharp">if (RuntimeDebugSystem.IsActive)
+<pre><code class="lang-csharp">if (RuntimeDebugSystem.IsVisible)
 </code></pre>
 <h3 id="hooking-into-the-event">Hooking into the event</h3>
 <pre><code class="lang-csharp">private void OnEnable() =&gt; RuntimeDebugSystem.Instance.OnDebugMenuToggleEvent += OnToggle;

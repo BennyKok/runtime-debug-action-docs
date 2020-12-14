@@ -56,12 +56,12 @@
 <h1 id="-runtime-debug-action">🩺 Runtime Debug Action</h1>
 
 <p>Welcome to the documentation for RuntimeDebugAction</p>
-<p><img src="images/2020-12-02-16-28-04.png" alt=""></p>
+<p><img src="images/2020-12-14-11-20-22.png" alt=""></p>
 <h2 id="overview">Overview</h2>
 <p><strong>RuntimeDebugAction</strong> is a runtime debug menu system that lets you register and trigger debug actions with no extra setup. With a set of built-in debug actions and a tiny logger that works out of the box, RDA is built to supercharge your mobile and desktop game development.</p>
 <div class="WARNING">
 <h5>Warning</h5>
-<p>This documentation is still in it's early stages, please notify me if there's anything out of place or not covered.</p>
+<p>This documentation is still in it's early stages, please let me know me if there's anything out of place or not covered.</p>
 </div>
 <h2 id="quick-start">Quick Start</h2>
 <div class="NOTE">
@@ -69,59 +69,79 @@
 <p>Take a look at the <a href="manuals/QuickStart/index.html">➜QuickStart</a> to get started</p>
 </div>
 <h2 id="discord">Discord</h2>
-<blockquote>
+<div class="NOTE">
+<h5>Note</h5>
 <p>Join our <a href="https://discord.com/invite/fHGsArj">💬discord</a> server for quick questions and support!</p>
-</blockquote>
+</div>
 <h2 id="features">Features</h2>
 <ul>
-<li>Plug &amp; play debug menu system</li>
-<li>Keyboard navigation &amp; touch input for mobile</li>
-<li>Support Unity's InputSystem</li>
-<li>No per scene setup require, auto injected UI system</li>
-<li><a href="/manuals/CustomActions/index.html#attribute-reflection">Auto register action with reflection</a>
-<ul>
-<li>Field (int, float, bool, string, enum)</li>
-<li>Property (int, float, bool, string, enum)</li>
-<li>Method</li>
-<li>Method with parameters (int,float,bool,string)</li>
+<li>Plug &amp; play light weight debug menu system
+<br></li>
+<li>Keyboard navigation &amp; touch input for mobile
+<br></li>
+<li>Support Unity's InputSystem
+<br></li>
+<li>No per scene setup require, auto injected UI system
+<br></li>
+<li>Mobile friendly
+<br></li>
+<li>(Beta) VR Support <a href="https://bennykok.github.io/runtime-debug-action-docs/manuals/vr-setup.html">(Docs)</a>
+<br></li>
+<li>Auto register action with reflection <a href="https://bennykok.github.io/runtime-debug-action-docs/manuals/CustomActions/index.html#attribute-reflection">(Docs)</a>
+<br>
+    - Field (int, float, bool, string, enum)
+<br>
+    - Property (int, float, bool, string, enum)
+<br>
+    - Method
+<br>
+    - Method with parameters (int,float,bool,string)
+<br></li>
+<li>Action Types <a href="https://bennykok.github.io/runtime-debug-action-docs/manuals/CustomActions/index.html#action-type">(Docs)</a>
+<br>
+    - Button (One-shot action)
+<br>
+    - Toggle (On/Off state action)
+<br>
+    - Input (Params input action)
+<br>
+    - Flag (Int based value selector action)
+<br></li>
+<li>Searchable menu
+<br></li>
+<li>Logger Panel
+<br></li>
+<li>Custom Actions <a href="https://bennykok.github.io/runtime-debug-action-docs/manuals/CustomActions/index.html">(Docs)</a>
+<br>
+    - Attribute Reflection
+<br>
+    - Fluent API
+<br>
+    - Debug Action Component
+<br></li>
+<li>Support Enter Play Mode Options, faster iteration
+<br></li>
+<li>Built-in debug action <a href="https://bennykok.github.io/runtime-debug-action-docs/manuals/default-actions.html">(Docs)</a>
+<br></li>
+<li>Full source included
+<br></li>
 </ul>
-</li>
-<li><a href="/manuals/CustomActions/index.html#action-type">Action Types</a>
-<ul>
-<li>Button (One-shot action)</li>
-<li>Toggle (On/Off state action)</li>
-<li>Input (Params input action)</li>
-<li>Flag (Int based value selector action)</li>
-</ul>
-</li>
-<li>Mobile friendly</li>
-<li><a href="/manuals/VR/index.html">(Beta) *VR Support</a></li>
-<li>Searchable menu</li>
-<li>Logger Panel</li>
-<li><a href="/manuals/CustomActions/index.html">Custom Actions</a>
-<ul>
-<li>Attribute Reflection</li>
-<li>Fluent API</li>
-<li>Debug Action Component</li>
-</ul>
-</li>
-<li>Support Enter Play Mode Options, faster iteration</li>
-<li><a href="/manuals/default-actions.html">Built-in debug action </a></li>
-<li>Full source included</li>
-</ul>
-<h2 id="fluent-api">Fluent API</h2>
-<p>The <a href="api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html"><code>RuntimeDebugSystem</code></a> class provide the entry point for registering your custom action, with a Fluent API design, it's a joy to add custom actions.</p>
-<pre><code class="lang-csharp">DebugActionBuilder.Button()
-    .WithName($&quot;Set {theme.themeName} Theme&quot;)
-    .WithAction(() =&gt;
+<!-- ## Fluent API
+The [`RuntimeDebugSystem`](api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.yml) class provide the entry point for registering your custom action, with a Fluent API design, it's a joy to add custom actions. 
+
+```csharp
+DebugActionBuilder.Button()
+    .WithName($"Set {theme.themeName} Theme")
+    .WithAction(() =>
     {
         RuntimeDebugSystem.SetTheme(theme, true);
         RuntimeDebugSystem.UIHandler.TogglePanel(true, true);
     })
-    .WithGroup(&quot;Themes&quot;)
+    .WithGroup("Themes")
 );
-</code></pre>
-<p>More details of registering actions <a href="manuals/CustomActions/index.html">here</a>.</p>
+```
+
+More details of registering actions [here](~/manuals/CustomActions/index.md). -->
 </article>
           </div>
           

@@ -63,22 +63,25 @@
 <h1 id="-quick-start">➜ Quick Start</h1>
 
 <h3 id="setup">Setup</h3>
-<p>First, it's recommended to import TextMeshPro's default resources before play, since some of the asset prefabs uses TextMeshPro.</p>
-<p><img src="../../images/2020-11-22-19-11-43.png" alt=""></p>
-<p>Then make sure your scene have an <code>EventSystem</code>.</p>
-<p><img src="../../images/2020-11-22-19-19-20.png" alt=""></p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>If you using Unity's new input system, please <a href="../setup-with-input-system.html">see here</a>.</p>
-</div>
 <p><strong>RuntimeDebugAction</strong> is designed to be plug &amp; play, once you imported the package,
 a <a href="../../api/BennyKok.RuntimeDebug.Data.Settings.html"><code>Settings</code></a> ScriptableObject will be created in your project folder <code>Assets/Resources/</code>.</p>
 <p><img src="../../images/2020-11-22-14-29-18.png" alt=""></p>
+<p>Next, if you haven't already, to import TextMeshPro's default resources before play, since some of the asset prefabs uses TextMeshPro.</p>
+<p><img src="../../images/2020-11-22-19-11-43.png" alt=""></p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>If you encountered weird font size of the debug menu after first import, it's because the TextMeshPro's default resource was imported after the prefab's import, you can simply right click on the asset's Prefabs folder and reimport.</p>
 </div>
-<p>By pressing &quot;Tab&quot;, the menu will be enabled, then you will be good to go! You can expect seeing a set of pre-configured debug actions.</p>
+<h3 id="eventsystem">EventSystem</h3>
+<p>If you choose to use your own <code>EventSystem</code>. Disable the embedded event in RDASettings.</p>
+<p><img src="../../images/2020-11-22-19-19-20.png" alt=""></p>
+<p><img src="../../images/2020-12-14-12-45-05.png" alt=""></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you using Unity's new input system, please <a href="../setup-with-input-system.html">see here</a>.</p>
+</div>
+<h3 id="press-play">Press Play!</h3>
+<p>By pressing &quot;Tab&quot; button on your keyboard, the menu will be enabled, then you will be good to go! You can expect seeing a set of pre-configured debug actions.</p>
 <p><img src="../../images/2020-11-22-19-09-30.png" alt=""></p>
 <p>See more details of <a href="../default-actions.html">default actions</a>.</p>
 <p>On mobile, there will be a touch toggle on the top left of the screen</p>
@@ -125,18 +128,20 @@ a <a href="../../api/BennyKok.RuntimeDebug.Data.Settings.html"><code>Settings</c
 <p>*For setting up with VR project please <a href="../VR/index.html">see here</a>.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>This RDA target desktop and mobile platform primarily, while with Unity's new Input System, Im able to add support for Controller and VR device's input, but I can't guarantee the full potential of RDA especially on VR device, for instance without the keyboard, the shortcut feature won't work in this case.</p>
+<p>RDA target desktop and mobile platform primarily, while with Unity's new Input System, Im able to add support for Controller and VR device's input.</p>
 </div>
 <h3 id="lifecycle">Lifecycle</h3>
-<p>The <a href="../../api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html"><code>RuntimeDebugSystem</code></a> is auto injected to you first scene with the <a href="https://docs.unity3d.com/ScriptReference/RuntimeInitializeOnLoadMethodAttribute.html"><code>RuntimeInitializeOnLoadMethod</code></a> method.</p>
+<p>With &quot;Auto On&quot; The <a href="../../api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html"><code>RuntimeDebugSystem</code></a> will be auto injected to you first scene with the <a href="https://docs.unity3d.com/ScriptReference/RuntimeInitializeOnLoadMethodAttribute.html"><code>RuntimeInitializeOnLoadMethod</code></a> method.</p>
 <p>Then the system GameObject with the UI canvas will be set to <code>DontDestoryOnLoad</code> and keeps the debug system alive across scene load.</p>
+<p><img src="../../images/2020-12-14-12-53-07.png" alt=""></p>
+<p>With &quot;Off&quot; selected, you can manually add <code>RuntimeDebugSystem</code> to your scene and keep it only in specific scene.</p>
 <h3 id="menu-interaction">Menu Interaction</h3>
 <p>The debug menu have full keyboard navigation and touch input handling at the same time since the UI prefab is using Unity's normal UI component.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>You are required to have a EventSystem in your scene for event interaction (touch,hover,etc..) of the system to work.</p>
 </div>
-<p><strong>Default Shortcut Keys</strong></p>
+<p><strong>Default Interaction Keys</strong></p>
 <table>
 <thead>
 <tr>

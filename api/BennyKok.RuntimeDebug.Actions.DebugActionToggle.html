@@ -66,7 +66,8 @@
   
   <h1 id="BennyKok_RuntimeDebug_Actions_DebugActionToggle" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionToggle" class="text-break">Class DebugActionToggle
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Toggle action will be represented as a button toggle in the debug menu with on/off status</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -143,8 +144,16 @@
   <h5 id="BennyKok_RuntimeDebug_Actions_DebugActionToggle_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
-public class DebugActionToggle : FluentAction&lt;DebugActionToggle&gt;, ISerializationCallbackReceiver</code></pre>
+public class DebugActionToggle : FluentAction&lt;DebugActionToggle&gt;</code></pre>
   </div>
+  <h5 id="BennyKok_RuntimeDebug_Actions_DebugActionToggle_examples"><strong>Examples</strong></h5>
+  <pre><code>RuntimeDebugSystem.RegisterActions(
+    DebugActionBuilder.Toggle()
+        .WithName(&quot;PostProcessing&quot;)
+        .WithActionGet(() => GetCameraData().renderPostProcessing)
+        .WithActionSet((isOn) => GetCameraData().renderPostProcessing = isOn),
+);</code></pre>
+
   <h3 id="fields">Fields
   </h3>
   
@@ -315,26 +324,6 @@ public UnityEvent unityActionOff</code></pre>
   </table>
   
   
-  <a id="BennyKok_RuntimeDebug_Actions_DebugActionToggle_OnAfterDeserialize_" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnAfterDeserialize*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Actions_DebugActionToggle_OnAfterDeserialize" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnAfterDeserialize">OnAfterDeserialize()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnAfterDeserialize()</code></pre>
-  </div>
-  
-  
-  <a id="BennyKok_RuntimeDebug_Actions_DebugActionToggle_OnBeforeSerialize_" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnBeforeSerialize*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Actions_DebugActionToggle_OnBeforeSerialize" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnBeforeSerialize">OnBeforeSerialize()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnBeforeSerialize()</code></pre>
-  </div>
-  
-  
   <a id="BennyKok_RuntimeDebug_Actions_DebugActionToggle_ResolveAction_" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionToggle.ResolveAction*"></a>
   <h4 id="BennyKok_RuntimeDebug_Actions_DebugActionToggle_ResolveAction" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionToggle.ResolveAction">ResolveAction()</h4>
   <div class="markdown level1 summary"></div>
@@ -345,6 +334,18 @@ public UnityEvent unityActionOff</code></pre>
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseDebugAction.html#BennyKok_RuntimeDebug_Actions_BaseDebugAction_ResolveAction">BaseDebugAction.ResolveAction()</a></div>
+  
+  
+  <a id="BennyKok_RuntimeDebug_Actions_DebugActionToggle_Setup_" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionToggle.Setup*"></a>
+  <h4 id="BennyKok_RuntimeDebug_Actions_DebugActionToggle_Setup" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionToggle.Setup">Setup()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Setup()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseDebugAction.html#BennyKok_RuntimeDebug_Actions_BaseDebugAction_Setup">BaseDebugAction.Setup()</a></div>
   
   
   <a id="BennyKok_RuntimeDebug_Actions_DebugActionToggle_WithActionGet_" data-uid="BennyKok.RuntimeDebug.Actions.DebugActionToggle.WithActionGet*"></a>

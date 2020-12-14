@@ -113,6 +113,19 @@ references:
   isSpec: "True"
   fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.ResolveAction
   nameWithType: BaseDebugAction.ResolveAction
+- uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.Setup
+  name: Setup()
+  href: api/BennyKok.RuntimeDebug.Actions.BaseDebugAction.html#BennyKok_RuntimeDebug_Actions_BaseDebugAction_Setup
+  commentId: M:BennyKok.RuntimeDebug.Actions.BaseDebugAction.Setup
+  fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.Setup()
+  nameWithType: BaseDebugAction.Setup()
+- uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.Setup*
+  name: Setup
+  href: api/BennyKok.RuntimeDebug.Actions.BaseDebugAction.html#BennyKok_RuntimeDebug_Actions_BaseDebugAction_Setup_
+  commentId: Overload:BennyKok.RuntimeDebug.Actions.BaseDebugAction.Setup
+  isSpec: "True"
+  fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.Setup
+  nameWithType: BaseDebugAction.Setup
 - uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.shortcutKey
   name: shortcutKey
   href: api/BennyKok.RuntimeDebug.Actions.BaseDebugAction.html#BennyKok_RuntimeDebug_Actions_BaseDebugAction_shortcutKey
@@ -144,6 +157,19 @@ references:
   isSpec: "True"
   fullName: BennyKok.RuntimeDebug.Actions.DebugActionBuilder.Button
   nameWithType: DebugActionBuilder.Button
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionBuilder.Enum
+  name: Enum()
+  href: api/BennyKok.RuntimeDebug.Actions.DebugActionBuilder.html#BennyKok_RuntimeDebug_Actions_DebugActionBuilder_Enum
+  commentId: M:BennyKok.RuntimeDebug.Actions.DebugActionBuilder.Enum
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionBuilder.Enum()
+  nameWithType: DebugActionBuilder.Enum()
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionBuilder.Enum*
+  name: Enum
+  href: api/BennyKok.RuntimeDebug.Actions.DebugActionBuilder.html#BennyKok_RuntimeDebug_Actions_DebugActionBuilder_Enum_
+  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugActionBuilder.Enum
+  isSpec: "True"
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionBuilder.Enum
+  nameWithType: DebugActionBuilder.Enum
 - uid: BennyKok.RuntimeDebug.Actions.DebugActionBuilder.Flag
   name: Flag()
   href: api/BennyKok.RuntimeDebug.Actions.DebugActionBuilder.html#BennyKok_RuntimeDebug_Actions_DebugActionBuilder_Flag
@@ -189,6 +215,101 @@ references:
   commentId: T:BennyKok.RuntimeDebug.Actions.DebugActionButton
   fullName: BennyKok.RuntimeDebug.Actions.DebugActionButton
   nameWithType: DebugActionButton
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionEnum
+  name: DebugActionEnum
+  href: api/BennyKok.RuntimeDebug.Actions.DebugActionEnum.html
+  commentId: T:BennyKok.RuntimeDebug.Actions.DebugActionEnum
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionEnum
+  nameWithType: DebugActionEnum
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionEnum.actionChange
+  name: actionChange
+  href: api/BennyKok.RuntimeDebug.Actions.DebugActionEnum.html#BennyKok_RuntimeDebug_Actions_DebugActionEnum_actionChange
+  commentId: F:BennyKok.RuntimeDebug.Actions.DebugActionEnum.actionChange
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionEnum.actionChange
+  nameWithType: DebugActionEnum.actionChange
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionEnum.actionGet
+  name: actionGet
+  href: api/BennyKok.RuntimeDebug.Actions.DebugActionEnum.html#BennyKok_RuntimeDebug_Actions_DebugActionEnum_actionGet
+  commentId: F:BennyKok.RuntimeDebug.Actions.DebugActionEnum.actionGet
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionEnum.actionGet
+  nameWithType: DebugActionEnum.actionGet
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionEnum.actionSet
+  name: actionSet
+  href: api/BennyKok.RuntimeDebug.Actions.DebugActionEnum.html#BennyKok_RuntimeDebug_Actions_DebugActionEnum_actionSet
+  commentId: F:BennyKok.RuntimeDebug.Actions.DebugActionEnum.actionSet
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionEnum.actionSet
+  nameWithType: DebugActionEnum.actionSet
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionEnum.GetDisplayStatus(System.Int32)
+  name: GetDisplayStatus(Int32)
+  href: api/BennyKok.RuntimeDebug.Actions.DebugActionEnum.html#BennyKok_RuntimeDebug_Actions_DebugActionEnum_GetDisplayStatus_System_Int32_
+  commentId: M:BennyKok.RuntimeDebug.Actions.DebugActionEnum.GetDisplayStatus(System.Int32)
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionEnum.GetDisplayStatus(System.Int32)
+  nameWithType: DebugActionEnum.GetDisplayStatus(Int32)
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionEnum.GetDisplayStatus*
+  name: GetDisplayStatus
+  href: api/BennyKok.RuntimeDebug.Actions.DebugActionEnum.html#BennyKok_RuntimeDebug_Actions_DebugActionEnum_GetDisplayStatus_
+  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugActionEnum.GetDisplayStatus
+  isSpec: "True"
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionEnum.GetDisplayStatus
+  nameWithType: DebugActionEnum.GetDisplayStatus
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionEnum.ResolveAction
+  name: ResolveAction()
+  href: api/BennyKok.RuntimeDebug.Actions.DebugActionEnum.html#BennyKok_RuntimeDebug_Actions_DebugActionEnum_ResolveAction
+  commentId: M:BennyKok.RuntimeDebug.Actions.DebugActionEnum.ResolveAction
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionEnum.ResolveAction()
+  nameWithType: DebugActionEnum.ResolveAction()
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionEnum.ResolveAction*
+  name: ResolveAction
+  href: api/BennyKok.RuntimeDebug.Actions.DebugActionEnum.html#BennyKok_RuntimeDebug_Actions_DebugActionEnum_ResolveAction_
+  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugActionEnum.ResolveAction
+  isSpec: "True"
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionEnum.ResolveAction
+  nameWithType: DebugActionEnum.ResolveAction
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionEnum.WithActionGet(System.Func{System.Int32})
+  name: WithActionGet(Func<Int32>)
+  href: api/BennyKok.RuntimeDebug.Actions.DebugActionEnum.html#BennyKok_RuntimeDebug_Actions_DebugActionEnum_WithActionGet_System_Func_System_Int32__
+  commentId: M:BennyKok.RuntimeDebug.Actions.DebugActionEnum.WithActionGet(System.Func{System.Int32})
+  name.vb: WithActionGet(Func(Of Int32))
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionEnum.WithActionGet(System.Func<System.Int32>)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.DebugActionEnum.WithActionGet(System.Func(Of System.Int32))
+  nameWithType: DebugActionEnum.WithActionGet(Func<Int32>)
+  nameWithType.vb: DebugActionEnum.WithActionGet(Func(Of Int32))
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionEnum.WithActionGet*
+  name: WithActionGet
+  href: api/BennyKok.RuntimeDebug.Actions.DebugActionEnum.html#BennyKok_RuntimeDebug_Actions_DebugActionEnum_WithActionGet_
+  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugActionEnum.WithActionGet
+  isSpec: "True"
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionEnum.WithActionGet
+  nameWithType: DebugActionEnum.WithActionGet
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionEnum.WithActionSet(System.Action{System.Int32})
+  name: WithActionSet(Action<Int32>)
+  href: api/BennyKok.RuntimeDebug.Actions.DebugActionEnum.html#BennyKok_RuntimeDebug_Actions_DebugActionEnum_WithActionSet_System_Action_System_Int32__
+  commentId: M:BennyKok.RuntimeDebug.Actions.DebugActionEnum.WithActionSet(System.Action{System.Int32})
+  name.vb: WithActionSet(Action(Of Int32))
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionEnum.WithActionSet(System.Action<System.Int32>)
+  fullName.vb: BennyKok.RuntimeDebug.Actions.DebugActionEnum.WithActionSet(System.Action(Of System.Int32))
+  nameWithType: DebugActionEnum.WithActionSet(Action<Int32>)
+  nameWithType.vb: DebugActionEnum.WithActionSet(Action(Of Int32))
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionEnum.WithActionSet*
+  name: WithActionSet
+  href: api/BennyKok.RuntimeDebug.Actions.DebugActionEnum.html#BennyKok_RuntimeDebug_Actions_DebugActionEnum_WithActionSet_
+  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugActionEnum.WithActionSet
+  isSpec: "True"
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionEnum.WithActionSet
+  nameWithType: DebugActionEnum.WithActionSet
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionEnum.WithEnumType(System.Type)
+  name: WithEnumType(Type)
+  href: api/BennyKok.RuntimeDebug.Actions.DebugActionEnum.html#BennyKok_RuntimeDebug_Actions_DebugActionEnum_WithEnumType_System_Type_
+  commentId: M:BennyKok.RuntimeDebug.Actions.DebugActionEnum.WithEnumType(System.Type)
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionEnum.WithEnumType(System.Type)
+  nameWithType: DebugActionEnum.WithEnumType(Type)
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionEnum.WithEnumType*
+  name: WithEnumType
+  href: api/BennyKok.RuntimeDebug.Actions.DebugActionEnum.html#BennyKok_RuntimeDebug_Actions_DebugActionEnum_WithEnumType_
+  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugActionEnum.WithEnumType
+  isSpec: "True"
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionEnum.WithEnumType
+  nameWithType: DebugActionEnum.WithEnumType
 - uid: BennyKok.RuntimeDebug.Actions.DebugActionFlag
   name: DebugActionFlag
   href: api/BennyKok.RuntimeDebug.Actions.DebugActionFlag.html
@@ -283,19 +404,6 @@ references:
   commentId: F:BennyKok.RuntimeDebug.Actions.DebugActionFlag.isPersistence
   fullName: BennyKok.RuntimeDebug.Actions.DebugActionFlag.isPersistence
   nameWithType: DebugActionFlag.isPersistence
-- uid: BennyKok.RuntimeDebug.Actions.DebugActionFlag.OnAfterDeserialize
-  name: OnAfterDeserialize()
-  href: api/BennyKok.RuntimeDebug.Actions.DebugActionFlag.html#BennyKok_RuntimeDebug_Actions_DebugActionFlag_OnAfterDeserialize
-  commentId: M:BennyKok.RuntimeDebug.Actions.DebugActionFlag.OnAfterDeserialize
-  fullName: BennyKok.RuntimeDebug.Actions.DebugActionFlag.OnAfterDeserialize()
-  nameWithType: DebugActionFlag.OnAfterDeserialize()
-- uid: BennyKok.RuntimeDebug.Actions.DebugActionFlag.OnAfterDeserialize*
-  name: OnAfterDeserialize
-  href: api/BennyKok.RuntimeDebug.Actions.DebugActionFlag.html#BennyKok_RuntimeDebug_Actions_DebugActionFlag_OnAfterDeserialize_
-  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugActionFlag.OnAfterDeserialize
-  isSpec: "True"
-  fullName: BennyKok.RuntimeDebug.Actions.DebugActionFlag.OnAfterDeserialize
-  nameWithType: DebugActionFlag.OnAfterDeserialize
 - uid: BennyKok.RuntimeDebug.Actions.DebugActionFlag.OnBeforeSerialize
   name: OnBeforeSerialize()
   href: api/BennyKok.RuntimeDebug.Actions.DebugActionFlag.html#BennyKok_RuntimeDebug_Actions_DebugActionFlag_OnBeforeSerialize
@@ -369,6 +477,19 @@ references:
   isSpec: "True"
   fullName: BennyKok.RuntimeDebug.Actions.DebugActionFlag.SetFlagValue
   nameWithType: DebugActionFlag.SetFlagValue
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionFlag.Setup
+  name: Setup()
+  href: api/BennyKok.RuntimeDebug.Actions.DebugActionFlag.html#BennyKok_RuntimeDebug_Actions_DebugActionFlag_Setup
+  commentId: M:BennyKok.RuntimeDebug.Actions.DebugActionFlag.Setup
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionFlag.Setup()
+  nameWithType: DebugActionFlag.Setup()
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionFlag.Setup*
+  name: Setup
+  href: api/BennyKok.RuntimeDebug.Actions.DebugActionFlag.html#BennyKok_RuntimeDebug_Actions_DebugActionFlag_Setup_
+  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugActionFlag.Setup
+  isSpec: "True"
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionFlag.Setup
+  nameWithType: DebugActionFlag.Setup
 - uid: BennyKok.RuntimeDebug.Actions.DebugActionFlag.WithFlag(System.String,System.Boolean,System.Boolean)
   name: WithFlag(String, Boolean, Boolean)
   href: api/BennyKok.RuntimeDebug.Actions.DebugActionFlag.html#BennyKok_RuntimeDebug_Actions_DebugActionFlag_WithFlag_System_String_System_Boolean_System_Boolean_
@@ -549,32 +670,6 @@ references:
   commentId: F:BennyKok.RuntimeDebug.Actions.DebugActionToggle.isOn
   fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle.isOn
   nameWithType: DebugActionToggle.isOn
-- uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnAfterDeserialize
-  name: OnAfterDeserialize()
-  href: api/BennyKok.RuntimeDebug.Actions.DebugActionToggle.html#BennyKok_RuntimeDebug_Actions_DebugActionToggle_OnAfterDeserialize
-  commentId: M:BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnAfterDeserialize
-  fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnAfterDeserialize()
-  nameWithType: DebugActionToggle.OnAfterDeserialize()
-- uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnAfterDeserialize*
-  name: OnAfterDeserialize
-  href: api/BennyKok.RuntimeDebug.Actions.DebugActionToggle.html#BennyKok_RuntimeDebug_Actions_DebugActionToggle_OnAfterDeserialize_
-  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnAfterDeserialize
-  isSpec: "True"
-  fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnAfterDeserialize
-  nameWithType: DebugActionToggle.OnAfterDeserialize
-- uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnBeforeSerialize
-  name: OnBeforeSerialize()
-  href: api/BennyKok.RuntimeDebug.Actions.DebugActionToggle.html#BennyKok_RuntimeDebug_Actions_DebugActionToggle_OnBeforeSerialize
-  commentId: M:BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnBeforeSerialize
-  fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnBeforeSerialize()
-  nameWithType: DebugActionToggle.OnBeforeSerialize()
-- uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnBeforeSerialize*
-  name: OnBeforeSerialize
-  href: api/BennyKok.RuntimeDebug.Actions.DebugActionToggle.html#BennyKok_RuntimeDebug_Actions_DebugActionToggle_OnBeforeSerialize_
-  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnBeforeSerialize
-  isSpec: "True"
-  fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnBeforeSerialize
-  nameWithType: DebugActionToggle.OnBeforeSerialize
 - uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle.ResolveAction
   name: ResolveAction()
   href: api/BennyKok.RuntimeDebug.Actions.DebugActionToggle.html#BennyKok_RuntimeDebug_Actions_DebugActionToggle_ResolveAction
@@ -588,6 +683,19 @@ references:
   isSpec: "True"
   fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle.ResolveAction
   nameWithType: DebugActionToggle.ResolveAction
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle.Setup
+  name: Setup()
+  href: api/BennyKok.RuntimeDebug.Actions.DebugActionToggle.html#BennyKok_RuntimeDebug_Actions_DebugActionToggle_Setup
+  commentId: M:BennyKok.RuntimeDebug.Actions.DebugActionToggle.Setup
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle.Setup()
+  nameWithType: DebugActionToggle.Setup()
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle.Setup*
+  name: Setup
+  href: api/BennyKok.RuntimeDebug.Actions.DebugActionToggle.html#BennyKok_RuntimeDebug_Actions_DebugActionToggle_Setup_
+  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugActionToggle.Setup
+  isSpec: "True"
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle.Setup
+  nameWithType: DebugActionToggle.Setup
 - uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle.unityActionOff
   name: unityActionOff
   href: api/BennyKok.RuntimeDebug.Actions.DebugActionToggle.html#BennyKok_RuntimeDebug_Actions_DebugActionToggle_unityActionOff
@@ -910,12 +1018,24 @@ references:
   commentId: T:BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera
   fullName: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera
   nameWithType: AutoFacingCamera
+- uid: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.angleThreshold
+  name: angleThreshold
+  href: api/BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.html#BennyKok_RuntimeDebug_Components_UI_AutoFacingCamera_angleThreshold
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.angleThreshold
+  fullName: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.angleThreshold
+  nameWithType: AutoFacingCamera.angleThreshold
 - uid: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.distanceAwayCamera
   name: distanceAwayCamera
   href: api/BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.html#BennyKok_RuntimeDebug_Components_UI_AutoFacingCamera_distanceAwayCamera
   commentId: F:BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.distanceAwayCamera
   fullName: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.distanceAwayCamera
   nameWithType: AutoFacingCamera.distanceAwayCamera
+- uid: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.distanceThreshold
+  name: distanceThreshold
+  href: api/BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.html#BennyKok_RuntimeDebug_Components_UI_AutoFacingCamera_distanceThreshold
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.distanceThreshold
+  fullName: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.distanceThreshold
+  nameWithType: AutoFacingCamera.distanceThreshold
 - uid: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.recenterTime
   name: recenterTime
   href: api/BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.html#BennyKok_RuntimeDebug_Components_UI_AutoFacingCamera_recenterTime
@@ -1039,6 +1159,12 @@ references:
   commentId: F:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.canvasScaler
   fullName: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.canvasScaler
   nameWithType: DebugUIHandler.canvasScaler
+- uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.currentInputField
+  name: currentInputField
+  href: api/BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.html#BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_currentInputField
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.currentInputField
+  fullName: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.currentInputField
+  nameWithType: DebugUIHandler.currentInputField
 - uid: BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.customFont
   name: customFont
   href: api/BennyKok.RuntimeDebug.Components.UI.DebugUIHandler.html#BennyKok_RuntimeDebug_Components_UI_DebugUIHandler_customFont
@@ -1530,6 +1656,12 @@ references:
   commentId: F:BennyKok.RuntimeDebug.Components.UI.ListItemView.idx
   fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.idx
   nameWithType: ListItemView.idx
+- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.isDestroyed
+  name: isDestroyed
+  href: api/BennyKok.RuntimeDebug.Components.UI.ListItemView.html#BennyKok_RuntimeDebug_Components_UI_ListItemView_isDestroyed
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListItemView.isDestroyed
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.isDestroyed
+  nameWithType: ListItemView.isDestroyed
 - uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.isFocused
   name: isFocused
   href: api/BennyKok.RuntimeDebug.Components.UI.ListItemView.html#BennyKok_RuntimeDebug_Components_UI_ListItemView_isFocused
@@ -2709,6 +2841,19 @@ references:
   isSpec: "True"
   fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetActionName
   nameWithType: ReflectedActionData.GetActionName
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetBoolValue(System.Object)
+  name: GetBoolValue(Object)
+  href: api/BennyKok.RuntimeDebug.Data.ReflectedActionData.html#BennyKok_RuntimeDebug_Data_ReflectedActionData_GetBoolValue_System_Object_
+  commentId: M:BennyKok.RuntimeDebug.Data.ReflectedActionData.GetBoolValue(System.Object)
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetBoolValue(System.Object)
+  nameWithType: ReflectedActionData.GetBoolValue(Object)
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetBoolValue*
+  name: GetBoolValue
+  href: api/BennyKok.RuntimeDebug.Data.ReflectedActionData.html#BennyKok_RuntimeDebug_Data_ReflectedActionData_GetBoolValue_
+  commentId: Overload:BennyKok.RuntimeDebug.Data.ReflectedActionData.GetBoolValue
+  isSpec: "True"
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetBoolValue
+  nameWithType: ReflectedActionData.GetBoolValue
 - uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetFlagDisplay
   name: GetFlagDisplay()
   href: api/BennyKok.RuntimeDebug.Data.ReflectedActionData.html#BennyKok_RuntimeDebug_Data_ReflectedActionData_GetFlagDisplay
@@ -2761,6 +2906,19 @@ references:
   isSpec: "True"
   fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetValue
   nameWithType: ReflectedActionData.GetValue
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsBoolean
+  name: IsBoolean()
+  href: api/BennyKok.RuntimeDebug.Data.ReflectedActionData.html#BennyKok_RuntimeDebug_Data_ReflectedActionData_IsBoolean
+  commentId: M:BennyKok.RuntimeDebug.Data.ReflectedActionData.IsBoolean
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsBoolean()
+  nameWithType: ReflectedActionData.IsBoolean()
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsBoolean*
+  name: IsBoolean
+  href: api/BennyKok.RuntimeDebug.Data.ReflectedActionData.html#BennyKok_RuntimeDebug_Data_ReflectedActionData_IsBoolean_
+  commentId: Overload:BennyKok.RuntimeDebug.Data.ReflectedActionData.IsBoolean
+  isSpec: "True"
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsBoolean
+  nameWithType: ReflectedActionData.IsBoolean
 - uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsButton
   name: IsButton()
   href: api/BennyKok.RuntimeDebug.Data.ReflectedActionData.html#BennyKok_RuntimeDebug_Data_ReflectedActionData_IsButton
@@ -2774,19 +2932,19 @@ references:
   isSpec: "True"
   fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsButton
   nameWithType: ReflectedActionData.IsButton
-- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFlag
-  name: IsFlag()
-  href: api/BennyKok.RuntimeDebug.Data.ReflectedActionData.html#BennyKok_RuntimeDebug_Data_ReflectedActionData_IsFlag
-  commentId: M:BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFlag
-  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFlag()
-  nameWithType: ReflectedActionData.IsFlag()
-- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFlag*
-  name: IsFlag
-  href: api/BennyKok.RuntimeDebug.Data.ReflectedActionData.html#BennyKok_RuntimeDebug_Data_ReflectedActionData_IsFlag_
-  commentId: Overload:BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFlag
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsEnum
+  name: IsEnum()
+  href: api/BennyKok.RuntimeDebug.Data.ReflectedActionData.html#BennyKok_RuntimeDebug_Data_ReflectedActionData_IsEnum
+  commentId: M:BennyKok.RuntimeDebug.Data.ReflectedActionData.IsEnum
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsEnum()
+  nameWithType: ReflectedActionData.IsEnum()
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsEnum*
+  name: IsEnum
+  href: api/BennyKok.RuntimeDebug.Data.ReflectedActionData.html#BennyKok_RuntimeDebug_Data_ReflectedActionData_IsEnum_
+  commentId: Overload:BennyKok.RuntimeDebug.Data.ReflectedActionData.IsEnum
   isSpec: "True"
-  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFlag
-  nameWithType: ReflectedActionData.IsFlag
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsEnum
+  nameWithType: ReflectedActionData.IsEnum
 - uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFloat
   name: IsFloat()
   href: api/BennyKok.RuntimeDebug.Data.ReflectedActionData.html#BennyKok_RuntimeDebug_Data_ReflectedActionData_IsFloat
@@ -3060,6 +3218,12 @@ references:
   commentId: F:BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode.SetTimeScale
   fullName: BennyKok.RuntimeDebug.Data.Settings.MenuPauseMode.SetTimeScale
   nameWithType: Settings.MenuPauseMode.SetTimeScale
+- uid: BennyKok.RuntimeDebug.Data.Settings.pointerHoverIgnoreMobile
+  name: pointerHoverIgnoreMobile
+  href: api/BennyKok.RuntimeDebug.Data.Settings.html#BennyKok_RuntimeDebug_Data_Settings_pointerHoverIgnoreMobile
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.pointerHoverIgnoreMobile
+  fullName: BennyKok.RuntimeDebug.Data.Settings.pointerHoverIgnoreMobile
+  nameWithType: Settings.pointerHoverIgnoreMobile
 - uid: BennyKok.RuntimeDebug.Data.Settings.selectionColorHighlight
   name: selectionColorHighlight
   href: api/BennyKok.RuntimeDebug.Data.Settings.html#BennyKok_RuntimeDebug_Data_Settings_selectionColorHighlight
@@ -3666,6 +3830,32 @@ references:
   isSpec: "True"
   fullName: BennyKok.RuntimeDebug.DebugInput.InputResponse.InputResponse
   nameWithType: InputResponse.InputResponse
+- uid: BennyKok.RuntimeDebug.DebugInput.InputResponse.AllInputValid
+  name: AllInputValid
+  href: api/BennyKok.RuntimeDebug.DebugInput.InputResponse.html#BennyKok_RuntimeDebug_DebugInput_InputResponse_AllInputValid
+  commentId: P:BennyKok.RuntimeDebug.DebugInput.InputResponse.AllInputValid
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputResponse.AllInputValid
+  nameWithType: InputResponse.AllInputValid
+- uid: BennyKok.RuntimeDebug.DebugInput.InputResponse.AllInputValid*
+  name: AllInputValid
+  href: api/BennyKok.RuntimeDebug.DebugInput.InputResponse.html#BennyKok_RuntimeDebug_DebugInput_InputResponse_AllInputValid_
+  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.InputResponse.AllInputValid
+  isSpec: "True"
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputResponse.AllInputValid
+  nameWithType: InputResponse.AllInputValid
+- uid: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetObjectsForReflection(System.Boolean)
+  name: GetObjectsForReflection(Boolean)
+  href: api/BennyKok.RuntimeDebug.DebugInput.InputResponse.html#BennyKok_RuntimeDebug_DebugInput_InputResponse_GetObjectsForReflection_System_Boolean_
+  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputResponse.GetObjectsForReflection(System.Boolean)
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetObjectsForReflection(System.Boolean)
+  nameWithType: InputResponse.GetObjectsForReflection(Boolean)
+- uid: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetObjectsForReflection*
+  name: GetObjectsForReflection
+  href: api/BennyKok.RuntimeDebug.DebugInput.InputResponse.html#BennyKok_RuntimeDebug_DebugInput_InputResponse_GetObjectsForReflection_
+  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.InputResponse.GetObjectsForReflection
+  isSpec: "True"
+  fullName: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetObjectsForReflection
+  nameWithType: InputResponse.GetObjectsForReflection
 - uid: BennyKok.RuntimeDebug.DebugInput.InputResponse.GetParam(System.String)
   name: GetParam(String)
   href: api/BennyKok.RuntimeDebug.DebugInput.InputResponse.html#BennyKok_RuntimeDebug_DebugInput_InputResponse_GetParam_System_String_
@@ -3773,19 +3963,6 @@ references:
   commentId: F:BennyKok.RuntimeDebug.DebugInput.InputResponse.responses
   fullName: BennyKok.RuntimeDebug.DebugInput.InputResponse.responses
   nameWithType: InputResponse.responses
-- uid: BennyKok.RuntimeDebug.DebugInput.InputResponse.ToObjects
-  name: ToObjects()
-  href: api/BennyKok.RuntimeDebug.DebugInput.InputResponse.html#BennyKok_RuntimeDebug_DebugInput_InputResponse_ToObjects
-  commentId: M:BennyKok.RuntimeDebug.DebugInput.InputResponse.ToObjects
-  fullName: BennyKok.RuntimeDebug.DebugInput.InputResponse.ToObjects()
-  nameWithType: InputResponse.ToObjects()
-- uid: BennyKok.RuntimeDebug.DebugInput.InputResponse.ToObjects*
-  name: ToObjects
-  href: api/BennyKok.RuntimeDebug.DebugInput.InputResponse.html#BennyKok_RuntimeDebug_DebugInput_InputResponse_ToObjects_
-  commentId: Overload:BennyKok.RuntimeDebug.DebugInput.InputResponse.ToObjects
-  isSpec: "True"
-  fullName: BennyKok.RuntimeDebug.DebugInput.InputResponse.ToObjects
-  nameWithType: InputResponse.ToObjects
 - uid: BennyKok.RuntimeDebug.DebugInput.Param
   name: Param
   href: api/BennyKok.RuntimeDebug.DebugInput.Param.html
@@ -4079,19 +4256,6 @@ references:
   isSpec: "True"
   fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.InputLayer
   nameWithType: RuntimeDebugSystem.InputLayer
-- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsActive
-  name: IsActive
-  href: api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html#BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_IsActive
-  commentId: P:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsActive
-  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsActive
-  nameWithType: RuntimeDebugSystem.IsActive
-- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsActive*
-  name: IsActive
-  href: api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html#BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_IsActive_
-  commentId: Overload:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsActive
-  isSpec: "True"
-  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsActive
-  nameWithType: RuntimeDebugSystem.IsActive
 - uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.isInputLayerReady
   name: isInputLayerReady
   href: api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html#BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_isInputLayerReady
@@ -4111,6 +4275,19 @@ references:
   isSpec: "True"
   fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsIsSystemEnabled
   nameWithType: RuntimeDebugSystem.IsIsSystemEnabled
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsVisible
+  name: IsVisible
+  href: api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html#BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_IsVisible
+  commentId: P:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsVisible
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsVisible
+  nameWithType: RuntimeDebugSystem.IsVisible
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsVisible*
+  name: IsVisible
+  href: api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html#BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_IsVisible_
+  commentId: Overload:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsVisible
+  isSpec: "True"
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsVisible
+  nameWithType: RuntimeDebugSystem.IsVisible
 - uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.OnDebugMenuToggleEvent
   name: OnDebugMenuToggleEvent
   href: api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html#BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_OnDebugMenuToggleEvent
@@ -4199,6 +4376,19 @@ references:
   commentId: F:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.runtimeDebugUI
   fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.runtimeDebugUI
   nameWithType: RuntimeDebugSystem.runtimeDebugUI
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SendShortcutAction(System.String)
+  name: SendShortcutAction(String)
+  href: api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html#BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_SendShortcutAction_System_String_
+  commentId: M:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SendShortcutAction(System.String)
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SendShortcutAction(System.String)
+  nameWithType: RuntimeDebugSystem.SendShortcutAction(String)
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SendShortcutAction*
+  name: SendShortcutAction
+  href: api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html#BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_SendShortcutAction_
+  commentId: Overload:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SendShortcutAction
+  isSpec: "True"
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SendShortcutAction
+  nameWithType: RuntimeDebugSystem.SendShortcutAction
 - uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SetCustomInputLayer(BennyKok.RuntimeDebug.DebugInput.InputLayer)
   name: SetCustomInputLayer(InputLayer)
   href: api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html#BennyKok_RuntimeDebug_Systems_RuntimeDebugSystem_SetCustomInputLayer_BennyKok_RuntimeDebug_DebugInput_InputLayer_
@@ -4646,3 +4836,179 @@ references:
   commentId: F:BennyKok.RuntimeDebug.Utils.VisibilityAttribute.targetProperty
   fullName: BennyKok.RuntimeDebug.Utils.VisibilityAttribute.targetProperty
   nameWithType: VisibilityAttribute.targetProperty
+- uid: BennyKok.RuntimeDebug.VR
+  name: BennyKok.RuntimeDebug.VR
+  href: api/BennyKok.RuntimeDebug.VR.html
+  commentId: N:BennyKok.RuntimeDebug.VR
+  fullName: BennyKok.RuntimeDebug.VR
+  nameWithType: BennyKok.RuntimeDebug.VR
+- uid: BennyKok.RuntimeDebug.VR.VRKey
+  name: VRKey
+  href: api/BennyKok.RuntimeDebug.VR.VRKey.html
+  commentId: T:BennyKok.RuntimeDebug.VR.VRKey
+  fullName: BennyKok.RuntimeDebug.VR.VRKey
+  nameWithType: VRKey
+- uid: BennyKok.RuntimeDebug.VR.VRKey.GetKeyCodeForShortcut(UnityEngine.KeyCode)
+  name: GetKeyCodeForShortcut(KeyCode)
+  href: api/BennyKok.RuntimeDebug.VR.VRKey.html#BennyKok_RuntimeDebug_VR_VRKey_GetKeyCodeForShortcut_UnityEngine_KeyCode_
+  commentId: M:BennyKok.RuntimeDebug.VR.VRKey.GetKeyCodeForShortcut(UnityEngine.KeyCode)
+  fullName: BennyKok.RuntimeDebug.VR.VRKey.GetKeyCodeForShortcut(UnityEngine.KeyCode)
+  nameWithType: VRKey.GetKeyCodeForShortcut(KeyCode)
+- uid: BennyKok.RuntimeDebug.VR.VRKey.GetKeyCodeForShortcut*
+  name: GetKeyCodeForShortcut
+  href: api/BennyKok.RuntimeDebug.VR.VRKey.html#BennyKok_RuntimeDebug_VR_VRKey_GetKeyCodeForShortcut_
+  commentId: Overload:BennyKok.RuntimeDebug.VR.VRKey.GetKeyCodeForShortcut
+  isSpec: "True"
+  fullName: BennyKok.RuntimeDebug.VR.VRKey.GetKeyCodeForShortcut
+  nameWithType: VRKey.GetKeyCodeForShortcut
+- uid: BennyKok.RuntimeDebug.VR.VRKey.ignoreKey
+  name: ignoreKey
+  href: api/BennyKok.RuntimeDebug.VR.VRKey.html#BennyKok_RuntimeDebug_VR_VRKey_ignoreKey
+  commentId: F:BennyKok.RuntimeDebug.VR.VRKey.ignoreKey
+  fullName: BennyKok.RuntimeDebug.VR.VRKey.ignoreKey
+  nameWithType: VRKey.ignoreKey
+- uid: BennyKok.RuntimeDebug.VR.VRKey.keyboard
+  name: keyboard
+  href: api/BennyKok.RuntimeDebug.VR.VRKey.html#BennyKok_RuntimeDebug_VR_VRKey_keyboard
+  commentId: F:BennyKok.RuntimeDebug.VR.VRKey.keyboard
+  fullName: BennyKok.RuntimeDebug.VR.VRKey.keyboard
+  nameWithType: VRKey.keyboard
+- uid: BennyKok.RuntimeDebug.VR.VRKey.keyCode
+  name: keyCode
+  href: api/BennyKok.RuntimeDebug.VR.VRKey.html#BennyKok_RuntimeDebug_VR_VRKey_keyCode
+  commentId: F:BennyKok.RuntimeDebug.VR.VRKey.keyCode
+  fullName: BennyKok.RuntimeDebug.VR.VRKey.keyCode
+  nameWithType: VRKey.keyCode
+- uid: BennyKok.RuntimeDebug.VR.VRKey.Label
+  name: Label
+  href: api/BennyKok.RuntimeDebug.VR.VRKey.html#BennyKok_RuntimeDebug_VR_VRKey_Label
+  commentId: P:BennyKok.RuntimeDebug.VR.VRKey.Label
+  fullName: BennyKok.RuntimeDebug.VR.VRKey.Label
+  nameWithType: VRKey.Label
+- uid: BennyKok.RuntimeDebug.VR.VRKey.Label*
+  name: Label
+  href: api/BennyKok.RuntimeDebug.VR.VRKey.html#BennyKok_RuntimeDebug_VR_VRKey_Label_
+  commentId: Overload:BennyKok.RuntimeDebug.VR.VRKey.Label
+  isSpec: "True"
+  fullName: BennyKok.RuntimeDebug.VR.VRKey.Label
+  nameWithType: VRKey.Label
+- uid: BennyKok.RuntimeDebug.VR.VRKey.OnPointerClick(UnityEngine.EventSystems.PointerEventData)
+  name: OnPointerClick(PointerEventData)
+  href: api/BennyKok.RuntimeDebug.VR.VRKey.html#BennyKok_RuntimeDebug_VR_VRKey_OnPointerClick_UnityEngine_EventSystems_PointerEventData_
+  commentId: M:BennyKok.RuntimeDebug.VR.VRKey.OnPointerClick(UnityEngine.EventSystems.PointerEventData)
+  fullName: BennyKok.RuntimeDebug.VR.VRKey.OnPointerClick(UnityEngine.EventSystems.PointerEventData)
+  nameWithType: VRKey.OnPointerClick(PointerEventData)
+- uid: BennyKok.RuntimeDebug.VR.VRKey.OnPointerClick*
+  name: OnPointerClick
+  href: api/BennyKok.RuntimeDebug.VR.VRKey.html#BennyKok_RuntimeDebug_VR_VRKey_OnPointerClick_
+  commentId: Overload:BennyKok.RuntimeDebug.VR.VRKey.OnPointerClick
+  isSpec: "True"
+  fullName: BennyKok.RuntimeDebug.VR.VRKey.OnPointerClick
+  nameWithType: VRKey.OnPointerClick
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard
+  name: VRKeyboard
+  href: api/BennyKok.RuntimeDebug.VR.VRKeyboard.html
+  commentId: T:BennyKok.RuntimeDebug.VR.VRKeyboard
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard
+  nameWithType: VRKeyboard
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.allKeys
+  name: allKeys
+  href: api/BennyKok.RuntimeDebug.VR.VRKeyboard.html#BennyKok_RuntimeDebug_VR_VRKeyboard_allKeys
+  commentId: F:BennyKok.RuntimeDebug.VR.VRKeyboard.allKeys
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.allKeys
+  nameWithType: VRKeyboard.allKeys
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.FillChildren
+  name: FillChildren()
+  href: api/BennyKok.RuntimeDebug.VR.VRKeyboard.html#BennyKok_RuntimeDebug_VR_VRKeyboard_FillChildren
+  commentId: M:BennyKok.RuntimeDebug.VR.VRKeyboard.FillChildren
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.FillChildren()
+  nameWithType: VRKeyboard.FillChildren()
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.FillChildren*
+  name: FillChildren
+  href: api/BennyKok.RuntimeDebug.VR.VRKeyboard.html#BennyKok_RuntimeDebug_VR_VRKeyboard_FillChildren_
+  commentId: Overload:BennyKok.RuntimeDebug.VR.VRKeyboard.FillChildren
+  isSpec: "True"
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.FillChildren
+  nameWithType: VRKeyboard.FillChildren
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.GetKeyCodeForInput(UnityEngine.KeyCode,System.Boolean)
+  name: GetKeyCodeForInput(KeyCode, Boolean)
+  href: api/BennyKok.RuntimeDebug.VR.VRKeyboard.html#BennyKok_RuntimeDebug_VR_VRKeyboard_GetKeyCodeForInput_UnityEngine_KeyCode_System_Boolean_
+  commentId: M:BennyKok.RuntimeDebug.VR.VRKeyboard.GetKeyCodeForInput(UnityEngine.KeyCode,System.Boolean)
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.GetKeyCodeForInput(UnityEngine.KeyCode, System.Boolean)
+  nameWithType: VRKeyboard.GetKeyCodeForInput(KeyCode, Boolean)
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.GetKeyCodeForInput*
+  name: GetKeyCodeForInput
+  href: api/BennyKok.RuntimeDebug.VR.VRKeyboard.html#BennyKok_RuntimeDebug_VR_VRKeyboard_GetKeyCodeForInput_
+  commentId: Overload:BennyKok.RuntimeDebug.VR.VRKeyboard.GetKeyCodeForInput
+  isSpec: "True"
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.GetKeyCodeForInput
+  nameWithType: VRKeyboard.GetKeyCodeForInput
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.HideSecondaryLayout
+  name: HideSecondaryLayout()
+  href: api/BennyKok.RuntimeDebug.VR.VRKeyboard.html#BennyKok_RuntimeDebug_VR_VRKeyboard_HideSecondaryLayout
+  commentId: M:BennyKok.RuntimeDebug.VR.VRKeyboard.HideSecondaryLayout
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.HideSecondaryLayout()
+  nameWithType: VRKeyboard.HideSecondaryLayout()
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.HideSecondaryLayout*
+  name: HideSecondaryLayout
+  href: api/BennyKok.RuntimeDebug.VR.VRKeyboard.html#BennyKok_RuntimeDebug_VR_VRKeyboard_HideSecondaryLayout_
+  commentId: Overload:BennyKok.RuntimeDebug.VR.VRKeyboard.HideSecondaryLayout
+  isSpec: "True"
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.HideSecondaryLayout
+  nameWithType: VRKeyboard.HideSecondaryLayout
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.IsCaps
+  name: IsCaps
+  href: api/BennyKok.RuntimeDebug.VR.VRKeyboard.html#BennyKok_RuntimeDebug_VR_VRKeyboard_IsCaps
+  commentId: P:BennyKok.RuntimeDebug.VR.VRKeyboard.IsCaps
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.IsCaps
+  nameWithType: VRKeyboard.IsCaps
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.IsCaps*
+  name: IsCaps
+  href: api/BennyKok.RuntimeDebug.VR.VRKeyboard.html#BennyKok_RuntimeDebug_VR_VRKeyboard_IsCaps_
+  commentId: Overload:BennyKok.RuntimeDebug.VR.VRKeyboard.IsCaps
+  isSpec: "True"
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.IsCaps
+  nameWithType: VRKeyboard.IsCaps
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.keyboardLayout
+  name: keyboardLayout
+  href: api/BennyKok.RuntimeDebug.VR.VRKeyboard.html#BennyKok_RuntimeDebug_VR_VRKeyboard_keyboardLayout
+  commentId: F:BennyKok.RuntimeDebug.VR.VRKeyboard.keyboardLayout
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.keyboardLayout
+  nameWithType: VRKeyboard.keyboardLayout
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.primaryLayoutTransform
+  name: primaryLayoutTransform
+  href: api/BennyKok.RuntimeDebug.VR.VRKeyboard.html#BennyKok_RuntimeDebug_VR_VRKeyboard_primaryLayoutTransform
+  commentId: F:BennyKok.RuntimeDebug.VR.VRKeyboard.primaryLayoutTransform
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.primaryLayoutTransform
+  nameWithType: VRKeyboard.primaryLayoutTransform
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.refocusInputFieldOnKeyPress
+  name: refocusInputFieldOnKeyPress
+  href: api/BennyKok.RuntimeDebug.VR.VRKeyboard.html#BennyKok_RuntimeDebug_VR_VRKeyboard_refocusInputFieldOnKeyPress
+  commentId: F:BennyKok.RuntimeDebug.VR.VRKeyboard.refocusInputFieldOnKeyPress
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.refocusInputFieldOnKeyPress
+  nameWithType: VRKeyboard.refocusInputFieldOnKeyPress
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.secondaryKeyboardLayout
+  name: secondaryKeyboardLayout
+  href: api/BennyKok.RuntimeDebug.VR.VRKeyboard.html#BennyKok_RuntimeDebug_VR_VRKeyboard_secondaryKeyboardLayout
+  commentId: F:BennyKok.RuntimeDebug.VR.VRKeyboard.secondaryKeyboardLayout
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.secondaryKeyboardLayout
+  nameWithType: VRKeyboard.secondaryKeyboardLayout
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.secondaryLayoutTransform
+  name: secondaryLayoutTransform
+  href: api/BennyKok.RuntimeDebug.VR.VRKeyboard.html#BennyKok_RuntimeDebug_VR_VRKeyboard_secondaryLayoutTransform
+  commentId: F:BennyKok.RuntimeDebug.VR.VRKeyboard.secondaryLayoutTransform
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.secondaryLayoutTransform
+  nameWithType: VRKeyboard.secondaryLayoutTransform
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.ShowSecondaryLayout
+  name: ShowSecondaryLayout()
+  href: api/BennyKok.RuntimeDebug.VR.VRKeyboard.html#BennyKok_RuntimeDebug_VR_VRKeyboard_ShowSecondaryLayout
+  commentId: M:BennyKok.RuntimeDebug.VR.VRKeyboard.ShowSecondaryLayout
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.ShowSecondaryLayout()
+  nameWithType: VRKeyboard.ShowSecondaryLayout()
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.ShowSecondaryLayout*
+  name: ShowSecondaryLayout
+  href: api/BennyKok.RuntimeDebug.VR.VRKeyboard.html#BennyKok_RuntimeDebug_VR_VRKeyboard_ShowSecondaryLayout_
+  commentId: Overload:BennyKok.RuntimeDebug.VR.VRKeyboard.ShowSecondaryLayout
+  isSpec: "True"
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.ShowSecondaryLayout
+  nameWithType: VRKeyboard.ShowSecondaryLayout

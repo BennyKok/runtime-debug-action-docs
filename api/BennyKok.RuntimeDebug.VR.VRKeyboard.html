@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class BaseDebugAction
+    <title>Class VRKeyboard
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class BaseDebugAction
+    <meta name="title" content="Class VRKeyboard
    ">
     <meta name="generator" content="docfx 2.56.6.0">
     
@@ -61,49 +61,39 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.Actions.BaseDebugAction">
+            <article class="content wrap" id="_content" data-uid="BennyKok.RuntimeDebug.VR.VRKeyboard">
   
   
-  <h1 id="BennyKok_RuntimeDebug_Actions_BaseDebugAction" data-uid="BennyKok.RuntimeDebug.Actions.BaseDebugAction" class="text-break">Class BaseDebugAction
+  <h1 id="BennyKok_RuntimeDebug_VR_VRKeyboard" data-uid="BennyKok.RuntimeDebug.VR.VRKeyboard" class="text-break">Class VRKeyboard
   </h1>
-  <div class="markdown level0 summary"><p>Base class for all debug action</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">BaseDebugAction</span></div>
-      <div class="level2"><a class="xref" href="BennyKok.RuntimeDebug.Actions.FluentAction-1.html">FluentAction&lt;T&gt;</a></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.Component</span></div>
+    <div class="level3"><span class="xref">UnityEngine.Behaviour</span></div>
+    <div class="level4"><span class="xref">UnityEngine.MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">VRKeyboard</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Actions.html">BennyKok.RuntimeDebug.Actions</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.VR.html">BennyKok.RuntimeDebug.VR</a></h6>
   <h6><strong>Assembly</strong>: com.bennykok.runtime-debug-action.dll</h6>
-  <h5 id="BennyKok_RuntimeDebug_Actions_BaseDebugAction_syntax">Syntax</h5>
+  <h5 id="BennyKok_RuntimeDebug_VR_VRKeyboard_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Serializable]
-public class BaseDebugAction</code></pre>
-  </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  
-  
-  <a id="BennyKok_RuntimeDebug_Actions_BaseDebugAction__ctor_" data-uid="BennyKok.RuntimeDebug.Actions.BaseDebugAction.#ctor*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Actions_BaseDebugAction__ctor" data-uid="BennyKok.RuntimeDebug.Actions.BaseDebugAction.#ctor">BaseDebugAction()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BaseDebugAction()</code></pre>
+    <pre><code class="lang-csharp hljs">public class VRKeyboard : MonoBehaviour</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
   
   
-  <h4 id="BennyKok_RuntimeDebug_Actions_BaseDebugAction_action" data-uid="BennyKok.RuntimeDebug.Actions.BaseDebugAction.action">action</h4>
+  <h4 id="BennyKok_RuntimeDebug_VR_VRKeyboard_allKeys" data-uid="BennyKok.RuntimeDebug.VR.VRKeyboard.allKeys">allKeys</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Action action</code></pre>
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public VRKey[] allKeys</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -115,19 +105,19 @@ public class BaseDebugAction</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Action</span></td>
+        <td><a class="xref" href="BennyKok.RuntimeDebug.VR.VRKey.html">VRKey</a>[]</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BennyKok_RuntimeDebug_Actions_BaseDebugAction_actionColor" data-uid="BennyKok.RuntimeDebug.Actions.BaseDebugAction.actionColor">actionColor</h4>
+  <h4 id="BennyKok_RuntimeDebug_VR_VRKeyboard_keyboardLayout" data-uid="BennyKok.RuntimeDebug.VR.VRKeyboard.keyboardLayout">keyboardLayout</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Color actionColor</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly KeyCode[][] keyboardLayout</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -139,19 +129,19 @@ public class BaseDebugAction</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UnityEngine.Color</span></td>
+        <td><span class="xref">UnityEngine.KeyCode</span>[][]</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BennyKok_RuntimeDebug_Actions_BaseDebugAction_actionStatus" data-uid="BennyKok.RuntimeDebug.Actions.BaseDebugAction.actionStatus">actionStatus</h4>
+  <h4 id="BennyKok_RuntimeDebug_VR_VRKeyboard_primaryLayoutTransform" data-uid="BennyKok.RuntimeDebug.VR.VRKeyboard.primaryLayoutTransform">primaryLayoutTransform</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Func&lt;string&gt; actionStatus</code></pre>
+    <pre><code class="lang-csharp hljs">public Transform primaryLayoutTransform</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -163,19 +153,19 @@ public class BaseDebugAction</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">UnityEngine.Transform</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BennyKok_RuntimeDebug_Actions_BaseDebugAction_closePanelAfterTrigger" data-uid="BennyKok.RuntimeDebug.Actions.BaseDebugAction.closePanelAfterTrigger">closePanelAfterTrigger</h4>
+  <h4 id="BennyKok_RuntimeDebug_VR_VRKeyboard_refocusInputFieldOnKeyPress" data-uid="BennyKok.RuntimeDebug.VR.VRKeyboard.refocusInputFieldOnKeyPress">refocusInputFieldOnKeyPress</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool closePanelAfterTrigger</code></pre>
+    <pre><code class="lang-csharp hljs">public bool refocusInputFieldOnKeyPress</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -194,13 +184,12 @@ public class BaseDebugAction</code></pre>
   </table>
   
   
-  <h4 id="BennyKok_RuntimeDebug_Actions_BaseDebugAction_description" data-uid="BennyKok.RuntimeDebug.Actions.BaseDebugAction.description">description</h4>
+  <h4 id="BennyKok_RuntimeDebug_VR_VRKeyboard_secondaryKeyboardLayout" data-uid="BennyKok.RuntimeDebug.VR.VRKeyboard.secondaryKeyboardLayout">secondaryKeyboardLayout</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Multiline]
-public string description</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly KeyCode[][] secondaryKeyboardLayout</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -212,20 +201,19 @@ public string description</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">UnityEngine.KeyCode</span>[][]</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="BennyKok_RuntimeDebug_Actions_BaseDebugAction_group" data-uid="BennyKok.RuntimeDebug.Actions.BaseDebugAction.group">group</h4>
+  <h4 id="BennyKok_RuntimeDebug_VR_VRKeyboard_secondaryLayoutTransform" data-uid="BennyKok.RuntimeDebug.VR.VRKeyboard.secondaryLayoutTransform">secondaryLayoutTransform</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Comment(&quot;Base Action Properties&quot;)]
-public string group</code></pre>
+    <pre><code class="lang-csharp hljs">public Transform secondaryLayoutTransform</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -237,21 +225,24 @@ public string group</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">UnityEngine.Transform</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h3 id="properties">Properties
+  </h3>
   
   
-  <h4 id="BennyKok_RuntimeDebug_Actions_BaseDebugAction_id" data-uid="BennyKok.RuntimeDebug.Actions.BaseDebugAction.id">id</h4>
+  <a id="BennyKok_RuntimeDebug_VR_VRKeyboard_IsCaps_" data-uid="BennyKok.RuntimeDebug.VR.VRKeyboard.IsCaps*"></a>
+  <h4 id="BennyKok_RuntimeDebug_VR_VRKeyboard_IsCaps" data-uid="BennyKok.RuntimeDebug.VR.VRKeyboard.IsCaps">IsCaps</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string id</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsCaps { get; set; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -261,82 +252,7 @@ public string group</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BennyKok_RuntimeDebug_Actions_BaseDebugAction_name" data-uid="BennyKok.RuntimeDebug.Actions.BaseDebugAction.name">name</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string name</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BennyKok_RuntimeDebug_Actions_BaseDebugAction_shortcutKey" data-uid="BennyKok.RuntimeDebug.Actions.BaseDebugAction.shortcutKey">shortcutKey</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string shortcutKey</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BennyKok_RuntimeDebug_Actions_BaseDebugAction_unityAction" data-uid="BennyKok.RuntimeDebug.Actions.BaseDebugAction.unityAction">unityAction</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Space]
-[Comment(&quot;Action Event&quot;, order = 1)]
-[CollapsedEvent(null)]
-public UnityEvent unityAction</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UnityEngine.Events.UnityEvent</span></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -345,39 +261,47 @@ public UnityEvent unityAction</code></pre>
   </h3>
   
   
-  <a id="BennyKok_RuntimeDebug_Actions_BaseDebugAction_CanDisplayAction_" data-uid="BennyKok.RuntimeDebug.Actions.BaseDebugAction.CanDisplayAction*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Actions_BaseDebugAction_CanDisplayAction" data-uid="BennyKok.RuntimeDebug.Actions.BaseDebugAction.CanDisplayAction">CanDisplayAction()</h4>
+  <a id="BennyKok_RuntimeDebug_VR_VRKeyboard_FillChildren_" data-uid="BennyKok.RuntimeDebug.VR.VRKeyboard.FillChildren*"></a>
+  <h4 id="BennyKok_RuntimeDebug_VR_VRKeyboard_FillChildren" data-uid="BennyKok.RuntimeDebug.VR.VRKeyboard.FillChildren">FillChildren()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual bool CanDisplayAction()</code></pre>
+    <pre><code class="lang-csharp hljs">[ContextMenu(&quot;Fill VRKey&quot;)]
+public void FillChildren()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
+  
+  
+  <a id="BennyKok_RuntimeDebug_VR_VRKeyboard_GetKeyCodeForInput_" data-uid="BennyKok.RuntimeDebug.VR.VRKeyboard.GetKeyCodeForInput*"></a>
+  <h4 id="BennyKok_RuntimeDebug_VR_VRKeyboard_GetKeyCodeForInput_UnityEngine_KeyCode_System_Boolean_" data-uid="BennyKok.RuntimeDebug.VR.VRKeyboard.GetKeyCodeForInput(UnityEngine.KeyCode,System.Boolean)">GetKeyCodeForInput(KeyCode, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static char GetKeyCodeForInput(KeyCode keyCode, bool isCaps)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.KeyCode</span></td>
+        <td><span class="parametername">keyCode</span></td>
+        <td></td>
+      </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isCaps</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="BennyKok_RuntimeDebug_Actions_BaseDebugAction_GetDescription_" data-uid="BennyKok.RuntimeDebug.Actions.BaseDebugAction.GetDescription*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Actions_BaseDebugAction_GetDescription" data-uid="BennyKok.RuntimeDebug.Actions.BaseDebugAction.GetDescription">GetDescription()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual string GetDescription()</code></pre>
-  </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -388,30 +312,30 @@ public UnityEvent unityAction</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Char</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="BennyKok_RuntimeDebug_Actions_BaseDebugAction_ResolveAction_" data-uid="BennyKok.RuntimeDebug.Actions.BaseDebugAction.ResolveAction*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Actions_BaseDebugAction_ResolveAction" data-uid="BennyKok.RuntimeDebug.Actions.BaseDebugAction.ResolveAction">ResolveAction()</h4>
+  <a id="BennyKok_RuntimeDebug_VR_VRKeyboard_HideSecondaryLayout_" data-uid="BennyKok.RuntimeDebug.VR.VRKeyboard.HideSecondaryLayout*"></a>
+  <h4 id="BennyKok_RuntimeDebug_VR_VRKeyboard_HideSecondaryLayout" data-uid="BennyKok.RuntimeDebug.VR.VRKeyboard.HideSecondaryLayout">HideSecondaryLayout()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void ResolveAction()</code></pre>
+    <pre><code class="lang-csharp hljs">public void HideSecondaryLayout()</code></pre>
   </div>
   
   
-  <a id="BennyKok_RuntimeDebug_Actions_BaseDebugAction_Setup_" data-uid="BennyKok.RuntimeDebug.Actions.BaseDebugAction.Setup*"></a>
-  <h4 id="BennyKok_RuntimeDebug_Actions_BaseDebugAction_Setup" data-uid="BennyKok.RuntimeDebug.Actions.BaseDebugAction.Setup">Setup()</h4>
+  <a id="BennyKok_RuntimeDebug_VR_VRKeyboard_ShowSecondaryLayout_" data-uid="BennyKok.RuntimeDebug.VR.VRKeyboard.ShowSecondaryLayout*"></a>
+  <h4 id="BennyKok_RuntimeDebug_VR_VRKeyboard_ShowSecondaryLayout" data-uid="BennyKok.RuntimeDebug.VR.VRKeyboard.ShowSecondaryLayout">ShowSecondaryLayout()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void Setup()</code></pre>
+    <pre><code class="lang-csharp hljs">public void ShowSecondaryLayout()</code></pre>
   </div>
 </article>
           </div>
