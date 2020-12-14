@@ -34,7 +34,7 @@
         "api/**/*",
         "./*.md"
       ],
-      "extensions": "md,yml,css",
+      "extensions": "md,yml,css,partial",
       "quiet": true,
       "legacyWatch": true,
       "delay": 500,
