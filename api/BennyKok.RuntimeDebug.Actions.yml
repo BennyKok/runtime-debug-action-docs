@@ -7,6 +7,7 @@ items:
   - BennyKok.RuntimeDebug.Actions.BaseDebugAction
   - BennyKok.RuntimeDebug.Actions.DebugActionBuilder
   - BennyKok.RuntimeDebug.Actions.DebugActionButton
+  - BennyKok.RuntimeDebug.Actions.DebugActionEnum
   - BennyKok.RuntimeDebug.Actions.DebugActionFlag
   - BennyKok.RuntimeDebug.Actions.DebugActionInput
   - BennyKok.RuntimeDebug.Actions.DebugActionToggle
@@ -74,6 +75,12 @@ references:
   name: DebugActionButton
   nameWithType: DebugActionButton
   fullName: BennyKok.RuntimeDebug.Actions.DebugActionButton
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionEnum
+  commentId: T:BennyKok.RuntimeDebug.Actions.DebugActionEnum
+  parent: BennyKok.RuntimeDebug.Actions
+  name: DebugActionEnum
+  nameWithType: DebugActionEnum
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionEnum
 - uid: BennyKok.RuntimeDebug.Actions.DebugActionFlag
   commentId: T:BennyKok.RuntimeDebug.Actions.DebugActionFlag
   parent: BennyKok.RuntimeDebug.Actions

@@ -8,12 +8,14 @@ items:
   - BennyKok.RuntimeDebug.Data.ReflectedActionData.attribute
   - BennyKok.RuntimeDebug.Data.ReflectedActionData.fieldInfo
   - BennyKok.RuntimeDebug.Data.ReflectedActionData.GetActionName
+  - BennyKok.RuntimeDebug.Data.ReflectedActionData.GetBoolValue(System.Object)
   - BennyKok.RuntimeDebug.Data.ReflectedActionData.GetFlagDisplay
   - BennyKok.RuntimeDebug.Data.ReflectedActionData.GetFlagValue(System.Object)
   - BennyKok.RuntimeDebug.Data.ReflectedActionData.GetTargetType
   - BennyKok.RuntimeDebug.Data.ReflectedActionData.GetValue(System.Object)
+  - BennyKok.RuntimeDebug.Data.ReflectedActionData.IsBoolean
   - BennyKok.RuntimeDebug.Data.ReflectedActionData.IsButton
-  - BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFlag
+  - BennyKok.RuntimeDebug.Data.ReflectedActionData.IsEnum
   - BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFloat
   - BennyKok.RuntimeDebug.Data.ReflectedActionData.IsInput
   - BennyKok.RuntimeDebug.Data.ReflectedActionData.IsInt
@@ -369,6 +371,41 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetBoolValue(System.Object)
+  commentId: M:BennyKok.RuntimeDebug.Data.ReflectedActionData.GetBoolValue(System.Object)
+  id: GetBoolValue(System.Object)
+  parent: BennyKok.RuntimeDebug.Data.ReflectedActionData
+  langs:
+  - csharp
+  - vb
+  name: GetBoolValue(Object)
+  nameWithType: ReflectedActionData.GetBoolValue(Object)
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetBoolValue(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Data/ReflectedActionData.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: GetBoolValue
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
+    startLine: 55
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public bool GetBoolValue(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Function GetBoolValue(obj As Object) As Boolean
+  overload: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetBoolValue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetValue(System.Object)
   commentId: M:BennyKok.RuntimeDebug.Data.ReflectedActionData.GetValue(System.Object)
   id: GetValue(System.Object)
@@ -387,7 +424,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetValue
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
-    startLine: 55
+    startLine: 62
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -422,7 +459,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: SetValue
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
-    startLine: 68
+    startLine: 75
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -457,7 +494,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetTargetType
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
-    startLine: 76
+    startLine: 83
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -471,34 +508,66 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFlag
-  commentId: M:BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFlag
-  id: IsFlag
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsEnum
+  commentId: M:BennyKok.RuntimeDebug.Data.ReflectedActionData.IsEnum
+  id: IsEnum
   parent: BennyKok.RuntimeDebug.Data.ReflectedActionData
   langs:
   - csharp
   - vb
-  name: IsFlag()
-  nameWithType: ReflectedActionData.IsFlag()
-  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFlag()
+  name: IsEnum()
+  nameWithType: ReflectedActionData.IsEnum()
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsEnum()
   type: Method
   source:
     remote:
       path: Runtime/Data/ReflectedActionData.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: IsFlag
+    id: IsEnum
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
-    startLine: 85
+    startLine: 92
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
   syntax:
-    content: public bool IsFlag()
+    content: public bool IsEnum()
     return:
       type: System.Boolean
-    content.vb: Public Function IsFlag As Boolean
-  overload: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFlag*
+    content.vb: Public Function IsEnum As Boolean
+  overload: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsEnum*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsBoolean
+  commentId: M:BennyKok.RuntimeDebug.Data.ReflectedActionData.IsBoolean
+  id: IsBoolean
+  parent: BennyKok.RuntimeDebug.Data.ReflectedActionData
+  langs:
+  - csharp
+  - vb
+  name: IsBoolean()
+  nameWithType: ReflectedActionData.IsBoolean()
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsBoolean()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Data/ReflectedActionData.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: IsBoolean
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
+    startLine: 98
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public bool IsBoolean()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsBoolean As Boolean
+  overload: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsBoolean*
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -521,7 +590,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: IsInt
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
-    startLine: 91
+    startLine: 104
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -553,7 +622,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: IsFloat
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
-    startLine: 97
+    startLine: 110
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -585,7 +654,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: IsString
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/ReflectedActionData.cs
-    startLine: 103
+    startLine: 116
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -754,6 +823,11 @@ references:
   name: Int32
   nameWithType: Int32
   fullName: System.Int32
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetBoolValue*
+  commentId: Overload:BennyKok.RuntimeDebug.Data.ReflectedActionData.GetBoolValue
+  name: GetBoolValue
+  nameWithType: ReflectedActionData.GetBoolValue
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetBoolValue
 - uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.GetValue*
   commentId: Overload:BennyKok.RuntimeDebug.Data.ReflectedActionData.GetValue
   name: GetValue
@@ -776,11 +850,16 @@ references:
   name: Type
   nameWithType: Type
   fullName: System.Type
-- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFlag*
-  commentId: Overload:BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFlag
-  name: IsFlag
-  nameWithType: ReflectedActionData.IsFlag
-  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsFlag
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsEnum*
+  commentId: Overload:BennyKok.RuntimeDebug.Data.ReflectedActionData.IsEnum
+  name: IsEnum
+  nameWithType: ReflectedActionData.IsEnum
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsEnum
+- uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsBoolean*
+  commentId: Overload:BennyKok.RuntimeDebug.Data.ReflectedActionData.IsBoolean
+  name: IsBoolean
+  nameWithType: ReflectedActionData.IsBoolean
+  fullName: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsBoolean
 - uid: BennyKok.RuntimeDebug.Data.ReflectedActionData.IsInt*
   commentId: Overload:BennyKok.RuntimeDebug.Data.ReflectedActionData.IsInt
   name: IsInt

@@ -22,7 +22,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: TouchToggleMode
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 101
+    startLine: 102
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -53,7 +53,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: MobileOnly
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 106
+    startLine: 107
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -87,7 +87,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: AlwaysOn
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 111
+    startLine: 112
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -121,7 +121,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: Off
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 113
+    startLine: 114
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data

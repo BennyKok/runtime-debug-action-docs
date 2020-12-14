@@ -1,29 +1,39 @@
 - href: QuickStart\index.md
+  name: Quick Start
   order: 100
-  name: ➜ Quick Start
 - href: CustomActions\index.md
+  items:
+  - href: CustomActions\attribute-reflection.md
+    name: Attribute Actions
+    order: 100
+  - href: CustomActions\fluent-api.md
+    name: Fluent API
+    order: 50
+  - href: CustomActions\debug-action-component.md
+    name: Debug Action Component
+    order: 30
+  name: Custom Actions
   order: 90
-  name: Adding Actions
 - href: default-actions.md
-  order: 80
   name: Default Actions
+  order: 80
 - href: custom-themes.md
+  name: Themes
   order: 40
-  name: Custom Themes
 - href: debug-menu-event.md
-  order: 0
   name: Debug Menu Event
+  order: 0
 - href: setup-with-input-system.md
-  order: 0
   name: Input System Setup
-- href: testing-with-mobile.md
   order: 0
-  name: Mobile Device Simulator Setup
+- href: testing-with-mobile.md
+  name: Mobile Device Simulator
+  order: 0
 - href: VR\index.md
   items:
   - href: VR\vr-keyboard.md
-    order: 0
     name: VR Keyboard
-  order: 0
+    order: 0
   name: VR Setup
+  order: 0
 

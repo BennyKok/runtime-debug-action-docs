@@ -1,0 +1,595 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard
+  commentId: T:BennyKok.RuntimeDebug.VR.VRKeyboard
+  id: VRKeyboard
+  parent: BennyKok.RuntimeDebug.VR
+  children:
+  - BennyKok.RuntimeDebug.VR.VRKeyboard.allKeys
+  - BennyKok.RuntimeDebug.VR.VRKeyboard.FillChildren
+  - BennyKok.RuntimeDebug.VR.VRKeyboard.GetKeyCodeForInput(UnityEngine.KeyCode,System.Boolean)
+  - BennyKok.RuntimeDebug.VR.VRKeyboard.HideSecondaryLayout
+  - BennyKok.RuntimeDebug.VR.VRKeyboard.IsCaps
+  - BennyKok.RuntimeDebug.VR.VRKeyboard.keyboardLayout
+  - BennyKok.RuntimeDebug.VR.VRKeyboard.primaryLayoutTransform
+  - BennyKok.RuntimeDebug.VR.VRKeyboard.refocusInputFieldOnKeyPress
+  - BennyKok.RuntimeDebug.VR.VRKeyboard.secondaryKeyboardLayout
+  - BennyKok.RuntimeDebug.VR.VRKeyboard.secondaryLayoutTransform
+  - BennyKok.RuntimeDebug.VR.VRKeyboard.ShowSecondaryLayout
+  langs:
+  - csharp
+  - vb
+  name: VRKeyboard
+  nameWithType: VRKeyboard
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard
+  type: Class
+  source:
+    remote:
+      path: Runtime/Keyboard VR/VRKeyboard.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: VRKeyboard
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Keyboard VR/VRKeyboard.cs
+    startLine: 8
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.VR
+  syntax:
+    content: 'public class VRKeyboard : MonoBehaviour'
+    content.vb: >-
+      Public Class VRKeyboard
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.IsCaps
+  commentId: P:BennyKok.RuntimeDebug.VR.VRKeyboard.IsCaps
+  id: IsCaps
+  parent: BennyKok.RuntimeDebug.VR.VRKeyboard
+  langs:
+  - csharp
+  - vb
+  name: IsCaps
+  nameWithType: VRKeyboard.IsCaps
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.IsCaps
+  type: Property
+  source:
+    remote:
+      path: Runtime/Keyboard VR/VRKeyboard.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: IsCaps
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Keyboard VR/VRKeyboard.cs
+    startLine: 12
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.VR
+  syntax:
+    content: public bool IsCaps { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsCaps As Boolean
+  overload: BennyKok.RuntimeDebug.VR.VRKeyboard.IsCaps*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.ShowSecondaryLayout
+  commentId: M:BennyKok.RuntimeDebug.VR.VRKeyboard.ShowSecondaryLayout
+  id: ShowSecondaryLayout
+  parent: BennyKok.RuntimeDebug.VR.VRKeyboard
+  langs:
+  - csharp
+  - vb
+  name: ShowSecondaryLayout()
+  nameWithType: VRKeyboard.ShowSecondaryLayout()
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.ShowSecondaryLayout()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Keyboard VR/VRKeyboard.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: ShowSecondaryLayout
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Keyboard VR/VRKeyboard.cs
+    startLine: 39
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.VR
+  syntax:
+    content: public void ShowSecondaryLayout()
+    content.vb: Public Sub ShowSecondaryLayout
+  overload: BennyKok.RuntimeDebug.VR.VRKeyboard.ShowSecondaryLayout*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.HideSecondaryLayout
+  commentId: M:BennyKok.RuntimeDebug.VR.VRKeyboard.HideSecondaryLayout
+  id: HideSecondaryLayout
+  parent: BennyKok.RuntimeDebug.VR.VRKeyboard
+  langs:
+  - csharp
+  - vb
+  name: HideSecondaryLayout()
+  nameWithType: VRKeyboard.HideSecondaryLayout()
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.HideSecondaryLayout()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Keyboard VR/VRKeyboard.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: HideSecondaryLayout
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Keyboard VR/VRKeyboard.cs
+    startLine: 45
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.VR
+  syntax:
+    content: public void HideSecondaryLayout()
+    content.vb: Public Sub HideSecondaryLayout
+  overload: BennyKok.RuntimeDebug.VR.VRKeyboard.HideSecondaryLayout*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.refocusInputFieldOnKeyPress
+  commentId: F:BennyKok.RuntimeDebug.VR.VRKeyboard.refocusInputFieldOnKeyPress
+  id: refocusInputFieldOnKeyPress
+  parent: BennyKok.RuntimeDebug.VR.VRKeyboard
+  langs:
+  - csharp
+  - vb
+  name: refocusInputFieldOnKeyPress
+  nameWithType: VRKeyboard.refocusInputFieldOnKeyPress
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.refocusInputFieldOnKeyPress
+  type: Field
+  source:
+    remote:
+      path: Runtime/Keyboard VR/VRKeyboard.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: refocusInputFieldOnKeyPress
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Keyboard VR/VRKeyboard.cs
+    startLine: 51
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.VR
+  syntax:
+    content: public bool refocusInputFieldOnKeyPress
+    return:
+      type: System.Boolean
+    content.vb: Public refocusInputFieldOnKeyPress As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.primaryLayoutTransform
+  commentId: F:BennyKok.RuntimeDebug.VR.VRKeyboard.primaryLayoutTransform
+  id: primaryLayoutTransform
+  parent: BennyKok.RuntimeDebug.VR.VRKeyboard
+  langs:
+  - csharp
+  - vb
+  name: primaryLayoutTransform
+  nameWithType: VRKeyboard.primaryLayoutTransform
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.primaryLayoutTransform
+  type: Field
+  source:
+    remote:
+      path: Runtime/Keyboard VR/VRKeyboard.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: primaryLayoutTransform
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Keyboard VR/VRKeyboard.cs
+    startLine: 53
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.VR
+  syntax:
+    content: public Transform primaryLayoutTransform
+    return:
+      type: UnityEngine.Transform
+    content.vb: Public primaryLayoutTransform As Transform
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.secondaryLayoutTransform
+  commentId: F:BennyKok.RuntimeDebug.VR.VRKeyboard.secondaryLayoutTransform
+  id: secondaryLayoutTransform
+  parent: BennyKok.RuntimeDebug.VR.VRKeyboard
+  langs:
+  - csharp
+  - vb
+  name: secondaryLayoutTransform
+  nameWithType: VRKeyboard.secondaryLayoutTransform
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.secondaryLayoutTransform
+  type: Field
+  source:
+    remote:
+      path: Runtime/Keyboard VR/VRKeyboard.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: secondaryLayoutTransform
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Keyboard VR/VRKeyboard.cs
+    startLine: 54
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.VR
+  syntax:
+    content: public Transform secondaryLayoutTransform
+    return:
+      type: UnityEngine.Transform
+    content.vb: Public secondaryLayoutTransform As Transform
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.allKeys
+  commentId: F:BennyKok.RuntimeDebug.VR.VRKeyboard.allKeys
+  id: allKeys
+  parent: BennyKok.RuntimeDebug.VR.VRKeyboard
+  langs:
+  - csharp
+  - vb
+  name: allKeys
+  nameWithType: VRKeyboard.allKeys
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.allKeys
+  type: Field
+  source:
+    remote:
+      path: Runtime/Keyboard VR/VRKeyboard.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: allKeys
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Keyboard VR/VRKeyboard.cs
+    startLine: 56
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.VR
+  syntax:
+    content: >-
+      [NonSerialized]
+
+      public VRKey[] allKeys
+    return:
+      type: BennyKok.RuntimeDebug.VR.VRKey[]
+    content.vb: >-
+      <NonSerialized>
+
+      Public allKeys As VRKey()
+  attributes:
+  - type: System.NonSerializedAttribute
+    ctor: System.NonSerializedAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.keyboardLayout
+  commentId: F:BennyKok.RuntimeDebug.VR.VRKeyboard.keyboardLayout
+  id: keyboardLayout
+  parent: BennyKok.RuntimeDebug.VR.VRKeyboard
+  langs:
+  - csharp
+  - vb
+  name: keyboardLayout
+  nameWithType: VRKeyboard.keyboardLayout
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.keyboardLayout
+  type: Field
+  source:
+    remote:
+      path: Runtime/Keyboard VR/VRKeyboard.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: keyboardLayout
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Keyboard VR/VRKeyboard.cs
+    startLine: 95
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.VR
+  syntax:
+    content: public static readonly KeyCode[][] keyboardLayout
+    return:
+      type: UnityEngine.KeyCode[][]
+    content.vb: Public Shared ReadOnly keyboardLayout As KeyCode()()
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.secondaryKeyboardLayout
+  commentId: F:BennyKok.RuntimeDebug.VR.VRKeyboard.secondaryKeyboardLayout
+  id: secondaryKeyboardLayout
+  parent: BennyKok.RuntimeDebug.VR.VRKeyboard
+  langs:
+  - csharp
+  - vb
+  name: secondaryKeyboardLayout
+  nameWithType: VRKeyboard.secondaryKeyboardLayout
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.secondaryKeyboardLayout
+  type: Field
+  source:
+    remote:
+      path: Runtime/Keyboard VR/VRKeyboard.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: secondaryKeyboardLayout
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Keyboard VR/VRKeyboard.cs
+    startLine: 152
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.VR
+  syntax:
+    content: public static readonly KeyCode[][] secondaryKeyboardLayout
+    return:
+      type: UnityEngine.KeyCode[][]
+    content.vb: Public Shared ReadOnly secondaryKeyboardLayout As KeyCode()()
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.GetKeyCodeForInput(UnityEngine.KeyCode,System.Boolean)
+  commentId: M:BennyKok.RuntimeDebug.VR.VRKeyboard.GetKeyCodeForInput(UnityEngine.KeyCode,System.Boolean)
+  id: GetKeyCodeForInput(UnityEngine.KeyCode,System.Boolean)
+  parent: BennyKok.RuntimeDebug.VR.VRKeyboard
+  langs:
+  - csharp
+  - vb
+  name: GetKeyCodeForInput(KeyCode, Boolean)
+  nameWithType: VRKeyboard.GetKeyCodeForInput(KeyCode, Boolean)
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.GetKeyCodeForInput(UnityEngine.KeyCode, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Keyboard VR/VRKeyboard.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: GetKeyCodeForInput
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Keyboard VR/VRKeyboard.cs
+    startLine: 193
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.VR
+  syntax:
+    content: public static char GetKeyCodeForInput(KeyCode keyCode, bool isCaps)
+    parameters:
+    - id: keyCode
+      type: UnityEngine.KeyCode
+    - id: isCaps
+      type: System.Boolean
+    return:
+      type: System.Char
+    content.vb: Public Shared Function GetKeyCodeForInput(keyCode As KeyCode, isCaps As Boolean) As Char
+  overload: BennyKok.RuntimeDebug.VR.VRKeyboard.GetKeyCodeForInput*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.FillChildren
+  commentId: M:BennyKok.RuntimeDebug.VR.VRKeyboard.FillChildren
+  id: FillChildren
+  parent: BennyKok.RuntimeDebug.VR.VRKeyboard
+  langs:
+  - csharp
+  - vb
+  name: FillChildren()
+  nameWithType: VRKeyboard.FillChildren()
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.FillChildren()
+  type: Method
+  source:
+    remote:
+      path: Runtime/Keyboard VR/VRKeyboard.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: FillChildren
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Keyboard VR/VRKeyboard.cs
+    startLine: 248
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.VR
+  syntax:
+    content: >-
+      [ContextMenu("Fill VRKey")]
+
+      public void FillChildren()
+    content.vb: >-
+      <ContextMenu("Fill VRKey")>
+
+      Public Sub FillChildren
+  overload: BennyKok.RuntimeDebug.VR.VRKeyboard.FillChildren*
+  attributes:
+  - type: UnityEngine.ContextMenu
+    ctor: UnityEngine.ContextMenu.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Fill VRKey
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BennyKok.RuntimeDebug.VR
+  commentId: N:BennyKok.RuntimeDebug.VR
+  name: BennyKok.RuntimeDebug.VR
+  nameWithType: BennyKok.RuntimeDebug.VR
+  fullName: BennyKok.RuntimeDebug.VR
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.IsCaps*
+  commentId: Overload:BennyKok.RuntimeDebug.VR.VRKeyboard.IsCaps
+  name: IsCaps
+  nameWithType: VRKeyboard.IsCaps
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.IsCaps
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.ShowSecondaryLayout*
+  commentId: Overload:BennyKok.RuntimeDebug.VR.VRKeyboard.ShowSecondaryLayout
+  name: ShowSecondaryLayout
+  nameWithType: VRKeyboard.ShowSecondaryLayout
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.ShowSecondaryLayout
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.HideSecondaryLayout*
+  commentId: Overload:BennyKok.RuntimeDebug.VR.VRKeyboard.HideSecondaryLayout
+  name: HideSecondaryLayout
+  nameWithType: VRKeyboard.HideSecondaryLayout
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.HideSecondaryLayout
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: BennyKok.RuntimeDebug.VR.VRKey[]
+  isExternal: true
+  name: VRKey[]
+  nameWithType: VRKey[]
+  fullName: BennyKok.RuntimeDebug.VR.VRKey[]
+  nameWithType.vb: VRKey()
+  fullName.vb: BennyKok.RuntimeDebug.VR.VRKey()
+  name.vb: VRKey()
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.VR.VRKey
+    name: VRKey
+    nameWithType: VRKey
+    fullName: BennyKok.RuntimeDebug.VR.VRKey
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.VR.VRKey
+    name: VRKey
+    nameWithType: VRKey
+    fullName: BennyKok.RuntimeDebug.VR.VRKey
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: UnityEngine.KeyCode[][]
+  isExternal: true
+  name: KeyCode[][]
+  nameWithType: KeyCode[][]
+  fullName: UnityEngine.KeyCode[][]
+  nameWithType.vb: KeyCode()()
+  fullName.vb: UnityEngine.KeyCode()()
+  name.vb: KeyCode()()
+  spec.csharp:
+  - uid: UnityEngine.KeyCode
+    name: KeyCode
+    nameWithType: KeyCode
+    fullName: UnityEngine.KeyCode
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: UnityEngine.KeyCode
+    name: KeyCode
+    nameWithType: KeyCode
+    fullName: UnityEngine.KeyCode
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.GetKeyCodeForInput*
+  commentId: Overload:BennyKok.RuntimeDebug.VR.VRKeyboard.GetKeyCodeForInput
+  name: GetKeyCodeForInput
+  nameWithType: VRKeyboard.GetKeyCodeForInput
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.GetKeyCodeForInput
+- uid: UnityEngine.KeyCode
+  commentId: T:UnityEngine.KeyCode
+  parent: UnityEngine
+  isExternal: true
+  name: KeyCode
+  nameWithType: KeyCode
+  fullName: UnityEngine.KeyCode
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  nameWithType: Char
+  fullName: System.Char
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard.FillChildren*
+  commentId: Overload:BennyKok.RuntimeDebug.VR.VRKeyboard.FillChildren
+  name: FillChildren
+  nameWithType: VRKeyboard.FillChildren
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard.FillChildren

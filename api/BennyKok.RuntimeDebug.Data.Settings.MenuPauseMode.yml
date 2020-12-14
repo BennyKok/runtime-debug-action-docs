@@ -21,7 +21,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: MenuPauseMode
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 88
+    startLine: 89
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -52,7 +52,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: SetTimeScale
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 93
+    startLine: 94
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -86,7 +86,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: DoNothing
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 98
+    startLine: 99
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data

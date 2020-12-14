@@ -1,5 +1,5 @@
 ---
-name: Custom Themes
+name: Themes
 order: 40
 ---
 

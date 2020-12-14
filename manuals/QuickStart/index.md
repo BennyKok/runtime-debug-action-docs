@@ -1,5 +1,5 @@
 ---
-name: ➜ Quick Start
+name: Quick Start
 order: 100
 ---
 
@@ -7,26 +7,32 @@ order: 100
 
 ### Setup
 
-First, it's recommended to import TextMeshPro's default resources before play, since some of the asset prefabs uses TextMeshPro.
-
-![](../../images/2020-11-22-19-11-43.png)
-
-Then make sure your scene have an `EventSystem`.
-
-![](../../images/2020-11-22-19-19-20.png)
-
-> [!NOTE]
-> If you using Unity's new input system, please [see here](~/manuals/setup-with-input-system.md).
-
 **RuntimeDebugAction** is designed to be plug & play, once you imported the package,
 a [`Settings`](~/api/BennyKok.RuntimeDebug.Data.Settings.yml) ScriptableObject will be created in your project folder `Assets/Resources/`.
 
 ![](../../images/2020-11-22-14-29-18.png)
 
+Next, if you haven't already, to import TextMeshPro's default resources before play, since some of the asset prefabs uses TextMeshPro.
+
+![](../../images/2020-11-22-19-11-43.png)
+
 > [!NOTE]
 > If you encountered weird font size of the debug menu after first import, it's because the TextMeshPro's default resource was imported after the prefab's import, you can simply right click on the asset's Prefabs folder and reimport. 
 
-By pressing "Tab", the menu will be enabled, then you will be good to go! You can expect seeing a set of pre-configured debug actions. 
+### EventSystem
+
+If you choose to use your own `EventSystem`. Disable the embedded event in RDASettings.
+
+![](../../images/2020-11-22-19-19-20.png)
+
+![](../../images/2020-12-14-12-45-05.png)
+
+> [!NOTE]
+> If you using Unity's new input system, please [see here](~/manuals/setup-with-input-system.md).
+
+### Press Play!
+
+By pressing "Tab" button on your keyboard, the menu will be enabled, then you will be good to go! You can expect seeing a set of pre-configured debug actions. 
 
 ![](../../images/2020-11-22-19-09-30.png)
 
@@ -52,14 +58,17 @@ RuntimeDebugAction support multiple input method for different platform and inpu
 *For setting up with VR project please [see here](~/manuals/VR/index.md).
 
 > [!NOTE]
-> This RDA target desktop and mobile platform primarily, while with Unity's new Input System, Im able to add support for Controller and VR device's input, but I can't guarantee the full potential of RDA especially on VR device, for instance without the keyboard, the shortcut feature won't work in this case.
+> RDA target desktop and mobile platform primarily, while with Unity's new Input System, Im able to add support for Controller and VR device's input.
 
 ### Lifecycle
 
-The [`RuntimeDebugSystem`](~/api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.yml) is auto injected to you first scene with the [`RuntimeInitializeOnLoadMethod`](https://docs.unity3d.com/ScriptReference/RuntimeInitializeOnLoadMethodAttribute.html) method.
+With "Auto On" The [`RuntimeDebugSystem`](~/api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.yml) will be auto injected to you first scene with the [`RuntimeInitializeOnLoadMethod`](https://docs.unity3d.com/ScriptReference/RuntimeInitializeOnLoadMethodAttribute.html) method.
 
 Then the system GameObject with the UI canvas will be set to `DontDestoryOnLoad` and keeps the debug system alive across scene load.
 
+![](../../images/2020-12-14-12-53-07.png)
+
+With "Off" selected, you can manually add `RuntimeDebugSystem` to your scene and keep it only in specific scene.
 
 ### Menu Interaction
 The debug menu have full keyboard navigation and touch input handling at the same time since the UI prefab is using Unity's normal UI component.
@@ -67,7 +76,7 @@ The debug menu have full keyboard navigation and touch input handling at the sam
 > [!NOTE]
 > You are required to have a EventSystem in your scene for event interaction (touch,hover,etc..) of the system to work.
 
-**Default Shortcut Keys**
+**Default Interaction Keys**
 
 | Key | Description |
 | ----------- | ----------- |

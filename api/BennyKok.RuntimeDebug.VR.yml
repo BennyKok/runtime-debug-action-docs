@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.VR
+  commentId: N:BennyKok.RuntimeDebug.VR
+  id: BennyKok.RuntimeDebug.VR
+  children:
+  - BennyKok.RuntimeDebug.VR.VRKey
+  - BennyKok.RuntimeDebug.VR.VRKeyboard
+  langs:
+  - csharp
+  - vb
+  name: BennyKok.RuntimeDebug.VR
+  nameWithType: BennyKok.RuntimeDebug.VR
+  fullName: BennyKok.RuntimeDebug.VR
+  type: Namespace
+  assemblies:
+  - com.bennykok.runtime-debug-action
+references:
+- uid: BennyKok.RuntimeDebug.VR.VRKey
+  commentId: T:BennyKok.RuntimeDebug.VR.VRKey
+  name: VRKey
+  nameWithType: VRKey
+  fullName: BennyKok.RuntimeDebug.VR.VRKey
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard
+  commentId: T:BennyKok.RuntimeDebug.VR.VRKeyboard
+  parent: BennyKok.RuntimeDebug.VR
+  name: VRKeyboard
+  nameWithType: VRKeyboard
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard
+- uid: BennyKok.RuntimeDebug.VR
+  commentId: N:BennyKok.RuntimeDebug.VR
+  name: BennyKok.RuntimeDebug.VR
+  nameWithType: BennyKok.RuntimeDebug.VR
+  fullName: BennyKok.RuntimeDebug.VR

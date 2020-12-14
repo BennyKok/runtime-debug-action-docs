@@ -24,6 +24,7 @@ items:
   - BennyKok.RuntimeDebug.Data.Settings.IsSystemEnabled
   - BennyKok.RuntimeDebug.Data.Settings.loggerMaxLine
   - BennyKok.RuntimeDebug.Data.Settings.menuPauseMode
+  - BennyKok.RuntimeDebug.Data.Settings.pointerHoverIgnoreMobile
   - BennyKok.RuntimeDebug.Data.Settings.selectionColorHighlight
   - BennyKok.RuntimeDebug.Data.Settings.selectionUnderlineHighlight
   - BennyKok.RuntimeDebug.Data.Settings.settingsAssetName
@@ -723,6 +724,37 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: BennyKok.RuntimeDebug.Data.Settings.pointerHoverIgnoreMobile
+  commentId: F:BennyKok.RuntimeDebug.Data.Settings.pointerHoverIgnoreMobile
+  id: pointerHoverIgnoreMobile
+  parent: BennyKok.RuntimeDebug.Data.Settings
+  langs:
+  - csharp
+  - vb
+  name: pointerHoverIgnoreMobile
+  nameWithType: Settings.pointerHoverIgnoreMobile
+  fullName: BennyKok.RuntimeDebug.Data.Settings.pointerHoverIgnoreMobile
+  type: Field
+  source:
+    remote:
+      path: Runtime/Data/Settings.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: pointerHoverIgnoreMobile
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
+    startLine: 66
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Data
+  syntax:
+    content: public bool pointerHoverIgnoreMobile
+    return:
+      type: System.Boolean
+    content.vb: Public pointerHoverIgnoreMobile As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: BennyKok.RuntimeDebug.Data.Settings.selectionColorHighlight
   commentId: F:BennyKok.RuntimeDebug.Data.Settings.selectionColorHighlight
   id: selectionColorHighlight
@@ -741,7 +773,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: selectionColorHighlight
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 70
+    startLine: 71
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -799,7 +831,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: selectionUnderlineHighlight
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 71
+    startLine: 72
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -830,7 +862,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: disableLogger
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 74
+    startLine: 75
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -875,7 +907,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: loggerMaxLine
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 75
+    startLine: 76
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -906,7 +938,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: addApplicationOptions
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 80
+    startLine: 81
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -964,7 +996,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: addQualityOptions
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 81
+    startLine: 82
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -995,7 +1027,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: addSceneOptions
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 82
+    startLine: 83
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -1026,7 +1058,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: addThemeOptions
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 83
+    startLine: 84
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -1057,7 +1089,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: addLoggerOptions
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 84
+    startLine: 85
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -1088,7 +1120,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: IsSystemEnabled
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 137
+    startLine: 138
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -1122,7 +1154,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: IsShowTouchToggle
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 152
+    startLine: 153
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -1154,7 +1186,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetDefaultTheme
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 167
+    startLine: 168
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data
@@ -1186,7 +1218,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetThemeByName
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Data/Settings.cs
-    startLine: 169
+    startLine: 170
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Data

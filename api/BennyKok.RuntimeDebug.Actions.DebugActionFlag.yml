@@ -15,13 +15,13 @@ items:
   - BennyKok.RuntimeDebug.Actions.DebugActionFlag.GetFlagKeyWithPrefix(System.String)
   - BennyKok.RuntimeDebug.Actions.DebugActionFlag.InvokeFlagListener
   - BennyKok.RuntimeDebug.Actions.DebugActionFlag.isPersistence
-  - BennyKok.RuntimeDebug.Actions.DebugActionFlag.OnAfterDeserialize
   - BennyKok.RuntimeDebug.Actions.DebugActionFlag.OnBeforeSerialize
   - BennyKok.RuntimeDebug.Actions.DebugActionFlag.onFlagChange
   - BennyKok.RuntimeDebug.Actions.DebugActionFlag.op_Implicit(BennyKok.RuntimeDebug.Actions.DebugActionFlag)~System.Boolean
   - BennyKok.RuntimeDebug.Actions.DebugActionFlag.op_Implicit(BennyKok.RuntimeDebug.Actions.DebugActionFlag)~System.Int32
   - BennyKok.RuntimeDebug.Actions.DebugActionFlag.ResetFlag(System.Boolean)
   - BennyKok.RuntimeDebug.Actions.DebugActionFlag.SetFlagValue(System.Int32,System.Boolean)
+  - BennyKok.RuntimeDebug.Actions.DebugActionFlag.Setup
   - BennyKok.RuntimeDebug.Actions.DebugActionFlag.WithFlag(System.String,System.Boolean,System.Boolean)
   - BennyKok.RuntimeDebug.Actions.DebugActionFlag.WithFlag(System.String,System.String[],System.Boolean,System.Int32)
   - BennyKok.RuntimeDebug.Actions.DebugActionFlag.WithFlagListener(System.Action{BennyKok.RuntimeDebug.Actions.DebugActionFlag},System.Boolean)
@@ -39,21 +39,23 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: DebugActionFlag
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
-    startLine: 6
+    startLine: 44
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
+  summary: "\nFlag action will be represented as a button selector in the debug menu, triggering the action will cycle the value and notify the flag listener, if `isPersistence` is true, the value will also be updated to PlayerPrefs.\n"
+  example:
+  - "\n<pre><code>RuntimeDebugSystem.RegisterActions(\n    DebugActionBuilder.Flag()\n        .WithName(&quot;Target FPS&quot;)\n        .WithFlag(&quot;target-fps&quot;, new string[] { &quot;Default&quot;, &quot;30&quot;, &quot;60&quot; }, true)\n        .WithFlagListener((flag) =>\n        {\n            switch (flag)\n            {\n                case 0:\n                    Application.targetFrameRate = -1;\n                    break;\n                case 1:\n                    Application.targetFrameRate = 30;\n                    break;\n                case 2:\n                    Application.targetFrameRate = 60;\n                    break;\n            }\n        })\n);</code></pre>\n<pre><code>RuntimeDebugSystem.RegisterActions(\n    DebugActionBuilder.Flag()\n        .WithName(&quot;Set Screen Orientation&quot;)\n        .WithFlag(&quot;screen-orientation&quot;, Enum.GetNames(typeof(ScreenOrientation)), true, (int)Screen.orientation)\n        .WithFlagListener((flag) =>\n        {\n            Screen.orientation = (ScreenOrientation)(int)flag;\n        })\n);</code></pre>\n"
   syntax:
     content: >-
       [Serializable]
 
-      public class DebugActionFlag : FluentAction<DebugActionFlag>, ISerializationCallbackReceiver
+      public class DebugActionFlag : FluentAction<DebugActionFlag>
     content.vb: >-
       <Serializable>
 
       Public Class DebugActionFlag
           Inherits FluentAction(Of DebugActionFlag)
-          Implements ISerializationCallbackReceiver
   inheritance:
   - System.Object
   - BennyKok.RuntimeDebug.Actions.BaseDebugAction
@@ -107,7 +109,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: isPersistence
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
-    startLine: 13
+    startLine: 51
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -154,7 +156,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: flagKey
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
-    startLine: 14
+    startLine: 52
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -185,7 +187,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: defaultFlagValue
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
-    startLine: 15
+    startLine: 53
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -226,7 +228,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: flagValue
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
-    startLine: 16
+    startLine: 54
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -257,7 +259,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: flagValues
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
-    startLine: 17
+    startLine: 55
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -288,7 +290,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: onFlagChange
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
-    startLine: 23
+    startLine: 61
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -319,7 +321,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: BOOLEAN_VALUES
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
-    startLine: 25
+    startLine: 63
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -354,7 +356,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetFlagKeyWithPrefix
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
-    startLine: 27
+    startLine: 65
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -391,7 +393,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: WithFlag
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
-    startLine: 32
+    startLine: 70
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -430,7 +432,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: WithFlag
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
-    startLine: 38
+    startLine: 76
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -474,7 +476,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: WithFlagListener
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
-    startLine: 44
+    startLine: 82
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -514,7 +516,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetDescription
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
-    startLine: 54
+    startLine: 92
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -549,7 +551,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ResetFlag
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
-    startLine: 69
+    startLine: 107
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -584,7 +586,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: CycleFlagValue
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
-    startLine: 74
+    startLine: 112
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -619,7 +621,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: InvokeFlagListener
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
-    startLine: 82
+    startLine: 120
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -649,7 +651,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: SetFlagValue
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
-    startLine: 87
+    startLine: 125
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -686,7 +688,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnBeforeSerialize
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
-    startLine: 149
+    startLine: 187
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -698,36 +700,39 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BennyKok.RuntimeDebug.Actions.DebugActionFlag.OnAfterDeserialize
-  commentId: M:BennyKok.RuntimeDebug.Actions.DebugActionFlag.OnAfterDeserialize
-  id: OnAfterDeserialize
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionFlag.Setup
+  commentId: M:BennyKok.RuntimeDebug.Actions.DebugActionFlag.Setup
+  id: Setup
   parent: BennyKok.RuntimeDebug.Actions.DebugActionFlag
   langs:
   - csharp
   - vb
-  name: OnAfterDeserialize()
-  nameWithType: DebugActionFlag.OnAfterDeserialize()
-  fullName: BennyKok.RuntimeDebug.Actions.DebugActionFlag.OnAfterDeserialize()
+  name: Setup()
+  nameWithType: DebugActionFlag.Setup()
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionFlag.Setup()
   type: Method
   source:
     remote:
       path: Runtime/Actions/DebugActionFlag.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: OnAfterDeserialize
+    id: Setup
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
-    startLine: 151
+    startLine: 189
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
   syntax:
-    content: public void OnAfterDeserialize()
-    content.vb: Public Sub OnAfterDeserialize
-  overload: BennyKok.RuntimeDebug.Actions.DebugActionFlag.OnAfterDeserialize*
+    content: public override void Setup()
+    content.vb: Public Overrides Sub Setup
+  overridden: BennyKok.RuntimeDebug.Actions.BaseDebugAction.Setup
+  overload: BennyKok.RuntimeDebug.Actions.DebugActionFlag.Setup*
   modifiers.csharp:
   - public
+  - override
   modifiers.vb:
   - Public
+  - Overrides
 - uid: BennyKok.RuntimeDebug.Actions.DebugActionFlag.op_Implicit(BennyKok.RuntimeDebug.Actions.DebugActionFlag)~System.Int32
   commentId: M:BennyKok.RuntimeDebug.Actions.DebugActionFlag.op_Implicit(BennyKok.RuntimeDebug.Actions.DebugActionFlag)~System.Int32
   id: op_Implicit(BennyKok.RuntimeDebug.Actions.DebugActionFlag)~System.Int32
@@ -746,7 +751,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: op_Implicit
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
-    startLine: 156
+    startLine: 194
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -786,7 +791,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: op_Implicit
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionFlag.cs
-    startLine: 157
+    startLine: 195
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -1880,11 +1885,39 @@ references:
   name: OnBeforeSerialize
   nameWithType: DebugActionFlag.OnBeforeSerialize
   fullName: BennyKok.RuntimeDebug.Actions.DebugActionFlag.OnBeforeSerialize
-- uid: BennyKok.RuntimeDebug.Actions.DebugActionFlag.OnAfterDeserialize*
-  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugActionFlag.OnAfterDeserialize
-  name: OnAfterDeserialize
-  nameWithType: DebugActionFlag.OnAfterDeserialize
-  fullName: BennyKok.RuntimeDebug.Actions.DebugActionFlag.OnAfterDeserialize
+- uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.Setup
+  commentId: M:BennyKok.RuntimeDebug.Actions.BaseDebugAction.Setup
+  parent: BennyKok.RuntimeDebug.Actions.BaseDebugAction
+  name: Setup()
+  nameWithType: BaseDebugAction.Setup()
+  fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.Setup()
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.Setup
+    name: Setup
+    nameWithType: BaseDebugAction.Setup
+    fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.Setup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.Setup
+    name: Setup
+    nameWithType: BaseDebugAction.Setup
+    fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.Setup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionFlag.Setup*
+  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugActionFlag.Setup
+  name: Setup
+  nameWithType: DebugActionFlag.Setup
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionFlag.Setup
 - uid: BennyKok.RuntimeDebug.Actions.DebugActionFlag.op_Implicit*
   commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugActionFlag.op_Implicit
   name: Implicit

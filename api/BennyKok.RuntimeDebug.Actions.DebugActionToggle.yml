@@ -10,9 +10,8 @@ items:
   - BennyKok.RuntimeDebug.Actions.DebugActionToggle.actionSwitch
   - BennyKok.RuntimeDebug.Actions.DebugActionToggle.GetDisplayStatus(System.Boolean)
   - BennyKok.RuntimeDebug.Actions.DebugActionToggle.isOn
-  - BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnAfterDeserialize
-  - BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnBeforeSerialize
   - BennyKok.RuntimeDebug.Actions.DebugActionToggle.ResolveAction
+  - BennyKok.RuntimeDebug.Actions.DebugActionToggle.Setup
   - BennyKok.RuntimeDebug.Actions.DebugActionToggle.unityActionOff
   - BennyKok.RuntimeDebug.Actions.DebugActionToggle.WithActionGet(System.Func{System.Boolean})
   - BennyKok.RuntimeDebug.Actions.DebugActionToggle.WithActionSet(System.Action{System.Boolean})
@@ -30,21 +29,23 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: DebugActionToggle
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionToggle.cs
-    startLine: 7
+    startLine: 20
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
+  summary: "\nToggle action will be represented as a button toggle in the debug menu with on/off status\n"
+  example:
+  - "\n<pre><code>RuntimeDebugSystem.RegisterActions(\n    DebugActionBuilder.Toggle()\n        .WithName(&quot;PostProcessing&quot;)\n        .WithActionGet(() => GetCameraData().renderPostProcessing)\n        .WithActionSet((isOn) => GetCameraData().renderPostProcessing = isOn),\n);</code></pre>\n"
   syntax:
     content: >-
       [Serializable]
 
-      public class DebugActionToggle : FluentAction<DebugActionToggle>, ISerializationCallbackReceiver
+      public class DebugActionToggle : FluentAction<DebugActionToggle>
     content.vb: >-
       <Serializable>
 
       Public Class DebugActionToggle
           Inherits FluentAction(Of DebugActionToggle)
-          Implements ISerializationCallbackReceiver
   inheritance:
   - System.Object
   - BennyKok.RuntimeDebug.Actions.BaseDebugAction
@@ -98,7 +99,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: isOn
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionToggle.cs
-    startLine: 11
+    startLine: 24
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -143,7 +144,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: actionSwitch
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionToggle.cs
-    startLine: 13
+    startLine: 26
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -174,7 +175,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: unityActionOff
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionToggle.cs
-    startLine: 16
+    startLine: 29
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -216,7 +217,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: actionSet
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionToggle.cs
-    startLine: 18
+    startLine: 31
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -247,7 +248,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: actionGet
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionToggle.cs
-    startLine: 19
+    startLine: 32
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -278,7 +279,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetDisplayStatus
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionToggle.cs
-    startLine: 21
+    startLine: 34
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -313,7 +314,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: WithActionGet
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionToggle.cs
-    startLine: 23
+    startLine: 36
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -353,7 +354,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: WithActionSet
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionToggle.cs
-    startLine: 30
+    startLine: 43
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -393,7 +394,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: ResolveAction
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionToggle.cs
-    startLine: 36
+    startLine: 49
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
@@ -408,66 +409,39 @@ items:
   modifiers.vb:
   - Public
   - Overrides
-- uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnBeforeSerialize
-  commentId: M:BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnBeforeSerialize
-  id: OnBeforeSerialize
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle.Setup
+  commentId: M:BennyKok.RuntimeDebug.Actions.DebugActionToggle.Setup
+  id: Setup
   parent: BennyKok.RuntimeDebug.Actions.DebugActionToggle
   langs:
   - csharp
   - vb
-  name: OnBeforeSerialize()
-  nameWithType: DebugActionToggle.OnBeforeSerialize()
-  fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnBeforeSerialize()
+  name: Setup()
+  nameWithType: DebugActionToggle.Setup()
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle.Setup()
   type: Method
   source:
     remote:
       path: Runtime/Actions/DebugActionToggle.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: OnBeforeSerialize
+    id: Setup
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionToggle.cs
-    startLine: 42
+    startLine: 55
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Actions
   syntax:
-    content: public void OnBeforeSerialize()
-    content.vb: Public Sub OnBeforeSerialize
-  overload: BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnBeforeSerialize*
+    content: public override void Setup()
+    content.vb: Public Overrides Sub Setup
+  overridden: BennyKok.RuntimeDebug.Actions.BaseDebugAction.Setup
+  overload: BennyKok.RuntimeDebug.Actions.DebugActionToggle.Setup*
   modifiers.csharp:
   - public
+  - override
   modifiers.vb:
   - Public
-- uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnAfterDeserialize
-  commentId: M:BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnAfterDeserialize
-  id: OnAfterDeserialize
-  parent: BennyKok.RuntimeDebug.Actions.DebugActionToggle
-  langs:
-  - csharp
-  - vb
-  name: OnAfterDeserialize()
-  nameWithType: DebugActionToggle.OnAfterDeserialize()
-  fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnAfterDeserialize()
-  type: Method
-  source:
-    remote:
-      path: Runtime/Actions/DebugActionToggle.cs
-      branch: master
-      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: OnAfterDeserialize
-    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Actions/DebugActionToggle.cs
-    startLine: 44
-  assemblies:
-  - com.bennykok.runtime-debug-action
-  namespace: BennyKok.RuntimeDebug.Actions
-  syntax:
-    content: public void OnAfterDeserialize()
-    content.vb: Public Sub OnAfterDeserialize
-  overload: BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnAfterDeserialize*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
+  - Overrides
 references:
 - uid: BennyKok.RuntimeDebug.Actions
   commentId: N:BennyKok.RuntimeDebug.Actions
@@ -1587,13 +1561,36 @@ references:
   name: ResolveAction
   nameWithType: DebugActionToggle.ResolveAction
   fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle.ResolveAction
-- uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnBeforeSerialize*
-  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnBeforeSerialize
-  name: OnBeforeSerialize
-  nameWithType: DebugActionToggle.OnBeforeSerialize
-  fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnBeforeSerialize
-- uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnAfterDeserialize*
-  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnAfterDeserialize
-  name: OnAfterDeserialize
-  nameWithType: DebugActionToggle.OnAfterDeserialize
-  fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle.OnAfterDeserialize
+- uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.Setup
+  commentId: M:BennyKok.RuntimeDebug.Actions.BaseDebugAction.Setup
+  parent: BennyKok.RuntimeDebug.Actions.BaseDebugAction
+  name: Setup()
+  nameWithType: BaseDebugAction.Setup()
+  fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.Setup()
+  spec.csharp:
+  - uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.Setup
+    name: Setup
+    nameWithType: BaseDebugAction.Setup
+    fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.Setup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BennyKok.RuntimeDebug.Actions.BaseDebugAction.Setup
+    name: Setup
+    nameWithType: BaseDebugAction.Setup
+    fullName: BennyKok.RuntimeDebug.Actions.BaseDebugAction.Setup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BennyKok.RuntimeDebug.Actions.DebugActionToggle.Setup*
+  commentId: Overload:BennyKok.RuntimeDebug.Actions.DebugActionToggle.Setup
+  name: Setup
+  nameWithType: DebugActionToggle.Setup
+  fullName: BennyKok.RuntimeDebug.Actions.DebugActionToggle.Setup

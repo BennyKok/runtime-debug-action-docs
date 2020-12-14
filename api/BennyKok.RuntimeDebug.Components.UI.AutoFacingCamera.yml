@@ -5,7 +5,9 @@ items:
   id: AutoFacingCamera
   parent: BennyKok.RuntimeDebug.Components.UI
   children:
+  - BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.angleThreshold
   - BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.distanceAwayCamera
+  - BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.distanceThreshold
   - BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.recenterTime
   langs:
   - csharp
@@ -100,6 +102,82 @@ items:
     return:
       type: System.Single
     content.vb: Public recenterTime As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.distanceThreshold
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.distanceThreshold
+  id: distanceThreshold
+  parent: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera
+  langs:
+  - csharp
+  - vb
+  name: distanceThreshold
+  nameWithType: AutoFacingCamera.distanceThreshold
+  fullName: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.distanceThreshold
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/AutoFacingCamera.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: distanceThreshold
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/AutoFacingCamera.cs
+    startLine: 9
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public float distanceThreshold
+    return:
+      type: System.Single
+    content.vb: Public distanceThreshold As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.angleThreshold
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.angleThreshold
+  id: angleThreshold
+  parent: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera
+  langs:
+  - csharp
+  - vb
+  name: angleThreshold
+  nameWithType: AutoFacingCamera.angleThreshold
+  fullName: BennyKok.RuntimeDebug.Components.UI.AutoFacingCamera.angleThreshold
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/AutoFacingCamera.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: angleThreshold
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/AutoFacingCamera.cs
+    startLine: 12
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: >-
+      [Range(0F, 300F)]
+
+      public float angleThreshold
+    return:
+      type: System.Single
+    content.vb: >-
+      <Range(0F, 300F)>
+
+      Public angleThreshold As Single
+  attributes:
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+    - type: System.Single
+      value: 300
   modifiers.csharp:
   - public
   modifiers.vb:

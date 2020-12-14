@@ -152,7 +152,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: sliderHelper
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/InputUIHandler.cs
-    startLine: 20
+    startLine: 21
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -183,7 +183,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: DimissInput
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/InputUIHandler.cs
-    startLine: 70
+    startLine: 71
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -215,7 +215,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: AskForInput
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/InputUIHandler.cs
-    startLine: 79
+    startLine: 82
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI

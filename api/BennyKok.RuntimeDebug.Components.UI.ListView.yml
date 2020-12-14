@@ -1209,7 +1209,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: UpdateContentHeight
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 658
+    startLine: 659
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -1241,7 +1241,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: DisableAllChildren
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListView.cs
-    startLine: 666
+    startLine: 667
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI

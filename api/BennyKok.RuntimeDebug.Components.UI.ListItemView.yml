@@ -11,6 +11,7 @@ items:
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.folderIcon
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.icon
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.idx
+  - BennyKok.RuntimeDebug.Components.UI.ListItemView.isDestroyed
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.isFocused
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.IsGroup
   - BennyKok.RuntimeDebug.Components.UI.ListItemView.item
@@ -700,7 +701,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: OnPointerExit
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListItemView.cs
-    startLine: 114
+    startLine: 117
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -733,7 +734,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: RefreshStatus
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListItemView.cs
-    startLine: 140
+    startLine: 146
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -768,7 +769,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: SetItem
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListItemView.cs
-    startLine: 203
+    startLine: 209
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Components.UI
@@ -783,6 +784,37 @@ items:
       type: BennyKok.RuntimeDebug.Data.ListItem
     content.vb: Public Sub SetItem(ui As DebugUIHandler, listParent As ListView, item As ListItem)
   overload: BennyKok.RuntimeDebug.Components.UI.ListItemView.SetItem*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.Components.UI.ListItemView.isDestroyed
+  commentId: F:BennyKok.RuntimeDebug.Components.UI.ListItemView.isDestroyed
+  id: isDestroyed
+  parent: BennyKok.RuntimeDebug.Components.UI.ListItemView
+  langs:
+  - csharp
+  - vb
+  name: isDestroyed
+  nameWithType: ListItemView.isDestroyed
+  fullName: BennyKok.RuntimeDebug.Components.UI.ListItemView.isDestroyed
+  type: Field
+  source:
+    remote:
+      path: Runtime/Components/UI/ListItemView.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: isDestroyed
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Components/UI/ListItemView.cs
+    startLine: 220
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Components.UI
+  syntax:
+    content: public bool isDestroyed
+    return:
+      type: System.Boolean
+    content.vb: Public isDestroyed As Boolean
   modifiers.csharp:
   - public
   modifiers.vb:

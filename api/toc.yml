@@ -8,6 +8,8 @@
     name: DebugActionBuilder
   - uid: BennyKok.RuntimeDebug.Actions.DebugActionButton
     name: DebugActionButton
+  - uid: BennyKok.RuntimeDebug.Actions.DebugActionEnum
+    name: DebugActionEnum
   - uid: BennyKok.RuntimeDebug.Actions.DebugActionFlag
     name: DebugActionFlag
   - uid: BennyKok.RuntimeDebug.Actions.DebugActionInput
@@ -143,3 +145,10 @@
     name: TitleAttribute
   - uid: BennyKok.RuntimeDebug.Utils.VisibilityAttribute
     name: VisibilityAttribute
+- uid: BennyKok.RuntimeDebug.VR
+  name: BennyKok.RuntimeDebug.VR
+  items:
+  - uid: BennyKok.RuntimeDebug.VR.VRKey
+    name: VRKey
+  - uid: BennyKok.RuntimeDebug.VR.VRKeyboard
+    name: VRKeyboard

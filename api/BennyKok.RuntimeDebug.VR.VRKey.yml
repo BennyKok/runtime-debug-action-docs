@@ -1,0 +1,378 @@
+### YamlMime:ManagedReference
+items:
+- uid: BennyKok.RuntimeDebug.VR.VRKey
+  commentId: T:BennyKok.RuntimeDebug.VR.VRKey
+  id: VRKey
+  parent: BennyKok.RuntimeDebug.VR
+  children:
+  - BennyKok.RuntimeDebug.VR.VRKey.GetKeyCodeForShortcut(UnityEngine.KeyCode)
+  - BennyKok.RuntimeDebug.VR.VRKey.ignoreKey
+  - BennyKok.RuntimeDebug.VR.VRKey.keyboard
+  - BennyKok.RuntimeDebug.VR.VRKey.keyCode
+  - BennyKok.RuntimeDebug.VR.VRKey.Label
+  - BennyKok.RuntimeDebug.VR.VRKey.OnPointerClick(UnityEngine.EventSystems.PointerEventData)
+  langs:
+  - csharp
+  - vb
+  name: VRKey
+  nameWithType: VRKey
+  fullName: BennyKok.RuntimeDebug.VR.VRKey
+  type: Class
+  source:
+    remote:
+      path: Runtime/Keyboard VR/VRKey.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: VRKey
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Keyboard VR/VRKey.cs
+    startLine: 9
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.VR
+  syntax:
+    content: 'public class VRKey : MonoBehaviour, IPointerClickHandler, IEventSystemHandler'
+    content.vb: >-
+      Public Class VRKey
+          Inherits MonoBehaviour
+          Implements IPointerClickHandler, IEventSystemHandler
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BennyKok.RuntimeDebug.VR.VRKey.ignoreKey
+  commentId: F:BennyKok.RuntimeDebug.VR.VRKey.ignoreKey
+  id: ignoreKey
+  parent: BennyKok.RuntimeDebug.VR.VRKey
+  langs:
+  - csharp
+  - vb
+  name: ignoreKey
+  nameWithType: VRKey.ignoreKey
+  fullName: BennyKok.RuntimeDebug.VR.VRKey.ignoreKey
+  type: Field
+  source:
+    remote:
+      path: Runtime/Keyboard VR/VRKey.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: ignoreKey
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Keyboard VR/VRKey.cs
+    startLine: 11
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.VR
+  syntax:
+    content: public bool ignoreKey
+    return:
+      type: System.Boolean
+    content.vb: Public ignoreKey As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.VR.VRKey.keyCode
+  commentId: F:BennyKok.RuntimeDebug.VR.VRKey.keyCode
+  id: keyCode
+  parent: BennyKok.RuntimeDebug.VR.VRKey
+  langs:
+  - csharp
+  - vb
+  name: keyCode
+  nameWithType: VRKey.keyCode
+  fullName: BennyKok.RuntimeDebug.VR.VRKey.keyCode
+  type: Field
+  source:
+    remote:
+      path: Runtime/Keyboard VR/VRKey.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: keyCode
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Keyboard VR/VRKey.cs
+    startLine: 12
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.VR
+  syntax:
+    content: public KeyCode keyCode
+    return:
+      type: UnityEngine.KeyCode
+    content.vb: Public keyCode As KeyCode
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.VR.VRKey.keyboard
+  commentId: F:BennyKok.RuntimeDebug.VR.VRKey.keyboard
+  id: keyboard
+  parent: BennyKok.RuntimeDebug.VR.VRKey
+  langs:
+  - csharp
+  - vb
+  name: keyboard
+  nameWithType: VRKey.keyboard
+  fullName: BennyKok.RuntimeDebug.VR.VRKey.keyboard
+  type: Field
+  source:
+    remote:
+      path: Runtime/Keyboard VR/VRKey.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: keyboard
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Keyboard VR/VRKey.cs
+    startLine: 14
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.VR
+  syntax:
+    content: >-
+      [NonSerialized]
+
+      public VRKeyboard keyboard
+    return:
+      type: BennyKok.RuntimeDebug.VR.VRKeyboard
+    content.vb: >-
+      <NonSerialized>
+
+      Public keyboard As VRKeyboard
+  attributes:
+  - type: System.NonSerializedAttribute
+    ctor: System.NonSerializedAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.VR.VRKey.Label
+  commentId: P:BennyKok.RuntimeDebug.VR.VRKey.Label
+  id: Label
+  parent: BennyKok.RuntimeDebug.VR.VRKey
+  langs:
+  - csharp
+  - vb
+  name: Label
+  nameWithType: VRKey.Label
+  fullName: BennyKok.RuntimeDebug.VR.VRKey.Label
+  type: Property
+  source:
+    remote:
+      path: Runtime/Keyboard VR/VRKey.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: Label
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Keyboard VR/VRKey.cs
+    startLine: 16
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.VR
+  syntax:
+    content: public TextMeshProUGUI Label { get; set; }
+    parameters: []
+    return:
+      type: TMPro.TextMeshProUGUI
+    content.vb: Public Property Label As TextMeshProUGUI
+  overload: BennyKok.RuntimeDebug.VR.VRKey.Label*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.VR.VRKey.OnPointerClick(UnityEngine.EventSystems.PointerEventData)
+  commentId: M:BennyKok.RuntimeDebug.VR.VRKey.OnPointerClick(UnityEngine.EventSystems.PointerEventData)
+  id: OnPointerClick(UnityEngine.EventSystems.PointerEventData)
+  parent: BennyKok.RuntimeDebug.VR.VRKey
+  langs:
+  - csharp
+  - vb
+  name: OnPointerClick(PointerEventData)
+  nameWithType: VRKey.OnPointerClick(PointerEventData)
+  fullName: BennyKok.RuntimeDebug.VR.VRKey.OnPointerClick(UnityEngine.EventSystems.PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Keyboard VR/VRKey.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: OnPointerClick
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Keyboard VR/VRKey.cs
+    startLine: 34
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.VR
+  syntax:
+    content: public void OnPointerClick(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Public Sub OnPointerClick(eventData As PointerEventData)
+  overload: BennyKok.RuntimeDebug.VR.VRKey.OnPointerClick*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BennyKok.RuntimeDebug.VR.VRKey.GetKeyCodeForShortcut(UnityEngine.KeyCode)
+  commentId: M:BennyKok.RuntimeDebug.VR.VRKey.GetKeyCodeForShortcut(UnityEngine.KeyCode)
+  id: GetKeyCodeForShortcut(UnityEngine.KeyCode)
+  parent: BennyKok.RuntimeDebug.VR.VRKey
+  langs:
+  - csharp
+  - vb
+  name: GetKeyCodeForShortcut(KeyCode)
+  nameWithType: VRKey.GetKeyCodeForShortcut(KeyCode)
+  fullName: BennyKok.RuntimeDebug.VR.VRKey.GetKeyCodeForShortcut(UnityEngine.KeyCode)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Keyboard VR/VRKey.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: GetKeyCodeForShortcut
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Keyboard VR/VRKey.cs
+    startLine: 73
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.VR
+  syntax:
+    content: public static string GetKeyCodeForShortcut(KeyCode keyCode)
+    parameters:
+    - id: keyCode
+      type: UnityEngine.KeyCode
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetKeyCodeForShortcut(keyCode As KeyCode) As String
+  overload: BennyKok.RuntimeDebug.VR.VRKey.GetKeyCodeForShortcut*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: BennyKok.RuntimeDebug.VR
+  commentId: N:BennyKok.RuntimeDebug.VR
+  name: BennyKok.RuntimeDebug.VR
+  nameWithType: BennyKok.RuntimeDebug.VR
+  fullName: BennyKok.RuntimeDebug.VR
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: UnityEngine.KeyCode
+  commentId: T:UnityEngine.KeyCode
+  parent: UnityEngine
+  isExternal: true
+  name: KeyCode
+  nameWithType: KeyCode
+  fullName: UnityEngine.KeyCode
+- uid: BennyKok.RuntimeDebug.VR.VRKeyboard
+  commentId: T:BennyKok.RuntimeDebug.VR.VRKeyboard
+  parent: BennyKok.RuntimeDebug.VR
+  name: VRKeyboard
+  nameWithType: VRKeyboard
+  fullName: BennyKok.RuntimeDebug.VR.VRKeyboard
+- uid: BennyKok.RuntimeDebug.VR.VRKey.Label*
+  commentId: Overload:BennyKok.RuntimeDebug.VR.VRKey.Label
+  name: Label
+  nameWithType: VRKey.Label
+  fullName: BennyKok.RuntimeDebug.VR.VRKey.Label
+- uid: TMPro.TextMeshProUGUI
+  commentId: T:TMPro.TextMeshProUGUI
+  parent: TMPro
+  isExternal: true
+  name: TextMeshProUGUI
+  nameWithType: TextMeshProUGUI
+  fullName: TMPro.TextMeshProUGUI
+- uid: TMPro
+  commentId: N:TMPro
+  isExternal: true
+  name: TMPro
+  nameWithType: TMPro
+  fullName: TMPro
+- uid: BennyKok.RuntimeDebug.VR.VRKey.OnPointerClick*
+  commentId: Overload:BennyKok.RuntimeDebug.VR.VRKey.OnPointerClick
+  name: OnPointerClick
+  nameWithType: VRKey.OnPointerClick
+  fullName: BennyKok.RuntimeDebug.VR.VRKey.OnPointerClick
+- uid: UnityEngine.EventSystems.PointerEventData
+  commentId: T:UnityEngine.EventSystems.PointerEventData
+  parent: UnityEngine.EventSystems
+  isExternal: true
+  name: PointerEventData
+  nameWithType: PointerEventData
+  fullName: UnityEngine.EventSystems.PointerEventData
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  isExternal: true
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+- uid: BennyKok.RuntimeDebug.VR.VRKey.GetKeyCodeForShortcut*
+  commentId: Overload:BennyKok.RuntimeDebug.VR.VRKey.GetKeyCodeForShortcut
+  name: GetKeyCodeForShortcut
+  nameWithType: VRKey.GetKeyCodeForShortcut
+  fullName: BennyKok.RuntimeDebug.VR.VRKey.GetKeyCodeForShortcut
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

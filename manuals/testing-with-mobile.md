@@ -1,5 +1,5 @@
 ---
-name: Mobile Device Simulator Setup
+name: Mobile Device Simulator
 order: 0
 ---
 

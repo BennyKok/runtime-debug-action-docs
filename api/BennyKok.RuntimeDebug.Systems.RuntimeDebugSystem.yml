@@ -15,9 +15,9 @@ items:
   - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Hide
   - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.Init
   - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.InputLayer
-  - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsActive
   - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.isInputLayerReady
   - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsIsSystemEnabled
+  - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsVisible
   - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.OnDebugMenuToggleEvent
   - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.PREF_KEY_THEME
   - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RegisterActions(BennyKok.RuntimeDebug.Actions.BaseDebugAction[])
@@ -27,6 +27,7 @@ items:
   - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.ReleaseInputBlock
   - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.RequsetInputBlock
   - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.runtimeDebugUI
+  - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SendShortcutAction(System.String)
   - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SetCustomInputLayer(BennyKok.RuntimeDebug.DebugInput.InputLayer)
   - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SetTheme(BennyKok.RuntimeDebug.Data.Theme,System.Boolean)
   - BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.settings
@@ -363,35 +364,35 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsActive
-  commentId: P:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsActive
-  id: IsActive
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsVisible
+  commentId: P:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsVisible
+  id: IsVisible
   parent: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
   langs:
   - csharp
   - vb
-  name: IsActive
-  nameWithType: RuntimeDebugSystem.IsActive
-  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsActive
+  name: IsVisible
+  nameWithType: RuntimeDebugSystem.IsVisible
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsVisible
   type: Property
   source:
     remote:
       path: Runtime/Systems/RuntimeDebugSystem.cs
       branch: master
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
-    id: IsActive
+    id: IsVisible
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
     startLine: 63
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
   syntax:
-    content: public static bool IsActive { get; }
+    content: public static bool IsVisible { get; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public Shared ReadOnly Property IsActive As Boolean
-  overload: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsActive*
+    content.vb: Public Shared ReadOnly Property IsVisible As Boolean
+  overload: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsVisible*
   modifiers.csharp:
   - public
   - static
@@ -881,6 +882,39 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SendShortcutAction(System.String)
+  commentId: M:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SendShortcutAction(System.String)
+  id: SendShortcutAction(System.String)
+  parent: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem
+  langs:
+  - csharp
+  - vb
+  name: SendShortcutAction(String)
+  nameWithType: RuntimeDebugSystem.SendShortcutAction(String)
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SendShortcutAction(System.String)
+  type: Method
+  source:
+    remote:
+      path: Runtime/Systems/RuntimeDebugSystem.cs
+      branch: master
+      repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
+    id: SendShortcutAction
+    path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
+    startLine: 282
+  assemblies:
+  - com.bennykok.runtime-debug-action
+  namespace: BennyKok.RuntimeDebug.Systems
+  syntax:
+    content: public void SendShortcutAction(string key)
+    parameters:
+    - id: key
+      type: System.String
+    content.vb: Public Sub SendShortcutAction(key As String)
+  overload: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SendShortcutAction*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.GetFlag(System.String)
   commentId: M:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.GetFlag(System.String)
   id: GetFlag(System.String)
@@ -899,7 +933,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetFlag
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 307
+    startLine: 323
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -940,7 +974,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: GetPersistantFlagValue
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 322
+    startLine: 338
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -984,7 +1018,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: RegisterActions
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 332
+    startLine: 348
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -1028,7 +1062,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: RegisterActionsAuto
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 351
+    startLine: 367
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -1072,7 +1106,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: RegisterActionsAuto
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 363
+    startLine: 379
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -1116,7 +1150,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: RegisterActions
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 494
+    startLine: 517
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -1157,7 +1191,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: UnregisterActionsByGroup
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 507
+    startLine: 530
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -1195,7 +1229,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: UnregisterActionsById
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 524
+    startLine: 547
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -1233,7 +1267,7 @@ items:
       repo: https://gitlab.com/BennyKok/unity-runtime-debug-action.git
     id: UnregisterActions
     path: ../Assets/Plugins/RuntimeDebugAction/Runtime/Systems/RuntimeDebugSystem.cs
-    startLine: 541
+    startLine: 564
   assemblies:
   - com.bennykok.runtime-debug-action
   namespace: BennyKok.RuntimeDebug.Systems
@@ -1652,11 +1686,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsActive*
-  commentId: Overload:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsActive
-  name: IsActive
-  nameWithType: RuntimeDebugSystem.IsActive
-  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsActive
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsVisible*
+  commentId: Overload:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsVisible
+  name: IsVisible
+  nameWithType: RuntimeDebugSystem.IsVisible
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.IsVisible
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -1806,6 +1840,11 @@ references:
   name: ReleaseInputBlock
   nameWithType: RuntimeDebugSystem.ReleaseInputBlock
   fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.ReleaseInputBlock
+- uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SendShortcutAction*
+  commentId: Overload:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SendShortcutAction
+  name: SendShortcutAction
+  nameWithType: RuntimeDebugSystem.SendShortcutAction
+  fullName: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.SendShortcutAction
 - uid: BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.GetFlag*
   commentId: Overload:BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.GetFlag
   name: GetFlag
