@@ -69,7 +69,7 @@
   <div class="markdown level0 summary"><p>Work with SafeAreaHelper to extend any UI under SafeArea parent to fill the safe area (full screen), useful for background UI element</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
+  <div class="inheritance" style="font-size: 14px;">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">UnityEngine.Object</span></div>
@@ -84,7 +84,18 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class SafeAreaExtender : MonoBehaviour</code></pre>
   </div>
-</article>
+  
+  
+  <script>
+  function toggleInheritedMembers() {
+    var d = document.getElementById("inherited-members");
+    d.style.display = d.style.display === "none" ? "block" : "none";
+    document.getElementById("inherited-members-more").style.display = d.style.display === "none" ? "block" : "none";
+  }
+  
+  //Hide the InheritedMembers when first start
+  toggleInheritedMembers()
+  </script></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

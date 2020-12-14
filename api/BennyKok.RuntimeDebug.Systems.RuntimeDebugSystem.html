@@ -69,7 +69,7 @@
   <div class="markdown level0 summary"><p>The singleton system class to handle the lifecycle of all runtime debug actions, loading of the settings ScriptableObject and also the communication between the system and UIHandler</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
+  <div class="inheritance" style="font-size: 14px;">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">UnityEngine.Object</span></div>
@@ -79,10 +79,15 @@
     <div class="level5"><a class="xref" href="BennyKok.RuntimeDebug.Utils.Singleton-1.html">Singleton</a>&lt;<a class="xref" href="BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.html">RuntimeDebugSystem</a>&gt;</div>
     <div class="level6"><span class="xref">RuntimeDebugSystem</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
+  <div class="inheritedMembers" style="font-size: 14px;">
+    <div onclick="toggleInheritedMembers()" style="cursor: pointer;">
+      <h5>Inherited Members [+/-]</h5>
+      <div id="inherited-members-more"><b>. . .</b></div>
+    </div>
+    <div id="inherited-members">
     <div>
       <a class="xref" href="BennyKok.RuntimeDebug.Utils.Singleton-1.html#BennyKok_RuntimeDebug_Utils_Singleton_1_Instance">Singleton&lt;RuntimeDebugSystem&gt;.Instance</a>
+    </div>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Systems.html">BennyKok.RuntimeDebug.Systems</a></h6>
@@ -92,7 +97,18 @@
     <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;Runtime Debug Action/System/Runtime Debug System&quot;)]
 public class RuntimeDebugSystem : Singleton&lt;RuntimeDebugSystem&gt;</code></pre>
   </div>
-  <h3 id="fields">Fields
+  
+  
+  <script>
+  function toggleInheritedMembers() {
+    var d = document.getElementById("inherited-members");
+    d.style.display = d.style.display === "none" ? "block" : "none";
+    document.getElementById("inherited-members-more").style.display = d.style.display === "none" ? "block" : "none";
+  }
+  
+  //Hide the InheritedMembers when first start
+  toggleInheritedMembers()
+  </script><h3 id="fields">Fields
   </h3>
   
   

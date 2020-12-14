@@ -69,7 +69,7 @@
   <div class="markdown level0 summary"><p>Base debug action class that has common fluent methods</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
+  <div class="inheritance" style="font-size: 14px;">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseDebugAction.html">BaseDebugAction</a></div>
@@ -80,8 +80,12 @@
       <div class="level3"><a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionInput.html">DebugActionInput</a></div>
       <div class="level3"><a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionToggle.html">DebugActionToggle</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
+  <div class="inheritedMembers" style="font-size: 14px;">
+    <div onclick="toggleInheritedMembers()" style="cursor: pointer;">
+      <h5>Inherited Members [+/-]</h5>
+      <div id="inherited-members-more"><b>. . .</b></div>
+    </div>
+    <div id="inherited-members">
     <div>
       <a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseDebugAction.html#BennyKok_RuntimeDebug_Actions_BaseDebugAction_group">BaseDebugAction.group</a>
     </div>
@@ -124,6 +128,7 @@
     <div>
       <a class="xref" href="BennyKok.RuntimeDebug.Actions.BaseDebugAction.html#BennyKok_RuntimeDebug_Actions_BaseDebugAction_Setup">BaseDebugAction.Setup()</a>
     </div>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Actions.html">BennyKok.RuntimeDebug.Actions</a></h6>
   <h6><strong>Assembly</strong>: com.bennykok.runtime-debug-action.dll</h6>
@@ -147,7 +152,18 @@ public class FluentAction&lt;T&gt; : BaseDebugAction where T : FluentAction&lt;T
       </tr>
     </tbody>
   </table>
-  <h3 id="methods">Methods
+  
+  
+  <script>
+  function toggleInheritedMembers() {
+    var d = document.getElementById("inherited-members");
+    d.style.display = d.style.display === "none" ? "block" : "none";
+    document.getElementById("inherited-members-more").style.display = d.style.display === "none" ? "block" : "none";
+  }
+  
+  //Hide the InheritedMembers when first start
+  toggleInheritedMembers()
+  </script><h3 id="methods">Methods
   </h3>
   
   

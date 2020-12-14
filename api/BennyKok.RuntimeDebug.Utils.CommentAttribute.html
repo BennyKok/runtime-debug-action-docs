@@ -68,7 +68,7 @@
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
+  <div class="inheritance" style="font-size: 14px;">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">System.Attribute</span></div>
@@ -81,7 +81,18 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class CommentAttribute : PropertyAttribute, _Attribute</code></pre>
   </div>
-  <h3 id="constructors">Constructors
+  
+  
+  <script>
+  function toggleInheritedMembers() {
+    var d = document.getElementById("inherited-members");
+    d.style.display = d.style.display === "none" ? "block" : "none";
+    document.getElementById("inherited-members-more").style.display = d.style.display === "none" ? "block" : "none";
+  }
+  
+  //Hide the InheritedMembers when first start
+  toggleInheritedMembers()
+  </script><h3 id="constructors">Constructors
   </h3>
   
   

@@ -68,7 +68,7 @@
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
+  <div class="inheritance" style="font-size: 14px;">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">UnityEngine.Object</span></div>
@@ -78,10 +78,15 @@
     <div class="level5"><a class="xref" href="BennyKok.RuntimeDebug.Components.BaseDebugActionHandler-1.html">BaseDebugActionHandler</a>&lt;<a class="xref" href="BennyKok.RuntimeDebug.Actions.DebugActionButton.html">DebugActionButton</a>&gt;</div>
     <div class="level6"><span class="xref">DebugActionButtonHandler</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
+  <div class="inheritedMembers" style="font-size: 14px;">
+    <div onclick="toggleInheritedMembers()" style="cursor: pointer;">
+      <h5>Inherited Members [+/-]</h5>
+      <div id="inherited-members-more"><b>. . .</b></div>
+    </div>
+    <div id="inherited-members">
     <div>
       <a class="xref" href="BennyKok.RuntimeDebug.Components.BaseDebugActionHandler-1.html#BennyKok_RuntimeDebug_Components_BaseDebugActionHandler_1_action">BaseDebugActionHandler&lt;DebugActionButton&gt;.action</a>
+    </div>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="BennyKok.RuntimeDebug.Components.html">BennyKok.RuntimeDebug.Components</a></h6>
@@ -91,7 +96,18 @@
     <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;Runtime Debug Action/Actions/Debug Action Button&quot;)]
 public class DebugActionButtonHandler : BaseDebugActionHandler&lt;DebugActionButton&gt;</code></pre>
   </div>
-</article>
+  
+  
+  <script>
+  function toggleInheritedMembers() {
+    var d = document.getElementById("inherited-members");
+    d.style.display = d.style.display === "none" ? "block" : "none";
+    document.getElementById("inherited-members-more").style.display = d.style.display === "none" ? "block" : "none";
+  }
+  
+  //Hide the InheritedMembers when first start
+  toggleInheritedMembers()
+  </script></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
