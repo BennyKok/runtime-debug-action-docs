@@ -30,7 +30,7 @@ Welcome to the documentation for RuntimeDebugAction
 <br>
 - Mobile friendly
 <br>
-- (Beta) VR Support <a href="https://bennykok.github.io/runtime-debug-action-docs/manuals/vr-setup.html">(Docs)</a>
+- (Beta) VR Support <a href="https://bennykok.github.io/runtime-debug-action-docs/manuals/VR/index.html">(Docs)</a>
 <br>
 - Auto register action with reflection <a href="https://bennykok.github.io/runtime-debug-action-docs/manuals/CustomActions/attribute-reflection.html">(Docs)</a>
 <br>

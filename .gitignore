@@ -9,6 +9,7 @@
 _site
 docs
 _exported_templates
+_site_pdf
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/node
