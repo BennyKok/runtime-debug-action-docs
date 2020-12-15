@@ -1366,6 +1366,17 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/2020-12-15-16-33-11.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/2020-12-15-16-33-11.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
@@ -1443,7 +1454,7 @@
       "output": {
         ".html": {
           "relative_path": "manuals/VR/index.html",
-          "hash": "lJsToMBdh7njhY6BVeO1ng=="
+          "hash": "+jDRADpwbsUwyt638MogdA=="
         }
       },
       "is_incremental": false,
