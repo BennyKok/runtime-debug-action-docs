@@ -9,7 +9,9 @@ name: VR Setup
 > - XR Interaction Toolkit
 > - Oculus Integration
 
-RDA comes with a specialized UI prefab for VR target. Which has a world space UI made for VR usage, it also contains a scripts to automatically orient the debug menu to your looking direction with smooth damping.
+RDA comes with a specialized UI prefab for VR target. Which has a world space UI made for VR usage, it also contains a scripts to automatically orient the debug menu to your looking direction with smooth damping. Import the corresponding package for your target VR framework.
+
+![](../../images/2020-12-15-16-33-11.png)
 
 The customized UI prefab, adds the framework specific Graphic Raycaster for all the Canvas components in the prefab.
 
