@@ -71,17 +71,17 @@ Welcome to the documentation for RuntimeDebugAction
 - Full source included
 <br>
 
-## Videos
-
-> [!Video https://www.youtube.com/watch?v=mXDFFjd0Ebo]
-> [!Video https://www.youtube.com/watch?v=iDdSp8qeYWg]
-> [!Video https://www.youtube.com/watch?v=mXDFFjd0Ebo]
-
 ## Demo
 Demo Download Link
 
 - Android: [APK file](https://www.dropbox.com/s/qhawrrymrni069h/studiob-runtime-debug-action-demo-default-android-35.apk?dl=1)
 - Windows Desktop: [EXE file](https://www.dropbox.com/s/vmom4sfm02vcznl/studiob-runtime-debug-action-demo-default-windows-desktop-64-bit-2.zip?dl=1)
+
+## Videos
+
+> [!Video https://www.youtube.com/embed/nPtCQTaLTYY]
+> [!Video https://www.youtube.com/embed/iDdSp8qeYWg]
+> [!Video https://www.youtube.com/embed/mXDFFjd0Ebo]
 
 <!-- ## Fluent API
 The [`RuntimeDebugSystem`](api/BennyKok.RuntimeDebug.Systems.RuntimeDebugSystem.yml) class provide the entry point for registering your custom action, with a Fluent API design, it's a joy to add custom actions. 
