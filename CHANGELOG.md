@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://gitlab.com/BennyKok/unity-runtime-debug-action/compare/v1.0.1...v1.1.0) (2021-01-06)
+
+
+### Features
+
+* make sure the default settings is not editable with extra GUI ([d1906c7](https://gitlab.com/BennyKok/unity-runtime-debug-action/commit/d1906c7cc762702f2d3ced593b6419be1290ca8c))
+* UnityEvent bindings for Flag component ([671c0f0](https://gitlab.com/BennyKok/unity-runtime-debug-action/commit/671c0f02b9aa8d522c5d2035c88a53e57b276609))
+
+
+### Bug Fixes
+
+* action display should not be interactable ([6d00109](https://gitlab.com/BennyKok/unity-runtime-debug-action/commit/6d0010935295e8767db8e11fb74af9cbb343cde5))
+* closePanelAfterTrigger not working with toggle action ([700fa94](https://gitlab.com/BennyKok/unity-runtime-debug-action/commit/700fa94da2e3f313c1c10e55b5330541f7957474))
+* component action not setup property upon registering ([21ad00d](https://gitlab.com/BennyKok/unity-runtime-debug-action/commit/21ad00de03167cc298520dc30226f0768112e04b))
+* menu display error when reload scene sometimes ([7d59973](https://gitlab.com/BennyKok/unity-runtime-debug-action/commit/7d59973410ca91574cb772ac7ccd0e7d33b43481))
+* rename IsIsSystemEnabled -> IsSystemEnabled ([630188c](https://gitlab.com/BennyKok/unity-runtime-debug-action/commit/630188ccb253bd623de71bb900dcd3b390c22720))
+* **editor:** component action compatibility with Odin ([d285539](https://gitlab.com/BennyKok/unity-runtime-debug-action/commit/d2855390fe06254886079cc0d23bd705b0257886))
+
 ## 1.0.1 (2020-12-26)
 
 ### Refactor
