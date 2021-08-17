@@ -4,6 +4,8 @@
   href: api/
 - name: Changelog
   homepage: CHANGELOG.md
+- name: GitHub
+  href: https://github.com/BennyKok/unity-runtime-debug-action
 - name: Assets Store
   href: https://assetstore.unity.com/packages/slug/183545
 - name: Discord
